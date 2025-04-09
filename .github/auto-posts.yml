@@ -1,0 +1,35 @@
+name: Generar Posts Automáticos
+
+on:
+  schedule:
+    - cron: '0 14 * * *'  # 2PM UTC (10AM Colombia)
+  workflow_dispatch:
+
+jobs:
+  generate-posts:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependencias IA
+        run: |
+          pip install transformers torch
+          
+      - name: Ejecutar generador de posts
+        run: |
+          python3 src/scripts/generate_post.py
+
+      - name: Subir cambios a GitHub
+        run: |
+          git config --global user.name "AutoPost Bot"
+          git config --global user.email "bot@news.com"
+          git add src/posts/
+          git commit -m "Auto: Nuevo post del día" || echo "No hay cambios"
+          git push
