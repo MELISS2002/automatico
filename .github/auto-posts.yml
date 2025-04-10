@@ -1,35 +1,32 @@
-name: Generar Posts Automáticos
+name: Generar Noticias Diarias
 
 on:
   schedule:
-    - cron: '0 14 * * *'  # 2PM UTC (10AM Colombia)
+    - cron: '0 12 * * *'  # Ejecutar diario a las 12 PM UTC
   workflow_dispatch:
 
 jobs:
-  generate-posts:
+  generate-news:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout código
-        uses: actions/checkout@v4
-
+      - uses: actions/checkout@v4
+      
       - name: Configurar Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-
-      - name: Instalar dependencias IA
-        run: |
-          pip install transformers torch
           
-      - name: Ejecutar generador de posts
+      - name: Instalar dependencias
         run: |
-          python3 src/scripts/generate_post.py
-
-      - name: Subir cambios a GitHub
+          pip install feedparser transformers torch
+          
+      - run: python scripts/generate_news.py
+      
+      - name: Subir cambios
         run: |
-          git config --global user.name "AutoPost Bot"
+          git config --global user.name "Auto News Bot"
           git config --global user.email "bot@news.com"
           git add src/posts/
-          git commit -m "Auto: Nuevo post del día" || echo "No hay cambios"
+          git commit -m "Auto: Actualización de noticias del día" || echo "Sin cambios"
           git push

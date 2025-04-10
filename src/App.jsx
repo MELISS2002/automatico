@@ -4,6 +4,17 @@ import LiveMatches from './components/LiveMatches';
 import NewsGrid from './components/NewsGrid';
 import './App.css';
 
+
+const [news, setNews] = useState([]);
+
+useEffect(() => {
+  const loadArticles = async () => {
+    const response = await fetch('/posts/manifest.json');
+    const articles = await response.json();
+    setNews(articles);
+  };
+  loadArticles();
+}, []);
 function App() {
   const [liveMatches, setLiveMatches] = useState([
     {
