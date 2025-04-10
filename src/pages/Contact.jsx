@@ -5,3 +5,4 @@ const Contact = () => (
       <p>Email: contacto@sportslive.com<br/>Teléfono: +1 234 567 890</p>
     </div>
   );
+  export default Contact;

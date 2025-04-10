@@ -5,3 +5,5 @@ const Terms = () => (
       <p>Condiciones de uso de nuestra plataforma...</p>
     </div>
   );
+
+  export default Terms;
