@@ -4,17 +4,6 @@ import LiveMatches from './components/LiveMatches';
 import NewsGrid from './components/NewsGrid';
 import './App.css';
 
-
-const [news, setNews] = useState([]);
-
-useEffect(() => {
-  const loadArticles = async () => {
-    const response = await fetch('/posts/manifest.json');
-    const articles = await response.json();
-    setNews(articles);
-  };
-  loadArticles();
-}, []);
 function App() {
   const [liveMatches, setLiveMatches] = useState([
     {
@@ -35,24 +24,20 @@ function App() {
     }
   ]);
 
-  const [news] = useState([
-    {
-      id: 1,
-      title: 'Historic Victory for Manchester United',
-      excerpt: 'Red Devils secure crucial win against rivals...',
-      category: 'Premier League',
-      date: '2024-03-20',
-      image: 'https://example.com/news1.jpg'
-    },
-    {
-      id: 2,
-      title: 'Champions League Quarterfinal Draw',
-      excerpt: 'Exciting matchups revealed for next stage...',
-      category: 'Champions League',
-      date: '2024-03-19',
-      image: 'https://example.com/news2.jpg'
-    }
-  ]);
+  const [news, setNews] = useState([]);
+
+  useEffect(() => {
+    const loadArticles = async () => {
+      try {
+        const response = await fetch('/posts/manifest.json');
+        const articles = await response.json();
+        setNews(articles);
+      } catch (error) {
+        console.error('Failed to load articles:', error);
+      }
+    };
+    loadArticles();
+  }, []);
 
   return (
     <div className="app">
