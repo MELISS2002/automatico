@@ -7,7 +7,7 @@ const NewsGrid = () => {
   useEffect(() => {
     const loadArticles = async () => {
       try {
-        const response = await fetch('src/posts/manifest.json');
+        const response = await fetch('/posts/manifest.json');
         const data = await response.json();
         setArticles(data);
       } catch (error) {

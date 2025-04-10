@@ -42,7 +42,7 @@ def main():
     articles = [a for a in articles if a is not None]
 
     # Directorio donde se guardarán los archivos generados
-    output_dir = 'src/posts'
+    output_dir = 'public/posts'
     os.makedirs(output_dir, exist_ok=True)
 
     # Crear el archivo de manifiesto

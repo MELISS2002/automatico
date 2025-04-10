@@ -3,6 +3,7 @@ import Header from './components/Header';
 import LiveMatches from './components/LiveMatches';
 import NewsGrid from './components/NewsGrid';
 import './App.css';
+import React from 'react'; // <-- ¡Esta línea es crucial!
 
 function App() {
   const [liveMatches, setLiveMatches] = useState([
