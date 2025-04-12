@@ -147,3 +147,88 @@ html {
     height: 400px;
   }
 }
+
+.footer {
+  background: linear-gradient(120deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  padding: 2.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.legal-links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.legal-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.legal-links a:hover {
+  color: #00f2ff;
+  text-shadow: 0 0 8px rgba(0, 242, 255, 0.5);
+}
+
+.legal-links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00f2ff, transparent);
+  bottom: -3px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.legal-links a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Efecto de aparición */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.footer {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .legal-links {
+    gap: 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer p {
+    font-size: 0.8rem;
+  }
+}

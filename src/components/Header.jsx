@@ -6,11 +6,11 @@ function Header() {
   return (
     <header className="app-header">
       <div className="header-content">
-        <h1 className="site-title">SportsLive</h1>
+      <h1><Link to="/" className="nav-link ">SportsLive</Link></h1>
         <nav className="main-navigation">
           <ul className="nav-menu">
             <li className="nav-item">
-              <Link to="/" className="nav-link active">Live Matches</Link>
+              <Link to="/" className="nav-link ">Live Matches</Link>
             </li>
             <li className="nav-item">
               <Link to="/news" className="nav-link">News</Link>

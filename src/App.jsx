@@ -2,7 +2,9 @@ import { useState, useEffect, useRef } from 'react';
 import Header from './components/Header';
 import NewsGrid from './components/NewsGrid';
 import './App.css';
-
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Terms from './pages/Terms';
 function App() {
   // Estados para la verificación
   const [mathProblem, setMathProblem] = useState(generateMathProblem());
@@ -89,8 +91,7 @@ function App() {
 
   return (
     <div className="app">
-      <Header />
-      
+   
       <main className="main-content">
         {/* Sección de verificación y agenda */}
         <section className="live-section">
@@ -152,9 +153,7 @@ function App() {
         </section>
       </main>
 
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} SportsLive</p>
-      </footer>
+
     </div>
   );
 }
