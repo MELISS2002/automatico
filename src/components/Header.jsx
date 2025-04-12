@@ -1,16 +1,28 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import './Header.css';
 
-const Header = () => (
-  <header className="site-header">
-    <div className="header-content">
-      <h1 className="logo">SportsLive</h1>
-      <nav className="main-nav">
-        <a href="/live">Live Matches</a>
-        <a href="/news">News</a>
-        <a href="/schedule">Schedule</a>
-      </nav>
-    </div>
-  </header>
-);
+function Header() {
+  return (
+    <header className="app-header">
+      <div className="header-content">
+        <h1 className="site-title">SportsLive</h1>
+        <nav className="main-navigation">
+          <ul className="nav-menu">
+            <li className="nav-item">
+              <Link to="/" className="nav-link active">Live Matches</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/news" className="nav-link">News</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/schedule" className="nav-link">Schedule</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
+}
 
 export default Header;

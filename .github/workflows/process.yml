@@ -1,0 +1,29 @@
+name: Procesar y Mejorar Contenido
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Cada 6 horas
+  workflow_dispatch:
+
+jobs:
+  process-content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          
+      - run: pip install feedparser transformers torch
+      
+      - run: python scripts/process_articles.py
+      
+      - name: Desplegar Cambios
+        run: |
+          git config --global user.name "Content Enhancer Bot"
+          git config --global user.email "bot@example.com"
+          git add public/posts/
+          git commit -m "Auto: Contenido mejorado y análisis" || echo "Sin cambios"
+          git push

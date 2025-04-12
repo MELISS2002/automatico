@@ -1,190 +1,149 @@
-:root {
-  --primary-color: #E63946;
-  --dark-bg: #1D3557;
-  --light-text: #F1FAEE;
-  --accent-color: #A8DADC;
-}
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f8f9fa;
-}
-
+/* Estilos generales */
 .app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-.site-header {
-  background: var(--dark-bg);
-  color: var(--light-text);
-  padding: 1rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.header-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-nav a {
-  color: var(--light-text);
-  margin-left: 2rem;
-  text-decoration: none;
-  font-weight: 500;
-}
-
 .main-content {
   flex: 1;
-  padding: 2rem;
+  padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .section-title {
-  color: var(--dark-bg);
-  border-bottom: 3px solid var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2d3748;
   padding-bottom: 0.5rem;
-  margin: 2rem 0;
+  border-bottom: 2px solid #e2e8f0;
 }
 
-/* Estilos para tarjetas de partidos en directo */
-.match-card {
+/* Verificación */
+.verification-box {
   background: white;
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin: 1rem 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.teams {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+.math-problem {
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-weight: bold;
+  color: #2b6cb0;
+}
+
+.verification-box input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin: 1rem 0;
+  border: 2px solid #e2e8f0;
+  border-radius: 4px;
+  width: 80px;
+  text-align: center;
+}
+
+.verification-box button {
+  padding: 0.75rem 1.5rem;
+  background: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  margin: 1rem auto;
+  transition: background 0.2s;
+}
+
+.verification-box button:hover {
+  background: #3182ce;
+}
+
+.error {
+  color: #e53e3e;
+  margin-top: 1rem;
   font-weight: bold;
 }
 
-.score {
-  font-size: 1.5rem;
-  color: var(--primary-color);
-}
-
-.match-info {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-  color: #666;
-}
-
-/* Estilos para la cuadrícula de noticias */
-.news-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
-.news-card {
-  background: white;
+/* Agenda y Stream */
+.agenda-container {
+  height: 600px;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: white;
 }
 
-.news-card:hover {
-  transform: translateY(-5px);
-}
-
-.news-image {
+.agenda-container iframe {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 100%;
+  border: none;
 }
 
-.news-content {
-  padding: 1.5rem;
+.stream-section {
+  margin-top: 2rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  scroll-margin-top: 80px; /* Espacio para el header fijo */
 }
 
-.news-category {
-  background: var(--accent-color);
-  color: var(--dark-bg);
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-.news-title {
-  margin: 1rem 0;
-  color: var(--dark-bg);
-}
-
-/* Estilos para el streaming */
-.stream-embed {
-  aspect-ratio: 16/9;
+.stream-player {
   background: #000;
   border-radius: 8px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-}
-
-.site-footer {
-  background: var(--dark-bg);
-  color: var(--light-text);
-  padding: 2rem;
-  margin-top: auto;
-}
-
-.footer-nav {
-  margin-top: 1rem;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.footer-nav a {
-  color: var(--light-text);
-  text-decoration: none;
-}
-
-/* Estilos para el nuevo diseño */
-.page-container {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.meta-info {
-  display: flex;
-  justify-content: space-between;
-  color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-}
-
-.read-more {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 500;
-  display: inline-block;
   margin-top: 1rem;
 }
 
-.news-image {
-  height: 200px;
-  object-fit: cover;
-  border-bottom: 3px solid var(--primary-color);
+.stream-player iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.placeholder {
+  color: #718096;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Efecto de scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #f7fafc;
+  margin-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stream-section {
+    scroll-margin-top: 60px;
+  }
+  
+  .stream-player {
+    height: 300px;
+  }
+  
+  .agenda-container {
+    height: 400px;
+  }
 }
