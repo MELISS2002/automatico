@@ -7,9 +7,12 @@ from datetime import datetime
 from dateutil import parser
 from dateutil.tz import tzlocal
 from huggingface_hub import InferenceClient
+from dotenv import load_dotenv
+load_dotenv()
 
+HF_API_KEY= os.getenv('HUGGINGFACE_TOKEN')
 # Configuración de la API de Hugging Face
-HF_API_KEY = "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"  # Reemplaza con tu clave API
+
 MODEL_NAME = "google/flan-t5-large"  # Modelo gratuito para reescritura en inglés
 
 # URL del feed RSS
