@@ -1,25 +1,58 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    const handleResize = () => {
+      if (window.innerWidth > 768) closeMenu();
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
-    <header className="app-header">
-      <div className="header-content">
-      <h1><Link to="/" className="nav-link ">SportsLive</Link></h1>
-        <nav className="main-navigation">
-          <ul className="nav-menu">
-            <li className="nav-item">
-              <Link to="/" className="nav-link ">Live Matches</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/news" className="nav-link">News</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/schedule" className="nav-link">Schedule</Link>
-            </li>
+    <header className={`app-header ${isScrolled ? 'scrolled' : ''}`}>
+      <div className="header-container">
+        <Link to="/" className="logo" onClick={closeMenu}>
+          <span className="logo-highlight">Sports</span>Live
+        </Link>
+
+        <nav className={`desktop-nav ${isOpen ? 'mobile-active' : ''}`}>
+          <ul>
+            <li><Link to="/" onClick={closeMenu}>Live Matches</Link></li>
+            <li><Link to="/news" onClick={closeMenu}>News</Link></li>
+            <li><Link to="/schedule" onClick={closeMenu}>Schedule</Link></li>
           </ul>
         </nav>
+
+        <button 
+          className={`hamburger ${isOpen ? 'open' : ''}`} 
+          onClick={toggleMenu}
+          aria-label="Menu"
+        >
+          <div className="hamburger-line"></div>
+          <div className="hamburger-line"></div>
+          <div className="hamburger-line"></div>
+        </button>
+
+        <div className={`mobile-overlay ${isOpen ? 'active' : ''}`} onClick={closeMenu}></div>
       </div>
     </header>
   );
