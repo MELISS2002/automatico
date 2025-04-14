@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cómo Reinventar tu Personalidad | Psicología Práctica</title>
+    <style>
+        /* Mejoras Visuales y Responsive */
+        .article-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            padding: 20px;
+        }
+
+        .article-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .article-image:hover {
+            transform: scale(1.02);
+        }
+
+        .highlight {
+            background: linear-gradient(45deg, #f0f8ff, #e6f7ff);
+            padding: 30px;
+            border-left: 6px solid #2196F3;
+            border-radius: 8px;
+            margin: 40px 0;
+            position: relative;
+        }
+
+        .highlight::before {
+            content: "!";
+            position: absolute;
+            top: -15px;
+            left: -20px;
+            background: #2196F3;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(33, 150, 243, 0.3);
+        }
+
+        /* Tabla Responsive */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #2196F3;
+            color: white;
+        }
+
+        tr:hover {
+            background: #f5f5f5;
+        }
+
+        /* Tooltips para Términos Técnicos */
+        .tooltip-term {
+            position: relative;
+            cursor: help;
+            color: #2196F3;
+            text-decoration: underline dotted;
+        }
+
+        .tooltip-text {
+            visibility: hidden;
+            width: 300px;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            padding: 10px;
+            position: absolute;
+            z-index: 999;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -150px;
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+            font-size: 0.9em;
+        }
+
+        .tooltip-term:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(-10px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .article-image {
+                height: 250px;
+            }
+
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            th {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr {
+                border: 1px solid #ccc;
+                margin-bottom: 10px;
+            }
+
+            td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+            }
+
+            td:before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: 45%;
+                padding-right: 10px;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="article-content">
+        <header>
+            <h1>La Ciencia de la Reinvención Personal: 5 Pasos para Transformar tu Personalidad</h1>
+            <div class="article-meta">
+                <address class="author">Por Dra. María López</address>
+                <time datetime="2024-07-15" class="date">15 de Julio 2024</time>
+            </div>
+        </header>
+
+        <img src="/posts/personalidad/images.jpg" 
+             alt="Persona meditando en un entorno natural, simbolizando transformación personal" 
+             class="article-image"
+             loading="lazy">
+
+        <section class="content">
+            <h2>Introducción</h2>
+            <p>La personalidad no es un rasgo fijo. Estudios recientes en neuroplasticidad demuestran que podemos realizar cambios significativos mediante:</p>
+            <ul>
+                <li><span class="tooltip-term">Práctica consciente
+                    <span class="tooltip-text">Ejercicios diarios de autoobservación y modificación de hábitos.</span>
+                </span></li>
+                <li><span class="tooltip-term">Exposición a nuevas experiencias
+                    <span class="tooltip-text">Salida de la zona de confort mediante actividades novedosas.</span>
+                </span></li>
+                <li><span class="tooltip-term">Refuerzo positivo
+                    <span class="tooltip-text">Sistema de recompensas para consolidar cambios.</span>
+                </span></li>
+            </ul>
+
+            <div class="highlight">
+                <h3>Dato clave:</h3>
+                <p>Según el <cite>Journal of Personality and Social Psychology</cite>, el 68% de los participantes lograron cambios de personalidad duraderos tras 6 meses de entrenamiento.</p>
+            </div>
+
+            <h2>Los 5 Pasos Clave</h2>
+            <img src="/posts/personalidad/diagrama.jpg" 
+                 alt="Diagrama de proceso con 5 etapas: Autoevaluación, Objetivos, Implementación, Seguimiento, Consolidación"
+                 class="article-image"
+                 style="float: right; margin: 0 0 20px 20px; width: 300px;"
+                 loading="lazy">
+            
+            <ol>
+                <li>
+                    <h4>Autoevaluación Inicial</h4>
+                    <p>Usa herramientas validadas como el <span class="tooltip-term">Big Five Inventory
+                        <span class="tooltip-text">Cuestionario que mide 5 dimensiones: apertura, responsabilidad, extraversión, amabilidad y neuroticismo.</span>
+                    </span></p>
+                </li>
+                <li>
+                    <h4>Definición de Objetivos</h4>
+                    <p>Ejemplo: Desarrollar mayor <span class="tooltip-term">apertura a experiencias
+                        <span class="tooltip-text">Capacidad para explorar ideas nuevas y actividades desconocidas.</span>
+                    </span></p>
+                </li>
+                <li>
+                    <h4>Implementación Diaria</h4>
+                    <p><span class="tooltip-term">Técnicas de micro-comportamientos
+                        <span class="tooltip-text">Pequeñas acciones repetidas que modifican patrones cerebrales (ej.: sonreír 3 veces al día).</span>
+                    </span></p>
+                </li>
+                <li>
+                    <h4>Seguimiento y Ajuste</h4>
+                    <p>Usa apps como <span class="tooltip-term">Daylio o Habitica
+                        <span class="tooltip-text">Aplicaciones de registro emocional y gamificación de hábitos.</span>
+                    </span></p>
+                </li>
+                <li>
+                    <h4>Consolidación</h4>
+                    <p><span class="tooltip-term">Refuerzo social
+                        <span class="tooltip-text">Busca comunidades que apoyen tu nueva identidad.</span>
+                    </span> y ambiental</p>
+                </li>
+            </ol>
+
+            <h2>Casos de Estudio</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Duración</th>
+                        <th>Cambio buscado</th>
+                        <th>Éxito</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Duración">3 meses</td>
+                        <td data-label="Cambio buscado">Mayor extroversión</td>
+                        <td data-label="Éxito">72%</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Duración">6 meses</td>
+                        <td data-label="Cambio buscado">Reducción de neuroticismo</td>
+                        <td data-label="Éxito">65%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

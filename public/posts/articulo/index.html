@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinvención Personal 360°: La Guía Definitiva para Transformar tu Vida</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --transition-speed: 0.3s;
+        }
+
+        .article-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            font-family: 'Inter', system-ui, sans-serif;
+            line-height: 1.7;
+            color: var(--primary-color);
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 20px;
+            margin-bottom: 4rem;
+        }
+
+        .dynamic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .interactive-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform var(--transition-speed) ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .interactive-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--secondary-color);
+        }
+
+        .phase-timeline {
+            position: relative;
+            padding: 4rem 0;
+        }
+
+        .phase-step {
+            position: relative;
+            padding: 2rem;
+            margin-left: 2rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .phase-step::before {
+            content: '';
+            position: absolute;
+            left: -2.3rem;
+            top: 2rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            background: var(--secondary-color);
+            border-radius: 50%;
+        }
+
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 2rem 1rem;
+            }
+            
+            .hero-section {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <article class="article-container">
+        <header class="hero-section">
+            <h1>Reinvención Personal 360°</h1>
+            <p>La metodología completa para transformar cada aspecto de tu vida</p>
+        </header>
+
+        <section>
+            <h2>Los 4 Pilares Fundamentales</h2>
+            <div class="dynamic-grid">
+                <div class="interactive-card">
+                    <h3>Identidad Evolutiva</h3>
+                    <p>Reestructuración consciente de tu autoconcepto</p>
+                    <div class="progress-bar" data-value="75"></div>
+                </div>
+                <div class="interactive-card">
+                    <h3>Mentalidad Adaptativa</h3>
+                    <p>Desarrollo de flexibilidad cognitiva</p>
+                    <div class="progress-bar" data-value="85"></div>
+                </div>
+                <div class="interactive-card">
+                    <h3>Acción Estratégica</h3>
+                    <p>Implementación de micro-hábitos transformadores</p>
+                    <div class="progress-bar" data-value="65"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="phase-timeline">
+            <h2>El Proceso Científico de Reinvención</h2>
+            <div class="phase-step">
+                <h3>Fase 1: Autodiagnóstico Cuántico</h3>
+                <p>Técnicas de análisis multidimensional (emocional, social, profesional)</p>
+            </div>
+            <div class="phase-step">
+                <h3>Fase 2: Diseño de Prototipo</h3>
+                <p>Creación de tu avatar evolutivo mediante neurodiseño</p>
+            </div>
+            <div class="phase-step">
+                <h3>Fase 3: Implementación en Cascada</h3>
+                <p>Sistema de hábitos entrelazados con retroalimentación constante</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Casos de Éxito Documentados</h2>
+            <div class="dynamic-grid">
+                <div class="interactive-card">
+                    <h3>Transformación Profesional</h3>
+                    <p>De empleado a emprendedor en 12 meses</p>
+                    <div class="metric">+150% ingresos</div>
+                </div>
+                <div class="interactive-card">
+                    <h3>Reinvención Emocional</h3>
+                    <p>Superación de crisis existencial</p>
+                    <div class="metric">92% satisfacción</div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <script>
+        // Script para animar las tarjetas
+        document.querySelectorAll('.interactive-card').forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

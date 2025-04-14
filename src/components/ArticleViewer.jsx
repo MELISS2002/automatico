@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
-import './ArticleViewer.css'; // Archivo CSS para estilos
+import './ArticleViewer.css';
 
 const ArticleViewer = ({ article }) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   if (!article) {
     return <div className="loading">Cargando artículo...</div>;
   }
@@ -11,26 +13,38 @@ const ArticleViewer = ({ article }) => {
 
   return (
     <div className="article-container">
-      {/* Encabezado */}
-      <div className="article-header">
+      <header className="article-header">
         <h1 className="article-title">{title}</h1>
         <div className="article-meta">
           <span className="article-author">{author}</span>
           <span className="article-date">{date}</span>
         </div>
-      </div>
+      </header>
 
-      {/* Imagen destacada */}
       {image && (
-        <div className="article-image-container">
-          <img src={image} alt={title} className="article-image" />
-        </div>
+        <figure className="article-image-container">
+          <img
+            src={image}
+            alt={title}
+            className={`article-image ${imageLoaded ? 'loaded' : ''}`}
+            loading="lazy"
+            decoding="async"
+            onLoad={() => setImageLoaded(true)}
+          />
+          <figcaption className="image-caption">{title}</figcaption>
+        </figure>
       )}
 
-      {/* Contenido del artículo */}
-      <div className="article-content">
-        <ReactMarkdown>{content}</ReactMarkdown>
-      </div>
+      <article className="article-content">
+        <ReactMarkdown
+          components={{
+            p: ({ node, ...props }) => <p className="article-paragraph" {...props} />,
+            strong: ({ node, ...props }) => <strong className="article-bold" {...props} />
+          }}
+        >
+          {content}
+        </ReactMarkdown>
+      </article>
     </div>
   );
 };

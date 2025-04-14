@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dominando las Dualidades: El Arte de Entrenar a Cerbero</title>
+    <style>
+        /* Estilos Base */
+        .article-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            padding: 40px;
+        }
+
+        .neuro-section {
+            background: linear-gradient(45deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .hemisphere-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 30px 0;
+        }
+
+        .training-diagram {
+            width: 100%;
+            max-width: 800px;
+            margin: 40px auto;
+            border: 3px solid #2c3e50;
+            border-radius: 10px;
+        }
+
+        /* Listas Interactivas */
+        .interactive-list {
+            list-style: none;
+            counter-reset: custom-counter;
+        }
+
+        .interactive-list li {
+            counter-increment: custom-counter;
+            margin: 25px 0;
+            padding: 20px;
+            background: white;
+            border-left: 5px solid #3498db;
+            transition: transform 0.3s ease;
+        }
+
+        .interactive-list li:hover {
+            transform: translateX(15px);
+        }
+
+        .interactive-list li::before {
+            content: counter(custom-counter);
+            background: #3498db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            margin-right: 15px;
+        }
+
+        /* Tooltip Mejorado */
+        .tooltip-term {
+            position: relative;
+            cursor: help;
+            color: #3498db;
+            text-decoration: underline dotted;
+            touch-action: manipulation;
+        }
+
+        .tooltip-text {
+            visibility: hidden;
+            width: 300px;
+            background: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 12px;
+            position: absolute;
+            z-index: 9999;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -150px;
+            opacity: 0;
+            transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+                        transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            font-size: 0.9em;
+        }
+
+        .tooltip-term:hover .tooltip-text,
+        .tooltip-term:active .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(-10px);
+        }
+
+        .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            border: 8px solid transparent;
+            border-top-color: #2c3e50;
+            transform: translateX(-50%);
+        }
+
+        @media (max-width: 768px) {
+            .tooltip-text {
+                width: 90%;
+                margin-left: -45%;
+                bottom: auto;
+                top: 125%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="article-content">
+        <h1>La Neuromitología de Cerbero: Dominando sus Dos Hemisferios</h1>
+
+        <!-- Sección con Tooltip Integrado -->
+        <div class="neuro-section">
+            <h3>El Proceso de Transformación</h3>
+            <p>
+                Durante el entrenamiento de Cerbero, el 
+                <span class="tooltip-term">Redescubrimiento de identidad
+                    <span class="tooltip-text">
+                        Proceso de reconfiguración psíquica donde la bestia reconoce su naturaleza dual 
+                        mediante rituales de espejos cósmicos y cánticos inversos.
+                    </span>
+                </span> 
+                es crucial para dominar sus instintos primarios.
+            </p>
+        </div>
+
+        <!-- Anatomía Quimérica con Tooltips en Atributos -->
+        <div class="neuro-section">
+            <h2>Anatomía Quimérica: Deconstruyendo la Bestia</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Herakles_kerberos_staatliche_antikensammlungen_585.jpg" 
+                 alt="Relieve griego que muestra a Hércules capturando a Cerbero" 
+                 class="training-diagram">
+
+            <div class="hemisphere-grid">
+                <div>
+                    <h3>Hemisferio Izquierdo: El Guerrero</h3>
+                    <ul class="interactive-list">
+                        <li>
+                            <span class="tooltip-term">Mandíbula de León
+                                <span class="tooltip-text">Símbolo de fuerza primaria asociada al fuego celestial.</span>
+                            </span>: Fuerza bruta y destrucción
+                        </li>
+                        <li>
+                            <span class="tooltip-term">Ojo de Águila
+                                <span class="tooltip-text">Visión que atraviesa dimensiones físicas y espirituales.</span>
+                            </span>: Visión táctica y estratégica
+                        </li>
+                        <li>
+                            <span class="tooltip-term">Garra de Dragón
+                                <span class="tooltip-text">Defensa basada en energías telúricas ancestrales.</span>
+                            </span>: Defensa territorial instintiva
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Hemisferio Derecho: El Vigilante</h3>
+                    <ul class="interactive-list">
+                        <li>
+                            <span class="tooltip-term">Cuerno de Unicornio
+                                <span class="tooltip-text">Detector de almas corruptas y energías negativas.</span>
+                            </span>: Detección de pureza espiritual
+                        </li>
+                        <li>
+                            <span class="tooltip-term">Oído de Lobo
+                                <span class="tooltip-text">Percepción de frecuencias no audibles para humanos.</span>
+                            </span>: Percepción de dimensiones paralelas
+                        </li>
+                        <li>
+                            <span class="tooltip-term">Cola de Basilisco
+                                <span class="tooltip-text">Arma que petrifica entidades etéreas.</span>
+                            </span>: Neutralización de amenazas etéreas
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Protocolo de Entrenamiento con Tooltips -->
+        <div class="neuro-section">
+            <h2>Protocolo de Entrenamiento Arcano</h2>
+            
+            <h3>Fase Lunar: Sincronización Hemisférica</h3>
+            <img src="https://www.metmuseum.org/toah/images/hb/hb_06.1021.231.jpg" 
+                 alt="Vasija griega con escenas de rituales órficos" 
+                 class="training-diagram">
+
+            <div class="hemisphere-grid">
+                <div>
+                    <h4>Entrenamiento del Guerrero</h4>
+                    <ol class="interactive-list">
+                        <li>
+                            <span class="tooltip-term">Combate contra sombras estigias
+                                <span class="tooltip-text">Lucha contra proyecciones de miedos ancestrales.</span>
+                            </span> (3 ciclos lunares)
+                        </li>
+                        <li>
+                            <span class="tooltip-term">Dieta de carbón volcánico
+                                <span class="tooltip-text">Alimentación ritual para absorber energía de la tierra.</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="tooltip-term">Meditación en campos de asfódelos
+                                <span class="tooltip-text">Práctica para conectar con el inframundo.</span>
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h4>Entrenamiento del Vigilante</h4>
+                    <ol class="interactive-list">
+                        <li>
+                            <span class="tooltip-term">Observación del río Leteo
+                                <span class="tooltip-text">Ejercicio para purificar la memoria colectiva.</span>
+                            </span> (7 días/noches)
+                        </li>
+                        <li>
+                            <span class="tooltip-term">Inmersión en nieblas arcónticas
+                                <span class="tooltip-text">Exposición a energías de entidades superiores.</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="tooltip-term">Canto de mantras hiperbóreos
+                                <span class="tooltip-text">Vibraciones sonoras para alinear chakras cósmicos.</span>
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Integración de Conciencias -->
+        <div class="neuro-section">
+            <h2>Integración de Conciencias</h2>
+            <blockquote style="border-left: 5px solid #e74c3c; padding: 20px; margin: 30px 0;">
+                "El verdadero dominio de Cerbero no está en controlar sus cabezas, sino en convertirse en la cuarta cabeza invisible que las guía"
+                <footer>- Hermes Trismegisto, <cite>El Kybalion Ctónico</cite></footer>
+            </blockquote>
+
+            <h3>Técnicas de Fusión</h3>
+            <ul class="interactive-list">
+                <li>
+                    <span class="tooltip-term">Ritual de vinculación onírica
+                        <span class="tooltip-text">Conexión con el subconsciente de la bestia mediante sueños lúcidos.</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="tooltip-term">Simbiosis con energías telúricas
+                        <span class="tooltip-text">Alineación con fuerzas geológicas y electromagnéticas.</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="tooltip-term">Inversión de polaridades alquímicas
+                        <span class="tooltip-text">Transformación de energía destructiva en creativa.</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
