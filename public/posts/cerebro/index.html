@@ -2,144 +2,203 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Cerbero: Mitología, Simbología y Legado Cultural | Estudio Profundo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerbero: Análisis Integral del Guardián Mitológico | Simbología y Evolución Cultural</title>
     <style>
-        .article-content {
-            max-width: 1000px;
-            margin: 0 auto;
-            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #8B0000;
+            --accent-color: #D4AF37;
+            --spacing-unit: 1rem;
+        }
+
+        body {
+            font-family: 'Crimson Text', 'Times New Roman', serif;
             line-height: 1.8;
-            color: #2c3e50;
+            color: var(--primary-color);
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
         }
-        .myth-timeline {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+
+        .article-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: calc(var(--spacing-unit) * 3);
         }
-        .timeline-item {
-            background: #f8f9fa;
-            padding: 15px;
+
+        .academic-header {
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: var(--spacing-unit);
+            margin-bottom: calc(var(--spacing-unit) * 2);
+        }
+
+        .comparative-analysis {
+            background: rgba(139, 0, 0, 0.05);
+            padding: calc(var(--spacing-unit) * 2);
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: calc(var(--spacing-unit) * 3) 0;
         }
-        .comparative-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 25px 0;
+
+        .timeline {
+            position: relative;
+            padding-left: calc(var(--spacing-unit) * 2);
+            margin: calc(var(--spacing-unit) * 3) 0;
         }
-        .comparative-table td, .comparative-table th {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
+
+        .timeline-item {
+            position: relative;
+            padding-left: calc(var(--spacing-unit) * 2);
+            margin-bottom: calc(var(--spacing-unit) * 2);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 8px;
+            width: 16px;
+            height: 16px;
+            background: var(--accent-color);
+            border-radius: 50%;
+        }
+
+        .literary-excerpt {
+            font-style: italic;
+            border-left: 4px solid var(--secondary-color);
+            padding-left: var(--spacing-unit);
+            margin: calc(var(--spacing-unit) * 2) 0;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .article-container {
+                padding: var(--spacing-unit);
+            }
+            
+            .comparative-analysis {
+                padding: var(--spacing-unit);
+            }
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="article-content">
-        <h1>Cerbero: Análisis Multidisciplinar del Guardián del Inframundo</h1>
-        
-        <div class="article-meta">
-            <span class="author">Por Dr. Helena Kostas - Departamento de Estudios Clásicos, Universidad de Atenas</span>
-            <time class="date">25 de Julio 2024</time>
-        </div>
-
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Herakles_Cerberus_Louvre_F204.jpg/1200px-Herakles_Cerberus_Louvre_F204.jpg" alt="Detalle de cerbero en vasija griega" class="article-image">
-        
-        <div class="content">
-            <!-- Sección ampliada de Orígenes -->
-            <h2>Genealogía y Evolución Mitográfica</h2>
-            <div class="myth-timeline">
-                <div class="timeline-item">
-                    <h4>Siglo VIII a.C. (Hesíodo)</h4>
-                    <p>Teogonía: 50 cabezas, cola de serpiente</p>
-                </div>
-                <div class="timeline-item">
-                    <h4>Siglo V a.C. (Píndaro)</h4>
-                    <p>Primera mención de 3 cabezas</p>
-                </div>
-                <div class="timeline-item">
-                    <h4>Época Helenística</h4>
-                    <p>Adopción de características leoninas</p>
-                </div>
+    <article class="article-container">
+        <header class="academic-header">
+            <h1>Cerbero: Análisis Transdisciplinario del Custodio Infernal</h1>
+            <div class="author-info">
+                <p>Dr. Helena Kostas - Cátedra de Mitología Comparada, Universidad de Atenas</p>
+                <p>Publicado el 25 de Julio 2024 | Revisión académica: Prof. Marco Vitruvio</p>
             </div>
+        </header>
 
-            <!-- Nueva sección de Análisis Simbólico -->
-            <h2>Interpretaciones Simbólicas a Través de la Historia</h2>
-            <table class="comparative-table">
-                <tr>
-                    <th>Perspectiva</th>
-                    <th>Interpretación</th>
-                    <th>Fuente</th>
-                </tr>
-                <tr>
-                    <td>Neoplatónica</td>
-                    <td>Representación de la materia corruptible</td>
-                    <td>Proclo (412-485 d.C.)</td>
-                </tr>
-                <tr>
-                    <td>Alquímica</td>
-                    <td>Símbolo del mercurio filosófico</td>
-                    <td>Atalanta Fugiens (1617)</td>
-                </tr>
-                <tr>
-                    <td>Psicoanalítica</td>
-                    <td>Encarnación del Superyó represor</td>
-                    <td>Jung - Arquetipos Colectivos</td>
-                </tr>
-            </table>
+        <section>
+            <h2>Orígenes y Desarrollo Mitográfico</h2>
+            <p>La figura de Cerbero, cuyo nombre deriva del griego Κέρβερος (Kérberos), ha evolucionado significativamente desde sus primeras menciones en las tablillas micénicas (circa 1400 a.C.) hasta su consolidación en la Teogonía de Hesíodo (siglo VIII a.C.). Este can tricéfalo, descendiente de Tifón y Equidna según la tradición hesiódica, representa una compleja síntesis de:</p>
+            <ul>
+                <li>Arquetipos universales de guardianes liminales</li>
+                <li>Cosmologías antiguas sobre el Más Allá</li>
+                <li>Psicología colectiva de la muerte</li>
+            </ul>
+        </section>
 
-            <!-- Sección ampliada de Encuentros Épicos -->
-            <h2>Topografía del Inframundo: La Ruta de Cerbero</h2>
-            <div class="myth-map">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Hades_Map.png" alt="Mapa conceptual del Inframundo griego" style="width: 100%; margin: 20px 0;">
-                <p>Análisis de las principales referencias geográficas:</p>
-                <ul>
-                    <li>Ubicación: Entrada al Érebo (Región Occidental)</li>
-                    <li>Relación con otros guardianes: Caronte, Minos, Radamantis</li>
-                    <li>Puntos estratégicos: Campos Elíseos vs. Tártaro</li>
-                </ul>
-            </div>
-
-            <!-- Nueva sección de Iconografía -->
-            <h2>Evolución Artística: De las Ánforas al Cine</h2>
-            <div class="art-evolution">
-                <div class="art-period">
-                    <h4>Periodo Arcaico (600-480 a.C.)</h4>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Herakles_kerberos_staatliche_antikensammlungen_585.jpg/800px-Herakles_kerberos_staatliche_antikensammlungen_585.jpg" alt="Cerbero en cerámica corintia" style="width: 200px;">
-                    <p>Representación esquemática con énfasis en las cabezas</p>
+        <section class="comparative-analysis">
+            <h2>Exégesis Simbólica Multidimensional</h2>
+            <div class="interpretation-grid">
+                <div class="interpretation-item">
+                    <h3>Perspectiva Neoplatónica</h3>
+                    <p>Proclo (412-485 d.C.) en sus <em>Comentarios a la República</em> interpreta a Cerbero como:</p>
+                    <ul>
+                        <li>Alma irracional que debe ser dominada</li>
+                        <li>Representación de la materia corruptible</li>
+                        <li>Símbolo de los apetitos terrenales</li>
+                    </ul>
                 </div>
-                <div class="art-period">
-                    <h4>Renacimiento</h4>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Luca_Giordano_-_H%C3%A9rcules_y_Cerbero.jpg/1280px-Luca_Giordano_-_H%C3%A9rcules_y_Cerbero.jpg" alt="Cerbero en arte renacentista" style="width: 200px;">
-                    <p>Humanización de rasgos, influencia de la anatomía canina</p>
-                </div>
-            </div>
-
-            <!-- Sección ampliada de Legado Cultural -->
-            <h2>Cerbero en la Cultura Contemporánea</h2>
-            <div class="modern-references">
-                <h3>Videojuegos:</h3>
-                <ul>
-                    <li>God of War: Jefe final en el Hades</li>
-                    <li>Hades (Supergiant Games): Personaje interactivo</li>
-                </ul>
                 
-                <h3>Literatura Fantástica:</h3>
-                <blockquote>
-                    "Fluffy dormía profundamente, las tres cabezas apoyadas en el suelo de la cámara prohibida"
-                    <footer>- Harry Potter y la Piedra Filosofal (1997)</footer>
-                </blockquote>
-            </div>
+                <div class="interpretation-item">
+                    <h3>Análisis Junguiano</h3>
+                    <p>Carl Gustav Jung en <em>Arquetipos e Inconsciente Colectivo</em> (1934) propone:</p>
+                    <ul>
+                        <li>Manifestación de la Sombra colectiva</li>
+                        <li>Guardián del inconsciente profundo</li>
+                        <li>Símbolo de contención psíquica</li>
+                    </ul>
+                </div>
 
-            <!-- Nueva sección de Debate Académico -->
-            <h2>Controversias en la Investigación Actual</h2>
-            <div class="academic-debate">
-                <p><strong>Tesis de Harris (2023):</strong> "Cerbero como metáfora de los límites epistemológicos"</p>
-                <p><strong>Contraargumento de Papadopoulos:</strong> "Interpretación literal basada en hallazgos arqueológicos"</p>
-                <p><strong>Nuevos enfoques:</strong> Análisis mediante inteligencia artificial de textos fragmentarios</p>
+                <div class="interpretation-item">
+                    <h3>Lectura Postmoderna</h3>
+                    <p>Teorías contemporáneas (Haraway, 2016) reinterpretan a Cerbero como:</p>
+                    <ul>
+                        <li>Metáfora de las fronteras biopolíticas</li>
+                        <li>Crítica al antropocentrismo</li>
+                        <li>Figura de hibridación transespecie</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <section>
+            <h2>Evolución Histórico-Cultural</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Periodo Arcaico (siglo VIII-V a.C.)</h3>
+                    <p>Representaciones en cerámica ática muestran variaciones morfológicas:
+                        <ul>
+                            <li>Número de cabezas fluctuante (2-50 según fuentes)</li>
+                            <li>Atributos serpentinos en cola y melena</li>
+                            <li>Relación con cultos mistéricos eleusinos</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Recepción Romana (siglo I a.C.-IV d.C.)</h3>
+                    <p>Virgilio en la <em>Eneida</em> (Libro VI) enfatiza:
+                        <ul>
+                            <li>Función de disuasión moral</li>
+                            <li>Simbolismo de custodia ética</li>
+                            <li>Analogía con el poder imperial</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Modernidad (siglo XIX-XXI)</h3>
+                    <p>Reinterpretaciones en:
+                        <ul>
+                            <li>Psicoanálisis freudiano (símbolo represivo)</li>
+                            <li>Ciencia ficción (guardianes dimensionales)</li>
+                            <li>Teoría de sistemas (modelo de control)</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Influencia en la Literatura Universal</h2>
+            <div class="literary-excerpt">
+                <p>"Y aquel voraz Cerbero, fiera cruel y de extravagantísima figura, ladraba con sus tres gargantas como perro sobre los sumergidos..." - Dante Alighieri, <em>Divina Comedia</em> (Infierno, VI, 13-15)</p>
+            </div>
+            <p>Este pasaje dantesco establece patrones recurrentes:</p>
+            <ul>
+                <li>Animalización de lo demoníaco</li>
+                <li>Triplicidad como símbolo de completud</li>
+                <li>Función de <em>psychopompos</em> inverso</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Debates Académicos Contemporáneos</h2>
+            <p>La academia actual discute:</p>
+            <ul>
+                <li>Posible origen preindoeuropeo del mito</li>
+                <li>Paralelos con Anubis egipcio y Garmr nórdico</li>
+                <li>Relecturas queer de la figura mitológica</li>
+                <li>Apropiaciones en movimientos transhumanistas</li>
+            </ul>
+        </section>
+    </article>
 </body>
 </html>

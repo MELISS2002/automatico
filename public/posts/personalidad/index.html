@@ -145,102 +145,228 @@
                 font-weight: bold;
             }
         }
+        
+        /* Mejoras de Responsividad */
+        @media (max-width: 768px) {
+            .article-image {
+                height: 250px;
+                margin: 20px 0;
+                float: none !important;
+                width: 100% !important;
+            }
+
+            .evolution-steps {
+                padding-left: 20px;
+            }
+
+            .evolution-steps h4 {
+                font-size: 1.1em;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .highlight {
+                padding: 20px;
+                margin: 30px 0;
+            }
+
+            .highlight::before {
+                width: 30px;
+                height: 30px;
+                left: -15px;
+                top: -10px;
+                font-size: 0.9em;
+            }
+
+            .tooltip-text {
+                width: 200px;
+                margin-left: -100px;
+                font-size: 0.8em;
+            }
+
+            .impact-list li {
+                margin-bottom: 15px;
+                line-height: 1.5;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .article-image {
+                height: 200px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+                line-height: 1.3;
+            }
+
+            h2 {
+                font-size: 1.4em;
+            }
+
+            .article-content {
+                padding: 15px;
+            }
+
+            td, th {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+
+            .highlight h3 {
+                font-size: 1.1em;
+            }
+
+            .tooltip-term {
+                word-break: break-word;
+            }
+        }
+
+        /* Nuevos ajustes para tablas */
+        .challenge-table td:before {
+            content: attr(data-label);
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .challenge-table td {
+                padding-left: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .challenge-table td:before {
+                position: static;
+                width: auto;
+                padding-right: 0;
+            }
+        }
+    </style>
     </style>
 </head>
+
 <body>
     <div class="article-content">
         <header>
-            <h1>La Ciencia de la Reinvención Personal: 5 Pasos para Transformar tu Personalidad</h1>
+            <h1>Reinvención Personal: El Arte de Recrearte a Ti Mismo</h1>
             <div class="article-meta">
-                <address class="author">Por Dra. María López</address>
+                <address class="author">Por Equipo de Psicología Transformacional</address>
                 <time datetime="2024-07-15" class="date">15 de Julio 2024</time>
             </div>
         </header>
 
-        <img src="/posts/personalidad/images.jpg" 
-             alt="Persona meditando en un entorno natural, simbolizando transformación personal" 
-             class="article-image"
+        <img src="/posts/personalidad/124.png" 
+        alt="Silueta humana emergiendo de llamas con fondo de amanecer" 
+        width="200" 
+        height="100"
              loading="lazy">
 
         <section class="content">
-            <h2>Introducción</h2>
-            <p>La personalidad no es un rasgo fijo. Estudios recientes en neuroplasticidad demuestran que podemos realizar cambios significativos mediante:</p>
+            <h2>¿Qué es la Reinvención Personal?</h2>
+            <p>Un proceso de <span class="tooltip-term">metamorfosis existencial
+                <span class="tooltip-text">Cambio profundo en la estructura psicoemocional y conductual</span>
+            </span> que implica:</p>
             <ul>
-                <li><span class="tooltip-term">Práctica consciente
-                    <span class="tooltip-text">Ejercicios diarios de autoobservación y modificación de hábitos.</span>
-                </span></li>
-                <li><span class="tooltip-term">Exposición a nuevas experiencias
-                    <span class="tooltip-text">Salida de la zona de confort mediante actividades novedosas.</span>
-                </span></li>
-                <li><span class="tooltip-term">Refuerzo positivo
-                    <span class="tooltip-text">Sistema de recompensas para consolidar cambios.</span>
-                </span></li>
+                <li>Reestructuración de patrones mentales</li>
+                <li>Reconfiguración de hábitos emocionales</li>
+                <li>Reorientación de proyectos vitales</li>
             </ul>
 
             <div class="highlight">
-                <h3>Dato clave:</h3>
-                <p>Según el <cite>Journal of Personality and Social Psychology</cite>, el 68% de los participantes lograron cambios de personalidad duraderos tras 6 meses de entrenamiento.</p>
+                <h3>¿Sabías que?</h3>
+                <p>Un estudio de <cite>Harvard Business Review</cite> revela que el 83% de las personas experimentan al menos 3 reinvenciones significativas en su vida adulta.</p>
             </div>
 
-            <h2>Los 5 Pasos Clave</h2>
-            <img src="/posts/personalidad/diagrama.jpg" 
-                 alt="Diagrama de proceso con 5 etapas: Autoevaluación, Objetivos, Implementación, Seguimiento, Consolidación"
+            <h2>Fases del Proceso Evolutivo</h2>
+            <img src="/posts/reinvencion/ciclo-transformacion.jpg" 
+                 alt="Diagrama circular con fases: crisálida, metamorfosis, eclosión" 
                  class="article-image"
-                 style="float: right; margin: 0 0 20px 20px; width: 300px;"
+                 style="float: left; margin: 0 20px 20px 0; width: 300px;"
                  loading="lazy">
             
-            <ol>
+            <ol class="evolution-steps">
                 <li>
-                    <h4>Autoevaluación Inicial</h4>
-                    <p>Usa herramientas validadas como el <span class="tooltip-term">Big Five Inventory
-                        <span class="tooltip-text">Cuestionario que mide 5 dimensiones: apertura, responsabilidad, extraversión, amabilidad y neuroticismo.</span>
+                    <h4>Autoconfrontación Existencial</h4>
+                    <p>Uso de <span class="tooltip-term">espejos psicológicos
+                        <span class="tooltip-text">Técnicas de autoobservación sin juicio</span>
+                    </span> y análisis de patrones</p>
+                </li>
+                <li>
+                    <h4>Diseño de Nuevo Yo</h4>
+                    <p>Creación de <span class="tooltip-term">mapas cognitivos
+                        <span class="tooltip-text">Representación visual de nuevos patrones mentales</span>
                     </span></p>
                 </li>
                 <li>
-                    <h4>Definición de Objetivos</h4>
-                    <p>Ejemplo: Desarrollar mayor <span class="tooltip-term">apertura a experiencias
-                        <span class="tooltip-text">Capacidad para explorar ideas nuevas y actividades desconocidas.</span>
+                    <h4>Implementación Gradual</h4>
+                    <p><span class="tooltip-term">Técnica del doble especular
+                        <span class="tooltip-text">Actuar como la versión deseada hasta internalizarla</span>
                     </span></p>
-                </li>
-                <li>
-                    <h4>Implementación Diaria</h4>
-                    <p><span class="tooltip-term">Técnicas de micro-comportamientos
-                        <span class="tooltip-text">Pequeñas acciones repetidas que modifican patrones cerebrales (ej.: sonreír 3 veces al día).</span>
-                    </span></p>
-                </li>
-                <li>
-                    <h4>Seguimiento y Ajuste</h4>
-                    <p>Usa apps como <span class="tooltip-term">Daylio o Habitica
-                        <span class="tooltip-text">Aplicaciones de registro emocional y gamificación de hábitos.</span>
-                    </span></p>
-                </li>
-                <li>
-                    <h4>Consolidación</h4>
-                    <p><span class="tooltip-term">Refuerzo social
-                        <span class="tooltip-text">Busca comunidades que apoyen tu nueva identidad.</span>
-                    </span> y ambiental</p>
                 </li>
             </ol>
 
-            <h2>Casos de Estudio</h2>
+            <h2>Herramientas de Transformación</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Duración</th>
-                        <th>Cambio buscado</th>
-                        <th>Éxito</th>
+                        <th>Técnica</th>
+                        <th>Función</th>
+                        <th>Eficacia</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td data-label="Duración">3 meses</td>
-                        <td data-label="Cambio buscado">Mayor extroversión</td>
-                        <td data-label="Éxito">72%</td>
+                        <td data-label="Técnica">Escritura especular</td>
+                        <td data-label="Función">Clarificación emocional</td>
+                        <td data-label="Eficacia">89%</td>
                     </tr>
                     <tr>
-                        <td data-label="Duración">6 meses</td>
-                        <td data-label="Cambio buscado">Reducción de neuroticismo</td>
-                        <td data-label="Éxito">65%</td>
+                        <td data-label="Técnica">Visualización holográfica</td>
+                        <td data-label="Función">Programación mental</td>
+                        <td data-label="Eficacia">78%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight">
+                <h3>Caso de Éxito:</h3>
+                <p>Ana, 35 años, transformó su timidez extrema en liderazgo social usando <span class="tooltip-term">teatro terapéutico
+                    <span class="tooltip-text">Método que usa técnicas dramáticas para cambio personal</span>
+                </span> durante 6 meses.</p>
+            </div>
+
+            <h2>Impacto Multidimensional</h2>
+            <ul class="impact-list">
+                <li><strong>Autoeficacia:</strong> +62% en percepción de capacidades</li>
+                <li><strong>Relaciones:</strong> 3x mayor satisfacción emocional</li>
+                <li><strong>Productividad:</strong> 47% mejora en logro de metas</li>
+            </ul>
+
+            <h2>Obstáculos y Soluciones</h2>
+            <table class="challenge-table">
+                <thead>
+                    <tr>
+                        <th>Desafío</th>
+                        <th>Solución</th>
+                        <th>Recurso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Desafío">Miedo al cambio</td>
+                        <td data-label="Solución">Terapia de exposición gradual</td>
+                        <td data-label="Recurso">App FearLess</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Desafío">Auto-sabotaje</td>
+                        <td data-label="Solución">Técnica del doble observador</td>
+                        <td data-label="Recurso">Diario reflexivo</td>
                     </tr>
                 </tbody>
             </table>

@@ -2,277 +2,245 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Dominando las Dualidades: El Arte de Entrenar a Cerbero</title>
+    <title>Maestría en el Dominio de Cerbero: Técnicas Arcanas de Control Multidimensional</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Estilos Base */
-        .article-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            font-family: 'Georgia', serif;
-            line-height: 1.8;
-            color: #2c3e50;
-            padding: 40px;
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #8B0000;
+            --accent-color: #D4AF37;
+            --spacing-unit: 1rem;
         }
 
-        .neuro-section {
+        body {
+            font-family: 'Crimson Text', 'Times New Roman', serif;
+            line-height: 1.8;
+            color: var(--primary-color);
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .article-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: calc(var(--spacing-unit) * 3);
+        }
+
+        .arcane-section {
             background: linear-gradient(45deg, #f8f9fa 0%, #e9ecef 100%);
-            padding: 30px;
+            padding: calc(var(--spacing-unit) * 2);
             border-radius: 15px;
-            margin: 40px 0;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            margin: calc(var(--spacing-unit) * 3) 0;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
         }
 
         .hemisphere-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin: 30px 0;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: calc(var(--spacing-unit) * 2);
+            margin: calc(var(--spacing-unit) * 2) 0;
         }
 
-        .training-diagram {
-            width: 100%;
-            max-width: 800px;
-            margin: 40px auto;
-            border: 3px solid #2c3e50;
-            border-radius: 10px;
-        }
-
-        /* Listas Interactivas */
         .interactive-list {
             list-style: none;
             counter-reset: custom-counter;
+            padding: 0;
         }
 
         .interactive-list li {
             counter-increment: custom-counter;
-            margin: 25px 0;
-            padding: 20px;
-            background: white;
-            border-left: 5px solid #3498db;
+            margin: calc(var(--spacing-unit) * 1.5) 0;
+            padding: calc(var(--spacing-unit) * 1.5);
+            background: rgba(255, 255, 255, 0.9);
+            border-left: 5px solid var(--secondary-color);
             transition: transform 0.3s ease;
         }
 
         .interactive-list li:hover {
-            transform: translateX(15px);
+            transform: translateX(10px);
         }
 
         .interactive-list li::before {
             content: counter(custom-counter);
-            background: #3498db;
+            background: var(--secondary-color);
             color: white;
-            padding: 5px 10px;
+            padding: 0.3em 0.6em;
             border-radius: 3px;
-            margin-right: 15px;
+            margin-right: 1em;
         }
 
-        /* Tooltip Mejorado */
         .tooltip-term {
             position: relative;
             cursor: help;
-            color: #3498db;
-            text-decoration: underline dotted;
-            touch-action: manipulation;
+            color: var(--secondary-color);
+            border-bottom: 1px dotted var(--accent-color);
         }
 
         .tooltip-text {
             visibility: hidden;
-            width: 300px;
-            background: #2c3e50;
-            color: #ffffff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 12px;
             position: absolute;
-            z-index: 9999;
-            bottom: 125%;
+            bottom: 100%;
             left: 50%;
-            margin-left: -150px;
+            transform: translateX(-50%);
+            background: var(--primary-color);
+            color: white;
+            padding: 0.8em;
+            border-radius: 4px;
+            width: 300px;
             opacity: 0;
-            transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55),
-                        transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: opacity 0.3s;
             font-size: 0.9em;
+            z-index: 1000;
         }
 
-        .tooltip-term:hover .tooltip-text,
-        .tooltip-term:active .tooltip-text {
+        .tooltip-term:hover .tooltip-text {
             visibility: visible;
             opacity: 1;
-            transform: translateY(-10px);
-        }
-
-        .tooltip-text::after {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            border: 8px solid transparent;
-            border-top-color: #2c3e50;
-            transform: translateX(-50%);
         }
 
         @media (max-width: 768px) {
+            .article-container {
+                padding: var(--spacing-unit);
+            }
+            
             .tooltip-text {
-                width: 90%;
-                margin-left: -45%;
-                bottom: auto;
-                top: 125%;
+                width: 200px;
+                font-size: 0.8em;
             }
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="article-content">
-        <h1>La Neuromitología de Cerbero: Dominando sus Dos Hemisferios</h1>
+    <article class="article-container">
+        <h1>El Arte Hermético del Dominio Cerberiano</h1>
 
-        <!-- Sección con Tooltip Integrado -->
-        <div class="neuro-section">
-            <h3>El Proceso de Transformación</h3>
-            <p>
-                Durante el entrenamiento de Cerbero, el 
-                <span class="tooltip-term">Redescubrimiento de identidad
-                    <span class="tooltip-text">
-                        Proceso de reconfiguración psíquica donde la bestia reconoce su naturaleza dual 
-                        mediante rituales de espejos cósmicos y cánticos inversos.
-                    </span>
-                </span> 
-                es crucial para dominar sus instintos primarios.
-            </p>
-        </div>
-
-        <!-- Anatomía Quimérica con Tooltips en Atributos -->
-        <div class="neuro-section">
-            <h2>Anatomía Quimérica: Deconstruyendo la Bestia</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Herakles_kerberos_staatliche_antikensammlungen_585.jpg" 
-                 alt="Relieve griego que muestra a Hércules capturando a Cerbero" 
-                 class="training-diagram">
-
-            <div class="hemisphere-grid">
-                <div>
-                    <h3>Hemisferio Izquierdo: El Guerrero</h3>
-                    <ul class="interactive-list">
-                        <li>
-                            <span class="tooltip-term">Mandíbula de León
-                                <span class="tooltip-text">Símbolo de fuerza primaria asociada al fuego celestial.</span>
-                            </span>: Fuerza bruta y destrucción
-                        </li>
-                        <li>
-                            <span class="tooltip-term">Ojo de Águila
-                                <span class="tooltip-text">Visión que atraviesa dimensiones físicas y espirituales.</span>
-                            </span>: Visión táctica y estratégica
-                        </li>
-                        <li>
-                            <span class="tooltip-term">Garra de Dragón
-                                <span class="tooltip-text">Defensa basada en energías telúricas ancestrales.</span>
-                            </span>: Defensa territorial instintiva
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3>Hemisferio Derecho: El Vigilante</h3>
-                    <ul class="interactive-list">
-                        <li>
-                            <span class="tooltip-term">Cuerno de Unicornio
-                                <span class="tooltip-text">Detector de almas corruptas y energías negativas.</span>
-                            </span>: Detección de pureza espiritual
-                        </li>
-                        <li>
-                            <span class="tooltip-term">Oído de Lobo
-                                <span class="tooltip-text">Percepción de frecuencias no audibles para humanos.</span>
-                            </span>: Percepción de dimensiones paralelas
-                        </li>
-                        <li>
-                            <span class="tooltip-term">Cola de Basilisco
-                                <span class="tooltip-text">Arma que petrifica entidades etéreas.</span>
-                            </span>: Neutralización de amenazas etéreas
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Protocolo de Entrenamiento con Tooltips -->
-        <div class="neuro-section">
-            <h2>Protocolo de Entrenamiento Arcano</h2>
+        <section class="arcane-section">
+            <h2>Teoría de la Triada Infernal: Fundamentos Metafísicos</h2>
+            <p>La dominación efectiva de Cerbero requiere comprender su naturaleza trifásica, descrita en los <span class="tooltip-term">Papiros de la Duat
+                <span class="tooltip-text">Textos funerarios egipcios que mencionan guardianes liminales (circa 1500 a.C.)</span>
+            </span>. Esta trinidad se manifiesta en:</p>
             
-            <h3>Fase Lunar: Sincronización Hemisférica</h3>
-            <img src="https://www.metmuseum.org/toah/images/hb/hb_06.1021.231.jpg" 
-                 alt="Vasija griega con escenas de rituales órficos" 
-                 class="training-diagram">
-
             <div class="hemisphere-grid">
                 <div>
-                    <h4>Entrenamiento del Guerrero</h4>
+                    <h3>1. La Bestia Primigenia</h3>
+                    <ul class="interactive-list">
+                        <li>Fuerza telúrica desatada</li>
+                        <li>Instinto de protección territorial</li>
+                        <li>Conciencia colectiva canina</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>2. El Vigilante Umbral</h3>
+                    <ul class="interactive-list">
+                        <li>Percepción interdimensional</li>
+                        <li>Juicio moral arquetípico</li>
+                        <li>Conocimiento liminal</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>3. El Espejo Alquímico</h3>
+                    <ul class="interactive-list">
+                        <li>Reflejo de las sombras del dominador</li>
+                        <li>Catalizador de transformación personal</li>
+                        <li>Puerta a los misterios eleusinos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="arcane-section">
+            <h2>Protocolo de Entrenamiento Arcano (Versión Extendida)</h2>
+            
+            <div class="hemisphere-grid">
+                <div>
+                    <h3>Fase Lunar: Preparación del Dominador</h3>
                     <ol class="interactive-list">
                         <li>
-                            <span class="tooltip-term">Combate contra sombras estigias
-                                <span class="tooltip-text">Lucha contra proyecciones de miedos ancestrales.</span>
-                            </span> (3 ciclos lunares)
-                        </li>
-                        <li>
-                            <span class="tooltip-term">Dieta de carbón volcánico
-                                <span class="tooltip-text">Alimentación ritual para absorber energía de la tierra.</span>
+                            <span class="tooltip-term">Purificación por los cuatro elementos
+                                <span class="tooltip-text">Ritual de 40 días con ayunos y exposición controlada a elementos naturales</span>
                             </span>
                         </li>
                         <li>
-                            <span class="tooltip-term">Meditación en campos de asfódelos
-                                <span class="tooltip-text">Práctica para conectar con el inframundo.</span>
+                            <span class="tooltip-term">Invocación de Hecate
+                                <span class="tooltip-text">Ceremonias nocturnas en encrucijadas durante luna nueva</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="tooltip-term">Forja del collar de obsidiana
+                                <span class="tooltip-text">Artificio mágico que canaliza energías ctónicas</span>
                             </span>
                         </li>
                     </ol>
                 </div>
 
                 <div>
-                    <h4>Entrenamiento del Vigilante</h4>
+                    <h3>Fase Solar: Dominación Activa</h3>
                     <ol class="interactive-list">
                         <li>
-                            <span class="tooltip-term">Observación del río Leteo
-                                <span class="tooltip-text">Ejercicio para purificar la memoria colectiva.</span>
-                            </span> (7 días/noches)
-                        </li>
-                        <li>
-                            <span class="tooltip-term">Inmersión en nieblas arcónticas
-                                <span class="tooltip-text">Exposición a energías de entidades superiores.</span>
+                            <span class="tooltip-term">Prueba del éter estigio
+                                <span class="tooltip-text">Inmersión en aguas del Aqueronte para fortalecer voluntad</span>
                             </span>
                         </li>
                         <li>
-                            <span class="tooltip-term">Canto de mantras hiperbóreos
-                                <span class="tooltip-text">Vibraciones sonoras para alinear chakras cósmicos.</span>
+                            <span class="tooltip-term">Combate onírico
+                                <span class="tooltip-text">Lucha psíquica en planos astrales durante sueño lúcido</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="tooltip-term">Juramento de sangre uránica
+                                <span class="tooltip-text">Pacto metafísico sellado con radiaciones estelares</span>
                             </span>
                         </li>
                     </ol>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Integración de Conciencias -->
-        <div class="neuro-section">
-            <h2>Integración de Conciencias</h2>
-            <blockquote style="border-left: 5px solid #e74c3c; padding: 20px; margin: 30px 0;">
-                "El verdadero dominio de Cerbero no está en controlar sus cabezas, sino en convertirse en la cuarta cabeza invisible que las guía"
-                <footer>- Hermes Trismegisto, <cite>El Kybalion Ctónico</cite></footer>
-            </blockquote>
+        <section class="arcane-section">
+            <h2>Tratado de Simbología Cerberiana</h2>
+            <div class="hemisphere-grid">
+                <div>
+                    <h3>Atributos Físicos</h3>
+                    <ul class="interactive-list">
+                        <li>Cabezas trifrontales: Pasado/Presente/Futuro</li>
+                        <li>Melena ígnea: Transformación alquímica</li>
+                        <li>Cola serpentina: Sabiduría ctónica</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Atributos Metafísicos</h3>
+                    <ul class="interactive-list">
+                        <li>Aliento estigio: Disolución de ilusiones</li>
+                        <li>Mirada tridimensional: Visión hiperbórea</li>
+                        <li>Rugido primordial: Vibración creadora</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-            <h3>Técnicas de Fusión</h3>
-            <ul class="interactive-list">
-                <li>
-                    <span class="tooltip-term">Ritual de vinculación onírica
-                        <span class="tooltip-text">Conexión con el subconsciente de la bestia mediante sueños lúcidos.</span>
-                    </span>
-                </li>
-                <li>
-                    <span class="tooltip-term">Simbiosis con energías telúricas
-                        <span class="tooltip-text">Alineación con fuerzas geológicas y electromagnéticas.</span>
-                    </span>
-                </li>
-                <li>
-                    <span class="tooltip-term">Inversión de polaridades alquímicas
-                        <span class="tooltip-text">Transformación de energía destructiva en creativa.</span>
-                    </span>
-                </li>
-            </ul>
-        </div>
-    </div>
+        <section class="arcane-section">
+            <h2>Tratamiento de Riesgos y Contingencias</h2>
+            <div class="hemisphere-grid">
+                <div>
+                    <h3>Señales de Peligro</h3>
+                    <ul class="interactive-list">
+                        <li>Petrificación de extremidades</li>
+                        <li>Manifestación de fuego fatuo</li>
+                        <li>Distorsión temporal localizada</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Protocolos de Emergencia</h3>
+                    <ul class="interactive-list">
+                        <li>Invocación de Hermes Psicopompo</li>
+                        <li>Uso de espejos de obsidiana</li>
+                        <li>Canto de mantras hiperbóreos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </article>
 </body>
 </html>
