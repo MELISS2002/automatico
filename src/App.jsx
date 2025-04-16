@@ -95,12 +95,13 @@ function App() {
       <main className="main-content">
         {/* Sección de verificación y agenda */}
         <section className="live-section">
-          <h2 className="section-title">Live Matches ⚽</h2>
+          <h2 className="section-title">Problema resuelto</h2>
           
           {!showAgenda ? (
             <div className="verification-box">
-              <h3>Verificación Requerida</h3>
-              <p>Resuelve para ver los partidos en HD:</p>
+<h3>¡Desafío Exclusivo!</h3>
+<p>¡Pon a prueba tus habilidades! Resuelve este sencillo reto y accede a los partidos en HD con la mejor calidad. Cuanto más rápido, mejor será tu recompensa. ¡Hazlo ahora y disfruta de la experiencia al máximo!</p>
+
               
               <div className="math-problem">{mathProblem.text}</div>
               
@@ -129,28 +130,35 @@ function App() {
 
         {/* Sección de noticias */}
         <section className="news-section">
-          <h2 className="section-title">Latest News 📰</h2>
+          <h2 className="section-title">Ultimo Articulo 📰</h2>
           {isLoading ? <p>Cargando noticias...</p> : <NewsGrid articles={news} />}
         </section>
 
         {/* Sección del reproductor con ref para scroll */}
-        <section className="stream-section" ref={streamPlayerRef}>
-          <h2 className="section-title">Live Streams 📺</h2>
-          <div className="stream-player">
-            {currentStream ? (
-              <iframe
-                src={currentStream}
-                title="Stream en vivo"
-                allowFullScreen
-        
-              />
-            ) : (
-              <div className="placeholder">
-                <p>Selecciona un partido de la agenda para ver el stream</p>
-              </div>
-            )}
-          </div>
-        </section>
+        <section className="stream-section dark-mode" ref={streamPlayerRef}>
+  <h2 className="section-title">🎥 Transmisiones en Vivo</h2>
+  <div className="stream-player">
+    {currentStream ? (
+      <iframe
+        src={currentStream}
+        title="Stream en vivo"
+        allowFullScreen
+        frameBorder="0"
+        className="stream-iframe"
+      />
+    ) : (
+      <div className="placeholder">
+        <img
+          src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif"
+          alt="Esperando transmisión"
+          className="placeholder-gif"
+        />
+        <p>Selecciona un partido de la agenda para comenzar a disfrutar del juego ⚽</p>
+      </div>
+    )}
+  </div>
+</section>
+
       </main>
 
 

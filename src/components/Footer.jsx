@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>© {new Date().getFullYear()} SportsLive. Todos los derechos reservados.</p>
+        <p>© {new Date().getFullYear()} UltimoLive. Todos los derechos reservados.</p>
         <nav>
           <ul className="legal-links">
             <li>

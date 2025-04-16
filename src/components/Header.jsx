@@ -31,14 +31,13 @@ function Header() {
     <header className={`app-header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <Link to="/" className="logo" onClick={closeMenu}>
-          <span className="logo-highlight">Sports</span>Live
+          <span className="logo-highlight">Ultimo</span>Live
         </Link>
 
         <nav className={`desktop-nav ${isOpen ? 'mobile-active' : ''}`}>
           <ul>
-            <li><Link to="/" onClick={closeMenu}>Live Matches</Link></li>
-            <li><Link to="/news" onClick={closeMenu}>News</Link></li>
-            <li><Link to="/schedule" onClick={closeMenu}>Schedule</Link></li>
+            <li><Link to="/" onClick={closeMenu}>Inicio</Link></li>
+         
           </ul>
         </nav>
 

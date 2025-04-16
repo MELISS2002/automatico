@@ -1,4 +1,14 @@
 [
+  {
+    "slug": "belleza-2025-estetica-bienestar",
+    "title": "la estética sutil y el bienestar como símbolos de estatus",
+    "author": "Estilo & Vida Moderna",
+    "date": "2025-04-16",
+    "excerpt": "Explora cómo la belleza se transforma en 2025 con un enfoque en lo sutil, ",
+    "thumbnail": "/posts/belleza/belleza.jpg",
+    "htmlPath": "/posts/belleza/index.html"
+  }
+,  
     {
       "slug": "reinvencion-personalidad",
       "title": "La Ciencia de la Reinvención Personal",
@@ -36,5 +46,34 @@
     "thumbnail": "/posts/articulo/reinvencion-thumb.jpg",
     "htmlPath": "/posts/articulo/index.html"
   
+},
+{
+  "slug": "pollo-blanco-o-amarillo",
+  "title": "El Gran Debate: ¿Pollo Blanco o Amarillo?",
+  "author": "Equipo de Nutrición Consciente",
+  "date": "2024-03-15",
+  "excerpt": "Descubre la verdad detrás del color del pollo y toma decisiones informadas",
+  "thumbnail": "https://blob.luznoticias.mx/images/2024/02/24/pollos-principal-focus-0-0-966-544.jpg",
+  "htmlPath": "/posts/pollo/index.html"
+},
+{
+  "slug": "remontadas-historicas",
+  "title": " Momentos Épicos que Conmocionaron al Mundo",
+  "author": "Redacción Deportiva Total",
+  "date": "2025-04-16",
+  "excerpt": "Revive las remontadas más inolvidables del Real Madrid en la champions league",
+  "thumbnail": "https://i.ytimg.com/vi/dbXQWQcET4o/maxresdefault.jpg",
+  "htmlPath": "/posts/realremontadas/index.html"
+},
+{
+  "slug": "maximalismo-decoracion-primavera-2025",
+  "title": "¿El maximalismo está dominando la decoración?",
+  "author": "Redacción de Decoración y Tendencias",
+  "date": "2025-04-16",
+  "excerpt": "Descubre cómo el maximalismo está revolucionando la decoración de hogares en la primavera de 2025",
+  "thumbnail": "https://i.pinimg.com/originals/ec/fa/92/ecfa92103caf7a1d9199a4d7d33ca5d8.jpg",
+  "htmlPath": "/posts/maximalismo/index.html"
 }
+
+
   ]
