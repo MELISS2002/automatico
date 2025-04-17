@@ -6,6 +6,7 @@ import App from './App'; // Tu App original ahora es Home
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Terms from './pages/Terms';
+import Gana from './pages/gana';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         {/* Todas las rutas usan el Layout */}
         <Route path="/" element={<Layout />}>
           <Route index element={<App />} />
+          <Route path="gana" element={<Gana />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="terms" element={<Terms />} />

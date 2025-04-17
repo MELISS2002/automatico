@@ -37,7 +37,7 @@ function Header() {
         <nav className={`desktop-nav ${isOpen ? 'mobile-active' : ''}`}>
           <ul>
             <li><Link to="/" onClick={closeMenu}>Inicio</Link></li>
-         
+            <li><Link to="/gana" onClick={closeMenu}>Trucos para Ganar </Link></li>
           </ul>
         </nav>
 

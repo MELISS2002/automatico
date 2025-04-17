@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './NewsGrid.css';
+import './NewsGridjana.css';
 
 const NewsGrid = () => {
   const [articles, setArticles] = useState([]);
@@ -10,7 +10,7 @@ const NewsGrid = () => {
     const loadArticles = async () => {
       try {
         // Asegurar que la ruta del manifiesto es correcta
-        const response = await fetch('/posts/home.json');
+        const response = await fetch('/posts/gana.json');
         if (!response.ok) throw new Error('HTTP error ' + response.status);
         const data = await response.json();
         setArticles(data);

@@ -37,7 +37,7 @@ function App() {
   useEffect(() => {
     const loadNews = async () => {
       try {
-        const response = await fetch('/posts/manifest.json');
+        const response = await fetch('/posts/home.json');
         const data = await response.json();
         setNews(data);
       } catch (err) {
