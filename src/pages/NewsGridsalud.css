@@ -1,0 +1,156 @@
+.news-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+  }
+  
+  .news-card {
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  @media (min-width: 640px) {
+    .news-grid {
+      gap: 2rem;
+      padding: 1.5rem;
+    }
+  }
+  
+  .news-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .article-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin: 0.75rem 0;
+    color: #1a1a1a;
+  }
+  
+  .meta-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .excerpt {
+    color: #444;
+    flex-grow: 1;
+    margin: 0.5rem 0;
+  }
+  
+  .read-more {
+    background: #0066cc;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .read-more:hover {
+    background: #0052a3;
+  }
+  
+  /* Vista de artículo completo */
+  .article-viewer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    color: #0066cc;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+  
+  .article-header {
+    margin-bottom: 2rem;
+  }
+  
+  .article-header h1 {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+  }
+  
+  .html-content {
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .html-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .html-content p {
+    margin: 1rem 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .news-container {
+      padding: 1rem;
+    }
+    
+    .news-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .article-viewer {
+      padding: 1rem;
+    }
+    
+    .article-header h1 {
+      font-size: 1.5rem;
+    }
+  }

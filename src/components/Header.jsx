@@ -38,6 +38,7 @@ function Header() {
           <ul>
             <li><Link to="/" onClick={closeMenu}>Inicio</Link></li>
             <li><Link to="/gana" onClick={closeMenu}>Trucos para Ganar </Link></li>
+            <li><Link to="/salud" onClick={closeMenu}>Salud Natural </Link></li>
           </ul>
         </nav>
 

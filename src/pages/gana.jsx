@@ -35,39 +35,65 @@ function Gana() {
           </p>
 
           <div className="tip-block">
-            <h3>🛒 1. Vende Productos o Servicios Online</h3>
-            <p>
-              Utiliza plataformas como MercadoLibre, Etsy o Facebook Marketplace para ofrecer productos físicos. También puedes vender servicios como edición de video, diseño gráfico o mentorías personalizadas a través de tu sitio web o redes sociales.
-            </p>
-          </div>
+  <h3>🛒 1. Vende Productos o Servicios Online</h3>
+  <p>
+    El comercio digital ha democratizado la posibilidad de emprender desde casa.
+    Puedes comenzar vendiendo productos físicos como ropa, artesanías, accesorios personalizados
+    o incluso productos de segunda mano en plataformas como <strong>MercadoLibre, Etsy</strong> o <strong>Facebook Marketplace</strong>.
+    Además, si tienes conocimientos especializados, también puedes <strong>ofrecer servicios digitales</strong> como
+    edición de video, diseño gráfico, asesorías en redes sociales, mentorías personalizadas, clases particulares
+    o creación de contenido. Crea tu propia tienda en línea, utiliza redes sociales para llegar a tu audiencia
+    y brinda una experiencia de usuario única.
+  </p>
+</div>
 
-          <div className="tip-block">
-            <h3>🤝 2. Marketing de Afiliados</h3>
-            <p>
-              Promociona productos de terceros en tus redes sociales, blog o canal de YouTube y recibe comisiones por cada venta. Sitios como Hotmart, Amazon Afiliados y ClickBank son ideales para comenzar.
-            </p>
-          </div>
+<div className="tip-block">
+  <h3>🤝 2. Marketing de Afiliados</h3>
+  <p>
+    El marketing de afiliados te permite ganar dinero recomendando productos o servicios
+    de otras marcas. Recibes una comisión cada vez que alguien compra a través de tu enlace.
+    Puedes usar tus <strong>redes sociales, blog, canal de YouTube o newsletter</strong> para promocionar productos que uses
+    o en los que creas. Plataformas como <strong>Hotmart, Amazon Afiliados</strong> y <strong>ClickBank</strong> son perfectas para comenzar,
+    y puedes elegir nichos que te apasionen: tecnología, bienestar, cursos, gadgets, etc.
+    Es un modelo escalable y sin necesidad de inventario propio.
+  </p>
+</div>
 
-          <div className="tip-block">
-            <h3>🎓 3. Crea Cursos Online</h3>
-            <p>
-              Si dominas algún tema como fotografía, programación o idiomas, puedes armar un curso en plataformas como Udemy o Teachable y venderlo una y otra vez sin esfuerzo adicional.
-            </p>
-          </div>
+<div className="tip-block">
+  <h3>🎓 3. Crea y Vende Cursos Online</h3>
+  <p>
+    Compartir tus conocimientos puede convertirse en una fuente constante de ingresos pasivos.
+    Si eres experto en un tema como <strong>fotografía, cocina, idiomas, finanzas, programación o desarrollo personal</strong>,
+    puedes estructurar ese conocimiento en módulos y crear un curso online. Utiliza plataformas como <strong>Udemy,
+    Domestika, Coursera</strong> o <strong>Teachable</strong> para publicarlo. Lo mejor es que puedes venderlo miles de veces sin tener
+    que grabarlo nuevamente. Solo necesitas un buen guion, contenido claro, práctica, y constancia para promocionarlo.
+  </p>
+</div>
 
-          <div className="tip-block">
-            <h3>💼 4. Trabaja como Freelancer</h3>
-            <p>
-              Ofrece tus habilidades como redactor, traductor, diseñador web o programador en plataformas como Fiverr, Freelancer o Workana. ¡Hay demanda para todo tipo de talento!
-            </p>
-          </div>
+<div className="tip-block">
+  <h3>💼 4. Trabaja como Freelancer</h3>
+  <p>
+    Si tienes habilidades profesionales, puedes convertirte en tu propio jefe ofreciendo tus servicios
+    como freelancer. Algunas de las áreas más solicitadas incluyen: <strong>redacción, traducción, diseño gráfico, programación,
+    marketing digital, gestión de redes sociales, soporte técnico, y más</strong>.
+    Existen plataformas como <strong>Fiverr, Freelancer, Upwork</strong> y <strong>Workana</strong> donde puedes crear tu perfil,
+    mostrar tu portafolio y comenzar a recibir encargos desde cualquier parte del mundo.
+    Es una excelente opción para trabajar por proyectos, ganar en dólares y escalar poco a poco.
+  </p>
+</div>
 
-          <div className="tip-block">
-            <h3>📊 5. Realiza Encuestas Remuneradas</h3>
-            <p>
-              Plataformas como Toluna, Swagbucks y LifePoints te pagan por dar tu opinión en encuestas de mercado. No es mucho dinero, pero es fácil y rápido.
-            </p>
-          </div>
+<div className="tip-block">
+  <h3>📊 5. Realiza Encuestas Remuneradas y Microtareas</h3>
+  <p>
+    Aunque no es una fuente de ingresos elevada, participar en encuestas pagadas o completar
+    microtareas online puede brindarte un ingreso extra sin complicaciones.
+    Plataformas como <strong>Toluna, Swagbucks, LifePoints</strong> o <strong>ySense</strong> te pagan por compartir tu opinión
+    sobre productos, hábitos de consumo, y tendencias del mercado. También puedes probar tareas pequeñas como
+    clasificar imágenes, probar apps o responder trivias. Es ideal para estudiantes o personas que quieren
+    aprovechar tiempos muertos de forma productiva.
+  </p>
+</div>
+
 
           <div className="call-to-action">
             <p>🔎 Explora más trucos en nuestros artículos a continuación y conviértete en tu propio jefe desde casa. ¡Tu éxito online comienza hoy!</p>

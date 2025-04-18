@@ -7,6 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Terms from './pages/Terms';
 import Gana from './pages/gana';
+import Salud from './pages/salud';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Layout />}>
           <Route index element={<App />} />
           <Route path="gana" element={<Gana />} />
+          <Route path="salud" element={<Salud />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="terms" element={<Terms />} />
