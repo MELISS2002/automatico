@@ -79,6 +79,53 @@
             padding-bottom: 0.3rem;
             margin-top: 2.5rem;
         }
+        .social-sharing {
+            margin: 3rem 0;
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--light-bg);
+            border-radius: 8px;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-buttons a {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .fb-share {
+            background-color: #3b5998;
+        }
+
+        .wa-share {
+            background-color: #25D366;
+        }
+
+        .tw-share {
+            background-color: #1DA1F2;
+        }
+
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 1rem;
+            }
+            
+            .social-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     </style>
 </head>
 <body>
@@ -146,6 +193,20 @@
         </div>
 
         <p>Entonces ya no me queda mucho más que decirles y me están avisando que se está acabando la batería, así que… Pero la batería mía no se ha acabado, solamente la del celular. Nos vemos y quiero decirles que la verdad siempre triunfa.</p>
+    </div>
+    <div class="social-sharing">
+        <p>¿Te gustó este artículo? ¡Compártelo en tus redes!</p>
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://automatico.pages.dev/" target="_blank" class="fb-share">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="https://api.whatsapp.com/send?text=Mira este artículo sobre acidez estomacal: https://automatico.pages.dev/" target="_blank" class="wa-share">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://twitter.com/intent/tweet?url=https://automatico.pages.dev/&text=Soluciones naturales para acidez estomacal y gastritis" target="_blank" class="tw-share">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+        </div>
     </div>
 </body>
 </html>
