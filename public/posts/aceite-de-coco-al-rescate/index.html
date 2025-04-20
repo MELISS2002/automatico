@@ -1,7 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aceite de Coco al Rescate</title>
+<style>
+    body {
+        font-family: sans-serif;
+        line-height: 1.6;
+        color: #333;
+        margin: 20px;
+    }
+    h1, h2, h3 {
+        color: #0056b3;
+    }
+    .important {
+        font-weight: bold;
+        color: #d35400;
+    }
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+    .social-sharing {
+        margin: 3rem 0;
+        text-align: center;
+        padding: 1.5rem;
+        background-color: var(--light-bg);
+        border-radius: 8px;
+    }
+
+    .social-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .social-buttons a {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        color: white;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+    .fb-share {
+        background-color: #3b5998;
+    }
+
+    .wa-share {
+        background-color: #25D366;
+    }
+
+    .tw-share {
+        background-color: #1DA1F2;
+    }
+
+    @media (max-width: 768px) {
+        .article-container {
+            padding: 1rem;
+        }
+        
+        .social-buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
 </head>
 <body>
 
@@ -74,5 +142,19 @@
 
 <p>El aceite de coco es un alimento con una larga historia de uso y numerosos beneficios respaldados por la ciencia. A pesar de los ataques y la desinformación, sus propiedades únicas y sus efectos positivos en el metabolismo y la salud son innegables. Recuerden siempre comenzar con dosis pequeñas y aumentarlas gradualmente para permitir que el cuerpo se adapte a sus efectos de limpieza.</p>
 
+<div class="social-sharing">
+    <p>¿Te gustó este artículo? ¡Compártelo en tus redes!</p>
+    <div class="social-buttons">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://automatico.pages.dev/salud" target="_blank" class="fb-share">
+            <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+        <a href="https://api.whatsapp.com/send?text=Mira este artículo sobre acidez estomacal: https://automatico.pages.dev/salud" target="_blank" class="wa-share">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://twitter.com/intent/tweet?url=https://automatico.pages.dev/salud" target="_blank" class="tw-share">
+            <i class="fab fa-twitter"></i> Twitter
+        </a>
+    </div>
+</div>
 </body>
 </html>
