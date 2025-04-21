@@ -202,14 +202,14 @@ function App() {
         className="stream-iframe"
       />
     ) : (
-      <div className="placeholder">
+      <center>    <div className="placeholder">
         <img
           src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif"
           alt="Esperando transmisión"
           className="placeholder-gif"
         />
         <p>Selecciona un partido de la agenda para comenzar a disfrutar del juego ⚽</p>
-      </div>
+      </div></center>
     )}
   </div>
 </section>
