@@ -25,13 +25,68 @@ function App() {
   function generateMathProblem() {
     const num1 = Math.floor(Math.random() * 10) + 1;
     const num2 = Math.floor(Math.random() * 10) + 1;
+    const operation = Math.floor(Math.random() * 4); // 0: suma, 1: resta, 2: multiplicación, 3: división
+    let problemText;
+    let correctAnswer;
+    let firstNumber = num1;
+    let secondNumber = num2;
+    let generatedDividend;
+    let generatedDivisor;
+  
+    switch (operation) {
+     case 0:
+      problemText = `${firstNumber} + ${secondNumber} = ?`;
+      correctAnswer = firstNumber + secondNumber;
+      break;
+     case 1:
+      // Asegurar que el resultado no sea negativo para un nivel básico
+      firstNumber = Math.max(num1, num2);
+      secondNumber = Math.min(num1, num2);
+      problemText = `${firstNumber} - ${secondNumber} = ?`;
+      correctAnswer = firstNumber - secondNumber;
+      break;
+     case 2:
+      problemText = `${firstNumber} * ${secondNumber} = ?`;
+      correctAnswer = firstNumber * secondNumber;
+      break;
+     case 3:
+      // Generar números que den una división entera dentro de un rango razonable
+      correctAnswer = Math.floor(Math.random() * 10) + 1;
+      generatedDivisor = Math.floor(Math.random() * 5) + 1;
+      generatedDividend = correctAnswer * generatedDivisor;
+      firstNumber = generatedDividend;
+      secondNumber = generatedDivisor;
+      problemText = `${generatedDividend} / ${generatedDivisor} = ?`;
+      break;
+     default:
+      problemText = "";
+      correctAnswer = 0;
+    }
+  
     return {
-      num1,
-      num2,
-      answer: num1 + num2,
-      text: `${num1} + ${num2} = ?`
+     num1: firstNumber,
+     num2: secondNumber,
+     answer: correctAnswer,
+     text: problemText,
+     operation: ["suma", "resta", "multiplicación", "división"][operation],
+     checkAnswer: (userAnswer) => {
+      if (parseInt(userAnswer) === correctAnswer) {
+       return true;
+      } else {
+       const operationName = ["sumando", "restando", "multiplicando", "dividiendo"][operation];
+       const funnyMessages = [
+        `¡Uy! Casi le atinas, pero ${firstNumber} ${operationName} ${secondNumber} no da eso. ¡Inténtalo otra vez antes de que los números se escapen!`,
+        `Hmm, parece que los números están un poco rebeldes hoy. ¡Dale otra oportunidad a este acertijo matemático!`,
+        `¡No te rindas! Incluso los genios tienen un mal día con las cuentas. ¿Será este tu día de gloria numérica?`,
+        `Esa respuesta está... interesante. ¡Pero no es la que estamos buscando! Prueba otra vez, ¡quizás los números te tengan más cariño ahora!`,
+        `¡Cuidado! Parece que tus cálculos se fueron de paseo. ¡Tráelos de vuelta e inténtalo de nuevo!`,
+       ];
+       const randomIndex = Math.floor(Math.random() * funnyMessages.length);
+       return funnyMessages[randomIndex];
+      }
+     },
     };
-  }
+   }
 
   // Cargar noticias
   useEffect(() => {
@@ -100,7 +155,7 @@ function App() {
           {!showAgenda ? (
             <div className="verification-box">
 <h3>¡Desafío Exclusivo!</h3>
-<p>¡Pon a prueba tus habilidades! Resuelve este sencillo reto y accede a los partidos en HD con la mejor calidad. Cuanto más rápido, mejor será tu recompensa. ¡Hazlo ahora y disfruta de la experiencia al máximo!</p>
+<p>¡Desafío en Marcha! Pon a prueba tu ingenio con este reto ágil y descubre una recompensa aún más gratificante. ¡Acepta el desafío ahora y eleva tu experiencia al máximo!</p>
 
               
               <div className="math-problem">{mathProblem.text}</div>
