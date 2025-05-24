@@ -16,41 +16,44 @@
     <meta name="twitter:title" content="Sistema Nervioso y Energía: La Conexión Metabólica">
     <meta name="twitter:description" content="Aprende sobre tu sistema nervioso, metabolismo, y cómo recargar tu energía con consejos basados en años de experiencia.">
     <meta name="twitter:image" content="https://automatico.pages.dev/posts/sistema-nervioso-energia/ff.png"> 
-        <style>
+    <style>
+        /* Base Styles - para pantallas grandes */
         body {
             font-family: 'Arial', sans-serif;
-            line-height: 1.7; /* Ligeramente más espaciado para mejor lectura */
+            line-height: 1.7;
             margin: 0;
-            padding: 25px; /* Más padding para los bordes */
-            background-color: #fcfcfc; /* Un blanco más suave */
+            padding: 25px; /* Padding base para escritorio */
+            background-color: #fcfcfc;
             color: #333;
+            box-sizing: border-box; /* Incluir padding y border en el ancho/alto total */
         }
         .container {
-            max-width: 900px; /* Un poco más ancho para el contenido largo */
+            max-width: 900px; /* Limita el ancho en pantallas grandes */
+            width: 95%; /* Asegura que ocupe casi todo el ancho en pantallas más pequeñas */
             margin: auto;
             background-color: #ffffff;
-            padding: 40px; /* Más padding interno */
-            border-radius: 12px; /* Bordes más suaves */
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+            padding: 40px; /* Padding base para escritorio */
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
         }
         h1, h2, h3, h4 {
-            color: #1a4a72; /* Tono de azul más profundo */
-            margin-top: 35px; /* Más espacio arriba de los títulos */
-            margin-bottom: 20px; /* Más espacio abajo de los títulos */
+            color: #1a4a72;
+            margin-top: 35px;
+            margin-bottom: 20px;
             line-height: 1.3;
         }
         h1 {
             text-align: center;
-            font-size: 2.8em; /* Título más grande */
+            font-size: 2.8em;
             color: #007bff;
             padding-bottom: 15px;
             border-bottom: 1px solid #e0e0e0;
         }
         h2 {
-            font-size: 2.2em; /* Título secundario más grande */
+            font-size: 2.2em;
             border-bottom: 2px solid #e9ecef;
             padding-bottom: 12px;
-            margin-top: 40px; /* Más espacio para separación */
+            margin-top: 40px;
         }
         h3 {
             font-size: 1.7em;
@@ -66,7 +69,7 @@
             margin-bottom: 18px;
         }
         ul, ol {
-            padding-left: 30px; /* Más indentación para listas */
+            padding-left: 30px;
             margin-bottom: 20px;
         }
         li {
@@ -74,11 +77,11 @@
         }
         .important {
             font-weight: bold;
-            color: #e74c3c; /* Rojo vibrante para destacar */
+            color: #e74c3c;
         }
         .highlight-box {
-            background-color: #eaf6fd; /* Azul claro para destacar */
-            border-left: 6px solid #007bff; /* Borde más visible */
+            background-color: #eaf6fd;
+            border-left: 6px solid #007bff;
             padding: 20px;
             margin: 30px 0;
             border-radius: 8px;
@@ -86,14 +89,14 @@
         }
         .image-container {
             text-align: center;
-            margin: 40px 0; /* Más espacio alrededor de las imágenes */
+            margin: 40px 0;
         }
         .image-container img {
-            max-width: 100%;
-            max-height:500px;
-            border-radius: 10px; /* Bordes más redondeados */
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra más definida */
-            transition: transform 0.3s ease; /* Pequeña animación al pasar el ratón */
+            max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
         .image-container img:hover {
             transform: scale(1.02);
@@ -103,7 +106,7 @@
             border: 1px dashed #cccccc;
             padding: 25px;
             text-align: center;
-            margin: 40px 0; /* Más espacio para los anuncios */
+            margin: 40px 0;
             color: #666;
             font-style: italic;
             font-size: 1.1em;
@@ -118,24 +121,24 @@
         .social-buttons {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap; /* Permite que los botones se envuelvan en pantallas pequeñas */
+            flex-wrap: wrap;
             gap: 15px;
             margin-top: 20px;
         }
         .social-buttons a {
             display: inline-flex;
             align-items: center;
-            padding: 12px 25px; /* Botones más grandes */
+            padding: 12px 25px;
             border-radius: 5px;
             color: white;
             text-decoration: none;
-            font-size: 16px; /* Texto más grande en los botones */
+            font-size: 16px;
             transition: all 0.3s ease;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         .social-buttons a:hover {
             opacity: 0.9;
-            transform: translateY(-3px); /* Efecto hover más pronunciado */
+            transform: translateY(-3px);
         }
         .fb-share { background-color: #3b5998; }
         .wa-share { background-color: #25D366; }
@@ -150,6 +153,139 @@
             font-size: 1.1em;
             font-style: italic;
         }
+
+        /* Estilos para el botón flotante de Home */
+        .home-float-button {
+            position: fixed; /* Lo hace flotar */
+            bottom: 30px; /* Distancia desde abajo */
+            left: 30px; /* Distancia desde la izquierda */
+            background-color: #007bff; /* Color de fondo */
+            color: white; /* Color del texto/icono */
+            border: none;
+            border-radius: 50%; /* Lo hace redondo */
+            width: 55px; /* Ancho */
+            height: 55px; /* Alto */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px; /* Tamaño del icono */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            cursor: pointer;
+            text-decoration: none; /* Quita el subrayado del enlace */
+            z-index: 1000; /* Asegura que esté por encima de otros elementos */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .home-float-button:hover {
+            background-color: #0056b3; /* Color al pasar el ratón */
+            transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+        }
+
+        /* --- MEDIA QUERIES PARA RESPONSIVIDAD --- */
+
+        /* Para pantallas más pequeñas (tablets y móviles) */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px; /* Reduce el padding global del body */
+            }
+            .container {
+                padding: 20px; /* Reduce el padding interno del contenedor */
+                border-radius: 8px; /* Bordes un poco menos redondeados */
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra más suave */
+            }
+            h1 {
+                font-size: 2em; /* Reduce el tamaño del título principal */
+                margin-top: 25px;
+                margin-bottom: 15px;
+            }
+            h2 {
+                font-size: 1.8em; /* Reduce el tamaño de los títulos H2 */
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+            h3 {
+                font-size: 1.4em; /* Reduce el tamaño de los títulos H3 */
+                margin-top: 20px;
+            }
+            h4 {
+                font-size: 1.1em; /* Reduce el tamaño de los títulos H4 */
+                margin-top: 15px;
+            }
+            p, ul, ol, li {
+                font-size: 0.95em; /* Ligeramente más pequeño para el texto base */
+                line-height: 1.6; /* Mantener buena altura de línea */
+            }
+            .highlight-box {
+                padding: 15px; /* Reduce el padding de las cajas destacadas */
+                margin: 20px 0;
+            }
+            .image-container {
+                margin: 25px 0; /* Reduce el margen de las imágenes */
+            }
+            .adsense-placeholder {
+                margin: 30px 0; /* Ajusta el margen de los anuncios */
+                padding: 20px;
+            }
+            .social-sharing {
+                margin: 30px 0 20px;
+                padding-top: 20px;
+            }
+            .social-buttons a {
+                padding: 10px 20px; /* Reduce el padding de los botones sociales */
+                font-size: 14px;
+            }
+            .conclusion {
+                margin-top: 30px;
+                padding-top: 20px;
+                font-size: 1em;
+            }
+
+            /* Ajustes para el botón flotante en móviles */
+            .home-float-button {
+                bottom: 20px;
+                left: 20px;
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
+        }
+
+        /* Para pantallas aún más pequeñas (solo móviles) */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px; /* Más reducción de padding */
+            }
+            .container {
+                padding: 15px; /* Más reducción de padding interno */
+            }
+            h1 {
+                font-size: 1.6em; /* Título H1 aún más pequeño */
+            }
+            h2 {
+                font-size: 1.4em; /* Título H2 aún más pequeño */
+            }
+            h3 {
+                font-size: 1.2em; /* Título H3 aún más pequeño */
+            }
+            h4 {
+                font-size: 1em; /* Título H4 aún más pequeño */
+            }
+            p, ul, ol, li {
+                font-size: 0.9em; /* Texto base más pequeño para asegurar que quepa bien */
+                line-height: 1.5; /* Ligeramente más apretado para móviles pequeños */
+            }
+            ul, ol {
+                padding-left: 20px; /* Reduce indentación de listas */
+            }
+            .home-float-button {
+                bottom: 15px;
+                left: 15px;
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -351,5 +487,7 @@
             </div>
         </article>
     </div>
+    <a href="https://automatico.pages.dev/" class="home-float-button" aria-label="Volver al inicio">
+        <i class="fas fa-home"></i> </a>
 </body>
 </html>
