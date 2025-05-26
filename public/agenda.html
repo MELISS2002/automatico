@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Deportiva</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.1.1/luxon.min.js"></script>
+    <style>
+        .title-agenda {
+            background-color: #8baf1c;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .menu li {
+            padding-left: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .toggle-submenu {
+            cursor: pointer;
+        }
+        .submenu {
+            display: none;
+            margin-left: 4rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="title-agenda"></div>
+    <ul class="menu"></ul>
+
+    <script>
+        $(document).ready(function () {
+            obtenerAgenda();
+            setInterval(refrescarAgenda, 60000);
+        });
+
+        function convertToUserTimeZone(utcHour) {
+            const DateTime = luxon.DateTime;
+            const utcDateTime = DateTime.fromISO(utcHour, { zone: "America/Lima" });
+            const localDateTime = utcDateTime.toLocal();
+            return localDateTime.toFormat("HH:mm");
+        }
+
+        function obtenerAgenda() {
+            const agendaUrl = "https://corsproxy.io/?url=https://golazoplay.com/agenda.json";
+            const backupAgendaUrl = "https://corsproxy.io/?url=https://belkaperu.github.io/belkafut/agenda.json";
+            
+            $.getJSON(agendaUrl)
+                .done(function (result) {
+                    if (result.data && result.data.length > 0) {
+                        let dateCompleted = moment(result.data[0].attributes.date_diary).format("LL");
+                        $(".title-agenda").html("Agenda Deportiva " + dateCompleted);
+                        processAgendaData(result.data);
+                    } else {
+                        cargarCopiaLocal(backupAgendaUrl);
+                    }
+                })
+                .fail(function () {
+                    cargarCopiaLocal(backupAgendaUrl);
+                });
+        }
+
+        function cargarCopiaLocal(backupAgendaUrl) {
+            $.getJSON(backupAgendaUrl)
+                .done(function (result) {
+                    if (result.data && result.data.length > 0) {
+                        let dateCompleted = moment(result.data[0].attributes.date_diary).format("LL");
+                        $(".title-agenda").html("Agenda Deportiva " + dateCompleted);
+                        processAgendaData(result.data);
+                    } else {
+                        $(".title-agenda").html("No hay agenda disponible.");
+                    }
+                })
+                .fail(function () {
+                    $(".title-agenda").html("Error al cargar la agenda.");
+                });
+        }
+
+        function processAgendaData(data) {
+            $(".menu").empty();
+            
+            data.sort((a, b) => {
+                return moment(a.attributes.diary_hour, "HH:mm").diff(moment(b.attributes.diary_hour, "HH:mm"));
+            });
+
+            $.each(data, function (key, value) {
+                let imageUrl = value.attributes.country.data != null ? 
+                    "https://img.golazoplay.com" + value.attributes.country.data.attributes.image.data.attributes.url :
+                    "https://img.golazoplay.com/uploads/sin_imagen_d36205f0e8.png";
+
+                let description = value.attributes.diary_description.replace(/^.*?:\s*/, "").trim();
+
+                let html = '<li class="pl-4 hover:bg-gray-50 rounded-lg border border-gray-200 mb-2">';
+                html += '<div class="flex items-center cursor-pointer justify-between p-2 toggle-submenu">';
+                html += '<div class="flex items-center">';
+                html += '<time class="text-center font-bold text-black bg-white rounded-lg p-2">' +
+                    convertToUserTimeZone(value.attributes.diary_hour) +
+                    '</time>';
+                html += '<img src="' + imageUrl + '" alt="" class="ml-2 object-cover h-6 w-6">';
+                html += '<span class="flex-1 ml-4 text-left font-bold text-gray-800">' +
+                    description +
+                    '</span>';
+                html += '</div>';
+                html += '<span class="text-gray-500">▼</span>';
+                html += '</div>';
+                html += '<ul class="submenu ml-16 rounded-lg divide-y divide-gray-300">';
+
+                $.each(value.attributes.embeds.data, function (i, embed) {
+                    if (embed) {
+                        var url_complete = embed.attributes.embed_iframe 
+                            ? embed.attributes.embed_iframe.replace(
+                                "/embed/eventos.html?r", 
+                                "/repro.html?r"
+                              )
+                            : "/star-plus";
+
+                        html += '<li class="w-full pt-2 pb-2">';
+                        html += '<a href="#" onclick="loadStream(\'' + url_complete + '\'); return false;" class="text-sm text-gray-700 hover:text-green-600">';
+                        html += '<span class="mr-2">▶</span>' + embed.attributes.embed_name;
+                        html += '</a></li>';
+                    }
+                });
+
+                html += '</ul>';
+                html += '</li>';
+
+                $(".menu").append(html);
+            });
+
+            $(".toggle-submenu").off("click").on("click", function() {
+                $(this).find("span").text($(this).next(".submenu").is(":visible") ? "▼" : "▲");
+                $(this).next(".submenu").slideToggle();
+            });
+        }
+
+        function loadStream(url) {
+            // Envía el URL del stream al padre (React)
+            window.parent.postMessage({
+                type: 'LOAD_STREAM',
+                url: url
+            }, '*');
+            
+            // Opcional: Cerrar el submenú después de seleccionar
+            $(this).closest('.submenu').slideUp();
+            $(this).closest('.match-item').find('.toggle-submenu span').text('▼');
+        }
+
+        function refrescarAgenda() {
+            obtenerAgenda();
+        }
+    </script>
+</body>
+</html>

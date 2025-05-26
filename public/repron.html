@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="max-age=200" http-equiv="Cache-Control">
+    <meta content="noindex,nofollow" name="robots">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+    <script>
+        (function(d,z,s){
+            s.src='https://'+d+'/401/'+z;
+            try{(document.body||document.documentElement).appendChild(s)}catch(e){}
+        })('penaikaucmu.net',7220827,document.createElement('script'));
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5634091835281348" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NC6P8CBSRW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NC6P8CBSRW');
+    </script>
+</head>
+<body>
+    <script>
+        function getParameterByName(name) {
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(location.search);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        var embedUrl = getParameterByName('embed') || getParameterByName('r');
+        if (embedUrl) {
+            document.write('<iframe allow="encrypted-media" src="' + embedUrl + 
+                         '" allowfullscreen></iframe>');
+        } else {
+            document.write('<div style="color:white;text-align:center;padding-top:50px;">' +
+                         'No se ha proporcionado URL de transmisión</div>');
+        }
+    </script>
+</body>
+</html>

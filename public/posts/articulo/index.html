@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinvención Personal 360°: La Guía Definitiva para Transformar tu Vida</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #1a73e8;
+            --accent-color: #e94f37;
+            --transition-speed: 0.3s;
+            --spacing-unit: 1rem;
+            --max-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.8;
+            color: var(--primary-color);
+            background-color: #f8f9fa;
+        }
+
+        .article-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: calc(var(--spacing-unit) * 4) var(--spacing-unit);
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: calc(var(--spacing-unit) * 6) var(--spacing-unit);
+            margin-bottom: calc(var(--spacing-unit) * 4);
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            color: var(--primary-color);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin: calc(var(--spacing-unit) * 3) 0 calc(var(--spacing-unit) * 2);
+            color: var(--secondary-color);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.35em;
+            height: 1.2em;
+            width: 5px;
+            background: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        .dynamic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+            gap: calc(var(--spacing-unit) * 2);
+            margin: calc(var(--spacing-unit) * 2) 0;
+        }
+
+        .interactive-card {
+            background: white;
+            padding: calc(var(--spacing-unit) * 2);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: all var(--transition-speed) ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .interactive-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            border-color: var(--secondary-color);
+        }
+
+        .phase-timeline {
+            position: relative;
+            padding: calc(var(--spacing-unit) * 4) 0;
+        }
+
+        .phase-step {
+            position: relative;
+            padding: calc(var(--spacing-unit) * 2);
+            margin-left: 2rem;
+            border-left: 3px solid var(--secondary-color);
+            background: rgba(26, 115, 232, 0.03);
+            border-radius: 0 8px 8px 0;
+            margin-bottom: calc(var(--spacing-unit) * 2);
+        }
+
+        .phase-step::before {
+            content: attr(data-phase);
+            position: absolute;
+            left: -2.3rem;
+            top: 1.5rem;
+            width: 2rem;
+            height: 2rem;
+            background: var(--secondary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .content-section {
+            margin: calc(var(--spacing-unit) * 4) 0;
+            padding: calc(var(--spacing-unit) * 2);
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --spacing-unit: 0.8rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            .hero-section {
+                padding: calc(var(--spacing-unit) * 3) var(--spacing-unit);
+            }
+
+            .phase-step {
+                margin-left: 1rem;
+                padding: var(--spacing-unit);
+            }
+        }
+
+        @media print {
+            .interactive-card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+
+            .phase-step {
+                background: transparent;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <article class="article-container">
+        <header class="hero-section">
+            <h1>Reinvención Personal 360°</h1>
+            <p class="subtitle">La guía completa para transformar integralmente tu vida en 12 meses</p>
+        </header>
+
+        <section class="content-section">
+            <h2>Fundamentos Científicos de la Reinvención</h2>
+            <div class="dynamic-grid">
+                <div class="interactive-card">
+                    <h3>Neuroplasticidad Aplicada</h3>
+                    <p>La capacidad del cerebro para reorganizarse mediante la formación de nuevas conexiones neuronales. Estrategias prácticas para:</p>
+                    <ul>
+                        <li>Reestructurar patrones mentales</li>
+                        <li>Crear nuevos hábitos cognitivos</li>
+                        <li>Optimizar procesos de aprendizaje</li>
+                    </ul>
+                </div>
+                <div class="interactive-card">
+                    <h3>Psicología del Cambio</h3>
+                    <p>Modelos comprobados para gestionar transiciones vitales:</p>
+                    <ul>
+                        <li>Teoría de las Etapas del Cambio (Prochaska)</li>
+                        <li>Modelo Transteórico de Desarrollo</li>
+                        <li>Técnicas de Autoeficacia Bandura</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Metodología 360°: Los 4 Pilares Fundamentales</h2>
+            <div class="dynamic-grid">
+                <div class="interactive-card">
+                    <h3>Identidad Evolutiva</h3>
+                    <p>Técnicas para:</p>
+                    <ul>
+                        <li>Reestructuración del autoconcepto</li>
+                        <li>Alineación valórica profunda</li>
+                        <li>Coherencia existencial</li>
+                    </ul>
+                </div>
+                <div class="interactive-card">
+                    <h3>Mentalidad Adaptativa</h3>
+                    <p>Desarrollar:</p>
+                    <ul>
+                        <li>Resiliencia cognitiva</li>
+                        <li>Flexibilidad estratégica</li>
+                        <li>Gestión de la incertidumbre</li>
+                    </ul>
+                </div>
+                <div class="interactive-card">
+                    <h3>Acción Estratégica</h3>
+                    <p>Implementar:</p>
+                    <ul>
+                        <li>Sistemas de productividad adaptativa</li>
+                        <li>Gestión de energía vital</li>
+                        <li>Optimización de recursos</li>
+                    </ul>
+                </div>
+                <div class="interactive-card">
+                    <h3>Balance Integral</h3>
+                    <p>Equilibrar:</p>
+                    <ul>
+                        <li>Dimensiones física/mental/emocional</li>
+                        <li>Relaciones interpersonales</li>
+                        <li>Propósito existencial</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section phase-timeline">
+            <h2>Proceso Científico de Transformación</h2>
+            <div class="phase-step" data-phase="1">
+                <h3>Autodiagnóstico Cuántico</h3>
+                <p>Metodologías avanzadas para evaluación multidimensional:</p>
+                <ul>
+                    <li>Análisis de brechas competenciales</li>
+                    <li>Mapa de potencial latente</li>
+                    <li>Evaluación de recursos disponibles</li>
+                </ul>
+            </div>
+            <div class="phase-step" data-phase="2">
+                <h3>Diseño de Prototipo Vital</h3>
+                <p>Creación de un modelo personalizado basado en:</p>
+                <ul>
+                    <li>Teoría de Restricciones aplicada</li>
+                    <li>Principios de diseño conductual</li>
+                    <li>Ingeniería de hábitos avanzada</li>
+                </ul>
+            </div>
+            <div class="phase-step" data-phase="3">
+                <h3>Implementación Adaptativa</h3>
+                <p>Sistema de ejecución con:</p>
+                <ul>
+                    <li>Mecanismos de retroalimentación en tiempo real</li>
+                    <li>Ajuste dinámico de estrategias</li>
+                    <li>Gestión de contingencias proactiva</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Herramientas Prácticas de Implementación</h2>
+            <div class="dynamic-grid">
+                <div class="interactive-card">
+                    <h3>Sistema de Metricas Vitales</h3>
+                    <p>Cuadro de mando integral personal para seguimiento de:</p>
+                    <ul>
+                        <li>Progreso en 12 dimensiones clave</li>
+                        <li>Indicadores de bienestar holístico</li>
+                        <li>Eficacia de estrategias aplicadas</li>
+                    </ul>
+                </div>
+                <div class="interactive-card">
+                    <h3>Protocolo de Autoevaluación</h3>
+                    <p>Checklist diario/semanal/mensual para:</p>
+                    <ul>
+                        <li>Detección temprana de desviaciones</li>
+                        <li>Ajuste de rutinas</li>
+                        <li>Optimización de procesos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </article>
+</body>
+</html>

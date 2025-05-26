@@ -1,0 +1,146 @@
+[
+  {
+    "slug": "guia-cientifica-manejo-estres-laboral",
+    "title": "Guía Científica: Manejo del Estrés Laboral",
+    "author": "ROSA EMILY",
+    "date": "2025-04-17",
+    "excerpt": "Estrategias avaladas por la ciencia para gestionar presión laboral, incluyendo el experimento de Ibn Sina con corderos y lobos.",
+    "thumbnail": "/posts/manejo-estres/bing.png",
+    "htmlPath": "/posts/manejo-estres/index.html"
+  },
+  {
+    "slug": "descifrando-volte-funcion-gestion-smartphone",
+    "title": "Descifrando VoLTE: Función y Gestión en tu Smartphone",
+    "author": "rosa emily",
+    "date": "2025-04-21",
+    "excerpt": "Aprende sobre la tecnología VoLTE, cómo mejora las llamadas de voz utilizando la red 4G/LTE, sus beneficios en calidad de audio y uso de datos, y cómo verificar y gestionar su estado en tu smartphone.",
+    "thumbnail": "/posts/descifrando-volte-funcion-gestion-smartphone/volt.png",
+    "htmlPath": "/posts/descifrando-volte-funcion-gestion-smartphone/index.html"
+  },
+  {
+    "slug": "por-que-me-siento-cansado-frank-suarez",
+    "title": "¿Por qué me siento cansada o cansado? - La ciencia detrás de la fatiga",
+    "author": "rosa emily",
+    "date": "2025-04-18",
+    "excerpt": "Descubre las causas científicas del agotamiento y soluciones prácticas para recuperar tu energía según el experto en metabolismo Frank Suárez.",
+    "thumbnail": "https://img.freepik.com/vector-premium/mujer-cansada-emocionalmente-agotada-energia-bateria-baja-carga-sentada-mesa_654798-34.jpg",
+    "htmlPath": "/posts/fatiga-metabolica/index.html"
+  
+  },
+  {
+    "slug": "maha-kumbh-2025",
+    "title": "¿Por qué el Maha Kumbh 2025 está atrayendo atención global?",
+    "author": "Redacción Cultural Global",
+    "date": "2025-04-16",
+    "excerpt": "Explora por qué el Maha Kumbh Mela de 2025 se ha convertido en un evento espiritual de interés mundial.",
+    "thumbnail": "https://theazb.com/wp-content/uploads/2025/01/Maha-Kumbh-Mela.jpg",
+    "htmlPath": "/posts/maha-kumbh-2025/index.html"
+  },
+  {
+    "slug": "productos-tecnologicos-mas-buscados-peru-2025",
+    "title": "Productos Tecnológicos Más Buscados en Perú en 2025",
+    "author": "Redacción Tendencias",
+    "date": "2025-04-16",
+    "excerpt": "Descubre cuáles son los productos tecnológicos que están marcando tendencia en Perú este 2025. Celulares, laptops, consolas y más.",
+    "thumbnail": "/posts/peru2025/peru25.png",
+    "htmlPath": "/posts/peru2025/index.html"
+  }
+,  
+  {
+    "slug": "sostenibilidad-2025",
+    "title": "¿Por qué la sostenibilidad es la tendencia clave en 2025?",
+    "author": "Redacción Estilo Verde",
+    "date": "2025-04-16",
+    "excerpt": "La sostenibilidad se consolida como el centro de las decisiones de consumo y estilo de vida en 2025.",
+    "thumbnail": "/posts/sostenibilidad2025/futi.png",
+    "htmlPath": "/posts/sostenibilidad2025/index.html"
+  }
+,  
+  {
+    "slug": "bebidas-2025",
+    "title": "Bebidas del 2025: Cócteles Nostálgicos con un Giro Moderno",
+    "author": "Redacción Estilo de Vida",
+    "date": "2025-04-16",
+    "excerpt": "Descubre cómo los clásicos regresan con fuerza en 2025 con sabores sorprendentes y saludables.",
+    "thumbnail": "/posts/bebidas-2025/bibida.png",
+    "htmlPath": "/posts/bebidas-2025/index.html"
+  }
+,  
+  {
+    "slug": "belleza-2025-estetica-bienestar",
+    "title": "la estética sutil y el bienestar como símbolos de estatus",
+    "author": "Estilo & Vida Moderna",
+    "date": "2025-04-16",
+    "excerpt": "Explora cómo la belleza se transforma en 2025 con un enfoque en lo sutil, ",
+    "thumbnail": "/posts/belleza/belleza.jpg",
+    "htmlPath": "/posts/belleza/index.html"
+  }
+,  
+    {
+      "slug": "reinvencion-personalidad",
+      "title": "La Ciencia de la Reinvención Personal",
+      "author": "Dra. María López",
+      "date": "2024-07-15",
+      "excerpt": "Descubre cómo transformar tu personalidad en 5 pasos basados en neuroplasticidad.",
+      "thumbnail": "/posts/personalidad/images.jpg",
+      "htmlPath": "/posts/personalidad/index.html"
+    },
+    {
+      "slug": "alimentacion-cerebro",
+      "title": "Nutrición Óptima para tu Cerebro",
+      "author": "Dr. Carlos Méndez",
+      "date": "2024-07-18",
+      "excerpt": "Los 10 superalimentos que potencian tu función cognitiva según estudios recientes.",
+
+            "thumbnail": "/posts/mitologia/ima.jpg",
+      "htmlPath": "/posts/mitologia/index.html"
+    },
+    {
+      "slug": "entrenamiento-cerbero",
+      "title": "El Arte de Entrenar a Cerbero",
+      "author": "Dr. Nikolaos Thyrsos",
+      "date": "2024-07-25",
+      "excerpt": "Protocolos arcanos para sincronizar los hemisferios guerrero y vigilante del guardián infernal",
+      "thumbnail": "/posts/cerebro/images.jpg",
+      "htmlPath": "/posts/cerebro/index.html"
+  },
+  {
+    "slug": "reinvencion-personal",
+    "title": " Transforma tu Vida",
+    "author": "Equipo de Desarrollo Personal",
+    "date": "2024-07-25",
+    "excerpt": "Descubre el proceso completo para reinventarte y crear la vida que realmente deseas",
+    "thumbnail": "/posts/articulo/reinvencion-thumb.jpg",
+    "htmlPath": "/posts/articulo/index.html"
+  
+},
+{
+  "slug": "pollo-blanco-o-amarillo",
+  "title": "El Gran Debate: ¿Pollo Blanco o Amarillo?",
+  "author": "Equipo de Nutrición Consciente",
+  "date": "2024-03-15",
+  "excerpt": "Descubre la verdad detrás del color del pollo y toma decisiones informadas",
+  "thumbnail": "https://blob.luznoticias.mx/images/2024/02/24/pollos-principal-focus-0-0-966-544.jpg",
+  "htmlPath": "/posts/pollo/index.html"
+},
+{
+  "slug": "remontadas-historicas",
+  "title": " Momentos Épicos que Conmocionaron al Mundo",
+  "author": "Redacción Deportiva Total",
+  "date": "2025-04-16",
+  "excerpt": "Revive las remontadas más inolvidables del Real Madrid en la champions league",
+  "thumbnail": "https://i.ytimg.com/vi/dbXQWQcET4o/maxresdefault.jpg",
+  "htmlPath": "/posts/realremontadas/index.html"
+},
+{
+  "slug": "maximalismo-decoracion-primavera-2025",
+  "title": "¿El maximalismo está dominando la decoración?",
+  "author": "Redacción de Decoración y Tendencias",
+  "date": "2025-04-16",
+  "excerpt": "Descubre cómo el maximalismo está revolucionando la decoración de hogares en la primavera de 2025",
+  "thumbnail": "https://i.pinimg.com/originals/ec/fa/92/ecfa92103caf7a1d9199a4d7d33ca5d8.jpg",
+  "htmlPath": "/posts/maximalismo/index.html"
+}
+
+
+  ]

@@ -1,0 +1,250 @@
+/* App.css - Versión Mejorada y Responsive */
+:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #2d2d2d;
+  --accent-color: #00f2ff;
+  --text-color: #2d3748;
+  --border-color: #e2e8f0;
+  --error-color: #e53e3e;
+  --success-color: #48bb78;
+}
+
+/* Estilos Base */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.main-content {
+  flex: 1;
+  padding: 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* Secciones Comunes */
+.section-title {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+/* Verificación Matemática */
+.verification-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 90%;
+  margin: 2rem auto;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.math-problem {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  margin: 1.5rem 0;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.verification-box input {
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  width: 120px;
+  margin: 1rem 0;
+}
+
+.verification-box button {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.verification-box button:hover {
+  background: var(--secondary-color);
+  transform: translateY(-1px);
+}
+
+.error {
+  color: var(--error-color);
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+/* Agenda y Stream */
+.agenda-container {
+  height: 70vh;
+  min-height: 400px;
+  max-height: 800px;
+  border-radius: 12px;
+  margin: 2rem 0;
+  background: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.stream-section {
+  margin: 3rem 0;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  scroll-margin-top: 100px;
+}
+
+.stream-player {
+  height: 60vh;
+  min-height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.stream-player iframe,
+.agenda-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.placeholder {
+  padding: 2rem;
+  color: #64748b;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 1rem;
+  }
+  
+  .agenda-container {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .verification-box {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+  
+  .stream-section {
+    margin: 2rem 0;
+    scroll-margin-top: 80px;
+  }
+  
+  .stream-player {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .math-problem {
+    font-size: 1.5rem;
+  }
+  
+  .verification-box input {
+    width: 100px;
+    font-size: 1rem;
+  }
+  
+  .agenda-container {
+    height: 50vh;
+    min-height: 300px;
+  }
+  
+  .stream-player {
+    height: 40vh;
+  }
+}
+
+/* News Grid (Asegúrate que NewsGrid.css tenga estos estilos) */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.news-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Footer (Consistente con el anterior) */
+.footer {
+  background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.legal-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.legal-links a {
+  color: white;
+  padding: 0.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.legal-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.legal-links a:hover {
+  color: var(--accent-color);
+}
+
+.legal-links a:hover::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+  
+  .legal-links {
+    gap: 1rem;
+  }
+}

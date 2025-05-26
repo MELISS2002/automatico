@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cómo Reinventar tu Personalidad | Psicología Práctica</title>
+    <style>
+        /* Mejoras Visuales y Responsive */
+        .article-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            padding: 20px;
+        }
+
+        .article-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .article-image:hover {
+            transform: scale(1.02);
+        }
+
+        .highlight {
+            background: linear-gradient(45deg, #f0f8ff, #e6f7ff);
+            padding: 30px;
+            border-left: 6px solid #2196F3;
+            border-radius: 8px;
+            margin: 40px 0;
+            position: relative;
+        }
+
+        .highlight::before {
+            content: "!";
+            position: absolute;
+            top: -15px;
+            left: -20px;
+            background: #2196F3;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(33, 150, 243, 0.3);
+        }
+
+        /* Tabla Responsive */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #2196F3;
+            color: white;
+        }
+
+        tr:hover {
+            background: #f5f5f5;
+        }
+
+        /* Tooltips para Términos Técnicos */
+        .tooltip-term {
+            position: relative;
+            cursor: help;
+            color: #2196F3;
+            text-decoration: underline dotted;
+        }
+
+        .tooltip-text {
+            visibility: hidden;
+            width: 300px;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            padding: 10px;
+            position: absolute;
+            z-index: 999;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -150px;
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+            font-size: 0.9em;
+        }
+
+        .tooltip-term:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(-10px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .article-image {
+                height: 250px;
+            }
+
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            th {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr {
+                border: 1px solid #ccc;
+                margin-bottom: 10px;
+            }
+
+            td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+            }
+
+            td:before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: 45%;
+                padding-right: 10px;
+                font-weight: bold;
+            }
+        }
+        
+        /* Mejoras de Responsividad */
+        @media (max-width: 768px) {
+            .article-image {
+                height: 250px;
+                margin: 20px 0;
+                float: none !important;
+                width: 100% !important;
+            }
+
+            .evolution-steps {
+                padding-left: 20px;
+            }
+
+            .evolution-steps h4 {
+                font-size: 1.1em;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .highlight {
+                padding: 20px;
+                margin: 30px 0;
+            }
+
+            .highlight::before {
+                width: 30px;
+                height: 30px;
+                left: -15px;
+                top: -10px;
+                font-size: 0.9em;
+            }
+
+            .tooltip-text {
+                width: 200px;
+                margin-left: -100px;
+                font-size: 0.8em;
+            }
+
+            .impact-list li {
+                margin-bottom: 15px;
+                line-height: 1.5;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .article-image {
+                height: 200px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+                line-height: 1.3;
+            }
+
+            h2 {
+                font-size: 1.4em;
+            }
+
+            .article-content {
+                padding: 15px;
+            }
+
+            td, th {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+
+            .highlight h3 {
+                font-size: 1.1em;
+            }
+
+            .tooltip-term {
+                word-break: break-word;
+            }
+        }
+
+        /* Nuevos ajustes para tablas */
+        .challenge-table td:before {
+            content: attr(data-label);
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .challenge-table td {
+                padding-left: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .challenge-table td:before {
+                position: static;
+                width: auto;
+                padding-right: 0;
+            }
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <div class="article-content">
+        <header>
+            <h1>Reinvención Personal: El Arte de Recrearte a Ti Mismo</h1>
+            <div class="article-meta">
+                <address class="author">Por Equipo de Psicología Transformacional</address>
+                <time datetime="2024-07-15" class="date">15 de Julio 2024</time>
+            </div>
+        </header>
+
+        <img src="/posts/personalidad/124.png" 
+        alt="Silueta humana emergiendo de llamas con fondo de amanecer" 
+        width="200" 
+        height="100"
+             loading="lazy">
+
+        <section class="content">
+            <h2>¿Qué es la Reinvención Personal?</h2>
+            <p>Un proceso de <span class="tooltip-term">metamorfosis existencial
+                <span class="tooltip-text">Cambio profundo en la estructura psicoemocional y conductual</span>
+            </span> que implica:</p>
+            <ul>
+                <li>Reestructuración de patrones mentales</li>
+                <li>Reconfiguración de hábitos emocionales</li>
+                <li>Reorientación de proyectos vitales</li>
+            </ul>
+
+            <div class="highlight">
+                <h3>¿Sabías que?</h3>
+                <p>Un estudio de <cite>Harvard Business Review</cite> revela que el 83% de las personas experimentan al menos 3 reinvenciones significativas en su vida adulta.</p>
+            </div>
+
+            <h2>Fases del Proceso Evolutivo</h2>
+            <img src="/posts/reinvencion/ciclo-transformacion.jpg" 
+                 alt="Diagrama circular con fases: crisálida, metamorfosis, eclosión" 
+                 class="article-image"
+                 style="float: left; margin: 0 20px 20px 0; width: 300px;"
+                 loading="lazy">
+            
+            <ol class="evolution-steps">
+                <li>
+                    <h4>Autoconfrontación Existencial</h4>
+                    <p>Uso de <span class="tooltip-term">espejos psicológicos
+                        <span class="tooltip-text">Técnicas de autoobservación sin juicio</span>
+                    </span> y análisis de patrones</p>
+                </li>
+                <li>
+                    <h4>Diseño de Nuevo Yo</h4>
+                    <p>Creación de <span class="tooltip-term">mapas cognitivos
+                        <span class="tooltip-text">Representación visual de nuevos patrones mentales</span>
+                    </span></p>
+                </li>
+                <li>
+                    <h4>Implementación Gradual</h4>
+                    <p><span class="tooltip-term">Técnica del doble especular
+                        <span class="tooltip-text">Actuar como la versión deseada hasta internalizarla</span>
+                    </span></p>
+                </li>
+            </ol>
+
+            <h2>Herramientas de Transformación</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Técnica</th>
+                        <th>Función</th>
+                        <th>Eficacia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Técnica">Escritura especular</td>
+                        <td data-label="Función">Clarificación emocional</td>
+                        <td data-label="Eficacia">89%</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Técnica">Visualización holográfica</td>
+                        <td data-label="Función">Programación mental</td>
+                        <td data-label="Eficacia">78%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight">
+                <h3>Caso de Éxito:</h3>
+                <p>Ana, 35 años, transformó su timidez extrema en liderazgo social usando <span class="tooltip-term">teatro terapéutico
+                    <span class="tooltip-text">Método que usa técnicas dramáticas para cambio personal</span>
+                </span> durante 6 meses.</p>
+            </div>
+
+            <h2>Impacto Multidimensional</h2>
+            <ul class="impact-list">
+                <li><strong>Autoeficacia:</strong> +62% en percepción de capacidades</li>
+                <li><strong>Relaciones:</strong> 3x mayor satisfacción emocional</li>
+                <li><strong>Productividad:</strong> 47% mejora en logro de metas</li>
+            </ul>
+
+            <h2>Obstáculos y Soluciones</h2>
+            <table class="challenge-table">
+                <thead>
+                    <tr>
+                        <th>Desafío</th>
+                        <th>Solución</th>
+                        <th>Recurso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Desafío">Miedo al cambio</td>
+                        <td data-label="Solución">Terapia de exposición gradual</td>
+                        <td data-label="Recurso">App FearLess</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Desafío">Auto-sabotaje</td>
+                        <td data-label="Solución">Técnica del doble observador</td>
+                        <td data-label="Recurso">Diario reflexivo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
