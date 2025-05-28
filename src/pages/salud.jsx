@@ -35,6 +35,23 @@ function Salud() {
             Descubre aquí las mejores prácticas para mejorar tu bienestar físico y mental de forma natural.
           </p>
 
+
+
+
+          <div className="call-to-action">
+            <p>💚 Descubre más consejos saludables en nuestros artículos a continuación y transforma tu estilo de vida con bienestar natural. ¡Tu salud es tu mayor riqueza!</p>
+          </div>
+        </section>
+
+        {/* Sección de artículos dinámicos */}
+        <section className="news-section">
+          <h2 className="section-title">📰 Últimos Artículos sobre Salud y Bienestar</h2>
+          {isLoading ? (
+            <p className="loading-text">Cargando artículos...</p>
+          ) : (
+            <NewsGrid articles={news} />
+          )}
+        </section>
           <div className="tip-block">
   <h3>🍵 1. Infusiones y Tés Medicinales</h3>
   <p>
@@ -93,23 +110,6 @@ function Salud() {
     Intenta desconectarte de la tecnología al menos una vez al día y reconecta con lo esencial.
   </p>
 </div>
-
-
-          <div className="call-to-action">
-            <p>💚 Descubre más consejos saludables en nuestros artículos a continuación y transforma tu estilo de vida con bienestar natural. ¡Tu salud es tu mayor riqueza!</p>
-          </div>
-        </section>
-
-        {/* Sección de artículos dinámicos */}
-        <section className="news-section">
-          <h2 className="section-title">📰 Últimos Artículos sobre Salud y Bienestar</h2>
-          {isLoading ? (
-            <p className="loading-text">Cargando artículos...</p>
-          ) : (
-            <NewsGrid articles={news} />
-          )}
-        </section>
-
       </main>
     </div>
   );
