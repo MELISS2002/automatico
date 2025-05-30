@@ -1,5 +1,15 @@
 [
   {
+    "slug": "tiroides",
+    "title": "Hormona de Tiroides: Sintética vs. Natural",
+    "author": "Frank Suárez",
+    "authorTitle": "Especialista en Obesidad y Metabolismo",
+    "date": "2025-05-30",
+    "excerpt": "Descubre las diferencias entre la hormona tiroidea sintética (Levotiroxina) y la natural (disecada de cerdo), sus efectos y cómo encontrar la opción adecuada para ti.",
+    "thumbnail": "https://vitalnatur.com/img/tiroides-comparacion.jpg",
+    "htmlPath": "/posts/tiroides/index.html"
+},
+  {
     "slug": "regeneracion-mitocondrial",
     "title": "Regeneración Mitocondrial: La Guía Científica para Energía Ilimitada",
     "author": "Frank Suárez",
