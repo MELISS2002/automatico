@@ -1,6 +1,16 @@
 [
 
   {
+    "slug": "cancer-ayuda-frank-suarez",
+    "title": "¿Qué hacer cuando ya llegó un cáncer? Consejos de Frank Suárez",
+    "author": "Frank Suárez",
+    "authorTitle": "Especialista en Obesidad y Metabolismo",
+    "date": "2025-05-31",
+    "excerpt": "Descubre los pasos clave para apoyar a un ser querido recién diagnosticado con cáncer: alimentación, manejo del estrés, sueño y hábitos que favorecen la recuperación, según Frank Suárez.",
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/4zytwjvQbyBC_edmuiusT.webp",
+    "htmlPath": "/posts/cancer/index.html"
+},
+  {
     "slug": "tiroides",
     "title": "Hormona de Tiroides: Sintética vs. Natural",
     "author": "Frank Suárez",
