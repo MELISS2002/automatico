@@ -1,0 +1,445 @@
+{
+  "channels": [
+    {
+      "name": "ESPN",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjG0XVSHZWDxk2-CMlNlohL1NiPEk6O2bKmp4GmD5Bfmv6rt4tyfXY-oaiCxtPbzgSmQcdVO5gySMpDFJ2mJclrfPUNDyetDJQ0gFVslIUPILWtLah1W92CUv-hs5lu00k6_Nim90hP2uos/h120/espn.png",
+      "servers": [
+        {
+          "name": "1",
+          "url": "http://201.217.246.166:8000/play/a099/index.m3u8"
+        },
+         {
+          "name": "2",
+          "url": "http://201.217.246.166:8000/play/a09b/89002336.m3u8"
+        }
+      ]
+    }  ,  {
+      "name": "ESPN 2",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYhlo8xUKeiHN1pAW-F-12xWVWnL_CVG9t0ynWAIneSfQeIle8yYomzyc2SGZ89XKkGYJ3GWLhJwV1FcSJ4TFY3EztVazm8TyRaZxBML43XxwtqNm5chu-3oMEj6v8W3S2gK2wg2V0NgM/s1600/espn2.jpg",
+      "servers": [
+        {
+          "name": "1",
+          "url": "http://201.217.246.166:8000/play/a098/index.m3u8"
+        },
+         {
+          "name": "2",
+          "url": "http://201.217.246.166:8000/play/a09b/89002336.m3u8"
+        }
+      ]
+    }, {
+      "name": "ESPN 3",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiou7Y2IkpdushU89uLtColXEv-WuPEYZv6uK2uyYji5Zsl-ll8-uFMQ5uNTuwFdLqHB6JagxOIC50Dind_Gy4YjtFOLtS26QGNt3uI1jeL0vWRv6wDUNolMZKjAEhRxLmD13h-1r7nhUE/s1600/espn3.jpg",
+      "servers": [
+        {
+          "name": "1",
+          "url": "http://201.217.246.166:8000/play/a09a/index.m3u8"
+        },
+         {
+          "name": "2",
+          "url": "http://201.217.246.166:8000/play/a09b/89002336.m3u8"
+        }
+      ]
+    },
+{
+      "name": "ESPN 4",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYhFb3LN6WxGGGnHl4b3nnKq7K_vspKmEAozjXPMCJjTPOIuvfCzCKkFAkwHsGM_oCszF7-IqSJCOPhRUxj0BJKPBT7Ge0TxLaqMa1s7Lkqo5tngHRJcHSAzGtneLuXZAv7xd7pvK8To4/h120/ESPN-logo_220.jpg",
+      "servers": [
+        {
+          "name": "1",
+          "url": "http://201.217.246.166:8000/play/a084/index.m3u8"
+        },
+         {
+          "name": "2",
+          "url": "http://45.5.117.57:8200/play/a01g/index.m3u8"
+        }
+      ]
+    },
+{
+      "name": "ESPN PREMIUM",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkbRnkJQeQElm3yDyqAcXvyEKPpT1iFO3-kBQG9Sw8sL9Pj3vE1eP6mcn7QsEqkR3LRtdHeLdai4oEtfm0zQa8x7JmG7UmYH_njF4fSW4vxwMlw9JqWXT0ibV2ceJVKrdMw6EnJr2Dx7f90AuQaWrgC1szFh1rSgjaOkhLiyx9Rs9oE6xprB3c2l0R/s1600/espnpremium.png",
+      "servers": [
+        {
+          "name": "1",
+          "url": "http://201.217.246.166:8000/play/a086/index.m3u8"
+        },
+         {
+          "name": "2",
+          "url": "http://201.217.246.166:8000/play/a084/87058962.m3u8"
+        }
+      ]
+    },
+
+
+    
+  {
+      "name": "FOX Sports",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinKpJEDyd9Imhsxkwkya1Q0-DL1GKs1dJNW_CyD4G-3V8l_1XaAkyEFOFhyphenhyphenEj6Iw1H6Pas4R5buTvx9Tw-qUeMZK3pYakrZWT8b2Bqnspwo_0Cvpo0lPW8WQVUiiIM8QMT1yJ7vhIz49Y/h120/Fox_Sports.png",
+      "servers": [
+        {
+          "name": "1",
+          "url": "http://201.217.246.166:8000/play/a085/index.m3u8"
+        },
+          {
+          "name": "2",
+          "url": "http://201.217.246.166:8000/play/a09b/89002336.m3u8"
+        }
+
+      ]
+    },
+
+
+    
+    {
+      "name": "FOX Sports 2",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi13WTvt-hhrsaZCcGlwo33BycpcRuIE-_bL4xAnKLQVItMbloqJfnte4PQOi4q_9Lv7mbgz_1cxmH5uaVjxVTPM6JQT2j9Qa_0oRnlxoEHOIom5iJjCeu7kaWBO_IBJE0tdUSMhPNup3o/h120/Fox_Sports_2.png",
+      "servers": [
+        {
+          "name": "1",
+          "url": "http://201.217.246.166:8000/play/a09b/index.m3u8"
+        },
+          {
+          "name": "2",
+          "url": "http://201.217.246.166:8000/play/a09b/89002336.m3u8"
+        }
+
+      ]
+    },
+    {
+      "name": "(BR) TV Amplitude",
+      "imageUrl": "https://images.seeklogo.com/logo-png/26/1/espn2-logo-png_seeklogo-261969.png",
+      "servers": [
+        {
+          "name": "1",
+          "url": "https://cdn.jmvstream.com/w/LVW-10841/LVW10841_mT77z9o2cP/playlist.m3u8"
+        },
+        {
+          "name": "2",
+          "url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5dcb62e63d4d8f0009f36881/master.m3u8?deviceId=0&deviceVersion=0&appVersion=0&deviceType=0&deviceMake=0&sid=c4e2&deviceDNT=0&deviceModel=0"
+        }
+      ]
+    },
+
+
+
+    
+    {
+      "name": "CANAL 25",
+      "imageUrl": "https://www.elahmad.com/tv/mobiletv/images/canal_algerie.jpg?v=7",
+      "servers": [
+        {
+          "name": "1",
+          "url": "https://d15aro46bnpfm8.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-fqkqiax1078up/RMC_Story_FR.m3u8"
+        },
+        {
+          "name": "2",
+          "url": "https://hls-m005.p-cdnlive-edge020311-dual.scy.canalplus-cdn.net/__token__id%3D1a569a48e47690c700c0f71662c87679~hmac%3D6d2114baa9bb694f530073a9f707530612577a89d4d0a36aaa72374fa9e12049/live/disk/canalplusclair-hd/hls-v3-hd-clair/canalplusclair-hd.m3u8"
+        },
+        {
+          "name": "3",
+          "url": "https://d16zzycxcd0m0r.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-hixvx5kymecr9/RMC_Decouverte_FR.m3u8"
+        },
+        {
+          "name": "4",
+          "url": "https://viamotionhsi.netplus.ch/live/eds/tmc/browser-HLS8/tmc.m3u8"
+        },
+        {
+          "name": "5",
+          "url": "https://viamotionhsi.netplus.ch/live/eds/novo19/browser-HLS8/novo19.m3u8"
+        },
+        {
+          "name": "6",
+          "url": "https://raw.githubusercontent.com/schumijo/iptv/refs/heads/main/playlists/dailymotion/t18.m3u8"
+        },
+        {
+          "name": "7",
+          "url": "https://viamotionhsi.netplus.ch/live/eds/m6hd/browser-dash/m6hd.mpd"
+        }
+      ]
+    },
+    {
+      "name": "CANAL sport",
+      "imageUrl": "https://www.elahmad.com/tv/mobiletv/images/canal_algerie.jpg?v=7",
+      "servers": [
+        {
+          "name": "1",
+          "url": "https://raw.githubusercontent.com/mikekaprielian/rtnaodhor93n398/main/fr/videotf1.m3u8"
+        },
+        {
+          "name": "2",
+          "url": "https://live.sportstv.com.tr/hls/low/sportstv_hd/index.m3u8"
+        },
+        {
+          "name": "3",
+          "url": "https://svs.itworkscdn.net/smc4sportslive/smc4.smil/playlist.m3u8"
+        },
+        {
+          "name": "4",
+          "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8"
+        }
+      ]
+    },
+    {
+      "name": "CANAL 27",
+      "imageUrl": "https://www.elahmad.com/tv/mobiletv/images/canal_algerie.jpg?v=7",
+      "servers": [
+        {
+          "name": "1",
+          "url": "https://amg00803-amg00803c3-rakuten-us-5347.playouts.now.amagi.tv/playlist/amg00803-cnnfastinternational-cnnesponal-rakutenus/playlist.m3u8"
+        },
+        {
+          "name": "2",
+          "url": "https://amg00803-amg00803c3-rakuten-us-5347.playouts.now.amagi.tv/playlist/amg00803-cnnfastinternational-cnnesponal-rakutenus/playlist.m3u8"
+        },
+        {
+          "name": "3",
+          "url": "https://amg00803-amg00803c3-rakuten-us-5347.playouts.now.amagi.tv/playlist/amg00803-cnnfastinternational-cnnesponal-rakutenus/playlist.m3u8"
+        },
+        {
+          "name": "4",
+          "url": "https://amg00803-amg00803c3-rakuten-us-5347.playouts.now.amagi.tv/playlist/amg00803-cnnfastinternational-cnnesponal-rakutenus/playlist.m3u8"
+        }
+      ]
+    },
+    {
+      "name": "CANAL 28",
+      "imageUrl": "https://www.elahmad.com/tv/mobiletv/images/canal_algerie.jpg?v=7",
+      "servers": [
+        {
+          "name": "1",
+          "url": "https://amg00803-amg00803c3-rakuten-us-5347.playouts.now.amagi.tv/playlist/amg00803-cnnfastinternational-cnnesponal-rakutenus/playlist.m3u8"
+        },
+        {
+          "name": "2",
+          "url": "https://amg00803-amg00803c3-rakuten-us-5347.playouts.now.amagi.tv/playlist/amg00803-cnnfastinternational-cnnesponal-rakutenus/playlist.m3u8"
+        },
+        {
+          "name": "3",
+          "url": "https://amg00803-amg00803c3-rakuten-us-5347.playouts.now.amagi.tv/playlist/amg00803-cnnfastinternational-cnnesponal-rakutenus/playlist.m3u8"
+        },
+        {
+          "name": "4",
+          "url": "https://aasthaott.akamaized.net/110923/smil:aasthatelugu.smil/playlist.m3u8"
+        }
+      ]
+    },
+    {
+      "name": "CANAL 29",
+      "imageUrl": "https://www.elahmad.com/tv/mobiletv/images/canal_algerie.jpg?v=7",
+      "servers": [
+        {
+          "name": "1",
+          "url": "https://hls-m015-live-aka-canalplus.akamaized.net/live/disk/cnews-clair-ad-hd/hls-v3-hd-clair/cnews-clair-ad-hd.m3u8"
+        },
+        {
+          "name": "2",
+          "url": "https://hls-m015-live-aka-canalplus.akamaized.net/live/disk/cnews-clair-ad-hd/hls-v3-hd-clair/cnews-clair-ad-hd.m3u8"
+        },
+        {
+          "name": "3",
+          "url": "https://hls-m015-live-aka-canalplus.akamaized.net/live/disk/cnews-clair-ad-hd/hls-v3-hd-clair/cnews-clair-ad-hd.m3u8"
+        },
+        {
+          "name": "4",
+          "url": "https://hls-m015-live-aka-canalplus.akamaized.net/live/disk/cnews-clair-ad-hd/hls-v3-hd-clair/cnews-clair-ad-hd.m3u8"
+        }
+      ]
+    },
+    {
+      "name": "ATV",
+      "imageUrl": "https://www.elahmad.com/tv/mobiletv/images/samira_tv.jpg?v=7",
+      "servers": [
+        {
+          "name": "1",
+          "url": "https://hls-m015-live-aka-canalplus.akamaized.net/live/disk/cnews-clair-ad-hd/hls-v3-hd-clair/cnews-clair-ad-hd.m3u8"
+        },
+        {
+          "name": "2",
+          "url": "https://hls-m015-live-aka-canalplus.akamaized.net/live/disk/cnews-clair-ad-hd/hls-v3-hd-clair/cnews-clair-ad-hd.m3u8"
+        },
+        {
+          "name": "3",
+          "url": "https://d19e55ehz2il4i.cloudfront.net/index.m3u8?PlaylistM3UCL"
+        },
+        {
+          "name": "4",
+          "url": "http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/62ba60f059624e000781c436/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c25e430-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=1b7de8e4-d114-4438-b098-6f7aee77b4be
+"
+        }
+      ]
+    },
+     {
+      "name": "NAT GEOWILD",
+      "imageUrl": "https://images.seeklogo.com/logo-png/33/2/nat-geo-wild-logo-png_seeklogo-333045.png",
+      "servers": [
+        {
+          "name": "1",
+          "url": "https://stmv1.voxhdnet.com/solartv/solartv/playlist.m3u8?PlaylistM3UCL"
+        }
+      ]
+    },
+     {
+      "name": "Bin Sports 1",
+      "imageUrl": "https://whatthelogo.com/storage/logos/bein-sport-1-228697.png",
+      "servers": [
+        {
+          "name": "1",
+          "url": "https://wo.cma.footballii.ir/hls2/b1_high.m3u8"
+        },
+               {
+          "name": "2",
+          "url": "https://wo.cma.footballii.ir/hls2/b1_mid.m3u8"
+        },
+               {
+          "name": "3",
+          "url": "https://wo.cma.footballii.ir/hls2/b1.m3u8"
+        },
+       
+                  {
+          "name": "4",
+          "url": " https://wo.cma.footballii.ir/hls2/b1_low.m3u8"
+        },
+                      {
+          "name": "5",
+          "url": " https://est.dhscgrsresri.space/xzqwer2/tracks-v1a1/mono.m3u8"
+        }
+      ]
+    },
+
+  {
+      "name": "TNT Sports",
+      "imageUrl": "https://pbs.twimg.com/profile_images/1747993384159993856/m4U8hZLH_400x400.jpg",
+      "servers": [
+        {
+          "name": "1",
+          "url": "https://est.dhscgrsresri.space/xzqwer1/tracks-v1a1/mono.m3u8"
+        },
+           {
+          "name": "2",
+          "url": "https://est.dhscgrsresri.space/xzqwer2/tracks-v1a1/mono.m3u8"
+        },
+           {
+          "name": "3",
+          "url": "https://est.dhscgrsresri.space/xzqwer3/tracks-v1a1/mono.m3u8"
+        },
+           {
+          "name": "4",
+          "url": "https://est.dhscgrsresri.space/xzqwer4/tracks-v1a1/mono.m3u8"
+        },
+           {
+          "name": "5",
+          "url": "https://est.dhscgrsresri.space/xzqwer5/tracks-v1a1/mono.m3u8"
+        },
+           {
+          "name": "6",
+          "url": "https://est.dhscgrsresri.space/xzqwer1/tracks-v1a1/mono.m3u8"
+        },
+           {
+          "name": "7",
+          "url": "https://est.dhscgrsresri.space/xzqwer1/tracks-v1a1/mono.m3u8"
+        },
+           {
+          "name": "8",
+          "url": "https://est.dhscgrsresri.space/xzqwer1/tracks-v1a1/mono.m3u8"
+        }
+        
+      ]
+    },
+
+
+    
+     {
+      "name": "CBS SPORTS",
+      "imageUrl": "https://sports.cbsimg.net/images/cbss/ui5/cbssportsv2_200x200.png",
+      "servers": [
+        {
+          "name": "1",
+          "url": "https://est.dhscgrsresri.space/xzqwer8/tracks-v1a1/mono.m3u8"
+        },
+               {
+          "name": "2",
+          "url": "https://wo.cma.footballii.ir/hls2/b1_mid.m3u8"
+        },
+
+       
+                  {
+          "name": "3",
+          "url": " https://est.dhscgrsresri.space/xzqwer1/tracks-v1a1/mono.m3u8"
+        },
+                      {
+          "name": "4",
+          "url": " https://cdn4.skygo.mn/live/disk1/SPSPlay/HLS-FTA/SPSPlay.m3u8"
+        },
+                          {
+          "name": "5",
+          "url": " https://stream.digitalgt.com:3605/live/multivisionsportslive.m3u8"
+        },
+                          {
+          "name": "6",
+          "url": " https://dshn8inoshngm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-gac2i63dmu8b7/LEquipe_FR.m3u8"
+        },
+                          {
+          "name": "7",
+          "url": " https://livetv-fa.tubi.video/fubo/master.m3u8"
+        },
+                          {
+          "name": "8",
+          "url": " https://fl25.moveonjoy.com/ESPN_U/index.m3u8"
+        },
+                          {
+          "name": "9",
+          "url": " https://est.dhscgrsresri.space/xzqwer2/tracks-v1a1/mono.m3u8"
+        },
+                          {
+          "name": "10",
+          "url": " https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/63d0269d60bc8f000890facc/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=web&deviceMake=github.com/inspirationlinks&deviceDNT=1"
+        }
+      ]
+    }
+    
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

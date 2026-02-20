@@ -1,0 +1,7 @@
+{
+    "base_url": "http://portal.geniptv.com:8080/live/dmtndmtnkimo/a7GPMeArdf/{}.m3u8",
+    "rango_inicio": 1,
+    "rango_fin": 100,
+    "tamano_lote": 100,
+    "max_workers": 10
+}
