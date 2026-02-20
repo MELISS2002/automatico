@@ -3,42 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda Deportiva</title>
+    <title>Partidos y Canales deportivos online</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.1.1/luxon.min.js"></script>
-    <style>
-        .title-agenda {
-            background-color: #8baf1c;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            font-weight: bold;
-            margin: 20px 0;
-            text-align: center;
-        }
-        .menu li {
-            padding-left: 1rem;
-            margin-bottom: 0.5rem;
-        }
-        .toggle-submenu {
-            cursor: pointer;
-        }
-        .submenu {
-            display: none;
-            margin-left: 4rem;
-        }
-    </style>
-</head>
-<body class="bg-gray-100 p-4">
-    <div class="title-agenda"></div>
-    <ul class="menu"></ul>
 
     <script>
         $(document).ready(function () {
+            let openSubmenu = null;
+
+            $(document).on("click", ".toggle-submenu", function (e) {
+                e.preventDefault();
+                const $submenu = $(this).next("ul");
+
+                if ($submenu.is(':visible')) {
+                    $submenu.slideToggle();
+                    return true;
+                }
+
+                if (openSubmenu && openSubmenu !== $submenu) {
+                    openSubmenu.slideUp();
+                }
+
+                $submenu.slideToggle();
+                openSubmenu = $submenu.is(":visible") ? $submenu : null;
+            });
+
             obtenerAgenda();
             setInterval(refrescarAgenda, 60000);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            $(".extra-link").show();
         });
 
         function convertToUserTimeZone(utcHour) {
@@ -48,113 +44,157 @@
             return localDateTime.toFormat("HH:mm");
         }
 
-        function obtenerAgenda() {
-            const agendaUrl = "https://corsproxy.io/?url=https://goolhd.com/agenda.json?v=1.11";
-            const backupAgendaUrl = "https://goolhd.com/agenda.json?v=1.11";
+        function transformarURL(url) {
+            if (!url) return "/star-plus";
             
-            $.getJSON(agendaUrl)
-                .done(function (result) {
+            if (url.includes("/embed/eventos.html?r")) {
+                return url.replace("/embed/eventos.html?r", "/p/foxrepro1.html?r=https://belkaperu.github.io/belkafut/repro.html?r");
+            }
+            
+            return url;
+        }
+
+        function obtenerAgenda() {
+          const agendaUrl = "https://corsproxy.io/?url=https://goolhd.com/agenda.json?v=1.11";
+     
+            const backupAgendaUrl = "https://goolhd.com/agenda.json?v=1.11"; // URL de copia local
+            let html = "";
+            moment.locale("es");
+
+            // Limpiar la lista de agenda antes de cargar nuevos datos
+            $(".menu").empty(); 
+
+            // Intentar cargar el archivo JSON principal
+            $.ajax({
+                url: agendaUrl,
+                dataType: 'json',
+                success: function (result) {
                     if (result.data && result.data.length > 0) {
                         let dateCompleted = moment(result.data[0].attributes.date_diary).format("LL");
                         $(".title-agenda").html("Agenda Deportiva " + dateCompleted);
-                        processAgendaData(result.data);
+                        processAgendaData(result.data, html);
                     } else {
+                        // Si el archivo principal está vacío, cargar la copia local
                         cargarCopiaLocal(backupAgendaUrl);
                     }
-                })
-                .fail(function () {
+                },
+                error: function () {
+                    // Si ocurre un error, cargar la copia local
                     cargarCopiaLocal(backupAgendaUrl);
-                });
+                }
+            });
         }
 
         function cargarCopiaLocal(backupAgendaUrl) {
-            $.getJSON(backupAgendaUrl)
-                .done(function (result) {
+            let html = "";
+            $.ajax({
+                url: backupAgendaUrl,
+                dataType: 'json',
+                success: function (result) {
                     if (result.data && result.data.length > 0) {
                         let dateCompleted = moment(result.data[0].attributes.date_diary).format("LL");
-                        $(".title-agenda").html("Agenda Deportiva " + dateCompleted);
-                        processAgendaData(result.data);
+                        $(".title-agenda").html("Agenda Deportiva  " + dateCompleted);
+                        processAgendaData(result.data, html);
                     } else {
                         $(".title-agenda").html("No hay agenda disponible.");
                     }
-                })
-                .fail(function () {
+                },
+                error: function () {
                     $(".title-agenda").html("Error al cargar la agenda.");
-                });
+                }
+            });
         }
 
-        function processAgendaData(data) {
-            $(".menu").empty();
-            
+        function processAgendaData(data, html) {
+            // Ordenar los datos por hora
             data.sort((a, b) => {
                 return moment(a.attributes.diary_hour, "HH:mm").diff(moment(b.attributes.diary_hour, "HH:mm"));
             });
 
             $.each(data, function (key, value) {
                 let imageUrl = value.attributes.country.data != null ? 
-                    "https://img.golazoplay.com" + value.attributes.country.data.attributes.image.data.attributes.url :
-                    "https://img.golazoplay.com/uploads/sin_imagen_d36205f0e8.png";
+                    "https://img.goolhd.com" + value.attributes.country.data.attributes.image.data.attributes.url :
+                    "https://img.goolhd.com/uploads/sin_imagen_d36205f0e8.png";
 
+                // Eliminar todo lo que está antes de los dos puntos (:) incluyendo el mismo :
                 let description = value.attributes.diary_description.replace(/^.*?:\s*/, "").trim();
 
-                let html = '<li class="pl-4 hover:bg-gray-50 rounded-lg border border-gray-200 mb-2">';
-                html += '<div class="flex items-center cursor-pointer justify-between p-2 toggle-submenu">';
-                html += '<div class="flex items-center">';
-                html += '<time class="text-center font-bold text-black bg-white rounded-lg p-2">' +
+                html += '<li class="pl-4 hover:bg-gray-50 rounded-lg">';
+                html += '<div class="flex items-center cursor-pointer justify-between toggle-submenu">';
+                html += '<div class="flex items-center"><time datetime="' + value.attributes.diary_hour + '" class="text-center font-bold text-black bg-white rounded-lg p-2">' +
                     convertToUserTimeZone(value.attributes.diary_hour) +
-                    '</time>';
-                html += '<img src="' + imageUrl + '" alt="" class="ml-2 object-cover h-6 w-6">';
-                html += '<span class="flex-1 ml-4 text-left font-bold text-gray-800">' +
+                    "</time>";
+                html += '<img src="' + imageUrl + '" alt="" class="ml-2 object-cover h-6 w-6"><span class="flex-1 ml-4 text-left font-bold text-gray-800 text-1xl">' +
                     description +
-                    '</span>';
-                html += '</div>';
-                html += '<span class="text-gray-500">▼</span>';
-                html += '</div>';
-                html += '<ul class="submenu ml-16 rounded-lg divide-y divide-gray-300">';
+                    "</span></div>";
+                html += "</div>";
+                html += '<ul class="ml-16 rounded-lg submenu divide-y divide-gray-300 hidden">';
 
                 $.each(value.attributes.embeds.data, function (i, embed) {
                     if (embed) {
-                        var url_complete = embed.attributes.embed_iframe 
-                            ? embed.attributes.embed_iframe.replace(
-                                "/embed/eventos.html?r", 
-                                "/repro.html?r"
-                              )
-                            : "/star-plus";
+                        var url_complete = embed.attributes.embed_iframe ? 
+                            transformarURL(embed.attributes.embed_iframe) :
+                            "/star-plus";
 
-                        html += '<li class="w-full pt-2 pb-2">';
-                        html += '<a href="#" onclick="loadStream(\'' + url_complete + '\'); return false;" class="text-sm text-gray-700 hover:text-green-600">';
-                        html += '<span class="mr-2">▶</span>' + embed.attributes.embed_name;
-                        html += '</a></li>';
+                        html += '<li class="w-full pt-2 pb-2"><a href="' + url_complete + '" target="_top" class="text-sm text-gray-700 hover:text-green-600">' +
+                            '<img src="https://img.icons8.com/?size=10&id=59862&format=png&color=000000" class="inline mr-2" alt="play"/>' +
+                            embed.attributes.embed_name + "</a></li>";
                     }
                 });
 
-                html += '</ul>';
-                html += '</li>';
-
-                $(".menu").append(html);
+                html += "</ul>";
+                html += "</li>";
             });
 
-            $(".toggle-submenu").off("click").on("click", function() {
-                $(this).find("span").text($(this).next(".submenu").is(":visible") ? "▼" : "▲");
-                $(this).next(".submenu").slideToggle();
-            });
-        }
-
-        function loadStream(url) {
-            // Envía el URL del stream al padre (React)
-            window.parent.postMessage({
-                type: 'LOAD_STREAM',
-                url: url
-            }, '*');
-            
-            // Opcional: Cerrar el submenú después de seleccionar
-            $(this).closest('.submenu').slideUp();
-            $(this).closest('.match-item').find('.toggle-submenu span').text('▼');
+            $(".menu").html(html);
         }
 
         function refrescarAgenda() {
             obtenerAgenda();
         }
     </script>
+
+    <style>
+        .topnav {
+            background-color: #8baf1c; /* Verde del menú */
+            border: 2px solid #000000; /* Borde negro */
+            border-radius: 5px; /* Bordes redondeados */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        }
+        .topnav a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+            margin: 0 5px;
+            font-weight: bold; /* Estilo en negrita para los enlaces */
+        }
+        .topnav a:hover {
+            background-color: #6b8f1a; /* Color de fondo al pasar el mouse */
+        }
+        .topnav a.active {
+            background-color: #8baf1c;
+        }
+        .title-agenda {
+            background-color: #8baf1c; /* Verde del fondo */
+            color: white; /* Color del texto */
+            padding: 10px; /* Espaciado interno */
+            border-radius: 5px; /* Bordes redondeados */
+            font-weight: bold; /* Estilo en negrita */
+            margin: 20px 0; /* Margen superior e inferior */
+            text-align: center; /* Alinear al centro */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <main class="p-4">
+        <h1 class="text-3xl font-semibold text-center mb-4"></h1>
+        <div class="title-agenda"></div>
+        <ul class="menu"></ul>
+    </main>
+
 </body>
 </html>
