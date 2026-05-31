@@ -1,0 +1,198 @@
+
+
+<html>
+    <head>
+    <title>repro 1</title>
+    
+    <meta content="no-cache" http-equiv="cache-control"></meta>
+    <meta content="no-cache" http-equiv="Pragma"></meta>
+    <meta content="-1" http-equiv="expires"></meta>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+    
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
+    <meta content="width=device-width, initial-scale=1" name="viewport"></meta>    
+    <style>
+
+    .contenedor img {
+      width: 100%;
+    }
+    
+    @media (max-width:600px)  { 
+      .contenedor {
+        width: 90%;
+      }
+    }
+    
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 15px;
+        height: 100%;
+         overflow: hidden;
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    
+
+            .button {
+      background-color: #50ff39; /* Green */
+      border: 3px solid Black;
+     
+      text-align: center;
+      text-decoration: none;
+      font-size: 14px;
+      cursor: pointer;
+        font-weight: bold;
+        width: 115px;
+      }
+                   #updateButton {
+    background-color: #50ff39;
+            border: 3px solid Black;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 115px;
+            margin-left: 30px; /* Adjust the margin-right as needed */
+         
+           
+        }
+      
+    </style>
+    
+    </head>
+    
+    <body>
+     
+      <div class="contenedor">
+        <div class="topnav" id="myTopnav">
+
+    
+      <a class="icon" href="javascript:void(0);" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <center><h2> </h2> </center>
+                          <p>
+        
+        En el apasionante mundo del deporte, existen numerosos canales que nos mantienen conectados con las competiciones más atractivas de todo el planeta. Desde el fútbol, considerado el deporte rey, hasta disciplinas menos conocidas pero igualmente emocionantes, los canales deportivos nos brindan la oportunidad de disfrutar de la acción en vivo y de manera exclusiva.</p>
+        
+        <p>
+
+Si eres fanático del fútbol, canales como ESPN, Fox Sports y beIN Sports te ofrecen una amplia cobertura de las ligas más importantes del mundo, como la Premier League, La Liga, la Serie A y la Bundesliga. Además, puedes deleitarte con la emoción de la Liga de Campeones de la UEFA y la Copa Libertadores, donde los mejores clubes luchan por la gloria continental.
+
+Si tu pasión es el baloncesto, canales como NBA TV y ESPN transmiten los juegos de la NBA, la liga de baloncesto más prestigiosa y seguida del mundo. Podrás disfrutar de los increíbles tiros, las jugadas espectaculares y la intensidad de los partidos protagonizados por los grandes astros de este deporte.</p>
+    <br />
+          <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+         <input id="updateButton"  onclick="updateIframe()" type="button" value="Update" />
+            <script>
+        /* Your existing scripts */
+
+        function updateIframe() {
+            var iframe = document.getElementById("tvIframe");
+            iframe.src = iframe.src; // Reloads the iframe with the same URL
+        }
+    </script>
+<br />
+<br />
+<script type="text/javascript">
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+     id = getParameterByName('p');
+    if(getParameterByName('embed')){
+       embed = getParameterByName('embed');
+    }else{
+       if(getParameterByName('r')){
+           embed = getParameterByName('r');
+        }else{
+           embed = false;
+    }  
+    }
+
+ </script> 
+
+    <div class="video-container">     
+        <script type="text/javascript">
+            if (embed) {document.write('<iframe id="tvIframe" class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen src="'+embed+'" scrolling="no" frameBorder="0" title="Reproductor 1" alt="Reproducir" allowfullscreen></iframe>');}else{document.write('<img class="embed-responsive-item" src="https://pbs.twimg.com/media/DjY2G6tV4AA5-0p.jpg" width="100%">')}
+                </script>
+</div>
+
+      </div>
+
+    <br />
+      <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Para los amantes de los deportes de motor, canales como Formula 1 TV y MotoGP ofrecen cobertura exclusiva de las carreras de Fórmula 1 y MotoGP respectivamente. Podrás vivir la velocidad, la emoción de las curvas y el rugir de los motores mientras los mejores pilotos del mundo compiten por el título.&nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; No podemos olvidarnos de los canales especializados en deportes de combate, como UFC Fight Pass y BoxNation. En estos canales, podrás disfrutar de los combates más emocionantes de las artes marciales mixtas y el boxeo, donde los mejores luchadores se enfrentan cara a cara en busca de la victoria.
+
+Estos son solo algunos ejemplos de los muchos canales deportivos que existen en el mundo. Cada uno de ellos ofrece una amplia gama de eventos y competiciones que mantienen a millones de fanáticos al borde de sus asientos. Ya sea que prefieras el fútbol, el baloncesto, los deportes de motor o las artes marciales, siempre habrá un canal que satisfaga tus necesidades deportivas y te permita disfrutar de todo el atractivo y la emoción que el deporte tiene para ofrecer.
+        </p>
+    </body></html>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    <footer>
+
+
+
+    </footer>
+
+<script>
+function toggleFullscreen() {
+    let elem = document.getElementById("tvIframe");
+
+    if (!elem) {
+        alert('El iframe no está disponible.');
+        return;
+    }
+
+    // Obtener el src actual del iframe
+    let currentSrc = elem.getAttribute('src');
+    
+    // Dividir el src en partes usando "r=" como delimitador y obtener la última parte
+    let urlParts = currentSrc.split("r=");
+    let lastUrl = urlParts[urlParts.length - 1];  // Obtener el último URL
+
+    // Verificar si la URL está codificada en Base64
+    let decodedUrl;
+    try {
+        // Intentar decodificar como Base64
+        decodedUrl = atob(lastUrl);
+    } catch (e) {
+        // Si falla (no es Base64), usar la URL tal cual
+        decodedUrl = lastUrl;
+    }
+
+    // Si el URL cambia, actualizar el src
+    if (elem.getAttribute('src') !== decodedUrl) {
+        elem.setAttribute('src', decodedUrl);
+    }
+
+    // Activar el modo pantalla completa
+    if (!document.fullscreenElement) {
+        elem.requestFullscreen().catch((err) => {
+            alert(`Error al intentar activar el modo pantalla completa: ${err.message} (${err.name})`);
+        });
+    } else {
+        document.exitFullscreen();
+    }
+}
+</script>
+
