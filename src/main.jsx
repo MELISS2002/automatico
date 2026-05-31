@@ -9,12 +9,12 @@ import Terms from './pages/Terms';
 import Gana from './pages/gana';
 import Salud from './pages/salud';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import Channels from './pages/Channels'; // <-- Importar el nuevo componente
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
       <Routes>
-        {/* Todas las rutas usan el Layout */}
         <Route path="/" element={<Layout />}>
           <Route index element={<App />} />
           <Route path="gana" element={<Gana />} />
@@ -23,6 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="contact" element={<Contact />} />
           <Route path="terms" element={<Terms />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="canales" element={<Channels />} /> {/* NUEVA RUTA */}
         </Route>
       </Routes>
     </Router>

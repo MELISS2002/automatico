@@ -19,9 +19,6 @@ function App() {
   const [news, setNews] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Nuevo estado para el interstitial (bienvenida Copa del Mundo)
-  const [showInterstitial, setShowInterstitial] = useState(true);
-
   // Referencia para el scroll automático
   const streamPlayerRef = useRef(null);
 
@@ -154,28 +151,6 @@ function App() {
     }
   };
 
-  // Función para cerrar el interstitial y mostrar el contenido real
-  const handleEnter = () => {
-    setShowInterstitial(false);
-  };
-
-  // 🔥 INTERSTITIAL DE BIENVENIDA (COPA DEL MUNDO)
-  if (showInterstitial) {
-    return (
-      <div className="interstitial-overlay">
-        <div className="interstitial-content">
-          <h1>🏆 COPA DEL MUNDO 2026 🏆</h1>
-          <h2>¡Vive la emoción como si estuvieras en el estadio!</h2>
-          <p>Transmisiones en vivo • Resultados al instante • Análisis exclusivo</p>
-          <button onClick={handleEnter} className="enter-btn">
-            🔥 INGRESAR AHORA 🔥
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  // 📺 CONTENIDO NORMAL (después de aceptar el interstitial)
   return (
     <div className="app">
       <main className="main-content">
