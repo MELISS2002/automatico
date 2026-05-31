@@ -1,0 +1,131 @@
+/* ===== Página de Canales ===== */
+.channels-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.channels-header h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#search {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.category-filter {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category-btn {
+  padding: 8px 15px;
+  margin: 0 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.category-btn.active {
+  background: #8baf1c;
+  color: white;
+}
+
+.canales-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.card-wrapper {
+  position: relative;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.card-title {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  background: #8baf1c;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  z-index: 100;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 200px;
+  top: 100%;
+  left: 0;
+}
+
+.card-wrapper.show .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background: #f0f0f0;
+}
+
+.channels-loading, .channels-error, .no-results {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #555;
+}
+
+.channels-error {
+  color: red;
+}

@@ -9,6 +9,7 @@ import Terms from './pages/Terms';
 import Gana from './pages/gana';
 import Salud from './pages/salud';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import Channels from './pages/Channels';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="contact" element={<Contact />} />
           <Route path="terms" element={<Terms />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="canales" element={<Channels />} />
         </Route>
       </Routes>
     </Router>
