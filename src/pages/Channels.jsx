@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './Channels.css'; 
+import './Channels.css';
+
 const Channels = () => {
   const [channels, setChannels] = useState([]);
   const [filteredChannels, setFilteredChannels] = useState([]);
@@ -8,11 +9,36 @@ const Channels = () => {
   const [openDropdownId, setOpenDropdownId] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [streamUrl, setStreamUrl] = useState('');
+  const [showPlayer, setShowPlayer] = useState(false);
 
-  // Referencia para cerrar dropdowns al hacer clic fuera
   const wrapperRef = useRef(null);
+  const iframeRef = useRef(null); // Referencia para el iframe
 
-  // Cargar datos del JSON externo
+  // Función para extraer la URL directa del stream (elimina /p/espnrepro1.html?r=)
+  const extractDirectUrl = (url) => {
+    if (!url) return '';
+    const match = url.match(/[?&]r=([^&]*)/);
+    if (match && match[1]) {
+      return decodeURIComponent(match[1]);
+    }
+    return url;
+  };
+
+  // Función para alternar pantalla completa
+  const toggleFullscreen = () => {
+    const iframe = iframeRef.current;
+    if (!iframe) return;
+
+    if (!document.fullscreenElement) {
+      iframe.requestFullscreen().catch(err => {
+        console.error(`Error al entrar en pantalla completa: ${err.message}`);
+      });
+    } else {
+      document.exitFullscreen();
+    }
+  };
+
   useEffect(() => {
     const fetchChannels = async () => {
       try {
@@ -30,7 +56,6 @@ const Channels = () => {
     fetchChannels();
   }, []);
 
-  // Filtrar por búsqueda y categoría
   useEffect(() => {
     let result = channels;
     if (searchTerm) {
@@ -44,7 +69,6 @@ const Channels = () => {
     setFilteredChannels(result);
   }, [searchTerm, activeCategory, channels]);
 
-  // Cerrar dropdown si se hace clic fuera
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
@@ -106,25 +130,49 @@ const Channels = () => {
               <div className="dropdown-content">
                 {channel.options && channel.options.length > 0 ? (
                   channel.options.map((opt, optIdx) => (
-                    <a
+                    <div
                       key={optIdx}
-                      href={opt.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      className="dropdown-option"
+                      onClick={() => {
+                        const directUrl = extractDirectUrl(opt.url);
+                        if (directUrl) {
+                          setStreamUrl(directUrl);
+                          setShowPlayer(true);
+                          setOpenDropdownId(null);
+                        }
+                      }}
                     >
                       {opt.label}
-                    </a>
+                    </div>
                   ))
                 ) : (
-                  <a href="#" style={{ cursor: 'default', color: '#999' }}>
-                    No hay opciones disponibles
-                  </a>
+                  <div className="dropdown-option disabled">No hay opciones disponibles</div>
                 )}
               </div>
             </div>
           ))
         )}
       </div>
+
+      {/* Modal del reproductor con stream directo y botón fullscreen */}
+      {showPlayer && (
+        <div className="player-modal" onClick={() => setShowPlayer(false)}>
+          <div className="player-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="close-player" onClick={() => setShowPlayer(false)}>✕</button>
+            <button className="fullscreen-btn" onClick={toggleFullscreen}>
+              ⛶
+            </button>
+            <iframe
+              ref={iframeRef}
+              src={streamUrl}
+              title="Stream directo"
+              className="direct-stream-iframe"
+              allowFullScreen
+              frameBorder="0"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
