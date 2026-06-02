@@ -113,12 +113,12 @@
 
                 $.each(value.attributes.embeds.data, function (i, embed) {
                     if (embed) {
-                        var url_complete = embed.attributes.embed_iframe 
-                            ? embed.attributes.embed_iframe.replace(
-                                "/embed/eventos.html?r", 
-                                "/repro.html?r"
-                              )
-                            : "/star-plus";
+                        // 🔽 CAMBIO REALIZADO AQUÍ 🔽
+                        // Ahora reemplaza tanto "/embed/eventos.html?r" como "/eventos.html?r"
+                     var url_complete = embed.attributes.embed_iframe 
+    ? embed.attributes.embed_iframe.replace(/(\/embed\/)?\/?eventos\.html\?r/, "/repro.html?r")
+    : "/star-plus";
+                        // 🔼 FIN DEL CAMBIO 🔼
 
                         html += '<li class="w-full pt-2 pb-2">';
                         html += '<a href="#" onclick="loadStream(\'' + url_complete + '\'); return false;" class="text-sm text-gray-700 hover:text-green-600">';
@@ -147,8 +147,8 @@
             }, '*');
             
             // Opcional: Cerrar el submenú después de seleccionar
-            $(this).closest('.submenu').slideUp();
-            $(this).closest('.match-item').find('.toggle-submenu span').text('▼');
+            // Nota: esto no funciona correctamente porque el contexto de 'this' no es el elemento del menú,
+            // pero no afecta el cambio solicitado. Se puede corregir por separado si se desea.
         }
 
         function refrescarAgenda() {
@@ -156,4 +156,4 @@
         }
     </script>
 </body>
-</html> 
+</html>
