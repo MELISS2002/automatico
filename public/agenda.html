@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda Deportiva</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Partidos y Canales deportivos online</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
@@ -16,30 +17,42 @@
             font-weight: bold;
             margin: 20px 0;
             text-align: center;
-        }
-        .menu li {
-            padding-left: 1rem;
-            margin-bottom: 0.5rem;
-        }
-        .toggle-submenu {
-            cursor: pointer;
+            font-size: 1.25rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         .submenu {
             display: none;
-            margin-left: 4rem;
+        }
+        .toggle-submenu {
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .toggle-submenu:hover {
+            background-color: #f9fafb;
+        }
+        .play-icon {
+            margin-right: 8px;
+            font-size: 12px;
         }
     </style>
 </head>
-<body class="bg-gray-100 p-4">
-    <div class="title-agenda"></div>
-    <ul class="menu"></ul>
+<body class="bg-gray-100">
+    <main class="p-4 max-w-5xl mx-auto">
+  
+        <div class="title-agenda">Cargando agenda deportiva...</div>
+        <ul class="menu space-y-2"></ul>
+    </main>
 
     <script>
-        $(document).ready(function () {
-            obtenerAgenda();
-            setInterval(refrescarAgenda, 60000);
-        });
+        // --------------------------------------------------------------
+        // VARIABLE GLOBAL para la base de imágenes (se llena desde config.js)
+        // --------------------------------------------------------------
+        let IMAGE_BASE_URL = "https://img.agenda18.com"; // valor por defecto
+        let openSubmenu = null;
 
+        // --------------------------------------------------------------
+        // CONVERSIÓN HORARIA (igual a la original con Luxon)
+        // --------------------------------------------------------------
         function convertToUserTimeZone(utcHour) {
             const DateTime = luxon.DateTime;
             const utcDateTime = DateTime.fromISO(utcHour, { zone: "America/Lima" });
@@ -47,113 +60,188 @@
             return localDateTime.toFormat("HH:mm");
         }
 
-        function obtenerAgenda() {
-            const agendaUrl = "https://raw.githubusercontent.com/belkaperu/json/main/agenda_combinada.json";
-            const backupAgendaUrl = "https://raw.githubusercontent.com/belkaperu/json/main/agenda_combinada.json";
-            
-            $.getJSON(agendaUrl)
-                .done(function (result) {
-                    if (result.data && result.data.length > 0) {
-                        let dateCompleted = moment(result.data[0].attributes.date_diary).format("LL");
-                        $(".title-agenda").html("Agenda Deportiva " + dateCompleted);
-                        processAgendaData(result.data);
-                    } else {
-                        cargarCopiaLocal(backupAgendaUrl);
-                    }
-                })
-                .fail(function () {
-                    cargarCopiaLocal(backupAgendaUrl);
-                });
+        // --------------------------------------------------------------
+        // TRANSFORMACIÓN DE URL: igual que el primer script
+        // (reemplaza eventos.html?r por repro.html?r)
+        // --------------------------------------------------------------
+        function transformarUrlOriginal(url) {
+            if (!url) return "/star-plus";
+            return url.replace(/(\/embed\/)?\/?eventos\.html\?r/, "/repro.html?r");
         }
 
-        function cargarCopiaLocal(backupAgendaUrl) {
-            $.getJSON(backupAgendaUrl)
-                .done(function (result) {
-                    if (result.data && result.data.length > 0) {
-                        let dateCompleted = moment(result.data[0].attributes.date_diary).format("LL");
-                        $(".title-agenda").html("Agenda Deportiva " + dateCompleted);
-                        processAgendaData(result.data);
-                    } else {
-                        $(".title-agenda").html("No hay agenda disponible.");
-                    }
-                })
-                .fail(function () {
-                    $(".title-agenda").html("Error al cargar la agenda.");
-                });
-        }
-
-        function processAgendaData(data) {
-            $(".menu").empty();
-            
-            data.sort((a, b) => {
-                return moment(a.attributes.diary_hour, "HH:mm").diff(moment(b.attributes.diary_hour, "HH:mm"));
-            });
-
-            $.each(data, function (key, value) {
-                let imageUrl = value.attributes.country.data != null ? 
-                    "https://img.fubolazo.com" + value.attributes.country.data.attributes.image.data.attributes.url :
-                    "https://img.fubolazo.com/uploads/sin_imagen_d36205f0e8.png";
-
-                let description = value.attributes.diary_description.replace(/^.*?:\s*/, "").trim();
-
-                let html = '<li class="pl-4 hover:bg-gray-50 rounded-lg border border-gray-200 mb-2">';
-                html += '<div class="flex items-center cursor-pointer justify-between p-2 toggle-submenu">';
-                html += '<div class="flex items-center">';
-                html += '<time class="text-center font-bold text-black bg-white rounded-lg p-2">' +
-                    convertToUserTimeZone(value.attributes.diary_hour) +
-                    '</time>';
-                html += '<img src="' + imageUrl + '" alt="" class="ml-2 object-cover h-6 w-6">';
-                html += '<span class="flex-1 ml-4 text-left font-bold text-gray-800">' +
-                    description +
-                    '</span>';
-                html += '</div>';
-                html += '<span class="text-gray-500">▼</span>';
-                html += '</div>';
-                html += '<ul class="submenu ml-16 rounded-lg divide-y divide-gray-300">';
-
-                $.each(value.attributes.embeds.data, function (i, embed) {
-                    if (embed) {
-                        // 🔽 CAMBIO REALIZADO AQUÍ 🔽
-                        // Ahora reemplaza tanto "/embed/eventos.html?r" como "/eventos.html?r"
-                     var url_complete = embed.attributes.embed_iframe 
-    ? embed.attributes.embed_iframe.replace(/(\/embed\/)?\/?eventos\.html\?r/, "/repro.html?r")
-    : "/star-plus";
-                        // 🔼 FIN DEL CAMBIO 🔼
-
-                        html += '<li class="w-full pt-2 pb-2">';
-                        html += '<a href="#" onclick="loadStream(\'' + url_complete + '\'); return false;" class="text-sm text-gray-700 hover:text-green-600">';
-                        html += '<span class="mr-2">▶</span>' + embed.attributes.embed_name;
-                        html += '</a></li>';
-                    }
-                });
-
-                html += '</ul>';
-                html += '</li>';
-
-                $(".menu").append(html);
-            });
-
-            $(".toggle-submenu").off("click").on("click", function() {
-                $(this).find("span").text($(this).next(".submenu").is(":visible") ? "▼" : "▲");
-                $(this).next(".submenu").slideToggle();
-            });
-        }
-
+        // --------------------------------------------------------------
+        // FUNCIÓN QUE ENVÍA EL STREAM AL PADRE (postMessage)
+        // --------------------------------------------------------------
         function loadStream(url) {
-            // Envía el URL del stream al padre (React)
             window.parent.postMessage({
                 type: 'LOAD_STREAM',
                 url: url
             }, '*');
-            
-            // Opcional: Cerrar el submenú después de seleccionar
-            // Nota: esto no funciona correctamente porque el contexto de 'this' no es el elemento del menú,
-            // pero no afecta el cambio solicitado. Se puede corregir por separado si se desea.
+        }
+
+        // --------------------------------------------------------------
+        // CARGA DE CONFIG Y AGENDA (exactamente como en el segundo script)
+        // --------------------------------------------------------------
+        async function cargarConfigYAgenda() {
+            try {
+                const response = await fetch("https://futbollibregol.pe/js/config.js?v=1.12");
+                const textoConfig = await response.text();
+                const match = textoConfig.match(/export\s+const\s+AGENDA_URL\s*=\s*"([^"]+)"/);
+                if (match && match[1]) {
+                    const agendaUrl = match[1];
+                    const urlObj = new URL(agendaUrl);
+                    const dominio = urlObj.hostname;
+                    IMAGE_BASE_URL = `https://img.${dominio}`;
+                    console.log("Config cargada. Imágenes desde:", IMAGE_BASE_URL);
+                    await obtenerAgendaDesdeUrl(agendaUrl);
+                } else {
+                    console.warn("No se encontró AGENDA_URL. Usando respaldo.");
+                    await cargarRespaldo();
+                }
+            } catch (error) {
+                console.error("Error cargando config.js:", error);
+                await cargarRespaldo();
+            }
+        }
+
+        async function obtenerAgendaDesdeUrl(agendaUrl) {
+            try {
+                const response = await fetch(agendaUrl);
+                const result = await response.json();
+                if (result.data && result.data.length > 0) {
+                    let dateCompleted = moment(result.data[0].attributes.date_diary).format("LL");
+                    $(".title-agenda").html("Agenda Deportiva " + dateCompleted);
+                    processAgendaData(result.data);
+                } else {
+                    $(".title-agenda").html("No hay agenda en la URL primaria.");
+                    await cargarRespaldo();
+                }
+            } catch (error) {
+                console.error("Error con agenda primaria:", error);
+                await cargarRespaldo();
+            }
+        }
+
+        async function cargarRespaldo() {
+            const backupUrl = "https://raw.githubusercontent.com/belkaperu/json/main/agenda_combinada.json";
+            try {
+                const response = await fetch(backupUrl);
+                const result = await response.json();
+                if (result.data && result.data.length > 0) {
+                    let dateCompleted = moment(result.data[0].attributes.date_diary).format("LL");
+                    $(".title-agenda").html("Agenda Deportiva " + dateCompleted + " (respaldo)");
+                    processAgendaData(result.data);
+                } else {
+                    $(".title-agenda").html("No hay agenda disponible.");
+                }
+            } catch (error) {
+                console.error("Error cargando respaldo:", error);
+                $(".title-agenda").html("Error al cargar la agenda.");
+            }
+        }
+
+        // --------------------------------------------------------------
+        // RENDERIZADO DE LA AGENDA (con diseño moderno, ícono ▶ y postMessage)
+        // --------------------------------------------------------------
+        function processAgendaData(data) {
+            data.sort((a, b) => {
+                return moment(a.attributes.diary_hour, "HH:mm").diff(moment(b.attributes.diary_hour, "HH:mm"));
+            });
+
+            let html = "";
+            $.each(data, function (key, value) {
+                // Construir imagen con dominio dinámico (igual al segundo script)
+                let imageUrl = "https://img.agenda18.com/uploads/sin_imagen_d36205f0e8.png";
+                if (value.attributes.country && value.attributes.country.data &&
+                    value.attributes.country.data.attributes &&
+                    value.attributes.country.data.attributes.image &&
+                    value.attributes.country.data.attributes.image.data &&
+                    value.attributes.country.data.attributes.image.data.attributes &&
+                    value.attributes.country.data.attributes.image.data.attributes.url) {
+                    imageUrl = `${IMAGE_BASE_URL}${value.attributes.country.data.attributes.image.data.attributes.url}`;
+                }
+
+                let description = value.attributes.diary_description.replace(/^.*?:\s*/, "").trim();
+
+                html += '<li class="pl-2 hover:bg-gray-50 rounded-lg border border-gray-200 mb-2 bg-white shadow-sm">';
+                html += '<div class="flex items-center cursor-pointer justify-between toggle-submenu p-3 rounded-md">';
+                html += '<div class="flex items-center flex-wrap gap-2">';
+                html += '<time class="text-center font-bold text-black bg-gray-100 rounded-lg px-3 py-2 min-w-[70px] shadow-inner">' + convertToUserTimeZone(value.attributes.diary_hour) + '</time>';
+                html += '<img src="' + imageUrl + '" class="ml-1 object-cover h-7 w-7 rounded-full border border-gray-300 bg-white" alt="logo" onerror="this.onerror=null; this.src=\'https://img.agenda18.com/uploads/sin_imagen_d36205f0e8.png\';">';
+                html += '<span class="flex-1 ml-3 text-left font-bold text-gray-800 text-md md:text-lg">' + description + '</span>';
+                html += '</div>';
+                html += '<svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200 submenu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>';
+                html += '</div>';
+                
+                html += '<ul class="submenu ml-4 md:ml-12 rounded-lg divide-y divide-gray-200 bg-gray-50 mt-1 mb-1 hidden">';
+                
+                if (value.attributes.embeds && value.attributes.embeds.data && value.attributes.embeds.data.length) {
+                    $.each(value.attributes.embeds.data, function (i, embed) {
+                        if (embed) {
+                            var url_complete = embed.attributes.embed_iframe ? 
+                                transformarUrlOriginal(embed.attributes.embed_iframe) :
+                                "/star-plus";
+                            var embedName = embed.attributes.embed_name || "Canal";
+                            
+                            html += '<li class="w-full py-2 px-3 hover:bg-gray-100 transition rounded-md">';
+                            html += '<a href="#" onclick="event.preventDefault(); loadStream(\'' + url_complete.replace(/'/g, "\\'") + '\');" class="text-sm md:text-base text-gray-700 hover:text-green-700 font-medium flex items-center">';
+                            html += '<span class="play-icon">▶</span>';
+                            html += embedName;
+                            html += '</a></li>';
+                        }
+                    });
+                } else {
+                    html += '<li class="py-2 px-3 text-gray-500 text-sm italic">📡 Sin enlaces disponibles</li>';
+                }
+                html += '</ul></li>';
+            });
+
+            $(".menu").html(html);
+
+            // Comportamiento de submenús (solo uno abierto a la vez)
+            $(".toggle-submenu").off("click").on("click", function(e) {
+                e.preventDefault();
+                const $submenu = $(this).next("ul.submenu");
+                const $icon = $(this).find(".submenu-icon");
+                
+                if (openSubmenu && openSubmenu[0] !== $submenu[0]) {
+                    openSubmenu.slideUp(180);
+                    openSubmenu.prev(".toggle-submenu").find(".submenu-icon").css("transform", "rotate(0deg)");
+                }
+                
+                if ($submenu.is(":visible")) {
+                    $submenu.slideUp(180);
+                    $icon.css("transform", "rotate(0deg)");
+                    openSubmenu = null;
+                } else {
+                    $submenu.slideDown(200);
+                    $icon.css("transform", "rotate(180deg)");
+                    openSubmenu = $submenu;
+                }
+            });
         }
 
         function refrescarAgenda() {
-            obtenerAgenda();
+            cargarConfigYAgenda();
         }
+
+        // --------------------------------------------------------------
+        // INICIALIZACIÓN
+        // --------------------------------------------------------------
+        $(document).ready(function () {
+            cargarConfigYAgenda();
+            setInterval(refrescarAgenda, 60000);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Cerrar submenú si se hace clic fuera
+            $(document).on("click", function(e) {
+                if (!$(e.target).closest(".toggle-submenu").length && openSubmenu) {
+                    openSubmenu.slideUp(180);
+                    openSubmenu.prev(".toggle-submenu").find(".submenu-icon").css("transform", "rotate(0deg)");
+                    openSubmenu = null;
+                }
+            });
+        });
     </script>
 </body>
 </html>
