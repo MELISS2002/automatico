@@ -54,6 +54,28 @@ function App() {
   return (
     <div className="app">
       <main className="main-content">
+        {/* Banner atractivo para descargar la app */}
+        <div className="download-banner">
+          <div className="banner-content">
+            <div className="banner-text">
+              <span className="banner-icon">📱</span>
+              <div>
+                <h3>Descarga nuestra App</h3>
+                <p>Disfruta de todos los partidos en HD, sin cortes y con la mejor calidad.</p>
+              </div>
+            </div>
+            <a 
+              href="https://raw.githubusercontent.com/belkaperu/json/main/app.apk" // Reemplaza con tu enlace real
+              className="download-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Descargar ahora
+              <span className="button-icon">⬇️</span>
+            </a>
+          </div>
+        </div>
+
         {/* Sección de agenda siempre visible */}
         <section className="live-section">
           <div className="agenda-container">
