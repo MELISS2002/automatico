@@ -1,54 +1,72 @@
 [
   {
-  "slug": "ajo-beneficios",
-  "title": "El Ajo: Cómo Activar sus Beneficios para la Circulación, el Corazón y la Salud",
-  "author": "Equipo UltimoLive",
-  "authorTitle": "Especialistas en Salud Natural",
-  "date": "2025-06-09",
-  "excerpt": "Descubre cómo el ajo puede mejorar tu circulación, reducir el colesterol y proteger tu corazón. Aprende el secreto para activar la alicina y aprovechar todos sus beneficios.",
-  "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/5npmC3fkNt2nN-efkVIWy.webp",
-  "htmlPath": "/posts/ajo-beneficios/index.html"
-},
+    "slug": "qu-dice-tu-cuerpo-sobre-tu-salud-haz-este-test-interactivo-de-2-minutos-y-descbrelo",
+    "title": "Test de Salud Corporal: Descubre lo que tu cuerpo te está diciendo en solo 2 minutos",
+    "author": "ROSA EMILY",
+    "date": "2026-07-20",
+    "excerpt": "Tu cuerpo envía señales constantes sobre tu estado de salud, desde la calidad del sueño hasta las reacciones digestivas. Este test interactivo te ayudará a interpretar esas señales y te dará pautas prácticas para mejorar tu bienestar general en solo 2 minutos.",
+    "thumbnail": "https://image.pollinations.ai/prompt/health-body-test-thumbnail",
+    "htmlPath": "/posts/qu-dice-tu-cuerpo-sobre-tu-salud-haz-este-test-interactivo-de-2-minutos-y-descbrelo/index.html"
+  },
   {
-  "slug": "vitaminas-circulacion",
-  "title": "4 Vitaminas Esenciales para Mejorar la Circulación y Fortalecer tus Piernas",
-  "author": "Equipo UltimoLive",
-  "authorTitle": "Especialistas en Salud y Bienestar",
-  "date": "2025-06-09",
-  "excerpt": "¿Sabías que la mala circulación causa molestias en pies, piernas y rodillas? Descubre cómo revertir estos problemas con 4 vitaminas clave y remedios naturales para fortalecer tus venas y arterias.",
-  "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/0kKZ5R53CUGowy7FbcwM3.webp",
-  "htmlPath": "/posts/vitaminas-circulacion/index.html"
-},
+    "slug": "por-que-debemos-comer-colageno-y-en-que-serve",
+    "title": "Colágeno: el pilar de tu juventud y salud – ¿Por qué debes consumirlo y cómo aprovecharlo al máximo?",
+    "author": "ROSA EMILY",
+    "date": "2026-07-20",
+    "excerpt": "El colágeno es la proteína más abundante en nuestro cuerpo y su disminución acelera el envejecimiento. En este artículo descubrirás todos sus beneficios, desde la piel hasta las articulaciones, las mejores fuentes alimenticias y cómo elegir un suplemento eficaz. Aprende a cuidar tu colágeno y a mantener tu cuerpo en óptimas condiciones.",
+    "thumbnail": "https://image.pollinations.ai/prompt/collagen-supplements-healthy-skin-thumbnail",
+    "htmlPath": "/posts/por-que-debemos-comer-colageno-y-en-que-serve/index.html"
+  },
   {
-  "slug": "batidos-verdes-sin-frutas",
-  "title": "Batidos verdes sin frutas: evidencia y recomendaciones",
-  "author": "Equipo VitalNatur",
-  "authorTitle": "Especialista en Metabolismo Y medecina natural",
-  "date": "2025-06-05",
-  "excerpt": "Descubre por qué los batidos verdes no deben llevar frutas licuadas y cómo consumirlos correctamente según la evidencia científica. Aprende a cuidar tu glucosa y salud metabólica con recomendaciones prácticas y respuestas a las dudas más frecuentes.",
-  "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/Nw_0QW1e7DCkOjg9lSf-F.webp",
-  "htmlPath": "/posts/batidos-verdes-sin-frutas/index.html"
-},
+    "slug": "ajo-beneficios",
+    "title": "El Ajo: Cómo Activar sus Beneficios para la Circulación, el Corazón y la Salud",
+    "author": "Equipo UltimoLive",
+    "authorTitle": "Especialistas en Salud Natural",
+    "date": "2025-06-09",
+    "excerpt": "Descubre cómo el ajo puede mejorar tu circulación, reducir el colesterol y proteger tu corazón. Aprende el secreto para activar la alicina y aprovechar todos sus beneficios.",
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/5npmC3fkNt2nN-efkVIWy.webp",
+    "htmlPath": "/posts/ajo-beneficios/index.html"
+  },
   {
-  "slug": "ansiedad-nerviosismo-respiracion-profunda",
-  "title": "Ansiedad, Nerviosismo y Respiración Profunda según Frank Suárez",
-  "author": "Frank Suárez",
-  "authorTitle": "Especialista en Metabolismo",
-  "date": "2025-06-04",
-  "excerpt": "Descubre cómo el nerviosismo y la ansiedad están ligados al sistema nervioso excitado y aprende la técnica de respiración profunda recomendada por Frank Suárez para recuperar la calma y el bienestar. Incluye síntomas, causas, consejos prácticos y una guía paso a paso para controlar la ansiedad.",
-  "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/HwT9oCczM_RsZ94Q5UvpQ.webp",
-  "htmlPath": "/posts/ansiedad/index.html"
-},
+    "slug": "vitaminas-circulacion",
+    "title": "4 Vitaminas Esenciales para Mejorar la Circulación y Fortalecer tus Piernas",
+    "author": "Equipo UltimoLive",
+    "authorTitle": "Especialistas en Salud y Bienestar",
+    "date": "2025-06-09",
+    "excerpt": "¿Sabías que la mala circulación causa molestias en pies, piernas y rodillas? Descubre cómo revertir estos problemas con 4 vitaminas clave y remedios naturales para fortalecer tus venas y arterias.",
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/0kKZ5R53CUGowy7FbcwM3.webp",
+    "htmlPath": "/posts/vitaminas-circulacion/index.html"
+  },
   {
-  "slug": "trucos-tranquilizar-sistema-nervioso",
-  "title": "Trucos para Tranquilizar el Sistema Nervioso según Frank Suárez",
-  "author": "Frank Suárez",
-  "authorTitle": "Especialista en Metabolismo",
-  "date": "2025-06-03",
-  "excerpt": "Descubre los mejores trucos y recomendaciones de Frank Suárez para tranquilizar el sistema nervioso, mejorar el sueño y controlar el metabolismo. Consejos prácticos basados en años de experiencia clínica.",
-  "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/e6HIH4ACM4LkSbjyW9T7G.webp",
-  "htmlPath": "/posts/trucos-tranquilizar-sistema-nervioso/index.html"
-},
+    "slug": "batidos-verdes-sin-frutas",
+    "title": "Batidos verdes sin frutas: evidencia y recomendaciones",
+    "author": "Equipo VitalNatur",
+    "authorTitle": "Especialista en Metabolismo Y medecina natural",
+    "date": "2025-06-05",
+    "excerpt": "Descubre por qué los batidos verdes no deben llevar frutas licuadas y cómo consumirlos correctamente según la evidencia científica. Aprende a cuidar tu glucosa y salud metabólica con recomendaciones prácticas y respuestas a las dudas más frecuentes.",
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/Nw_0QW1e7DCkOjg9lSf-F.webp",
+    "htmlPath": "/posts/batidos-verdes-sin-frutas/index.html"
+  },
+  {
+    "slug": "ansiedad-nerviosismo-respiracion-profunda",
+    "title": "Ansiedad, Nerviosismo y Respiración Profunda según Frank Suárez",
+    "author": "Frank Suárez",
+    "authorTitle": "Especialista en Metabolismo",
+    "date": "2025-06-04",
+    "excerpt": "Descubre cómo el nerviosismo y la ansiedad están ligados al sistema nervioso excitado y aprende la técnica de respiración profunda recomendada por Frank Suárez para recuperar la calma y el bienestar. Incluye síntomas, causas, consejos prácticos y una guía paso a paso para controlar la ansiedad.",
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/HwT9oCczM_RsZ94Q5UvpQ.webp",
+    "htmlPath": "/posts/ansiedad/index.html"
+  },
+  {
+    "slug": "trucos-tranquilizar-sistema-nervioso",
+    "title": "Trucos para Tranquilizar el Sistema Nervioso según Frank Suárez",
+    "author": "Frank Suárez",
+    "authorTitle": "Especialista en Metabolismo",
+    "date": "2025-06-03",
+    "excerpt": "Descubre los mejores trucos y recomendaciones de Frank Suárez para tranquilizar el sistema nervioso, mejorar el sueño y controlar el metabolismo. Consejos prácticos basados en años de experiencia clínica.",
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/e6HIH4ACM4LkSbjyW9T7G.webp",
+    "htmlPath": "/posts/trucos-tranquilizar-sistema-nervioso/index.html"
+  },
   {
     "slug": "avena-colesterol",
     "title": "Efecto potenciador de la avena para bajar el colesterol",
@@ -57,8 +75,8 @@
     "excerpt": "Descubre cómo la avena puede reducir el colesterol, proteger tus arterias y mejorar tu salud cardiovascular, con evidencia científica y receta de batido saludable.",
     "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/gtXtRMnsH2-HDQS644fWF.webp",
     "htmlPath": "/posts/avena/index.html"
-},
-{
+  },
+  {
     "slug": "cura-milagrosa-aceite-queso",
     "title": "La Cura Milagrosa de Aceite y Queso: Preparación y Uso según Frank Suárez",
     "author": "Frank Suárez",
@@ -67,7 +85,7 @@
     "excerpt": "Aprende cómo preparar y utilizar la famosa cura milagrosa de aceite de lino y queso cottage, recomendada por la Dra. Johanna Budwig y explicada por Frank Suárez para apoyar la desintoxicación y la energía celular.",
     "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/z3_pJXm7j1WY0PI53u-0S.webp",
     "htmlPath": "/posts/cura-milagrosa-aceite-queso/index.html"
-},
+  },
   {
     "slug": "cancer-ayuda-frank-suarez",
     "title": "¿Qué hacer cuando ya llegó un cáncer? Consejos de Frank Suárez",
@@ -77,7 +95,7 @@
     "excerpt": "Descubre los pasos clave para apoyar a un ser querido recién diagnosticado con cáncer: alimentación, manejo del estrés, sueño y hábitos que favorecen la recuperación, según Frank Suárez.",
     "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/4zytwjvQbyBC_edmuiusT.webp",
     "htmlPath": "/posts/cancer/index.html"
-},
+  },
   {
     "slug": "tiroides",
     "title": "Hormona de Tiroides: Sintética vs. Natural",
@@ -87,7 +105,7 @@
     "excerpt": "Descubre las diferencias entre la hormona tiroidea sintética (Levotiroxina) y la natural (disecada de cerdo), sus efectos y cómo encontrar la opción adecuada para ti.",
     "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/NmuOtUOvvvenOg5DWgx0J.webp",
     "htmlPath": "/posts/tiroides/index.html"
-},
+  },
   {
     "slug": "regeneracion-mitocondrial",
     "title": "Regeneración Mitocondrial: La Guía Científica para Energía Ilimitada",
@@ -97,7 +115,7 @@
     "excerpt": "Descubre los 3 métodos avalados por la ciencia para regenerar tus mitocondrias y multiplicar tu energía celular según investigaciones de Premio Nobel.",
     "thumbnail": "https://imgmedia.larepublica.pe/1200x630/larepublica/original/2025/04/01/67ec1aa268d04705c80521c6.jpg",
     "htmlPath": "/posts/regeneracion-mitocondrial/index.html"
-},
+  },
   {
     "slug": "comer-antes-despues-ejercicio",
     "title": "¿Comer antes o después del ejercicio? La Verdad Científica para Quemar Grasa y Ganar Músculo",
@@ -107,7 +125,7 @@
     "excerpt": "Descubre el momento óptimo para comer según tu objetivo: ejercicio en ayunas para quemar grasa o proteína estratégica para ganar músculo. Basado en estudios científicos.",
     "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/14Z5Xz4vCVOlR1L6tFHF0.webp",
     "htmlPath": "/posts/comer-antes-despues-ejercicio/index.html"
-    },
+  },
   {
     "slug": "sistema-linfatico-detox",
     "title": "Destapa Tu Tubería Sanitaria Interna: El Sistema Linfático",
@@ -116,7 +134,7 @@
     "excerpt": "Descubre cómo tu sistema linfático puede estar obstruido causando retención de toxinas y obesidad. Aprende métodos científicos para activar esta 'tubería sanitaria' de tu cuerpo.",
     "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/Eq5HzzSrarGTQbntcuUfi.webp",
     "htmlPath": "/posts/sistema-linfatico/index.html"
-     },
+  },
   {
     "slug": "limpieza-intestinal-profunda",
     "title": "Limpieza Intestinal Profunda: La Clave para Desintoxicar tu Cuerpo",
@@ -125,7 +143,7 @@
     "excerpt": "Descubre cómo una limpieza intestinal profunda puede transformar tu digestión, eliminar toxinas y ayudarte a perder peso más eficientemente.",
     "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/veL97SdpOBJWToxTkGm2p.webp",
     "htmlPath": "/posts/limpieza-intestinal/index.html"
-    },
+  },
   {
     "slug": "higado-clave-adelgazar",
     "title": "El Hígado: La Clave Secreta para Acelerar la Pérdida de Peso",
@@ -134,7 +152,7 @@
     "excerpt": "Descubre cómo la limpieza hepática puede acelerar tu metabolismo y ayudarte a perder peso más rápido, según la medicina tradicional china y moderna.",
     "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/o9tRlxksVhLX4bAFiyDS3.webp",
     "htmlPath": "/posts/higado-adelgazar/index.html"
-    },
+  },
   {
     "slug": "radicales-libres-antienvejecimiento",
     "title": "El Secreto Científico para No Envejecer: Entendiendo los Radicales Libres",
@@ -143,7 +161,7 @@
     "excerpt": "Descubre cómo los radicales libres aceleran tu envejecimiento celular y los 10 antioxidantes comprobados que neutralizan este proceso. Aprende a proteger tus átomos y mantener tu juventud desde adentro.",
     "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/IOxEzbNUF2u2wgrE1ZJR7.webp",
     "htmlPath": "/posts/antienvejecimiento/index.html"
-    },
+  },
   {
     "slug": "rejuvenecer-piel-metabolismo-frank-suarez",
     "title": "Rejuvenece tu Piel: Los Secretos del Metabolismo con Frank Suárez",
@@ -152,7 +170,7 @@
     "excerpt": "Frank Suárez revela cómo el metabolismo afecta tu piel: desde la hidratación hasta los efectos rejuvenecedores del té verde y aloe vera. Descubre por qué dejar de fumar puede renovar tu piel en 9 meses y cómo potenciar tu belleza desde adentro.",
     "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/9VQRgpJYYpGirlp9-rVst.webp",
     "htmlPath": "/posts/rejuvenecer-piel/index.html"
-},
+  },
   {
     "slug": "que-es-el-metabolismo-frank-suarez",
     "title": " ¿Qué es el Metabolismo?",
@@ -161,7 +179,7 @@
     "excerpt": "Descubre la verdadera definición de metabolismo según Frank Suárez, cómo su origen griego ('cambio' o 'movimiento') es clave para entenderlo, y por qué un metabolismo lento afecta tu energía y peso. Aprende a convertir alimentos en energía para sobrevivir.",
     "thumbnail": "/posts/metabolismo/mitabolismo.png",
     "htmlPath": "/posts/metabolismo/index.html"
-},
+  },
   {
     "slug": "sistema-nervioso-energia-metabolismo",
     "title": "Sistema Nervioso y Falta de Energía: La Conexión Metabólica que Pocos Conocen",
@@ -260,7 +278,6 @@
     "excerpt": "Descubre las causas científicas del agotamiento y soluciones prácticas para recuperar tu energía según el experto en metabolismo Frank Suárez.",
     "thumbnail": "https://img.freepik.com/vector-premium/mujer-cansada-emocionalmente-agotada-energia-bateria-baja-carga-sentada-mesa_654798-34.jpg",
     "htmlPath": "/posts/fatiga-metabolica/index.html"
-  
   },
   {
     "slug": "acidez-estomacal-gastritis-soluciones",
@@ -271,4 +288,4 @@
     "thumbnail": "https://media.ambito.com/p/a95c271313ddc9afe7003d4eb18a440b/adjuntos/239/imagenes/040/289/0040289627/655x368/smart/paciente-gastritis-alberto-fernandez-2022jpg.jpg",
     "htmlPath": "/posts/acidez-gastritis/index.html"
   }
-  ]
+]

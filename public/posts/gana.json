@@ -1,5 +1,23 @@
 [
   {
+    "slug": "por-qu-trabajar-8-horas-es-la-forma-ms-lenta-de-hacerte-rico",
+    "title": "Por qué trabajar 8 horas es la forma más lenta de hacerte rico: la verdad sobre el tiempo vs. el dinero",
+    "author": "ROSA EMILY",
+    "date": "2026-07-20",
+    "excerpt": "La jornada laboral de 8 horas fue diseñada para la era industrial, no para la economía actual. Descubre por qué el modelo tradicional de intercambiar tiempo por dinero te mantiene atrapado en la \"trampa del sueldo\", y cómo cambiar tu mentalidad para generar riqueza de forma exponencial.",
+    "thumbnail": "https://image.pollinations.ai/prompt/8-hours-work-slow-wealth-thumbnail",
+    "htmlPath": "/posts/por-qu-trabajar-8-horas-es-la-forma-ms-lenta-de-hacerte-rico/index.html"
+  },
+  {
+    "slug": "el-error-en-google-maps-que-se-convirti-en-un-sueldo-mensual",
+    "title": "El error en Google Maps que se convirtió en un sueldo mensual: la historia de cómo un fallo digital se transformó en una fuente de ingresos constante",
+    "author": "ROSA EMILY",
+    "date": "2026-07-20",
+    "excerpt": "Un simple error en Google Maps llevó a un emprendedor a descubrir una oportunidad de negocio inesperada. Aprende cómo un fallo en el sistema de navegación se convirtió en un ingreso mensual estable y cómo tú también puedes aprovechar las imperfecciones digitales para generar ganancias.",
+    "thumbnail": "https://image.pollinations.ai/prompt/google-maps-error-monthly-income-thumbnail",
+    "htmlPath": "/posts/el-error-en-google-maps-que-se-convirti-en-un-sueldo-mensual/index.html"
+  },
+  {
     "slug": "Replicación-de-CanaL-youtube-con-IA",
     "title": "Guía Completa: Replicación de Canal a Español con IA",
     "author": "ROSA EMILY",
@@ -17,5 +35,4 @@
     "thumbnail": "/posts/youtube2025/youtube2025.png",
     "htmlPath": "/posts/youtube2025/index.html"
   }
-
-  ]
+]
