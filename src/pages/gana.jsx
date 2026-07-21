@@ -25,14 +25,26 @@ function Gana() {
   return (
     <div className="app">
       <main className="main-content">
-        {/* Sección principal: Trucos para ganar dinero */}
-        <section className="tips-section">
+
           <h1 className="main-heading">💸 Cómo Ganar Dinero en Internet en 2025</h1>
           <p className="intro-text">
             ¿Estás buscando nuevas formas de generar ingresos desde casa o aprovechar el poder de internet para ganar dinero extra?
             Has llegado al lugar indicado. En esta guía te revelamos los métodos más efectivos y modernos para ganar dinero online este año.
             ¡Toma nota y comienza tu camino hacia la libertad financiera digital!
           </p>
+        {/* Sección de artículos dinámicos */}
+        <section className="news-section">
+          <h2 className="section-title">📰 Últimos Artículos sobre Ganancias Online</h2>
+          {isLoading ? (
+            <p className="loading-text">Cargando artículos...</p>
+          ) : (
+            <NewsGrid articles={news} />
+          )}
+        </section>
+
+        {/* Sección principal: Trucos para ganar dinero */}
+        <section className="tips-section">
+
 
           <div className="tip-block">
   <h3>🛒 1. Vende Productos o Servicios Online</h3>
@@ -96,19 +108,10 @@ function Gana() {
 
 
           <div className="call-to-action">
-            <p>🔎 Explora más trucos en nuestros artículos a continuación y conviértete en tu propio jefe desde casa. ¡Tu éxito online comienza hoy!</p>
+            <p>🔎 Explora más trucos en nuestros artículos  y conviértete en tu propio jefe desde casa. ¡Tu éxito online comienza hoy!</p>
           </div>
         </section>
-
-        {/* Sección de artículos dinámicos */}
-        <section className="news-section">
-          <h2 className="section-title">📰 Últimos Artículos sobre Ganancias Online</h2>
-          {isLoading ? (
-            <p className="loading-text">Cargando artículos...</p>
-          ) : (
-            <NewsGrid articles={news} />
-          )}
-        </section>
+        
       </main>
     </div>
   );

@@ -1,16 +1,17 @@
 import time
 import re
 import os
-import subprocess
 import sys
 import json
-import requests
+import pyperclip
+import subprocess
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 
 # ============================================
@@ -26,14 +27,13 @@ JSON_FILES = {
     "gana": os.path.join(POSTS_DIR, "gana.json")
 }
 GIT_ACTIVO = True
-TIMEOUT_RESPUESTA = 300  # segundos
+TIMEOUT_RESPUESTA = 600
 
 def limpiar_texto(texto):
-    """Elimina caracteres fuera del BMP (emojis, etc.) que Selenium rechaza."""
     return re.sub(r'[^\u0000-\uFFFF]', '', texto)
 
 # ============================================
-# FUNCIONES DE SELENIUM MEJORADAS
+# FUNCIONES SELENIUM
 # ============================================
 def conectar_chrome():
     options = Options()
@@ -41,7 +41,6 @@ def conectar_chrome():
     return webdriver.Chrome(options=options)
 
 def esperar_respuesta_completa(driver, timeout=TIMEOUT_RESPUESTA):
-    """Espera a que aparezca el botón 'Copy' y luego un tiempo de estabilidad."""
     print(f"⏳ Esperando respuesta (timeout {timeout}s)...")
     start = time.time()
     copy_detected = False
@@ -53,7 +52,6 @@ def esperar_respuesta_completa(driver, timeout=TIMEOUT_RESPUESTA):
                     print("✅ Botón Copy detectado, esperando estabilización...")
                     copy_detected = True
                     time_after_copy = time.time()
-                # después de detectarlo, esperar 5 segundos adicionales para asegurar que el texto esté completo
                 if copy_detected and (time.time() - time_after_copy > 5):
                     print("✅ Respuesta estable.")
                     return True
@@ -64,7 +62,6 @@ def esperar_respuesta_completa(driver, timeout=TIMEOUT_RESPUESTA):
     return False
 
 def obtener_ultimo_mensaje_asistente(driver):
-    """Recoge el texto del último mensaje del asistente con múltiples fallbacks."""
     try:
         asistentes = driver.find_elements(By.XPATH, "//div[@data-role='assistant']")
         if asistentes:
@@ -98,26 +95,22 @@ def obtener_ultimo_mensaje_asistente(driver):
     return ""
 
 def preguntar_deepseek(prompt, driver):
-    """Envía prompt multilínea correctamente y recupera respuesta."""
     input_box = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, "//textarea"))
     )
-    input_box.clear()
     prompt_limpio = limpiar_texto(prompt)
 
-    # Enviar línea por línea con Shift+Enter (excepto la última)
-    lineas = prompt_limpio.splitlines()
-    for i, linea in enumerate(lineas):
-        if i < len(lineas) - 1:
-            input_box.send_keys(linea)
-            input_box.send_keys(Keys.SHIFT + Keys.ENTER)
-            time.sleep(0.1)
-        else:
-            input_box.send_keys(linea)
-
+    pyperclip.copy(prompt_limpio)
+    input_box.click()
+    time.sleep(0.2)
+    actions = ActionChains(driver)
+    actions.key_down(Keys.CONTROL).send_keys('v').key_up(Keys.CONTROL).perform()
     time.sleep(0.5)
-    input_box.send_keys(Keys.RETURN)  # Enviar mensaje
-    print("📤 Prompt enviado.")
+    if len(prompt_limpio) > 4000:
+        time.sleep(1)
+
+    input_box.send_keys(Keys.RETURN)
+    print(f"📤 Prompt enviado ({len(prompt_limpio)} caracteres).")
 
     if not esperar_respuesta_completa(driver):
         print("⚠️ No se detectó fin de respuesta, extrayendo igual...")
@@ -126,7 +119,35 @@ def preguntar_deepseek(prompt, driver):
     return limpiar_texto(respuesta) if respuesta else ""
 
 # ============================================
-# GENERACIÓN DE SLUG (corto)
+# LECTURA DE TEMA (ARCHIVO O TEXTO)
+# ============================================
+def obtener_tema():
+    print("\n📝 ¿Cómo quieres ingresar el tema del artículo?")
+    print("  1. Escribir un tema corto (ej: 'Beneficios del té verde')")
+    print("  2. Usar un archivo .txt (escribe 'archivo' o arrastra el archivo aquí)")
+    opcion = input("   Opción (Enter = tema corto): ").strip().lower()
+
+    if opcion in ['archivo', 'file', '2']:
+        ruta = input("   Arrastra el archivo .txt o escribe su ruta: ").strip().strip('"')
+        if os.path.isfile(ruta):
+            with open(ruta, 'r', encoding='utf-8') as f:
+                contenido = f.read()
+            print(f"✅ Archivo leído: {len(contenido)} caracteres.")
+            return contenido
+        else:
+            print("❌ No se encontró el archivo. Intenta de nuevo.")
+            return obtener_tema()
+
+    # Si no es archivo, consideramos que es el tema en sí (texto normal)
+    if opcion == "":
+        tema = input("   Escribe el tema: ").strip()
+        return tema
+    else:
+        # El usuario escribió directamente un tema (opción 1 implícita)
+        return opcion
+
+# ============================================
+# RESTO DE FUNCIONES (slug, json, git, etc.)
 # ============================================
 def tema_a_slug(tema):
     slug = tema.lower().strip()
@@ -137,15 +158,11 @@ def tema_a_slug(tema):
         slug = slug[:80].rstrip('-')
     return slug
 
-# ============================================
-# CREACIÓN DEL ARTÍCULO (ROBUSTA)
-# ============================================
 def crear_articulo(tema, categoria, driver):
     tema = limpiar_texto(tema)
     slug = tema_a_slug(tema)
-    print(f"📝 Creando artículo: {tema} (slug: {slug})")
+    print(f"📝 Creando artículo (slug: {slug})...")
 
-    # Prompt reforzado: pedir HTML directamente, sin backticks, y con marcadores.
     prompt = f"""
 Eres un redactor y diseñador web experto. Crea un artículo completo en HTML sobre "{tema}" (mínimo 1000 palabras). 
 Incluye al menos 3 imágenes usando https://image.pollinations.ai/prompt/DESCRIPCION_EN_INGLES. 
@@ -171,13 +188,11 @@ THUMBNAIL: (URL de miniatura usando https://image.pollinations.ai/prompt/descrip
 
     print("📄 Respuesta recibida (primeros 500 chars):", respuesta[:500])
 
-    # 1) Intentar extraer con marcadores
     title = extract_val(respuesta, "TITLE:")
     excerpt = extract_val(respuesta, "EXCERPT:")
     html = extract_between(respuesta, "===HTML_START===", "===HTML_END===")
     thumbnail = extract_val(respuesta, "THUMBNAIL:")
 
-    # 2) Fallback: buscar bloques de código ```html
     if not html:
         print("⚠️ Marcadores no encontrados. Buscando bloques de código...")
         bloques = extraer_bloques(respuesta)
@@ -187,7 +202,6 @@ THUMBNAIL: (URL de miniatura usando https://image.pollinations.ai/prompt/descrip
                 print("✅ HTML extraído desde bloque de código.")
                 break
 
-    # 3) Fallback: buscar directamente <!DOCTYPE html> o <html> en el texto
     if not html:
         print("⚠️ Buscando HTML directamente en la respuesta...")
         match = re.search(r'(<!DOCTYPE html>.*)', respuesta, re.DOTALL | re.IGNORECASE)
@@ -200,25 +214,21 @@ THUMBNAIL: (URL de miniatura usando https://image.pollinations.ai/prompt/descrip
         if html:
             print("✅ HTML encontrado mediante búsqueda directa.")
 
-    # 4) Si aún no hay HTML, fallar y mostrar la respuesta completa
     if not html:
         print("❌ No se pudo extraer HTML. Respuesta completa de DeepSeek:")
         print(respuesta)
         return False
 
-    # Limpiar backticks sobrantes que pudieran haber quedado alrededor
     html = re.sub(r'^```(?:html)?\s*\n?', '', html.strip())
     html = re.sub(r'\n?```$', '', html.strip())
 
-    # Valores por defecto
     if not title:
-        title = tema
+        title = tema[:50]
     if not excerpt:
-        excerpt = "Artículo sobre " + tema
+        excerpt = "Artículo sobre " + tema[:50]
     if not thumbnail or not thumbnail.startswith("http"):
         thumbnail = f"https://image.pollinations.ai/prompt/{slug}-thumbnail"
 
-    # Asegurar que el HTML sea una página completa
     if not html.strip().startswith("<!DOCTYPE html>"):
         html = f"""<!DOCTYPE html>
 <html lang="es">
@@ -258,7 +268,6 @@ THUMBNAIL: (URL de miniatura usando https://image.pollinations.ai/prompt/descrip
     </footer>
 </body>""")
 
-    # Guardar en disco
     carpeta_post = os.path.join(POSTS_DIR, slug)
     os.makedirs(carpeta_post, exist_ok=True)
     html_path = os.path.join(carpeta_post, "index.html")
@@ -266,7 +275,6 @@ THUMBNAIL: (URL de miniatura usando https://image.pollinations.ai/prompt/descrip
         f.write(html)
     print(f"✅ HTML guardado en {html_path}")
 
-    # Actualizar JSON
     json_path = JSON_FILES.get(categoria)
     if not json_path:
         print(f"❌ Categoría desconocida: {categoria}")
@@ -289,9 +297,6 @@ THUMBNAIL: (URL de miniatura usando https://image.pollinations.ai/prompt/descrip
     print("✅ JSON actualizado correctamente.")
     return True
 
-# ============================================
-# FUNCIONES AUXILIARES
-# ============================================
 def extract_val(text, key):
     pattern = rf"{re.escape(key)}\s*(.*?)(?:\n|$)"
     match = re.search(pattern, text, re.IGNORECASE)
@@ -338,9 +343,6 @@ def actualizar_json(json_path, nueva_entrada):
         print(f"Error al manipular JSON: {e}")
         return False
 
-# ============================================
-# GIT
-# ============================================
 def git_commit_and_push(mensaje="Nuevo artículo automático"):
     if not GIT_ACTIVO:
         print("⏸️  Git desactivado. No se subió a GitHub.")
@@ -357,14 +359,14 @@ def git_commit_and_push(mensaje="Nuevo artículo automático"):
 # PROGRAMA PRINCIPAL
 # ============================================
 def main():
-    print("🤖 PUBLICADOR AUTOMÁTICO DE ARTÍCULOS (MEJORADO)")
+    print("🤖 PUBLICADOR AUTOMÁTICO DE ARTÍCULOS (SOPORTE TXT)")
     print("=" * 60)
     print("Asegúrate de tener Chrome abierto en puerto 9222 y DeepSeek iniciado.\n")
 
-    tema = input("📝 Tema del artículo: ").strip()
+    tema = obtener_tema()
     tema = limpiar_texto(tema)
-    if not tema:
-        print("❌ Debes escribir un tema.")
+    if not tema.strip():
+        print("❌ Tema vacío. Saliendo.")
         return
 
     print("\nCategorías disponibles: salud, home, gana")
@@ -386,8 +388,8 @@ def main():
 
     exito = crear_articulo(tema, categoria, driver)
     if exito:
-        print("\n🎉 Artículo creado con éxito (solo local).")
-        git_commit_and_push(f"Nuevo artículo: {tema}")
+        print("\n🎉 Artículo creado con éxito.")
+        git_commit_and_push(f"Nuevo artículo: {tema[:50]}")
     else:
         print("\n❌ No se pudo completar la creación del artículo.")
 
