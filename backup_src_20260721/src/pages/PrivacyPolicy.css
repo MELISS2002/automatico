@@ -1,0 +1,45 @@
+.legal-page {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .title {
+    color: #0066cc;
+    font-size: 2em;
+    margin-top: 20px;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.8em;
+    color: #0066cc;
+  }
+  
+  ul {
+    margin-left: 20px;
+  }
+  
+  .back-link {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    color: #0066cc;
+    font-size: 1.2em;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  
+  a {
+    color: #0066cc;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

@@ -2,6 +2,9 @@ import { useState, useEffect, useRef } from 'react';
 import Header from './components/Header';
 import NewsGrid from './components/NewsGrid';
 import './App.css';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Terms from './pages/Terms';
 
 function App() {
   // Estados para los streams y noticias
@@ -79,7 +82,6 @@ function App() {
             <iframe
               src="/agenda.html"
               title="Agenda Deportiva"
-              loading="lazy"
             />
           </div>
         </section>
@@ -101,7 +103,6 @@ function App() {
                 allowFullScreen
                 frameBorder="0"
                 className="stream-iframe"
-                loading="lazy"
               />
             ) : (
               <center>

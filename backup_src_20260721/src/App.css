@@ -21,8 +21,6 @@ body,
   padding: 0;
   height: 100%;
   min-height: 100vh;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
 }
 
 /* Corregido a .app-container para que coincida con tu Layout.jsx */
@@ -108,8 +106,6 @@ body,
   margin: 2rem 0;
   background: #fff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  contain: content;
-  will-change: transform;
 }
 
 .stream-section {
@@ -118,8 +114,6 @@ body,
   border-radius: 12px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   scroll-margin-top: 100px;
-  contain: content;
-  will-change: transform;
 }
 
 .stream-player {
@@ -162,87 +156,58 @@ body,
   transform: translateY(-3px);
 }
 
-/* Footer Profesional y Moderno */
+/* El Footer ahora se queda abajo de forma limpia */
 .footer {
-  background: #0f172a; /* Azul muy oscuro, más profesional */
-  color: #94a3b8;
-  padding: 4rem 1rem 2rem;
-  margin-top: 5rem;
+  background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: auto; 
   width: 100%;
-  border-top: 4px solid #4ade80; /* Acento verde profesional */
+  flex-shrink: 0; 
+  box-sizing: border-box;
 }
 
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 3rem;
-  text-align: left;
-}
-
-.footer-logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: white;
-}
-
-.logo-text {
-  display: block;
-}
-
-.logo-highlight {
-  color: #4ade80;
-}
-
-.social-icons {
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1rem;
 }
 
-.social-icons a {
-  font-size: 1.2rem;
-  transition: transform 0.2s;
+.legal-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
-.social-icons a:hover {
-  transform: scale(1.2);
+.legal-links a {
+  color: white;
+  padding: 0.5rem;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
-.footer-section p {
-  line-height: 1.6;
-  font-size: 0.9rem;
+.legal-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
-.footer-links {
-  list-style: none;
-  padding: 0;
+.legal-links a:hover {
+  color: var(--accent-color);
 }
 
-.footer-links li {
-  margin-bottom: 0.8rem;
-}
-
-.footer-links a {
-  color: #94a3b8;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: #4ade80;
-}
-
-.footer-bottom {
-  max-width: 1200px;
-  margin: 3rem auto 0;
-  padding-top: 2rem;
-  border-top: 1px solid #1e293b;
-  text-align: center;
-  font-size: 0.85rem;
+.legal-links a:hover::after {
+  transform: scaleX(1);
 }
 
 /* Responsive Design */
@@ -303,7 +268,7 @@ body,
 .download-banner {
   background: linear-gradient(135deg, #1e2a3a 0%, #0f1724 100%);
   border-radius: 16px;
-  margin: 120px 0 2rem 0;  /* Aumentado de 80px a 120px para separar más del menú */
+  margin: 80px 0 2rem 0;  /* separación superior para evitar el menú */
   padding: 0.25rem;
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1);
 }

@@ -1,0 +1,18 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos personalizados */
+@layer components {
+  .legal-link {
+    @apply relative text-white hover:text-accent transition-colors
+           after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full
+           after:h-[2px] after:bg-gradient-to-r after:from-transparent after:via-accent
+           after:to-transparent after:scale-x-0 after:transition-transform after:duration-300;
+  }
+  
+  .legal-link:hover::after {
+    @apply after:scale-x-100;
+  }
+}
