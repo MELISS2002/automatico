@@ -1,0 +1,235 @@
+<!DOCTYPE html><html lang="es"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Afecciones Urológicas – Prevención y Tratamiento Integral</title> <style> * { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+background: #f0f5fa;
+color: #1e2b3a;
+line-height: 1.8;
+padding: 20px;
+}
+.container {
+max-width: 1200px;
+margin: 0 auto;
+background: #ffffff;
+border-radius: 32px;
+box-shadow: 0 20px 60px rgba(0, 20, 40, 0.08);
+padding: 40px 35px;
+transition: all 0.2s;
+}
+h1 {
+font-size: 2.5rem;
+font-weight: 700;
+letter-spacing: -0.02em;
+background: linear-gradient(145deg, #0a3d6b, #1f6da0);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+margin-bottom: 0.3rem;
+line-height: 1.2;
+}
+.meta {
+display: flex;
+flex-wrap: wrap;
+gap: 16px 28px;
+align-items: center;
+border-bottom: 2px solid #e2ebf5;
+padding-bottom: 20px;
+margin-bottom: 28px;
+color: #3d5777;
+}
+.meta .badge {
+background: #dce8f5;
+padding: 4px 18px;
+border-radius: 40px;
+font-size: 0.85rem;
+font-weight: 600;
+color: #0f3b60;
+}
+.meta .date {
+background: #eef3f9;
+padding: 4px 16px;
+border-radius: 40px;
+font-size: 0.9rem;
+}
+.excerpt {
+background: #f5faff;
+border-left: 6px solid #2a7ab0;
+padding: 22px 30px;
+border-radius: 18px;
+margin-bottom: 40px;
+font-size: 1.15rem;
+color: #16344f;
+box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+}
+h2 {
+font-size: 2rem;
+font-weight: 600;
+margin-top: 2.8rem;
+margin-bottom: 1.2rem;
+color: #0a3d6b;
+border-bottom: 3px solid #dce8f5;
+padding-bottom: 10px;
+}
+h3 {
+font-size: 1.5rem;
+font-weight: 600;
+margin-top: 2.2rem;
+margin-bottom: 0.8rem;
+color: #1a5a88;
+}
+h4 {
+font-size: 1.2rem;
+font-weight: 600;
+margin-top: 1.6rem;
+margin-bottom: 0.5rem;
+color: #1f4d73;
+}
+p {
+margin-bottom: 1.3rem;
+font-size: 1.05rem;
+}
+.img-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+gap: 28px;
+margin: 40px 0 30px;
+}
+.img-card {
+background: #fafcff;
+border-radius: 24px;
+overflow: hidden;
+box-shadow: 0 8px 24px rgba(0, 20, 40, 0.06);
+transition: transform 0.2s ease, box-shadow 0.25s;
+border: 1px solid #ecf2f9;
+}
+.img-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 18px 40px rgba(0, 30, 70, 0.10);
+}
+.img-card img {
+width: 100%;
+height: 220px;
+object-fit: cover;
+display: block;
+background: #e8eff7;
+}
+.img-card .caption {
+padding: 16px 20px 20px;
+font-weight: 500;
+color: #1a3a5a;
+background: white;
+font-size: 0.95rem;
+border-top: 1px solid #ecf2f9;
+}
+.img-card .caption small {
+display: block;
+font-weight: 400;
+color: #5a7390;
+margin-top: 4px;
+font-size: 0.85rem;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+margin: 24px 0 30px;
+font-size: 0.98rem;
+border-radius: 16px;
+overflow: hidden;
+box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+th {
+background: #0a3d6b;
+color: white;
+font-weight: 600;
+padding: 14px 16px;
+text-align: left;
+}
+td {
+padding: 14px 16px;
+border-bottom: 1px solid #e2ebf5;
+background: #fafdff;
+}
+tr:last-child td {
+border-bottom: none;
+}
+.highlight-box {
+background: #e8f2fc;
+border-radius: 20px;
+padding: 22px 28px;
+margin: 30px 0;
+border: 1px solid #c7ddf5;
+}
+.highlight-box strong {
+color: #0a3d6b;
+}
+.point-table {
+background: #f9fcff;
+border-radius: 18px;
+padding: 6px 0;
+}
+.point-table table th {
+background: #1f6da0;
+}
+.code-note {
+background: #0d1f2f;
+color: #d4e6ff;
+padding: 16px 22px;
+border-radius: 16px;
+font-family: 'Fira Code', 'JetBrains Mono', monospace;
+font-size: 0.95rem;
+overflow-x: auto;
+white-space: pre-wrap;
+word-break: break-word;
+margin: 16px 0 28px;
+border-left: 6px solid #4a9eff;
+}
+.btn {
+display: inline-block;
+background: #1a6a9c;
+color: white;
+padding: 12px 34px;
+border-radius: 60px;
+font-weight: 600;
+text-decoration: none;
+transition: background 0.15s;
+border: none;
+cursor: pointer;
+font-size: 1rem;
+}
+.btn:hover {
+background: #0e4a72;
+}
+.footer-note {
+margin-top: 50px;
+padding-top: 28px;
+border-top: 2px solid #e2ebf5;
+color: #4a6380;
+font-size: 0.95rem;
+text-align: center;
+}
+@media (max-width: 680px) {
+.container {
+padding: 24px 16px;
+}
+h1 {
+font-size: 2rem;
+}
+.excerpt {
+font-size: 1rem;
+padding: 16px 18px;
+}
+.img-grid {
+grid-template-columns: 1fr;
+}
+table {
+font-size: 0.85rem;
+}
+th, td {
+padding: 10px 8px;
+}
+}
+</style>
+</head> <body> <div class="container"> <h1>Afecciones Urológicas – Prevención y Tratamiento Integral con Medicina Natural y Tradicional</h1> <div class="meta"> <span class="date"> 25 de julio de 2026</span> <span class="badge"> Medicina Natural</span> <span class="badge"> Acupuntura</span> <span style="margin-left: auto; font-weight:400;">⏱ lectura 10 min</span> </div> <div class="excerpt">  Las afecciones urológicas afectan a millones de personas. Este artículo desarrolla los protocolos del Manual para la Práctica de la Medicina Natural y Tradicional de Cuba, integrando acupuntura, auriculoterapia, fitoterapia, magnetoterapia y laserpuntura para un abordaje integral y efectivo. </div> <!-- Imagen 1: concepto general de medicina urológica natural --> <div class="img-grid"> <div class="img-card"> <img src="https://image.pollinations.ai/prompt/urology%20natural%20medicine%20kidney%20bladder%20acupuncture%20herbal%20cuban%20manual%20integral%20treatment?width=800&height=500" alt="Medicina natural urológica con acupuntura y fitoterapia" loading="lazy"> <div class="caption"> Enfoque integral cubano para afecciones urológicas <small>Combinación de acupuntura, fitoterapia y técnicas físicas</small></div> </div> <div class="img-card"> <img src="https://image.pollinations.ai/prompt/acupuncture%20points%20for%20urinary%20tract%20infection%20bladder%20kidney%20meridian%20chart?width=800&height=500" alt="Puntos de acupuntura para infecciones urinarias" loading="lazy"> <div class="caption"> Puntos clave en el tratamiento de cistitis y uretritis <small>V-28, VC-3, B-6 y otros puntos específicos</small></div> </div> <div class="img-card"> <img src="https://image.pollinations.ai/prompt/herbal%20remedies%20and%20natural%20products%20for%20kidney%20stones%20cuban%20traditional%20medicine?width=800&height=500" alt="Fitoterapia para litiasis renal y prostatitis" loading="lazy"> <div class="caption"> Fitoterapia y productos naturales <small>Mastuerzo, té de riñón, jarabes y tinturas</small></div> </div> </div> <h2>1. Medidas Generales de Prevención</h2> <p> La prevención es el pilar fundamental para reducir la incidencia de infecciones urinarias y trastornos urológicos crónicos. El manual cubano establece pautas claras y accesibles para toda la población. </p> <table> <thead> <tr> <th>Medida Preventiva</th> <th>Fundamentación</th> </tr> </thead> <tbody> <tr> <td><strong>Ingestión abundante de líquidos</strong></td> <td>Favorece el arrastre mecánico de bacterias y la dilución de orina, previniendo la cristalización de sales.</td> </tr> <tr> <td><strong>Vaciado frecuente de la vejiga</strong></td> <td>Evita el estancamiento urinario, reduciendo el tiempo de contacto de agentes patógenos con la mucosa vesical.</td> </tr> <tr> <td><strong>Lavado escrupuloso de la región anal</strong></td> <td>Previene la contaminación cruzada desde el recto hacia el introito vaginal y la uretra.</td> </tr> <tr> <td><strong>Lavado vaginal y secado de delante hacia atrás</strong></td> <td>Impide la propagación de bacterias del área perianal hacia la uretra y la vagina.</td> </tr> <tr> <td><strong>Reducción de sal en el período menstrual</strong></td> <td>Disminuye la retención hídrica y la congestión pélvica, factores que favorecen la cistitis.</td> </tr> <tr> <td><strong>Evitar azúcar, alcohol, lácteos y trigo</strong></td> <td>Exacerban la inflamación y la producción de moco, favoreciendo la proliferación bacteriana.</td> </tr> </tbody> </table> <div class="highlight-box"> <strong> Consejo clave:</strong> Beber al menos 2 litros de agua al día es una de las medidas más efectivas y económicas para prevenir infecciones urinarias y litiasis renal. </div> <h2>2. Sepsis Urinaria</h2> <p> La sepsis urinaria abarca tres entidades principales: <strong>cistitis</strong> (vejiga), <strong>uretritis</strong> (uretra) y <strong>pielonefritis</strong> (riñón y pelvis renal). Desde la perspectiva de la Medicina Tradicional China, estas afecciones suelen corresponder a un síndrome de <em>Humedad-Calor en el Jiao Inferior</em>, aunque también pueden presentarse cuadros de Deficiencia de Qi de Riñón o Bazo en casos crónicos. </p> <h3>2.1 Cistitis</h3> <p> Síntomas característicos: Micción frecuente y dolorosa (disuria), sensación de ardor al orinar, urgencia miccional, orina turbia o con olor fuerte, dolor en el hipogastrio. </p> <h4>Tratamiento con Acupuntura (Método de Sedación)</h4> <p>Se utilizan puntos específicos para disipar el calor, eliminar la humedad y regular la vejiga:</p> <div class="point-table"> <table> <thead> <tr> <th>Punto</th> <th>Meridiano</th> <th>Localización</th> <th>Función específica</th> </tr> </thead> <tbody> <tr> <td><strong>V-28 (Pangguangshu)</strong></td> <td>Vejiga</td> <td>1,5 cun lateral de la línea media, al nivel del segundo agujero sacro</td> <td>Punto Shu de la Vejiga. Regula la función vesical y elimina el calor.</td> </tr> <tr> <td><strong>V-32 (Ciliao)</strong></td> <td>Vejiga</td> <td>En el segundo agujero sacro</td> <td>Alivia el dolor pélvico, regula el Jiao inferior y elimina la humedad.</td> </tr> <tr> <td><strong>VC-3 (Zhongji)</strong></td> <td>Vaso Concepción</td> <td>1 cun por encima del borde superior del pubis</td> <td>Punto Mu (Alarma) de la Vejiga. Específico para disuria y retención.</td> </tr> <tr> <td><strong>B-6 (Sanyinjiao)</strong></td> <td>Bazo</td> <td>3 cun por encima del maléolo interno</td> <td>Cruce de Bazo, Hígado y Riñón. Elimina humedad y regula los tres Yin.</td> </tr> <tr> <td><strong>VB-39 (Xuanzhong) tonificación</strong></td> <td>Vesícula Biliar</td> <td>3 cun por encima del maléolo externo</td> <td>Refuerza la médula ósea y el Qi de los tendones, usado como apoyo.</td> </tr> </tbody> </table> </div> <h4>Auriculoterapia</h4> <p>Se estimulan los siguientes puntos en la oreja:</p> <ul> <li><strong>Riñón</strong> (zona superior de la concha)</li> <li><strong>Uréter</strong> (inmediatamente por delante del riñón)</li> <li><strong>Vejiga</strong> (a continuación del uréter)</li> <li><strong>Uretra</strong> (zona específica)</li> <li><strong>San Jiao</strong> (regula los fluidos)</li> <li><strong>Hipogástrico</strong> (dolor pélvico)</li> <li><strong>Bazo</strong> (para eliminar humedad)</li> </ul> <p><em>Técnica:</em> Se colocan semillas de vacaria o agujas de presión, manteniéndolas de 3 a 5 días, alternando la oreja en cada sesión.</p> <h4>Fitoterapia (Productos Naturales)</h4> <ul> <li><strong>Menta japonesa tintura al 20 %:</strong> 40-60 gotas en medio vaso de agua, 2-3 veces al día. Acción antiespasmódica, diurética suave y refrescante.</li> <li><strong>Toronjil de menta tintura al 20 %:</strong> 40-60 gotas en medio vaso de agua, 2-3 veces al día. Calmante del tracto urinario, reduce la inflamación.</li> </ul> <h4>Laserpuntura (Láser Infrarrojo)</h4> <ul> <li><strong>Dosis corporal:</strong> 12 a 15 J/cm² en los puntos V-28, VC-3 y B-6.</li> <li><strong>Dosis auricular:</strong> 10 J/cm² en los puntos de riñón, vejiga y uréter.</li> </ul> <div class="highlight-box"> <strong>⚠️ Nota:</strong> No utilizar un puntero con foco de radiación mayor a 2 mm de diámetro en el oído. </div> <!-- Imagen 2: auriculoterapia y fitoterapia --> <div style="margin: 30px 0;"> <img src="https://image.pollinations.ai/prompt/auriculotherapy%20ear%20points%20and%20herbal%20tinctures%20for%20urinary%20health%20cuban%20natural%20medicine?width=1000&height=420" alt="Auriculoterapia y fitoterapia para afecciones urológicas" style="width:100%; border-radius:24px; box-shadow: 0 8px 24px rgba(0,0,0,0.05);" loading="lazy"> <p style="font-size:0.9rem; color:#4a6380; margin-top:10px; text-align:center;">Auriculoterapia y fitoterapia: dos pilares del tratamiento integral cubano</p> </div> <h3>2.2 Uretritis</h3> <p> Se caracteriza por dolor o ardor en la uretra, especialmente al inicio de la micción, y secreción uretral en casos infecciosos. </p> <h4>Tratamiento con Acupuntura (Sedación)</h4> <table> <thead> <tr> <th>Punto</th> <th>Meridiano</th> <th>Localización</th> <th>Función específica</th> </tr> </thead> <tbody> <tr> <td><strong>E-28 (Shuidao)</strong></td> <td>Estómago</td> <td>3 cun bajo el ombligo, 2 cun lateral</td> <td>"Camino del Agua". Facilita la micción y drena humedad.</td> </tr> <tr> <td><strong>B-6 (Sanyinjiao)</strong></td> <td>Bazo</td> <td>3 cun sobre el maléolo interno</td> <td>Elimina la humedad del Jiao inferior.</td> </tr> <tr> <td><strong>R-12 (Dahe)</strong></td> <td>Riñón</td> <td>4 cun bajo el ombligo, 0,5 cun lateral</td> <td>Fortalece el Qi del Riñón y estabiliza el Jing.</td> </tr> <tr> <td><strong>V-54 (Zhibian)</strong></td> <td>Vejiga</td> <td>3 cun lateral al borde inferior del sacro</td> <td>Alivia el dolor en la región perineal y uretral.</td> </tr> <tr> <td><strong>V-32 (Ciliao)</strong></td> <td>Vejiga</td> <td>Segundo agujero sacro</td> <td>Regula la pelvis y alivia el espasmo uretral.</td> </tr> <tr> <td><strong>VB-39 (tonificación)</strong></td> <td>Vesícula Biliar</td> <td>3 cun sobre maléolo externo</td> <td>Refuerzo general del sistema tendino-muscular.</td> </tr> </tbody> </table> <h4>Auriculoterapia</h4> <ul> <li>Próstata / Uretra</li> <li>Riñón</li> <li>Vejiga</li> <li>Genitales externos</li> <li>Endocrino</li> <li>Hígado (para mover el Qi estancado)</li> </ul> <h3>2.3 Pielonefritis</h3> <p> Infección del riñón y la pelvis renal, generalmente más grave, con fiebre, escalofríos, dolor lumbar profundo y malestar general. </p> <h4>Tratamiento con Acupuntura (Semisedación - SEMSA)</h4> <p> El manual utiliza la técnica de <strong>semisedación (SEMSA)</strong>, que consiste en una estimulación intermedia, ni demasiado fuerte (sedación) ni demasiado suave (tonificación), para equilibrar el exceso de calor sin dañar el Qi renal. </p> <table> <thead> <tr> <th>Punto</th> <th>Meridiano</th> <th>Técnica</th> <th>Función específica</th> </tr> </thead> <tbody> <tr> <td><strong>V-23 (Shenshu)</strong></td> <td>Vejiga</td> <td>SEMSA</td> <td>Punto Shu del Riñón. Tonifica y regula el Qi renal.</td> </tr> <tr> <td><strong>V-22 (Sanjiaoshu)</strong></td> <td>Vejiga</td> <td>SEMSA</td> <td>Regula la transformación de fluidos en el Triple Calentador.</td> </tr> <tr> <td><strong>V-28 (Pangguangshu)</strong></td> <td>Vejiga</td> <td>SEMSA</td> <td>Regula la vejiga.</td> </tr> <tr> <td><strong>V-6 (Jinggu)</strong></td> <td>Vejiga</td> <td>SEMSA</td> <td>Punto Luo de la Vejiga, abre el canal y elimina calor.</td> </tr> <tr> <td><strong>B-9 (Yinlingquan)</strong></td> <td>Bazo</td> <td>SEMSA</td> <td>Punto He del Bazo (agua). Elimina humedad del Jiao inferior.</td> </tr> <tr> <td><strong>B-6 (Sanyinjiao)</strong></td> <td>Bazo</td> <td>SEMSA</td> <td>Cruce de los tres Yin, elimina humedad y nutre la sangre.</td> </tr> <tr> <td><strong>VB-39 (tonificación)</strong></td> <td>Vesícula Biliar</td> <td>TON</td> <td>Refuerza la médula y el sistema inmunológico.</td> </tr> </tbody> </table> <h4>Fitoterapia</h4> <p>Se aplican las mismas fórmulas que en cistitis y uretritis, con mayor énfasis en el drenaje de humedad-calor.</p> <h2>3. Litiasis Renal (Cálculos Renales)</h2> <div class="highlight-box" style="border-left: 6px solid #c0392b;"> <strong>⛔ Contraindicación importante:</strong> No emplear acupuntura ni sus modalidades afines en cálculos de <strong>1 cm o más</strong>. En estos casos, la intervención debe ser quirúrgica o mediante litotricia extracorpórea. La acupuntura es útil para cálculos menores y para facilitar la expulsión de los mismos. </div> <h4>Tratamiento con Acupuntura y Moxibustión</h4> <table> <thead> <tr> <th>Punto</th> <th>Técnica</th> <th>Propósito</th> </tr> </thead> <tbody> <tr> <td><strong>V-23 (Shenshu)</strong></td> <td>Sedación</td> <td>Regula el riñón.</td> </tr> <tr> <td><strong>V-52 (Zhishi)</strong></td> <td>Moxibustión</td> <td>Punto de la zona lumbar; calienta y moviliza el Qi.</td> </tr> <tr> <td><strong>V-22 (Sanjiaoshu)</strong></td> <td>Sedación</td> <td>Regula las vías del agua.</td> </tr> <tr> <td><strong>B-6 (Sanyinjiao)</strong></td> <td>Sedación</td> <td>Elimina humedad.</td> </tr> <tr> <td><strong>E-28 (Shuidao)</strong></td> <td>Sedación</td> <td>Facilita el paso del agua.</td> </tr> <tr> <td><strong>V-6 (Jinggu)</strong></td> <td>Moxibustión</td> <td>Desbloquea el canal de la Vejiga.</td> </tr> </tbody> </table> <h4>Electroacupuntura (Onda #1)</h4> <p>Puntos: V-23 + VB-25 + V-25 + VB-26. La estimulación eléctrica favorece la contractilidad del uréter, ayudando a desplazar el cálculo.</p> <h4>Fitoterapia (Litiasis Renal)</h4> <table> <thead> <tr> <th>Producto</th> <th>Posología</th> <th>Acción</th> </tr> </thead> <tbody> <tr> <td><strong>Mastuerzo papelillos (600 mg)</strong></td> <td>1 papelillo en un vaso de agua con azúcar, 4 veces al día</td> <td>Diurético, favorece la fragmentación y expulsión de cálculos.</td> </tr> <tr> <td><strong>Té de riñón jarabe (120 mL)</strong></td> <td>1 cucharada (15 mL) 3 veces al día</td> <td>Diurético suave, antiinflamatorio renal.</td> </tr> <tr> <td><strong>Té de riñón extracto fluido (30 mL)</strong></td> <td>30-40 gotas en medio vaso de agua, 3 veces al día</td> <td>Concentrado de principios activos para drenaje renal.</td> </tr> </tbody> </table> <h4>Aplicación de Imanes (Magnetoterapia)</h4> <ul> <li><strong>Polo Norte:</strong> Mano derecha.</li> <li><strong>Polo Sur:</strong> Mano izquierda.</li> <li><strong>Duración:</strong> 1 hora diaria.</li> <li><strong>Intensidad:</strong> 1.000 Gauss.</li> </ul> <p><em>Fundamento:</em> Se cree que los campos magnéticos pueden influir en la polaridad de los cristales de oxalato cálcico, ayudando a su desintegración o movilización.</p> <h4>Laserpuntura y Auriculoterapia</h4> <p><strong>Laserpuntura:</strong> V-23 + VB-25 + V-28 + VC-5 + VC-3 + R-2.</p> <p><strong>Auriculoterapia:</strong> Riñón + Uréter + Vejiga + Shenmen + Subcortex.</p> <!-- Imagen 3: litiasis renal y magnetoterapia --> <div style="margin: 30px 0;"> <img src="https://image.pollinations.ai/prompt/kidney%20stones%20magnetotherapy%20acupuncture%20natural%20treatment%20cuban%20medicine?width=1000&height=420" alt="Tratamiento natural para litiasis renal con imanes y acupuntura" style="width:100%; border-radius:24px; box-shadow: 0 8px 24px rgba(0,0,0,0.05);" loading="lazy"> <p style="font-size:0.9rem; color:#4a6380; margin-top:10px; text-align:center;">Magnetoterapia y acupuntura en el manejo de la litiasis renal</p> </div> <h2>4. Prostatitis e Hiperplasia Prostática</h2> <p> Ambas afecciones afectan a la glándula prostática, ya sea por inflamación (prostatitis) o por crecimiento benigno (hiperplasia). </p> <h4>Tratamiento Común (Acupuntura)</h4> <table> <thead> <tr> <th>Punto</th> <th>Técnica</th> <th>Función</th> </tr> </thead> <tbody> <tr> <td><strong>V-23 (Shenshu)</strong></td> <td>Sedación</td> <td>Regula y tonifica el Qi renal.</td> </tr> <tr> <td><strong>VC-4 (Guanyuan)</strong></td> <td>Sedación</td> <td>Punto Mu del Intestino Delgado; fortalece el Jiao inferior.</td> </tr> <tr> <td><strong>V-28 (Pangguangshu)</strong></td> <td>Sedación</td> <td>Regula la vejiga.</td> </tr> <tr> <td><strong>B-6 (Sanyinjiao)</strong></td> <td>Sedación</td> <td>Elimina humedad y calor del Jiao inferior.</td> </tr> </tbody> </table> <h4>Auriculoterapia</h4> <ul> <li>Riñón</li> <li>Vejiga</li> <li>Cavidad pélvica</li> <li>Bazo</li> <li>Próstata (punto específico en la oreja izquierda)</li> </ul> <h4>Fitoterapia</h4> <table> <thead> <tr> <th>Producto</th> <th>Posología</th> <th>Indicación</th> </tr> </thead> <tbody> <tr> <td><strong>Maíz jarabe (120 mL)</strong></td> <td>1 cucharada 4 veces al día</td> <td>Diurético, reduce la congestión prostática.</td> </tr> <tr> <td><strong>Jarabe de caisimón de anís (120 mL)</strong></td> <td>1 cucharada 4 veces al día</td> <td>Antiinflamatorio y regulador hormonal suave.</td> </tr> </tbody> </table> <h4>Aplicación de Imanes en Hiperplasia Prostática</h4> <ul> <li><strong>Polo Norte:</strong> Pie derecho.</li> <li><strong>Polo Sur:</strong> Pie izquierdo.</li> <li><strong>Duración:</strong> 1 hora diaria.</li> <li><strong>Sesiones:</strong> 10 días consecutivos.</li> </ul> <h2>5. Uretritis No Gonocócica</h2> <p> Se refiere a inflamaciones uretrales de origen no gonocócico, frecuentemente por <em>Chlamydia</em>, <em>Ureaplasma</em> o irritantes mecánicos. </p> <h4>Tratamiento con Acupuntura</h4> <ul> <li><strong>REN-6 (Qihai) – Sedación:</strong> Fortalece el Qi y regula el mar de energía.</li> <li><strong>E-29 (Guilai) – Sedación:</strong> Regula la ingle y los genitales.</li> <li><strong>B-6 (Sanyinjiao) – Sedación:</strong> Elimina humedad.</li> </ul> <h4>Auriculoterapia (Oreja derecha preferentemente)</h4> <ul> <li>Testículos</li> <li>Pelvis</li> <li>Genitales externos</li> <li>Riñón</li> <li>Endocrino</li> <li>Hígado</li> <li>Próstata</li> </ul> <p><strong>Aplicación de Imanes:</strong> 1 hora diaria durante 10 días (Polo Norte en pie derecho, Polo Sur en pie izquierdo).</p> <h2>6. Varicocele</h2> <p>Dilatación anormal de las venas del plexo pampiniforme en el cordón espermático.</p> <h4>Tratamiento con Acupuntura</h4> <ul> <li><strong>REN-4 (Guanyuan) – Sedación:</strong> Fortalece el Jiao inferior.</li> <li><strong>B-4 (Gongsun) – Sedación:</strong> Punto Luo del Bazo, conecta con el Chong Mai (mar de sangre), regula la circulación venosa.</li> </ul> <h4>Auriculoterapia</h4> <ul> <li><strong>Shenmen + Occipital:</strong> Calman el dolor y la tensión.</li> <li><strong>Testículos y Genitales externos:</strong> Mejoran el riego local.</li> <li><strong>Endocrino:</strong> Regula el tono vascular.</li> </ul> <h2>7. Conclusión</h2> <p> El abordaje de las afecciones urológicas desde la Medicina Natural y Tradicional ofrece un espectro terapéutico amplio, seguro y efectivo. La prevención mediante hábitos higiénicos y dietéticos constituye la primera línea de defensa. Cuando la enfermedad se instaura, la acupuntura actúa regulando la energía de los meridianos y eliminando factores patógenos como el calor y la humedad. La fitoterapia aporta principios activos con acción diurética, antiinflamatoria y antiespasmódica. La magnetoterapia y la laserpuntura complementan el tratamiento con estímulos físicos no invasivos. </p> <p> Es crucial respetar las contraindicaciones (como la litiasis mayor de 1 cm) y realizar una diferenciación sindrómica precisa para aplicar la técnica de sedación, tonificación o semisedación adecuada. La integración de estas modalidades, tal como se refleja en el manual cubano, garantiza una atención integral, personalizada y alineada con los recursos disponibles en el Sistema Nacional de Salud. </p> <div style="text-align:center; margin: 40px 0 20px;"> <a href="#" class="btn"> Descargar guía completa (PDF)</a> </div> <div class="footer-note"> <p> Artículo basado en el <strong>Manual para la Práctica de la Medicina Natural y Tradicional de Cuba</strong>.</p> <p style="margin-top:8px;">© 2026 — Medicina Natural Urológica · Todos los derechos reservados</p> </div> </div> 
+    <footer>
+        <p>Autor: ROSA EMILY | Fecha: 2026-07-25</p>
+    </footer>
+</body> </html>
