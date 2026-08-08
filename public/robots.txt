@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://automatico.pages.dev/sitemap.xml
