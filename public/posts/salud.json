@@ -1,5 +1,14 @@
 [
   {
+    "slug": "vacuna-dengue-minsa-200-mil-dosis-prevencion",
+    "title": "Minsa distribuye 200 mil dosis de vacuna contra el dengue en regiones priorizadas: lo que debes saber para protegerte",
+    "author": "ROSA EMILY",
+    "date": "2026-08-08",
+    "excerpt": "Artículo sobre El Ministerio de Salud (Minsa) del Perú distribuyó",
+    "thumbnail": "https://image.pollinations.ai/prompt/vacuna-dengue-minsa-200-mil-dosis-prevencion-thumbnail",
+    "htmlPath": "/posts/vacuna-dengue-minsa-200-mil-dosis-prevencion/index.html"
+  },
+  {
     "slug": "la-comida-china-que-te-da-una-salud-y-vida",
     "title": "Comida China para una Salud y Vida Plena: El Secreto Milenario de la Longevidad",
     "author": "ROSA EMILY",
@@ -9,17 +18,8 @@
     "htmlPath": "/posts/la-comida-china-que-te-da-una-salud-y-vida/index.html"
   },
   {
-    "slug": "el-mejor-remidio-para-el-ser-humano",
-    "title": "El Mejor Remedio para el Ser Humano: Fórmula Ancestral para una Vida Plena",
-    "author": "ROSA EMILY",
-    "date": "2026-07-21",
-    "excerpt": "Descubre la fórmula olvidada de agua, sol, descanso y naturaleza para transformar tu salud. El remedio más potente es gratuito y natural. ¡Recupera tu bienestar hoy!",
-    "thumbnail": "https://image.pollinations.ai/prompt/best-human-remedy-natural-health-thumbnail",
-    "htmlPath": "/posts/el-mejor-remidio-para-el-ser-humano/index.html"
-  },
-  {
     "slug": "por-que-debes-comer-mucha-cantidad-de-miel-para-mejorar-y-salcar-tu-colon",
-    "title": "Beneficios de la Miel para el Colon: Salud Digestiva y Microbiota",
+    "title": "La Miel y la Salud Digestiva: Beneficios y Precauciones",
     "author": "ROSA EMILY",
     "date": "2026-07-20",
     "excerpt": "La miel no es solo un dulce, es un poderoso prebiótico natural. Aprende cómo ayuda a mejorar la salud de tu colon, reducir inflamaciones y fortalecer tu sistema digestivo.",
@@ -28,7 +28,7 @@
   },
   {
     "slug": "qu-dice-tu-cuerpo-sobre-tu-salud-haz-este-test-interactivo-de-2-minutos-y-descbrelo",
-    "title": "Test de Salud Corporal: Descubre qué dice tu cuerpo en 2 minutos",
+    "title": "Señales del Cuerpo y Bienestar General: Guía Informativa",
     "author": "ROSA EMILY",
     "date": "2026-07-20",
     "excerpt": "Haz este test interactivo rápido y descubre qué señales te envía tu cuerpo sobre tu salud general. Obtén pautas prácticas para mejorar tu bienestar en solo 2 minutos.",
@@ -104,16 +104,6 @@
     "htmlPath": "/posts/avena/index.html"
   },
   {
-    "slug": "cura-milagrosa-aceite-queso",
-    "title": "La Cura Milagrosa de Aceite y Queso: Guía Completa de Preparación",
-    "author": "Frank Suárez",
-    "authorTitle": "Especialista en Obesidad y Metabolismo",
-    "date": "2025-05-31",
-    "excerpt": "Aprende a preparar la famosa cura de Johanna Budwig (aceite de lino y queso cottage) según Frank Suárez para potenciar tu energía celular y desintoxicarte.",
-    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/z3_pJXm7j1WY0PI53u-0S.webp",
-    "htmlPath": "/posts/cura-milagrosa-aceite-queso/index.html"
-  },
-  {
     "slug": "cancer-ayuda-frank-suarez",
     "title": "Cáncer: Apoyo Nutricional y Hábitos para la Recuperación",
     "author": "Frank Suárez",
@@ -173,7 +163,7 @@
   },
   {
     "slug": "higado-clave-adelgazar",
-    "title": "Limpieza Hepática: El Secreto Metabólico para Adelgazar",
+    "title": "El Hígado y la Pérdida de Peso: Datos y Recomendaciones",
     "author": "Equipo de Salud Metabólica",
     "date": "2025-06-20",
     "excerpt": "Un hígado sano es vital para adelgazar. Conoce cómo la limpieza hepática puede acelerar tu metabolismo según métodos tradicionales y modernos.",
