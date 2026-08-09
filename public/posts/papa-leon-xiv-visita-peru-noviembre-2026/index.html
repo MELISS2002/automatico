@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papa León XIV en Perú 2026: fe, esperanza y un abrazo que cruzará el continente</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: #faf6ef;
+            color: #1e1a14;
+            line-height: 1.8;
+            padding: 0 0 50px 0;
+        }
+
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        /* Cabecera */
+        .header {
+            background: linear-gradient(135deg, #f0e3cc, #e3d2b6);
+            padding: 40px 20px 30px;
+            margin-bottom: 30px;
+            border-bottom: 6px solid #b8860b;
+            text-align: center;
+        }
+
+        .header .badge {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #7a5d2e;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #2b1a0e;
+            line-height: 1.15;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .header .sub {
+            font-size: 1.25rem;
+            font-style: italic;
+            color: #4d3518;
+            max-width: 650px;
+            margin: 0 auto 12px;
+        }
+
+        .header .meta {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            font-size: 0.85rem;
+            color: #5a452a;
+            border-top: 1px solid #c9b38c;
+            padding-top: 14px;
+            margin-top: 8px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .header .meta span {
+            display: inline-block;
+        }
+
+        /* Hero image */
+        .hero-img {
+            width: 100%;
+            border-radius: 14px;
+            margin-bottom: 28px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.13);
+            display: block;
+            height: auto;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            background-color: #ddd0bc;
+        }
+
+        /* Cuerpo */
+        .article-body {
+            font-size: 1.12rem;
+            color: #1e1a14;
+        }
+
+        .article-body p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .article-body .lead {
+            font-size: 1.35rem;
+            font-weight: 400;
+            color: #2b1a0e;
+            line-height: 1.6;
+            border-left: 5px solid #b8860b;
+            padding-left: 24px;
+            margin-bottom: 1.8rem;
+            font-style: italic;
+        }
+
+        .article-body h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2b1a0e;
+            margin-top: 2.4rem;
+            margin-bottom: 0.8rem;
+            border-bottom: 2px solid #e8d5b0;
+            padding-bottom: 6px;
+        }
+
+        .article-body h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #3d2a12;
+            margin-top: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .article-body .quote-block {
+            font-size: 1.45rem;
+            font-style: italic;
+            color: #3d2a12;
+            background-color: #f4ecdb;
+            padding: 22px 30px;
+            border-radius: 10px;
+            margin: 1.8rem 0;
+            border-left: 6px solid #b8860b;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .article-body .quote-block cite {
+            display: block;
+            font-size: 0.9rem;
+            font-style: normal;
+            color: #6b5538;
+            margin-top: 6px;
+        }
+
+        /* Imágenes inline */
+        .inline-img {
+            width: 100%;
+            border-radius: 12px;
+            margin: 1.6rem 0;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+            display: block;
+            height: auto;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            background-color: #ddd0bc;
+        }
+
+        .img-caption {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            font-size: 0.85rem;
+            color: #5a4a34;
+            text-align: center;
+            margin-top: -10px;
+            margin-bottom: 1.8rem;
+            padding: 0 8px;
+            font-style: italic;
+        }
+
+        /* Recuadro de datos */
+        .info-box {
+            background-color: #f4ecdb;
+            border-radius: 12px;
+            padding: 22px 28px;
+            margin: 1.8rem 0;
+            border: 1px solid #ddd0b8;
+        }
+
+        .info-box h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #2b1a0e;
+            margin-bottom: 8px;
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-box ul li {
+            padding: 6px 0 6px 30px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="%23b8860b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>') left center no-repeat;
+            background-size: 18px;
+            margin-bottom: 2px;
+        }
+
+        /* Footer */
+        .article-footer {
+            margin-top: 3rem;
+            padding-top: 1.8rem;
+            border-top: 2px solid #e8d5b0;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            font-size: 0.85rem;
+            color: #5a452a;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .article-footer .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .article-footer .tags span {
+            background-color: #e8ddd0;
+            padding: 2px 16px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: #3d2a12;
+        }
+
+        /* Responsive */
+        @media (max-width: 650px) {
+            .header h1 {
+                font-size: 2.0rem;
+            }
+            .header .sub {
+                font-size: 1.0rem;
+            }
+            .header .meta {
+                flex-direction: column;
+                gap: 4px;
+                font-size: 0.8rem;
+            }
+            .article-body {
+                font-size: 1.0rem;
+            }
+            .article-body .lead {
+                font-size: 1.1rem;
+                padding-left: 16px;
+            }
+            .article-body h2 {
+                font-size: 1.4rem;
+            }
+            .article-body .quote-block {
+                font-size: 1.15rem;
+                padding: 16px 18px;
+            }
+            .info-box {
+                padding: 16px 18px;
+            }
+            .info-box ul li {
+                padding-left: 24px;
+                background-size: 16px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .container {
+                padding: 0 12px;
+            }
+            .header h1 {
+                font-size: 1.6rem;
+            }
+            .header .sub {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="badge">Especial · Vaticano</div>
+            <h1>Papa León XIV en Perú 2026: fe, esperanza y un abrazo que cruzará el continente</h1>
+            <p class="sub">El Vaticano confirmó la visita del 11 al 17 de noviembre. El pontífice recorrerá Lima, Chiclayo, Cusco y Pucallpa en su primer viaje a Latinoamérica.</p>
+            <div class="meta">
+                <span>📅 8 de agosto de 2026</span>
+                <span>✍️ Por Redacción de Fe y Sociedad</span>
+                <span>⏱ 5 min de lectura</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="article-body">
+
+            <img
+            class="hero-img"
+            src="https://image.pollinations.ai/prompt/Pope_Leo_XIV_official_portrait_smiling_gentle_papal_vestments_St_Peter_Basilica_Vatican_solemn_joyful_atmosphere_photorealistic?width=840&height=470"
+            alt="Retrato del papa León XIV sonriendo en el Vaticano"
+            loading="eager"
+            >
+
+            <p class="lead">
+                La noticia llegó como un susurro que pronto se convirtió en un grito de alegría. El Vaticano hizo oficial lo que millones de peruanos llevaban meses soñando: el papa León XIV visitará el Perú del 11 al 17 de noviembre de 2026. La confirmación, difundida por la agencia oficial de la Santa Sede, encendió la ilusión en cada rincón del país, desde las calles de Lima hasta las comunidades más recónditas de la Amazonía.
+            </p>
+
+            <p>
+                <strong>“Es un regalo del cielo”</strong>, repetían los fieles que se congregaron espontáneamente frente a la Catedral de Lima al conocer la noticia. Y no es para menos: será la segunda visita de un Papa al Perú en el siglo XXI, y la primera que el papa León XIV realiza a tierras latinoamericanas. Un acontecimiento que trasciende lo religioso para convertirse en un abrazo fraterno a toda una nación.
+            </p>
+
+            <p>
+                La Conferencia Episcopal Peruana recibió el anuncio con profunda emoción. En un comunicado, los obispos del país expresaron su gratitud al Santo Padre y reafirmaron su compromiso de trabajar junto al Gobierno y las diócesis para que esta visita sea un verdadero “encuentro de fe y esperanza para el pueblo peruano”.
+            </p>
+
+            <img
+            class="inline-img"
+            src="https://image.pollinations.ai/publish/2026-08-08/religious-celebration-plaza-de-armas-lima-peru-crowd-papal-visit-devotion-colorful-flags?width=840&height=470"
+            alt="Multitudinaria celebración religiosa en la Plaza de Armas de Lima"
+            loading="lazy"
+            >
+            <p class="img-caption">Miles de fieles se preparan para recibir al Papa en la Plaza de Armas de Lima, el corazón de la fe peruana.</p>
+
+            <h2>¿Quién es el papa León XIV?</h2>
+
+            <p>
+                Giovanni Battista Enrico, nacido en Milán en 1958, es un hombre que ha dedicado su vida a los demás. Elegido en el cónclave de 2024, el papa León XIV llegó al trono de Pedro con un perfil que cautivó desde el primer momento: cercano, humilde, y con una capacidad única para escuchar. Antes de ser Papa, fue arzobispo de Milán y cardenal, siempre destacando por su trabajo en las periferias urbanas y su defensa de los migrantes y los más pobres.
+            </p>
+
+            <p>
+                Su pontificado ha estado marcado por un mensaje constante de <strong>esperanza y unidad</strong>. En sus homilías, evita los discursos grandilocuentes y prefiere el diálogo directo, el contacto personal. En las audiencias generales, es común verlo bajar del palco para abrazar a enfermos, bendecir a niños y conversar con jóvenes. Por eso, en Italia y en el mundo entero, ya le llaman <strong>“el Papa que abraza”</strong>.
+            </p>
+
+            <div class="quote-block">
+                “El Papa que abraza nos recuerda que la Iglesia no es una fortaleza, sino una tienda de campaña abierta a todos. Su visita al Perú será un momento de renovación espiritual para toda América Latina.”
+                <cite>— Analistas vaticanistas</cite>
+            </div>
+
+            <p>
+                León XIV ha hecho de la reconciliación y el diálogo interreligioso los ejes de su magisterio. Ha viajado a países en conflicto, ha tendido puentes con otras confesiones y ha alzado la voz contra la indiferencia global. Su llegada a Latinoamérica es esperada con especial fervor, porque el continente ha sido tradicionalmente el “corazón católico” del mundo, y el Papa quiere estar cerca de esa gente que vibra con su fe.
+            </p>
+
+            <h2>Las ciudades que visitará: Lima, Chiclayo, Cusco y Pucallpa</h2>
+
+            <p>
+                El itinerario papal, según los reportes oficiales, abarcará cuatro ciudades que representan la riqueza geográfica, cultural y espiritual del Perú. No es un recorrido casual: cada una de estas localidades ha sido elegida con un propósito pastoral y simbólico profundo.
+            </p>
+
+            <p>
+                <strong>Lima</strong> será el punto de partida. La capital recibirá al Papa con la misa central en la Plaza de Armas, un escenario que ha sido testigo de los momentos más importantes de la historia del país. Allí, el Santo Padre se reunirá con las autoridades políticas, diplomáticas y eclesiásticas, y se espera que dirija un mensaje a la nación desde el Palacio de Gobierno.
+            </p>
+
+            <p>
+                <strong>Chiclayo</strong>, en la región de Lambayeque, ha sido escogida por su arraigada tradición católica y por ser un importante centro de peregrinación. El Papa visitará el Santuario de la Virgen de la Paz y celebrará una misa multitudinaria en el estadio local, donde se espera la asistencia de fieles de todo el norte del país.
+            </p>
+
+            <p>
+                <strong>Cusco</strong>, la antigua capital del Imperio Inca, será sin duda una de las paradas más emotivas. La visita del Papa a la Ciudad Imperial tendrá un fuerte componente de diálogo intercultural. Se prevé que recorra la Catedral y el Templo del Sol, y que realice un gesto simbólico de reconciliación entre la fe católica y las tradiciones andinas. Será un momento de profunda carga histórica y espiritual.
+            </p>
+
+            <p>
+                <strong>Pucallpa</strong>, en la región de Ucayali, es la cuarta ciudad confirmada y quizás la más significativa en términos de mensaje. La visita del Papa a la Amazonía peruana es un gesto contundente en defensa de los pueblos indígenas y del cuidado de la Casa Común, uno de los temas centrales de su pontificado. Allí se reunirá con comunidades nativas y representantes de la Iglesia amazónica, y se espera que firme un documento sobre la protección de la selva y sus habitantes.
+            </p>
+
+            <img
+            class="inline-img"
+            src="https://image.pollinations.ai/publish/2026-08-08/cusco-cathedral-andes-mountains-peru-historic-religious-procession-indigenous-people?width=840&height=470"
+            alt="Catedral de Cusco con los Andes de fondo, escenario de la visita papal"
+            loading="lazy"
+            >
+            <p class="img-caption">La majestuosa Catedral de Cusco, rodeada por los Andes, será uno de los escenarios más emblemáticos de la visita pastoral.</p>
+
+            <h2>¿Por qué esta visita es histórica?</h2>
+
+            <p>
+                La visita del papa León XIV al Perú tiene todos los ingredientes para ser recordada como un hito. En primer lugar, será <strong>la segunda visita de un Papa al Perú en el siglo XXI</strong>, después de la inolvidable visita de Juan Pablo II en 1988 y la de Francisco en 2018. Pero además, es <strong>la primera vez que León XIV pisa suelo latinoamericano</strong> desde su elección, lo que le otorga un carácter de “viaje fundacional” para su relación con la región.
+            </p>
+
+            <p>
+                América Latina ha sido el “continente de la esperanza” para la Iglesia católica, y la elección de León XIV —un Papa europeo con una profunda sensibilidad global— refuerza ese vínculo. Los analistas vaticanistas coinciden en que este viaje marcará un antes y un después en su pontificado, y que el Perú será el escenario de algunos de los mensajes más importantes de su magisterio.
+            </p>
+
+            <p>
+                Otro aspecto que hace histórica esta visita es la diversidad geográfica del itinerario. El Papa no se limitará a la capital; recorrerá la costa, la sierra y la selva. Esto refleja una opción clara por las periferias, por los pueblos olvidados y por un diálogo intercultural que pocos pontífices han abordado con tanta determinación. <strong>Es un viaje que abraza todo el Perú</strong>, en toda su complejidad y belleza.
+            </p>
+
+            <div class="info-box">
+                <h4>📌 Datos clave de la visita apostólica</h4>
+                <ul>
+                    <li><strong>Fechas:</strong> 11 al 17 de noviembre de 2026</li>
+                    <li><strong>Ciudades:</strong> Lima, Chiclayo, Cusco y Pucallpa</li>
+                    <li><strong>Segunda visita papal al Perú en el siglo XXI</strong></li>
+                    <li><strong>Primera visita de León XIV a Latinoamérica</strong></li>
+                    <li><strong>Misas multitudinarias</strong> en estadios y plazas</li>
+                    <li><strong>Encuentros con jóvenes, comunidades indígenas y autoridades</strong></li>
+                    <li><strong>Mensaje especial al país desde la Amazonía</strong></li>
+                </ul>
+            </div>
+
+            <h2>¿Qué se sabe del programa de actividades?</h2>
+
+            <p>
+                Aunque el programa detallado se hará público en las próximas semanas, los organizadores ya han adelantado algunos de los eventos más esperados. El papa León XIV celebrará <strong>misas multitudinarias</strong> en cada una de las ciudades visitadas, con especial énfasis en la Eucaristía central en Lima, que se espera congregue a cientos de miles de fieles en la Plaza de Armas y sus alrededores.
+            </p>
+
+            <p>
+                Además de las celebraciones litúrgicas, el Papa sostendrá <strong>encuentros con jóvenes</strong> en el Colegio San Agustín de Lima, un espacio que se ha convertido en un referente para la pastoral juvenil en el país. También se reunirá con <strong>comunidades nativas</strong> en Pucallpa, donde se espera que aborde temas como la defensa del medio ambiente y los derechos de los pueblos indígenas.
+            </p>
+
+            <p>
+                Otro momento de gran relevancia será la <strong>visita al Santuario del Señor de los Milagros</strong> en Lima, una de las devociones más arraigadas en el Perú. Allí el Papa dejará una ofrenda floral y elevará una oración por la paz y la unidad del país. También se reunirá con los obispos peruanos en la Catedral de Lima para un momento de oración y reflexión pastoral.
+            </p>
+
+            <p>
+                El programa incluye además <strong>encuentros privados con el presidente de la República</strong> y con representantes de la sociedad civil, así como un mensaje especial a la nación peruana que será transmitido en cadena nacional. No faltarán los momentos de oración silenciosa y de bendición a los enfermos, que son parte esencial de cualquier visita papal.
+            </p>
+
+            <h2>Preparativos: logística, seguridad y alojamiento</h2>
+
+            <p>
+                La visita de un Papa es un operativo de gran envergadura que moviliza recursos humanos y materiales de todo tipo. El Gobierno peruano, en estrecha coordinación con la Conferencia Episcopal y el Vaticano, ha puesto en marcha un <strong>plan de seguridad sin precedentes</strong> que involucra a la Policía Nacional, las Fuerzas Armadas y agencias de inteligencia. Se han dispuesto anillos de seguridad alrededor de cada uno de los lugares que visitará el Santo Padre.
+            </p>
+
+            <p>
+                En cuanto a la logística, se han habilitado <strong>zonas de acogida para peregrinos</strong> en cada una de las ciudades. En Lima, el Parque de la Exposición y el Campo de Marte serán los principales puntos de concentración, con carpas, servicios sanitarios y puestos de asistencia médica. En Chiclayo, Cusco y Pucallpa, los estadios y coliseos locales han sido acondicionados para recibir a los fieles.
+            </p>
+
+            <p>
+                El transporte es otro de los grandes desafíos. Se han coordinado rutas especiales con empresas de buses y el sistema ferroviario para facilitar el desplazamiento de los peregrinos, especialmente en la ruta Lima-Cusco y Lima-Chiclayo. También se han dispuesto <strong>vuelos especiales</strong> para quienes viajen desde regiones más alejadas, con tarifas solidarias.
+            </p>
+
+            <p>
+                En el ámbito del alojamiento, la Iglesia peruana ha hecho un llamado a las familias católicas para que abran las puertas de sus hogares a los peregrinos. Esta iniciativa, denominada <strong>“Hogares de Esperanza”</strong>, ha tenido una acogida masiva en todo el país. Se estima que más de 50 mil familias ya se han inscrito para recibir a visitantes de otras ciudades y países.
+            </p>
+
+            <h2>Cómo los fieles pueden seguir los eventos</h2>
+
+            <p>
+                Para aquellos que no puedan asistir presencialmente, la visita del Papa será transmitida en <strong>vivo por televisión y redes sociales</strong>. La señal oficial estará a cargo de la Red de Comunicación del Vaticano (Vatican Media), en alianza con canales peruanos como TV Perú, Latina, América TV y ATV. También se habilitarán pantallas gigantes en diversas plazas y parques para que los fieles puedan seguir las celebraciones en comunidad.
+            </p>
+
+            <p>
+                Las redes sociales jugarán un papel fundamental. Se han habilitado cuentas oficiales en <strong>Facebook, Instagram, TikTok y YouTube</strong> con el hashtag <strong>#PapaLeonXIVPeru</strong>, donde se compartirán en tiempo real los momentos más destacados, así como reflexiones, oraciones y testimonios de los fieles. Se espera que el contenido genere un impacto global, conectando a peruanos en todo el mundo.
+            </p>
+
+            <p>
+                Además, la Conferencia Episcopal Peruana ha lanzado una <strong>aplicación móvil</strong> llamada “Fe y Encuentro” que permite seguir el itinerario del Papa, acceder a materiales de preparación espiritual, enviar peticiones de oración y recibir notificaciones de última hora. La app ya está disponible para dispositivos Android e iOS y ha sido descargada por más de 200 mil personas en su primera semana.
+            </p>
+
+            <img
+            class="inline-img"
+            src="https://image.pollinations.ai/publish/2026-08-08/peruvian-amazon-pucallpa-indigenous-community-welcoming-pope-religious-ceremony?width=840&height=470"
+            alt="Comunidad indígena amazónica en Pucallpa preparando una ceremonia de bienvenida"
+            loading="lazy"
+            >
+            <p class="img-caption">En Pucallpa, las comunidades nativas amazónicas alistan una cálida bienvenida para el Papa, con danzas y cantos tradicionales.</p>
+
+            <h2>El Perú, un país de fe católica</h2>
+
+            <p>
+                El Perú es, sin ninguna duda, uno de los países con mayor tradición católica de América Latina. Más del 75 % de la población se declara católica, y las manifestaciones de fe están profundamente entrelazadas con la cultura y la identidad nacional. Desde el Señor de los Milagros hasta la Virgen de la Candelaria, pasando por el Corpus Christi y las innumerables fiestas patronales, la religiosidad popular es parte del tejido social peruano.
+            </p>
+
+            <p>
+                Recibir a un Papa no es solo un acontecimiento religioso; es un <strong>momento de encuentro y de reafirmación de la identidad</strong>. Para millones de peruanos, la presencia del Santo Padre es un signo de esperanza en medio de las dificultades, una oportunidad para renovar la fe y para sentir que la Iglesia camina junto a su pueblo, compartiendo sus alegrías y sus dolores.
+            </p>
+
+            <p>
+                <strong>“El Papa nos visita en un momento en que el Perú necesita reconciliación y unidad”</strong>, comenta Rosa María Palacios, periodista y analista política. “Su mensaje de fraternidad y su llamado a la paz resuenan con fuerza en un país que ha vivido años de polarización. Su presencia es un bálsamo para el alma nacional”. Y es que, más allá de las diferencias, la visita de León XIV es una invitación a mirar hacia adelante, a construir puentes y a creer en un futuro mejor.
+            </p>
+
+            <div class="quote-block">
+                “El Papa nos visita en un momento en que el Perú necesita reconciliación y unidad. Su mensaje de fraternidad y su llamado a la paz resuenan con fuerza en un país que ha vivido años de polarización.”
+                <cite>— Rosa María Palacios, periodista</cite>
+            </div>
+
+            <p>
+                Las calles de las cuatro ciudades ya se están preparando. Los vecinos pintan fachadas, los colegios ensayan canciones, las parroquias organizan vigilias de oración. Hay un aire de fiesta y de recogimiento que solo se vive cuando el Papa está cerca. Los peruanos, conocidos por su calidez y su hospitalidad, están dando lo mejor de sí para recibir al Santo Padre como se merece.
+            </p>
+
+            <p>
+                La cuenta regresiva ya comenzó. Del 11 al 17 de noviembre de 2026, el Perú será el centro de atención del mundo católico. Pero más allá de las multitudes y los reflectores, lo que realmente importa es lo que quedará en el corazón de cada peruano: la certeza de que la fe, la esperanza y la unidad son posibles. Y que, como dice el papa León XIV, <strong>“la Iglesia no es una fortaleza, sino una tienda de campaña abierta a todos”</strong>.
+            </p>
+
+            <p>
+                Bienvenido, Papa. El Perú te espera con los brazos abiertos, el alma dispuesta y la certeza de que tu visita dejará una huella imborrable en nuestra historia. Que tu mensaje de paz y esperanza nos guíe siempre.
+            </p>
+
+            <div class="article-footer">
+                <div class="tags">
+                    <span>#PapaLeónXIV</span>
+                    <span>#Perú2026</span>
+                    <span>#VisitaPapal</span>
+                    <span>#Fe</span>
+                    <span>#Esperanza</span>
+                </div>
+                <div>Comparte esta noticia con tu comunidad</div>
+            </div>
+
+        </article>
+    </main>
+
+</body>
+</html>
