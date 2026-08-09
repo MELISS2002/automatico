@@ -1,0 +1,560 @@
+{
+  "_meta": {
+    "descripcion": "LISTA CONFIABLE de fuentes RSS (verificadas 2026-08-08). Usar con trends-rss.cjs",
+    "total": 67,
+    "por_pais": {
+      "AR": 4,
+      "CL": 1,
+      "CR": 1,
+      "EC": 1,
+      "ES": 6,
+      "FR": 1,
+      "GB": 3,
+      "INT": 8,
+      "MX": 1,
+      "PE": 18,
+      "QA": 1,
+      "RU": 1,
+      "US": 20,
+      "VE": 1
+    }
+  },
+  "fuentes": [
+    {
+      "name": "Clarin (Argentina)",
+      "country": "AR",
+      "cat": "general",
+      "url": "https://www.clarin.com/rss/lo-ultimo/",
+      "items": 10,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Infobae (Latam)",
+      "country": "AR",
+      "cat": "general",
+      "url": "https://www.infobae.com/arc/outboundfeeds/rss/?outputType=xml",
+      "items": 26,
+      "fuente": "verificada"
+    },
+    {
+      "name": "La Nacion (Argentina)",
+      "country": "AR",
+      "cat": "general",
+      "url": "https://www.lanacion.com.ar/arcio/rss/",
+      "items": 18,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Ole (Argentina)",
+      "country": "AR",
+      "cat": "deportes",
+      "url": "https://www.ole.com.ar/rss/",
+      "items": 10,
+      "fuente": "verificada"
+    },
+    {
+      "name": "La Tercera (Chile)",
+      "country": "CL",
+      "cat": "general",
+      "url": "https://www.latercera.com/rss/",
+      "items": 100,
+      "fuente": "corregida"
+    },
+    {
+      "name": "La Nacion (Costa Rica)",
+      "country": "CR",
+      "cat": "general",
+      "url": "https://www.nacion.com/rss/",
+      "items": 30,
+      "fuente": "verificada"
+    },
+    {
+      "name": "El Comercio (Ecuador)",
+      "country": "EC",
+      "cat": "general",
+      "url": "https://www.elcomercio.com/feed/",
+      "items": 20,
+      "fuente": "corregida"
+    },
+    {
+      "name": "ABC Espana",
+      "country": "ES",
+      "cat": "general",
+      "url": "https://www.abc.es/rss/feeds/abc_ultima.xml",
+      "items": 20,
+      "fuente": "corregida"
+    },
+    {
+      "name": "El Mundo (Espana)",
+      "country": "ES",
+      "cat": "general",
+      "url": "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml",
+      "items": 22,
+      "fuente": "verificada"
+    },
+    {
+      "name": "El Pais (Espana)",
+      "country": "ES",
+      "cat": "general",
+      "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
+      "items": 58,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Europa Press",
+      "country": "ES",
+      "cat": "general",
+      "url": "https://www.europapress.es/rss/rss.aspx",
+      "items": 10,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Hipertextual",
+      "country": "ES",
+      "cat": "tech",
+      "url": "https://hipertextual.com/feed",
+      "items": 6,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Marca",
+      "country": "ES",
+      "cat": "deportes",
+      "url": "https://www.marca.com/rss/portada.xml",
+      "items": 71,
+      "fuente": "corregida"
+    },
+    {
+      "name": "France24 Espanol",
+      "country": "FR",
+      "cat": "general",
+      "url": "https://www.france24.com/es/rss/",
+      "items": 22,
+      "fuente": "verificada"
+    },
+    {
+      "name": "BBC News (EN)",
+      "country": "GB",
+      "cat": "general",
+      "url": "https://feeds.bbci.co.uk/news/rss.xml",
+      "items": 32,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Sky Sports (EN)",
+      "country": "GB",
+      "cat": "deportes",
+      "url": "https://www.skysports.com/rss/12040",
+      "items": 20,
+      "fuente": "verificada"
+    },
+    {
+      "name": "The Guardian World",
+      "country": "GB",
+      "cat": "general",
+      "url": "https://www.theguardian.com/world/rss",
+      "items": 45,
+      "fuente": "verificada"
+    },
+    {
+      "name": "BBC Mundo",
+      "country": "INT",
+      "cat": "general",
+      "url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+      "items": 34,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Google News Ciencia",
+      "country": "INT",
+      "cat": "ciencia",
+      "url": "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en&topic=m",
+      "items": 38,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Google News Entretenimiento",
+      "country": "INT",
+      "cat": "entretenimiento",
+      "url": "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en&topic=e",
+      "items": 38,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Google News Mundo",
+      "country": "INT",
+      "cat": "agregador",
+      "url": "https://news.google.com/rss?gl=US&hl=es&ceid=US:es",
+      "items": 32,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Google News Negocios",
+      "country": "INT",
+      "cat": "economia",
+      "url": "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en&topic=b",
+      "items": 38,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Google News Salud",
+      "country": "INT",
+      "cat": "salud",
+      "url": "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en&topic=h",
+      "items": 38,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Google News Tech",
+      "country": "INT",
+      "cat": "tech",
+      "url": "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en&topic=tc",
+      "items": 38,
+      "fuente": "verificada"
+    },
+    {
+      "name": "WHO News (EN)",
+      "country": "INT",
+      "cat": "salud",
+      "url": "https://www.who.int/rss-feeds/news-english.xml",
+      "items": 25,
+      "fuente": "verificada"
+    },
+    {
+      "name": "El Financiero (Mexico)",
+      "country": "MX",
+      "cat": "economia",
+      "url": "https://www.elfinanciero.com.mx/rss",
+      "items": 27,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Agencia Andina",
+      "country": "PE",
+      "cat": "general",
+      "url": "https://andina.pe/agencia/rss.aspx",
+      "items": 20,
+      "fuente": "corregida"
+    },
+    {
+      "name": "America TV",
+      "country": "PE",
+      "cat": "general",
+      "url": "https://www.americatv.com.pe/feed",
+      "items": 33,
+      "fuente": "verificada"
+    },
+    {
+      "name": "ATV",
+      "country": "PE",
+      "cat": "general",
+      "url": "https://www.atv.pe/feed",
+      "items": 20,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Convoca",
+      "country": "PE",
+      "cat": "investigacion",
+      "url": "https://convoca.pe/rss.xml",
+      "items": 10,
+      "fuente": "corregida"
+    },
+    {
+      "name": "Depor",
+      "country": "PE",
+      "cat": "deportes",
+      "url": "https://depor.com/arcio/rss/",
+      "items": 100,
+      "fuente": "corregida"
+    },
+    {
+      "name": "Diario Correo",
+      "country": "PE",
+      "cat": "general",
+      "url": "https://diariocorreo.pe/arcio/rss/",
+      "items": 100,
+      "fuente": "corregida"
+    },
+    {
+      "name": "Diario Sin Fronteras (Tacna)",
+      "country": "PE",
+      "cat": "regional",
+      "url": "https://www.diariosinfronteras.com.pe/feed",
+      "items": 10,
+      "fuente": "verificada"
+    },
+    {
+      "name": "El Buho (Arequipa)",
+      "country": "PE",
+      "cat": "regional",
+      "url": "https://elbuho.pe/feed/",
+      "items": 20,
+      "fuente": "verificada"
+    },
+    {
+      "name": "El Comercio Peru",
+      "country": "PE",
+      "cat": "general",
+      "url": "https://elcomercio.pe/arcio/rss/",
+      "items": 100,
+      "fuente": "corregida"
+    },
+    {
+      "name": "Exitosa",
+      "country": "PE",
+      "cat": "general",
+      "url": "https://exitosanoticias.pe/feed/",
+      "items": 44,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Gestion",
+      "country": "PE",
+      "cat": "economia",
+      "url": "https://gestion.pe/arcio/rss/",
+      "items": 100,
+      "fuente": "corregida"
+    },
+    {
+      "name": "Google News Peru",
+      "country": "PE",
+      "cat": "agregador",
+      "url": "https://news.google.com/rss?gl=PE&hl=es-419&ceid=PE:es-419",
+      "items": 33,
+      "fuente": "verificada"
+    },
+    {
+      "name": "La Mula (opinion)",
+      "country": "PE",
+      "cat": "opinion",
+      "url": "https://redaccion.lamula.pe/feed/",
+      "items": 30,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Los Andes (Puno)",
+      "country": "PE",
+      "cat": "regional",
+      "url": "https://losandes.com.pe/feed",
+      "items": 10,
+      "fuente": "corregida"
+    },
+    {
+      "name": "Ojo",
+      "country": "PE",
+      "cat": "entretenimiento",
+      "url": "https://ojo.pe/arcio/rss/",
+      "items": 19,
+      "fuente": "corregida"
+    },
+    {
+      "name": "Peru21",
+      "country": "PE",
+      "cat": "general",
+      "url": "https://peru21.pe/rss/",
+      "items": 20,
+      "fuente": "corregida"
+    },
+    {
+      "name": "RPP Noticias",
+      "country": "PE",
+      "cat": "general",
+      "url": "https://rpp.pe/feed/",
+      "items": 31,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Sudaca (investigacion)",
+      "country": "PE",
+      "cat": "investigacion",
+      "url": "https://sudaca.pe/feed/",
+      "items": 9,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Al Jazeera (EN)",
+      "country": "QA",
+      "cat": "general",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "items": 25,
+      "fuente": "verificada"
+    },
+    {
+      "name": "RT en Espanol",
+      "country": "RU",
+      "cat": "general",
+      "url": "https://actualidad.rt.com/rss",
+      "items": 10,
+      "fuente": "corregida"
+    },
+    {
+      "name": "Ars Technica",
+      "country": "US",
+      "cat": "tech",
+      "url": "https://feeds.arstechnica.com/arstechnica/index",
+      "items": 20,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Billboard",
+      "country": "US",
+      "cat": "entretenimiento",
+      "url": "https://www.billboard.com/feed/",
+      "items": 10,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Bloomberg",
+      "country": "US",
+      "cat": "economia",
+      "url": "https://feeds.bloomberg.com/markets/news.rss",
+      "items": 20,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Engadget",
+      "country": "US",
+      "cat": "tech",
+      "url": "https://www.engadget.com/rss.xml",
+      "items": 20,
+      "fuente": "verificada"
+    },
+    {
+      "name": "ESPN (EN)",
+      "country": "US",
+      "cat": "deportes",
+      "url": "https://www.espn.com/espn/rss/news",
+      "items": 29,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Google News USA",
+      "country": "US",
+      "cat": "agregador",
+      "url": "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en",
+      "items": 38,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Hacker News",
+      "country": "US",
+      "cat": "tech",
+      "url": "https://hnrss.org/frontpage",
+      "items": 20,
+      "fuente": "verificada"
+    },
+    {
+      "name": "MarketWatch",
+      "country": "US",
+      "cat": "economia",
+      "url": "https://feeds.marketwatch.com/marketwatch/topstories/",
+      "items": 10,
+      "fuente": "verificada"
+    },
+    {
+      "name": "MIT Technology Review",
+      "country": "US",
+      "cat": "tech",
+      "url": "https://www.technologyreview.com/feed/",
+      "items": 10,
+      "fuente": "verificada"
+    },
+    {
+      "name": "NASA",
+      "country": "US",
+      "cat": "ciencia",
+      "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+      "items": 9,
+      "fuente": "verificada"
+    },
+    {
+      "name": "NYT Homepage",
+      "country": "US",
+      "cat": "general",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+      "items": 11,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Product Hunt",
+      "country": "US",
+      "cat": "tech",
+      "url": "https://www.producthunt.com/feed",
+      "items": 50,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Rolling Stone",
+      "country": "US",
+      "cat": "entretenimiento",
+      "url": "https://www.rollingstone.com/feed/",
+      "items": 10,
+      "fuente": "verificada"
+    },
+    {
+      "name": "ScienceDaily",
+      "country": "US",
+      "cat": "ciencia",
+      "url": "https://www.sciencedaily.com/rss/all.xml",
+      "items": 60,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Space.com",
+      "country": "US",
+      "cat": "ciencia",
+      "url": "https://www.space.com/feeds/all",
+      "items": 16,
+      "fuente": "verificada"
+    },
+    {
+      "name": "TechCrunch",
+      "country": "US",
+      "cat": "tech",
+      "url": "https://techcrunch.com/feed/",
+      "items": 20,
+      "fuente": "verificada"
+    },
+    {
+      "name": "The Verge",
+      "country": "US",
+      "cat": "tech",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "items": 10,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Variety",
+      "country": "US",
+      "cat": "entretenimiento",
+      "url": "https://variety.com/feed/",
+      "items": 10,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Washington Post World",
+      "country": "US",
+      "cat": "general",
+      "url": "http://feeds.washingtonpost.com/rss/world",
+      "items": 3,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Wired",
+      "country": "US",
+      "cat": "tech",
+      "url": "https://www.wired.com/feed/rss",
+      "items": 50,
+      "fuente": "verificada"
+    },
+    {
+      "name": "El Nacional (Venezuela)",
+      "country": "VE",
+      "cat": "general",
+      "url": "https://www.elnacional.com/rss/",
+      "items": 100,
+      "fuente": "verificada"
+    }
+  ]
+}
