@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terremoto en Colombia: 111 muertos y 87 heridos - Portal Noticias</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: #f4f4f4;
+            color: #1a1a1a;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 0 20px 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .header {
+            border-bottom: 3px solid #c0392b;
+            padding: 20px 0 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+        .header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #1a1a1a;
+            letter-spacing: -0.5px;
+        }
+        .header .logo span {
+            color: #c0392b;
+        }
+        .header .date {
+            font-size: 0.9rem;
+            color: #666;
+            background: #eee;
+            padding: 5px 12px;
+            border-radius: 20px;
+        }
+        .featured-img {
+            width: 100%;
+            margin: 15px 0 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .featured-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 20px 0 10px;
+            color: #0b0b0b;
+        }
+        .subhead {
+            font-size: 1.2rem;
+            color: #444;
+            border-left: 5px solid #c0392b;
+            padding-left: 15px;
+            margin: 10px 0 25px;
+            font-style: italic;
+        }
+        .byline {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 15px;
+        }
+        .byline strong {
+            color: #1a1a1a;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin: 35px 0 15px;
+            color: #0b0b0b;
+            border-bottom: 2px solid #c0392b;
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin: 25px 0 10px;
+            color: #222;
+        }
+        p {
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+        .data-block {
+            background: #f0f2f5;
+            border-left: 6px solid #c0392b;
+            padding: 20px 25px;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        .data-block h4 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #c0392b;
+            margin-bottom: 10px;
+        }
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-top: 10px;
+        }
+        .data-grid .item {
+            background: white;
+            padding: 10px 12px;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .data-grid .item .number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #c0392b;
+            line-height: 1.2;
+        }
+        .data-grid .item .label {
+            font-size: 0.85rem;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .inline-img {
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .inline-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .caption {
+            font-size: 0.85rem;
+            color: #666;
+            text-align: center;
+            margin-top: 5px;
+            font-style: italic;
+        }
+        .quote {
+            background: #f9f9f9;
+            padding: 15px 25px;
+            border-radius: 6px;
+            margin: 25px 0;
+            font-style: italic;
+            border-left: 4px solid #c0392b;
+            color: #222;
+        }
+        .footer {
+            margin-top: 45px;
+            padding-top: 20px;
+            border-top: 2px solid #ddd;
+            font-size: 0.9rem;
+            color: #555;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer .source {
+            font-weight: 300;
+        }
+        .footer .source strong {
+            color: #1a1a1a;
+        }
+        .footer .social {
+            display: flex;
+            gap: 12px;
+        }
+        .footer .social a {
+            color: #555;
+            text-decoration: none;
+            background: #eee;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        .footer .social a:hover {
+            background: #c0392b;
+            color: white;
+        }
+        @media (max-width: 700px) {
+            .title {
+                font-size: 1.9rem;
+            }
+            .header .logo {
+                font-size: 1.4rem;
+            }
+            .data-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .container {
+                padding: 0 15px 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            .title {
+                font-size: 1.6rem;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            .data-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="logo">Noticias<span>Perú</span></div>
+        <div class="date">Lunes, 10 de agosto de 2026</div>
+    </header>
+
+    <div class="featured-img">
+        <img src="imagen1.jpg" alt="Vista de una calle con escombros tras el terremoto en San José del Palmar, Chocó">
+    </div>
+
+    <h1 class="title">Terremoto de magnitud 7,4 en Colombia deja al menos 111 muertos y 87 heridos, según el presidente Abelardo de la Espriella</h1>
+    <div class="subhead">El sismo con epicentro en San José del Palmar (Chocó) afectó a cinco departamentos; más de 1.500 viviendas y decenas de edificios públicos sufrieron daños. La presidenta de Perú, Keiko Fujimori, ofreció apoyo al gobierno colombiano.</div>
+    <div class="byline"><strong>Redacción Nacional</strong> · 10 de agosto de 2026 · Actualizado 18:30 GMT</div>
+
+    <p>Un devastador terremoto de magnitud 7,4 sacudió este lunes la mayor parte del territorio colombiano, dejando una estela de destrucción y dolor. El epicentro se localizó en el municipio de San José del Palmar, en el departamento de Chocó, a una profundidad cercana a los 100 kilómetros, según informó el Servicio Geológico Colombiano. El movimiento telúrico, que se sintió con fuerza en Bogotá, Medellín, Cali y otras grandes ciudades, ha provocado hasta el momento 111 víctimas mortales y 87 heridos, de acuerdo con el primer balance oficial ofrecido por el presidente Abelardo de la Espriella.</p>
+
+    <p>En su declaración pública desde la Casa de Nariño, a las 12:30 hora local (17:30 GMT), el mandatario compareció ante los medios con semblante grave y confirmó las cifras preliminares. “Es un dolor profundo que nos golpea a todos los colombianos. Nuestro equipo de emergencia ya está desplegado en las zonas más afectadas, y hemos activado todos los protocolos de atención a la población”, señaló el presidente. De la Espriella indicó que los equipos de rescate continúan trabajando en la búsqueda de personas atrapadas bajo los escombros, especialmente en las áreas rurales de difícil acceso.</p>
+
+    <div class="data-block">
+        <h4>Balance preliminar del terremoto (reporte oficial)</h4>
+        <div class="data-grid">
+            <div class="item"><span class="number">111</span><span class="label">Fallecidos</span></div>
+            <div class="item"><span class="number">87</span><span class="label">Heridos</span></div>
+            <div class="item"><span class="number">1.575</span><span class="label">Viviendas averiadas</span></div>
+            <div class="item"><span class="number">37</span><span class="label">Viviendas destruidas</span></div>
+            <div class="item"><span class="number">61</span><span class="label">Edificios colapsados</span></div>
+            <div class="item"><span class="number">18</span><span class="label">Centros de salud dañados</span></div>
+            <div class="item"><span class="number">52</span><span class="label">Centros educativos afectados</span></div>
+            <div class="item"><span class="number">5</span><span class="label">Departamentos con daños</span></div>
+        </div>
+        <p style="margin-top: 12px; font-size:0.95rem; text-align:right; color:#444;">Fuente: Presidencia de Colombia / EFE</p>
+    </div>
+
+    <h2>Impacto en la infraestructura y servicios básicos</h2>
+    <p>El informe presidencial detalló que al menos 1.575 viviendas resultaron con averías de diversa consideración, y 37 de ellas quedaron completamente destruidas. Asimismo, 61 edificios colapsaron total o parcialmente, lo que ha obligado a evacuar a cientos de familias. Los departamentos más golpeados son Chocó, Valle del Cauca, Risaralda, Quindío y Antioquia, aunque el movimiento telúrico se percibió en más de una docena de regiones.</p>
+
+    <div class="inline-img">
+        <img src="imagen2.jpg" alt="Equipos de rescate trabajando entre escombros en una zona urbana de Colombia">
+        <div class="caption">Equipos de rescate y bomberos trabajan en las labores de búsqueda y remoción de escombros en varias localidades afectadas.</div>
+    </div>
+
+    <p>La infraestructura sanitaria también sufrió graves daños: 18 centros de salud reportan averías estructurales, lo que complica la atención a los heridos. En varios hospitales de la región del Pacífico se han habilitado carpas móviles para atender a los afectados. Por otro lado, 52 centros educativos han sido afectados, por lo que las clases han sido suspendidas indefinidamente en las zonas de desastre. El presidente De la Esprilla advirtió que la cifra de víctimas podría aumentar en las próximas horas, a medida que se acceda a las comunidades más aisladas.</p>
+
+    <div class="quote">
+        “Estamos ante una tragedia de grandes proporciones. Hago un llamado a la calma y a la solidaridad. Priorizaremos la atención médica y la búsqueda de desaparecidos. No escatimaremos esfuerzos para llevar ayuda a cada rincón afectado.” — Abelardo de la Espriella, presidente de Colombia.
+    </div>
+
+    <h2>Reacción internacional y solidaridad de Perú</h2>
+    <p>La comunidad internacional ha manifestado su apoyo a Colombia en estas horas difíciles. La presidenta de Perú, Keiko Fujimori, se comunicó telefónicamente con el mandatario colombiano para expresar sus condolencias y ofrecer toda la ayuda humanitaria que el país andino pueda brindar. A través de un comunicado oficial, la Cancillería peruana informó que se ha activado el mecanismo de respuesta ante desastres y que se encuentra en coordinación con la Unidad Nacional para la Gestión del Riesgo de Desastres (UNGRD) de Colombia.</p>
+
+    <p>Desde Lima, la ministra de Relaciones Exteriores indicó que Perú pondrá a disposición equipos de búsqueda y rescate, así como suministros médicos y carpas, en caso de que el gobierno colombiano lo requiera. Asimismo, la Cancillería peruana ha habilitado líneas de emergencia para atender a los connacionales que pudieran encontrarse en las zonas afectadas. Hasta el cierre de esta edición, no se ha reportado ningún peruano herido o fallecido a causa del terremoto, según fuentes diplomáticas.</p>
+
+    <div class="inline-img">
+        <img src="imagen3.jpg" alt="Reunión de emergencia del gobierno colombiano en Bogotá para coordinar la respuesta al terremoto">
+        <div class="caption">El presidente Abelardo de la Espriella encabezó una reunión de crisis en Bogotá con los ministerios de Defensa, Salud y Transporte para coordinar las labores de auxilio.</div>
+    </div>
+
+    <h3>Medidas de emergencia y llamado a la población</h3>
+    <p>El Gobierno colombiano ha declarado el estado de calamidad pública en los cinco departamentos más afectados, lo que permite la movilización de recursos extraordinarios y la suspensión de trámites administrativos para agilizar la ayuda. Se han habilitado albergues temporales en escuelas y polideportivos, y se está distribuyendo agua potable, alimentos y kits de aseo. La Fuerza Aérea Colombiana ha dispuesto aeronaves para el traslado de heridos graves a centros hospitalarios de mayor capacidad en Bogotá y Medellín.</p>
+
+    <p>El presidente De la Espriella instó a la ciudadanía a mantener la calma y a seguir las instrucciones de las autoridades locales. También pidió a los conductores evitar las zonas cercanas a edificios en riesgo y a reportar cualquier emergencia a la línea 123. “La solidaridad es nuestra mayor fortaleza en estos momentos. Cada colombiano debe ser un apoyo para su vecino”, enfatizó.</p>
+
+    <h3>Contexto sísmico y antecedentes</h3>
+    <p>Colombia se encuentra en el llamado Cinturón de Fuego del Pacífico, una de las regiones con mayor actividad sísmica del mundo. El terremoto de este lunes, con una profundidad de 100 km, es considerado de tipo intermedio, lo que explica que las ondas se hayan propagado a largas distancias. Expertos del Servicio Geológico Colombiano indicaron que no se descartan réplicas de menor magnitud en los próximos días, por lo que recomendaron a la población mantenerse alerta y revisar las condiciones estructurales de sus viviendas.</p>
+
+    <p>El último gran sismo que afectó a la región del Pacífico colombiano fue en 1979, con un terremoto de magnitud 8,1 que causó más de 300 muertos en la zona de Tumaco. Aunque las cifras actuales son menos elevadas, la destrucción de infraestructura crítica y el número de damnificados plantea un desafío logístico enorme para las autoridades.</p>
+
+    <h2>Apoyo de la Cancillería peruana y líneas de atención</h2>
+    <p>La Cancillería de Perú, a través de su Dirección de Asuntos Consulares, ha puesto a disposición los teléfonos de emergencia +51 1 204 2400 (anexo 115) y el correo consulares@rree.gob.pe para que los peruanos en Colombia puedan reportar su estado o solicitar asistencia. Asimismo, se ha recomendado a los viajeros peruanos que eviten desplazarse a las zonas declaradas en emergencia hasta que las condiciones mejoren.</p>
+
+    <p>“Nuestra solidaridad con el pueblo colombiano es inquebrantable. El Perú está listo para colaborar en lo que sea necesario. Hemos activado todos los mecanismos de protección a nuestros ciudadanos en el exterior”, declaró la portavoz de la Cancillería en una rueda de prensa. Hasta el momento, no se han reportado víctimas peruanas, pero la embajada en Bogotá permanece en comunicación constante con las comunidades de inmigrantes en las ciudades más afectadas.</p>
+
+    <h3>Reacciones en redes y movilización ciudadana</h3>
+    <p>En las plataformas digitales, miles de colombianos han compartido mensajes de aliento y han ofrecido sus viviendas para albergar a damnificados. Organizaciones de la sociedad civil, como la Cruz Roja y Defensa Civil, han abierto centros de acopio en varias ciudades. También se han difundido listas de productos urgentes: agua embotellada, alimentos no perecibles, medicamentos, linternas, pilas y frazadas.</p>
+
+    <p>El presidente De la Espriella agradeció el respaldo internacional y, en especial, el gesto de la presidenta Fujimori. “La hermandad entre nuestras naciones se refleja en estos momentos de adversidad. Colombia no olvida el apoyo de Perú en otras emergencias, y hoy valoramos profundamente su ofrecimiento”, afirmó.</p>
+
+    <h2>Balance y perspectivas</h2>
+    <p>Con 111 muertos confirmados y 87 heridos, este terremoto se perfila como uno de los más letales en la historia reciente de Colombia. Los equipos de rescate continuarán trabajando durante toda la noche, y se espera que en las próximas horas se actualice el balance con datos más precisos. El gobierno ha prometido transparencia en la gestión de la emergencia y ha convocado a una reunión extraordinaria del Consejo Nacional de Gestión del Riesgo para este martes.</p>
+
+    <p>La comunidad internacional, a través de la ONU y la Cruz Roja Internacional, ha ofrecido su respaldo logístico. Mientras tanto, los colombianos se preparan para una larga noche de incertidumbre, pero también de solidaridad y esperanza. El llamado del presidente De la Espriella resuena en cada rincón del país: “Unidos superaremos esta prueba. Colombia se levanta”.</p>
+
+    <div class="footer">
+        <div class="source"><strong>Fuentes:</strong> Presidencia de Colombia, EFE, RPP Noticias, Cancillería del Perú.</div>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">WhatsApp</a>
+        </div>
+    </div>
+    <p style="font-size:0.75rem; color:#999; margin-top:10px; text-align:center;">© 2026 NoticiasPerú - Todos los derechos reservados. Esta información es de carácter público y se basa en reportes oficiales al cierre de esta edición.</p>
+</div>
+</body>
+</html>
