@@ -154,57 +154,27 @@
     font-size: 1.3rem;
   }
 
-  /* Drawer móvil: pantalla completa (cubre el header del sitio, sin logos duplicados) */
+  /* Drawer móvil: debajo del header, fondo blanco, solo links. El logo vive en el header (uno solo) */
   .mobile-nav {
     display: flex;
     position: fixed;
-    top: 0;
+    top: 56px;
     left: 0;
     width: 100%;
-    height: 100dvh;
+    height: calc(100dvh - 56px);
     background: #fff;
-    transition: opacity 0.25s ease, visibility 0.25s ease;
     z-index: 1002;
     flex-direction: column;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     opacity: 0;
     visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
   }
 
   .mobile-nav.open {
     opacity: 1;
     visibility: visible;
-  }
-
-  .mobile-nav-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 56px;
-    padding: 0 1rem;
-    border-bottom: 1px solid var(--line);
-    flex-shrink: 0;
-  }
-
-  .mobile-nav-header .logo {
-    font-size: 1.3rem;
-  }
-
-  .drawer-close {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.35rem;
-    line-height: 1;
-    color: var(--ink);
-    padding: 10px;
-    margin-right: -6px;
-    transition: opacity 0.2s;
-  }
-
-  .drawer-close:hover {
-    opacity: 0.6;
   }
 
   .mobile-nav-links {
@@ -234,6 +204,11 @@
   .mobile-nav-links a.active {
     background: rgba(220, 38, 38, 0.08);
     color: var(--accent);
+  }
+
+  /* Hamburguesa (morph a X) por encima del drawer para poder cerrar */
+  .hamburger {
+    z-index: 1003;
   }
 
   .mobile-overlay.active {

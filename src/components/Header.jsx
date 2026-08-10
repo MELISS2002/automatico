@@ -56,17 +56,8 @@ function Header() {
           ))}
         </nav>
 
-        {/* Drawer móvil: panel completo con su propio header (logo + X) */}
+        {/* Drawer móvil: debajo del header, solo links (el logo vive en el header del sitio) */}
         <nav className={`mobile-nav ${isOpen ? 'open' : ''}`}>
-          <div className="mobile-nav-header">
-            <NavLink to="/" className="logo" onClick={closeMenu}>
-              <span className="logo-dot"></span>
-              <span>Ultimo<span className="logo-bold">Live</span></span>
-            </NavLink>
-            <button className="drawer-close" onClick={closeMenu} aria-label="Cerrar menú">
-              &#10005;
-            </button>
-          </div>
           <div className="mobile-nav-links">
             {navItems.map((item) => (
               <NavLink
