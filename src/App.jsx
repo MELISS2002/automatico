@@ -139,15 +139,7 @@ function App() {
               </article>
             ) : null}
 
-            {/* Secundarias */}
-            {secondary.length > 0 && (
-              <section className="news-section">
-                <h2 className="section-title">Más noticias</h2>
-                <NewsGrid articles={secondary} onRead={handleReadArticle} />
-              </section>
-            )}
-
-            {/* Agenda + Streams */}
+            {/* Agenda + Streams — arriba, justo después del hero */}
             <section className="live-section">
               <div className="live-panel">
                 <h3>Agenda deportiva</h3>
@@ -179,6 +171,14 @@ function App() {
                 </div>
               </div>
             </section>
+
+            {/* Secundarias */}
+            {secondary.length > 0 && (
+              <section className="news-section">
+                <h2 className="section-title">Más noticias</h2>
+                <NewsGrid articles={secondary} onRead={handleReadArticle} />
+              </section>
+            )}
 
             {/* Resto de artículos */}
             {rest.length > 0 && (
