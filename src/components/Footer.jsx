@@ -11,13 +11,14 @@ const Footer = () => {
           </div>
           <p>Tu fuente confiable para deportes en vivo, consejos para ganar y bienestar natural.</p>
         </div>
-        
+
         <div className="footer-section">
           <h4>Secciones</h4>
           <ul className="footer-links">
             <li><Link to="/">Inicio</Link></li>
             <li><Link to="/gana">Trucos para Ganar</Link></li>
             <li><Link to="/salud">Salud Natural</Link></li>
+            <li><Link to="/canales">Canales</Link></li>
           </ul>
         </div>
 
@@ -30,7 +31,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      
+
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} UltimoLive. Todos los derechos reservados.</p>
       </div>

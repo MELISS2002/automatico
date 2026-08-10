@@ -28,7 +28,7 @@ function Salud() {
 
         {/* Sección principal: Consejos de Salud Natural */}
         <section className="tips-section">
-          <h1 className="main-heading">🌿 Consejos de Salud Natural </h1>
+          <h1 className="main-heading">Consejos de Salud Natural</h1>
           <p className="intro-text">
             En un mundo donde el estrés y las enfermedades modernas son cada vez más comunes,
             adoptar un estilo de vida saludable basado en remedios naturales se ha vuelto esencial.
@@ -39,13 +39,13 @@ function Salud() {
 
 
           <div className="call-to-action">
-            <p>💚 Descubre más consejos saludables en nuestros artículos a continuación y transforma tu estilo de vida con bienestar natural. ¡Tu salud es tu mayor riqueza!</p>
+            <p>Descubre más consejos saludables en nuestros artículos a continuación y transforma tu estilo de vida con bienestar natural. Tu salud es tu mayor riqueza.</p>
           </div>
         </section>
 
         {/* Sección de artículos dinámicos */}
         <section className="news-section">
-          <h2 className="section-title">📰 Últimos Artículos sobre Salud y Bienestar</h2>
+          <h2 className="section-title">Últimos Artículos sobre Salud y Bienestar</h2>
           {isLoading ? (
             <p className="loading-text">Cargando artículos...</p>
           ) : (
@@ -53,7 +53,7 @@ function Salud() {
           )}
         </section>
           <div className="tip-block">
-  <h3>🍵 1. Infusiones y Tés Medicinales</h3>
+  <h3>1. Infusiones y Tés Medicinales</h3>
   <p>
     Las infusiones naturales son un regalo milenario para nuestro cuerpo y mente.
     Hierbas como <strong>manzanilla, jengibre, menta o diente de león</strong> ofrecen múltiples beneficios:
@@ -65,7 +65,7 @@ function Salud() {
 </div>
 
 <div className="tip-block">
-  <h3>🥗 2. Alimentación Consciente y Natural</h3>
+  <h3>2. Alimentación Consciente y Natural</h3>
   <p>
     Una alimentación saludable no se trata solo de lo que comes, sino de <strong>cómo lo haces</strong>.
     Prioriza alimentos frescos, orgánicos y de temporada: frutas jugosas, verduras verdes, legumbres,
@@ -77,7 +77,7 @@ function Salud() {
 </div>
 
 <div className="tip-block">
-  <h3>🧘 3. Relajación Profunda y Meditación Diaria</h3>
+  <h3>3. Relajación Profunda y Meditación Diaria</h3>
   <p>
     La salud no está completa sin <strong>bienestar emocional</strong>.
     Practicar yoga suave, ejercicios de respiración o meditaciones guiadas diariamente reduce
@@ -89,7 +89,7 @@ function Salud() {
 </div>
 
 <div className="tip-block">
-  <h3>💧 4. Hidratación Constante y Detox Natural</h3>
+  <h3>4. Hidratación Constante y Detox Natural</h3>
   <p>
     El agua es vida, y mantenerse hidratado es esencial para que cada célula funcione correctamente.
     Beber entre <strong>2 y 3 litros de agua</strong> al día ayuda a depurar toxinas, mantener la piel radiante
@@ -100,7 +100,7 @@ function Salud() {
 </div>
 
 <div className="tip-block">
-  <h3>🌞 5. Conexión con la Naturaleza y el Sol</h3>
+  <h3>5. Conexión con la Naturaleza y el Sol</h3>
   <p>
     Pasar tiempo al aire libre es una <strong>medicina natural</strong> muchas veces subestimada.
     Caminar descalzo sobre el césped, respirar aire puro o simplemente sentarte bajo el sol

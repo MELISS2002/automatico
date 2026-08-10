@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 function Header() {
@@ -27,26 +27,65 @@ function Header() {
     };
   }, []);
 
+  const navItems = [
+    { to: '/', label: 'Inicio', end: true },
+    { to: '/gana', label: 'Gana' },
+    { to: '/salud', label: 'Salud' },
+    { to: '/canales', label: 'Canales' }
+  ];
+
   return (
     <header className={`app-header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <Link to="/" className="logo" onClick={closeMenu}>
-          <span className="logo-highlight">Ultimo</span>Live
-        </Link>
+        <NavLink to="/" className="logo" onClick={closeMenu}>
+          <span className="logo-dot"></span>
+          <span>Ultimo<span className="logo-bold">Live</span></span>
+        </NavLink>
 
-        <nav className={`desktop-nav ${isOpen ? 'mobile-active' : ''}`}>
-          <ul>
-            <li><Link to="/" onClick={closeMenu}>Inicio</Link></li>
-         
-            <li><Link to="/gana" onClick={closeMenu}>Trucos para Ganar</Link></li>
-            <li><Link to="/salud" onClick={closeMenu}>Salud Natural</Link></li>
-          </ul>
+        <nav className={`desktop-nav`}>
+          {navItems.map((item) => (
+            <NavLink
+              key={item.to}
+              to={item.to}
+              end={item.end}
+              onClick={closeMenu}
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              {item.label}
+            </NavLink>
+          ))}
         </nav>
 
-        <button 
-          className={`hamburger ${isOpen ? 'open' : ''}`} 
+        {/* Drawer móvil: panel completo con su propio header (logo + X) */}
+        <nav className={`mobile-nav ${isOpen ? 'open' : ''}`}>
+          <div className="mobile-nav-header">
+            <NavLink to="/" className="logo" onClick={closeMenu}>
+              <span className="logo-dot"></span>
+              <span>Ultimo<span className="logo-bold">Live</span></span>
+            </NavLink>
+            <button className="drawer-close" onClick={closeMenu} aria-label="Cerrar menú">
+              &#10005;
+            </button>
+          </div>
+          <div className="mobile-nav-links">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                end={item.end}
+                onClick={closeMenu}
+                className={({ isActive }) => (isActive ? 'active' : '')}
+              >
+                {item.label}
+              </NavLink>
+            ))}
+          </div>
+        </nav>
+
+        <button
+          className={`hamburger ${isOpen ? 'open' : ''}`}
           onClick={toggleMenu}
-          aria-label="Menu"
+          aria-label="Menú"
         >
           <div className="hamburger-line"></div>
           <div className="hamburger-line"></div>

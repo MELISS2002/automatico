@@ -26,7 +26,7 @@ function Gana() {
     <div className="app">
       <main className="main-content">
 
-          <h1 className="main-heading">💸 Cómo Ganar Dinero en Internet en 2025</h1>
+          <h1 className="main-heading">Cómo Ganar Dinero en Internet</h1>
           <p className="intro-text">
             ¿Estás buscando nuevas formas de generar ingresos desde casa o aprovechar el poder de internet para ganar dinero extra?
             Has llegado al lugar indicado. En esta guía te revelamos los métodos más efectivos y modernos para ganar dinero online este año.
@@ -34,7 +34,7 @@ function Gana() {
           </p>
         {/* Sección de artículos dinámicos */}
         <section className="news-section">
-          <h2 className="section-title">📰 Últimos Artículos sobre Ganancias Online</h2>
+          <h2 className="section-title">Últimos Artículos sobre Ganancias Online</h2>
           {isLoading ? (
             <p className="loading-text">Cargando artículos...</p>
           ) : (
@@ -47,7 +47,7 @@ function Gana() {
 
 
           <div className="tip-block">
-  <h3>🛒 1. Vende Productos o Servicios Online</h3>
+  <h3>1. Vende Productos o Servicios Online</h3>
   <p>
     El comercio digital ha democratizado la posibilidad de emprender desde casa.
     Puedes comenzar vendiendo productos físicos como ropa, artesanías, accesorios personalizados
@@ -60,7 +60,7 @@ function Gana() {
 </div>
 
 <div className="tip-block">
-  <h3>🤝 2. Marketing de Afiliados</h3>
+  <h3>2. Marketing de Afiliados</h3>
   <p>
     El marketing de afiliados te permite ganar dinero recomendando productos o servicios
     de otras marcas. Recibes una comisión cada vez que alguien compra a través de tu enlace.
@@ -72,7 +72,7 @@ function Gana() {
 </div>
 
 <div className="tip-block">
-  <h3>🎓 3. Crea y Vende Cursos Online</h3>
+  <h3>3. Crea y Vende Cursos Online</h3>
   <p>
     Compartir tus conocimientos puede convertirse en una fuente constante de ingresos pasivos.
     Si eres experto en un tema como <strong>fotografía, cocina, idiomas, finanzas, programación o desarrollo personal</strong>,
@@ -83,7 +83,7 @@ function Gana() {
 </div>
 
 <div className="tip-block">
-  <h3>💼 4. Trabaja como Freelancer</h3>
+  <h3>4. Trabaja como Freelancer</h3>
   <p>
     Si tienes habilidades profesionales, puedes convertirte en tu propio jefe ofreciendo tus servicios
     como freelancer. Algunas de las áreas más solicitadas incluyen: <strong>redacción, traducción, diseño gráfico, programación,
@@ -95,7 +95,7 @@ function Gana() {
 </div>
 
 <div className="tip-block">
-  <h3>📊 5. Realiza Encuestas Remuneradas y Microtareas</h3>
+  <h3>5. Realiza Encuestas Remuneradas y Microtareas</h3>
   <p>
     Aunque no es una fuente de ingresos elevada, participar en encuestas pagadas o completar
     microtareas online puede brindarte un ingreso extra sin complicaciones.
@@ -108,7 +108,7 @@ function Gana() {
 
 
           <div className="call-to-action">
-            <p>🔎 Explora más trucos en nuestros artículos  y conviértete en tu propio jefe desde casa. ¡Tu éxito online comienza hoy!</p>
+            <p>Explora más trucos en nuestros artículos y conviértete en tu propio jefe desde casa. Tu éxito online comienza hoy.</p>
           </div>
         </section>
         
