@@ -1,4 +1,11 @@
-/* App.css — UltimoLive redesign editorial (spec OpenCode) */
+/* App.css — UltimoLive redesign editorial (spec OpenCode)
+   Mejoras 2026-08-11 (referencias: NYT, BBC, AP News, subframe editorial):
+   - Dark mode automatico via prefers-color-scheme
+   - Micro-interacciones en cards (lift + sombra suave)
+   - Header con blur al hacer scroll (glassmorphism)
+   - Tipografia editorial mas clara: mayor contraste, mejor medida de lectura
+   - Focus-visible accesible en elementos interactivos
+*/
 :root {
   --bg: #FFFFFF;
   --surface: #F4F5F7;
@@ -7,7 +14,30 @@
   --ink-3: #9CA3AF;
   --line: #E5E7EB;
   --accent: #DC2626;
+  --accent-soft: rgba(220, 38, 38, 0.08);
   --radius: 10px;
+  --shadow-card: 0 1px 2px rgba(17, 24, 39, 0.04), 0 4px 16px rgba(17, 24, 39, 0.05);
+  --shadow-card-hover: 0 2px 4px rgba(17, 24, 39, 0.05), 0 12px 28px rgba(17, 24, 39, 0.10);
+}
+
+/* Dark mode (tendencia editorial 2025-26) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0F1117;
+    --surface: #171A21;
+    --ink: #E5E7EB;
+    --ink-2: #9CA3AF;
+    --ink-3: #6B7280;
+    --line: #262B36;
+    --accent: #F87171;
+    --accent-soft: rgba(248, 113, 113, 0.10);
+    --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.25);
+    --shadow-card-hover: 0 2px 4px rgba(0, 0, 0, 0.3), 0 12px 28px rgba(0, 0, 0, 0.4);
+  }
+  body { color-scheme: dark; }
+  .skeleton::after {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06), transparent);
+  }
 }
 
 * { box-sizing: border-box; }
@@ -18,7 +48,13 @@ body {
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  line-height: 1.6;
+  line-height: 1.65;
+}
+
+/* Accesibilidad: foco visible claro en elementos interactivos */
+a:focus-visible, button:focus-visible, .news-card:focus-visible, .hero-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 h1, h2, h3, h4, .logo, .kicker, .section-title, .read-more, .download-button, .banner-card {
   font-family: 'Archivo', 'Segoe UI', sans-serif;
@@ -57,11 +93,12 @@ img { max-width: 100%; display: block; }
 }
 .section-title::before {
   content: '';
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: var(--accent);
   flex-shrink: 0;
+  box-shadow: 0 0 0 3px var(--accent-soft);
 }
 
 /* ===== Banner descarga (sin emojis) ===== */
@@ -137,9 +174,17 @@ img { max-width: 100%; display: block; }
   cursor: pointer;
   border-bottom: 1px solid var(--line);
   padding-bottom: 1.25rem;
-  transition: opacity 0.2s;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin: -0.5rem;
 }
-.news-card:hover { opacity: 0.85; }
+.news-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: transparent;
+  background: var(--bg);
+}
 .card-image { aspect-ratio: 16/9; overflow: hidden; border-radius: 8px; margin-bottom: 0.85rem; background: var(--surface); }
 .card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
 .news-card:hover .card-image img { transform: scale(1.05); }
@@ -159,6 +204,13 @@ img { max-width: 100%; display: block; }
   cursor: pointer;
 }
 .read-more:hover { text-decoration: underline; }
+.read-more::after {
+  content: '\2192';
+  margin-left: 0.35rem;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+.read-more:hover::after { transform: translateX(3px); }
 
 /* ===== Agenda + Stream (2 col) ===== */
 .live-section { display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; margin: 2rem 0 0.5rem; }
@@ -183,7 +235,8 @@ img { max-width: 100%; display: block; }
   display: block;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
-.banner-card:hover { border-color: var(--accent); box-shadow: 0 4px 16px rgba(17,24,39,0.06); }
+.banner-card:hover { border-color: var(--accent); box-shadow: var(--shadow-card-hover); transform: translateY(-2px); }
+.banner-card { transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; }
 .banner-card h3 { font-size: 1.15rem; font-weight: 800; margin: 0 0 0.35rem; }
 .banner-card p { font-size: 0.9rem; color: var(--ink-2); margin: 0 0 1rem; }
 .banner-card .read-more { text-transform: uppercase; }
@@ -210,9 +263,11 @@ img { max-width: 100%; display: block; }
   display: inline-flex; align-items: center; gap: 0.4rem;
 }
 .back-button:hover { text-decoration: underline; }
-.article-header h1 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 900; line-height: 1.15; margin: 0 0 0.75rem; }
+.article-header h1 { font-size: clamp(1.7rem, 3.5vw, 2.6rem); font-weight: 900; line-height: 1.12; margin: 0 0 0.75rem; letter-spacing: -0.015em; }
+.article-header { border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; margin-bottom: 1.75rem; }
 .article-meta { display: flex; gap: 1rem; font-family: 'Archivo', sans-serif; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-3); margin-bottom: 2rem; }
-.html-content { font-size: 1.02rem; color: var(--ink); }
+.html-content { font-size: 1.06rem; color: var(--ink); max-width: 70ch; }
+.html-content p { margin: 1.1rem 0; }
 .html-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 1.25rem 0; }
 .html-content p { margin: 1rem 0; }
 .html-content h2 { font-size: 1.45rem; font-weight: 800; margin: 1.75rem 0 0.75rem; }

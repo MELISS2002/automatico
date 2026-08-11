@@ -9,6 +9,13 @@
   min-height: 150px; /* Altura mínima para placeholder */
 }
 
+@media (prefers-color-scheme: dark) {
+  .article-image-container::before {
+    background: linear-gradient(to right, #171A21 0%, #262B36 50%, #171A21 100%);
+    background-size: 200% 100%;
+  }
+}
+
 .article-image {
   opacity:5;
   transition: opacity 0.4s ease-in-out;
