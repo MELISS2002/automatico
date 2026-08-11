@@ -97,10 +97,6 @@ function App() {
                 <time className="date">{formatDate(selectedArticle.date)}</time>
               </div>
             </div>
-            <ShareButtons
-              slug={selectedArticle.slug}
-              title={selectedArticle.title}
-            />
             <div
               className="html-content"
               dangerouslySetInnerHTML={{ __html: articleContent }}

@@ -11,7 +11,7 @@ const ShareButtons = ({ slug, title }) => {
   const u = enc(url);
   const links = [
     { name: 'WhatsApp', cls: 'share-wa', href: `https://wa.me/?text=${t}%20${u}` },
-    { name: 'Facebook', cls: 'share-fb', href: `https://www.facebook.com/sharer/sharer.php?u=${u}` },
+    { name: 'Facebook', cls: 'share-fb', href: `https://www.facebook.com/dialog/share?app_id=145634995501895&display=popup&href=${u}&redirect_uri=${enc('https://www.facebook.com/')}` },
     { name: 'X', cls: 'share-tw', href: `https://twitter.com/intent/tweet?text=${t}&url=${u}` },
     { name: 'Telegram', cls: 'share-tg', href: `https://t.me/share/url?url=${u}&text=${t}` },
   ];
