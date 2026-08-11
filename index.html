@@ -1,6 +1,20 @@
 <!doctype html>
 <html lang="es">
   <head>
+    <script>
+      /* Tema: localStorage > preferencia del sistema (evita flash) */
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t !== 'light' && t !== 'dark') {
+            t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
     <meta name="google-site-verification" content="B9HQtPxXLJTaANVNe8EFgtqBFGGB-ZZH6uA0WwMci-k" />
     <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">

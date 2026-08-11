@@ -17,6 +17,9 @@
     background: rgba(15, 17, 23, 0.92);
   }
 }
+:root[data-theme="dark"] .app-header {
+  background: rgba(15, 17, 23, 0.92);
+}
 
 .app-header.scrolled {
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
@@ -27,6 +30,9 @@
   .app-header.scrolled {
     background: rgba(15, 17, 23, 0.98);
   }
+}
+:root[data-theme="dark"] .app-header.scrolled {
+  background: rgba(15, 17, 23, 0.98);
 }
 
 .header-container {
@@ -113,6 +119,28 @@
   z-index: 1001;
 }
 
+/* Toggle de tema (sol/luna) */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--ink-2);
+  transition: color 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: rotate(12deg);
+}
+
 .hamburger-line {
   width: 26px;
   height: 2.5px;
@@ -186,6 +214,10 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.25s ease, visibility 0.25s ease;
+  }
+
+  :root[data-theme="dark"] .mobile-nav {
+    background: #0F1117;
   }
 
   .mobile-nav.open {

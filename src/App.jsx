@@ -5,12 +5,37 @@ import './App.css';
 
 const SITE_TITLE = 'UltimoLive - Noticias deportivas, resultados y transmisiones en vivo';
 
+// Limpia el HTML de los posts: quita head/style/script/footer y el bloque hero
+// (duplica el titulo y meta que ya muestra el viewer) para que el articulo
+// use el design system del sitio en lugar del CSS propio del post.
+const cleanArticleHTML = (raw) => {
+  try {
+    const doc = new DOMParser().parseFromString(raw, 'text/html');
+    doc.querySelectorAll('head, style, script, footer, title').forEach((el) => el.remove());
+    const hero = doc.querySelector('.hero');
+    if (hero) hero.remove();
+    return doc.body ? doc.body.innerHTML.trim() : raw;
+  } catch (e) {
+    return raw;
+  }
+};
+
+// Estimacion de lectura: ~200 palabras/minuto
+const estimateReadTime = (html) => {
+  const text = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  const words = text ? text.split(' ').length : 0;
+  return Math.max(1, Math.round(words / 200));
+};
+
 function App() {
   const [currentStream, setCurrentStream] = useState(null);
   const [news, setNews] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [selectedArticle, setSelectedArticle] = useState(null);
   const [articleContent, setArticleContent] = useState('');
+  const [readTime, setReadTime] = useState(0);
+  const [readingProgress, setReadingProgress] = useState(0);
+  const [showTopBtn, setShowTopBtn] = useState(false);
   const streamPlayerRef = useRef(null);
 
   // Cargar noticias
@@ -47,11 +72,24 @@ function App() {
     return () => window.removeEventListener('message', handleMessage);
   }, []);
 
+  // Progreso de lectura + boton volver arriba
+  useEffect(() => {
+    const handleScroll = () => {
+      const doc = document.documentElement;
+      const total = doc.scrollHeight - window.innerHeight;
+      setReadingProgress(total > 0 ? (window.scrollY / total) * 100 : 0);
+      setShowTopBtn(window.scrollY > 600);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const loadHTMLContent = async (path) => {
     try {
       const response = await fetch(path);
       if (!response.ok) throw new Error('HTTP error ' + response.status);
-      return await response.text();
+      return cleanArticleHTML(await response.text());
     } catch (error) {
       console.error('Error cargando contenido:', error);
       return '<p>Error al cargar el artículo</p>';
@@ -61,6 +99,7 @@ function App() {
   const handleReadArticle = async (article) => {
     const content = await loadHTMLContent(article.htmlPath);
     setArticleContent(content);
+    setReadTime(estimateReadTime(content));
     setSelectedArticle(article);
     document.title = article.title;
     window.scrollTo(0, 0);
@@ -82,11 +121,40 @@ function App() {
   const secondary = news.slice(1, 5);
   const rest = news.slice(5);
 
+  // Articulos relacionados: misma categoria, excluye el actual, max 3
+  const related = selectedArticle
+    ? news
+        .filter((a) => a.slug !== selectedArticle.slug)
+        .sort((a, b) => {
+          const sameA = a.category === selectedArticle.category ? 0 : 1;
+          const sameB = b.category === selectedArticle.category ? 0 : 1;
+          return sameA - sameB;
+        })
+        .slice(0, 3)
+    : [];
+
+  const categoryName = (cat) => {
+    const map = { home: 'Inicio', gana: 'Gana', salud: 'Salud' };
+    return map[cat] || cat || 'Noticias';
+  };
+
   return (
     <div className="app">
+      {/* Barra de progreso de lectura (patron editorial profesional) */}
+      <div
+        className="reading-progress"
+        style={{ width: `${readingProgress}%` }}
+        aria-hidden="true"
+      ></div>
+
       <main className="main-content">
         {selectedArticle ? (
           <div className="article-viewer">
+            <nav className="breadcrumbs" aria-label="Ruta de navegación">
+              <button className="crumb-link" onClick={handleCloseArticle}>Inicio</button>
+              <span className="crumb-sep">/</span>
+              <span className="crumb-current">{categoryName(selectedArticle.category)}</span>
+            </nav>
             <button className="back-button" onClick={handleCloseArticle}>
               &larr; Volver al inicio
             </button>
@@ -95,6 +163,9 @@ function App() {
               <div className="article-meta">
                 <span className="author">Por {selectedArticle.author}</span>
                 <time className="date">{formatDate(selectedArticle.date)}</time>
+                {readTime > 0 && (
+                  <span className="read-time">{readTime} min de lectura</span>
+                )}
               </div>
             </div>
             <div
@@ -105,6 +176,12 @@ function App() {
               slug={selectedArticle.slug}
               title={selectedArticle.title}
             />
+            {related.length > 0 && (
+              <section className="related-section">
+                <h2 className="section-title">Sigue leyendo</h2>
+                <NewsGrid articles={related} onRead={handleReadArticle} />
+              </section>
+            )}
           </div>
         ) : (
           <>
@@ -213,6 +290,19 @@ function App() {
           </>
         )}
       </main>
+
+      {/* Volver arriba */}
+      {showTopBtn && (
+        <button
+          className="back-to-top"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          aria-label="Volver arriba"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+        </button>
+      )}
     </div>
   );
 }
