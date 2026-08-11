@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import './ShareButtons.css';
 
 const SITE = 'https://automatico.pages.dev';
+// TODO: reemplazar con el App ID de la app de Facebook de UltimoLive
+// (developers.facebook.com -> Crear aplicacion -> tipo Consumidor -> ID de aplicacion)
+// Con un app_id ajeno el dialogo abre sin destinos ("no hay feed") y no deja publicar.
+const FB_APP_ID = '2290800501460325';
 
 const ShareButtons = ({ slug, title }) => {
   const [copied, setCopied] = useState(false);
@@ -11,7 +15,7 @@ const ShareButtons = ({ slug, title }) => {
   const u = enc(url);
   const links = [
     { name: 'WhatsApp', cls: 'share-wa', href: `https://wa.me/?text=${t}%20${u}` },
-    { name: 'Facebook', cls: 'share-fb', href: `https://www.facebook.com/dialog/share?app_id=145634995501895&display=popup&href=${u}&redirect_uri=${enc('https://www.facebook.com/')}` },
+    { name: 'Facebook', cls: 'share-fb', href: `https://www.facebook.com/dialog/share?app_id=${FB_APP_ID}&display=popup&href=${u}&redirect_uri=${enc('https://www.facebook.com/')}` },
     { name: 'X', cls: 'share-tw', href: `https://twitter.com/intent/tweet?text=${t}&url=${u}` },
     { name: 'Telegram', cls: 'share-tg', href: `https://t.me/share/url?url=${u}&text=${t}` },
   ];

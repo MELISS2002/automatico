@@ -1,477 +1,477 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta property="og:type" content="article">
-    <meta property="og:site_name" content="UltimoLive">
-    <meta property="og:locale" content="es_ES">
-    <meta property="og:title" content="IA gratis y local: 7 proyectos de GitHub que están revolucionando agosto de 2026">
-    <meta property="og:description" content="Ejecutar inteligencia artificial en tu propia computadora ya no es cosa de grandes empresas ni de servidores en la nube. Proyectos de código abierto como Ollama, AirLLM y el nuevo motor ds4 de antirez">
-    <meta property="og:url" content="https://automatico.pages.dev/posts/proyectos-github-ia-gratis-correr-en-tu-pc/">
-    <meta property="og:image" content="https://image.pollinations.ai/prompt/Artificial_intelligence_running_on_a_personal_computer_open_source_AI_models_glowing_technology_blue_neural_network_abstract_background">
-    <meta property="article:published_time" content="2026-08-08T12:00:00Z">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="IA gratis y local: 7 proyectos de GitHub que están revolucionando agosto de 2026">
-    <meta name="twitter:description" content="Ejecutar inteligencia artificial en tu propia computadora ya no es cosa de grandes empresas ni de servidores en la nube. Proyectos de código abierto como Ollama, AirLLM y el nuevo motor ds4 de antirez">
-    <meta name="twitter:image" content="https://image.pollinations.ai/prompt/Artificial_intelligence_running_on_a_personal_computer_open_source_AI_models_glowing_technology_blue_neural_network_abstract_background">
-    <link rel="canonical" href="https://automatico.pages.dev/posts/proyectos-github-ia-gratis-correr-en-tu-pc/">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IA gratis y local: 7 proyectos de GitHub que están revolucionando agosto de 2026</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background: #f6f9fc;
-            color: #1a1e2c;
-            line-height: 1.7;
-            padding: 2rem 1rem;
-        }
-
-        .container {
-            max-width: 820px;
-            margin: 0 auto;
-            background: #ffffff;
-            border-radius: 28px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.03);
-            padding: 2.5rem 2rem;
-        }
-
-        h1 {
-            font-size: 2.4rem;
-            font-weight: 800;
-            letter-spacing: -0.025em;
-            line-height: 1.2;
-            color: #0b1120;
-            margin-bottom: 0.5rem;
-        }
-
-        .byline {
-            font-size: 0.95rem;
-            color: #5b677b;
-            border-bottom: 2px solid #eef2f6;
-            padding-bottom: 1.25rem;
-            margin-bottom: 2rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .byline span {
-            background: #eef6ff;
-            color: #1a5fb4;
-            padding: 0.2rem 0.8rem;
-            border-radius: 40px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        h2 {
-            font-size: 1.6rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-top: 2.4rem;
-            margin-bottom: 0.75rem;
-            color: #0b1120;
-        }
-
-        h3 {
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin-top: 1.8rem;
-            margin-bottom: 0.4rem;
-            color: #1a2a4a;
-        }
-
-        p {
-            margin-bottom: 1.1rem;
-            font-size: 1.04rem;
-            color: #1f2a3f;
-        }
-
-        .lead {
-            font-size: 1.2rem;
-            font-weight: 400;
-            color: #2d3a52;
-            background: #f0f5fe;
-            padding: 1.2rem 1.6rem;
-            border-radius: 16px;
-            border-left: 5px solid #2d7aff;
-            margin-bottom: 2rem;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 18px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
-            margin: 1.6rem 0;
-            display: block;
-            width: 100%;
-            transition: transform 0.2s ease;
-        }
-
-        img:hover {
-            transform: scale(1.005);
-        }
-
-        ul,
-        ol {
-            margin: 0.6rem 0 1.4rem 1.6rem;
-            font-size: 1.04rem;
-            color: #1f2a3f;
-        }
-
-        li {
-            margin-bottom: 0.4rem;
-        }
-
-        .project-card {
-            background: #f8faff;
-            border-radius: 18px;
-            padding: 1.4rem 1.8rem;
-            margin: 1.8rem 0;
-            border: 1px solid #e6edf6;
-            transition: box-shadow 0.2s ease;
-        }
-
-        .project-card:hover {
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
-        }
-
-        .project-card strong {
-            color: #0b1e4a;
-            font-weight: 700;
-        }
-
-        .badge {
-            display: inline-block;
-            background: #1a5fb4;
-            color: #fff;
-            font-size: 0.7rem;
-            font-weight: 700;
-            padding: 0.15rem 0.7rem;
-            border-radius: 40px;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-            margin-right: 0.4rem;
-        }
-
-        .badge-green {
-            background: #0f7b3a;
-        }
-
-        .badge-purple {
-            background: #6b3fa0;
-        }
-
-        .badge-orange {
-            background: #c96f0e;
-        }
-
-        .badge-teal {
-            background: #0d6e6e;
-        }
-
-        .specs {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.6rem 1.2rem;
-            margin: 0.6rem 0 0.2rem;
-            font-size: 0.92rem;
-            color: #2d405c;
-            background: #eef4fc;
-            padding: 0.6rem 1rem;
-            border-radius: 40px;
-        }
-
-        .specs span {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.2rem;
-        }
-
-        .highlight {
-            background: #fef7e0;
-            padding: 0.1rem 0.3rem;
-            border-radius: 6px;
-            font-weight: 500;
-        }
-
-        .star {
-            color: #e6a800;
-            font-weight: 700;
-        }
-
-        .footer-note {
-            margin-top: 2.8rem;
-            padding-top: 1.6rem;
-            border-top: 2px solid #eef2f6;
-            font-size: 0.95rem;
-            color: #4a5a72;
-            text-align: center;
-        }
-
-        @media (max-width: 640px) {
-            body {
-                padding: 0.8rem;
-            }
-            .container {
-                padding: 1.5rem 1.2rem;
-                border-radius: 18px;
-            }
-            h1 {
-                font-size: 1.8rem;
-            }
-            h2 {
-                font-size: 1.3rem;
-            }
-            .lead {
-                font-size: 1rem;
-                padding: 1rem 1.2rem;
-            }
-            .project-card {
-                padding: 1rem 1.2rem;
-            }
-            .byline {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.5rem;
-            }
-            .specs {
-                flex-direction: column;
-                gap: 0.2rem;
-                border-radius: 20px;
-                padding: 0.8rem 1rem;
-                align-items: flex-start;
-            }
-            img {
-                margin: 1rem 0;
-            }
-        }
-
-        @media (max-width: 400px) {
-            h1 {
-                font-size: 1.5rem;
-            }
-            .container {
-                padding: 1rem 0.8rem;
-            }
-            p,
-            li {
-                font-size: 0.98rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-
-        <h1>IA gratis y local: 7 proyectos de GitHub que están revolucionando agosto de 2026</h1>
-        <div class="byline">
-            <span>📅 8 de agosto de 2026</span>
-            <span>🧠 Código abierto · IA local</span>
-        </div>
-
-        <p class="lead">
-            ¿Sabías que puedes ejecutar modelos de inteligencia artificial potentes en tu propia computadora, sin pagar suscripciones y sin depender de la nube? Gracias al trabajo de la comunidad open source, en agosto de 2026 tenemos herramientas que hace dos años parecían ciencia ficción. Te contamos cuáles son, qué necesita tu PC y por dónde empezar.
-        </p>
-
-        <img src="https://image.pollinations.ai/prompt/A_person_sitting_at_a_desk_with_a_laptop_and_a_desktop_computer_surrounded_by_glowing_AI_interfaces_neural_networks_and_open_source_logos_futuristic_technology_workspace_warm_lighting_digital_art_style" alt="Persona trabajando con IA local en su computadora, rodeada de redes neuronales y código abierto" loading="lazy" />
-
-        <p>
-            La inteligencia artificial ya no es patrimonio exclusivo de grandes empresas con centros de datos enormes. En los últimos meses, un puñado de proyectos de GitHub ha demostrado que cualquier persona con una computadora decente puede tener su propio asistente de IA, generar imágenes, transcribir audio o incluso programar con modelos de última generación. Y lo mejor: todo es gratuito.
-        </p>
-
-        <p>
-            En este artículo repasamos siete proyectos que están dando que hablar en agosto de 2026. Desde el veterano <strong>Ollama</strong> hasta el flamante motor <strong>ds4</strong> del legendario programador <strong>antirez</strong> (creador de Redis), pasando por fenómenos virales como <strong>AirLLM</strong> y <strong>DeepSeek-Reasonix</strong>, cada uno tiene su propio superpoder. Te explicamos qué hace cada uno, qué necesita tu ordenador y cuál es el más sencillo para dar tus primeros pasos.
-        </p>
-
-        <h2>1. Ollama: la puerta de entrada más fácil al mundo de los modelos locales</h2>
-
-        <div class="project-card">
-            <p><span class="badge">⭐ Favorito de la comunidad</span> <strong>Ollama</strong> es, sin discusión, la forma más sencilla de ejecutar modelos de lenguaje (LLM) en tu propia máquina. Con un solo comando puedes descargar y ejecutar modelos como <strong>Llama 3.2</strong>, <strong>Mistral</strong> o <strong>DeepSeek</strong> en cuestión de minutos.</p>
-
-            <p>Lo que hace especial a Ollama es su enfoque <em>"todo en uno"</em>: no necesitas instalar Python, ni manejar dependencias, ni compilar nada. Descargas el instalador para Windows, macOS o Linux, ejecutas <code>ollama run deepseek-coder</code> y ya estás conversando con la IA. Incluye una API tipo REST que puedes usar desde tus propias aplicaciones.</p>
-
-            <div class="specs">
-                <span>💻 <strong>Requiere:</strong> 8 GB de RAM (recomendado 16 GB) y al menos 4 GB de espacio en disco.</span>
-                <span>🖥️ <strong>GPU:</strong> Opcional, pero con una NVIDIA con 4 GB de VRAM notarás la diferencia.</span>
-            </div>
-
-            <p><strong>Para qué sirve:</strong> Chat, asistencia personal, generación de código, resumen de textos y cualquier tarea de lenguaje natural. Es el <em>punto de partida</em> ideal si nunca has usado IA local.</p>
-        </div>
-
-        <h2>2. AirLLM: el fenómeno viral que ejecuta modelos de 70 mil millones en GPUs de 4 GB</h2>
-
-        <div class="project-card">
-            <p><span class="badge badge-purple">🔥 +30.000 estrellas</span> <strong>AirLLM</strong> es uno de los proyectos más comentados del año. Su promesa suena imposible: ejecutar modelos de <strong>70 mil millones de parámetros</strong> en una GPU con solo <strong>4 GB de VRAM</strong>. ¿Cómo lo hace? Mediante una técnica de <em>compresión inteligente</em> y <em>carga por capas</em> que optimiza el uso de memoria al límite.</p>
-
-            <p>AirLLM no es para todo el mundo: requiere cierta familiaridad con Python y la línea de comandos. Pero si tienes una tarjeta gráfica modesta y quieres experimentar con modelos realmente grandes, es una opción revolucionaria.</p>
-
-            <div class="specs">
-                <span>💻 <strong>Requiere:</strong> Python 3.9+, 16 GB de RAM y al menos 20 GB de espacio.</span>
-                <span>🖥️ <strong>GPU:</strong> NVIDIA con 4 GB de VRAM (soporta CUDA).</span>
-            </div>
-
-            <p><strong>Para qué sirve:</strong> Ejecutar modelos de razonamiento avanzado, generación de código complejo o tareas que exigen gran capacidad de comprensión, todo en hardware de gama media.</p>
-        </div>
-
-        <img src="https://image.pollinations.ai/prompt/A_modern_computer_with_a_neural_network_visualization_on_screen_low_poly_3D_style_blue_and_purple_technology_aesthetic_open_source_AI_running_locally" alt="Visualización de una red neuronal ejecutándose en una computadora moderna" loading="lazy" />
-
-        <h2>3. ds4: el nuevo motor de antirez para DeepSeek 4 Flash y PRO con aceleración nativa</h2>
-
-        <div class="project-card">
-            <p><span class="badge badge-orange">⚡ Novedad agosto 2026</span> El legendario <strong>antirez</strong>, creador de Redis, ha vuelto a la carga con <strong>ds4</strong>, un motor de inferencia ultrarrápido diseñado específicamente para los modelos <strong>DeepSeek 4 Flash</strong> y <strong>DeepSeek 4 PRO</strong>. Lo más impactante: aprovecha al máximo el hardware con soporte nativo para <strong>Metal</strong> (Mac), <strong>CUDA</strong> (NVIDIA) y <strong>ROCm</strong> (AMD).</p>
-
-            <p>ds4 no es una interfaz bonita ni un asistente con chat integrado: es un motor <em>puro y duro</em> pensado para developers que quieren integrar DeepSeek en sus propias aplicaciones o scripts. Su eficiencia es tan notable que en una MacBook Pro con chip M3 Pro puedes ejecutar DeepSeek 4 Flash a velocidades muy cercanas a las de la nube.</p>
-
-            <div class="specs">
-                <span>💻 <strong>Requiere:</strong> macOS (Metal), Linux (CUDA/ROCm) o Windows con WSL2.</span>
-                <span>🖥️ <strong>GPU:</strong> Recomendada para un rendimiento óptimo, pero también funciona en CPU con RAM suficiente.</span>
-            </div>
-
-            <p><strong>Para qué sirve:</strong> Desarrollo de aplicaciones con IA local, integración en pipelines de datos o simplemente para disfrutar de la velocidad de DeepSeek en tu propio hardware sin depender de servidores externos.</p>
-        </div>
-
-        <h2>4. DeepSeek-Reasonix: el agente de programación con IA que arrasa en GitHub</h2>
-
-        <div class="project-card">
-            <p><span class="badge badge-teal">🧑‍💻 +30.000 estrellas</span> <strong>DeepSeek-Reasonix</strong> es mucho más que un simple chat de código. Es un <em>agente autónomo</em> que corre en tu terminal y puede planificar, ejecutar y depurar tareas de programación completas. Le describes un problema en lenguaje natural, y él te propone una solución, escribe el código, lo prueba e incluso sugiere mejoras.</p>
-
-            <p>Funciona con modelos de razonamiento de DeepSeek y está optimizado para correr localmente. No necesita conexión a internet una vez descargado el modelo, lo que lo convierte en un compañero de trabajo ideal para programadores que valoran la privacidad y la independencia.</p>
-
-            <div class="specs">
-                <span>💻 <strong>Requiere:</strong> Python 3.10+, 16 GB de RAM y al menos 12 GB de espacio.</span>
-                <span>🖥️ <strong>GPU:</strong> Recomendada para respuestas rápidas, pero funciona en CPU con paciencia.</span>
-            </div>
-
-            <p><strong>Para qué sirve:</strong> Asistente de programación, autocompletado inteligente, depuración de código, generación de pruebas unitarias y resolución de problemas algorítmicos.</p>
-        </div>
-
-        <h2>5. ComfyUI: la interfaz más potente para generación de imágenes con difusión</h2>
-
-        <div class="project-card">
-            <p><span class="badge">🎨 Imagen</span> Si te gusta generar imágenes con IA, seguro que has oído hablar de <strong>ComfyUI</strong>. Es la interfaz por excelencia para trabajar con modelos de difusión como <strong>Stable Diffusion</strong>, <strong>Flux</strong> o <strong>SDXL</strong>. Su punto fuerte es la <em>flexibilidad</em>: organizas el flujo de trabajo mediante nodos que conectas como si fuera un patch de sintetizador modular.</p>
-
-            <p>ComfyUI incluye una API completa, lo que permite integrarlo en aplicaciones propias o en automatizaciones. Su comunidad es enorme y hay cientos de workflows predefinidos para estilos, upscaling, control de poses y mucho más.</p>
-
-            <div class="specs">
-                <span>💻 <strong>Requiere:</strong> 8 GB de RAM, 10 GB de espacio libre para modelos.</span>
-                <span>🖥️ <strong>GPU:</strong> Muy recomendable una NVIDIA con al menos 4 GB de VRAM (cuanta más, mejor).</span>
-            </div>
-
-            <p><strong>Para qué sirve:</strong> Generación de imágenes, edición por IA, creación de arte conceptual, diseño gráfico y prototipado visual. Es la herramienta de referencia para profesionales y entusiastas.</p>
-        </div>
-
-        <img src="https://image.pollinations.ai/prompt/Open_source_AI_projects_collage_with_GitHub_logo_robotic_hand_holding_a_neural_network_futuristic_blue_orange_palette_technology_illustration" alt="Collage de proyectos de IA de código abierto en GitHub" loading="lazy" />
-
-        <h2>6. Whisper: transcripción de audio a texto, gratis y sin conexión</h2>
-
-        <div class="project-card">
-            <p><span class="badge badge-green">🎤 Audio</span> <strong>Whisper</strong>, el modelo de transcripción de OpenAI, se convirtió en código abierto hace tiempo y es uno de los recursos más útiles para periodistas, estudiantes y creadores de contenido. Convierte audio en texto con una precisión asombrosa, incluso en entornos con ruido de fondo o con varios hablantes.</p>
-
-            <p>La versión local de Whisper se instala con pip y corre en tu máquina sin necesidad de enviar tus grabaciones a la nube. Admite múltiples idiomas y genera archivos de subtítulos en varios formatos.</p>
-
-            <div class="specs">
-                <span>💻 <strong>Requiere:</strong> Python 3.8+, 4 GB de RAM (recomendado 8 GB).</span>
-                <span>🖥️ <strong>GPU:</strong> Opcional, pero acelera mucho el proceso.</span>
-            </div>
-
-            <p><strong>Para qué sirve:</strong> Transcripción de entrevistas, generación de subtítulos para vídeos, toma de notas de reuniones, accesibilidad para contenido multimedia y archivo de audios.</p>
-        </div>
-
-        <h2>7. Invidious: YouTube sin anuncios ni rastreo, con tu propia IA</h2>
-
-        <div class="project-card">
-            <p><span class="badge badge-orange">📺 Sin anuncios</span> <strong>Invidious</strong> no es un modelo de IA, pero es un proyecto open source que merece un lugar en esta lista porque <em>potencia el uso de la IA local</em>. Se trata de un frontend alternativo para YouTube que elimina anuncios, bloquea el rastreo y permite descargar vídeos o extraer su audio para pasarlo directamente a Whisper o a cualquier otro modelo.</p>
-
-            <p>Puedes instalar tu propia instancia de Invidious o usar alguna de las públicas. El proyecto es ligero y está escrito en Crystal y JavaScript. En agosto de 2026 sigue siendo una de las mejores formas de consumir contenido multimedia con total privacidad.</p>
-
-            <div class="specs">
-                <span>💻 <strong>Requiere:</strong> Un servidor o VPS con 2 GB de RAM y algo de almacenamiento.</span>
-                <span>🖥️ <strong>GPU:</strong> No necesita.</span>
-            </div>
-
-            <p><strong>Para qué sirve:</strong> Ver YouTube sin publicidad, evitar el tracking de Google, descargar audio para transcribir con IA o simplemente tener un portal limpio y rápido para tus vídeos favoritos.</p>
-        </div>
-
-        <h2>¿Cuál es el más fácil para empezar?</h2>
-
-        <p>
-            Si nunca has usado IA local, la respuesta es clara: <strong>Ollama</strong>. Su instalación es trivial, su uso es intuitivo y la comunidad es enorme. En menos de diez minutos tendrás tu primer modelo conversando contigo. Una vez que te sientas cómodo, puedes explorar AirLLM si tu GPU es modesta, o ds4 si quieres exprimir al máximo el hardware de Apple.
-        </p>
-
-        <p>
-            Para generación de imágenes, <strong>ComfyUI</strong> es la opción más profesional, aunque tiene una curva de aprendizaje. Si prefieres algo más sencillo, hay interfaces como Automatic1111, pero ComfyUI ofrece un control sin igual.
-        </p>
-
-        <p>
-            Para transcripción, <strong>Whisper</strong> es un <em>no-brainer</em>: funciona, es preciso y es gratis. Y si quieres un asistente de programación realmente autónomo, <strong>DeepSeek-Reasonix</strong> te sorprenderá por su capacidad de razonamiento.
-        </p>
-
-        <h2>¿Qué necesita tu computadora para todo esto?</h2>
-
-        <p>
-            La buena noticia es que <strong>no necesitas un superordenador</strong>. La mayoría de estos proyectos funcionan en equipos de gama media:
-        </p>
-
-        <ul>
-            <li><strong>Mínimo recomendado:</strong> 8 GB de RAM, procesador de cuatro núcleos, disco SSD con 20 GB libres.</li>
-            <li><strong>Ideal:</strong> 16 GB de RAM, GPU NVIDIA con 4-6 GB de VRAM (o chip M1/M2/M3 en Mac) y 50 GB de espacio.</li>
-            <li><strong>Para modelos muy grandes (70B):</strong> 32 GB de RAM y 8 GB de VRAM, o usar AirLLM con 4 GB.</li>
-        </ul>
-
-        <p>
-            La belleza del software libre es que <em>se adapta a lo que tienes</em>. Puedes empezar con Ollama en un portátil viejo y, si te enganchas, ir mejorando tu equipo o explorando proyectos más especializados.
-        </p>
-
-        <h2>La IA local es el futuro (y ya está aquí)</h2>
-
-        <p>
-            Agosto de 2026 está siendo un mes emocionante para la inteligencia artificial de código abierto. La combinación de modelos más eficientes, motores de inferencia optimizados y hardware cada vez más potente está haciendo posible lo que hace un año parecía inalcanzable: tener una IA de primer nivel en tu propia casa, sin pagar suscripciones, sin ceder tus datos y sin depender de la conexión a internet.
-        </p>
-
-        <p>
-            Proyectos como Ollama, AirLLM, ds4, DeepSeek-Reasonix, ComfyUI, Whisper e Invidious son la prueba de que la <em>democratización de la IA</em> no es un eslogan, sino una realidad en marcha. Y lo mejor es que todos ellos están en GitHub, esperando a que los descargues, los explores y los hagas tuyos.
-        </p>
-
-        <p>
-            Así que ya sabes: elige el proyecto que más encaje con tus intereses, instálalo, y empieza a experimentar. La IA ya no es cosa de unos pocos. Ahora es tuya.
-        </p>
-
-        <div class="footer-note">
-            <p style="margin-bottom:0.2rem; font-size:0.9rem; color:#3d4f6a;">
-                ✦ Artículo actualizado el 8 de agosto de 2026 · Todos los proyectos mencionados son de código abierto y están disponibles en GitHub ✦
-            </p>
-        </div>
-
-    </div>
-
-    <footer><p>Autor: ROSA EMILY | Fecha: 2026-08-08</p></footer>
-<div class="ultimolive-share">
-<style>
-.ultimolive-share{max-width:960px;margin:24px auto;padding:0 20px;font-family:Arial,Helvetica,sans-serif}
-.ultimolive-share .share-label{margin:0 0 10px;font-size:13px;font-weight:700;color:#333;text-transform:uppercase;letter-spacing:.5px}
-.share-row{display:flex;flex-wrap:wrap;gap:8px}
-.share-row a{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:24px;color:#fff;text-decoration:none;font-size:14px;font-weight:600;transition:opacity .15s}
-.share-row a:hover{opacity:.85}
-.share-wa{background:#25D366}.share-fb{background:#1877F2}.share-tw{background:#111}.share-tg{background:#0088cc}
-.back-portal{display:inline-block;margin-top:14px;font-size:13px;color:#00843d;text-decoration:none;font-weight:600}
-</style>
-<p class="share-label">Comparte este articulo</p>
-<div class="share-row">
-<a class="share-wa" href="https://wa.me/?text=IA%20gratis%20y%20local%3A%207%20proyectos%20de%20GitHub%20que%20est%C3%A1n%20revolucionando%20agosto%20de%202026%20https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Fproyectos-github-ia-gratis-correr-en-tu-pc%2F" target="_blank" rel="noopener">WhatsApp</a>
-<a class="share-fb" href="https://www.facebook.com/dialog/share?app_id=145634995501895&display=popup&href=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Fproyectos-github-ia-gratis-correr-en-tu-pc%2F" target="_blank" rel="noopener">Facebook</a>
-<a class="share-tw" href="https://twitter.com/intent/tweet?text=IA%20gratis%20y%20local%3A%207%20proyectos%20de%20GitHub%20que%20est%C3%A1n%20revolucionando%20agosto%20de%202026&url=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Fproyectos-github-ia-gratis-correr-en-tu-pc%2F" target="_blank" rel="noopener">X</a>
-<a class="share-tg" href="https://t.me/share/url?url=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Fproyectos-github-ia-gratis-correr-en-tu-pc%2F&text=IA%20gratis%20y%20local%3A%207%20proyectos%20de%20GitHub%20que%20est%C3%A1n%20revolucionando%20agosto%20de%202026" target="_blank" rel="noopener">Telegram</a>
-</div>
-<a class="back-portal" href="https://automatico.pages.dev/">Volver al portal</a>
-</div>
-</body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="UltimoLive">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="IA gratis y local: 7 proyectos de GitHub que están revolucionando agosto de 2026">
+    <meta property="og:description" content="Ejecutar inteligencia artificial en tu propia computadora ya no es cosa de grandes empresas ni de servidores en la nube. Proyectos de código abierto como Ollama, AirLLM y el nuevo motor ds4 de antirez">
+    <meta property="og:url" content="https://automatico.pages.dev/posts/proyectos-github-ia-gratis-correr-en-tu-pc/">
+    <meta property="og:image" content="https://image.pollinations.ai/prompt/Artificial_intelligence_running_on_a_personal_computer_open_source_AI_models_glowing_technology_blue_neural_network_abstract_background">
+    <meta property="article:published_time" content="2026-08-08T12:00:00Z">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IA gratis y local: 7 proyectos de GitHub que están revolucionando agosto de 2026">
+    <meta name="twitter:description" content="Ejecutar inteligencia artificial en tu propia computadora ya no es cosa de grandes empresas ni de servidores en la nube. Proyectos de código abierto como Ollama, AirLLM y el nuevo motor ds4 de antirez">
+    <meta name="twitter:image" content="https://image.pollinations.ai/prompt/Artificial_intelligence_running_on_a_personal_computer_open_source_AI_models_glowing_technology_blue_neural_network_abstract_background">
+    <link rel="canonical" href="https://automatico.pages.dev/posts/proyectos-github-ia-gratis-correr-en-tu-pc/">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IA gratis y local: 7 proyectos de GitHub que están revolucionando agosto de 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #f6f9fc;
+            color: #1a1e2c;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.03);
+            padding: 2.5rem 2rem;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            line-height: 1.2;
+            color: #0b1120;
+            margin-bottom: 0.5rem;
+        }
+
+        .byline {
+            font-size: 0.95rem;
+            color: #5b677b;
+            border-bottom: 2px solid #eef2f6;
+            padding-bottom: 1.25rem;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .byline span {
+            background: #eef6ff;
+            color: #1a5fb4;
+            padding: 0.2rem 0.8rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-top: 2.4rem;
+            margin-bottom: 0.75rem;
+            color: #0b1120;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 1.8rem;
+            margin-bottom: 0.4rem;
+            color: #1a2a4a;
+        }
+
+        p {
+            margin-bottom: 1.1rem;
+            font-size: 1.04rem;
+            color: #1f2a3f;
+        }
+
+        .lead {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #2d3a52;
+            background: #f0f5fe;
+            padding: 1.2rem 1.6rem;
+            border-radius: 16px;
+            border-left: 5px solid #2d7aff;
+            margin-bottom: 2rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 18px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+            margin: 1.6rem 0;
+            display: block;
+            width: 100%;
+            transition: transform 0.2s ease;
+        }
+
+        img:hover {
+            transform: scale(1.005);
+        }
+
+        ul,
+        ol {
+            margin: 0.6rem 0 1.4rem 1.6rem;
+            font-size: 1.04rem;
+            color: #1f2a3f;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        .project-card {
+            background: #f8faff;
+            border-radius: 18px;
+            padding: 1.4rem 1.8rem;
+            margin: 1.8rem 0;
+            border: 1px solid #e6edf6;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .project-card:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+        }
+
+        .project-card strong {
+            color: #0b1e4a;
+            font-weight: 700;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #1a5fb4;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.15rem 0.7rem;
+            border-radius: 40px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            margin-right: 0.4rem;
+        }
+
+        .badge-green {
+            background: #0f7b3a;
+        }
+
+        .badge-purple {
+            background: #6b3fa0;
+        }
+
+        .badge-orange {
+            background: #c96f0e;
+        }
+
+        .badge-teal {
+            background: #0d6e6e;
+        }
+
+        .specs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem 1.2rem;
+            margin: 0.6rem 0 0.2rem;
+            font-size: 0.92rem;
+            color: #2d405c;
+            background: #eef4fc;
+            padding: 0.6rem 1rem;
+            border-radius: 40px;
+        }
+
+        .specs span {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.2rem;
+        }
+
+        .highlight {
+            background: #fef7e0;
+            padding: 0.1rem 0.3rem;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .star {
+            color: #e6a800;
+            font-weight: 700;
+        }
+
+        .footer-note {
+            margin-top: 2.8rem;
+            padding-top: 1.6rem;
+            border-top: 2px solid #eef2f6;
+            font-size: 0.95rem;
+            color: #4a5a72;
+            text-align: center;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 0.8rem;
+            }
+            .container {
+                padding: 1.5rem 1.2rem;
+                border-radius: 18px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+            .lead {
+                font-size: 1rem;
+                padding: 1rem 1.2rem;
+            }
+            .project-card {
+                padding: 1rem 1.2rem;
+            }
+            .byline {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+            .specs {
+                flex-direction: column;
+                gap: 0.2rem;
+                border-radius: 20px;
+                padding: 0.8rem 1rem;
+                align-items: flex-start;
+            }
+            img {
+                margin: 1rem 0;
+            }
+        }
+
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            .container {
+                padding: 1rem 0.8rem;
+            }
+            p,
+            li {
+                font-size: 0.98rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>IA gratis y local: 7 proyectos de GitHub que están revolucionando agosto de 2026</h1>
+        <div class="byline">
+            <span>📅 8 de agosto de 2026</span>
+            <span>🧠 Código abierto · IA local</span>
+        </div>
+
+        <p class="lead">
+            ¿Sabías que puedes ejecutar modelos de inteligencia artificial potentes en tu propia computadora, sin pagar suscripciones y sin depender de la nube? Gracias al trabajo de la comunidad open source, en agosto de 2026 tenemos herramientas que hace dos años parecían ciencia ficción. Te contamos cuáles son, qué necesita tu PC y por dónde empezar.
+        </p>
+
+        <img src="https://image.pollinations.ai/prompt/A_person_sitting_at_a_desk_with_a_laptop_and_a_desktop_computer_surrounded_by_glowing_AI_interfaces_neural_networks_and_open_source_logos_futuristic_technology_workspace_warm_lighting_digital_art_style" alt="Persona trabajando con IA local en su computadora, rodeada de redes neuronales y código abierto" loading="lazy" />
+
+        <p>
+            La inteligencia artificial ya no es patrimonio exclusivo de grandes empresas con centros de datos enormes. En los últimos meses, un puñado de proyectos de GitHub ha demostrado que cualquier persona con una computadora decente puede tener su propio asistente de IA, generar imágenes, transcribir audio o incluso programar con modelos de última generación. Y lo mejor: todo es gratuito.
+        </p>
+
+        <p>
+            En este artículo repasamos siete proyectos que están dando que hablar en agosto de 2026. Desde el veterano <strong>Ollama</strong> hasta el flamante motor <strong>ds4</strong> del legendario programador <strong>antirez</strong> (creador de Redis), pasando por fenómenos virales como <strong>AirLLM</strong> y <strong>DeepSeek-Reasonix</strong>, cada uno tiene su propio superpoder. Te explicamos qué hace cada uno, qué necesita tu ordenador y cuál es el más sencillo para dar tus primeros pasos.
+        </p>
+
+        <h2>1. Ollama: la puerta de entrada más fácil al mundo de los modelos locales</h2>
+
+        <div class="project-card">
+            <p><span class="badge">⭐ Favorito de la comunidad</span> <strong>Ollama</strong> es, sin discusión, la forma más sencilla de ejecutar modelos de lenguaje (LLM) en tu propia máquina. Con un solo comando puedes descargar y ejecutar modelos como <strong>Llama 3.2</strong>, <strong>Mistral</strong> o <strong>DeepSeek</strong> en cuestión de minutos.</p>
+
+            <p>Lo que hace especial a Ollama es su enfoque <em>"todo en uno"</em>: no necesitas instalar Python, ni manejar dependencias, ni compilar nada. Descargas el instalador para Windows, macOS o Linux, ejecutas <code>ollama run deepseek-coder</code> y ya estás conversando con la IA. Incluye una API tipo REST que puedes usar desde tus propias aplicaciones.</p>
+
+            <div class="specs">
+                <span>💻 <strong>Requiere:</strong> 8 GB de RAM (recomendado 16 GB) y al menos 4 GB de espacio en disco.</span>
+                <span>🖥️ <strong>GPU:</strong> Opcional, pero con una NVIDIA con 4 GB de VRAM notarás la diferencia.</span>
+            </div>
+
+            <p><strong>Para qué sirve:</strong> Chat, asistencia personal, generación de código, resumen de textos y cualquier tarea de lenguaje natural. Es el <em>punto de partida</em> ideal si nunca has usado IA local.</p>
+        </div>
+
+        <h2>2. AirLLM: el fenómeno viral que ejecuta modelos de 70 mil millones en GPUs de 4 GB</h2>
+
+        <div class="project-card">
+            <p><span class="badge badge-purple">🔥 +30.000 estrellas</span> <strong>AirLLM</strong> es uno de los proyectos más comentados del año. Su promesa suena imposible: ejecutar modelos de <strong>70 mil millones de parámetros</strong> en una GPU con solo <strong>4 GB de VRAM</strong>. ¿Cómo lo hace? Mediante una técnica de <em>compresión inteligente</em> y <em>carga por capas</em> que optimiza el uso de memoria al límite.</p>
+
+            <p>AirLLM no es para todo el mundo: requiere cierta familiaridad con Python y la línea de comandos. Pero si tienes una tarjeta gráfica modesta y quieres experimentar con modelos realmente grandes, es una opción revolucionaria.</p>
+
+            <div class="specs">
+                <span>💻 <strong>Requiere:</strong> Python 3.9+, 16 GB de RAM y al menos 20 GB de espacio.</span>
+                <span>🖥️ <strong>GPU:</strong> NVIDIA con 4 GB de VRAM (soporta CUDA).</span>
+            </div>
+
+            <p><strong>Para qué sirve:</strong> Ejecutar modelos de razonamiento avanzado, generación de código complejo o tareas que exigen gran capacidad de comprensión, todo en hardware de gama media.</p>
+        </div>
+
+        <img src="https://image.pollinations.ai/prompt/A_modern_computer_with_a_neural_network_visualization_on_screen_low_poly_3D_style_blue_and_purple_technology_aesthetic_open_source_AI_running_locally" alt="Visualización de una red neuronal ejecutándose en una computadora moderna" loading="lazy" />
+
+        <h2>3. ds4: el nuevo motor de antirez para DeepSeek 4 Flash y PRO con aceleración nativa</h2>
+
+        <div class="project-card">
+            <p><span class="badge badge-orange">⚡ Novedad agosto 2026</span> El legendario <strong>antirez</strong>, creador de Redis, ha vuelto a la carga con <strong>ds4</strong>, un motor de inferencia ultrarrápido diseñado específicamente para los modelos <strong>DeepSeek 4 Flash</strong> y <strong>DeepSeek 4 PRO</strong>. Lo más impactante: aprovecha al máximo el hardware con soporte nativo para <strong>Metal</strong> (Mac), <strong>CUDA</strong> (NVIDIA) y <strong>ROCm</strong> (AMD).</p>
+
+            <p>ds4 no es una interfaz bonita ni un asistente con chat integrado: es un motor <em>puro y duro</em> pensado para developers que quieren integrar DeepSeek en sus propias aplicaciones o scripts. Su eficiencia es tan notable que en una MacBook Pro con chip M3 Pro puedes ejecutar DeepSeek 4 Flash a velocidades muy cercanas a las de la nube.</p>
+
+            <div class="specs">
+                <span>💻 <strong>Requiere:</strong> macOS (Metal), Linux (CUDA/ROCm) o Windows con WSL2.</span>
+                <span>🖥️ <strong>GPU:</strong> Recomendada para un rendimiento óptimo, pero también funciona en CPU con RAM suficiente.</span>
+            </div>
+
+            <p><strong>Para qué sirve:</strong> Desarrollo de aplicaciones con IA local, integración en pipelines de datos o simplemente para disfrutar de la velocidad de DeepSeek en tu propio hardware sin depender de servidores externos.</p>
+        </div>
+
+        <h2>4. DeepSeek-Reasonix: el agente de programación con IA que arrasa en GitHub</h2>
+
+        <div class="project-card">
+            <p><span class="badge badge-teal">🧑‍💻 +30.000 estrellas</span> <strong>DeepSeek-Reasonix</strong> es mucho más que un simple chat de código. Es un <em>agente autónomo</em> que corre en tu terminal y puede planificar, ejecutar y depurar tareas de programación completas. Le describes un problema en lenguaje natural, y él te propone una solución, escribe el código, lo prueba e incluso sugiere mejoras.</p>
+
+            <p>Funciona con modelos de razonamiento de DeepSeek y está optimizado para correr localmente. No necesita conexión a internet una vez descargado el modelo, lo que lo convierte en un compañero de trabajo ideal para programadores que valoran la privacidad y la independencia.</p>
+
+            <div class="specs">
+                <span>💻 <strong>Requiere:</strong> Python 3.10+, 16 GB de RAM y al menos 12 GB de espacio.</span>
+                <span>🖥️ <strong>GPU:</strong> Recomendada para respuestas rápidas, pero funciona en CPU con paciencia.</span>
+            </div>
+
+            <p><strong>Para qué sirve:</strong> Asistente de programación, autocompletado inteligente, depuración de código, generación de pruebas unitarias y resolución de problemas algorítmicos.</p>
+        </div>
+
+        <h2>5. ComfyUI: la interfaz más potente para generación de imágenes con difusión</h2>
+
+        <div class="project-card">
+            <p><span class="badge">🎨 Imagen</span> Si te gusta generar imágenes con IA, seguro que has oído hablar de <strong>ComfyUI</strong>. Es la interfaz por excelencia para trabajar con modelos de difusión como <strong>Stable Diffusion</strong>, <strong>Flux</strong> o <strong>SDXL</strong>. Su punto fuerte es la <em>flexibilidad</em>: organizas el flujo de trabajo mediante nodos que conectas como si fuera un patch de sintetizador modular.</p>
+
+            <p>ComfyUI incluye una API completa, lo que permite integrarlo en aplicaciones propias o en automatizaciones. Su comunidad es enorme y hay cientos de workflows predefinidos para estilos, upscaling, control de poses y mucho más.</p>
+
+            <div class="specs">
+                <span>💻 <strong>Requiere:</strong> 8 GB de RAM, 10 GB de espacio libre para modelos.</span>
+                <span>🖥️ <strong>GPU:</strong> Muy recomendable una NVIDIA con al menos 4 GB de VRAM (cuanta más, mejor).</span>
+            </div>
+
+            <p><strong>Para qué sirve:</strong> Generación de imágenes, edición por IA, creación de arte conceptual, diseño gráfico y prototipado visual. Es la herramienta de referencia para profesionales y entusiastas.</p>
+        </div>
+
+        <img src="https://image.pollinations.ai/prompt/Open_source_AI_projects_collage_with_GitHub_logo_robotic_hand_holding_a_neural_network_futuristic_blue_orange_palette_technology_illustration" alt="Collage de proyectos de IA de código abierto en GitHub" loading="lazy" />
+
+        <h2>6. Whisper: transcripción de audio a texto, gratis y sin conexión</h2>
+
+        <div class="project-card">
+            <p><span class="badge badge-green">🎤 Audio</span> <strong>Whisper</strong>, el modelo de transcripción de OpenAI, se convirtió en código abierto hace tiempo y es uno de los recursos más útiles para periodistas, estudiantes y creadores de contenido. Convierte audio en texto con una precisión asombrosa, incluso en entornos con ruido de fondo o con varios hablantes.</p>
+
+            <p>La versión local de Whisper se instala con pip y corre en tu máquina sin necesidad de enviar tus grabaciones a la nube. Admite múltiples idiomas y genera archivos de subtítulos en varios formatos.</p>
+
+            <div class="specs">
+                <span>💻 <strong>Requiere:</strong> Python 3.8+, 4 GB de RAM (recomendado 8 GB).</span>
+                <span>🖥️ <strong>GPU:</strong> Opcional, pero acelera mucho el proceso.</span>
+            </div>
+
+            <p><strong>Para qué sirve:</strong> Transcripción de entrevistas, generación de subtítulos para vídeos, toma de notas de reuniones, accesibilidad para contenido multimedia y archivo de audios.</p>
+        </div>
+
+        <h2>7. Invidious: YouTube sin anuncios ni rastreo, con tu propia IA</h2>
+
+        <div class="project-card">
+            <p><span class="badge badge-orange">📺 Sin anuncios</span> <strong>Invidious</strong> no es un modelo de IA, pero es un proyecto open source que merece un lugar en esta lista porque <em>potencia el uso de la IA local</em>. Se trata de un frontend alternativo para YouTube que elimina anuncios, bloquea el rastreo y permite descargar vídeos o extraer su audio para pasarlo directamente a Whisper o a cualquier otro modelo.</p>
+
+            <p>Puedes instalar tu propia instancia de Invidious o usar alguna de las públicas. El proyecto es ligero y está escrito en Crystal y JavaScript. En agosto de 2026 sigue siendo una de las mejores formas de consumir contenido multimedia con total privacidad.</p>
+
+            <div class="specs">
+                <span>💻 <strong>Requiere:</strong> Un servidor o VPS con 2 GB de RAM y algo de almacenamiento.</span>
+                <span>🖥️ <strong>GPU:</strong> No necesita.</span>
+            </div>
+
+            <p><strong>Para qué sirve:</strong> Ver YouTube sin publicidad, evitar el tracking de Google, descargar audio para transcribir con IA o simplemente tener un portal limpio y rápido para tus vídeos favoritos.</p>
+        </div>
+
+        <h2>¿Cuál es el más fácil para empezar?</h2>
+
+        <p>
+            Si nunca has usado IA local, la respuesta es clara: <strong>Ollama</strong>. Su instalación es trivial, su uso es intuitivo y la comunidad es enorme. En menos de diez minutos tendrás tu primer modelo conversando contigo. Una vez que te sientas cómodo, puedes explorar AirLLM si tu GPU es modesta, o ds4 si quieres exprimir al máximo el hardware de Apple.
+        </p>
+
+        <p>
+            Para generación de imágenes, <strong>ComfyUI</strong> es la opción más profesional, aunque tiene una curva de aprendizaje. Si prefieres algo más sencillo, hay interfaces como Automatic1111, pero ComfyUI ofrece un control sin igual.
+        </p>
+
+        <p>
+            Para transcripción, <strong>Whisper</strong> es un <em>no-brainer</em>: funciona, es preciso y es gratis. Y si quieres un asistente de programación realmente autónomo, <strong>DeepSeek-Reasonix</strong> te sorprenderá por su capacidad de razonamiento.
+        </p>
+
+        <h2>¿Qué necesita tu computadora para todo esto?</h2>
+
+        <p>
+            La buena noticia es que <strong>no necesitas un superordenador</strong>. La mayoría de estos proyectos funcionan en equipos de gama media:
+        </p>
+
+        <ul>
+            <li><strong>Mínimo recomendado:</strong> 8 GB de RAM, procesador de cuatro núcleos, disco SSD con 20 GB libres.</li>
+            <li><strong>Ideal:</strong> 16 GB de RAM, GPU NVIDIA con 4-6 GB de VRAM (o chip M1/M2/M3 en Mac) y 50 GB de espacio.</li>
+            <li><strong>Para modelos muy grandes (70B):</strong> 32 GB de RAM y 8 GB de VRAM, o usar AirLLM con 4 GB.</li>
+        </ul>
+
+        <p>
+            La belleza del software libre es que <em>se adapta a lo que tienes</em>. Puedes empezar con Ollama en un portátil viejo y, si te enganchas, ir mejorando tu equipo o explorando proyectos más especializados.
+        </p>
+
+        <h2>La IA local es el futuro (y ya está aquí)</h2>
+
+        <p>
+            Agosto de 2026 está siendo un mes emocionante para la inteligencia artificial de código abierto. La combinación de modelos más eficientes, motores de inferencia optimizados y hardware cada vez más potente está haciendo posible lo que hace un año parecía inalcanzable: tener una IA de primer nivel en tu propia casa, sin pagar suscripciones, sin ceder tus datos y sin depender de la conexión a internet.
+        </p>
+
+        <p>
+            Proyectos como Ollama, AirLLM, ds4, DeepSeek-Reasonix, ComfyUI, Whisper e Invidious son la prueba de que la <em>democratización de la IA</em> no es un eslogan, sino una realidad en marcha. Y lo mejor es que todos ellos están en GitHub, esperando a que los descargues, los explores y los hagas tuyos.
+        </p>
+
+        <p>
+            Así que ya sabes: elige el proyecto que más encaje con tus intereses, instálalo, y empieza a experimentar. La IA ya no es cosa de unos pocos. Ahora es tuya.
+        </p>
+
+        <div class="footer-note">
+            <p style="margin-bottom:0.2rem; font-size:0.9rem; color:#3d4f6a;">
+                ✦ Artículo actualizado el 8 de agosto de 2026 · Todos los proyectos mencionados son de código abierto y están disponibles en GitHub ✦
+            </p>
+        </div>
+
+    </div>
+
+    <footer><p>Autor: ROSA EMILY | Fecha: 2026-08-08</p></footer>
+<div class="ultimolive-share">
+<style>
+.ultimolive-share{max-width:960px;margin:24px auto;padding:0 20px;font-family:Arial,Helvetica,sans-serif}
+.ultimolive-share .share-label{margin:0 0 10px;font-size:13px;font-weight:700;color:#333;text-transform:uppercase;letter-spacing:.5px}
+.share-row{display:flex;flex-wrap:wrap;gap:8px}
+.share-row a{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:24px;color:#fff;text-decoration:none;font-size:14px;font-weight:600;transition:opacity .15s}
+.share-row a:hover{opacity:.85}
+.share-wa{background:#25D366}.share-fb{background:#1877F2}.share-tw{background:#111}.share-tg{background:#0088cc}
+.back-portal{display:inline-block;margin-top:14px;font-size:13px;color:#00843d;text-decoration:none;font-weight:600}
+</style>
+<p class="share-label">Comparte este articulo</p>
+<div class="share-row">
+<a class="share-wa" href="https://wa.me/?text=IA%20gratis%20y%20local%3A%207%20proyectos%20de%20GitHub%20que%20est%C3%A1n%20revolucionando%20agosto%20de%202026%20https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Fproyectos-github-ia-gratis-correr-en-tu-pc%2F" target="_blank" rel="noopener">WhatsApp</a>
+<a class="share-fb" href="https://www.facebook.com/dialog/share?app_id=2290800501460325&display=popup&href=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Fproyectos-github-ia-gratis-correr-en-tu-pc%2F" target="_blank" rel="noopener">Facebook</a>
+<a class="share-tw" href="https://twitter.com/intent/tweet?text=IA%20gratis%20y%20local%3A%207%20proyectos%20de%20GitHub%20que%20est%C3%A1n%20revolucionando%20agosto%20de%202026&url=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Fproyectos-github-ia-gratis-correr-en-tu-pc%2F" target="_blank" rel="noopener">X</a>
+<a class="share-tg" href="https://t.me/share/url?url=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Fproyectos-github-ia-gratis-correr-en-tu-pc%2F&text=IA%20gratis%20y%20local%3A%207%20proyectos%20de%20GitHub%20que%20est%C3%A1n%20revolucionando%20agosto%20de%202026" target="_blank" rel="noopener">Telegram</a>
+</div>
+<a class="back-portal" href="https://automatico.pages.dev/">Volver al portal</a>
+</div>
+</body>
 </html>
