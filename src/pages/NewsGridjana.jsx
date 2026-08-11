@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import ShareButtons from '../components/ShareButtons';
 import './NewsGridjana.css';
+
+const SITE_TITLE = 'UltimoLive - Noticias deportivas, resultados y transmisiones en vivo';
 
 const NewsGrid = () => {
   const [articles, setArticles] = useState([]);
@@ -37,11 +40,13 @@ const NewsGrid = () => {
     const content = await loadHTMLContent(article.htmlPath);
     setArticleContent(content);
     setSelectedArticle(article);
+    document.title = article.title;
   };
 
   const handleCloseArticle = () => {
     setSelectedArticle(null);
     setArticleContent('');
+    document.title = SITE_TITLE;
   };
 
   const formatDate = (dateString) => {
@@ -92,9 +97,17 @@ const NewsGrid = () => {
               <time className="date">{formatDate(selectedArticle.date)}</time>
             </div>
           </div>
+          <ShareButtons
+            slug={selectedArticle.slug}
+            title={selectedArticle.title}
+          />
           <div 
             className="html-content"
             dangerouslySetInnerHTML={{ __html: articleContent }}
+          />
+          <ShareButtons
+            slug={selectedArticle.slug}
+            title={selectedArticle.title}
           />
         </div>
       )}

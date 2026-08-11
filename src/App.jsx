@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import NewsGrid from './components/NewsGrid';
+import ShareButtons from './components/ShareButtons';
 import './App.css';
+
+const SITE_TITLE = 'UltimoLive - Noticias deportivas, resultados y transmisiones en vivo';
 
 function App() {
   const [currentStream, setCurrentStream] = useState(null);
@@ -59,12 +62,14 @@ function App() {
     const content = await loadHTMLContent(article.htmlPath);
     setArticleContent(content);
     setSelectedArticle(article);
+    document.title = article.title;
     window.scrollTo(0, 0);
   };
 
   const handleCloseArticle = () => {
     setSelectedArticle(null);
     setArticleContent('');
+    document.title = SITE_TITLE;
     window.scrollTo(0, 0);
   };
 
@@ -92,9 +97,17 @@ function App() {
                 <time className="date">{formatDate(selectedArticle.date)}</time>
               </div>
             </div>
+            <ShareButtons
+              slug={selectedArticle.slug}
+              title={selectedArticle.title}
+            />
             <div
               className="html-content"
               dangerouslySetInnerHTML={{ __html: articleContent }}
+            />
+            <ShareButtons
+              slug={selectedArticle.slug}
+              title={selectedArticle.title}
             />
           </div>
         ) : (
