@@ -1,5 +1,59 @@
 [
   {
+    "slug": "suplementos-a-ciegas-riesgos",
+    "title": "Tomar suplementos a ciegas es jugar a los dados con tu cuerpo: lo que debes saber antes de comprar, según los médicos",
+    "author": "ROSA EMILY",
+    "date": "2026-08-11",
+    "excerpt": "Cada vez más personas consumen vitaminas, minerales y otros suplementos sin supervisión médica, exponiéndose a riesgos que van desde interacciones peligrosas hasta daño hepático o renal. Especialistas advierten que la automedicación con suplementos no es inocua y exigen regulación más estricta y educación sanitaria para evitar que la población juegue a la ruleta con su salud.",
+    "thumbnail": "https://image.pollinations.ai/prompt/dice%20supplements%20health%20warning%20medical%20alert%20vitamins%20danger",
+    "htmlPath": "/posts/suplementos-a-ciegas-riesgos/index.html"
+  },
+  {
+    "slug": "piel-reflejo-salud-intestinal",
+    "title": "La piel como reflejo de la salud intestinal: hábitos que influyen y señales de alerta que no debes ignorar",
+    "author": "ROSA EMILY",
+    "date": "2026-08-11",
+    "excerpt": "La conexión entre el intestino y la piel es más profunda de lo que imaginas. El estado de tu microbiota intestinal se refleja directamente en tu rostro y cuerpo a través de acné, eczema, rosácea y otros trastornos dermatológicos. Descubre qué hábitos fortalecen esta relación y cuáles son las señales de alerta que indican que tu intestino necesita atención urgente.",
+    "thumbnail": "https://image.pollinations.ai/prompt/gut%20skin%20axis%20microbiome%20connection%20healthy%20glowing%20skin%20intestine%20health%20illustration",
+    "htmlPath": "/posts/piel-reflejo-salud-intestinal/index.html"
+  },
+  {
+    "slug": "sarampion-arequipa-100-mil-vacunas",
+    "title": "Sarampión en Arequipa: 100 mil vacunas disponibles y campañas de vacunación en colegios para frenar brote",
+    "author": "ROSA EMILY",
+    "date": "2026-08-11",
+    "excerpt": "Ante el aumento de casos de sarampión en la región, el Ministerio de Salud ha desplegado una campaña de vacunación masiva con 100.000 dosis disponibles, enfocada en niños y adolescentes de colegios públicos y privados de Arequipa. Las brigadas de inmunización recorrerán más de 500 instituciones educativas para proteger a la población escolar y contener el brote que ya suma más de 80 contagios confirmados.",
+    "thumbnail": "https://image.pollinations.ai/prompt/measles%20vaccine%20Arequipa%20Peru%20school%20children%20campaign%20health%20workers%20immunization",
+    "htmlPath": "/posts/sarampion-arequipa-100-mil-vacunas/index.html"
+  },
+  {
+    "slug": "dengue-tumbes-26-mil-dosis-vacuna",
+    "title": "Dengue en Tumbes: llegan 26 mil dosis de vacuna para reforzar la prevención ante el Fenómeno El Niño",
+    "author": "ROSA EMILY",
+    "date": "2026-08-11",
+    "excerpt": "En medio de la alerta por el inminente Fenómeno El Niño, el Ministerio de Salud ha entregado 26.000 dosis de la vacuna contra el dengue al departamento de Tumbes, la región más vulnerable del norte peruano. La campaña de vacunación se enfoca en niños y adolescentes de zonas endémicas, mientras se refuerzan las acciones de control vectorial y preparación de los centros de salud para enfrentar el aumento de casos.",
+    "thumbnail": "https://image.pollinations.ai/prompt/dengue%20vaccine%20Tumbes%20Peru%20children%20health%20campaign%20prevention%20El%20Niño",
+    "htmlPath": "/posts/dengue-tumbes-26-mil-dosis-vacuna/index.html"
+  },
+  {
+    "slug": "minsa-torre-control-equipos-medicos",
+    "title": "Minsa instalará una \"torre de control\" para vigilar equipos médicos en hospitales y revisará todos los contratos de alquiler tras el escándalo de la resonancia magnética que nunca funcionó",
+    "author": "ROSA EMILY",
+    "date": "2026-08-11",
+    "excerpt": "Tras el escándalo por la resonancia magnética que permanece inoperativa pese a pagar millones en alquiler, el Ministerio de Salud anuncia la creación de un sistema centralizado de monitoreo en tiempo real para todos los equipos médicos del país. La \"torre de control\" permitirá supervisar el funcionamiento, mantenimiento y uso de cada dispositivo, mientras se ordena una auditoría integral de todos los contratos de arrendamiento vigentes.",
+    "thumbnail": "https://image.pollinations.ai/prompt/control%20tower%20medical%20equipment%20Peru%20hospital%20monitoring%20technology%20command%20center",
+    "htmlPath": "/posts/minsa-torre-control-equipos-medicos/index.html"
+  },
+  {
+    "slug": "minsa-luis-dyer-no-hay-dinero",
+    "title": "Ministro Luis Dyer: \"No hay dinero\" y medidas urgentes para el Minsa",
+    "author": "ROSA EMILY",
+    "date": "2026-08-11",
+    "excerpt": "El ministro de Salud, Luis Dyer, denunció la crítica situación financiera que encontró en el Minsa y anunció un paquete de medidas urgentes para rescatar el sector: compra de medicamentos, agilización de citas y operaciones, y control de los equipos médicos en los hospitales del país.",
+    "thumbnail": "https://image.pollinations.ai/prompt/Luis%20Dyer%20Peruvian%20Health%20Minister%20official%20portrait%20serious%20face%20Peru%20flag",
+    "htmlPath": "/posts/minsa-luis-dyer-no-hay-dinero/index.html"
+  },
+  {
     "slug": "minsa-movil-5700-atenciones-huaura-oyon",
     "title": "Minsa Movil supera las 5,700 atenciones en Huaura y Oyon",
     "author": "ROSA EMILY",

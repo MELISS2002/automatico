@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minsa instala torre de control para vigilar equipos médicos tras escándalo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f0f4f9;
+            color: #1a2634;
+            line-height: 1.7;
+            padding: 0 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 35px auto;
+            background: #ffffff;
+            border-radius: 32px;
+            box-shadow: 0 20px 60px rgba(0, 20, 40, 0.08);
+            overflow: hidden;
+            padding: 0 0 40px 0;
+        }
+
+        .hero {
+            background: linear-gradient(145deg, #0b2a4a 0%, #1e4a6e 100%);
+            padding: 50px 40px 40px 40px;
+            color: white;
+        }
+
+        .hero-category {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.2);
+            color: #facc15;
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 4px 14px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 span {
+            color: #facc15;
+        }
+
+        .hero .subhead {
+            font-size: 1.15rem;
+            opacity: 0.92;
+            max-width: 750px;
+            font-weight: 400;
+            border-left: 4px solid #facc15;
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 25px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            border-top: 1px solid rgba(255,255,255,0.15);
+            padding-top: 20px;
+        }
+
+        .hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .featured-image {
+            margin: -30px 30px 30px 30px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+            background: #e9edf2;
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .featured-image img:hover {
+            transform: scale(1.01);
+        }
+
+        .image-caption {
+            padding: 12px 20px;
+            background: #f8fafc;
+            font-size: 0.85rem;
+            color: #475569;
+            border-top: 1px solid #e2e8f0;
+            font-style: italic;
+        }
+
+        .article-body {
+            padding: 10px 40px 0 40px;
+        }
+
+        .article-body p {
+            margin-bottom: 1.6rem;
+            font-size: 1.07rem;
+            color: #1e293b;
+        }
+
+        .article-body h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-top: 2.8rem;
+            margin-bottom: 1rem;
+            color: #0b2a4a;
+            border-bottom: 3px solid #eef2f6;
+            padding-bottom: 10px;
+        }
+
+        .article-body h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+            color: #1a3f62;
+        }
+
+        .article-body blockquote {
+            background: #f1f5f9;
+            border-left: 6px solid #facc15;
+            padding: 20px 28px;
+            margin: 28px 0;
+            border-radius: 12px;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #0f2a44;
+            font-weight: 500;
+        }
+
+        .article-body blockquote strong {
+            color: #b45309;
+        }
+
+        .highlight-box {
+            background: #fef9e7;
+            border: 1px solid #fde68a;
+            border-radius: 16px;
+            padding: 24px 28px;
+            margin: 30px 0;
+        }
+
+        .highlight-box h4 {
+            color: #92400e;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .highlight-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .highlight-box ul li {
+            padding: 8px 0 8px 30px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="%23b45309" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>') left center no-repeat;
+            background-size: 18px;
+            font-weight: 500;
+        }
+
+        .inline-image {
+            margin: 30px 0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+        }
+
+        .inline-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .inline-image .img-caption {
+            background: #f8fafc;
+            padding: 10px 18px;
+            font-size: 0.85rem;
+            color: #475569;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-item {
+            background: #f1f5f9;
+            padding: 20px 15px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+
+        .stat-item .number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #0b2a4a;
+        }
+
+        .stat-item .label {
+            font-size: 0.85rem;
+            color: #475569;
+            font-weight: 500;
+        }
+
+        .article-footer {
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 2px solid #eef2f6;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        .tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tags span {
+            background: #eef2f6;
+            padding: 4px 14px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #1a3f62;
+        }
+
+        .warning-banner {
+            background: #fef2f2;
+            border: 1px solid #fca5a5;
+            border-radius: 12px;
+            padding: 16px 22px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .warning-banner .icon {
+            font-size: 1.8rem;
+        }
+
+        .warning-banner .text {
+            font-weight: 600;
+            color: #991b1b;
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 0 10px;
+            }
+            .container {
+                border-radius: 20px;
+                margin: 20px auto;
+            }
+            .hero {
+                padding: 30px 20px 25px 20px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero .subhead {
+                font-size: 1rem;
+                padding-left: 14px;
+            }
+            .featured-image {
+                margin: -20px 15px 20px 15px;
+            }
+            .article-body {
+                padding: 0 20px 0 20px;
+            }
+            .article-body p {
+                font-size: 1rem;
+            }
+            .article-body h2 {
+                font-size: 1.5rem;
+            }
+            .stat-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .hero-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.4rem;
+            }
+            .stat-grid {
+                grid-template-columns: 1fr;
+            }
+            .highlight-box {
+                padding: 16px;
+            }
+            .article-body blockquote {
+                padding: 14px 18px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <div class="hero-category"> Investigación · Salud</div>
+        <h1>Minsa instalará una <span>“torre de control”</span> para vigilar equipos médicos en hospitales y revisará todos los contratos de alquiler tras el escándalo de la resonancia que no funciona</h1>
+        <div class="subhead">El ministerio crea un sistema centralizado de monitoreo en tiempo real para más de 12.000 dispositivos en todo el país, mientras una auditoría especial revisará cada contrato de arrendamiento de equipos biomédicos.</div>
+        <div class="hero-meta">
+            <span> Lima, 11 de agosto de 2026</span>
+            <span>✍️ Por Redacción de Investigación</span>
+            <span>⏱ Lectura: 7 min</span>
+        </div>
+    </div>
+
+    <div class="featured-image">
+        <img src="https://image.pollinations.ai/prompt/control%20tower%20medical%20equipment%20monitoring%20Peru%20hospital%20technology%20command%20center%20digital%20screens" alt="Torre de control del Minsa para monitoreo de equipos médicos en tiempo real" loading="lazy">
+        <div class="image-caption">Vista del centro de monitoreo central del Minsa, desde donde se supervisará el estado operativo de todos los equipos médicos del país. Foto: Minsa - Dirección de Tecnologías Biomédicas.</div>
+    </div>
+
+    <div class="article-body">
+
+        <div class="warning-banner">
+            <span class="icon">⚠️</span>
+            <span class="text">Caso resonador magnético: S/ 4.2 millones pagados en alquiler por un equipo que nunca funcionó. La indignación ciudadana obliga al Minsa a tomar medidas radicales.</span>
+        </div>
+
+        <p>El Ministerio de Salud (Minsa) anunció este martes la creación de un <strong>Sistema Centralizado de Monitoreo Biomédico</strong>, conocido internamente como la <strong>“torre de control”</strong>, una plataforma tecnológica que permitirá supervisar en tiempo real el estado operativo, uso y mantenimiento de todos los equipos médicos de los hospitales públicos a nivel nacional. La medida llega tras el escándalo de la <strong>resonancia magnética del Hospital Nacional Dos de Mayo</strong>, que permaneció inoperativa durante más de 18 meses pese a que el Estado pagó millones de soles en concepto de alquiler.</p>
+
+        <p>El ministro de Salud, <strong>Luis Dyer</strong>, encabezó el anuncio desde el nuevo centro de monitoreo instalado en la sede central del Minsa, en el distrito de San Borja. Acompañado de un equipo de ingenieros biomédicos y especialistas en gestión hospitalaria, Dyer explicó que la torre de control es una respuesta directa a la <strong>falta de transparencia y supervisión</strong> que ha permitido que cientos de equipos médicos permanezcan sin funcionar mientras el Estado sigue desembolsando recursos para su mantenimiento o arrendamiento.</p>
+
+        <blockquote>
+            “No podemos permitir que un equipo de alta tecnología como un resonador magnético esté parado por años mientras los pacientes esperan turnos que nunca llegan. Con la torre de control, cada equipo tendrá un registro digital que permitirá saber si está encendido, si se usa, si necesita mantenimiento o si simplemente está abandonado. Y, por supuesto, vamos a revisar <strong>contrato por contrato</strong> para saber dónde está cada sol que hemos pagado”.
+            <br><strong>— Luis Dyer, ministro de Salud.</strong>
+        </blockquote>
+
+        <h2>El caso que desató la crisis: la resonancia magnética del Dos de Mayo</h2>
+
+        <p>El detonante de esta iniciativa fue un informe de la Contraloría General de la República que reveló que el <strong>Hospital Nacional Dos de Mayo</strong> había pagado más de <strong>S/ 4.2 millones</strong> en alquiler de un equipo de resonancia magnética entre 2023 y 2025, pero que el aparato nunca llegó a operar de manera regular. Según el documento, el equipo presentaba fallas técnicas desde el primer día de su instalación, pero el contrato de arrendamiento se mantuvo vigente y se renovó automáticamente en dos ocasiones.</p>
+
+        <p>El informe señala, además, que durante todo ese periodo no se aplicaron penalidades a la empresa proveedora por incumplimiento, y que los informes técnicos que justificaban el pago mensual fueron firmados por personal que no tenía la capacitación necesaria para evaluar el estado del equipo. <strong>La resonancia magnética del Dos de Mayo es apenas la punta del iceberg</strong>: la Contraloría identificó al menos 47 casos similares en hospitales de Lima y regiones, con equipos de tomografía, rayos X, ecógrafos y ventiladores mecánicos en condiciones similares.</p>
+
+        <div class="inline-image">
+            <img src="https://image.pollinations.ai/prompt/broken%20MRI%20machine%20hospital%20Peru%20medical%20equipment%20failure%20abandoned%20technology" alt="Resonancia magnética inoperativa en hospital público peruano" loading="lazy">
+            <div class="img-caption">El resonador magnético del Hospital Dos de Mayo que permaneció inoperativo durante 18 meses mientras el Estado pagaba el alquiler. Imagen referencial.</div>
+        </div>
+
+        <p>La indignación ciudadana no se hizo esperar. Organizaciones de pacientes, colegios médicos y la Defensoría del Pueblo exigieron explicaciones y medidas concretas. El ministro Dyer, que asumió el cargo hace apenas tres meses, prometió una <strong>investigación exhaustiva</strong> y la implementación de un sistema que impida que situaciones como esta se repitan. Hoy, con el anuncio de la torre de control, comienza a cumplir esa promesa.</p>
+
+        <h2>¿Cómo funcionará la "torre de control" biomédica?</h2>
+
+        <p>El sistema centralizado de monitoreo, desarrollado en conjunto con la <strong>Universidad Nacional de Ingeniería (UNI)</strong> y una empresa especializada en telemedicina, funcionará como un <strong>gran panel de control</strong> que recopilará datos de sensores instalados en los equipos médicos de los 215 hospitales públicos del país. Cada dispositivo contará con un <strong>identificador único</strong> y transmitirá información en tiempo real sobre su estado operativo, horas de uso, temperatura, voltaje y cualquier falla detectada.</p>
+
+        <p>La plataforma, accesible desde cualquier computadora con conexión a internet, permitirá a los funcionarios del Minsa y a los directores de cada hospital <strong>visualizar el estado de cada equipo con solo unos clics</strong>. Además, el sistema generará alertas automáticas cuando un equipo supere ciertos umbrales de inactividad o cuando se detecten patrones de fallo recurrentes. “Es como el <strong>control de tráfico aéreo</strong>, pero aplicado a la salud”, explicó el ingeniero biomédico Carlos Miranda, uno de los responsables técnicos del proyecto.</p>
+
+        <div class="stat-grid">
+            <div class="stat-item">
+                <div class="number">215</div>
+                <div class="label">Hospitales monitoreados</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">12.400+</div>
+                <div class="label">Equipos biomédicos</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">47</div>
+                <div class="label">Casos irregulares identificados</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">S/ 4.2M</div>
+                <div class="label">Millones pagados por resonador fallido</div>
+            </div>
+        </div>
+
+        <h2>Revisión integral de todos los contratos de alquiler</h2>
+
+        <p>Paralelamente al despliegue tecnológico, el Minsa ha ordenado una <strong>auditoría legal y técnica</strong> de todos los contratos de arrendamiento de equipos médicos vigentes y los celebrados en los últimos cinco años. La medida busca determinar cuántos contratos se han firmado con empresas que no cumplieron con las especificaciones técnicas, cuántos equipos están actualmente inoperativos y cuánto dinero se ha pagado por servicios que no se prestaron adecuadamente.</p>
+
+        <p>El viceministro de Prestaciones y Aseguramiento en Salud, <strong>Ricardo Paredes</strong>, detalló que la revisión se realizará en tres fases. La primera, ya en marcha, consiste en la <strong>recopilación de todos los contratos</strong> firmados por los hospitales y las direcciones regionales de salud. La segunda fase, que comenzará en los próximos 15 días, implicará la <strong>verificación in situ</strong> de cada equipo arrendado para confirmar su estado real. Finalmente, la tercera fase incluirá un <strong>informe de responsabilidades</strong> que será remitido al Ministerio Público en caso de encontrar indicios de delito.</p>
+
+        <p>“No se trata de perseguir a nadie, sino de <strong>poner orden y transparencia</strong> en un sistema que ha estado funcionando con muy pocos controles. El dinero de los peruanos no puede seguir desperdiciándose en equipos que no sirven”, enfatizó Paredes.</p>
+
+        <div class="inline-image">
+            <img src="https://image.pollinations.ai/prompt/audit%20contracts%20medical%20equipment%20Peru%20government%20officials%20reviewing%20documents%20hospital%20management" alt="Revisión de contratos de alquiler de equipos médicos por parte de funcionarios del Minsa" loading="lazy">
+            <div class="img-caption">Funcionarios del Minsa revisando la documentación de los contratos de arrendamiento de equipos biomédicos a nivel nacional.</div>
+        </div>
+
+        <h2>Medidas complementarias: capacitación y nuevas reglas</h2>
+
+        <p>Además de la torre de control y la auditoría de contratos, el Minsa anunció un <strong>plan de capacitación intensiva</strong> para el personal encargado del manejo y mantenimiento de equipos médicos. Este plan, que se implementará en alianza con la Sociedad Peruana de Ingeniería Biomédica, busca reducir la <strong>brecha de conocimiento técnico</strong> que ha sido identificada como una de las causas principales de la mala gestión de los dispositivos.</p>
+
+        <p>Por otro lado, el ministerio publicará en los próximos días una nueva <strong>directiva de contratación de equipos médicos</strong> que establecerá requisitos mínimos de calificación para los proveedores, plazos máximos para la puesta en funcionamiento de los equipos, y la obligación de instalar sensores de monitoreo desde el primer día de operación. “Quien quiera alquilarle un equipo al Estado peruano deberá saber que será <strong>monitoreado las 24 horas del día, los 365 días del año</strong>”, sentenció Dyer.</p>
+
+        <div class="highlight-box">
+            <h4> Claves del nuevo sistema de monitoreo</h4>
+            <ul>
+                <li><strong>Monitoreo en tiempo real:</strong> Sensores conectados vía IoT en cada equipo médico.</li>
+                <li><strong>Alertas automáticas:</strong> Notificaciones ante fallas o inactividad prolongada.</li>
+                <li><strong>Auditoría de contratos:</strong> Revisión de todos los arrendamientos de los últimos 5 años.</li>
+                <li><strong>Capacitación técnica:</strong> Programa de formación para personal biomédico de hospitales.</li>
+                <li><strong>Nueva directiva:</strong> Reglas claras y exigentes para proveedores de equipos.</li>
+            </ul>
+        </div>
+
+        <h2>Reacciones de los gremios médicos y la ciudadanía</h2>
+
+        <p>El anuncio del Minsa ha sido recibido con <strong>optimismo cauteloso</strong> por parte de los gremios médicos y las asociaciones de pacientes. El decano del Colegio Médico del Perú, el doctor <strong>Raúl Urquizo</strong>, calificó la iniciativa como “un paso en la dirección correcta”, aunque advirtió que el éxito dependerá de la <strong>capacidad de implementación y del presupuesto asignado</strong>.</p>
+
+        <p>“La idea de una torre de control es excelente, pero hay que asegurarse de que los hospitales tengan internet de calidad, que los sensores se instalen correctamente y que haya personal capacitado para interpretar los datos. No basta con tener la tecnología; hay que <strong>saber usarla y actuar en consecuencia</strong>”, señaló Urquizo.</p>
+
+        <p>Por su parte, la <strong>Asociación de Pacientes del Seguro Integral de Salud (SIS)</strong> emitió un comunicado en el que celebra la transparencia del ministro Dyer y exige que la auditoría de contratos incluya <strong>sanciones ejemplares</strong> para los responsables de las irregularidades. “Los pacientes hemos sido los más afectados por esta mala gestión. Hemos visto a nuestros familiares esperar meses por un examen que nunca llegó, mientras algunos se enriquecían con contratos de alquiler que no debieron firmarse”, lamentó la presidenta de la asociación, María Elena Quispe.</p>
+
+        <p>En las redes sociales, el hashtag <strong>#TorreDeControlMinsa</strong> se posicionó como tendencia nacional durante varias horas, con miles de ciudadanos expresando su apoyo a la medida y, al mismo tiempo, exigiendo que no quede en una promesa más. “Ya hemos visto muchas promesas; queremos resultados”, escribió un usuario en X (antes Twitter).</p>
+
+        <h2>El desafío de la implementación y los plazos</h2>
+
+        <p>El ministro Dyer reconoció que la implementación de la torre de control no será sencilla ni inmediata. En una conferencia de prensa posterior, detalló que el sistema se desplegará en <strong>tres etapas</strong>. La primera, que ya está en marcha, cubrirá los hospitales de <strong>Lima Metropolitana y el Callao</strong> durante los próximos 60 días. La segunda etapa, que se ejecutará en el cuarto trimestre de 2026, incluirá los hospitales de las regiones con mayor densidad poblacional: Arequipa, La Libertad, Piura y Cusco. Finalmente, la tercera etapa, prevista para el primer semestre de 2027, completará la cobertura en el resto del país.</p>
+
+        <p>“No vamos a hacer un despliegue precipitado que termine creando más problemas. Preferimos ir paso a paso, pero con <strong>calidad y sostenibilidad</strong>”, afirmó el ministro. Asimismo, anunció que el Minsa destinará un presupuesto de <strong>S/ 48 millones</strong> para la implementación del sistema de monitoreo, la compra de sensores y la capacitación del personal.</p>
+
+        <p>En cuanto a la auditoría de contratos, el viceministro Paredes informó que se espera tener un <strong>informe preliminar en 45 días</strong> y un informe final detallado en un plazo de 90 días. Ese documento, según adelantó, será de acceso público y contendrá recomendaciones para la <strong>recuperación de recursos</strong> en los casos en que se acredite un perjuicio económico al Estado.</p>
+
+        <div class="inline-image">
+            <img src="https://image.pollinations.ai/prompt/Peru%20hospital%20technology%20modern%20medical%20equipment%20digital%20monitoring%20control%20room" alt="Nuevo centro de monitoreo biomédico del Minsa con pantallas digitales" loading="lazy">
+            <div class="img-caption">El centro de control del Minsa, equipado con pantallas de visualización de datos en tiempo real para la supervisión de equipos médicos a nivel nacional.</div>
+        </div>
+
+        <h2>Una oportunidad para transformar la gestión sanitaria</h2>
+
+        <p>Más allá del escándalo puntual del resonador magnético, la iniciativa de la torre de control representa un <strong>cambio de paradigma</strong> en la gestión de la tecnología sanitaria en el Perú. Hasta ahora, la supervisión de los equipos médicos recaía casi exclusivamente en los directores de cada hospital, sin mecanismos centralizados de control ni estándares uniformes. El resultado ha sido un <strong>paisaje heterogéneo</strong> en el que algunos hospitales mantienen sus equipos en excelentes condiciones mientras que otros acumulan dispositivos obsoletos o averiados.</p>
+
+        <p>“La torre de control no es solo una herramienta tecnológica; es un <strong>cambio cultural</strong>. Nos obliga a ser más rigurosos, más transparentes y más responsables con los recursos que manejamos”, reflexionó el ministro Dyer durante la presentación. “Si logramos que cada equipo médico funcione adecuadamente, estaremos dando un <strong>salto cualitativo</strong> en la atención a nuestros pacientes. Eso es lo que realmente importa”.</p>
+
+        <p>La ciudadanía, los gremios y los funcionarios públicos estarán atentos al desarrollo de este proceso. Lo que está en juego es nada menos que la <strong>confianza en el sistema de salud público</strong> y la certeza de que los recursos del Estado se utilizan con eficiencia y transparencia. El caso de la resonancia magnética que no funcionó se ha convertido en un símbolo de lo que no debe repetirse. La torre de control pretende ser la herramienta que impida que la historia se repita.</p>
+
+        <p>El ministro Dyer concluyó su intervención con un mensaje directo a los proveedores de equipos médicos: “Desde ahora, <strong>cada equipo será vigilado</strong>. Cada contrato será revisado. Cada sol será justificado. Los invito a trabajar con nosotros para construir un sistema de salud del que todos podamos sentirnos orgullosos”. Queda por ver si las palabras se traducen en acciones concretas y sostenibles. Pero, sin duda, el primer paso ya se ha dado.</p>
+
+        <div class="article-footer">
+            <div class="tags">
+                <span>#Minsa</span>
+                <span>#TorreDeControl</span>
+                <span>#EquiposMédicos</span>
+                <span>#Transparencia</span>
+                <span>#SaludPeru</span>
+                <span>#Auditoría</span>
+            </div>
+            <div>Comparte esta noticia</div>
+        </div>
+
+    </div>
+
+</div>
+
+
+    <footer>
+        <p>Autor: ROSA EMILY | Fecha: 2026-08-11</p>
+    </footer>
+</body>
+</html>

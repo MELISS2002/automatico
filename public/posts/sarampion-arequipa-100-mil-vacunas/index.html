@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarampión en Arequipa: 100 mil vacunas disponibles y campañas en colegios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f4f6fa;
+            color: #1a2634;
+            line-height: 1.7;
+            padding: 0 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 35px auto;
+            background: #ffffff;
+            border-radius: 32px;
+            box-shadow: 0 20px 60px rgba(0, 20, 40, 0.08);
+            overflow: hidden;
+            padding: 0 0 40px 0;
+        }
+
+        .hero {
+            background: linear-gradient(145deg, #6b2b6b 0%, #8b3a8b 100%);
+            padding: 50px 40px 40px 40px;
+            color: white;
+        }
+
+        .hero-category {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.2);
+            color: #facc15;
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 4px 14px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 span {
+            color: #facc15;
+        }
+
+        .hero .subhead {
+            font-size: 1.15rem;
+            opacity: 0.92;
+            max-width: 750px;
+            font-weight: 400;
+            border-left: 4px solid #facc15;
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 25px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            border-top: 1px solid rgba(255,255,255,0.15);
+            padding-top: 20px;
+        }
+
+        .hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .featured-image {
+            margin: -30px 30px 30px 30px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+            background: #e9edf2;
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .featured-image img:hover {
+            transform: scale(1.01);
+        }
+
+        .image-caption {
+            padding: 12px 20px;
+            background: #f8fafc;
+            font-size: 0.85rem;
+            color: #475569;
+            border-top: 1px solid #e2e8f0;
+            font-style: italic;
+        }
+
+        .article-body {
+            padding: 10px 40px 0 40px;
+        }
+
+        .article-body p {
+            margin-bottom: 1.6rem;
+            font-size: 1.07rem;
+            color: #1e293b;
+        }
+
+        .article-body h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-top: 2.8rem;
+            margin-bottom: 1rem;
+            color: #6b2b6b;
+            border-bottom: 3px solid #eef2f6;
+            padding-bottom: 10px;
+        }
+
+        .article-body h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+            color: #7a307a;
+        }
+
+        .article-body blockquote {
+            background: #f5edf5;
+            border-left: 6px solid #8b3a8b;
+            padding: 20px 28px;
+            margin: 28px 0;
+            border-radius: 12px;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #2d1b2d;
+            font-weight: 500;
+        }
+
+        .article-body blockquote strong {
+            color: #6b2b6b;
+        }
+
+        .highlight-box {
+            background: #f9f0f9;
+            border: 1px solid #d4a0d4;
+            border-radius: 16px;
+            padding: 24px 28px;
+            margin: 30px 0;
+        }
+
+        .highlight-box h4 {
+            color: #6b2b6b;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .highlight-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .highlight-box ul li {
+            padding: 8px 0 8px 30px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="%236b2b6b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>') left center no-repeat;
+            background-size: 18px;
+            font-weight: 500;
+        }
+
+        .inline-image {
+            margin: 30px 0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+        }
+
+        .inline-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .inline-image .img-caption {
+            background: #f8fafc;
+            padding: 10px 18px;
+            font-size: 0.85rem;
+            color: #475569;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-item {
+            background: #f5edf5;
+            padding: 20px 15px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid #e2d5e2;
+        }
+
+        .stat-item .number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #6b2b6b;
+        }
+
+        .stat-item .label {
+            font-size: 0.85rem;
+            color: #475569;
+            font-weight: 500;
+        }
+
+        .article-footer {
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 2px solid #eef2f6;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        .tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tags span {
+            background: #eef2f6;
+            padding: 4px 14px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #1a3f62;
+        }
+
+        .alert-banner {
+            background: #fef2f2;
+            border: 1px solid #fca5a5;
+            border-radius: 12px;
+            padding: 16px 22px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .alert-banner .icon {
+            font-size: 1.8rem;
+        }
+
+        .alert-banner .text {
+            font-weight: 600;
+            color: #991b1b;
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 0 10px;
+            }
+            .container {
+                border-radius: 20px;
+                margin: 20px auto;
+            }
+            .hero {
+                padding: 30px 20px 25px 20px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero .subhead {
+                font-size: 1rem;
+                padding-left: 14px;
+            }
+            .featured-image {
+                margin: -20px 15px 20px 15px;
+            }
+            .article-body {
+                padding: 0 20px 0 20px;
+            }
+            .article-body p {
+                font-size: 1rem;
+            }
+            .article-body h2 {
+                font-size: 1.5rem;
+            }
+            .stat-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .hero-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.4rem;
+            }
+            .stat-grid {
+                grid-template-columns: 1fr;
+            }
+            .highlight-box {
+                padding: 16px;
+            }
+            .article-body blockquote {
+                padding: 14px 18px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <div class="hero-category"> Salud · Inmunización</div>
+        <h1>Sarampión en Arequipa: <span>100 mil vacunas disponibles</span> y campañas de vacunación en colegios para frenar brote</h1>
+        <div class="subhead">El Minsa activa un operativo masivo en la región arequipeña con 100.000 dosis de la vacuna SRP (sarampión, rubéola y paperas) para proteger a niños y adolescentes de 5 a 18 años, tras confirmarse más de 80 contagios en los últimos 30 días.</div>
+        <div class="hero-meta">
+            <span> Lima, 11 de agosto de 2026</span>
+            <span>✍️ Por Redacción de Salud</span>
+            <span>⏱ Lectura: 6 min</span>
+        </div>
+    </div>
+
+    <div class="featured-image">
+        <img src="https://image.pollinations.ai/prompt/measles%20vaccination%20campaign%20Arequipa%20Peru%20school%20children%20receiving%20vaccine%20health%20workers%20classroom" alt="Campaña de vacunación contra el sarampión en un colegio de Arequipa" loading="lazy">
+        <div class="image-caption">Niños de una institución educativa de Arequipa reciben la vacuna SRP durante la campaña de inmunización. Foto: Minsa / Dirección Regional de Salud Arequipa.</div>
+    </div>
+
+    <div class="article-body">
+
+        <div class="alert-banner">
+            <span class="icon">⚠️</span>
+            <span class="text">Arequipa en alerta: 83 casos confirmados de sarampión en las últimas cuatro semanas. La mayoría son niños no vacunados o con esquema incompleto.</span>
+        </div>
+
+        <p>El Ministerio de Salud (Minsa) ha desplegado una <strong>campaña de vacunación masiva en la región Arequipa</strong> con 100.000 dosis de la vacuna SRP (sarampión, rubéola y paperas) para hacer frente al brote de sarampión que ha puesto en alerta a las autoridades sanitarias. La estrategia se centrará en los colegios públicos y privados de la región, donde se estima que más de <strong>120.000 niños y adolescentes</strong> de 5 a 18 años serán inmunizados en las próximas semanas.</p>
+
+        <p>El brote, que comenzó a mediados de julio con casos aislados en los distritos de Cerro Colorado y Paucarpata, ha crecido rápidamente. Hasta la fecha, la Dirección Regional de Salud (Diresa) de Arequipa ha confirmado <strong>83 casos positivos</strong>, de los cuales el 72% corresponde a menores de 15 años que no contaban con el esquema de vacunación completo. Ante esta situación, el Minsa declaró una <strong>alerta epidemiológica</strong> y movilizó las dosis necesarias para contener la propagación del virus.</p>
+
+        <blockquote>
+            “El sarampión es una enfermedad altamente contagiosa y potencialmente grave. Un caso puede infectar a 15 personas si no están vacunadas. Por eso, nuestra prioridad es llegar a cada niño y adolescente en los colegios de Arequipa. Con 100 mil dosis tenemos para cubrir a toda la población objetivo. No vamos a descansar hasta que cada estudiante esté protegido”.
+            <br><strong>— Ministro de Salud, Luis Dyer, durante el lanzamiento de la campaña.</strong>
+        </blockquote>
+
+        <h2>El contexto: un brote que reaviva la preocupación</h2>
+
+        <p>El sarampión, una enfermedad que se creía controlada en el Perú gracias a las altas coberturas de vacunación, ha reaparecido en Arequipa con una virulencia que ha tomado por sorpresa a las autoridades. El último brote significativo en el país se registró en 2019 en la región Loreto, donde se confirmaron más de 700 casos. Desde entonces, las coberturas de vacunación han experimentado una <strong>caída preocupante</strong>, agravada por la pandemia de COVID-19 y el crecimiento de movimientos antivacunas en algunos sectores.</p>
+
+        <p>En Arequipa, la cobertura de la primera dosis de la vacuna SRP (a los 12 meses) cayó al <strong>78%</strong> en 2025, muy por debajo del 95% recomendado por la Organización Mundial de la Salud (OMS) para garantizar la inmunidad de rebaño. La segunda dosis (a los 18 meses) apenas alcanza el <strong>65%</strong>. Esta brecha de inmunidad ha creado un <strong>caldo de cultivo</strong> para que el virus se propague rápidamente entre la población infantil y adolescente.</p>
+
+        <p>“El sarampión no es un resfriado. Puede causar neumonía, encefalitis y hasta la muerte, especialmente en niños pequeños y personas con sistemas inmunológicos debilitados. La única forma de prevenirlo es la vacunación”, enfatizó la doctora Ana María Salas, epidemióloga de la Diresa Arequipa.</p>
+
+        <div class="inline-image">
+            <img src="https://image.pollinations.ai/prompt/measles%20outbreak%20Arequipa%20Peru%20hospital%20pediatric%20ward%20children%20with%20rash%20medical%20care" alt="Hospital pediátrico de Arequipa atendiendo casos de sarampión" loading="lazy">
+            <div class="img-caption">El Hospital Regional de Arequipa ha habilitado un área especial para la atención de casos de sarampión, principalmente en niños.</div>
+        </div>
+
+        <h2>La estrategia: vacunación en colegios y brigadas móviles</h2>
+
+        <p>La campaña de vacunación en Arequipa tiene dos frentes principales. Por un lado, las <strong>brigadas de inmunización</strong> recorrerán más de <strong>500 instituciones educativas</strong> de la región para vacunar a los estudiantes directamente en sus aulas, con el consentimiento informado de los padres. Por otro lado, se han habilitado <strong>62 centros de vacunación</strong> fijos en los establecimientos de salud de la región para atender a niños y adolescentes que no asistan a clases presenciales o que pertenezcan a otras franjas etarias.</p>
+
+        <p>El viceministro de Salud Pública, <strong>Jorge Ramírez</strong>, detalló que el operativo cuenta con <strong>300 profesionales de la salud</strong> capacitados, incluyendo enfermeros y técnicos de enfermería, que trabajan en jornadas de vacunación de lunes a domingo. “No vamos a dejar a ningún niño sin protección. Estamos coordinando con los directores de los colegios para que los padres firmen las autorizaciones y podamos vacunar a sus hijos en el menor tiempo posible”, indicó.</p>
+
+        <div class="stat-grid">
+            <div class="stat-item">
+                <div class="number">100,000</div>
+                <div class="label">Dosis disponibles</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">83</div>
+                <div class="label">Casos confirmados</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">500+</div>
+                <div class="label">Colegios visitados</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">95%</div>
+                <div class="label">Meta de cobertura</div>
+            </div>
+        </div>
+
+        <p>La estrategia también incluye una <strong>campaña de comunicación intensiva</strong> en medios locales, redes sociales y perifoneo en los distritos más afectados. “Sabemos que hay desconfianza en algunas familias, por eso estamos trabajando con líderes comunitarios, profesores y personal de salud para llevar información clara y precisa. La vacuna SRP es segura, gratuita y salva vidas”, afirmó Ramírez.</p>
+
+        <h2>El rol de los colegios y la comunidad educativa</h2>
+
+        <p>La participación de los colegios ha sido clave para el éxito de la campaña. La Dirección Regional de Educación (DRE) de Arequipa ha emitido una directiva que <strong>facilita la entrada de las brigadas de salud a las escuelas</strong> y ha convocado a los padres de familia a reuniones informativas sobre la importancia de la vacunación. “La escuela es el espacio ideal para llegar a la población infantil. Aquí están concentrados los niños y adolescentes, y podemos vacunarlos en un entorno seguro y conocido”, explicó la directora regional de Educación, Elena Huamán.</p>
+
+        <p>En el colegio San José de Cerro Colorado, uno de los primeros en recibir la visita de las brigadas, la jornada de vacunación fue todo un éxito. En solo dos días, se inmunizó a <strong>1.200 estudiantes</strong> de los niveles primario y secundario. “Es muy fácil. Llegamos, los niños se alistan en fila, el enfermero les aplica la vacuna y en cinco minutos están listos. Todo es muy rápido y ordenado”, describió la enfermera Rosa Zapata, miembro de una de las brigadas.</p>
+
+        <blockquote>
+            “Mi hija tiene 7 años y no había recibido su dosis de refuerzo porque lo habíamos postergado. Cuando me enteré de la campaña en el colegio, firmé la autorización de inmediato. Prefiero que la vacune el personal del Minsa en la escuela a tener que llevarla al centro de salud con el riesgo de que se contagie en el camino”.
+            <br><strong>— Gloria Muñoz, madre de familia de Paucarpata.</strong>
+        </blockquote>
+
+        <div class="inline-image">
+            <img src="https://image.pollinations.ai/prompt/school%20vaccination%20campaign%20Arequipa%20Peru%20children%20queue%20health%20workers%20classroom%20measles" alt="Brigada de vacunación en un colegio de Arequipa con estudiantes en fila" loading="lazy">
+            <div class="img-caption">Estudiantes de un colegio arequipeño forman parte de la campaña de vacunación contra el sarampión, rubéola y paperas.</div>
+        </div>
+
+        <p>Sin embargo, también ha habido resistencia en algunos sectores. Pequeños grupos de padres han expresado su rechazo a la vacunación, influenciados por información falsa difundida en redes sociales. Ante esto, el Minsa ha reforzado la <strong>estrategia de comunicación personalizada</strong>, con enfermeros y psicólogos que atienden las inquietudes de las familias. “Hay mitos que debemos desterrar. La vacuna SRP no causa autismo ni tiene efectos secundarios graves. Es una de las vacunas más estudiadas y seguras del mundo”, subrayó la doctora Salas.</p>
+
+        <h2>El sarampión: síntomas y complicaciones</h2>
+
+        <p>El sarampión es una enfermedad viral que se transmite por vía aérea al toser o estornudar. Sus síntomas iniciales son similares a los de un resfriado: <strong>fiebre alta, tos, congestión nasal y ojos enrojecidos</strong>. A los pocos días, aparece una <strong>erupción rojiza</strong> que comienza en el rostro y se extiende al resto del cuerpo. En casos graves, el virus puede causar neumonía, infecciones del oído, diarrea severa y encefalitis (inflamación del cerebro).</p>
+
+        <p>Las complicaciones son más frecuentes en <strong>niños menores de 5 años, adultos mayores de 30 años y personas con sistemas inmunológicos debilitados</strong>. En países en desarrollo, el sarampión sigue siendo una de las principales causas de muerte infantil. “No debemos bajar la guardia. Aunque en el Perú la mortalidad por sarampión es baja gracias a la atención médica, un brote no controlado puede desbordar los servicios de salud y dejar secuelas graves en los niños”, advirtió la epidemióloga.</p>
+
+        <div class="highlight-box">
+            <h4> Datos clave sobre la campaña en Arequipa</h4>
+            <ul>
+                <li><strong>Dosis disponibles:</strong> 100.000 vacunas SRP.</li>
+                <li><strong>Población objetivo:</strong> Niños y adolescentes de 5 a 18 años.</li>
+                <li><strong>Colegios:</strong> Más de 500 instituciones educativas.</li>
+                <li><strong>Centros de vacunación:</strong> 62 establecimientos de salud.</li>
+                <li><strong>Brigadas:</strong> 300 profesionales de la salud.</li>
+                <li><strong>Meta de cobertura:</strong> Alcanzar el 95% de inmunización.</li>
+            </ul>
+        </div>
+
+        <h2>La respuesta de las autoridades locales y regionales</h2>
+
+        <p>El gobernador regional de Arequipa, <strong>Jorge Lozano</strong>, se ha sumado al llamado de vacunación y ha dispuesto que las oficinas de la región apoyen con la logística y la difusión. “Estamos en un momento crítico. El sarampión puede paralizar nuestra región si no actuamos con rapidez. Como gobierno regional, ponemos a disposición todos nuestros recursos para que esta campaña sea un éxito”, declaró Lozano durante una visita al colegio San José.</p>
+
+        <p>Por su parte, el alcalde provincial de Arequipa, <strong>Víctor Linares</strong>, anunció que los municipios distritales coordinarán con las DIRESAs para facilitar el acceso a los centros de vacunación y ofrecer transporte gratuito a las familias que lo necesiten. “No queremos que el miedo o la falta de información impidan que nuestros niños estén protegidos. Vamos a llegar hasta el último rincón de la ciudad y de las zonas rurales”, aseguró el burgomaestre.</p>
+
+        <h2>Próximos pasos: monitoreo y evaluación de la campaña</h2>
+
+        <p>El Minsa ha establecido un <strong>sistema de monitoreo</strong> para evaluar el avance de la campaña de vacunación en tiempo real. A través de un aplicativo móvil, las brigadas reportan el número de dosis aplicadas, la cobertura por colegio y distrito, y cualquier incidencia durante la jornada. Esta información permite ajustar la estrategia y redirigir recursos a las zonas con menor cobertura.</p>
+
+        <p>“Vamos a hacer un seguimiento diario. Si vemos que en algún distrito la cobertura es baja, movilizaremos más brigadas y extenderemos los horarios de vacunación. No vamos a parar hasta que todos los niños estén protegidos”, afirmó el viceministro Ramírez.</p>
+
+        <p>La campaña también se está coordinando con el Instituto Nacional de Salud (INS) para realizar la <strong>vigilancia epidemiológica</strong> de los casos confirmados y estudiar las características del virus que circula en la región. “Tenemos que entender por qué está ocurriendo este brote y tomar medidas para que no se repita. Es probable que estemos frente a una cepa que circula en países vecinos, por lo que también fortalecemos la vigilancia en las fronteras”, explicó la doctora Salas.</p>
+
+        <div class="inline-image">
+            <img src="https://image.pollinations.ai/prompt/health%20workers%20register%20vaccination%20Arequipa%20Peru%20school%20campaign%20data%20monitoring%20tablet" alt="Personal de salud registrando datos de vacunación en una tableta durante la campaña" loading="lazy">
+            <div class="img-caption">Las brigadas utilizan dispositivos móviles para registrar en tiempo real las dosis aplicadas y monitorear la cobertura de vacunación.</div>
+        </div>
+
+        <h2>Una lección para el futuro</h2>
+
+        <p>El brote de sarampión en Arequipa es un <strong>recordatorio de la fragilidad de nuestros sistemas de inmunización</strong>. La caída de las coberturas de vacunación, el impacto de la pandemia en los servicios de salud y el auge de la desinformación son factores que han contribuido a la reemergencia de enfermedades que creíamos controladas. Para evitar que esto vuelva a ocurrir, el Minsa ha anunciado que <strong>fortalecerá las campañas de comunicación y educación</strong> sobre la importancia de las vacunas en todo el país.</p>
+
+        <p>“El sarampión es una enfermedad que podemos erradicar. Tenemos las herramientas, las vacunas y el conocimiento. Lo que necesitamos es el compromiso de todos: padres, maestros, autoridades y personal de salud. Proteger a nuestros niños es proteger el futuro del Perú”, concluyó el ministro Dyer.</p>
+
+        <p>La campaña en Arequipa continuará durante todo el mes de agosto y, si es necesario, se extenderá hasta septiembre. Los colegios que aún no han recibido la visita de las brigadas serán atendidos en los próximos días. Se recomienda a los padres de familia estar atentos a los comunicados oficiales y acudir al centro de salud más cercano si sus hijos no han sido vacunados. Las 100.000 dosis están listas. La respuesta de la población determinará si el brote se controla o se convierte en una crisis sanitaria de mayores dimensiones.</p>
+
+        <p>La comunidad de Arequipa, resiliente y organizada, ya ha demostrado en otras ocasiones su capacidad para enfrentar desafíos. Ahora, con la vacuna como aliada, está llamada a escribir una nueva página en la lucha contra una enfermedad que no tiene por qué regresar. <strong>Vacunar es proteger. Proteger es vivir.</strong></p>
+
+        <div class="article-footer">
+            <div class="tags">
+                <span>#Sarampión</span>
+                <span>#Vacunas</span>
+                <span>#Arequipa</span>
+                <span>#SaludPeru</span>
+                <span>#CampañaEscolar</span>
+                <span>#Inmunización</span>
+            </div>
+            <div>Comparte esta noticia</div>
+        </div>
+
+    </div>
+
+</div>
+
+
+    <footer>
+        <p>Autor: ROSA EMILY | Fecha: 2026-08-11</p>
+    </footer>
+</body>
+</html>

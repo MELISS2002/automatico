@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministro Luis Dyer: "No hay dinero" y medidas urgentes para el Minsa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f4f7fb;
+            color: #1a2634;
+            line-height: 1.7;
+            padding: 0 20px;
+        }
+
+        .container {
+            max-width: 880px;
+            margin: 40px auto;
+            background: #ffffff;
+            border-radius: 32px;
+            box-shadow: 0 20px 60px rgba(0, 20, 40, 0.08);
+            overflow: hidden;
+            padding: 0 0 40px 0;
+        }
+
+        .hero {
+            background: linear-gradient(145deg, #0b2a4a 0%, #1a3f62 100%);
+            padding: 50px 40px 40px 40px;
+            color: white;
+        }
+
+        .hero-category {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.2);
+            color: #facc15;
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 4px 14px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 span {
+            color: #facc15;
+        }
+
+        .hero .subhead {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            font-weight: 400;
+            border-left: 4px solid #facc15;
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 25px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            border-top: 1px solid rgba(255,255,255,0.15);
+            padding-top: 20px;
+        }
+
+        .hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .featured-image {
+            margin: -30px 30px 30px 30px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+            background: #e9edf2;
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .featured-image img:hover {
+            transform: scale(1.01);
+        }
+
+        .image-caption {
+            padding: 12px 20px;
+            background: #f8fafc;
+            font-size: 0.85rem;
+            color: #475569;
+            border-top: 1px solid #e2e8f0;
+            font-style: italic;
+        }
+
+        .article-body {
+            padding: 10px 40px 0 40px;
+        }
+
+        .article-body p {
+            margin-bottom: 1.6rem;
+            font-size: 1.08rem;
+            color: #1e293b;
+        }
+
+        .article-body h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-top: 2.8rem;
+            margin-bottom: 1rem;
+            color: #0b2a4a;
+            border-bottom: 3px solid #eef2f6;
+            padding-bottom: 10px;
+        }
+
+        .article-body h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+            color: #1a3f62;
+        }
+
+        .article-body blockquote {
+            background: #f1f5f9;
+            border-left: 6px solid #facc15;
+            padding: 20px 28px;
+            margin: 28px 0;
+            border-radius: 12px;
+            font-style: italic;
+            font-size: 1.15rem;
+            color: #0f2a44;
+            font-weight: 500;
+        }
+
+        .article-body blockquote strong {
+            color: #b45309;
+        }
+
+        .highlight-box {
+            background: #fef9e7;
+            border: 1px solid #fde68a;
+            border-radius: 16px;
+            padding: 24px 28px;
+            margin: 30px 0;
+        }
+
+        .highlight-box h4 {
+            color: #92400e;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .highlight-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .highlight-box ul li {
+            padding: 8px 0 8px 30px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="%23b45309" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>') left center no-repeat;
+            background-size: 18px;
+            font-weight: 500;
+        }
+
+        .inline-image {
+            margin: 30px 0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+        }
+
+        .inline-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .inline-image .img-caption {
+            background: #f8fafc;
+            padding: 10px 18px;
+            font-size: 0.85rem;
+            color: #475569;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-item {
+            background: #f1f5f9;
+            padding: 20px 15px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+
+        .stat-item .number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #0b2a4a;
+        }
+
+        .stat-item .label {
+            font-size: 0.85rem;
+            color: #475569;
+            font-weight: 500;
+        }
+
+        .article-footer {
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 2px solid #eef2f6;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        .tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tags span {
+            background: #eef2f6;
+            padding: 4px 14px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #1a3f62;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 0 10px;
+            }
+            .container {
+                border-radius: 20px;
+                margin: 20px auto;
+            }
+            .hero {
+                padding: 30px 20px 25px 20px;
+            }
+            .hero h1 {
+                font-size: 2.0rem;
+            }
+            .hero .subhead {
+                font-size: 1rem;
+                padding-left: 14px;
+            }
+            .featured-image {
+                margin: -20px 15px 20px 15px;
+            }
+            .article-body {
+                padding: 0 20px 0 20px;
+            }
+            .article-body p {
+                font-size: 1rem;
+            }
+            .article-body h2 {
+                font-size: 1.5rem;
+            }
+            .stat-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .hero-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            .stat-grid {
+                grid-template-columns: 1fr;
+            }
+            .highlight-box {
+                padding: 16px;
+            }
+            .article-body blockquote {
+                padding: 14px 18px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <div class="hero-category"> Política · Salud</div>
+        <h1>Ministro Luis Dyer: <span>“No hay dinero, se lo gastaron todo”</span> y las medidas urgentes que anuncia para rescatar el Minsa</h1>
+        <div class="subhead">El titular del Ministerio de Salud reveló que las arcas están vacías y que la situación es crítica, pero presentó un plan de cinco puntos para evitar el colapso sanitario.</div>
+        <div class="hero-meta">
+            <span> Lima, 11 de agosto de 2026</span>
+            <span>✍️ Por Redacción Política</span>
+            <span>⏱ Lectura: 6 min</span>
+        </div>
+    </div>
+
+    <div class="featured-image">
+        <img src="https://image.pollinations.ai/prompt/Luis%20Dyer%20Peruvian%20Minister%20of%20Health%20press%20conference%20serious%20expression%20official%20podium%20Peru%20flag%20background%20crisis" alt="Ministro Luis Dyer en conferencia de prensa anunciando medidas de emergencia" loading="lazy">
+        <div class="image-caption">El ministro Luis Dyer durante su comparecencia ante los medios. Foto: Pool de prensa del Minsa.</div>
+    </div>
+
+    <div class="article-body">
+
+        <p><strong>“No hay dinero, se lo gastaron todo”.</strong> Con esta contundente frase, el ministro de Salud, <strong>Luis Dyer</strong>, encendió todas las alarmas este martes al reconocer que el presupuesto del Ministerio de Salud (Minsa) para el presente ejercicio fiscal se encuentra prácticamente agotado. En una conferencia de prensa que duró más de dos horas, el funcionario no solo diagnosticó la grave crisis financiera heredada, sino que presentó un paquete de <strong>cinco medidas urgentes</strong> que buscan rescatar un sistema sanitario que, según sus propias palabras, “está al borde del paro técnico”.</p>
+
+        <p>La declaración del ministro Dyer se produce en un momento especialmente delicado para el sector salud en Perú. Los últimos informes de la Contraloría General de la República ya advertían sobre un incremento del 40% en los gastos corrientes no justificados durante el primer semestre del año, así como una ejecución presupuestal que superaba el 90% de lo asignado, pero con resultados que no se reflejan en la mejora de los servicios básicos. Frente a este escenario, el ministro fue claro: <strong>“No hay margen para gastos superfluos. Lo que viene es un ajuste doloroso, pero necesario, para que el Minsa no quiebre”</strong>.</p>
+
+        <blockquote>
+            “Hemos revisado cada partida y nos encontramos con un agujero financiero de más de 1.200 millones de soles. La administración anterior comprometió fondos para proyectos que no se ejecutaron y contrató personal sin criterios técnicos. Se lo gastaron todo, y ahora nosotros tenemos que hacer magia con lo que no tenemos”.
+            <br><strong>— Luis Dyer, ministro de Salud.</strong>
+        </blockquote>
+
+        <p>El anuncio ha generado una ola de reacciones en todo el espectro político y gremial. Mientras algunos sectores del Congreso piden su interpelación inmediata, otros respaldan la transparencia del ministro y consideran que es el primer paso para una reestructuración profunda. Lo cierto es que Dyer ha logrado poner sobre la mesa un problema que muchos preferían ocultar: el <strong>Minsa está en bancarrota técnica</strong> y las promesas de campaña chocan con una realidad fiscal implacable.</p>
+
+        <div class="inline-image">
+            <img src="https://image.pollinations.ai/prompt/empty%20hospital%20ward%20Peru%20lack%20of%20medical%20supplies%20crisis%20health%20care%20shortage%20beds" alt="Unidad hospitalaria con escasez de insumos y camas vacías por falta de presupuesto" loading="lazy">
+            <div class="img-caption">Imagen referencial de un hospital público peruano que evidencia la escasez de insumos y la reducción de camas operativas debido a la crisis presupuestaria.</div>
+        </div>
+
+        <h2>El diagnóstico: más de 1.200 millones de soles en el rojo</h2>
+
+        <p>Según la exposición del ministro, el déficit acumulado del Minsa asciende a <strong>1.247 millones de soles</strong>, una cifra que representa casi el 15% del presupuesto anual total de la cartera. Dyer detalló que este desbalance se origina en tres factores principales: el <strong>sobrecoste de medicamentos</strong> adquiridos por urgencia durante la gestión anterior, el <strong>incremento descontrolado de la planilla</strong> sin respaldo en productividad, y la <strong>paralización de obras</strong> de infraestructura que ya tenían un avance del 70% pero que se quedaron sin recursos para culminar.</p>
+
+        <p>“Nos encontramos con hospitales que fueron construidos al 80%, pero que no pueden abrirse porque no hay dinero para equipamiento ni para contratar al personal especializado. Esa es la herencia que recibimos”, enfatizó Dyer, quien acompañó su presentación con un informe técnico que fue distribuido a los medios de comunicación. El documento revela, además, que el <strong>stock de medicamentos esenciales</strong> en los almacenes del Minsa ha caído un 35% en comparación con el mismo periodo del año anterior, poniendo en riesgo el abastecimiento para enfermedades crónicas y oncológicas.</p>
+
+        <div class="stat-grid">
+            <div class="stat-item">
+                <div class="number">S/1.247M</div>
+                <div class="label">Déficit presupuestal</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">-35%</div>
+                <div class="label">Stock de medicamentos</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">70%</div>
+                <div class="label">Obras paralizadas</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">5</div>
+                <div class="label">Medidas urgentes</div>
+            </div>
+        </div>
+
+        <h2>Plan de rescate: las 5 medidas urgentes del ministro Dyer</h2>
+
+        <p>Lejos de limitarse a un diagnóstico catastrófico, el ministro presentó un <strong>plan de contingencia estructurado en cinco ejes</strong> que, según afirmó, “permitirán respirar al Minsa en los próximos 90 días y sentar las bases para una reforma estructural”. Estas medidas combinan ajustes fiscales, auditorías, cooperación internacional y un llamado a la responsabilidad compartida con los gobiernos regionales.</p>
+
+        <h3>1. Suspensión inmediata de gastos no prioritarios</h3>
+        <p>Dyer ordenó la <strong>congelación de todas las contrataciones de bienes y servicios que no estén directamente vinculados a la atención de pacientes</strong>. Esto incluye la suspensión de viajes al exterior, la cancelación de estudios de preinversión que no sean estratégicos, y la revisión de todos los contratos de consultoría. “Cada sol que gastamos debe llegar al paciente. No hay dinero para lujos ni para burocracia innecesaria”, sentenció.</p>
+
+        <h3>2. Auditoría forense y denuncia penal</h3>
+        <p>El ministro anunció que ha solicitado a la Contraloría y a la Fiscalía Especializada en Delitos de Corrupción una <strong>auditoría forense integral</strong> a todas las compras y contrataciones realizadas entre enero de 2025 y julio de 2026. “No vamos a tapar nada. Si hay responsabilidades, que se determinen y se sancionen”, afirmó Dyer, revelando que ya se han identificado 42 contratos con graves indicios de sobrevaloración.</p>
+
+        <h3>3. Reasignación de fondos de cooperación internacional</h3>
+        <p>Perú tiene líneas de crédito activas con el Banco Mundial, el BID y la Cooperación Española por un monto aproximado de <strong>USD 350 millones</strong> que estaban destinados a proyectos de largo plazo. Dyer anunció que reorientará estos recursos para cubrir el <strong>abastecimiento de medicamentos de alto costo</strong> y el pago de sueldos del personal asistencial. “Es un uso excepcional, pero la ley lo permite en estados de emergencia”, justificó.</p>
+
+        <div class="inline-image">
+            <img src="https://image.pollinations.ai/prompt/emergency%20meeting%20Peru%20health%20authorities%20doctors%20crisis%20room%20strategic%20plan%20rescue%20Minsa" alt="Reunión de urgencia de autoridades sanitarias peruanas para definir el plan de rescate del Minsa" loading="lazy">
+            <div class="img-caption">El ministro Dyer junto a su equipo técnico y representantes de los colegios médicos durante la mesa de trabajo donde se definieron las medidas de emergencia.</div>
+        </div>
+
+        <h3>4. Reducción de la planilla administrativa en un 20%</h3>
+        <p>Una de las medidas más polémicas es la <strong>reducción del 20% de la planilla administrativa</strong> del Minsa y sus órganos descentralizados. Dyer aclaró que no se trata de despidos masivos, sino de una optimización mediante la <strong>no renovación de contratos CAS que no sean esenciales</strong>, la reubicación de personal a áreas de mayor necesidad, y una revisión de los niveles remunerativos. “El personal de salud (médicos, enfermeros, técnicos) no será afectado. Al contrario, buscaremos darles mayor estabilidad”, prometió.</p>
+
+        <h3>5. Creación de un “Fondo de Emergencia Sanitaria” con aportes solidarios</h3>
+        <p>Finalmente, el ministro hizo un llamado al sector privado y a la ciudadanía para contribuir a un <strong>fondo voluntario de emergencia</strong> que permita cubrir los vacíos más inmediatos. Dyer reveló que ya ha recibido compromisos de tres grandes empresas mineras y de la banca privada por un monto inicial de <strong>180 millones de soles</strong>, que serán destinados exclusivamente a la compra de insumos críticos y al pago de incentivos al personal de primera línea.</p>
+
+        <div class="highlight-box">
+            <h4> Resumen ejecutivo del plan</h4>
+            <ul>
+                <li><strong>Congelamiento:</strong> Suspensión total de gastos no asistenciales hasta nuevo aviso.</li>
+                <li><strong>Auditoría:</strong> Revisión forense de todos los contratos sospechosos con denuncia penal.</li>
+                <li><strong>Cooperación:</strong> Redireccionamiento de USD 350 millones para compras urgentes.</li>
+                <li><strong>Personal:</strong> Recorte del 20% en planilla administrativa, protegiendo al personal de salud.</li>
+                <li><strong>Fondo solidario:</strong> Aportes de privados y ciudadanía para cubrir el déficit inmediato.</li>
+            </ul>
+        </div>
+
+        <h2>Reacciones y el pulso político</h2>
+
+        <p>Las declaraciones del ministro han sacudido el escenario político. Desde el Congreso, voces de la oposición calificaron el anuncio como “una admisión de fracaso” y exigieron la presencia del titular de Salud en la comisión de presupuesto para que explique con lujo de detalle el origen del déficit. Sin embargo, el presidente del Consejo de Ministros salió en defensa de Dyer y afirmó que “el ministro está siendo valiente al decir la verdad, algo que no se había hecho en años”.</p>
+
+        <p>Los gremios médicos, por su parte, mostraron una postura mixta. El Colegio Médico del Perú respaldó la transparencia del ministro, pero expresó su preocupación por la posibilidad de que el ajuste fiscal termine afectando la calidad de la atención. “Apoyamos las auditorías, pero exigimos que el dinero ahorrado se reinvierta inmediatamente en los hospitales y centros de salud. No queremos que este plan sea una excusa para desmantelar el sistema público”, declaró el decano nacional.</p>
+
+        <p>Mientras tanto, los trabajadores administrativos del Minsa anunciaron un estado de alerta ante el posible recorte de personal, aunque el ministro se ha comprometido a mantener un diálogo permanente con los sindicatos. “Entendemos la incertidumbre, pero la prioridad hoy es salvar el sistema. Les aseguro que no habrá despidos arbitrarios; todo se hará con criterio técnico y con la debida compensación”, afirmó Dyer en una entrevista posterior.</p>
+
+        <h2>¿Qué sigue ahora? Hoja de ruta para los próximos 90 días</h2>
+
+        <p>El ministro detalló que el plan de rescate se ejecutará en tres fases. La <strong>primera fase (días 1 a 30)</strong> se centrará en el congelamiento de gastos y la identificación de los ahorros inmediatos. La <strong>segunda fase (días 31 a 60)</strong> estará dedicada a la reasignación de los fondos de cooperación y a la auditoría forense. Finalmente, la <strong>tercera fase (días 61 a 90)</strong> buscará implementar el nuevo modelo de gestión financiera y abrir el fondo solidario a la ciudadanía.</p>
+
+        <p>Dyer también anunció que el próximo lunes viajará a Washington para reunirse con directivos del Banco Mundial y acelerar el desembolso de los recursos comprometidos. “No tenemos tiempo que perder. Cada día sin acción es un día que los pacientes pagan con su salud”, concluyó el ministro, visiblemente afectado pero con un tono de determinación que muchos esperaban desde hace meses.</p>
+
+        <p>La ciudadanía, por ahora, espera con cautela. Las redes sociales se han llenado de memes y críticas, pero también de mensajes de apoyo al ministro por su franqueza. En los mercados y calles, el tema es el principal comentario: ¿realmente no hay dinero o se trata de una estrategia para justificar futuros recortes? Lo cierto es que la pelota está en el tejado del Congreso, que deberá decidir si apoya el plan de emergencia o si, por el contrario, profundiza la crisis con una confrontación política estéril.</p>
+
+        <p>Lo que queda claro es que el <strong>sistema de salud peruano atraviesa su peor momento financiero en décadas</strong>, y que las decisiones que se tomen en los próximos días serán determinantes para el futuro de millones de peruanos que dependen de la atención pública. El ministro Luis Dyer ha puesto el problema sobre la mesa, con todas sus aristas y contradicciones. Ahora, el reto es transformar esas palabras en acciones concretas que realmente lleguen a quien más lo necesita: el paciente que espera una cama, un medicamento o una cirugía.</p>
+
+        <div class="article-footer">
+            <div class="tags">
+                <span>#Salud</span>
+                <span>#Minsa</span>
+                <span>#LuisDyer</span>
+                <span>#CrisisSanitaria</span>
+                <span>#Presupuesto</span>
+            </div>
+            <div>Comparte esta noticia</div>
+        </div>
+
+    </div>
+
+</div>
+
+
+    <footer>
+        <p>Autor: ROSA EMILY | Fecha: 2026-08-11</p>
+    </footer>
+</body>
+</html>

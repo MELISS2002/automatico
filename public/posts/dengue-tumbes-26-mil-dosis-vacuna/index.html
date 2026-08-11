@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dengue en Tumbes: 26 mil dosis de vacuna para prevenir ante El Niño</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f4f8fc;
+            color: #1a2634;
+            line-height: 1.7;
+            padding: 0 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 35px auto;
+            background: #ffffff;
+            border-radius: 32px;
+            box-shadow: 0 20px 60px rgba(0, 20, 40, 0.08);
+            overflow: hidden;
+            padding: 0 0 40px 0;
+        }
+
+        .hero {
+            background: linear-gradient(145deg, #0b4b3b 0%, #1a6b55 100%);
+            padding: 50px 40px 40px 40px;
+            color: white;
+        }
+
+        .hero-category {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.2);
+            color: #facc15;
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 4px 14px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 span {
+            color: #facc15;
+        }
+
+        .hero .subhead {
+            font-size: 1.15rem;
+            opacity: 0.92;
+            max-width: 750px;
+            font-weight: 400;
+            border-left: 4px solid #facc15;
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 25px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            border-top: 1px solid rgba(255,255,255,0.15);
+            padding-top: 20px;
+        }
+
+        .hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .featured-image {
+            margin: -30px 30px 30px 30px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+            background: #e9edf2;
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .featured-image img:hover {
+            transform: scale(1.01);
+        }
+
+        .image-caption {
+            padding: 12px 20px;
+            background: #f8fafc;
+            font-size: 0.85rem;
+            color: #475569;
+            border-top: 1px solid #e2e8f0;
+            font-style: italic;
+        }
+
+        .article-body {
+            padding: 10px 40px 0 40px;
+        }
+
+        .article-body p {
+            margin-bottom: 1.6rem;
+            font-size: 1.07rem;
+            color: #1e293b;
+        }
+
+        .article-body h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-top: 2.8rem;
+            margin-bottom: 1rem;
+            color: #0b4b3b;
+            border-bottom: 3px solid #eef2f6;
+            padding-bottom: 10px;
+        }
+
+        .article-body h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+            color: #1a6b55;
+        }
+
+        .article-body blockquote {
+            background: #f1f5f9;
+            border-left: 6px solid #facc15;
+            padding: 20px 28px;
+            margin: 28px 0;
+            border-radius: 12px;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #0f2a44;
+            font-weight: 500;
+        }
+
+        .article-body blockquote strong {
+            color: #b45309;
+        }
+
+        .highlight-box {
+            background: #fef9e7;
+            border: 1px solid #fde68a;
+            border-radius: 16px;
+            padding: 24px 28px;
+            margin: 30px 0;
+        }
+
+        .highlight-box h4 {
+            color: #92400e;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .highlight-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .highlight-box ul li {
+            padding: 8px 0 8px 30px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="%23b45309" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>') left center no-repeat;
+            background-size: 18px;
+            font-weight: 500;
+        }
+
+        .inline-image {
+            margin: 30px 0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+        }
+
+        .inline-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .inline-image .img-caption {
+            background: #f8fafc;
+            padding: 10px 18px;
+            font-size: 0.85rem;
+            color: #475569;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-item {
+            background: #f1f5f9;
+            padding: 20px 15px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+
+        .stat-item .number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #0b4b3b;
+        }
+
+        .stat-item .label {
+            font-size: 0.85rem;
+            color: #475569;
+            font-weight: 500;
+        }
+
+        .article-footer {
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 2px solid #eef2f6;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        .tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tags span {
+            background: #eef2f6;
+            padding: 4px 14px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #1a3f62;
+        }
+
+        .alert-banner {
+            background: #fef2f2;
+            border: 1px solid #fca5a5;
+            border-radius: 12px;
+            padding: 16px 22px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .alert-banner .icon {
+            font-size: 1.8rem;
+        }
+
+        .alert-banner .text {
+            font-weight: 600;
+            color: #991b1b;
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 0 10px;
+            }
+            .container {
+                border-radius: 20px;
+                margin: 20px auto;
+            }
+            .hero {
+                padding: 30px 20px 25px 20px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero .subhead {
+                font-size: 1rem;
+                padding-left: 14px;
+            }
+            .featured-image {
+                margin: -20px 15px 20px 15px;
+            }
+            .article-body {
+                padding: 0 20px 0 20px;
+            }
+            .article-body p {
+                font-size: 1rem;
+            }
+            .article-body h2 {
+                font-size: 1.5rem;
+            }
+            .stat-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .hero-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.4rem;
+            }
+            .stat-grid {
+                grid-template-columns: 1fr;
+            }
+            .highlight-box {
+                padding: 16px;
+            }
+            .article-body blockquote {
+                padding: 14px 18px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <div class="hero-category"> Salud · Prevención</div>
+        <h1>Dengue en Tumbes: llegan <span>26 mil dosis de vacuna</span> para reforzar la prevención ante el Fenómeno El Niño</h1>
+        <div class="subhead">El Minsa despliega una campaña histórica de inmunización en la región norteña, la más golpeada por el dengue, mientras se prepara para el incremento de lluvias que podría disparar los contagios.</div>
+        <div class="hero-meta">
+            <span> Lima, 11 de agosto de 2026</span>
+            <span>✍️ Por Redacción de Salud</span>
+            <span>⏱ Lectura: 6 min</span>
+        </div>
+    </div>
+
+    <div class="featured-image">
+        <img src="https://image.pollinations.ai/prompt/dengue%20vaccination%20campaign%20Tumbes%20Peru%20children%20receiving%20vaccine%20health%20workers%20north%20region" alt="Campaña de vacunación contra el dengue en Tumbes con niños y personal de salud" loading="lazy">
+        <div class="image-caption">Niños y adolescentes de Tumbes reciben la vacuna contra el dengue en el inicio de la campaña de inmunización. Foto: Minsa / Dirección Regional de Salud Tumbes.</div>
+    </div>
+
+    <div class="article-body">
+
+        <div class="alert-banner">
+            <span class="icon">⚠️</span>
+            <span class="text">Fenómeno El Niño: se prevén lluvias intensas en el norte que podrían multiplicar los criaderos de mosquitos. La vacunación es clave para proteger a la población más vulnerable.</span>
+        </div>
+
+        <p>El Ministerio de Salud (Minsa) entregó este martes <strong>26.000 dosis de la vacuna contra el dengue</strong> al departamento de Tumbes, en el extremo norte del Perú, como parte de una estrategia de prevención ante el inminente <strong>Fenómeno El Niño</strong>. La región, que registra históricamente los índices más altos de incidencia de la enfermedad, se convertirá así en la primera del país en implementar una campaña de inmunización masiva dirigida a niños y adolescentes de 10 a 16 años, el grupo etario con mayor riesgo de complicaciones.</p>
+
+        <p>La llegada de las vacunas, adquiridas a través del Fondo Rotatorio de la Organización Panamericana de la Salud (OPS), ha sido recibida con gran expectativa por las autoridades locales y la población. Tumbes acumula más de <strong>4.500 casos de dengue</strong> en lo que va del año, y los pronósticos climáticos indican que las lluvias asociadas a El Niño podrían generar un incremento exponencial de los criaderos del mosquito <em>Aedes aegypti</em>, transmisor del virus.</p>
+
+        <blockquote>
+            “Tumbes es la puerta de entrada del dengue en el Perú. Con estas 26 mil dosis estamos protegiendo a nuestros niños y adolescentes, que son los que más sufren las formas graves de la enfermedad. Pero esto no es suficiente: necesitamos el compromiso de toda la comunidad para eliminar los criaderos y acudir a los centros de salud ante cualquier síntoma”.
+            <br><strong>— Ministro de Salud, Luis Dyer, durante la ceremonia de entrega.</strong>
+        </blockquote>
+
+        <h2>El contexto: Tumbes, la región más golpeada por el dengue</h2>
+
+        <p>El departamento de Tumbes, con una población cercana a los 250.000 habitantes, ha sido durante años el epicentro del dengue en el Perú. Su ubicación geográfica, su clima cálido y húmedo, y la presencia de extensas áreas de manglares y arrozales crean las condiciones ideales para la proliferación del mosquito vector. En 2024, Tumbes reportó más de <strong>8.000 casos confirmados</strong> y 12 fallecimientos, la cifra más alta de su historia.</p>
+
+        <p>El Fenómeno El Niño, que según el Senamhi comenzaría a manifestarse con lluvias intensas a partir de setiembre, agrava aún más el panorama. Las precipitaciones generan acumulación de agua en recipientes, neumáticos, botellas y otros objetos que se convierten en criaderos. “El agua estancada es el mejor aliado del zancudo. Con las lluvias, el riesgo se multiplica por diez”, explicó el doctor Carlos Zavaleta, epidemiólogo de la Dirección Regional de Salud de Tumbes.</p>
+
+        <div class="inline-image">
+            <img src="https://image.pollinations.ai/prompt/Aedes%20aegypti%20mosquito%20breeding%20site%20water%20containers%20Tumbes%20Peru%20dengue%20prevention" alt="Criaderos de mosquitos Aedes aegypti en Tumbes, con recipientes con agua estancada" loading="lazy">
+            <div class="img-caption">Los criaderos de mosquitos son comunes en viviendas de Tumbes. La campaña incluye acciones de eliminación de recipientes con agua estancada.</div>
+        </div>
+
+        <p>Ante este escenario, el Minsa ha priorizado a Tumbes para la primera fase de vacunación contra el dengue. La vacuna utilizada es la <strong>QDenga</strong>, desarrollada por el laboratorio Takeda, que ha demostrado una eficacia del 80% en la prevención de casos graves y hospitalizaciones en ensayos clínicos realizados en América Latina y Asia. El esquema de vacunación requiere dos dosis con un intervalo de tres meses, y la campaña actual cubrirá la primera dosis para los 26.000 niños y adolescentes seleccionados en los distritos de mayor incidencia.</p>
+
+        <h2>La estrategia: vacunación, control vectorial y preparación de servicios</h2>
+
+        <p>La campaña de vacunación es solo uno de los tres pilares de la estrategia del Minsa para enfrentar la amenaza del dengue en el contexto de El Niño. El viceministro de Salud Pública, <strong>Ricardo Peña</strong>, detalló que se han desplegado <strong>400 brigadas de control vectorial</strong> en toda la región para identificar y eliminar criaderos, fumigar viviendas y educar a la población sobre medidas preventivas.</p>
+
+        <p>“La vacuna nos da una herramienta poderosa, pero no es una bala de plata. La prevención sigue siendo fundamental: tapar los recipientes de agua, usar repelente, colocar mosquiteros y acudir al médico ante cualquier síntoma de alarma”, subrayó Peña. Las brigadas han visitado más de <strong>12.000 viviendas</strong> en los distritos de Tumbes, Zarumilla y Contralmirante Villar, los de mayor incidencia de casos.</p>
+
+        <div class="stat-grid">
+            <div class="stat-item">
+                <div class="number">26,000</div>
+                <div class="label">Dosis de vacuna entregadas</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">4,500+</div>
+                <div class="label">Casos de dengue en 2026</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">400</div>
+                <div class="label">Brigadas de control vectorial</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">80%</div>
+                <div class="label">Eficacia contra casos graves</div>
+            </div>
+        </div>
+
+        <p>El tercer pilar es el <strong>fortalecimiento de los servicios de salud</strong> para atender un eventual aumento de casos. El Minsa ha destinado <strong>S/ 3.2 millones</strong> para la contratación de personal médico y de enfermería adicional, la compra de pruebas rápidas de diagnóstico y el abastecimiento de sueros y medicamentos para el manejo de la enfermedad. Los hospitales de Tumbes, Zarumilla y el centro de salud de Pampas de Hospital se han preparado para la atención de pacientes con dengue grave, con áreas de hidratación y monitoreo permanente.</p>
+
+        <blockquote>
+            “Estamos listos para lo que pueda venir. Hemos capacitado a más de 200 profesionales en el manejo clínico del dengue, hemos asegurado el stock de insumos críticos y estamos coordinando con los gobiernos locales para que las acciones de prevención lleguen a cada rincón de la región. Pero necesitamos que la población nos ayude: la prevención es tarea de todos”.
+            <br><strong>— Dr. Carlos Zavaleta, director regional de Salud de Tumbes.</strong>
+        </blockquote>
+
+        <div class="inline-image">
+            <img src="https://image.pollinations.ai/prompt/health%20workers%20fumigation%20dengue%20prevention%20Tumbes%20Peru%20vector%20control%20community%20campaign" alt="Brigadas de fumigación y control vectorial en calles de Tumbes" loading="lazy">
+            <div class="img-caption">Brigadas del Minsa realizan fumigación y eliminación de criaderos en los distritos más afectados de Tumbes.</div>
+        </div>
+
+        <h2>Reacciones de la comunidad y retos de la campaña</h2>
+
+        <p>La noticia de la llegada de las vacunas ha generado alivio y esperanza en la población de Tumbes. María Elena Chávez, madre de un niño de 12 años que fue vacunado en el distrito de Tumbes, expresó su satisfacción: “Mi hijo tuvo dengue grave el año pasado y estuvimos a punto de perderlo. Saber que ahora está protegido me da tranquilidad. Ojalá esta vacuna llegue a todos los niños del país”.</p>
+
+        <p>Sin embargo, la campaña también enfrenta desafíos. El principal es la <strong>desconfianza de algunos sectores</strong> hacia las vacunas, un fenómeno que se ha extendido en los últimos años. El Minsa ha lanzado una campaña de comunicación comunitaria con líderes locales, sacerdotes y profesores para disipar mitos y fomentar la aceptación de la inmunización. “Estamos trabajando casa por casa, explicando los beneficios y la seguridad de la vacuna. Hasta ahora la aceptación ha sido alta, superior al 85%”, indicó Peña.</p>
+
+        <p>Otro reto es la <strong>logística</strong>. La vacuna QDenga requiere mantener la cadena de frío entre 2 y 8 grados centígrados, y Tumbes es una región cálida con frecuentes cortes de energía en zonas rurales. El Minsa ha instalado <strong>refrigeradores de última generación</strong> en los centros de salud y ha capacitado al personal en el manejo adecuado de las vacunas. “La cadena de frío no se romperá. Hemos invertido en equipos y en monitoreo digital para garantizar que cada dosis llegue en óptimas condiciones”, aseguró la directora de inmunizaciones del Minsa, la doctora Elena Rojas.</p>
+
+        <h2>El Fenómeno El Niño y el riesgo de brotes</h2>
+
+        <p>El Fenómeno El Niño es un evento climático que se caracteriza por el calentamiento anómalo de las aguas del Océano Pacífico frente a las costas de Sudamérica, lo que genera lluvias torrenciales en la región norte del Perú. El Senamhi ha pronosticado que este año el fenómeno podría ser de <strong>intensidad moderada a fuerte</strong>, con precipitaciones que superarían los promedios históricos en Tumbes, Piura y Lambayeque.</p>
+
+        <p>Para el dengue, las lluvias significan un <strong>aumento exponencial de los criaderos</strong>. El mosquito <em>Aedes aegypti</em> deposita sus huevos en las paredes de los recipientes que contienen agua, y las lluvias llenan esos recipientes, desencadenando la eclosión de los huevos y el crecimiento de la población de mosquitos. “Una vez que comienzan las lluvias, el número de mosquitos se dispara en cuestión de días. La vacunación es nuestra mejor defensa, pero también debemos intensificar la eliminación de criaderos”, explicó Zavaleta.</p>
+
+        <div class="highlight-box">
+            <h4> Medidas de prevención ante El Niño</h4>
+            <ul>
+                <li><strong>Vacunación:</strong> Aplicación de la primera dosis a 26.000 niños y adolescentes de Tumbes.</li>
+                <li><strong>Control vectorial:</strong> Fumigación y eliminación de criaderos en viviendas y espacios públicos.</li>
+                <li><strong>Fortaleciimiento hospitalario:</strong> Contratación de personal y abastecimiento de insumos críticos.</li>
+                <li><strong>Educación comunitaria:</strong> Visitas casa por casa para sensibilizar sobre lavado y tapado de recipientes.</li>
+                <li><strong>Monitoreo climático:</strong> Coordinación con Senamhi para anticipar lluvias y activar protocolos.</li>
+            </ul>
+        </div>
+
+        <p>El ministro Dyer hizo un llamado a la <strong>responsabilidad colectiva</strong>: “No podemos dejar todo en manos del gobierno. Cada familia debe revisar su casa, eliminar los recipientes con agua, usar repelente y acudir al centro de salud si presenta fiebre, dolor de cabeza o dolor detrás de los ojos. <strong>Juntos podemos evitar que el dengue se convierta en una tragedia</strong>”.</p>
+
+        <h2>Perspectivas y próximos pasos</h2>
+
+        <p>La campaña de vacunación en Tumbes es vista como un <strong>piloto exitoso</strong> que podría replicarse en otras regiones del país. El Minsa ya está evaluando la posibilidad de adquirir más dosis para vacunar a la población de Piura, Lambayeque y Loreto, donde también se esperan impactos del Fenómeno El Niño. “Dependerá de la disponibilidad de vacunas a nivel internacional y de los recursos que logremos movilizar. Pero estamos trabajando en ello”, aseguró Peña.</p>
+
+        <p>Por su parte, los especialistas coinciden en que la vacuna no reemplaza las medidas de control vectorial, sino que las complementa. “La vacuna reduce el riesgo de hospitalización y muerte, pero no evita la infección. Por eso, <strong>la prevención sigue siendo el pilar fundamental</strong>. Si logramos combinar la vacunación con la eliminación de criaderos, podríamos reducir drásticamente el impacto del dengue en los próximos años”, afirmó la epidemióloga María del Carmen Gastañaga, investigadora del Instituto Nacional de Salud.</p>
+
+        <p>Mientras tanto, en Tumbes, los equipos de salud continúan su trabajo incansable. Las colas en los centros de vacunación son largas pero ordenadas, y los padres llevan a sus hijos con la esperanza de que esta vez la prevención marque la diferencia. La región, acostumbrada a sufrir los embates del dengue, mira con optimismo esta nueva herramienta que, sumada al esfuerzo comunitario, podría cambiar su historia epidemiológica.</p>
+
+        <div class="inline-image">
+            <img src="https://image.pollinations.ai/prompt/vaccination%20clinic%20Tumbes%20Peru%20health%20workers%20vaccinating%20adolescents%20dengue%20campaign%20queue" alt="Centro de vacunación contra el dengue en Tumbes con adolescentes y personal de salud" loading="lazy">
+            <div class="img-caption">Adolescentes esperan su turno para recibir la vacuna contra el dengue en uno de los centros de salud habilitados en Tumbes.</div>
+        </div>
+
+        <p>El Fenómeno El Niño es un desafío que el Perú ha enfrentado en múltiples ocasiones, pero la combinación de <strong>vacunas, control vectorial y preparación de servicios</strong> ofrece una oportunidad sin precedentes para reducir el impacto del dengue. La campaña de Tumbes es la primera prueba de fuego, y los ojos del país están puestos en sus resultados. Si tiene éxito, podría marcar el inicio de una <strong>nueva era en la lucha contra el dengue</strong> en el Perú.</p>
+
+        <p>El ministro Dyer concluyó su visita a Tumbes con un mensaje contundente: “El dengue no es un destino inevitable. Con prevención, con vacunas y con el compromiso de todos, podemos derrotarlo. Hoy, en Tumbes, comenzamos a escribir una nueva historia”. La región, sus habitantes y el sistema de salud esperan que así sea.</p>
+
+        <div class="article-footer">
+            <div class="tags">
+                <span>#Dengue</span>
+                <span>#Vacuna</span>
+                <span>#Tumbes</span>
+                <span>#ElNiño</span>
+                <span>#SaludPeru</span>
+                <span>#Prevención</span>
+            </div>
+            <div>Comparte esta noticia</div>
+        </div>
+
+    </div>
+
+</div>
+
+
+    <footer>
+        <p>Autor: ROSA EMILY | Fecha: 2026-08-11</p>
+    </footer>
+</body>
+</html>
