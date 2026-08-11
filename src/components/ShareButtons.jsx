@@ -16,21 +16,38 @@ const ShareButtons = ({ slug, title }) => {
     { name: 'Telegram', cls: 'share-tg', href: `https://t.me/share/url?url=${u}&text=${t}` },
   ];
 
-  const copyLink = async () => {
-    try {
-      await navigator.clipboard.writeText(url);
-    } catch (e) {
-      const ta = document.createElement('textarea');
-      ta.value = url;
-      ta.style.position = 'fixed';
-      ta.style.opacity = '0';
-      document.body.appendChild(ta);
-      ta.select();
-      document.execCommand('copy');
-      ta.remove();
+  const copyLink = () => {
+    const done = () => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    };
+    const fallback = () => {
+      try {
+        const ta = document.createElement('textarea');
+        ta.value = url;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        ta.remove();
+      } catch (e) {
+        // sin clipboard disponible
+      }
+      done();
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      const t = setTimeout(fallback, 800);
+      navigator.clipboard.writeText(url).then(() => {
+        clearTimeout(t);
+        done();
+      }).catch(() => {
+        clearTimeout(t);
+        fallback();
+      });
+    } else {
+      fallback();
     }
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2500);
   };
 
   return (
