@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fujimorismo preside la Comisión de Constitución del Senado: Clave en la reforma judicial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: #f5f1eb;
+            color: #1e1e2a;
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 18px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            padding: 40px 45px;
+        }
+
+        /* Cabecera */
+        .article-header {
+            border-bottom: 3px solid #c0392b;
+            padding-bottom: 28px;
+            margin-bottom: 32px;
+        }
+
+        .category-tag {
+            display: inline-block;
+            background: #c0392b;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            padding: 4px 16px;
+            border-radius: 30px;
+            margin-bottom: 16px;
+        }
+
+        .article-title {
+            font-family: 'Merriweather', serif;
+            font-weight: 900;
+            font-size: 2.8rem;
+            line-height: 1.2;
+            color: #1a1a2c;
+            margin-bottom: 12px;
+        }
+
+        .article-title span {
+            color: #c0392b;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 18px 28px;
+            font-size: 0.9rem;
+            color: #5a5a72;
+            margin-top: 6px;
+        }
+
+        .article-meta .author {
+            font-weight: 600;
+            color: #1e1e2a;
+        }
+
+        .article-meta .date {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .article-meta .date::before {
+            content: "•";
+            color: #c0392b;
+            font-weight: 700;
+            margin-right: 4px;
+        }
+
+        .excerpt-box {
+            background: #f8f4f0;
+            border-left: 5px solid #c0392b;
+            padding: 18px 26px;
+            margin: 18px 0 28px 0;
+            border-radius: 0 10px 10px 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #2c2c3e;
+            font-style: italic;
+        }
+
+        /* Imagen destacada */
+        .featured-image {
+            width: 100%;
+            border-radius: 14px;
+            margin: 10px 0 30px 0;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .featured-image img:hover {
+            transform: scale(1.01);
+        }
+
+        .featured-image .caption {
+            font-size: 0.8rem;
+            color: #6b6b80;
+            padding: 10px 14px 4px 14px;
+            text-align: center;
+            background: #faf8f6;
+            border-top: 1px solid #eeeae6;
+        }
+
+        /* Cuerpo */
+        .article-body {
+            font-size: 1.06rem;
+            color: #23232e;
+        }
+
+        .article-body p {
+            margin-bottom: 1.5rem;
+        }
+
+        .article-body h2 {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1a1a2c;
+            border-bottom: 2px solid #eeeae6;
+            padding-bottom: 10px;
+        }
+
+        .article-body h3 {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+            color: #2c2c42;
+        }
+
+        .article-body blockquote {
+            background: #f8f4f0;
+            border-left: 5px solid #c0392b;
+            padding: 18px 26px;
+            margin: 1.8rem 0;
+            border-radius: 0 10px 10px 0;
+            font-style: italic;
+            font-size: 1.05rem;
+            color: #2c2c3e;
+        }
+
+        .article-body blockquote cite {
+            display: block;
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #5a5a72;
+        }
+
+        .article-body ul,
+        .article-body ol {
+            margin: 0 0 1.5rem 2rem;
+        }
+
+        .article-body li {
+            margin-bottom: 0.5rem;
+        }
+
+        .article-body strong {
+            color: #1a1a2c;
+            font-weight: 700;
+        }
+
+        /* Imagen inline */
+        .inline-image {
+            margin: 2.2rem 0;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        .inline-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .inline-image .caption {
+            font-size: 0.8rem;
+            color: #6b6b80;
+            padding: 10px 14px 6px 14px;
+            text-align: center;
+            background: #faf8f6;
+            border-top: 1px solid #eeeae6;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 2.2rem 0;
+        }
+
+        .image-grid .grid-item {
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+            background: #faf8f6;
+        }
+
+        .image-grid .grid-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-grid .grid-item .caption {
+            font-size: 0.75rem;
+            color: #6b6b80;
+            padding: 8px 12px 6px 12px;
+            text-align: center;
+        }
+
+        /* Citas destacadas */
+        .pull-quote {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 1.4;
+            color: #1a1a2c;
+            padding: 24px 30px;
+            margin: 2rem 0;
+            background: #f8f4f0;
+            border-radius: 14px;
+            border-top: 4px solid #c0392b;
+            border-bottom: 4px solid #c0392b;
+            text-align: center;
+        }
+
+        .pull-quote .source {
+            display: block;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-size: 0.9rem;
+            color: #5a5a72;
+            margin-top: 10px;
+            font-style: normal;
+        }
+
+        /* Pie de artículo */
+        .article-footer {
+            margin-top: 3.5rem;
+            padding-top: 28px;
+            border-top: 2px solid #eeeae6;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .article-footer .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .article-footer .tags span {
+            background: #f0ece6;
+            color: #3a3a4e;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 16px;
+            border-radius: 30px;
+            letter-spacing: 0.3px;
+        }
+
+        .article-footer .share {
+            font-size: 0.85rem;
+            color: #5a5a72;
+        }
+
+        .article-footer .share a {
+            color: #1a1a2c;
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 8px;
+            transition: color 0.2s;
+        }
+
+        .article-footer .share a:hover {
+            color: #c0392b;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 22px 18px;
+            }
+
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .article-body {
+                font-size: 0.98rem;
+            }
+
+            .article-body h2 {
+                font-size: 1.5rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .pull-quote {
+                font-size: 1.2rem;
+                padding: 18px 18px;
+            }
+
+            .article-meta {
+                gap: 10px;
+                font-size: 0.8rem;
+            }
+
+            .excerpt-box {
+                font-size: 1rem;
+                padding: 14px 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 16px 12px;
+                border-radius: 12px;
+            }
+
+            .article-title {
+                font-size: 1.6rem;
+            }
+
+            .article-body {
+                font-size: 0.92rem;
+            }
+
+            .article-body h2 {
+                font-size: 1.3rem;
+            }
+
+            .article-body h3 {
+                font-size: 1.1rem;
+            }
+
+            .featured-image .caption,
+            .inline-image .caption,
+            .image-grid .grid-item .caption {
+                font-size: 0.7rem;
+            }
+
+            .pull-quote {
+                font-size: 1rem;
+                padding: 14px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="article-header">
+            <div class="category-tag">Política · Justicia</div>
+            <h1 class="article-title">
+                Fujimorismo preside la Comisión de Constitución del Senado: <span>clave en la reforma judicial</span>
+            </h1>
+            <div class="article-meta">
+                <span class="author">Redacción Política</span>
+                <span class="date">12 de agosto de 2026</span>
+                <span>Tiempo de lectura: 6 min</span>
+            </div>
+            <div class="excerpt-box">
+                El fujimorismo ha asumido la presidencia de la Comisión de Constitución del Senado, un puesto estratégico que define el rumbo de la reforma judicial en Perú. Esta designación genera expectativas y controversias sobre el futuro del sistema de justicia y el equilibrio de poderes.
+            </div>
+        </header>
+
+        <!-- FEATURED IMAGE -->
+        <figure class="featured-image">
+            <img
+            src="https://image.pollinations.ai/prompt/Peruvian_Congress_Senate_Constitution_Commission_judicial_reform_modern_parliament_building_Lima_politics"
+            alt="Senado peruano y Comisión de Constitución"
+            loading="lazy"
+            />
+            <figcaption class="caption">Vista del hemiciclo del Senado peruano, donde la Comisión de Constitución define el futuro de la reforma judicial.</figcaption>
+        </figure>
+
+        <!-- BODY -->
+        <div class="article-body">
+
+            <p>
+                <strong>La reciente designación del fujimorismo al frente de la Comisión de Constitución del Senado</strong> marca un punto de inflexión en la agenda legislativa peruana. Con una mayoría que respalda a esta fuerza política, la comisión se convierte en el epicentro desde donde se tramitarán las propuestas de modificación constitucional y, en particular, aquellas vinculadas a la <strong>reforma del sistema judicial</strong>, uno de los temas más álgidos y polarizantes del país.
+            </p>
+
+            <p>
+                El control de esta comisión no es un detalle menor. La Comisión de Constitución tiene la potestad de dictaminar sobre proyectos de ley que afectan la Carta Magna, así como de evaluar iniciativas que buscan reestructurar órganos autónomos, el nombramiento de jueces y fiscales, y los mecanismos de control interno del Poder Judicial. En ese sentido, la influencia del fujimorismo en este espacio podría traducirse en cambios significativos en la arquitectura institucional del Perú.
+            </p>
+
+            <div class="pull-quote">
+                “La reforma judicial no puede ser moneda de cambio político. La independencia de los jueces es un pilar de la democracia.”
+                <span class="source">— Analista constitucional, Lima, 2026</span>
+            </div>
+
+            <h2>El contexto político y judicial en Perú</h2>
+
+            <p>
+                Para entender la relevancia de esta presidencia, es necesario remontarse a los años recientes. Perú ha atravesado una profunda crisis de gobernabilidad, con episodios de conflictos entre el Ejecutivo y el Legislativo, así como denuncias de corrupción que han salpicado a altos funcionarios del Poder Judicial. La <strong>reforma judicial</strong> se planteó como una solución estructural para restaurar la confianza ciudadana en las instituciones, pero su implementación ha sido lenta y llena de obstáculos.
+            </p>
+
+            <p>
+                En este escenario, el fujimorismo —que mantiene una base sólida en el Congreso— ha visto en la Comisión de Constitución una oportunidad para impulsar su propia visión de la justicia. Esta visión enfatiza la <strong>seguridad ciudadana</strong>, el endurecimiento de penas para delitos graves y una redefinición del rol del Ministerio Público. Sin embargo, los críticos advierten que estas iniciativas podrían vulnerar garantías procesales y concentrar poder en el Ejecutivo.
+            </p>
+
+            <!-- IMAGEN 2 -->
+            <figure class="inline-image">
+                <img
+                src="https://image.pollinations.ai/prompt/Peruvian_judicial_reform_debate_Senate_commission_judges_lawyers_constitutional_analysis"
+                alt="Debate sobre reforma judicial en el Senado peruano"
+                loading="lazy"
+                />
+                <figcaption class="caption">Juristas y legisladores debaten en el Senado los alcances de la reforma judicial propuesta desde la Comisión de Constitución.</figcaption>
+            </figure>
+
+            <h2>¿Qué implica presidir la Comisión de Constitución?</h2>
+
+            <p>
+                La presidencia de esta comisión no solo otorga la facultad de establecer el orden del día y convocar a sesiones, sino que también permite <strong>direccionar el debate legislativo</strong>. El presidente de la comisión tiene la capacidad de priorizar proyectos, solicitar informes técnicos y proponer modificaciones sustanciales a los textos legales. En manos del fujimorismo, este liderazgo podría acelerar iniciativas que han estado estancadas durante años.
+            </p>
+
+            <p>
+                Entre los proyectos más relevantes que llegarán a la comisión se encuentran:
+            </p>
+
+            <ul>
+                <li><strong>La reforma del Consejo Nacional de la Magistratura (CNM):</strong> se propone cambiar el sistema de selección y evaluación de jueces y fiscales, con el objetivo de hacerlo más “transparente” y menos influenciable por grupos de poder.</li>
+                <li><strong>Modificaciones al Código Penal:</strong> se plantea aumentar las penas para delitos de corrupción, narcotráfico y crimen organizado, así como revisar los beneficios penitenciarios.</li>
+                <li><strong>Reforma del Tribunal Constitucional:</strong> se discute la ampliación del número de magistrados y la modificación de sus requisitos de elección, lo que ha generado rechazo en sectores académicos.</li>
+            </ul>
+
+            <p>
+                Estos puntos han sido defendidos por el fujimorismo como necesarios para <strong>fortalecer el Estado de derecho</strong>, pero organizaciones de derechos humanos y colegios de abogados han expresado su preocupación por posibles retrocesos en materia de garantías individuales.
+            </p>
+
+            <div class="image-grid">
+                <div class="grid-item">
+                    <img
+                    src="https://image.pollinations.ai/prompt/Peruvian_Senate_Constitution_Commission_meeting_lawmakers_debate_judicial_reform"
+                    alt="Reunión de la Comisión de Constitución"
+                    loading="lazy"
+                    />
+                    <div class="caption">Sesión de la Comisión de Constitución con legisladores de distintas bancadas.</div>
+                </div>
+                <div class="grid-item">
+                    <img
+                    src="https://image.pollinations.ai/prompt/Peruvian_judicial_reform_protests_citizens_demand_justice_transparency"
+                    alt="Ciudadanos manifestándose por la reforma judicial"
+                    loading="lazy"
+                    />
+                    <div class="caption">Ciudadanos se manifiestan exigiendo una reforma judicial integral y transparente.</div>
+                </div>
+            </div>
+
+            <h2>Reacciones encontradas en el ámbito político</h2>
+
+            <p>
+                La noticia de que el fujimorismo presidirá la Comisión de Constitución ha generado reacciones de todo tipo. Desde las filas del oficialismo y sus aliados, se ha saludado la designación como un paso hacia la <strong>estabilidad legislativa</strong> y la concreción de reformas largamente postergadas. “Es momento de dejar atrás los bloqueos y trabajar por el Perú que merecemos”, declaró un portavoz de la bancada fujimorista.
+            </p>
+
+            <p>
+                Por el contrario, la oposición ha calificado la medida como un <strong>intento de cooptar el sistema judicial</strong> y de debilitar los contrapesos democráticos. “Entregar la llave de la reforma constitucional a un partido que ha estado vinculado a casos de corrupción es una afrenta a la ciudadanía”, sostuvo una legisladora de la oposición. Asimismo, diversos colectivos civiles han anunciado que vigilarán de cerca cada proyecto que salga de la comisión.
+            </p>
+
+            <blockquote>
+                “El fujimorismo tiene la oportunidad de demostrar que su liderazgo en la comisión puede ser constructivo. Pero la historia nos enseña que debemos ser cautelosos. La independencia judicial no se negocia.”
+                <cite>— Editorial del diario El Peruano, agosto de 2026</cite>
+            </blockquote>
+
+            <h2>El papel de la sociedad civil y la academia</h2>
+
+            <p>
+                Ante este escenario, la sociedad civil organizada y las facultades de Derecho de las principales universidades del país han manifestado su disposición a <strong>participar activamente en el debate</strong>. Han solicitado que las audiencias públicas sean abiertas y que se garantice la participación de expertos independientes. La transparencia en el proceso legislativo será un factor determinante para la legitimidad de las reformas que se aprueben.
+            </p>
+
+            <p>
+                Organizaciones como la Asociación Civil Transparencia y el Instituto de Defensa Legal han elaborado informes en los que señalan los riesgos de una reforma apresurada o sesgada. “No se puede reformar la justicia sin escuchar a los jueces, fiscales y abogados que la operan día a día”, afirman en un comunicado conjunto. Este llamado a la <strong>participación plural</strong> resuena en un contexto donde la polarización política ha dificultado el diálogo.
+            </p>
+
+            <h2>Escenarios posibles para los próximos meses</h2>
+
+            <p>
+                Con el fujimorismo al frente de la comisión, se abren varios escenarios. El primero, y más optimista, es que se logre un <strong>consenso amplio</strong> en torno a una reforma judicial integral que mejore la eficiencia del sistema y reduzca la impunidad. Para ello, será necesario que el oficialismo tienda puentes con otras bancadas y que acepte modificaciones a sus propuestas iniciales.
+            </p>
+
+            <p>
+                El segundo escenario, más pesimista, es que la comisión se convierta en un <strong>campo de batalla política</strong> donde se prioricen los intereses partidarios por encima del bien común. Esto podría derivar en una reforma fragmentada, con parches que no aborden los problemas de fondo, y que incluso puedan ser impugnadas ante instancias internacionales por vulnerar derechos fundamentales.
+            </p>
+
+            <p>
+                Finalmente, un escenario intermedio sugiere que, pese a las tensiones, se logre avanzar en algunos puntos clave, como la modernización de los procesos judiciales y la inversión en tecnología y capacitación, dejando los aspectos más controvertidos para una segunda etapa. Cualquiera que sea el desenlace, la <strong>presencia del fujimorismo en la Comisión de Constitución</strong> marcará la agenda política y judicial del país durante los próximos años.
+            </p>
+
+            <h2>Reflexión final: la reforma judicial como desafío democrático</h2>
+
+            <p>
+                Más allá de las posiciones ideológicas, la reforma judicial es un <strong>desafío democrático</strong> que requiere de voluntad política, pero también de un profundo respeto por la autonomía de los poderes del Estado. La ciudadanía peruana espera respuestas concretas a problemas como la lentitud de los procesos, la corrupción dentro del sistema y la falta de acceso a la justicia para las poblaciones más vulnerables.
+            </p>
+
+            <p>
+                El fujimorismo, al asumir la presidencia de la Comisión de Constitución, tiene la oportunidad —y la responsabilidad— de demostrar que su proyecto político puede contribuir a fortalecer las instituciones, en lugar de debilitarlas. El tiempo dirá si esta designación se convierte en un <strong>motor de cambio positivo</strong> o en un nuevo capítulo de la conflictiva historia política del Perú.
+            </p>
+
+            <p>
+                Lo que es innegable es que los ojos de la nación están puestos en el Senado, y cada decisión que tome la comisión será examinada con lupa por los medios de comunicación, los gremios profesionales y la ciudadanía organizada. La reforma judicial no es un fin en sí misma, sino un <strong>medio para garantizar una sociedad más justa y equitativa</strong>. Y en esa lucha, todos los actores políticos están llamados a jugar un rol constructivo.
+            </p>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="article-footer">
+            <div class="tags">
+                <span>#Fujimorismo</span>
+                <span>#ReformaJudicial</span>
+                <span>#SenadoPeruano</span>
+                <span>#ComisiónDeConstitución</span>
+                <span>#PolíticaPeruana</span>
+            </div>
+            <div class="share">
+                Compartir en
+                <a href="#">X</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+            </div>
+        </footer>
+
+    </div>
+
+
+<footer>
+    <p>Autor: ROSA EMILY | Fecha: 2026-08-12</p>
+</footer>
+</body>
+</html>
