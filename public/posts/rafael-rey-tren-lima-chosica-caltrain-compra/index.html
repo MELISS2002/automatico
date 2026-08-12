@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rafael Rey desmiente a López Aliaga: tren Lima-Chosica fue compra a Caltrain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: #f0f4f8;
+            color: #1a2332;
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            padding: 40px 45px;
+        }
+
+        /* Cabecera */
+        .article-header {
+            border-bottom: 3px solid #005a8c;
+            padding-bottom: 28px;
+            margin-bottom: 32px;
+        }
+
+        .category-tag {
+            display: inline-block;
+            background: #005a8c;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            padding: 4px 16px;
+            border-radius: 30px;
+            margin-bottom: 16px;
+        }
+
+        .article-title {
+            font-family: 'Merriweather', serif;
+            font-weight: 900;
+            font-size: 2.8rem;
+            line-height: 1.2;
+            color: #0b1a2b;
+            margin-bottom: 12px;
+        }
+
+        .article-title span {
+            color: #005a8c;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 18px 28px;
+            font-size: 0.9rem;
+            color: #4a5a6e;
+            margin-top: 6px;
+        }
+
+        .article-meta .author {
+            font-weight: 600;
+            color: #1a2332;
+        }
+
+        .article-meta .date {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .article-meta .date::before {
+            content: "•";
+            color: #005a8c;
+            font-weight: 700;
+            margin-right: 4px;
+        }
+
+        .excerpt-box {
+            background: #eef4fa;
+            border-left: 5px solid #005a8c;
+            padding: 18px 26px;
+            margin: 18px 0 28px 0;
+            border-radius: 0 10px 10px 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #1e2b3c;
+            font-style: italic;
+        }
+
+        /* Imagen destacada */
+        .featured-image {
+            width: 100%;
+            border-radius: 14px;
+            margin: 10px 0 30px 0;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .featured-image img:hover {
+            transform: scale(1.01);
+        }
+
+        .featured-image .caption {
+            font-size: 0.8rem;
+            color: #5a6a7e;
+            padding: 10px 14px 4px 14px;
+            text-align: center;
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        /* Cuerpo */
+        .article-body {
+            font-size: 1.06rem;
+            color: #1c2838;
+        }
+
+        .article-body p {
+            margin-bottom: 1.5rem;
+        }
+
+        .article-body h2 {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #0b1a2b;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+
+        .article-body h3 {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+            color: #1a2b3f;
+        }
+
+        .article-body blockquote {
+            background: #eef4fa;
+            border-left: 5px solid #005a8c;
+            padding: 18px 26px;
+            margin: 1.8rem 0;
+            border-radius: 0 10px 10px 0;
+            font-style: italic;
+            font-size: 1.05rem;
+            color: #1e2b3c;
+        }
+
+        .article-body blockquote cite {
+            display: block;
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #4a5a6e;
+        }
+
+        .article-body ul,
+        .article-body ol {
+            margin: 0 0 1.5rem 2rem;
+        }
+
+        .article-body li {
+            margin-bottom: 0.5rem;
+        }
+
+        .article-body strong {
+            color: #0b1a2b;
+            font-weight: 700;
+        }
+
+        /* Imagen inline */
+        .inline-image {
+            margin: 2.2rem 0;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        .inline-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .inline-image .caption {
+            font-size: 0.8rem;
+            color: #5a6a7e;
+            padding: 10px 14px 6px 14px;
+            text-align: center;
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 2.2rem 0;
+        }
+
+        .image-grid .grid-item {
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+            background: #f8fafc;
+        }
+
+        .image-grid .grid-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-grid .grid-item .caption {
+            font-size: 0.75rem;
+            color: #5a6a7e;
+            padding: 8px 12px 6px 12px;
+            text-align: center;
+        }
+
+        /* Citas destacadas */
+        .pull-quote {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 1.4;
+            color: #0b1a2b;
+            padding: 24px 30px;
+            margin: 2rem 0;
+            background: #eef4fa;
+            border-radius: 14px;
+            border-top: 4px solid #005a8c;
+            border-bottom: 4px solid #005a8c;
+            text-align: center;
+        }
+
+        .pull-quote .source {
+            display: block;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-size: 0.9rem;
+            color: #4a5a6e;
+            margin-top: 10px;
+            font-style: normal;
+        }
+
+        /* Pie de artículo */
+        .article-footer {
+            margin-top: 3.5rem;
+            padding-top: 28px;
+            border-top: 2px solid #e2e8f0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .article-footer .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .article-footer .tags span {
+            background: #e8edf3;
+            color: #1a2b3f;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 16px;
+            border-radius: 30px;
+            letter-spacing: 0.3px;
+        }
+
+        .article-footer .share {
+            font-size: 0.85rem;
+            color: #4a5a6e;
+        }
+
+        .article-footer .share a {
+            color: #0b1a2b;
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 8px;
+            transition: color 0.2s;
+        }
+
+        .article-footer .share a:hover {
+            color: #005a8c;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 22px 18px;
+            }
+
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .article-body {
+                font-size: 0.98rem;
+            }
+
+            .article-body h2 {
+                font-size: 1.5rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .pull-quote {
+                font-size: 1.2rem;
+                padding: 18px 18px;
+            }
+
+            .article-meta {
+                gap: 10px;
+                font-size: 0.8rem;
+            }
+
+            .excerpt-box {
+                font-size: 1rem;
+                padding: 14px 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 16px 12px;
+                border-radius: 12px;
+            }
+
+            .article-title {
+                font-size: 1.6rem;
+            }
+
+            .article-body {
+                font-size: 0.92rem;
+            }
+
+            .article-body h2 {
+                font-size: 1.3rem;
+            }
+
+            .article-body h3 {
+                font-size: 1.1rem;
+            }
+
+            .featured-image .caption,
+            .inline-image .caption,
+            .image-grid .grid-item .caption {
+                font-size: 0.7rem;
+            }
+
+            .pull-quote {
+                font-size: 1rem;
+                padding: 14px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="article-header">
+            <div class="category-tag">Política · Transporte · Transparencia</div>
+            <h1 class="article-title">
+                Rafael Rey desmiente a López Aliaga: <span>el tren Lima-Chosica fue una compra a Caltrain, no una donación</span>
+            </h1>
+            <div class="article-meta">
+                <span class="author">Redacción Política</span>
+                <span class="date">12 de agosto de 2026</span>
+                <span>Tiempo de lectura: 7 min</span>
+            </div>
+            <div class="excerpt-box">
+                El exministro Rafael Rey desmonta la versión del alcalde de Lima, Rafael López Aliaga, y aclara que la adquisición del tren para la ruta Lima-Chosica no fue una donación, sino una compra formal a la empresa estadounidense Caltrain, revelando detalles clave de la operación que sacuden el debate sobre la transparencia en la gestión pública.
+            </div>
+        </header>
+
+        <!-- FEATURED IMAGE -->
+        <figure class="featured-image">
+            <img
+            src="https://image.pollinations.ai/prompt/Caltrain_commuter_train_California_United_States_modern_railway_silver_red"
+            alt="Tren Caltrain en California, modelo similar al adquirido para la ruta Lima-Chosica"
+            loading="lazy"
+            />
+            <figcaption class="caption">Vista de un tren Caltrain en California (EE.UU.), cuyo modelo ha sido el centro de la controversia por la adquisición para la ruta Lima-Chosica.</figcaption>
+        </figure>
+
+        <!-- BODY -->
+        <div class="article-body">
+
+            <p>
+                <strong>La polémica por el tren Lima-Chosica ha dado un nuevo giro inesperado.</strong> El exministro de Defensa y reconocido político peruano, Rafael Rey, salió al frente para desmentir categóricamente las declaraciones del actual alcalde de Lima, Rafael López Aliaga, quien había afirmado que la adquisición del material rodante para la anhelada ruta férrea había sido producto de una <strong>donación</strong> por parte de una empresa extranjera. Rey, con documentos y datos en mano, asegura que se trató de una <strong>compra formal y onerosa</strong> a la compañía estadounidense Caltrain, lo que desnuda una controversia que pone en tela de juicio la transparencia de las negociaciones.
+            </p>
+
+            <p>
+                La declaración de Rey no solo sacude el ambiente político, sino que también enciende las alarmas sobre el manejo de los recursos públicos destinados a proyectos de infraestructura clave para la capital. El tren que unirá Lima con el distrito de Chosica es una obra largamente esperada por los ciudadanos que buscan una alternativa eficiente y moderna de transporte ante el colapso vehicular, y cualquier irregularidad o falta de claridad en su financiamiento puede generar un fuerte rechazo ciudadano.
+            </p>
+
+            <div class="pull-quote">
+                “No hubo ninguna donación. Lo que se hizo fue una compra con recursos públicos, y es necesario que la ciudadanía conozca los términos reales de ese contrato.”
+                <span class="source">— Rafael Rey, exministro de Defensa, en conferencia de prensa</span>
+            </div>
+
+            <h2>El origen de la controversia: donación vs. compra</h2>
+
+            <p>
+                Todo comenzó cuando el alcalde Rafael López Aliaga, en una entrevista radial, mencionó que el tren para la ruta Lima-Chosica había sido <strong>donado</strong> por una entidad internacional, lo que —según sus palabras— representaba un ahorro significativo para las arcas municipales y un gesto de cooperación sin precedentes. La declaración fue recibida con escepticismo por diversos sectores, que dudaban de que una empresa privada extranjera (particularmente Caltrain, que pertenece a un consorcio de transporte público de California) realizara una donación de tal magnitud sin contraprestaciones.
+            </p>
+
+            <p>
+                Fue entonces cuando Rafael Rey, quien ha ocupado altos cargos en el Estado y tiene experiencia en negociaciones internacionales, decidió romper el silencio. En una conferencia de prensa convocada de urgencia, el exministro presentó lo que serían <strong>documentos de respaldo</strong> que demuestran que la operación se realizó bajo la figura de una compra-venta, con un monto específico y condiciones contractuales que incluyen plazos de entrega, garantías y mantenimiento. Rey enfatizó que “no se puede confundir a la opinión pública con declaraciones que no se ajustan a la realidad” y pidió que la Municipalidad de Lima publique el contrato íntegro.
+            </p>
+
+            <p>
+                La versión de Rey ha sido respaldada por fuentes del Ministerio de Transportes y Comunicaciones, que habrían tenido conocimiento de las negociaciones preliminares. Aunque el gobierno central ha evitado pronunciarse oficialmente, funcionarios del sector señalaron extraoficialmente que “cualquier adquisición de este tipo está sujeta a un proceso de evaluación y compra, no a una simple donación”.
+            </p>
+
+            <!-- IMAGEN 2 -->
+            <figure class="inline-image">
+                <img
+                src="https://image.pollinations.ai/prompt/Rafael_Rey_Peruvian_politician_press_conference_speaking_microphone_Lima"
+                alt="Rafael Rey ofreciendo una conferencia de prensa en Lima"
+                loading="lazy"
+                />
+                <figcaption class="caption">El exministro Rafael Rey durante su conferencia de prensa en la que desmintió al alcalde López Aliaga y detalló las condiciones de la compra del tren a Caltrain.</figcaption>
+            </figure>
+
+            <h2>Los detalles de la operación según Rafael Rey</h2>
+
+            <p>
+                De acuerdo con la información proporcionada por Rey, el acuerdo con Caltrain se habría cerrado por un monto cercano a los <strong>12 millones de dólares</strong> (cifra que aún debe ser verificada oficialmente), que cubren la adquisición de varios vagones y locomotoras usadas, pero reacondicionadas, que cumplen con los estándares de seguridad internacionales. El contrato incluye, además, un período de garantía de dos años y la capacitación del personal técnico peruano para la operación y mantenimiento de las unidades.
+            </p>
+
+            <p>
+                “Esto no es una donación. Es una compra inteligente, sí, porque se aprovechan activos que ya no son necesarios para el sistema de California, pero que han sido renovados para alargar su vida útil. Es una práctica común en el mercado ferroviario global, pero de ahí a llamarlo ‘donación’ hay un abismo”, afirmó el exministro ante los medios. Rey también cuestionó la falta de transparencia por parte de la municipalidad y exigió que se publique el expediente completo para que la ciudadanía y los órganos de control puedan evaluar si la operación fue realmente ventajosa para los intereses de Lima.
+            </p>
+
+            <p>
+                Por su parte, López Aliaga aún no ha emitido una respuesta oficial a los dichos de Rey, pero desde la comuna se ha filtrado que el alcalde habría utilizado el término “donación” en un sentido amplio, refiriéndose a que no hubo un desembolso directo de dinero fresco, sino que se habría canjeado deuda o se habrían utilizado fondos de cooperación internacional. Sin embargo, Rey califica esa explicación como “un eufemismo peligroso” y reitera que cualquier transferencia de bienes debe ser documentada y fiscalizada.
+            </p>
+
+            <div class="image-grid">
+                <div class="grid-item">
+                    <img
+                    src="https://image.pollinations.ai/prompt/Rafael_Lopez_Aliaga_mayor_Lima_Peru_speaking_public_event"
+                    alt="Rafael López Aliaga en un evento público"
+                    loading="lazy"
+                    />
+                    <div class="caption">El alcalde de Lima, Rafael López Aliaga, durante una de sus apariciones públicas en las que mencionó la presunta donación del tren.</div>
+                </div>
+                <div class="grid-item">
+                    <img
+                    src="https://image.pollinations.ai/prompt/Lima_Chosica_railway_project_Peru_construction_tracks_urban_transport"
+                    alt="Proyecto del tren Lima-Chosica en construcción"
+                    loading="lazy"
+                    />
+                    <div class="caption">Avance de las obras para la ruta del tren Lima-Chosica, que ahora se ve envuelta en una polémica por su financiamiento.</div>
+                </div>
+            </div>
+
+            <h2>Reacciones en el espectro político y social</h2>
+
+            <p>
+                La revelación de Rafael Rey ha generado una ola de reacciones. Desde la oposición en el Concejo Metropolitano, se ha solicitado una sesión extraordinaria para que el alcalde López Aliaga explique con claridad los términos de la operación. “No podemos permitir que se juegue con la verdad ante la ciudadanía. Si hubo una compra, que se diga y que se audite; si hubo una donación, que se muestren los papeles que lo acrediten”, declaró una regidora de la bancada opositora.
+            </p>
+
+            <p>
+                Por otro lado, organizaciones civiles como Transparencia y la Asociación de Ciudades Sostenibles han mostrado su preocupación por la falta de acceso a la información pública. En un comunicado conjunto, solicitaron a la Contraloría General de la República que inicie una <strong>supervisión preventiva</strong> sobre el proceso de adquisición, para determinar si se cumplieron todas las normativas de contrataciones del Estado y si los precios pagados se ajustan al valor de mercado.
+            </p>
+
+            <blockquote>
+                “Este caso nos recuerda la importancia de la rendición de cuentas. La ciudadanía tiene derecho a saber cómo se gastan sus impuestos y bajo qué condiciones se adquieren bienes tan importantes como este tren.”
+                <cite>— Comunicado de la Asociación de Ciudades Sostenibles</cite>
+            </blockquote>
+
+            <p>
+                Las redes sociales también han sido un campo fértil para el debate. Los términos #LimaChosica, #RafaelRey y #LópezAliaga han sido tendencia durante varias horas, con miles de usuarios exigiendo explicaciones y, en muchos casos, criticando la gestión del alcalde. La polarización no se ha hecho esperar: mientras algunos defienden la gestión de López Aliaga y señalan que “Rey solo busca protagonismo”, otros consideran que el exministro ha hecho un servicio público al exponer una posible irregularidad.
+            </p>
+
+            <h2>Implicancias para el proyecto Lima-Chosica</h2>
+
+            <p>
+                La controversia llega en un momento crucial para el proyecto. Se esperaba que la primera fase del tren entre Lima y Chosica entrara en operaciones a finales del próximo año, y la adquisición del material rodante era uno de los pasos más avanzados. Ahora, con esta disputa mediática y las posibles auditorías, el cronograma podría verse afectado.
+            </p>
+
+            <p>
+                Además, el desprestigio que podría generar esta polémica en la imagen de la municipalidad y del alcalde podría repercutir en la confianza de los inversionistas extranjeros. Si bien la compra a Caltrain —como afirma Rey— no es irregular en sí misma, la confusión deliberada sobre su naturaleza puede interpretarse como un intento de maquillar la realidad para fines políticos, lo cual no contribuye a la credibilidad institucional.
+            </p>
+
+            <p>
+                Por otro lado, expertos en transporte ferroviario han señalado que comprar equipos usados y reacondicionados de Estados Unidos es una práctica común en América Latina, siempre que se haga con las debidas garantías y un análisis de ciclo de vida. Lo que está en juego no es tanto la operación en sí, sino la <strong>transparencia</strong> con la que se manejó.
+            </p>
+
+            <h2>El llamado de Rafael Rey a la transparencia total</h2>
+
+            <p>
+                Al cierre de su intervención, Rafael Rey hizo un llamado enfático al alcalde López Aliaga: “Publique el contrato, señor alcalde. Deje que los peruanos vean con sus propios ojos si esto fue una donación o una compra. No se esconda detrás de declaraciones vagas. El pueblo tiene derecho a saber”. Estas palabras resuenan con fuerza en un contexto donde la desconfianza en las autoridades es elevada y la demanda por una gestión pública íntegra es una constante en las encuestas de opinión.
+            </p>
+
+            <p>
+                La pelota está ahora en el tejado de la Municipalidad de Lima. Se espera que en las próximas horas la comuna emita un comunicado oficial para aclarar la situación. Mientras tanto, los medios de comunicación y los organismos de control permanecen atentos a cualquier novedad que pueda surgir, ya sea en forma de documentos desclasificados o de nuevas declaraciones de los protagonistas.
+            </p>
+
+            <h2>Conclusión: más que un tren, un debate sobre la verdad</h2>
+
+            <p>
+                Lo que comenzó como una aparente buena noticia —la adquisición de un tren para Lima— se ha transformado en un <strong>termómetro de la salud democrática</strong> y la transparencia en la gestión pública. La versión de Rafael Rey, respaldada por indicios documentales, choca frontalmente con la narrativa oficial del alcalde López Aliaga, dejando a la ciudadanía en medio de una encrucijada informativa.
+            </p>
+
+            <p>
+                Más allá de quién tenga la razón, esta controversia evidencia la necesidad de que los funcionarios públicos midan sus palabras con precisión y que los procesos de contratación sean abiertos y fiscalizables. El tren Lima-Chosica es un proyecto de gran envergadura que puede cambiar la calidad de vida de miles de personas; no merece ser enturbiado por ambigüedades ni por disputas políticas que solo generan incertidumbre.
+            </p>
+
+            <p>
+                La ciudadanía espera respuestas claras y pruebas contundentes. La transparencia no es un lujo, sino un <strong>requisito ineludible</strong> para que la confianza en las instituciones pueda restaurarse. En los próximos días, este caso deberá resolverse no en el terreno de las declaraciones, sino en el de los hechos y los documentos. Así lo exige la democracia y así lo demanda Lima.
+            </p>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="article-footer">
+            <div class="tags">
+                <span>#LimaChosica</span>
+                <span>#Caltrain</span>
+                <span>#RafaelRey</span>
+                <span>#LópezAliaga</span>
+                <span>#Transparencia</span>
+                <span>#Transporte</span>
+            </div>
+            <div class="share">
+                Compartir en
+                <a href="#">X</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+            </div>
+        </footer>
+
+    </div>
+
+
+<footer>
+    <p>Autor: ROSA EMILY | Fecha: 2026-08-12</p>
+</footer>
+</body>
+</html>
