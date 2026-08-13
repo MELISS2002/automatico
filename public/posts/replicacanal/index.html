@@ -1,316 +1,316 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta name="twitter:image" content="https://automatico.pages.dev/posts/replicacanal/DD.jpeg">
-    <meta property="og:image" content="https://automatico.pages.dev/posts/replicacanal/DD.jpeg">
-    <meta property="og:description" content="Descubre consejos prácticos sobre CreaciÃ³n o ReplicaciÃ³n de Canal de Otro Idioma al EspaÃ±ol: GuÃ­a Paso a Paso para mejorar tu salud y bienestar natural basándote en los principios de metabolismo.">
-    <meta property="og:title" content="CreaciÃ³n o ReplicaciÃ³n de Canal de Otro Idioma al EspaÃ±ol: GuÃ­a Paso a Paso">
-    <meta name="description" content="Descubre consejos prácticos sobre CreaciÃ³n o ReplicaciÃ³n de Canal de Otro Idioma al EspaÃ±ol: GuÃ­a Paso a Paso para mejorar tu salud y bienestar natural basándote en los principios de metabolismo.">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CreaciÃ³n o ReplicaciÃ³n de Canal de Otro Idioma al EspaÃ±ol: GuÃ­a Paso a Paso</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        h1, h2, h3 {
-            color: #0056b3;
-        }
-        h2 {
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 10px;
-            margin-top: 30px;
-        }
-        ol {
-            list-style-type: decimal;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        strong {
-            font-weight: bold;
-            color: #5cb85c;
-        }
-        pre {
-            background-color: #eee;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-            font-family: monospace;
-        }
-        .script-title {
-            font-weight: bold;
-            color: #d9534f;
-            margin-top: 15px;
-        }
-        .social-sharing {
-    text-align: center;
-    margin: 20px 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .social-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  .social-buttons a {
-    display: inline-flex;
-    align-items: center;
-    padding: 8px 15px;
-    border-radius: 4px;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    transition: all 0.3s ease;
-  }
-  
-  .social-buttons a i {
-    margin-right: 8px;
-  }
-  
-  .fb-share {
-    background-color: #3b5998;
-  }
-  
-  .wa-share {
-    background-color: #25D366;
-  }
-  
-  .tw-share {
-    background-color: #1DA1F2;
-  }
-  
-  .social-buttons a:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-  }
-    </style>
-</head>
-<body>
-    <h1>CreaciÃ³n o ReplicaciÃ³n de Canal de Otro Idioma al EspaÃ±ol: GuÃ­a Paso a Paso</h1>
-
-    <h2>Flujo de Trabajo</h2>
-    <ol>
-        <li>Descarga del Audio del Video Original</li>
-        <li>TranscripciÃ³n del Audio a Texto con Python en Google Colab</li>
-        <li>TraducciÃ³n del Texto a EspaÃ±ol con IA</li>
-        <li>DivisiÃ³n del Texto para Speech Synthesis</li>
-        <li>GeneraciÃ³n de Voz en EspaÃ±ol (Texto a Voz)</li>
-        <li>CreaciÃ³n del Archivo de SubtÃ­tulos (SRT)</li>
-        <li>EdiciÃ³n del Video con CapCut (VersiÃ³n 1.5.0)</li>
-        <li>(Opcional) CreaciÃ³n de SubtÃ­tulos Palabra por Palabra con Python</li>
-    </ol>
-
-    <h2>Pasos Detallados</h2>
-
-    <h3>1. Descarga del Audio del Video Original</h3>
-    <p>Utilizar: <strong>yt-dlp</strong></p>
-
-    <h3>2. TranscripciÃ³n del Audio a Texto con Python en Google Colab</h3>
-    <p>Utilizar: <strong>Whisper (OpenAI)</strong></p>
-    <p class="script-title">Script de Python para Descargar y Transcribir:</p>
-    <pre><code>
-!pip install -q git+https://github.com/openai/whisper.git
-!pip install -q yt-dlp
-!sudo apt update && sudo apt install -y ffmpeg
-
-import os
-import whisper
-import yt_dlp
-
-# --- ConfiguraciÃ³n ---
-YOUTUBE_URL = "https://www.youtube.com/watch?v=49b8APxF6_Y"  # Cambia esto por tu URL
-AUDIO_FILENAME = "audio.mp3"
-MODEL_WHISPER = "large"  # Opciones: tiny, base, small, medium, large
-
-# --- 1. Descargar audio de YouTube ---
-def download_youtube_audio(url, output_file="audio.mp3"):
-    ydl_opts = {
-        'format': 'bestaudio/best',
-        'postprocessors': [{
-            'key': 'FFmpegExtractAudio',
-            'preferredcodec': 'mp3',
-            'preferredquality': '192',
-        }],
-        'outtmpl': output_file.replace('.mp3', ''),
-    }
-
-    print("â³ Descargando audio de YouTube...")
-    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-        ydl.download([url])
-
-    print(f"â Audio descargado como: {output_file}")
-    return output_file
-
-# --- 2. Transcribir con Whisper ---
-def transcribe_audio(audio_file, model_size="meduim"):
-    print("ð Cargando modelo Whisper...")
-    model = whisper.load_model(model_size)
-
-    print("ð¤ Transcribiendo audio (esto puede tardar)...")
-    result = model.transcribe(audio_file)
-
-    return result["text"]
-
-# --- 3. Guardar transcripciÃ³n en un archivo ---
-def save_transcription(text, filename="transcripcion.txt"):
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write(text)
-    print(f"ð TranscripciÃ³n guardada en: {filename}")
-
-# --- EJECUCIÃN PRINCIPAL ---
-if __name__ == "__main__":
-    print("\nð¬ INICIANDO DESCARGA Y TRANSCRIPCIÃN ð¬")
-
-    audio_file = download_youtube_audio(YOUTUBE_URL, AUDIO_FILENAME)
-    transcription = transcribe_audio(audio_file, MODEL_WHISPER)
-
-    print("\nð **TranscripciÃ³n Completa:**")
-    print(transcription)
-
-    save_transcription(transcription)
-
-    print("\nâ Â¡Proceso completado con Ã©xito! â")
-    </code></pre>
-
-    <h3>3. TraducciÃ³n del Texto a EspaÃ±ol con IA</h3>
-    <p>Utilizar: <strong>Google Translate, DeepL, Amazon Translate, Microsoft Translator</strong> (u otras plataformas de traducciÃ³n automÃ¡tica)</p>
-
-    <h3>4. DivisiÃ³n del Texto para Speech Synthesis</h3>
-    <p>Utilizar: <strong>Script de Python personalizado</strong></p>
-
-    <h3>5. GeneraciÃ³n de Voz en EspaÃ±ol (Texto a Voz)</h3>
-    <p>Utilizar: <strong>SpeechMa</strong> (u otras herramientas TTS)</p>
-
-    <h3>6. CreaciÃ³n del Archivo de SubtÃ­tulos (SRT)</h3>
-    <p>Utilizar: <strong>Editor de subtÃ­tulos (online o software) o editor de texto</strong></p>
-
-    <h3>7. EdiciÃ³n del Video con CapCut (VersiÃ³n 1.5.0)</h3>
-    <p>Utilizar: <strong>CapCut (versiÃ³n 1.5.0)</strong></p>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5634091835281348"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5634091835281348"
-     data-ad-slot="5101762757"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    <h3>8. (Opcional) CreaciÃ³n de SubtÃ­tulos Palabra por Palabra con Python</h3>
-    <p>Utilizar: <strong>Script de Python personalizado con la librerÃ­a `srt`</strong></p>
-    <p class="script-title">Script de Python para Dividir SRT Palabra por Palabra:</p>
-    <pre><code>
-!pip install srt
-import re
-import srt
-from datetime import timedelta
-
-def capitalize_first_letter(word):
-    if not word:
-        return word
-    return word[0].upper() + word[1:].lower()
-
-def clean_word(word):
-    cleaned = re.sub(r'[.,!?;:Â¿Â¡"]', '', word)
-    return capitalize_first_letter(cleaned)
-
-def split_srt_to_words(input_file, output_file):
-    print(f"Procesando archivo: {input_file}")
-
-    try:
-        with open(input_file, "r", encoding="utf-8") as file:
-            content = file.read()
-            print("Contenido del archivo leÃ­do correctamente")
-            subtitles = list(srt.parse(content))
-    except Exception as e:
-        print(f"Error al leer el archivo: {str(e)}")
-        return
-
-    if not subtitles:
-        print("El archivo no contiene subtÃ­tulos o estÃ¡ vacÃ­o")
-        return
-
-    print(f"Encontrados {len(subtitles)} subtÃ­tulos para procesar")
-
-    new_subtitles = []
-    index = 1
-
-    for i, subtitle in enumerate(subtitles, 1):
-        print(f"\nProcesando subtÃ­tulo {i}:")
-        print(f"Texto original: '{subtitle.content}'")
-        print(f"DuraciÃ³n original: {subtitle.end - subtitle.start}")
-
-        words = re.findall(r"\w+[\w'-]*", subtitle.content)
-        cleaned_words = [clean_word(w) for w in words if clean_word(w)]
-        print(f"Palabras procesadas: {cleaned_words}")
-
-        if not cleaned_words:
-            print("No se encontraron palabras vÃ¡lidas en este subtÃ­tulo")
-            continue
-
-        total_chars = sum(len(w) for w in cleaned_words)
-        if total_chars == 0:
-            continue
-
-        duration_per_char = (subtitle.end - subtitle.start) / total_chars
-        start_time = subtitle.start
-
-        for word in cleaned_words:
-            word_duration = duration_per_char * len(word)
-            end_time = start_time + word_duration
-
-            if i < len(subtitles) and end_time > subtitles[i].start:
-                end_time = subtitles[i].start - timedelta(milliseconds=1)
-
-            new_sub = srt.Subtitle(index, start_time, end_time, word)
-            new_subtitles.append(new_sub)
-            print(f"AÃ±adida palabra {index}: '{word}' ({start_time} --> {end_time})")
-
-            start_time = end_time
-            index += 1
-
-    if not new_subtitles:
-        print("No se generaron subtÃ­tulos. Verifica el formato del archivo.")
-        return
-
-    print(f"\nTotal de palabras generadas: {len(new_subtitles)}")
-
-    try:
-        with open(output_file, "w", encoding="utf-8") as file:
-            file.write(srt.compose(new_subtitles))
-        print(f"\nArchivo de salida '{output_file}' generado con Ã©xito!")
-    except Exception as e:
-        print(f"Error al guardar el archivo: {str(e)}")
-
-# Ejemplo de uso
-# split_srt_to_words("input.srt", "output_palabra_por_palabra.srt")
-    </code></pre>
-    <div class="social-sharing">
-        <p>Â¿Te gustÃ³? Â¡CompÃ¡rtelo en tus redes!</p>
-        <div class="social-buttons">
-          <a href="https://www.facebook.com/dialog/share?app_id=2290800501460325&display=popup&href=https://automatico.pages.dev/" target="_blank" class="fb-share">
-            <i class="fab fa-facebook-f"></i> Facebook
-          </a>
-          <a href="https://api.whatsapp.com/send?text=Mira este sitio: https://automatico.pages.dev/" target="_blank" class="wa-share">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-          </a>
-          <a href="https://twitter.com/intent/tweet?url=https://automatico.pages.dev/&text=Mira este sitio" target="_blank" class="tw-share">
-            <i class="fab fa-twitter"></i> Twitter
-          </a>
-        </div>
-      </div>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="twitter:image" content="https://automatico.pages.dev/posts/replicacanal/DD.jpeg">
+    <meta property="og:image" content="https://automatico.pages.dev/posts/replicacanal/DD.jpeg">
+    <meta property="og:description" content="Descubre consejos prÃ¡cticos sobre CreaciÃÂ³n o ReplicaciÃÂ³n de Canal de Otro Idioma al EspaÃÂ±ol: GuÃÂ­a Paso a Paso para mejorar tu salud y bienestar natural basÃ¡ndote en los principios de metabolismo.">
+    <meta property="og:title" content="CreaciÃÂ³n o ReplicaciÃÂ³n de Canal de Otro Idioma al EspaÃÂ±ol: GuÃÂ­a Paso a Paso">
+    <meta name="description" content="Descubre consejos prÃ¡cticos sobre CreaciÃÂ³n o ReplicaciÃÂ³n de Canal de Otro Idioma al EspaÃÂ±ol: GuÃÂ­a Paso a Paso para mejorar tu salud y bienestar natural basÃ¡ndote en los principios de metabolismo.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreaciÃÂ³n o ReplicaciÃÂ³n de Canal de Otro Idioma al EspaÃÂ±ol: GuÃÂ­a Paso a Paso</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        strong {
+            font-weight: bold;
+            color: #5cb85c;
+        }
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: monospace;
+        }
+        .script-title {
+            font-weight: bold;
+            color: #d9534f;
+            margin-top: 15px;
+        }
+        .social-sharing {
+    text-align: center;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .social-buttons a {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .social-buttons a i {
+    margin-right: 8px;
+  }
+  
+  .fb-share {
+    background-color: #3b5998;
+  }
+  
+  .wa-share {
+    background-color: #25D366;
+  }
+  
+  .tw-share {
+    background-color: #1DA1F2;
+  }
+  
+  .social-buttons a:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
+    </style>
+</head>
+<body>
+    <h1>CreaciÃÂ³n o ReplicaciÃÂ³n de Canal de Otro Idioma al EspaÃÂ±ol: GuÃÂ­a Paso a Paso</h1>
+
+    <h2>Flujo de Trabajo</h2>
+    <ol>
+        <li>Descarga del Audio del Video Original</li>
+        <li>TranscripciÃÂ³n del Audio a Texto con Python en Google Colab</li>
+        <li>TraducciÃÂ³n del Texto a EspaÃÂ±ol con IA</li>
+        <li>DivisiÃÂ³n del Texto para Speech Synthesis</li>
+        <li>GeneraciÃÂ³n de Voz en EspaÃÂ±ol (Texto a Voz)</li>
+        <li>CreaciÃÂ³n del Archivo de SubtÃÂ­tulos (SRT)</li>
+        <li>EdiciÃÂ³n del Video con CapCut (VersiÃÂ³n 1.5.0)</li>
+        <li>(Opcional) CreaciÃÂ³n de SubtÃÂ­tulos Palabra por Palabra con Python</li>
+    </ol>
+
+    <h2>Pasos Detallados</h2>
+
+    <h3>1. Descarga del Audio del Video Original</h3>
+    <p>Utilizar: <strong>yt-dlp</strong></p>
+
+    <h3>2. TranscripciÃÂ³n del Audio a Texto con Python en Google Colab</h3>
+    <p>Utilizar: <strong>Whisper (OpenAI)</strong></p>
+    <p class="script-title">Script de Python para Descargar y Transcribir:</p>
+    <pre><code>
+!pip install -q git+https://github.com/openai/whisper.git
+!pip install -q yt-dlp
+!sudo apt update && sudo apt install -y ffmpeg
+
+import os
+import whisper
+import yt_dlp
+
+# --- ConfiguraciÃÂ³n ---
+YOUTUBE_URL = "https://www.youtube.com/watch?v=49b8APxF6_Y"  # Cambia esto por tu URL
+AUDIO_FILENAME = "audio.mp3"
+MODEL_WHISPER = "large"  # Opciones: tiny, base, small, medium, large
+
+# --- 1. Descargar audio de YouTube ---
+def download_youtube_audio(url, output_file="audio.mp3"):
+    ydl_opts = {
+        'format': 'bestaudio/best',
+        'postprocessors': [{
+            'key': 'FFmpegExtractAudio',
+            'preferredcodec': 'mp3',
+            'preferredquality': '192',
+        }],
+        'outtmpl': output_file.replace('.mp3', ''),
+    }
+
+    print("Ã¢ÂÂ³ Descargando audio de YouTube...")
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        ydl.download([url])
+
+    print(f"Ã¢ÂÂ Audio descargado como: {output_file}")
+    return output_file
+
+# --- 2. Transcribir con Whisper ---
+def transcribe_audio(audio_file, model_size="meduim"):
+    print("Ã°ÂÂÂ Cargando modelo Whisper...")
+    model = whisper.load_model(model_size)
+
+    print("Ã°ÂÂÂ¤ Transcribiendo audio (esto puede tardar)...")
+    result = model.transcribe(audio_file)
+
+    return result["text"]
+
+# --- 3. Guardar transcripciÃÂ³n en un archivo ---
+def save_transcription(text, filename="transcripcion.txt"):
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(text)
+    print(f"Ã°ÂÂÂ TranscripciÃÂ³n guardada en: {filename}")
+
+# --- EJECUCIÃÂN PRINCIPAL ---
+if __name__ == "__main__":
+    print("\nÃ°ÂÂÂ¬ INICIANDO DESCARGA Y TRANSCRIPCIÃÂN Ã°ÂÂÂ¬")
+
+    audio_file = download_youtube_audio(YOUTUBE_URL, AUDIO_FILENAME)
+    transcription = transcribe_audio(audio_file, MODEL_WHISPER)
+
+    print("\nÃ°ÂÂÂ **TranscripciÃÂ³n Completa:**")
+    print(transcription)
+
+    save_transcription(transcription)
+
+    print("\nÃ¢ÂÂ ÃÂ¡Proceso completado con ÃÂ©xito! Ã¢ÂÂ")
+    </code></pre>
+
+    <h3>3. TraducciÃÂ³n del Texto a EspaÃÂ±ol con IA</h3>
+    <p>Utilizar: <strong>Google Translate, DeepL, Amazon Translate, Microsoft Translator</strong> (u otras plataformas de traducciÃÂ³n automÃÂ¡tica)</p>
+
+    <h3>4. DivisiÃÂ³n del Texto para Speech Synthesis</h3>
+    <p>Utilizar: <strong>Script de Python personalizado</strong></p>
+
+    <h3>5. GeneraciÃÂ³n de Voz en EspaÃÂ±ol (Texto a Voz)</h3>
+    <p>Utilizar: <strong>SpeechMa</strong> (u otras herramientas TTS)</p>
+
+    <h3>6. CreaciÃÂ³n del Archivo de SubtÃÂ­tulos (SRT)</h3>
+    <p>Utilizar: <strong>Editor de subtÃÂ­tulos (online o software) o editor de texto</strong></p>
+
+    <h3>7. EdiciÃÂ³n del Video con CapCut (VersiÃÂ³n 1.5.0)</h3>
+    <p>Utilizar: <strong>CapCut (versiÃÂ³n 1.5.0)</strong></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5634091835281348"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5634091835281348"
+     data-ad-slot="5101762757"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    <h3>8. (Opcional) CreaciÃÂ³n de SubtÃÂ­tulos Palabra por Palabra con Python</h3>
+    <p>Utilizar: <strong>Script de Python personalizado con la librerÃÂ­a `srt`</strong></p>
+    <p class="script-title">Script de Python para Dividir SRT Palabra por Palabra:</p>
+    <pre><code>
+!pip install srt
+import re
+import srt
+from datetime import timedelta
+
+def capitalize_first_letter(word):
+    if not word:
+        return word
+    return word[0].upper() + word[1:].lower()
+
+def clean_word(word):
+    cleaned = re.sub(r'[.,!?;:ÃÂ¿ÃÂ¡"]', '', word)
+    return capitalize_first_letter(cleaned)
+
+def split_srt_to_words(input_file, output_file):
+    print(f"Procesando archivo: {input_file}")
+
+    try:
+        with open(input_file, "r", encoding="utf-8") as file:
+            content = file.read()
+            print("Contenido del archivo leÃÂ­do correctamente")
+            subtitles = list(srt.parse(content))
+    except Exception as e:
+        print(f"Error al leer el archivo: {str(e)}")
+        return
+
+    if not subtitles:
+        print("El archivo no contiene subtÃÂ­tulos o estÃÂ¡ vacÃÂ­o")
+        return
+
+    print(f"Encontrados {len(subtitles)} subtÃÂ­tulos para procesar")
+
+    new_subtitles = []
+    index = 1
+
+    for i, subtitle in enumerate(subtitles, 1):
+        print(f"\nProcesando subtÃÂ­tulo {i}:")
+        print(f"Texto original: '{subtitle.content}'")
+        print(f"DuraciÃÂ³n original: {subtitle.end - subtitle.start}")
+
+        words = re.findall(r"\w+[\w'-]*", subtitle.content)
+        cleaned_words = [clean_word(w) for w in words if clean_word(w)]
+        print(f"Palabras procesadas: {cleaned_words}")
+
+        if not cleaned_words:
+            print("No se encontraron palabras vÃÂ¡lidas en este subtÃÂ­tulo")
+            continue
+
+        total_chars = sum(len(w) for w in cleaned_words)
+        if total_chars == 0:
+            continue
+
+        duration_per_char = (subtitle.end - subtitle.start) / total_chars
+        start_time = subtitle.start
+
+        for word in cleaned_words:
+            word_duration = duration_per_char * len(word)
+            end_time = start_time + word_duration
+
+            if i < len(subtitles) and end_time > subtitles[i].start:
+                end_time = subtitles[i].start - timedelta(milliseconds=1)
+
+            new_sub = srt.Subtitle(index, start_time, end_time, word)
+            new_subtitles.append(new_sub)
+            print(f"AÃÂ±adida palabra {index}: '{word}' ({start_time} --> {end_time})")
+
+            start_time = end_time
+            index += 1
+
+    if not new_subtitles:
+        print("No se generaron subtÃÂ­tulos. Verifica el formato del archivo.")
+        return
+
+    print(f"\nTotal de palabras generadas: {len(new_subtitles)}")
+
+    try:
+        with open(output_file, "w", encoding="utf-8") as file:
+            file.write(srt.compose(new_subtitles))
+        print(f"\nArchivo de salida '{output_file}' generado con ÃÂ©xito!")
+    except Exception as e:
+        print(f"Error al guardar el archivo: {str(e)}")
+
+# Ejemplo de uso
+# split_srt_to_words("input.srt", "output_palabra_por_palabra.srt")
+    </code></pre>
+    <div class="social-sharing">
+        <p>ÃÂ¿Te gustÃÂ³? ÃÂ¡CompÃÂ¡rtelo en tus redes!</p>
+        <div class="social-buttons">
+          <a href="https://www.facebook.com/dialog/share?app_id=2290800501460325&display=popup&href=https://automatico.pages.dev/" target="_blank" class="fb-share">
+            <i class="fab fa-facebook-f"></i> Facebook
+          </a>
+          <a href="https://api.whatsapp.com/send?text=Mira este sitio: https://automatico.pages.dev/" target="_blank" class="wa-share">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="https://twitter.com/intent/tweet?url=https://automatico.pages.dev/&text=Mira este sitio" target="_blank" class="tw-share">
+            <i class="fab fa-twitter"></i> Twitter
+          </a>
+        </div>
+      </div>
+</body>
+</html>

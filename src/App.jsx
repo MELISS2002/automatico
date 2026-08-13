@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
+import DOMPurify from 'dompurify';
 import NewsGrid from './components/NewsGrid';
 import ShareButtons from './components/ShareButtons';
 import './App.css';
@@ -8,13 +10,13 @@ const SITE_TITLE = 'UltimoLive - Noticias deportivas, resultados y transmisiones
 // Limpia el HTML de los posts: quita head/style/script/footer y el bloque hero
 // (duplica el titulo y meta que ya muestra el viewer) para que el articulo
 // use el design system del sitio en lugar del CSS propio del post.
+// Sanitiza y limpia el HTML de los posts usando DOMPurify
 const cleanArticleHTML = (raw) => {
   try {
-    const doc = new DOMParser().parseFromString(raw, 'text/html');
-    doc.querySelectorAll('head, style, script, footer, title').forEach((el) => el.remove());
-    const hero = doc.querySelector('.hero');
-    if (hero) hero.remove();
-    return doc.body ? doc.body.innerHTML.trim() : raw;
+    return DOMPurify.sanitize(raw, {
+      ALLOWED_TAGS: ['p', 'br', 'strong', 'em', 'u', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'li', 'a', 'img', 'blockquote', 'pre', 'code', 'hr', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'div', 'span', 'section', 'article', 'header', 'footer', 'nav', 'main', 'aside', 'figure', 'figcaption', 'mark', 'small', 'sub', 'sup', 'time'],
+      ALLOWED_ATTR: ['href', 'src', 'alt', 'title', 'class', 'id', 'style', 'target', 'rel', 'width', 'height', 'loading', 'role', 'aria-label']
+    });
   } catch (e) {
     return raw;
   }
@@ -37,6 +39,16 @@ function App() {
   const [readingProgress, setReadingProgress] = useState(0);
   const [showTopBtn, setShowTopBtn] = useState(false);
   const streamPlayerRef = useRef(null);
+
+  // Metadatos SEO dinámicos
+  const pageTitle = selectedArticle ? `${selectedArticle.title} | UltimoLive` : 'UltimoLive - Noticias deportivas, resultados y transmisiones en vivo';
+  const pageDescription = selectedArticle?.excerpt || 'Últimas noticias deportivas, resultados en vivo y transmisiones en directo.';
+  const pageImage = selectedArticle?.image || '/logo-og.png';
+  const pageUrl = typeof window !== 'undefined' ? window.location.href : 'https://ultimolive.com';
+
+  // Metadatos SEO dinámicos
+  const pageTitle = selectedArticle ? `${selectedArticle.title} | UltimoLive` : 'UltimoLive - Noticias deportivas, resultados y transmisiones en vivo';
+  const pageDescription = selectedArticle?.excerpt || 'Últimas noticias deportivas, resultados en vivo y transmisiones en directo.';
 
   // Cargar noticias
   useEffect(() => {
@@ -140,6 +152,20 @@ function App() {
 
   return (
     <div className="app">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:image" content={pageImage} />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={pageImage} />
+        <link rel="canonical" href={pageUrl} />
+      </Helmet>
       {/* Barra de progreso de lectura (patron editorial profesional) */}
       <div
         className="reading-progress"

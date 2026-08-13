@@ -1,313 +1,313 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta name="twitter:image" content="https://automatico.pages.dev/posts/articulo/124.png">
-    <meta property="og:image" content="https://automatico.pages.dev/posts/articulo/124.png">
-    <meta property="og:description" content="Descubre consejos prácticos sobre ReinvenciÃ³n Personal 360Â° para mejorar tu salud y bienestar natural basándote en los principios de metabolismo.">
-    <meta property="og:title" content="ReinvenciÃ³n Personal 360Â°">
-    <meta name="description" content="Descubre consejos prácticos sobre ReinvenciÃ³n Personal 360Â° para mejorar tu salud y bienestar natural basándote en los principios de metabolismo.">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReinvenciÃ³n Personal 360Â°</title>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #1a73e8;
-            --accent-color: #e94f37;
-            --transition-speed: 0.3s;
-            --spacing-unit: 1rem;
-            --max-width: 1200px;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            line-height: 1.8;
-            color: var(--primary-color);
-            background-color: #f8f9fa;
-        }
-
-        .article-container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: calc(var(--spacing-unit) * 4) var(--spacing-unit);
-        }
-
-        .hero-section {
-            text-align: center;
-            padding: calc(var(--spacing-unit) * 6) var(--spacing-unit);
-            margin-bottom: calc(var(--spacing-unit) * 4);
-            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-            border-radius: 20px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        }
-
-        h1 {
-            font-size: 2.8rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-            color: var(--primary-color);
-        }
-
-        h2 {
-            font-size: 2rem;
-            margin: calc(var(--spacing-unit) * 3) 0 calc(var(--spacing-unit) * 2);
-            color: var(--secondary-color);
-            position: relative;
-            padding-left: 1.5rem;
-        }
-
-        h2::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0.35em;
-            height: 1.2em;
-            width: 5px;
-            background: var(--accent-color);
-            border-radius: 2px;
-        }
-
-        .dynamic-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-            gap: calc(var(--spacing-unit) * 2);
-            margin: calc(var(--spacing-unit) * 2) 0;
-        }
-
-        .interactive-card {
-            background: white;
-            padding: calc(var(--spacing-unit) * 2);
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            transition: all var(--transition-speed) ease;
-            border: 1px solid #e9ecef;
-        }
-
-        .interactive-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-            border-color: var(--secondary-color);
-        }
-
-        .phase-timeline {
-            position: relative;
-            padding: calc(var(--spacing-unit) * 4) 0;
-        }
-
-        .phase-step {
-            position: relative;
-            padding: calc(var(--spacing-unit) * 2);
-            margin-left: 2rem;
-            border-left: 3px solid var(--secondary-color);
-            background: rgba(26, 115, 232, 0.03);
-            border-radius: 0 8px 8px 0;
-            margin-bottom: calc(var(--spacing-unit) * 2);
-        }
-
-        .phase-step::before {
-            content: attr(data-phase);
-            position: absolute;
-            left: -2.3rem;
-            top: 1.5rem;
-            width: 2rem;
-            height: 2rem;
-            background: var(--secondary-color);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 0.9rem;
-        }
-
-        .content-section {
-            margin: calc(var(--spacing-unit) * 4) 0;
-            padding: calc(var(--spacing-unit) * 2);
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-        }
-
-        @media (max-width: 768px) {
-            :root {
-                --spacing-unit: 0.8rem;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1.6rem;
-            }
-
-            .hero-section {
-                padding: calc(var(--spacing-unit) * 3) var(--spacing-unit);
-            }
-
-            .phase-step {
-                margin-left: 1rem;
-                padding: var(--spacing-unit);
-            }
-        }
-
-        @media print {
-            .interactive-card {
-                box-shadow: none;
-                border: 1px solid #ddd;
-            }
-
-            .phase-step {
-                background: transparent;
-            }
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <article class="article-container">
-        <header class="hero-section">
-            <h1>ReinvenciÃ³n Personal 360Â°</h1>
-            <p class="subtitle">La guÃ­a completa para transformar integralmente tu vida en 12 meses</p>
-        </header>
-
-        <section class="content-section">
-            <h2>Fundamentos CientÃ­ficos de la ReinvenciÃ³n</h2>
-            <div class="dynamic-grid">
-                <div class="interactive-card">
-                    <h3>Neuroplasticidad Aplicada</h3>
-                    <p>La capacidad del cerebro para reorganizarse mediante la formaciÃ³n de nuevas conexiones neuronales. Estrategias prÃ¡cticas para:</p>
-                    <ul>
-                        <li>Reestructurar patrones mentales</li>
-                        <li>Crear nuevos hÃ¡bitos cognitivos</li>
-                        <li>Optimizar procesos de aprendizaje</li>
-                    </ul>
-                </div>
-                <div class="interactive-card">
-                    <h3>PsicologÃ­a del Cambio</h3>
-                    <p>Modelos comprobados para gestionar transiciones vitales:</p>
-                    <ul>
-                        <li>TeorÃ­a de las Etapas del Cambio (Prochaska)</li>
-                        <li>Modelo TransteÃ³rico de Desarrollo</li>
-                        <li>TÃ©cnicas de Autoeficacia Bandura</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <h2>MetodologÃ­a 360Â°: Los 4 Pilares Fundamentales</h2>
-            <div class="dynamic-grid">
-                <div class="interactive-card">
-                    <h3>Identidad Evolutiva</h3>
-                    <p>TÃ©cnicas para:</p>
-                    <ul>
-                        <li>ReestructuraciÃ³n del autoconcepto</li>
-                        <li>AlineaciÃ³n valÃ³rica profunda</li>
-                        <li>Coherencia existencial</li>
-                    </ul>
-                </div>
-                <div class="interactive-card">
-                    <h3>Mentalidad Adaptativa</h3>
-                    <p>Desarrollar:</p>
-                    <ul>
-                        <li>Resiliencia cognitiva</li>
-                        <li>Flexibilidad estratÃ©gica</li>
-                        <li>GestiÃ³n de la incertidumbre</li>
-                    </ul>
-                </div>
-                <div class="interactive-card">
-                    <h3>AcciÃ³n EstratÃ©gica</h3>
-                    <p>Implementar:</p>
-                    <ul>
-                        <li>Sistemas de productividad adaptativa</li>
-                        <li>GestiÃ³n de energÃ­a vital</li>
-                        <li>OptimizaciÃ³n de recursos</li>
-                    </ul>
-                </div>
-                <div class="interactive-card">
-                    <h3>Balance Integral</h3>
-                    <p>Equilibrar:</p>
-                    <ul>
-                        <li>Dimensiones fÃ­sica/mental/emocional</li>
-                        <li>Relaciones interpersonales</li>
-                        <li>PropÃ³sito existencial</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5634091835281348"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5634091835281348"
-     data-ad-slot="5101762757"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-        <section class="content-section phase-timeline">
-            <h2>Proceso CientÃ­fico de TransformaciÃ³n</h2>
-            <div class="phase-step" data-phase="1">
-                <h3>AutodiagnÃ³stico CuÃ¡ntico</h3>
-                <p>MetodologÃ­as avanzadas para evaluaciÃ³n multidimensional:</p>
-                <ul>
-                    <li>AnÃ¡lisis de brechas competenciales</li>
-                    <li>Mapa de potencial latente</li>
-                    <li>EvaluaciÃ³n de recursos disponibles</li>
-                </ul>
-            </div>
-            <div class="phase-step" data-phase="2">
-                <h3>DiseÃ±o de Prototipo Vital</h3>
-                <p>CreaciÃ³n de un modelo personalizado basado en:</p>
-                <ul>
-                    <li>TeorÃ­a de Restricciones aplicada</li>
-                    <li>Principios de diseÃ±o conductual</li>
-                    <li>IngenierÃ­a de hÃ¡bitos avanzada</li>
-                </ul>
-            </div>
-            <div class="phase-step" data-phase="3">
-                <h3>ImplementaciÃ³n Adaptativa</h3>
-                <p>Sistema de ejecuciÃ³n con:</p>
-                <ul>
-                    <li>Mecanismos de retroalimentaciÃ³n en tiempo real</li>
-                    <li>Ajuste dinÃ¡mico de estrategias</li>
-                    <li>GestiÃ³n de contingencias proactiva</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <h2>Herramientas PrÃ¡cticas de ImplementaciÃ³n</h2>
-            <div class="dynamic-grid">
-                <div class="interactive-card">
-                    <h3>Sistema de Metricas Vitales</h3>
-                    <p>Cuadro de mando integral personal para seguimiento de:</p>
-                    <ul>
-                        <li>Progreso en 12 dimensiones clave</li>
-                        <li>Indicadores de bienestar holÃ­stico</li>
-                        <li>Eficacia de estrategias aplicadas</li>
-                    </ul>
-                </div>
-                <div class="interactive-card">
-                    <h3>Protocolo de AutoevaluaciÃ³n</h3>
-                    <p>Checklist diario/semanal/mensual para:</p>
-                    <ul>
-                        <li>DetecciÃ³n temprana de desviaciones</li>
-                        <li>Ajuste de rutinas</li>
-                        <li>OptimizaciÃ³n de procesos</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </article>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="twitter:image" content="https://automatico.pages.dev/posts/articulo/124.png">
+    <meta property="og:image" content="https://automatico.pages.dev/posts/articulo/124.png">
+    <meta property="og:description" content="Descubre consejos prÃ¡cticos sobre ReinvenciÃÂ³n Personal 360ÃÂ° para mejorar tu salud y bienestar natural basÃ¡ndote en los principios de metabolismo.">
+    <meta property="og:title" content="ReinvenciÃÂ³n Personal 360ÃÂ°">
+    <meta name="description" content="Descubre consejos prÃ¡cticos sobre ReinvenciÃÂ³n Personal 360ÃÂ° para mejorar tu salud y bienestar natural basÃ¡ndote en los principios de metabolismo.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReinvenciÃÂ³n Personal 360ÃÂ°</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #1a73e8;
+            --accent-color: #e94f37;
+            --transition-speed: 0.3s;
+            --spacing-unit: 1rem;
+            --max-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.8;
+            color: var(--primary-color);
+            background-color: #f8f9fa;
+        }
+
+        .article-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: calc(var(--spacing-unit) * 4) var(--spacing-unit);
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: calc(var(--spacing-unit) * 6) var(--spacing-unit);
+            margin-bottom: calc(var(--spacing-unit) * 4);
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            color: var(--primary-color);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin: calc(var(--spacing-unit) * 3) 0 calc(var(--spacing-unit) * 2);
+            color: var(--secondary-color);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.35em;
+            height: 1.2em;
+            width: 5px;
+            background: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        .dynamic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+            gap: calc(var(--spacing-unit) * 2);
+            margin: calc(var(--spacing-unit) * 2) 0;
+        }
+
+        .interactive-card {
+            background: white;
+            padding: calc(var(--spacing-unit) * 2);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: all var(--transition-speed) ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .interactive-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            border-color: var(--secondary-color);
+        }
+
+        .phase-timeline {
+            position: relative;
+            padding: calc(var(--spacing-unit) * 4) 0;
+        }
+
+        .phase-step {
+            position: relative;
+            padding: calc(var(--spacing-unit) * 2);
+            margin-left: 2rem;
+            border-left: 3px solid var(--secondary-color);
+            background: rgba(26, 115, 232, 0.03);
+            border-radius: 0 8px 8px 0;
+            margin-bottom: calc(var(--spacing-unit) * 2);
+        }
+
+        .phase-step::before {
+            content: attr(data-phase);
+            position: absolute;
+            left: -2.3rem;
+            top: 1.5rem;
+            width: 2rem;
+            height: 2rem;
+            background: var(--secondary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .content-section {
+            margin: calc(var(--spacing-unit) * 4) 0;
+            padding: calc(var(--spacing-unit) * 2);
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --spacing-unit: 0.8rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            .hero-section {
+                padding: calc(var(--spacing-unit) * 3) var(--spacing-unit);
+            }
+
+            .phase-step {
+                margin-left: 1rem;
+                padding: var(--spacing-unit);
+            }
+        }
+
+        @media print {
+            .interactive-card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+
+            .phase-step {
+                background: transparent;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <article class="article-container">
+        <header class="hero-section">
+            <h1>ReinvenciÃÂ³n Personal 360ÃÂ°</h1>
+            <p class="subtitle">La guÃÂ­a completa para transformar integralmente tu vida en 12 meses</p>
+        </header>
+
+        <section class="content-section">
+            <h2>Fundamentos CientÃÂ­ficos de la ReinvenciÃÂ³n</h2>
+            <div class="dynamic-grid">
+                <div class="interactive-card">
+                    <h3>Neuroplasticidad Aplicada</h3>
+                    <p>La capacidad del cerebro para reorganizarse mediante la formaciÃÂ³n de nuevas conexiones neuronales. Estrategias prÃÂ¡cticas para:</p>
+                    <ul>
+                        <li>Reestructurar patrones mentales</li>
+                        <li>Crear nuevos hÃÂ¡bitos cognitivos</li>
+                        <li>Optimizar procesos de aprendizaje</li>
+                    </ul>
+                </div>
+                <div class="interactive-card">
+                    <h3>PsicologÃÂ­a del Cambio</h3>
+                    <p>Modelos comprobados para gestionar transiciones vitales:</p>
+                    <ul>
+                        <li>TeorÃÂ­a de las Etapas del Cambio (Prochaska)</li>
+                        <li>Modelo TransteÃÂ³rico de Desarrollo</li>
+                        <li>TÃÂ©cnicas de Autoeficacia Bandura</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>MetodologÃÂ­a 360ÃÂ°: Los 4 Pilares Fundamentales</h2>
+            <div class="dynamic-grid">
+                <div class="interactive-card">
+                    <h3>Identidad Evolutiva</h3>
+                    <p>TÃÂ©cnicas para:</p>
+                    <ul>
+                        <li>ReestructuraciÃÂ³n del autoconcepto</li>
+                        <li>AlineaciÃÂ³n valÃÂ³rica profunda</li>
+                        <li>Coherencia existencial</li>
+                    </ul>
+                </div>
+                <div class="interactive-card">
+                    <h3>Mentalidad Adaptativa</h3>
+                    <p>Desarrollar:</p>
+                    <ul>
+                        <li>Resiliencia cognitiva</li>
+                        <li>Flexibilidad estratÃÂ©gica</li>
+                        <li>GestiÃÂ³n de la incertidumbre</li>
+                    </ul>
+                </div>
+                <div class="interactive-card">
+                    <h3>AcciÃÂ³n EstratÃÂ©gica</h3>
+                    <p>Implementar:</p>
+                    <ul>
+                        <li>Sistemas de productividad adaptativa</li>
+                        <li>GestiÃÂ³n de energÃÂ­a vital</li>
+                        <li>OptimizaciÃÂ³n de recursos</li>
+                    </ul>
+                </div>
+                <div class="interactive-card">
+                    <h3>Balance Integral</h3>
+                    <p>Equilibrar:</p>
+                    <ul>
+                        <li>Dimensiones fÃÂ­sica/mental/emocional</li>
+                        <li>Relaciones interpersonales</li>
+                        <li>PropÃÂ³sito existencial</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5634091835281348"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5634091835281348"
+     data-ad-slot="5101762757"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        <section class="content-section phase-timeline">
+            <h2>Proceso CientÃÂ­fico de TransformaciÃÂ³n</h2>
+            <div class="phase-step" data-phase="1">
+                <h3>AutodiagnÃÂ³stico CuÃÂ¡ntico</h3>
+                <p>MetodologÃÂ­as avanzadas para evaluaciÃÂ³n multidimensional:</p>
+                <ul>
+                    <li>AnÃÂ¡lisis de brechas competenciales</li>
+                    <li>Mapa de potencial latente</li>
+                    <li>EvaluaciÃÂ³n de recursos disponibles</li>
+                </ul>
+            </div>
+            <div class="phase-step" data-phase="2">
+                <h3>DiseÃÂ±o de Prototipo Vital</h3>
+                <p>CreaciÃÂ³n de un modelo personalizado basado en:</p>
+                <ul>
+                    <li>TeorÃÂ­a de Restricciones aplicada</li>
+                    <li>Principios de diseÃÂ±o conductual</li>
+                    <li>IngenierÃÂ­a de hÃÂ¡bitos avanzada</li>
+                </ul>
+            </div>
+            <div class="phase-step" data-phase="3">
+                <h3>ImplementaciÃÂ³n Adaptativa</h3>
+                <p>Sistema de ejecuciÃÂ³n con:</p>
+                <ul>
+                    <li>Mecanismos de retroalimentaciÃÂ³n en tiempo real</li>
+                    <li>Ajuste dinÃÂ¡mico de estrategias</li>
+                    <li>GestiÃÂ³n de contingencias proactiva</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Herramientas PrÃÂ¡cticas de ImplementaciÃÂ³n</h2>
+            <div class="dynamic-grid">
+                <div class="interactive-card">
+                    <h3>Sistema de Metricas Vitales</h3>
+                    <p>Cuadro de mando integral personal para seguimiento de:</p>
+                    <ul>
+                        <li>Progreso en 12 dimensiones clave</li>
+                        <li>Indicadores de bienestar holÃÂ­stico</li>
+                        <li>Eficacia de estrategias aplicadas</li>
+                    </ul>
+                </div>
+                <div class="interactive-card">
+                    <h3>Protocolo de AutoevaluaciÃÂ³n</h3>
+                    <p>Checklist diario/semanal/mensual para:</p>
+                    <ul>
+                        <li>DetecciÃÂ³n temprana de desviaciones</li>
+                        <li>Ajuste de rutinas</li>
+                        <li>OptimizaciÃÂ³n de procesos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </article>
+</body>
+</html>
