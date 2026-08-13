@@ -1,0 +1,30 @@
+name: Regenerar Sitemap
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Regenerar sitemap.xml y robots.txt
+        run: python scripts/generate_sitemap.py
+
+      - name: Commit si hay cambios
+        run: |
+          git config --global user.name "Auto SEO Bot"
+          git config --global user.email "bot@ultimolive.dev"
+          git add public/sitemap.xml public/robots.txt
+          git commit -m "Auto: sitemap actualizado" || echo "Sin cambios en sitemap"
+          git push

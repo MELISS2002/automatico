@@ -315,11 +315,24 @@ THUMBNAIL: (URL de miniatura usando https://image.pollinations.ai/prompt/descrip
     print("✅ JSON actualizado correctamente.")
     return True
 
+def regenerar_sitemap():
+    """Regenera sitemap.xml y robots.txt para que el artículo nuevo quede indexable."""
+    script = os.path.join(REPO_PATH, "scripts", "generate_sitemap.py")
+    if not os.path.isfile(script):
+        print("⚠️ No se encontró scripts/generate_sitemap.py. Omitiendo sitemap.")
+        return
+    try:
+        subprocess.run([sys.executable, script], cwd=REPO_PATH, check=True)
+        print("✅ Sitemap regenerado.")
+    except subprocess.CalledProcessError as e:
+        print(f"⚠️ Error al regenerar sitemap: {e}")
+
 def git_commit_and_push(mensaje="Nuevo artículo automático"):
     if not GIT_ACTIVO:
         print("⏸️  Git desactivado. No se subió a GitHub.")
         return
     try:
+        regenerar_sitemap()
         subprocess.run(["git", "add", "."], cwd=REPO_PATH, check=True)
         subprocess.run(["git", "commit", "-m", mensaje], cwd=REPO_PATH, check=True)
         subprocess.run(["git", "push"], cwd=REPO_PATH, check=True)

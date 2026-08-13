@@ -1,0 +1,82 @@
+[
+  {
+    "name": "El Comercio Peru",
+    "url": "https://elcomercio.pe/arcio/rss/",
+    "status": 200,
+    "items": 100
+  },
+  {
+    "name": "Peru21",
+    "url": "https://peru21.pe/rss/",
+    "status": 200,
+    "items": 20
+  },
+  {
+    "name": "Agencia Andina",
+    "url": "https://andina.pe/agencia/rss.aspx",
+    "status": 200,
+    "items": 20
+  },
+  {
+    "name": "Convoca",
+    "url": "https://convoca.pe/rss.xml",
+    "status": 200,
+    "items": 10
+  },
+  {
+    "name": "La Tercera (Chile)",
+    "url": "https://www.latercera.com/rss/",
+    "status": 200,
+    "items": 100
+  },
+  {
+    "name": "RT en Espanol",
+    "url": "https://actualidad.rt.com/rss",
+    "status": 200,
+    "items": 10
+  },
+  {
+    "name": "Marca",
+    "url": "https://www.marca.com/rss/portada.xml",
+    "status": 200,
+    "items": 71
+  },
+  {
+    "name": "ABC Espana",
+    "url": "https://www.abc.es/rss/feeds/abc_ultima.xml",
+    "status": 200,
+    "items": 20
+  },
+  {
+    "name": "El Comercio (Ecuador)",
+    "url": "https://www.elcomercio.com/feed/",
+    "status": 200,
+    "items": 20
+  },
+  {
+    "name": "Los Andes (Puno)",
+    "url": "https://losandes.com.pe/feed",
+    "status": 200,
+    "items": 10
+  },
+  {
+    "name": "Gestion",
+    "url": "https://gestion.pe/arcio/rss/",
+    "items": 100
+  },
+  {
+    "name": "Diario Correo",
+    "url": "https://diariocorreo.pe/arcio/rss/",
+    "items": 100
+  },
+  {
+    "name": "Ojo",
+    "url": "https://ojo.pe/arcio/rss/",
+    "items": 19
+  },
+  {
+    "name": "Depor",
+    "url": "https://depor.com/arcio/rss/",
+    "items": 100
+  }
+]
