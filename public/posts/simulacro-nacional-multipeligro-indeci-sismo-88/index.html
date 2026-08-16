@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacro Nacional Multipeligro INDECI: Perú ensaya respuesta ante sismo de magnitud 8.8 este viernes 14 de agosto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: #f4f4f4;
+            color: #1a1a1a;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 0 30px rgba(0,0,0,0.08);
+        }
+
+        /* HEADER */
+        .header {
+            border-bottom: 4px solid #c0392b;
+            padding: 20px 0 15px;
+            margin-bottom: 25px;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 0.85rem;
+            color: #666;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 12px;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+        }
+
+        .header-top .media {
+            font-weight: 700;
+            color: #c0392b;
+            letter-spacing: 1px;
+        }
+
+        .header-top .date {
+            font-weight: 400;
+        }
+
+        .header h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .header .subhead {
+            font-size: 1.1rem;
+            color: #444;
+            font-weight: 400;
+            border-left: 4px solid #c0392b;
+            padding-left: 16px;
+            margin-top: 8px;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+        }
+
+        .byline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: #555;
+            margin: 12px 0 6px;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 12px;
+        }
+
+        .byline .author {
+            font-weight: 600;
+        }
+
+        .byline .share {
+            display: flex;
+            gap: 10px;
+        }
+
+        .byline .share span {
+            background: #eee;
+            padding: 2px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            cursor: default;
+        }
+
+        /* FEATURED IMAGE */
+        .featured-img {
+            margin: 20px 0 25px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .featured-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .featured-img .caption {
+            font-size: 0.8rem;
+            color: #777;
+            padding: 8px 12px;
+            background: #f9f9f9;
+            border-bottom: 1px solid #eee;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+        }
+
+        /* CONTENT */
+        .content {
+            font-size: 1.08rem;
+        }
+
+        .content p {
+            margin-bottom: 1.4em;
+            text-align: justify;
+        }
+
+        .content .dropcap:first-letter {
+            font-size: 3.8rem;
+            float: left;
+            line-height: 0.9;
+            margin-right: 10px;
+            color: #c0392b;
+            font-weight: 700;
+        }
+
+        .content h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin: 1.8em 0 0.6em;
+            color: #1a1a1a;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 8px;
+        }
+
+        .content h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.4em 0 0.5em;
+            color: #2c3e50;
+        }
+
+        .content .highlight-box {
+            background: #fef9f7;
+            border-left: 5px solid #c0392b;
+            padding: 18px 24px;
+            margin: 24px 0;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .content .highlight-box strong {
+            color: #c0392b;
+        }
+
+        .content ul {
+            margin: 0 0 1.4em 2.2em;
+        }
+
+        .content ul li {
+            margin-bottom: 0.5em;
+        }
+
+        /* IMAGE GRID */
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin: 30px 0;
+        }
+
+        .image-grid .img-item {
+            border-radius: 6px;
+            overflow: hidden;
+            background: #f9f9f9;
+        }
+
+        .image-grid .img-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-grid .img-item .caption {
+            font-size: 0.75rem;
+            color: #777;
+            padding: 8px 12px;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            background: #f9f9f9;
+        }
+
+        .image-grid .img-item.full {
+            grid-column: 1 / -1;
+        }
+
+        /* QUOTE */
+        .blockquote {
+            margin: 28px 0;
+            padding: 20px 30px;
+            background: #f7f7f7;
+            border-radius: 6px;
+            border-left: 6px solid #c0392b;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #2c3e50;
+        }
+
+        .blockquote .attribution {
+            display: block;
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: 600;
+            color: #1a1a1a;
+            font-size: 0.95rem;
+        }
+
+        /* INFO BOX */
+        .info-box {
+            background: #eef4f7;
+            border-radius: 8px;
+            padding: 20px 26px;
+            margin: 28px 0;
+            border: 1px solid #d5e0e8;
+        }
+
+        .info-box h4 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+        }
+
+        .info-box .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 30px;
+            font-size: 0.95rem;
+        }
+
+        .info-box .row .item {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+        }
+
+        .info-box .row .item .label {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        /* FOOTER */
+        .footer {
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 2px solid #eaeaea;
+            font-size: 0.8rem;
+            color: #999;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px;
+            }
+
+            .header h1 {
+                font-size: 1.7rem;
+            }
+
+            .header .subhead {
+                font-size: 0.95rem;
+            }
+
+            .content {
+                font-size: 0.98rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+                gap: 14px;
+            }
+
+            .content .dropcap:first-letter {
+                font-size: 2.8rem;
+            }
+
+            .blockquote {
+                padding: 16px 18px;
+                font-size: 1rem;
+            }
+
+            .info-box .row {
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .byline {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+
+            .header-top {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.4rem;
+            }
+
+            .content {
+                font-size: 0.92rem;
+            }
+
+            .content h2 {
+                font-size: 1.25rem;
+            }
+
+            .featured-img .caption {
+                font-size: 0.7rem;
+                padding: 6px 10px;
+            }
+
+            .image-grid .img-item .caption {
+                font-size: 0.7rem;
+                padding: 6px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-top">
+            <span class="media">DIARIO EL PERUANO · NACIONAL</span>
+            <span class="date">Viernes, 14 de agosto de 2026 · Edición N° 12,847</span>
+        </div>
+        <h1>Simulacro Nacional Multipeligro INDECI: Perú ensaya respuesta ante sismo de magnitud 8.8 este viernes 14 de agosto</h1>
+        <div class="subhead">Más de 12 millones de ciudadanos participaron en el ejercicio que puso a prueba los protocolos de emergencia en 25 regiones del país.</div>
+        <div class="byline">
+            <span class="author">Por Redacción Nacional · Agencia ANDINA</span>
+            <span class="share"><span>Actualizado 14:45 h</span> <span>Compartir</span></span>
+        </div>
+    </header>
+
+    <!-- FEATURED IMAGE -->
+    <div class="featured-img">
+        <img src="imagen1.jpg" alt="Simulacro Nacional Multipeligro INDECI - Evacuación masiva en Lima ante simulacro de sismo 8.8">
+        <div class="caption">Miles de personas evacuaron ordenadamente las zonas de alto riesgo en el Cercado de Lima durante el Simulacro Nacional Multipeligro 2026. (Foto: INDECI / Andina)</div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <p class="dropcap">A las 10:00 de la mañana de este viernes 14 de agosto, una potente alerta sísmica rompió la calma en todo el territorio peruano. No se trataba de un terremoto real, sino del <strong>Simulacro Nacional Multipeligro 2026</strong>, organizado por el Instituto Nacional de Defensa Civil (INDECI), que por sexta vez consecutiva puso a prueba la capacidad de reacción del país frente a un escenario de desastre de gran magnitud: un sismo de 8.8 grados en la escala de Richter con epicentro frente a las costas de la región Lima.</p>
+
+        <p>El ejercicio, que se extendió por aproximadamente 15 minutos, movilizó a <strong>más de 12 millones de peruanos</strong> en los 1,874 distritos del país, según el primer reporte oficial del INDECI. Instituciones educativas, centros de salud, entidades públicas, empresas privadas y hogares participaron activamente en una coreografía ciudadana que buscó reforzar la cultura de prevención y evaluar los tiempos de respuesta ante una eventual catástrofe natural.</p>
+
+        <p>"El Perú es un país altamente sísmico. No es una cuestión de si ocurrirá un gran terremoto, sino de cuándo. Simulacros como este salvan vidas", declaró el jefe del INDECI, Carlos Benavides, durante la conferencia de prensa ofrecida al mediodía desde la sede central de la institución en el distrito de San Borja. "Hemos visto una participación masiva y, en líneas generales, una respuesta ordenada. Sin embargo, siempre hay lecciones que aprender y aspectos que mejorar", agregó.</p>
+
+        <h2>Un escenario de alta complejidad: el "Gran Sismo de Lima"</h2>
+
+        <p>El escenario planteado por INDECI para esta edición fue particularmente desafiante. Se simuló un <strong>terremoto de magnitud 8.8</strong> con hipocentro a 35 kilómetros de profundidad, localizado a 90 kilómetros al suroeste del Callao. Este movimiento telúrico, de características similares al que devastó la ciudad de Valdivia en Chile en 1960, generaría una intensidad de grado IX en la escala de Mercalli en la costa central, lo que implica daños severos en infraestructura, colapso de edificios antiguos, interrupción de servicios básicos y, potencialmente, un tsunami con olas de hasta 6 metros en el litoral.</p>
+
+        <p>"Hemos trabajado con el Instituto Geofísico del Perú (IGP) y el Centro Nacional de Estimación, Prevención y Reducción del Riesgo de Desastres (CENEPRED) para construir un escenario lo más realista posible", explicó Benavides. "La magnitud 8.8 es el peor escenario posible para la costa peruana, y precisamente por eso debemos ensayarlo".</p>
+
+        <div class="highlight-box">
+            <strong>Dato clave:</strong> El último gran sismo que afectó gravemente a la región central del Perú fue el terremoto de Lima de 1974, de magnitud 7.6. Sin embargo, los especialistas advierten que la zona de subducción frente a la costa peruana acumula energía suficiente para un evento de mayor magnitud.
+        </div>
+
+        <p>El simulacro contempló tres fases bien definidas: <strong>alerta, evacuación y evaluación</strong>. Durante los primeros 30 segundos, las sirenas sonaron en todo el país y los ciudadanos debieron identificar las zonas de seguridad. Posteriormente, se activaron los protocolos de evacuación hacia los puntos de reunión designados. Finalmente, los comités de defensa civil realizaron un conteo de personas y reportaron incidencias a la sala de crisis del INDECI, que operó con un centro de comando descentralizado conectado con todas las regiones.</p>
+
+        <div class="image-grid">
+            <div class="img-item">
+                <img src="imagen2.jpg" alt="Brigadistas de INDECI coordinando evacuación en escuela durante simulacro">
+                <div class="caption">Brigadistas del INDECI coordinaron la evacuación de más de 200 mil escolares en todo el país. (Foto: INDECI / Agencia Peruana de Noticias)</div>
+            </div>
+            <div class="img-item">
+                <img src="imagen3.jpg" alt="Simulacro Nacional Multipeligro - Personal de salud atiende a heridos ficticios en carpa de emergencia">
+                <div class="caption">El sector Salud habilitó puestos de atención avanzada para evaluar la capacidad de respuesta hospitalaria ante una emergencia masiva. (Foto: MINSA / INDECI)</div>
+            </div>
+        </div>
+
+        <h2>Balance regional: cifras y participación</h2>
+
+        <p>El informe preliminar del INDECI, difundido a las 13:00 horas, arrojó los siguientes datos: <strong>12,346,872 participantes</strong> en todo el país, lo que representa aproximadamente el 37% de la población nacional. Lima Metropolitana concentró la mayor cantidad de inscritos, con más de 4.2 millones de personas, seguida de las regiones de Arequipa (1.1 millones), La Libertad (980 mil) y Cusco (720 mil).</p>
+
+        <p>En el ámbito educativo, <strong>32,845 instituciones</strong> entre escolares, institutos y universidades se sumaron al ejercicio. El Ministerio de Educación reportó que el 94% de los colegios públicos y privados participaron activamente, con tiempos de evacuación que promediaron los 4 minutos y 20 segundos, una mejora significativa respecto al simulacro anterior, donde el promedio fue de 5 minutos y 10 segundos.</p>
+
+        <p>El sector salud, por su parte, desplegó <strong>1,200 brigadas de respuesta rápida</strong> y activó 87 hospitales de contingencia en todo el territorio. El ministro de Salud, Alberto Tejada, señaló que se simularon 4,500 heridos de diversa gravedad, incluyendo fracturas, traumatismos y casos de crisis nerviosas, con el objetivo de poner a prueba la capacidad de triaje y atención en escenarios de alta demanda.</p>
+
+        <div class="blockquote">
+            "La preparación no es un lujo, es una responsabilidad. Cada segundo cuenta cuando el suelo tiembla. Este simulacro nos demuestra que estamos avanzando, pero también que aún hay brechas que cerrar en zonas rurales y asentamientos humanos en laderas."
+            <span class="attribution">— Carlos Benavides, Jefe del INDECI</span>
+        </div>
+
+        <h2>Lecciones aprendidas y desafíos pendientes</h2>
+
+        <p>Pese al balance positivo, el simulacro también dejó en evidencia aspectos críticos que requieren atención inmediata. <strong>Las zonas de mayor vulnerabilidad</strong> continúan siendo los asentamientos humanos ubicados en laderas de cerros y riveras de ríos, donde el acceso es limitado y las viviendas están construidas con materiales precarios.</p>
+
+        <p>"En distritos como San Juan de Lurigancho, Villa El Salvador y Comas, los tiempos de evacuación fueron más prolongados debido a la densidad poblacional y la falta de rutas de escape claras", señaló la coordinadora de la Plataforma Nacional de Gestión del Riesgo de Desastres, María Isabel Rodríguez. "Es allí donde debemos focalizar nuestras campañas de sensibilización y mejorar la infraestructura de los puntos de reunión".</p>
+
+        <p>Otro de los temas que generó debate fue la <strong>capacidad de respuesta de las telecomunicaciones</strong>. Durante los primeros 10 minutos del simulacro, se reportó congestión en las redes móviles, lo que dificultó la comunicación entre los centros de operaciones de emergencia. El Ministerio de Transportes y Comunicaciones informó que se está trabajando en un sistema de alerta temprana alternativo que utilice radio y tecnología satelital para garantizar la transmisión de información en situaciones de crisis.</p>
+
+        <h3>Participación ciudadana: el factor humano</h3>
+
+        <p>Más allá de las cifras y los protocolos, el simulacro fue también un ejercicio de <strong>solidaridad y conciencia colectiva</strong>. En el distrito de Miraflores, vecinos organizados ayudaron a adultos mayores y personas con discapacidad a evacuar sus viviendas. En el Callao, pescadores artesanales simularon el arribo a puerto seguro ante la alerta de tsunami. En Arequipa, estudiantes de la Universidad Nacional de San Agustín realizaron prácticas de primeros auxilios en una carpa instalada en el campus.</p>
+
+        <p>"Lo más importante es que la gente entienda que la prevención no es una tarea exclusiva del Estado. Todos somos parte de la respuesta", reflexionó el alcalde de Lima, Rafael López Aliaga, quien supervisó personalmente la evacuación en el Cercado de Lima. "Hemos visto a ciudadanos comprometidos, que saben qué hacer y dónde ir. Eso es lo que nos da tranquilidad".</p>
+
+        <div class="info-box">
+            <h4>DATOS CLAVE DEL SIMULACRO NACIONAL MULTIPELIGRO 2026</h4>
+            <div class="row">
+                <span class="item"><span class="label">Magnitud simulada:</span> 8.8 grados</span>
+                <span class="item"><span class="label">Hora:</span> 10:00 a.m.</span>
+                <span class="item"><span class="label">Participantes:</span> 12.3 millones</span>
+                <span class="item"><span class="label">Regiones:</span> 25</span>
+                <span class="item"><span class="label">Distritos:</span> 1,874</span>
+                <span class="item"><span class="label">Instituciones educativas:</span> 32,845</span>
+                <span class="item"><span class="label">Hospitales de contingencia:</span> 87</span>
+                <span class="item"><span class="label">Brigadistas desplegados:</span> 1,200</span>
+            </div>
+        </div>
+
+        <h2>El contexto sísmico del Perú: una realidad ineludible</h2>
+
+        <p>El Perú está ubicado en el denominado <strong>Cinturón de Fuego del Pacífico</strong>, una de las zonas de mayor actividad sísmica y volcánica del planeta. La placa de Nazca se hunde bajo la placa Sudamericana a una velocidad de aproximadamente 7 centímetros por año, generando una acumulación de energía que se libera periódicamente en forma de terremotos.</p>
+
+        <p>Según el Instituto Geofísico del Perú (IGP), en los últimos 500 años se han registrado al menos 15 terremotos de magnitud superior a 7.5 en el territorio nacional. El más devastador de la historia reciente fue el terremoto de Áncash de 1970, de magnitud 7.9, que provocó la muerte de más de 70,000 personas y la destrucción total de la ciudad de Yungay.</p>
+
+        <p>Los especialistas coinciden en que la costa central, especialmente la zona que abarca desde Chincha hasta Huacho, es la que presenta mayor probabilidad de un sismo de gran magnitud en el corto o mediano plazo. "No podemos predecir cuándo ocurrirá, pero sí podemos prepararnos. Ese es el objetivo de estos simulacros: reducir la vulnerabilidad y salvar vidas", enfatizó la sismóloga del IGP, Patricia García.</p>
+
+        <h2>Hacia una cultura de prevención permanente</h2>
+
+        <p>El Simulacro Nacional Multipeligro de este 14 de agosto no es un evento aislado. Forma parte de una estrategia integral del Gobierno peruano para instaurar una <strong>cultura de prevención</strong> en todos los niveles de la sociedad. Desde el año 2020, INDECI ha impulsado campañas de sensibilización en escuelas, mercados, transporte público y medios de comunicación, con el objetivo de que cada ciudadano conozca las rutas de evacuación y los puntos de encuentro en su comunidad.</p>
+
+        <p>"No basta con hacer un simulacro una vez al año. La preparación debe ser constante", sostuvo el jefe del INDECI. "Por eso estamos trabajando en la implementación de un sistema de alerta temprana que llegue a todos los teléfonos celulares del país, similar al que ya operan países como México y Japón. Esperamos tenerlo operativo en el primer semestre de 2027".</p>
+
+        <p>El día de hoy, el Perú demostró que está dispuesto a enfrentar su realidad sísmica con responsabilidad y organización. Millones de ciudadanos evacuaron, coordinaron y se apoyaron mutuamente en un ejercicio que, más que una prueba técnica, fue una afirmación de <strong>compromiso colectivo con la vida y la seguridad</strong>.</p>
+
+        <p>El informe final del simulacro será presentado en los próximos días, con un detalle pormenorizado de los tiempos de respuesta, las incidencias reportadas y las recomendaciones para futuras ediciones. Mientras tanto, las autoridades hacen un llamado a la ciudadanía a no bajar la guardia y a mantener vigentes los planes de emergencia en sus hogares y centros de trabajo.</p>
+
+        <p>"Hoy hemos dado un paso importante. Pero el verdadero simulacro será cuando llegue el día en que la tierra realmente se mueva. Y ese día, cada segundo de preparación contará", concluyó Benavides con tono grave, cerrando así una jornada que quedará registrada como una de las movilizaciones preventivas más grandes en la historia del Perú.</p>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <span>© 2026 Diario El Peruano · Todos los derechos reservados</span>
+        <span>Información oficial: Instituto Nacional de Defensa Civil (INDECI) · www.indeci.gob.pe</span>
+    </footer>
+
+</div>
+
+
+    <footer><p>Autor: ROSA EMILY | Fecha: 2026-08-14 | UltimoLive</p></footer>
+</body>
+</html>

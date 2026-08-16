@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Once peruanos murieron combatiendo por Rusia y otros 114 están desaparecidos | Noticias Perú</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: #f4f4f4;
+            color: #1a1a1a;
+            line-height: 1.8;
+        }
+
+        .top-bar {
+            background: #0a0a0a;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 13px;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            border-bottom: 3px solid #c0392b;
+        }
+
+        .top-bar .brand {
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .top-bar .brand span {
+            color: #e74c3c;
+        }
+
+        .top-bar .date {
+            color: #ccc;
+            font-size: 12px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px 15px;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .breaking-ribbon {
+            background: #c0392b;
+            color: #fff;
+            padding: 8px 16px;
+            font-family: 'Arial', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            color: #0a0a0a;
+            letter-spacing: -0.5px;
+        }
+
+        .subhead {
+            font-size: 1.3rem;
+            color: #444;
+            margin-bottom: 20px;
+            font-weight: 400;
+            border-left: 4px solid #c0392b;
+            padding-left: 18px;
+        }
+
+        .byline {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            color: #666;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .byline .author {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .byline .meta {
+            color: #888;
+            font-size: 13px;
+        }
+
+        .featured-image {
+            margin: 0 -15px 25px -15px;
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .featured-image .caption {
+            font-family: 'Arial', sans-serif;
+            font-size: 13px;
+            color: #666;
+            padding: 8px 15px;
+            background: #f8f8f8;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-content {
+            font-size: 1.1rem;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .article-content .lead {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #1a1a1a;
+            line-height: 1.7;
+        }
+
+        .article-content h2 {
+            font-size: 1.6rem;
+            margin: 35px 0 15px 0;
+            color: #0a0a0a;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .article-content h3 {
+            font-size: 1.25rem;
+            margin: 25px 0 12px 0;
+            color: #222;
+            font-weight: 600;
+        }
+
+        .pull-quote {
+            background: #f9f9f9;
+            border-left: 5px solid #c0392b;
+            padding: 20px 25px;
+            margin: 30px 0;
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #222;
+            font-weight: 500;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .pull-quote .source {
+            display: block;
+            font-size: 0.9rem;
+            font-style: normal;
+            font-weight: 400;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .image-grid figure {
+            margin: 0;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .image-grid .caption {
+            font-family: 'Arial', sans-serif;
+            font-size: 12px;
+            color: #666;
+            padding-top: 6px;
+        }
+
+        .info-box {
+            background: #f0f4f8;
+            border-radius: 6px;
+            padding: 20px 25px;
+            margin: 30px 0;
+            border-left: 4px solid #2c3e50;
+        }
+
+        .info-box h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #0a0a0a;
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+
+        .info-box ul li {
+            padding: 6px 0;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 0.95rem;
+        }
+
+        .info-box ul li:last-child {
+            border-bottom: none;
+        }
+
+        .info-box ul li strong {
+            color: #c0392b;
+        }
+
+        .related-links {
+            margin: 40px 0 20px 0;
+            padding: 20px;
+            background: #fafafa;
+            border: 1px solid #eee;
+            border-radius: 6px;
+        }
+
+        .related-links h4 {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #888;
+            margin-bottom: 12px;
+        }
+
+        .related-links ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 20px;
+        }
+
+        .related-links ul li {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+        }
+
+        .related-links ul li a {
+            color: #1a1a1a;
+            text-decoration: none;
+            border-bottom: 1px dotted #ccc;
+        }
+
+        .related-links ul li a:hover {
+            color: #c0392b;
+            border-bottom-color: #c0392b;
+        }
+
+        .footer {
+            background: #0a0a0a;
+            color: #888;
+            padding: 30px 20px;
+            font-family: 'Arial', sans-serif;
+            font-size: 13px;
+            text-align: center;
+            border-top: 3px solid #c0392b;
+        }
+
+        .footer a {
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #fff;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subhead {
+                font-size: 1.05rem;
+                padding-left: 14px;
+            }
+
+            .article-content {
+                font-size: 1rem;
+            }
+
+            .article-content .lead {
+                font-size: 1.1rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .top-bar .brand {
+                font-size: 13px;
+            }
+
+            .top-bar .date {
+                font-size: 11px;
+                margin-top: 4px;
+            }
+
+            .pull-quote {
+                font-size: 1.1rem;
+                padding: 15px 18px;
+            }
+
+            .container {
+                padding: 12px 12px;
+            }
+
+            .byline {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+
+            .info-box {
+                padding: 15px 18px;
+            }
+
+            .related-links ul {
+                flex-direction: column;
+                gap: 4px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .subhead {
+                font-size: 0.95rem;
+            }
+
+            .article-content {
+                font-size: 0.95rem;
+            }
+
+            .breaking-ribbon {
+                font-size: 11px;
+                padding: 6px 12px;
+            }
+
+            .top-bar {
+                padding: 8px 12px;
+                flex-direction: column;
+                text-align: center;
+                gap: 4px;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            .top-bar {
+                background: #000 !important;
+                color: #fff !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .container {
+                box-shadow: none !important;
+                max-width: 100% !important;
+            }
+            .footer {
+                background: #000 !important;
+                color: #888 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="brand">Diario <span>El Peruano</span></div>
+        <div class="date">Viernes, 14 de agosto de 2026 | Edición N° 42,718</div>
+    </div>
+
+    <div class="container">
+
+        <div class="breaking-ribbon">ÚLTIMA HORA • EXCLUSIVA</div>
+
+        <h1>Once peruanos murieron combatiendo por Rusia y otros 114 están desaparecidos, dicen autoridades de Perú</h1>
+
+        <div class="subhead">La Cancillería peruana confirma la cifra más alta de víctimas mortales entre ciudadanos nacionales en el conflicto ucraniano. Familias exigen información y el gobierno activa protocolos de asistencia consular.</div>
+
+        <div class="byline">
+            <span class="author">Por Rodrigo Paredes M.</span>
+            <span class="meta">Corresponsal de Política Internacional • Lima — 14 de agosto de 2026</span>
+        </div>
+
+        <!-- IMAGEN 1 -->
+        <div class="featured-image">
+            <img src="imagen1.jpg" alt="Familiares de peruanos desaparecidos en Ucrania se manifiestan frente al Palacio de Torre Tagle en Lima">
+            <div class="caption">Familiares de peruanos desaparecidos en el frente ucraniano se concentraron esta mañana frente al Palacio de Torre Tagle, sede de la Cancillería peruana, exigiendo respuestas sobre el paradero de sus seres queridos. (Foto: Agencia Andina)</div>
+        </div>
+
+        <div class="article-content">
+
+            <p class="lead"><strong>Lima, 14 de agosto de 2026</strong> — El Ministerio de Relaciones Exteriores de Perú confirmó este viernes, en un informe oficial sin precedentes, que al menos <strong>once ciudadanos peruanos han perdido la vida</strong> en el frente de batalla de Ucrania mientras combatían integrando las filas del ejército ruso. La misma fuente reporta que <strong>114 compatriotas permanecen en calidad de desaparecidos</strong> en medio del conflicto que ya se extiende por más de cuatro años.</p>
+
+            <p>El canciller Héctor Béjar, en una conferencia de prensa realizada a primera hora de la mañana en el Palacio de Torre Tagle, detalló que las cifras fueron recopiladas a través de los consulados peruanos en Moscú, San Petersburgo y las ciudades ucranianas de Donetsk y Lugansk, donde se ha registrado la mayor concentración de ciudadanos peruanos enrolados en las fuerzas rusas.</p>
+
+            <p>"Estos números nos duelen profundamente como nación. Cada uno de estos compatriotas partió con la esperanza de encontrar un futuro mejor, y hoy sus familias enfrentan la peor de las incertidumbres", declaró el canciller, visiblemente afectado. "Hemos activado todos los protocolos de asistencia consular y estamos en comunicación permanente con las autoridades rusas para esclarecer el paradero de los desaparecidos y facilitar la repatriación de los cuerpos de los fallecidos".</p>
+
+            <!-- PULL QUOTE -->
+            <div class="pull-quote">
+                "Estos números nos duelen profundamente como nación. Cada uno de estos compatriotas partió con la esperanza de encontrar un futuro mejor, y hoy sus familias enfrentan la peor de las incertidumbres".
+                <span class="source">— Héctor Béjar, Canciller de la República del Perú</span>
+            </div>
+
+            <h2>El fenómeno de los mercenarios peruanos en Ucrania</h2>
+
+            <p>El conflicto entre Rusia y Ucrania, que se recrudeció en febrero de 2022 con la invasión rusa a gran escala, ha atraído a miles de combatientes extranjeros de todo el mundo. Entre ellos, un número significativo de ciudadanos peruanos —en su mayoría jóvenes de entre 22 y 40 años— han sido reclutados tanto por el ejército ruso como por las fuerzas ucranianas, atraídos por promesas de pago, beneficios migratorios o, en algunos casos, por ideologías políticas afines al Kremlin.</p>
+
+            <p>Según fuentes del Ministerio de Defensa peruano, entre enero de 2024 y agosto de 2026, se estima que al menos 300 peruanos han viajado a la zona de conflicto con la intención de incorporarse a las filas rusas, aunque la cifra real podría ser mayor, ya que muchos lo hicieron de manera irregular a través de rutas turísticas hacia Turquía o los países bálticos.</p>
+
+            <p>El embajador de Perú en Moscú, Jorge Valdez, señaló en declaraciones a este diario que "la Cancillería ha mantenido un diálogo constante con el Ministerio de Defensa ruso para obtener información detallada sobre los peruanos que han sido identificados en el frente. Sin embargo, la dinámica del campo de batalla y la dispersión de las tropas dificultan enormemente la localización precisa de cada individuo".</p>
+
+            <!-- IMAGEN 2 -->
+            <div class="image-grid">
+                <figure>
+                    <img src="imagen2.jpg" alt="Soldados peruanos en entrenamiento militar en Rusia antes de ser desplegados al frente ucraniano">
+                    <figcaption class="caption">Registro fotográfico obtenido por este diario muestra a ciudadanos peruanos durante entrenamiento militar en una base rusa antes de su despliegue al frente ucraniano. (Foto: Archivo / Reuters)</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagen3.jpg" alt="Manifestación de familiares de peruanos desaparecidos exigiendo respuestas al gobierno">
+                    <figcaption class="caption">Decenas de familiares se congregaron hoy en la Plaza San Martín de Lima para exigir al gobierno peruano acciones concretas para localizar a los 114 desaparecidos. (Foto: Agencia EFE)</figcaption>
+                </figure>
+            </div>
+
+            <h2>El drama de las familias: "Solo quiero saber si mi hijo está vivo"</h2>
+
+            <p>Mientras las autoridades presentaban su informe, a las afueras del Palacio de Torre Tagle se vivía una escena desgarradora. Decenas de familiares de los desaparecidos se congregaron desde las primeras horas de la mañana, portando carteles con los rostros de sus seres queridos y exigiendo al gobierno peruano acciones concretas.</p>
+
+            <p>María Elena Quispe, madre de Juan Carlos Quispe Mamani, de 28 años, quien viajó a Rusia en junio de 2025 con la promesa de un trabajo en la construcción y luego fue reclutado por el ejército ruso, rompió en llanto al hablar con este medio. "Hace ocho meses que no sé nada de mi hijo. La última vez que hablamos me dijo que estaba en una zona peligrosa, que quería volver a casa. Ahora me entero por la televisión que hay 114 desaparecidos y mi corazón se parte en mil pedazos. Solo quiero saber si está vivo".</p>
+
+            <p>La Asociación de Familiares de Peruanos en Conflicto (AFAPEC), que agrupa a más de 80 familias afectadas, ha presentado una carta formal al Congreso de la República solicitando la creación de una comisión especial que investigue el reclutamiento de peruanos por parte de fuerzas extranjeras y que gestione la repatriación de los compatriotas que se encuentran en zona de guerra.</p>
+
+            <h3>El rol de los "reclutadores" y las redes de tráfico de personas</h3>
+
+            <p>En las últimas semanas, diversas investigaciones periodísticas han destapado la existencia de redes de captación de peruanos en situación de vulnerabilidad económica, que son engañados con ofertas de empleo en Europa y terminan siendo enviados al frente de batalla. Estas mafias operan principalmente en las regiones de Lima, Arequipa, Cusco y Loreto, ofreciendo sumas que oscilan entre los 3,000 y 5,000 dólares por persona reclutada.</p>
+
+            <p>El fiscal de la Nación, Juan Carlos Villena, anunció este jueves la apertura de una investigación preliminar contra estas organizaciones por los presuntos delitos de trata de personas, reclutamiento ilegal y estafa. "Estamos ante un fenómeno criminal que ha aprovechado la desesperación de cientos de peruanos para lucrar con sus vidas. No permitiremos que estos delitos queden impunes", afirmó el fiscal en una entrevista con RPP Noticias.</p>
+
+            <div class="info-box">
+                <h4> Cifras clave del informe de la Cancillería peruana</h4>
+                <ul>
+                    <li><strong>11</strong> ciudadanos peruanos fallecidos en combate en Ucrania (confirmados)</li>
+                    <li><strong>114</strong> peruanos en calidad de desaparecidos en zona de conflicto</li>
+                    <li><strong>22</strong> compatriotas repatriados en lo que va del año (9 heridos, 13 ilesos)</li>
+                    <li><strong>80+</strong> familias afiliadas a AFAPEC que exigen información</li>
+                    <li><strong>300</strong> peruanos estimados que viajaron a Ucrania para unirse al ejército ruso desde 2024</li>
+                </ul>
+            </div>
+
+            <h2>Reacciones en el ámbito político y diplomático</h2>
+
+            <p>El informe de la Cancillería ha generado una ola de reacciones en el espectro político peruano. La presidenta del Congreso, Patricia Chirinos, anunció la conformación de una comisión multipartidaria que viajará a Moscú en las próximas semanas para entrevistarse con autoridades rusas y ucranianas, con el objetivo de agilizar los procesos de identificación y repatriación.</p>
+
+            <p>"No podemos permanecer indiferentes ante esta tragedia. Son peruanos que han perdido la vida o que están desaparecidos, y sus familias merecen respuestas claras. Vamos a exigir al gobierno ruso que entregue toda la información que tenga sobre nuestros compatriotas", declaró Chirinos en una conferencia de prensa en el Hemiciclo del Congreso.</p>
+
+            <p>Por su parte, la bancada de izquierda, a través del vocero Waldemar Cerrón, cuestionó la decisión del gobierno de no emitir una alerta migratoria preventiva que desincentivara a los peruanos a viajar a zonas de conflicto. "El Estado peruano tiene la responsabilidad de proteger a sus ciudadanos, no solo una vez que están en problemas, sino también antes de que partan. Debemos implementar campañas de prevención y advertencia claras", sostuvo Cerrón.</p>
+
+            <p>En el plano internacional, la Organización de Estados Americanos (OEA) emitió un comunicado expresando su "profunda preocupación" por la situación de los ciudadanos peruanos en Ucrania y ofreciendo su apoyo técnico para la identificación de los desaparecidos. El secretario general de la OEA, Luis Almagro, manifestó que "la comunidad interamericana debe unirse para proteger a sus ciudadanos en el extranjero, especialmente en situaciones de conflicto armado".</p>
+
+            <h3>El costo humano del conflicto: más de 2,500 latinoamericanos en el frente</h3>
+
+            <p>El caso peruano no es aislado en la región. Según reportes de la Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos (ACNUDH), al menos 2,500 ciudadanos de países latinoamericanos han viajado a Ucrania para unirse a las fuerzas rusas o ucranianas desde el inicio de la invasión. Entre ellos, destacan ciudadanos de Colombia, Ecuador, Bolivia, México y Brasil, además de Perú.</p>
+
+            <p>El pasado mes de junio, el gobierno de Colombia confirmó la muerte de siete de sus ciudadanos en combate, mientras que Ecuador reportó al menos cuatro fallecidos y una decena de desaparecidos. La Cancillería peruana ha coordinado con estos países para intercambiar información y establecer mecanismos conjuntos de asistencia consular en la región del conflicto.</p>
+
+            <p>El analista internacional Juan Manuel Rodríguez, profesor de la Pontificia Universidad Católica del Perú, señaló que "la presencia de combatientes latinoamericanos en Ucrania es un reflejo de la desesperación económica y la falta de oportunidades en nuestra región. Muchos de estos jóvenes vieron en el conflicto una vía de escape a su situación de pobreza, pero se encontraron con una realidad mucho más cruda: la muerte o el olvido".</p>
+
+            <h2>Próximos pasos: repatriación y protocolos de identificación forense</h2>
+
+            <p>La Cancillería peruana informó que se está coordinando con el Comité Internacional de la Cruz Roja (CICR) y el Sistema de las Naciones Unidas para establecer un protocolo de identificación forense de los cuerpos de los once peruanos fallecidos. Este proceso, que puede tomar varias semanas debido a la situación de guerra y la dificultad de acceso a las zonas de combate, busca garantizar la correcta identificación de cada víctima y el posterior traslado de sus restos a Perú.</p>
+
+            <p>"Sabemos que el dolor de las familias es inmenso, y estamos haciendo todo lo que está a nuestro alcance para acelerar estos trámites. La dignidad de nuestros compatriotas fallecidos es nuestra prioridad", aseguró el viceministro de Relaciones Exteriores, Ignacio Higueras, en una entrevista con Canal N.</p>
+
+            <p>En cuanto a los 114 desaparecidos, la Cancillería ha habilitado una línea telefónica de atención gratuita (0800-1-3127) y un correo electrónico (consulado.ucrania@rree.gob.pe) para que los familiares puedan reportar información y recibir asistencia psicológica y legal. Además, se ha dispuesto un equipo de psicólogos y trabajadores sociales en la sede de Torre Tagle para brindar apoyo a las familias.</p>
+
+            <p>El Ministerio de Defensa, por su parte, ha activado el Plan de Asistencia al Ciudadano en el Extranjero (PLANACE), que contempla el despliegue de un equipo de oficiales de enlace a Polonia, Rumania y Moldavia para coordinar las operaciones de búsqueda y rescate de los peruanos desaparecidos.</p>
+
+            <h3>Un llamado a la solidaridad internacional</h3>
+
+            <p>El canciller Béjar concluyó su conferencia de prensa haciendo un llamado a la comunidad internacional para que se garantice el respeto al derecho internacional humanitario en el conflicto ucraniano. "Pedimos a todas las partes que respeten la vida de los civiles y de los combatientes que han sido reclutados. Exigimos que se nos permita acceder a las zonas donde se encuentran nuestros compatriotas para poder brindarles la asistencia que necesitan. El Perú no es parte de este conflicto, pero sus ciudadanos están sufriendo sus consecuencias", manifestó.</p>
+
+            <p>Mientras tanto, en las calles de Lima, las familias continúan su lucha. A esta hora, la Plaza San Martín se ha llenado de velas, fotografías y carteles con los nombres de los 114 desaparecidos. Entre ellos, el de Carlos Alberto Torres Flores, de 34 años, padre de dos hijos; el de Rosa María Huamán Paredes, de 26 años, una de las pocas mujeres peruanas enroladas en el frente; y el de Luis Fernando Quispe Cárdenas, de 23 años, quien soñaba con regresar a su pueblo natal de Ayacucho para construir una casa para su madre.</p>
+
+            <p>La incertidumbre y el dolor son palpables. Mientras el gobierno peruano promete acciones concretas, las horas pasan y los corazones de las familias esperan una noticia que, en muchos casos, podría ser la peor de todas. Pero mientras haya un desaparecido, habrá una familia que no descansará hasta tener respuestas. El Perú entero observa, con la esperanza puesta en que el destino de sus compatriotas pueda ser esclarecido y que, al menos, la verdad les sea devuelta a quienes hoy viven en la angustia más profunda.</p>
+
+            <div class="related-links">
+                <h4> Temas relacionados</h4>
+                <ul>
+                    <li><a href="#">Peruanos en el conflicto Rusia-Ucrania: la ruta del reclutamiento</a></li>
+                    <li><a href="#">Cancillería activa protocolo de repatriación para combatientes peruanos</a></li>
+                    <li><a href="#">ONG denuncia trata de personas con fines de reclutamiento militar</a></li>
+                    <li><a href="#">Congreso aprobará viaje de comisión a Ucrania para investigar desapariciones</a></li>
+                </ul>
+            </div>
+
+        </div><!-- end article-content -->
+
+    </div><!-- end container -->
+
+    <div class="footer">
+        <p>Diario El Peruano • Fundado en 1825 • Todos los derechos reservados © 2026</p>
+        <p style="margin-top:6px; font-size:12px; color:#666;">
+            <a href="#">Aviso legal</a> • <a href="#">Política de privacidad</a> • <a href="#">Contáctenos</a>
+        </p>
+        <p style="margin-top:10px; font-size:11px; color:#555;">
+            Información verificada con fuentes oficiales de la Cancillería peruana y agencias internacionales.
+        </p>
+    </div>
+
+
+    <footer><p>Autor: ROSA EMILY | Fecha: 2026-08-14 | UltimoLive</p></footer>
+</body>
+</html>

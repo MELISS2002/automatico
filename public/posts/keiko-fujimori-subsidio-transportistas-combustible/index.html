@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gobierno de Keiko Fujimori anuncia subsidio de hasta 20% para transportistas ante alza de combustible</title>
+    <style>
+        /* Reset y estilos base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: #f4f4f4;
+            color: #1a1a1a;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Encabezado del sitio */
+        .site-header {
+            border-bottom: 3px solid #c0392b;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+
+        .site-header .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            letter-spacing: -0.5px;
+        }
+
+        .site-header .logo span {
+            color: #c0392b;
+        }
+
+        .site-header .date {
+            font-size: 0.85rem;
+            color: #666;
+            font-family: 'Arial', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Categoría */
+        .category {
+            display: inline-block;
+            background: #c0392b;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 14px;
+            border-radius: 3px;
+            margin-bottom: 12px;
+        }
+
+        /* Título principal */
+        h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            color: #0a0a0a;
+            letter-spacing: -0.5px;
+        }
+
+        .byline {
+            font-family: 'Arial', sans-serif;
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .byline .author {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .byline .time {
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        /* Extracto */
+        .excerpt {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f0f0f0;
+            padding: 18px 22px;
+            border-left: 5px solid #c0392b;
+            margin: 18px 0 25px 0;
+            font-weight: 400;
+            border-radius: 0 4px 4px 0;
+        }
+
+        /* Imagen destacada */
+        .featured-image {
+            margin: 20px 0 25px 0;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .featured-image .caption {
+            font-family: 'Arial', sans-serif;
+            font-size: 0.8rem;
+            color: #777;
+            padding: 10px 14px;
+            background: #fafafa;
+            border-top: 1px solid #eee;
+        }
+
+        /* Cuerpo del artículo */
+        .article-body p {
+            margin-bottom: 1.3rem;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        .article-body .dropcap::first-letter {
+            font-size: 3.8rem;
+            float: left;
+            line-height: 1;
+            margin-right: 8px;
+            margin-top: 4px;
+            color: #c0392b;
+            font-weight: 700;
+        }
+
+        /* Subtítulos */
+        h2 {
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin: 35px 0 15px 0;
+            color: #0a0a0a;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 28px 0 12px 0;
+            color: #1a1a1a;
+        }
+
+        /* Imagen inline */
+        .inline-image {
+            margin: 25px 0;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        .inline-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .inline-image .caption {
+            font-family: 'Arial', sans-serif;
+            font-size: 0.8rem;
+            color: #777;
+            padding: 8px 14px;
+            background: #fafafa;
+            border-top: 1px solid #eee;
+        }
+
+        /* Grid para dos imágenes */
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin: 25px 0;
+        }
+
+        .image-grid .inline-image {
+            margin: 0;
+        }
+
+        /* Citas */
+        blockquote {
+            margin: 25px 0;
+            padding: 18px 28px;
+            background: #f7f7f7;
+            border-left: 5px solid #c0392b;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #2c3e50;
+            border-radius: 0 4px 4px 0;
+        }
+
+        blockquote .source {
+            display: block;
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #1a1a1a;
+        }
+
+        /* Recuadro de datos */
+        .data-box {
+            background: #f7f7f7;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 20px 24px;
+            margin: 25px 0;
+        }
+
+        .data-box h4 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #c0392b;
+            margin-bottom: 10px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .data-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .data-box ul li {
+            padding: 6px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 0.98rem;
+        }
+
+        .data-box ul li:last-child {
+            border-bottom: none;
+        }
+
+        .data-box ul li strong {
+            color: #1a1a1a;
+        }
+
+        /* Footer del artículo */
+        .article-footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.85rem;
+            color: #777;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .article-footer .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .article-footer .tags span {
+            background: #eaeaea;
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: #444;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .site-header .logo {
+                font-size: 1.4rem;
+            }
+
+            .excerpt {
+                font-size: 1rem;
+                padding: 14px 16px;
+            }
+
+            .article-body p {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .byline {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+
+            .site-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+
+            .data-box {
+                padding: 15px 18px;
+            }
+
+            blockquote {
+                padding: 14px 18px;
+                font-size: 1rem;
+            }
+
+            .article-footer {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .featured-image .caption,
+            .inline-image .caption {
+                font-size: 0.7rem;
+                padding: 6px 10px;
+            }
+
+            .data-box ul li {
+                font-size: 0.9rem;
+            }
+
+            .site-header .logo {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Animación suave */
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container fade-in">
+
+    <!-- Encabezado -->
+    <header class="site-header">
+        <div class="logo">Diario <span>El Peruano</span></div>
+        <div class="date">Viernes, 14 de agosto de 2026</div>
+    </header>
+
+    <!-- Categoría -->
+    <div class="category">Política · Economía</div>
+
+    <!-- Título -->
+    <h1>Gobierno de Keiko Fujimori anuncia subsidio de hasta 20% para transportistas ante crisis de combustibles</h1>
+
+    <!-- Firma -->
+    <div class="byline">
+        <span class="author">Por Redacción El Peruano</span>
+        <span class="time">14 de agosto de 2026 · 07:30 a.m.</span>
+    </div>
+
+    <!-- Extracto -->
+    <div class="excerpt">
+        El Ejecutivo revela un paquete de ayuda económica que beneficiará a más de 300 mil transportistas a nivel nacional, en medio de la escalada sin precedentes del precio del combustible. La medida, que contempla un subsidio directo del 20% en el galón de diésel y gasolina, busca contener el impacto inflacionario y evitar un paro nacional del sector.
+    </div>
+
+    <!-- Imagen 1: Principal -->
+    <div class="featured-image">
+        <img src="imagen1.jpg" alt="Conferencia de prensa del Gobierno de Keiko Fujimori anunciando subsidio a transportistas">
+        <div class="caption">La ministra de Transportes, Rosa María Gutiérrez, durante la conferencia de prensa en Palacio de Gobierno donde se anunció el subsidio. (Foto: Agencia Andina)</div>
+    </div>
+
+    <!-- Cuerpo del artículo -->
+    <div class="article-body">
+
+        <p class="dropcap">
+            En una conferencia de prensa convocada de urgencia esta mañana en Palacio de Gobierno, la administración de la presidenta Keiko Fujimori dio a conocer un ambicioso plan de subsidios directos que alcanza hasta el 20% del costo del galón de combustible para los transportistas de carga y pasajeros a nivel nacional. La medida, que entra en vigencia a partir del próximo lunes 17 de agosto, busca frenar el impacto del incremento descontrolado de los precios de los hidrocarburos, que en las últimas semanas ha golpeado duramente el bolsillo de los peruanos y puesto en riesgo la cadena de abastecimiento en todo el país.
+        </p>
+
+        <p>
+            El anuncio fue realizado por la ministra de Transportes y Comunicaciones, Rosa María Gutiérrez, acompañada del ministro de Economía y Finanzas, Alejandro Salas, y el presidente del Consejo de Ministros, Eduardo Pérez. Durante su intervención, la titular del sector transporte detalló que el subsidio se aplicará de manera automática en los grifos afiliados al sistema mediante un descuento directo en el precio final del diésel B5 y la gasolina de 95 octanos, que son los combustibles de mayor uso en el parque automotor peruano.
+        </p>
+
+        <p>
+            "Este gobierno está comprometido con aliviar la carga que soportan los transportistas y, a través de ellos, todos los peruanos. El subsidio del 20% representa un alivio inmediato que permitirá mantener los precios de los productos de la canasta básica familiar y evitar una espiral inflacionaria que afecte a los más vulnerables", declaró la ministra Gutiérrez ante los medios de comunicación.
+        </p>
+
+        <h2>Contexto: la escalada del precio del combustible</h2>
+
+        <p>
+            La decisión del Ejecutivo se produce en un contexto crítico para la economía peruana. El precio del barril de petróleo Brent ha superado los 120 dólares en los mercados internacionales, arrastrado por la creciente tensión geopolítica en Medio Oriente y las restricciones a la oferta decididas por la OPEP+. En el mercado local, el galón de diésel ha registrado un incremento del 38% en lo que va del año, mientras que la gasolina de 95 octanos ha subido un 42%, según datos del Organismo Supervisor de la Inversión en Energía y Minería (Osinergmin).
+        </p>
+
+        <p>
+            Este escenario ha generado una crisis sin precedentes en el sector transporte. Las asociaciones gremiales habían anunciado un paro nacional indefinido para la próxima semana si el gobierno no tomaba medidas concretas. La amenaza de un cese de actividades movilizó a las autoridades, que en las últimas 72 horas mantuvieron reuniones de alto nivel con representantes de los transportistas para llegar a un acuerdo.
+        </p>
+
+        <p>
+            "El diálogo ha sido fructífero. Hemos escuchado el clamor de los transportistas y hemos actuado con rapidez. Este subsidio es el primero de una serie de medidas estructurales que vamos a implementar para modernizar el sector y reducir su dependencia de los combustibles fósiles", añadió el premier Pérez.
+        </p>
+
+        <!-- Imagen 2 -->
+        <div class="inline-image">
+            <img src="imagen2.jpg" alt="Camiones de carga en carretera panamericana sur, Perú">
+            <div class="caption">El sector transporte de carga y pasajeros será el principal beneficiario del subsidio anunciado por el gobierno. (Foto: Archivo El Peruano)</div>
+        </div>
+
+        <h2>¿Cómo funcionará el subsidio?</h2>
+
+        <p>
+            El mecanismo implementado por el Ministerio de Transportes y el Ministerio de Energía y Minas operará mediante un sistema de compensación directa en los puntos de venta. Los transportistas deberán registrarse en el padrón único de beneficiarios, que será administrado por la Superintendencia Nacional de Aduanas y de Administración Tributaria (Sunat) en coordinación con el Ministerio de Transportes.
+        </p>
+
+        <p>
+            Una vez registrados, los transportistas recibirán un código QR vinculado a su vehículo, el cual deberá ser presentado en los grifos adheridos al programa. El descuento del 20% se aplicará de manera inmediata en el momento de la compra, y los grifos serán reembolsados por el Estado mediante un fondo de compensación que ya cuenta con una partida inicial de 850 millones de soles, proveniente del canon petrolero y del Fondo de Estabilización de Precios de los Combustibles.
+        </p>
+
+        <div class="data-box">
+            <h4>Datos clave del subsidio</h4>
+            <ul>
+                <li><strong>Beneficiarios:</strong> Más de 300,000 transportistas formales e informales registrados.</li>
+                <li><strong>Monto del subsidio:</strong> 20% del valor del galón de diésel y gasolina.</li>
+                <li><strong>Presupuesto inicial:</strong> S/ 850 millones del canon petrolero y FEPC.</li>
+                <li><strong>Vigencia:</strong> A partir del 17 de agosto de 2026, por un período inicial de 6 meses.</li>
+                <li><strong>Cobertura:</strong> Transporte de carga, pasajeros urbano e interprovincial, y taxis registrados.</li>
+            </ul>
+        </div>
+
+        <p>
+            El ministro Salas, por su parte, señaló que el impacto fiscal de la medida está plenamente calculado y no afectará los compromisos de estabilidad macroeconómica que el gobierno ha mantenido desde su llegada al poder. "Hemos previsto un financiamiento sostenible a través de fuentes específicas. No recurriremos al endeudamiento externo ni a la emisión monetaria. Esta es una política focalizada, responsable y temporal", afirmó el titular de Economía.
+        </p>
+
+        <h2>Reacciones en el sector transportista</h2>
+
+        <p>
+            La noticia fue recibida con cautela pero con expectativa por parte de los gremios de transportistas. Javier Zúñiga, presidente de la Asociación Nacional de Transportistas de Carga (ANATRACA), valoró positivamente el anuncio pero advirtió que estará atento a la implementación efectiva del subsidio.
+        </p>
+
+        <blockquote>
+            "Es un paso importante, sin duda. Llevamos meses pidiendo una intervención del Estado ante el descontrol de los precios. Pero el diablo está en los detalles: necesitamos que el registro sea ágil, que los grifos se adhieran masivamente y que el descuento llegue realmente a quien lo necesita. Estaremos monitoreando cada paso. Si el subsidio no se aplica correctamente, nuestro paro sigue en pie."
+            <span class="source">— Javier Zúñiga, presidente de ANATRACA</span>
+        </blockquote>
+
+        <p>
+            Por su parte, la Confederación de Transportistas del Perú (CTP) expresó su respaldo a la iniciativa gubernamental. Su secretario general, Luis Paredes, señaló que "el gobierno ha dado una muestra de sensibilidad social que se agradece. Este subsidio nos permite respirar y seguir trabajando. La gente no puede esperar, los mercados necesitan abastecerse y los pasajeros requieren movilidad".
+        </p>
+
+        <!-- Imagen 3 -->
+        <div class="inline-image">
+            <img src="imagen3.jpg" alt="Grifo y estación de servicio en Lima con precios de combustible visibles">
+            <div class="caption">Los grifos afiliados al sistema aplicarán el descuento de manera automática al presentar el código QR del transportista. (Foto: Agencia Andina)</div>
+        </div>
+
+        <h2>Impacto en la economía familiar</h2>
+
+        <p>
+            El subsidio a los transportistas tiene un impacto directo en el bolsillo de los consumidores finales. Los analistas económicos coinciden en que la medida permitirá contener el incremento de los precios de los alimentos, los productos de primera necesidad y los servicios de transporte público.
+        </p>
+
+        <p>
+            El economista senior del Instituto Peruano de Economía (IPE), Carlos Salazar, señaló que "el subsidio es una herramienta efectiva en el corto plazo para evitar que el alza del combustible se traslade íntegramente a los precios finales. Si bien no es una solución estructural, da un respiro a las familias peruanas que ya enfrentan una inflación que ronda el 6.5% anual".
+        </p>
+
+        <p>
+            Salazar advirtió, sin embargo, que el gobierno debe ser claro acerca de la temporalidad de la medida y trabajar en paralelo en políticas energéticas de largo plazo. "No podemos perpetuar los subsidios. El desafío es diversificar la matriz energética y promover el uso de combustibles alternativos como el gas natural vehicular y la electromovilidad. Pero esa es una conversación que recién comienza", agregó.
+        </p>
+
+        <h2>Reacciones de la oposición</h2>
+
+        <p>
+            La medida fue recibida con críticas desde la oposición política. La congresista Verónica Mendoza, líder del partido Nuevo Perú, calificó el subsidio como "una solución parche que no aborda las causas estructurales del problema". En declaraciones a la prensa, Mendoza señaló que "el gobierno de Keiko Fujimori debería estar invirtiendo en energías limpias y en una reforma integral del sistema de transporte, no repartiendo dinero público a través de un subsidio que puede ser mal utilizado".
+        </p>
+
+        <p>
+            Desde el partido Fuerza Popular, el congresista José Luna Gálvez salió en defensa de la iniciativa y recordó que el gobierno de Keiko Fujimori ha mantenido una política económica prudente y responsable durante sus dos años de gestión. "Este subsidio es una muestra de que la presidenta cumple su palabra y está al lado de los más necesitados. No vamos a permitir que la oposición desacredite una medida que alivia el bolsillo de millones de peruanos", afirmó.
+        </p>
+
+        <h2>¿Qué sigue para el sector transporte?</h2>
+
+        <p>
+            El anuncio del subsidio es solo la primera fase de un plan más amplio que el gobierno tiene previsto presentar en los próximos días. Fuentes de Palacio de Gobierno indicaron que el Ejecutivo trabaja en un proyecto de ley para fomentar el uso de gas natural vehicular (GNV) mediante incentivos tributarios y la ampliación de la red de estaciones de servicio.
+        </p>
+
+        <p>
+            Asimismo, se ha convocado a una mesa técnica con representantes de las empresas importadoras de combustibles, los grifos y los gremios de transportistas para establecer un mecanismo de monitoreo semanal de precios que garantice la transparencia y evite especulaciones.
+        </p>
+
+        <p>
+            "No podemos bajar la guardia. El contexto internacional sigue siendo incierto y los precios del petróleo podrían seguir subiendo. Por eso, además del subsidio, estamos trabajando en políticas de mediano plazo que le den sostenibilidad al sector", concluyó la ministra Gutiérrez.
+        </p>
+
+        <p>
+            El subsidio entrará en vigencia el próximo lunes 17 de agosto, y se espera que en los primeros días se inscriban al menos 150,000 transportistas. El gobierno ha habilitado una plataforma digital y más de 200 puntos de atención a nivel nacional para facilitar el registro. Los transportistas interesados pueden obtener mayor información en la página web del Ministerio de Transportes y en las oficinas regionales de la Sunat.
+        </p>
+
+        <p>
+            La medida llega en un momento crítico para la economía peruana, que este año proyecta un crecimiento del 2.4%, por debajo del promedio regional. La inflación acumulada supera el 5.5%, y los sectores más golpeados son el transporte y la agricultura. El gobierno confía en que el subsidio, sumado a otras políticas de reactivación, permitirá cerrar el año con cifras más favorables y recuperar la confianza de los inversionistas y la población.
+        </p>
+
+    </div>
+
+    <!-- Footer del artículo -->
+    <div class="article-footer">
+        <div>
+            <span style="font-weight:600;">El Peruano</span> — Política de cookies · Aviso legal
+        </div>
+        <div class="tags">
+            <span>#KeikoFujimori</span>
+            <span>#Subsidio</span>
+            <span>#Transportistas</span>
+            <span>#Combustible</span>
+            <span>#Economía</span>
+            <span>#Perú</span>
+        </div>
+    </div>
+
+</div>
+
+
+    <footer><p>Autor: ROSA EMILY | Fecha: 2026-08-14 | UltimoLive</p></footer>
+</body>
+</html>
