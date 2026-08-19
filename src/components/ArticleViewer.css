@@ -2,7 +2,7 @@
 .article-image-container {
   margin: 2rem 0;
   text-align: center;
-  background: #b18282;
+  background: var(--surface, #f4f5f7);
   border-radius: 4px;
   overflow: hidden;
   position: relative;
@@ -15,9 +15,9 @@
 }
 
 .article-image {
-  opacity:5;
+  opacity: 0;
   transition: opacity 0.4s ease-in-out;
-  max-width: 50%;
+  max-width: min(100%, 900px);
   height: auto;
   border-radius: 4px;
   display: block;
@@ -45,6 +45,7 @@
   background-size: 200% 100%;
   animation: loadingShimmer 1.5s infinite;
   z-index: 1;
+  pointer-events: none;
 }
 
 @keyframes loadingShimmer {

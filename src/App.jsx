@@ -43,12 +43,8 @@ function App() {
   // Metadatos SEO dinámicos
   const pageTitle = selectedArticle ? `${selectedArticle.title} | UltimoLive` : 'UltimoLive - Noticias deportivas, resultados y transmisiones en vivo';
   const pageDescription = selectedArticle?.excerpt || 'Últimas noticias deportivas, resultados en vivo y transmisiones en directo.';
-  const pageImage = selectedArticle?.image || '/logo-og.png';
+  const pageImage = selectedArticle?.thumbnail || selectedArticle?.image || '/logo-og.png';
   const pageUrl = typeof window !== 'undefined' ? window.location.href : 'https://ultimolive.com';
-
-  // Metadatos SEO dinámicos
-  const pageTitle = selectedArticle ? `${selectedArticle.title} | UltimoLive` : 'UltimoLive - Noticias deportivas, resultados y transmisiones en vivo';
-  const pageDescription = selectedArticle?.excerpt || 'Últimas noticias deportivas, resultados en vivo y transmisiones en directo.';
 
   // Cargar noticias
   useEffect(() => {

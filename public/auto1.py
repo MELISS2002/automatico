@@ -41,9 +41,13 @@ def conectar_chrome():
     return webdriver.Chrome(options=options)
 
 def esperar_respuesta_completa(driver, timeout=TIMEOUT_RESPUESTA):
+    """Espera Copy como auto.py, pero también detecta texto estable si DeepSeek cambia el botón."""
     print(f"⏳ Esperando respuesta (timeout {timeout}s)...")
     start = time.time()
     copy_detected = False
+    time_after_copy = 0
+    ultimo_texto = ""
+    texto_estable_desde = None
     while time.time() - start < timeout:
         try:
             copy_btn = driver.find_element(By.XPATH, "//button[@aria-label='Copy']")
@@ -52,35 +56,48 @@ def esperar_respuesta_completa(driver, timeout=TIMEOUT_RESPUESTA):
                     print("✅ Botón Copy detectado, esperando estabilización...")
                     copy_detected = True
                     time_after_copy = time.time()
-                if copy_detected and (time.time() - time_after_copy > 5):
+                if time.time() - time_after_copy > 3:
                     print("✅ Respuesta estable.")
                     return True
-        except:
+        except Exception:
+            pass
+
+        try:
+            texto_actual = obtener_ultimo_mensaje_asistente(driver)
+            if len(texto_actual) >= 100:
+                if texto_actual == ultimo_texto:
+                    if texto_estable_desde is None:
+                        texto_estable_desde = time.time()
+                    elif time.time() - texto_estable_desde >= 3:
+                        print("✅ Texto del asistente estable; continuando recuperación.")
+                        return True
+                else:
+                    ultimo_texto = texto_actual
+                    texto_estable_desde = time.time()
+        except Exception:
             pass
         time.sleep(1)
-    print("⚠️ Tiempo de espera agotado.")
+    print("⚠️ Tiempo de espera agotado; se intentará extraer la respuesta actual.")
     return False
 
 def obtener_ultimo_mensaje_asistente(driver):
-    try:
-        asistentes = driver.find_elements(By.XPATH, "//div[@data-role='assistant']")
-        if asistentes:
-            for elem in reversed(asistentes):
+    """Usa los selectores de auto.py y añade los selectores actuales de DeepSeek."""
+    selectores = [
+        "//div[@data-role='assistant']",
+        "//div[@data-message-author-role='assistant']",
+        "//div[contains(@class, 'markdown')]",
+        "//div[contains(@class, 'ds-markdown')]",
+    ]
+    for selector in selectores:
+        try:
+            elementos = driver.find_elements(By.XPATH, selector)
+            for elem in reversed(elementos):
                 texto = elem.text.strip()
                 if len(texto) > 50:
                     print(f"✅ Extraído del asistente: {len(texto)} caracteres")
                     return texto
-    except:
-        pass
-    try:
-        mds = driver.find_elements(By.XPATH, "//div[contains(@class, 'markdown')]")
-        for md in reversed(mds):
-            texto = md.text.strip()
-            if len(texto) > 100:
-                print(f"✅ Extraído de markdown: {len(texto)} caracteres")
-                return texto
-    except:
-        pass
+        except Exception:
+            pass
     try:
         body = driver.find_element(By.TAG_NAME, "body")
         texto_body = body.text
@@ -90,7 +107,7 @@ def obtener_ultimo_mensaje_asistente(driver):
         if len(respuesta) > 100:
             print(f"✅ Extraído del body: {len(respuesta)} caracteres")
             return respuesta
-    except:
+    except Exception:
         pass
     return ""
 

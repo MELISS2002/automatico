@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGANI DESIGN DD36 - Reloj de Lujo Automático</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: linear-gradient(145deg, #f5f7fa 0%, #e9edf5 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; }
+        .card { max-width: 900px; width: 100%; background: white; border-radius: 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.15); overflow: hidden; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-4px); }
+        .product-image { background: #1a1a2e; padding: 40px; display: flex; justify-content: center; align-items: center; position: relative; }
+        .product-image img { max-width: 100%; height: auto; max-height: 350px; filter: drop-shadow(0 10px 30px rgba(0,0,0,0.5)); }
+        .product-info { padding: 35px 40px 40px; }
+        .badge { display: inline-block; background: #e63946; color: white; font-size: 14px; font-weight: bold; padding: 6px 18px; border-radius: 40px; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 15px; }
+        h1 { font-size: 28px; font-weight: 700; color: #1a1a2e; margin-bottom: 10px; line-height: 1.2; }
+        .price-container { display: flex; align-items: baseline; gap: 15px; flex-wrap: wrap; margin: 15px 0 8px; }
+        .price { font-size: 34px; font-weight: 800; color: #e63946; }
+        .original-price { font-size: 20px; color: #888; text-decoration: line-through; }
+        .discount { background: #28a745; color: white; font-weight: bold; padding: 2px 16px; border-radius: 30px; font-size: 18px; }
+        .description { color: #333; font-size: 16px; line-height: 1.7; margin: 15px 0 25px; }
+        .features { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 20px; margin: 20px 0 25px; }
+        .features li { list-style: none; display: flex; align-items: center; gap: 10px; font-size: 15px; color: #222; }
+        .features li::before { content: "✓"; color: #28a745; font-weight: bold; font-size: 18px; }
+        .btn { display: block; background: #e63946; color: white; text-align: center; font-size: 22px; font-weight: 700; padding: 18px; border-radius: 60px; text-decoration: none; transition: all 0.3s; box-shadow: 0 8px 20px rgba(230, 57, 70, 0.4); border: none; cursor: pointer; letter-spacing: 0.5px; }
+        .btn:hover { background: #c62836; transform: scale(1.02); box-shadow: 0 12px 28px rgba(230, 57, 70, 0.5); }
+        .btn:active { transform: scale(0.98); }
+        .guarantee { display: flex; justify-content: center; gap: 30px; margin-top: 25px; font-size: 14px; color: #666; flex-wrap: wrap; }
+        .guarantee span { display: flex; align-items: center; gap: 8px; }
+        .guarantee i { font-size: 18px; color: #28a745; font-style: normal; }
+        @media (max-width: 600px) {
+            .product-info { padding: 25px 20px; }
+            h1 { font-size: 22px; }
+            .price { font-size: 28px; }
+            .features { grid-template-columns: 1fr; }
+            .btn { font-size: 19px; padding: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="product-image">
+            <img src="https://ae01.alicdn.com/kf/Seb475e705c214a519eb5f2bb31c09dcfY.jpg" alt="PAGANI DESIGN DD36 Reloj" loading="lazy">
+        </div>
+        <div class="product-info">
+            <span class="badge">⭐ Oferta del día</span>
+            <h1>PAGANI DESIGN DD36 2026<br>Reloj de Lujo Automático</h1>
+            <div class="price-container">
+                <span class="price">PEN 320.00</span>
+                <span class="original-price">PEN 688.24</span>
+                <span class="discount">54% OFF</span>
+            </div>
+            <p class="description">
+                ⌚ Reloj mecánico automático con cristal de zafiro AR, resistencia al agua 10Bar y diseño elegante. 
+                La mejor relación calidad-precio en relojería de lujo.
+            </p>
+            <ul class="features">
+                <li>✅ Movimiento automático ST16</li>
+                <li>✅ Cristal de zafiro con AR</li>
+                <li>✅ Resistente al agua 10Bar</li>
+                <li>✅ Diseño DD36 clásico</li>
+                <li>✅ Esfera con fecha</li>
+                <li>✅ Correa de acero inoxidable</li>
+            </ul>
+            <a href="https://s.click.aliexpress.com/e/_c36wYHft" class="btn" target="_blank" rel="noopener noreferrer">
+                🔥 Comprar ahora con descuento
+            </a>
+            <div class="guarantee">
+                <span><i>🛡️</i> Envío seguro</span>
+                <span><i>🔄</i> Devolución garantizada</span>
+                <span><i>⭐</i> 4.8/5 estrellas</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gobierno designa a nuevos viceministros en Perú | Noticia</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background-color: #f4f4f0;
+      color: #1a1a1a;
+      line-height: 1.7;
+      padding: 20px;
+    }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 30px 35px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+    /* encabezado */
+    .header {
+      border-bottom: 3px solid #c0392b;
+      padding-bottom: 18px;
+      margin-bottom: 25px;
+    }
+    .header .category {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #c0392b;
+      font-weight: 700;
+      font-family: 'Arial', sans-serif;
+      margin-bottom: 6px;
+    }
+    .header h1 {
+      font-size: 2.3rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #0b1e2e;
+      margin-bottom: 10px;
+    }
+    .header .meta {
+      font-size: 0.95rem;
+      color: #5a5a5a;
+      font-family: 'Arial', sans-serif;
+      border-top: 1px solid #e0e0e0;
+      padding-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .header .meta .date {
+      font-weight: 600;
+    }
+    /* imagen principal */
+    .main-image {
+      margin: 20px 0 25px 0;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #eaeaea;
+    }
+    .main-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.2s;
+    }
+    .main-image img:hover {
+      transform: scale(1.01);
+    }
+    .caption {
+      font-size: 0.85rem;
+      color: #555;
+      padding: 8px 12px;
+      background: #f8f8f5;
+      font-style: italic;
+      border-bottom: 1px solid #ddd;
+    }
+    /* cuerpo */
+    .content p {
+      margin-bottom: 1.4rem;
+      font-size: 1.08rem;
+      text-align: justify;
+    }
+    .content .first-letter {
+      font-size: 3.2rem;
+      float: left;
+      line-height: 1;
+      margin-right: 8px;
+      color: #c0392b;
+      font-weight: 700;
+    }
+    .content h2 {
+      font-size: 1.6rem;
+      margin: 1.8rem 0 0.8rem 0;
+      color: #0b1e2e;
+      border-left: 6px solid #c0392b;
+      padding-left: 16px;
+    }
+    .content h3 {
+      font-size: 1.25rem;
+      margin: 1.5rem 0 0.5rem 0;
+      color: #1f3a4b;
+    }
+    .content blockquote {
+      background: #f2f0eb;
+      border-left: 6px solid #b03a2e;
+      padding: 14px 22px;
+      margin: 1.5rem 0;
+      font-style: italic;
+      border-radius: 0 8px 8px 0;
+      color: #2c3e50;
+    }
+    .content ul {
+      margin: 1rem 0 1.5rem 2rem;
+      list-style: square;
+    }
+    .content ul li {
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+    }
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin: 30px 0 20px 0;
+      justify-content: center;
+    }
+    .image-grid .grid-item {
+      flex: 1 1 200px;
+      min-width: 150px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #eee;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+    }
+    .image-grid .grid-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+    .image-grid .grid-item .grid-caption {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+      background: #fafafa;
+      text-align: center;
+      color: #3a3a3a;
+      font-family: Arial, sans-serif;
+    }
+    .highlight-box {
+      background: #eef4f7;
+      padding: 18px 22px;
+      border-radius: 10px;
+      margin: 25px 0;
+      border: 1px solid #d0dce4;
+    }
+    .highlight-box strong {
+      color: #a93226;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 25px;
+      border-top: 2px solid #d0d0c8;
+      font-size: 0.95rem;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      color: #3d3d3d;
+    }
+    .footer .author {
+      font-weight: 700;
+      color: #1a2a3a;
+    }
+    .footer .right {
+      text-align: right;
+    }
+    @media (max-width: 640px) {
+      .container { padding: 18px 15px; }
+      .header h1 { font-size: 1.7rem; }
+      .content p { font-size: 1rem; }
+      .image-grid .grid-item { flex: 1 1 140px; }
+      .image-grid .grid-item img { height: 140px; }
+      .header .meta { flex-direction: column; gap: 5px; }
+      .footer { flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="category">Política · Gobierno</div>
+      <h1>Gobierno de Perú designa a Elizabeth Zea, Wiliam León, Carlos Lezameta y Diana Bayona como nuevos viceministros</h1>
+      <div class="meta">
+        <span class="date">Lima, 16 de agosto de 2026</span>
+        <span>Actualizado 16/08/2026 - 12:45</span>
+      </div>
+    </div>
+
+    <div class="main-image">
+      <img src="viceministros-1.jpg" alt="Nuevos viceministros de Perú en ceremonia oficial">
+      <div class="caption">Foto: Los nuevos viceministros durante la ceremonia de juramentación en Palacio de Gobierno. (Fuente: Presidencia)</div>
+    </div>
+
+    <div class="content">
+      <p><span class="first-letter">E</span>l Gobierno del Perú, a través de la Presidencia del Consejo de Ministros, oficializó este sábado 16 de agosto la designación de cuatro nuevos viceministros en el marco de una reestructuración integral del gabinete ministerial. Los nombramientos recaen en Elizabeth Zea (Viceministerio de Interculturalidad), Wiliam León (Viceministerio de Comercio Exterior), Carlos Lezameta (Viceministerio de Comercio Exterior) y Diana Bayona (Viceministerio de Comercio Exterior), todos ellos con perfiles técnicos y políticos que han generado reacciones divididas en la esfera pública.</p>
+
+      <p>La ceremonia de juramentación, encabezada por la presidenta Dina Boluarte y el premier Alberto Otárola, se realizó en el Salón Dorado de Palacio de Gobierno. Los nuevos funcionarios asumirán roles clave en los ministerios de Cultura (a través del Viceministerio de Interculturalidad) y de Comercio Exterior y Turismo (Mincetur), que concentra tres de las cuatro designaciones. La medida busca fortalecer la gestión estatal en áreas sensibles como la diversidad cultural, la promoción de exportaciones y la atracción de inversiones.</p>
+
+      <h2>Elizabeth Zea: controversia y expectativas en Interculturalidad</h2>
+      <p>El nombramiento de <strong>Elizabeth Zea</strong> como viceministra de Interculturalidad ha sido el más polémico de la jornada. Zea, abogada y antropóloga de formación, tiene una trayectoria vinculada a organizaciones no gubernamentales y ha sido asesora en proyectos de desarrollo indígena en la Amazonía. Sin embargo, su designación ha generado rechazo en sectores indígenas y académicos debido a declaraciones pasadas en las que cuestionaba ciertos enfoques del “consentimiento previo, libre e informado” para comunidades nativas.</p>
+
+      <div class="highlight-box">
+        <strong>▸ Declaración oficial:</strong> “La viceministra Zea cuenta con amplia experiencia en interculturalidad y diálogo social. Su labor estará enfocada en la implementación de políticas que garanticen los derechos de los pueblos originarios, en coordinación con el Ministerio de Cultura”, señaló el comunicado de prensa de la PCM.
+      </div>
+
+      <p>Organizaciones como la <em>Asociación Interétnica de Desarrollo de la Selva Peruana (AIDESEP)</em> expresaron su preocupación mediante un pronunciamiento público, calificando el nombramiento como “un retroceso en la relación Estado-pueblos indígenas”. Por otro lado, funcionarios del Ejecutivo defienden su perfil técnico y destacan su participación en mesas de trabajo sobre titulación de comunidades nativas durante los últimos dos años. Zea, en sus primeras declaraciones, aseguró que su gestión será “inclusiva y participativa” y que priorizará la consulta previa como mecanismo de diálogo.</p>
+
+      <h2>Mincetur: triada de viceministros para dinamizar el comercio exterior</h2>
+      <p>El Ministerio de Comercio Exterior y Turismo (Mincetur) recibió a tres nuevos viceministros: <strong>Wiliam León</strong>, <strong>Carlos Lezameta</strong> y <strong>Diana Bayona</strong>. Los tres asumirán carteras estratégicas dentro del sector, aunque la distribución precisa de funciones será detallada en los próximos días. Fuentes de Mincetur indicaron que León liderará la promoción de exportaciones, Lezameta estará a cargo de negociaciones comerciales internacionales, y Bayona supervisará la facilitación del comercio y la competitividad.</p>
+
+      <div class="image-grid">
+        <div class="grid-item">
+          <img src="viceministros-2.jpg" alt="Wiliam León y Carlos Lezameta">
+          <div class="grid-caption">Wiliam León y Carlos Lezameta, viceministros de Mincetur.</div>
+        </div>
+        <div class="grid-item">
+          <img src="viceministros-3.jpg" alt="Diana Bayona">
+          <div class="grid-caption">Diana Bayona, nueva viceministra de Comercio Exterior.</div>
+        </div>
+      </div>
+
+      <p><strong>Wiliam León</strong>, economista con maestría en comercio internacional, ha trabajado en el sector privado y en organismos multilaterales como la CAF. Su designación responde a la necesidad de diversificar la canasta exportadora peruana, que aún depende en gran medida de los minerales. <strong>Carlos Lezameta</strong>, por su parte, es un diplomático de carrera con experiencia en la OMC y en la Alianza del Pacífico, y se espera que lidere las negociaciones del TLC con India y la modernización del acuerdo con la Unión Europea. Finalmente, <strong>Diana Bayona</strong>, ingeniera industrial con posgrado en logística, será la encargada de impulsar la digitalización de los procesos aduaneros y la ventanilla única de comercio exterior.</p>
+
+      <blockquote>
+        “Estos nombramientos reflejan el compromiso del Gobierno con un comercio exterior más dinámico, inclusivo y sostenible. Confiamos en que los nuevos viceministros aportarán su experiencia para seguir posicionando al Perú como un socio comercial confiable en la región”, manifestó la ministra de Comercio Exterior y Turismo, Elizabeth Galdo.
+      </blockquote>
+
+      <h2>Reestructuración gubernamental: cambios que abarcan Minam y otros sectores</h2>
+      <p>La designación de estos cuatro viceministros se enmarca en una reestructuración más amplia que también afecta al Ministerio del Ambiente (Minam) y otras carteras, aunque los cambios en esas áreas se anunciarán en las próximas semanas. El premier Alberto Otárola explicó que la reorganización busca “optimizar la eficiencia del Estado y responder con agilidad a los desafíos económicos, sociales y ambientales del país”.</p>
+
+      <p>En el caso de Minam, se espera la salida de algunos viceministros y la incorporación de perfiles con orientación a la economía circular y la gestión de residuos sólidos, temas que han cobrado urgencia debido a los conflictos socioambientales en regiones como Áncash y Madre de Dios. Asimismo, fuentes de Palacio señalaron que los cambios en los ministerios de Educación y Salud se anunciarán antes de fin de mes, como parte de una renovación integral del gabinete.</p>
+
+      <h3>Reacciones de los gremios empresariales y políticos</h3>
+      <p>La Confederación Nacional de Instituciones Empresariales Privadas (CONFIEP) saludó los nombramientos en Mincetur y destacó la “experiencia técnica” de los nuevos viceministros. Sin embargo, desde la oposición, el congresista Waldemar Cerrón (Perú Libre) calificó la medida como “un parche” y exigió mayor transparencia en los criterios de selección. Por su parte, la congresista Susel Paredes (Partido Morado) pidió que se aclare el papel de Elizabeth Zea en la formulación de políticas indígenas, solicitando su presencia en la Comisión de Pueblos Andinos, Amazónicos y Afroperuanos del Congreso.</p>
+
+      <ul>
+        <li><strong>Elizabeth Zea:</strong> Viceministra de Interculturalidad – perfil vinculado a ONG y proyectos amazónicos. </li>
+        <li><strong>Wiliam León:</strong> Viceministro de Comercio Exterior – especialista en promoción de exportaciones.</li>
+        <li><strong>Carlos Lezameta:</strong> Viceministro de Comercio Exterior – experto en negociaciones comerciales.</li>
+        <li><strong>Diana Bayona:</strong> Viceministra de Comercio Exterior – especialista en facilitación y logística.</li>
+      </ul>
+
+      <p>En redes sociales, la etiqueta #NuevosViceministros fue tendencia durante la mañana, con opiniones encontradas. Mientras algunos usuarios celebraban la llegada de “sangre nueva” al sector público, otros criticaban la falta de representación indígena en el viceministerio de Interculturalidad. La Defensoría del Pueblo emitió un comunicado en el que insta al Ejecutivo a garantizar que las políticas interculturales sean consultadas con las organizaciones representativas y que se respeten los estándares internacionales del Convenio 169 de la OIT.</p>
+
+      <h2>Próximos pasos y retos inmediatos</h2>
+      <p>Los nuevos viceministros deberán presentar sus planes de trabajo en un plazo de 15 días hábiles, según lo dispuesto por la Secretaría de Gestión Pública. Entre los retos inmediatos de Elizabeth Zea destaca la implementación del Plan Nacional de Desarrollo de Pueblos Indígenas y la resolución de conflictos territoriales en la Amazonía. En tanto, el equipo de Mincetur deberá enfocarse en la recuperación de las exportaciones no tradicionales, que aún no alcanzan los niveles prepandemia, y en la atracción de inversiones en el sector turismo, duramente golpeado por los fenómenos climáticos y la inestabilidad política.</p>
+
+      <p>La designación de estos funcionarios se produce en un contexto de baja popularidad del Ejecutivo y de creciente presión social por mejores condiciones de vida en las regiones. Los analistas coinciden en que el éxito de estos viceministros dependerá de su capacidad para articular con los gobiernos regionales y con la sociedad civil, así como de su habilidad para navegar en un escenario político fragmentado. Por ahora, las miradas están puestas en las primeras acciones que tomarán los nuevos integrantes del gabinete, que deberán demostrar que su nombramiento no fue solo un cambio de nombres, sino un verdadero impulso a la gestión estatal.</p>
+    </div>
+
+    <div class="footer">
+      <div class="left">
+        <span class="author">✒ Autor: ROSA EMILY</span><br>
+        <span>Corresponsal política</span>
+      </div>
+      <div class="right">
+        <span>Lima, 16 de agosto de 2026</span><br>
+        <span>© 2026 Noticias Perú · Todos los derechos reservados</span>
+      </div>
+    </div>
+  </div>
+
+    <footer>
+        <p>Autor: ROSA EMILY | Fecha: 2026-08-16</p>
+    </footer>
+</body>
+</html>
