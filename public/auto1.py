@@ -40,45 +40,45 @@ def conectar_chrome():
     options.add_experimental_option("debuggerAddress", f"127.0.0.1:{CHROME_DEBUG_PORT}")
     return webdriver.Chrome(options=options)
 
-def esperar_respuesta_completa(driver, timeout=TIMEOUT_RESPUESTA):
-    """Espera Copy como auto.py, pero también detecta texto estable si DeepSeek cambia el botón."""
-    print(f"⏳ Esperando respuesta (timeout {timeout}s)...")
+def esperar_respuesta_completa(driver, texto_anterior="", timeout=TIMEOUT_RESPUESTA):
+    """Espera una respuesta nueva y estable; nunca acepta el Copy de la respuesta anterior."""
+    print(f"⏳ Esperando respuesta nueva (timeout {timeout}s)...")
     start = time.time()
-    copy_detected = False
-    time_after_copy = 0
+    nueva_respuesta = False
     ultimo_texto = ""
     texto_estable_desde = None
     while time.time() - start < timeout:
         try:
-            copy_btn = driver.find_element(By.XPATH, "//button[@aria-label='Copy']")
-            if copy_btn.is_displayed():
-                if not copy_detected:
-                    print("✅ Botón Copy detectado, esperando estabilización...")
-                    copy_detected = True
-                    time_after_copy = time.time()
-                if time.time() - time_after_copy > 3:
-                    print("✅ Respuesta estable.")
-                    return True
-        except Exception:
-            pass
-
-        try:
             texto_actual = obtener_ultimo_mensaje_asistente(driver)
-            if len(texto_actual) >= 100:
+            es_nuevo = bool(texto_actual and texto_actual != texto_anterior)
+            if es_nuevo and len(texto_actual) >= 100:
+                if not nueva_respuesta:
+                    nueva_respuesta = True
+                    print(f"✅ Nueva respuesta detectada ({len(texto_actual)} caracteres).")
                 if texto_actual == ultimo_texto:
                     if texto_estable_desde is None:
                         texto_estable_desde = time.time()
                     elif time.time() - texto_estable_desde >= 3:
-                        print("✅ Texto del asistente estable; continuando recuperación.")
+                        print("✅ Respuesta nueva estable; se puede continuar con el siguiente artículo.")
                         return True
                 else:
                     ultimo_texto = texto_actual
                     texto_estable_desde = time.time()
         except Exception:
             pass
+
+        # El botón Copy solo sirve como confirmación después de detectar texto nuevo.
+        if nueva_respuesta:
+            try:
+                copy_btn = driver.find_element(By.XPATH, "//button[@aria-label='Copy']")
+                if copy_btn.is_displayed() and texto_estable_desde and time.time() - texto_estable_desde >= 2:
+                    print("✅ Botón Copy confirmado para la respuesta nueva.")
+                    return True
+            except Exception:
+                pass
         time.sleep(1)
-    print("⚠️ Tiempo de espera agotado; se intentará extraer la respuesta actual.")
-    return False
+    print("⚠️ Tiempo agotado; se intentará extraer la respuesta nueva actual.")
+    return nueva_respuesta
 
 def obtener_ultimo_mensaje_asistente(driver):
     """Usa los selectores de auto.py y añade los selectores actuales de DeepSeek."""
@@ -117,6 +117,8 @@ def preguntar_deepseek(prompt, driver):
     )
     prompt_limpio = limpiar_texto(prompt)
 
+    # Capturamos el último texto antes de enviar para no confundirlo con la respuesta nueva.
+    texto_anterior = obtener_ultimo_mensaje_asistente(driver)
     pyperclip.copy(prompt_limpio)
     input_box.click()
     time.sleep(0.2)
@@ -129,8 +131,8 @@ def preguntar_deepseek(prompt, driver):
     input_box.send_keys(Keys.RETURN)
     print(f"📤 Prompt enviado ({len(prompt_limpio)} caracteres).")
 
-    if not esperar_respuesta_completa(driver):
-        print("⚠️ No se detectó fin de respuesta, extrayendo igual...")
+    if not esperar_respuesta_completa(driver, texto_anterior):
+        print("⚠️ No se confirmó una respuesta nueva completa; extrayendo la respuesta actual...")
     time.sleep(2)
     respuesta = obtener_ultimo_mensaje_asistente(driver)
     return limpiar_texto(respuesta) if respuesta else ""
