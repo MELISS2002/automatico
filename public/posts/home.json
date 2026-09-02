@@ -1,629 +1,665 @@
-﻿[
-    {
-        "slug":  "cmo-proteger-tus-cuentas-en-internet-con-hbitos-simples",
-        "title":  "HÃ¡bitos simples para proteger tus cuentas en internet",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-19",
-        "excerpt":  "La seguridad digital no requiere ser un experto en tecnologÃ­a. Con pequeÃ±os cambios en tu rutina diaria y hÃ¡bitos conscientes, puedes blindar tus cuentas contra la gran mayorÃ­a de ataques cibernÃ©ticos. Descubre las prÃ¡cticas esenciales que mantendrÃ¡n tus datos a salvo.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/online_account_protection_habits_thumbnail",
-        "htmlPath":  "/posts/cmo-proteger-tus-cuentas-en-internet-con-hbitos-simples/index.html"
-    },
-    {
-        "slug":  "qu-revisar-antes-de-comprar-un-celular-nuevo",
-        "title":  "GuÃ­a esencial para comprar un celular inteligente",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-19",
-        "excerpt":  "Comprar un telÃ©fono nuevo es una inversiÃ³n importante que va mÃ¡s allÃ¡ de la moda o la marca. En esta guÃ­a completa, desglosamos punto por punto todo lo que debes revisar antes de tomar tu decisiÃ³n, desde el rendimiento y la cÃ¡mara hasta la baterÃ­a y el soporte a futuro.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/smartphone_buying_guide_checklist_thumbnail",
-        "htmlPath":  "/posts/qu-revisar-antes-de-comprar-un-celular-nuevo/index.html"
-    },
-    {
-        "slug":  "gobierno-designa-nuevos-viceministros-zea-leon-lezameta-bayona",
-        "title":  "Gobierno peruano designa a Elizabeth Zea, Wiliam Leon, Carlos Lezameta y Diana Bayona como nuevos viceministros en medio de reestructuraciÃ³n",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-16",
-        "excerpt":  "El Gobierno de PerÃº oficializÃ³ la designaciÃ³n de cuatro nuevos viceministros, incluyendo a Elizabeth Zea en Interculturalidad y a Wiliam Leon, Carlos Lezameta y Diana Bayona en el Mincetur, en el marco de una amplia reorganizaciÃ³n del gabinete. Los nombramientos generan expectativas y controversias, especialmente el de Zea, cuyo perfil ha desatado crÃ­ticas en diversos sectores polÃ­ticos y sociales.",
-        "thumbnail":  "/posts/gobierno-designa-nuevos-viceministros-zea-leon-lezameta-bayona/viceministros-1.jpg",
-        "htmlPath":  "/posts/gobierno-designa-nuevos-viceministros-zea-leon-lezameta-bayona/index.html"
-    },
-    {
-        "slug":  "ucayali-paro-transportistas-policias-heridos",
-        "title":  "Ucayali: cinco policÃ­as heridos y 11 detenidos tras violento enfrentamiento durante paro de transportistas",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-16",
-        "excerpt":  "El paro de transportistas en Ucayali dejÃ³ cinco efectivos policiales heridos y 11 detenidos tras bloqueos en la carretera Federico Basadre. El Gobierno regional anunciÃ³ el levantamiento de la medida luego de que el Ejecutivo dispusiera subsidios para mitigar el alza de combustibles.",
-        "thumbnail":  "/posts/ucayali-paro-transportistas-policias-heridos/ucayali-paro-1.jpg",
-        "htmlPath":  "/posts/ucayali-paro-transportistas-policias-heridos/index.html"
-    },
-    {
-        "slug":  "subsidio-diesel-transporte-peru",
-        "title":  "Gobierno anuncia subsidio de S/4 por galÃ³n de diÃ©sel para transporte de carga y pasajeros a nivel nacional",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-16",
-        "excerpt":  "El ministro Elmer Cuba presentÃ³ un subsidio de S/4 por galÃ³n de diÃ©sel para aliviar el impacto del alza de combustibles en el sector transporte. La medida, que cubrirÃ¡ hasta el 20% del precio del combustible, busca evitar nuevos paros y garantizar la continuidad del servicio en todo el PerÃº.",
-        "thumbnail":  "/posts/subsidio-diesel-transporte-peru/subsidio-diesel-1.jpg",
-        "htmlPath":  "/posts/subsidio-diesel-transporte-peru/index.html"
-    },
-    {
-        "slug":  "peruanos-murieron-combatiendo-rusia-114-desaparecidos",
-        "title":  "Once peruanos murieron combatiendo por Rusia y otros 114 estÃ¡n desaparecidos, confirman autoridades de PerÃº",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-14",
-        "excerpt":  "El Ministerio de Relaciones Exteriores de PerÃº confirmÃ³ este viernes que once ciudadanos peruanos han fallecido en el frente de batalla ucraniano mientras servÃ­an en las filas del ejÃ©rcito ruso. La cancillerÃ­a tambiÃ©n reporta 114 compatriotas en calidad de desaparecidos, en medio de las crecientes tensiones internacionales y el reclamo de familias que exigen respuestas del gobierno.",
-        "thumbnail":  "Peruvian families protesting in Lima demanding answers about missing relatives in Ukraine conflict, military recruitment crisis, consulate assistance",
-        "htmlPath":  "/posts/peruanos-murieron-combatiendo-rusia-114-desaparecidos/index.html"
-    },
-    {
-        "slug":  "encuesta-datum-keiko-fujimori-60-aprobacion",
-        "title":  "Encuesta Datum: Keiko Fujimori inicia su gestiÃ³n con 60% de aprobaciÃ³n y domina en regiones del sur y centro del paÃ­s",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-14",
-        "excerpt":  "La primera encuesta nacional de Datum Internacional revela que la presidenta Keiko Fujimori alcanza un 60% de aprobaciÃ³n ciudadana en sus primeros meses de gobierno. El estudio detecta un respaldo mayoritario en las regiones del sur y centro andino, mientras que Lima Metropolitana muestra Ã­ndices mÃ¡s moderados. El 55% de los peruanos respalda sus primeras medidas econÃ³micas.",
-        "thumbnail":  "Keiko Fujimori presidential approval poll Peru Datum survey results August 2026",
-        "htmlPath":  "/posts/encuesta-datum-keiko-fujimori-60-aprobacion/index.html"
-    },
-    {
-        "slug":  "keiko-fujimori-subsidio-transportistas-combustible",
-        "title":  "Gobierno de Keiko Fujimori anuncia subsidio de hasta 20% para transportistas ante crisis de combustibles",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-14",
-        "excerpt":  "El Ejecutivo revela un paquete de ayuda econÃ³mica que beneficiarÃ¡ a mÃ¡s de 300 mil transportistas a nivel nacional, en medio de la escalada sin precedentes del precio del combustible. La medida, que contempla un subsidio directo del 20% en el galÃ³n de diÃ©sel y gasolina, busca contener el impacto inflacionario y evitar un paro nacional del sector.",
-        "thumbnail":  "peru government fuel subsidy announcement keiko fujimori transport workers 2026",
-        "htmlPath":  "/posts/keiko-fujimori-subsidio-transportistas-combustible/index.html"
-    },
-    {
-        "slug":  "simulacro-nacional-multipeligro-indeci-sismo-88",
-        "title":  "Simulacro Nacional Multipeligro INDECI: PerÃº ensaya respuesta ante sismo de magnitud 8.8 este viernes 14 de agosto",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-14",
-        "excerpt":  "MÃ¡s de 12 millones de peruanos participaron hoy en el Simulacro Nacional Multipeligro organizado por INDECI, que puso a prueba la capacidad de respuesta del paÃ­s frente a un terremoto de magnitud 8.8. El ejercicio, que se desarrollÃ³ a las 10:00 a.m. en todo el territorio nacional, permitiÃ³ evaluar los tiempos de evacuaciÃ³n y la coordinaciÃ³n entre las entidades de primera respuesta.",
-        "thumbnail":  "peru earthquake simulation disaster preparedness indenci 2026 national drill evacuation",
-        "htmlPath":  "/posts/simulacro-nacional-multipeligro-indeci-sismo-88/index.html"
-    },
-    {
-        "slug":  "eclipse-solar-total-12-agosto-2026-evento-astronomico-siglo",
-        "title":  "Eclipse solar total 12 agosto 2026: el evento astronÃ³mico del siglo que hoy oscurece EspaÃ±a",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-12",
-        "excerpt":  "Hoy, 12 de agosto de 2026, EspaÃ±a es testigo del eclipse solar total mÃ¡s esperado del siglo. Millones de personas disfrutarÃ¡n de un fenÃ³meno Ãºnico que oscurecerÃ¡ el cielo en pleno dÃ­a, ofreciendo un espectÃ¡culo inolvidable y una oportunidad cientÃ­fica sin precedentes para estudiar la corona solar y los efectos atmosfÃ©ricos.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/total_solar_eclipse_corona_2026_Spain_sky_dark",
-        "htmlPath":  "/posts/eclipse-solar-total-12-agosto-2026-evento-astronomico-siglo/index.html"
-    },
-    {
-        "slug":  "cal-jnj-miembros-renuncian-colegio-abogados-lima",
-        "title":  "Crisis CAL-JNJ: miembros de la Junta Nacional de Justicia renuncian al Colegio de Abogados de Lima",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-12",
-        "excerpt":  "En un movimiento sin precedentes, varios miembros de la Junta Nacional de Justicia (JNJ) han presentado su renuncia irrevocable al Colegio de Abogados de Lima (CAL), denunciando presiÃ³n polÃ­tica, injerencia indebida y falta de autonomÃ­a en el gremio. Esta decisiÃ³n agudiza la crisis institucional que enfrenta el sistema judicial peruano y abre un debate sobre la independencia de los Ã³rganos encargados de la selecciÃ³n y evaluaciÃ³n de jueces y fiscales.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/Peruvian_justice_crisis_JNJ_CAL_resignation_Lima_Bar_Association_conflict",
-        "htmlPath":  "/posts/cal-jnj-miembros-renuncian-colegio-abogados-lima/index.html"
-    },
-    {
-        "slug":  "rafael-rey-tren-lima-chosica-caltrain-compra",
-        "title":  "Rafael Rey desmiente a LÃ³pez Aliaga: el tren Lima-Chosica fue una compra a Caltrain, no una donaciÃ³n",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-12",
-        "excerpt":  "El exministro Rafael Rey saliÃ³ al frente para desmentir categÃ³ricamente al alcalde de Lima, Rafael LÃ³pez Aliaga, asegurando que la adquisiciÃ³n del tren para la ruta Lima-Chosica no fue una donaciÃ³n, sino una compra formal y onerosa a la empresa estadounidense Caltrain. Esta aclaraciÃ³n sacude el debate polÃ­tico y pone en el centro de la escena la transparencia de los proyectos de infraestructura para la capital.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/Peruvian_politics_controversy_train_Lima_Chosica_Caltrain_Rafael_Rey_Lopez_Aliaga_debate",
-        "htmlPath":  "/posts/rafael-rey-tren-lima-chosica-caltrain-compra/index.html"
-    },
-    {
-        "slug":  "fujimorismo-preside-comision-constitucion-senado",
-        "title":  "Fujimorismo preside la ComisiÃ³n de ConstituciÃ³n del Senado: Clave en la reforma judicial peruana",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-12",
-        "excerpt":  "El fujimorismo ha asumido la presidencia de la ComisiÃ³n de ConstituciÃ³n del Senado, un puesto estratÃ©gico que define el rumbo de la reforma judicial en PerÃº. Esta designaciÃ³n genera expectativas y controversias sobre el futuro del sistema de justicia y el equilibrio de poderes.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/Peruvian_Senate_Constitution_Commission_Fujimorismo_judicial_reform_Lima_politics_parliament",
-        "htmlPath":  "/posts/fujimorismo-preside-comision-constitucion-senado/index.html"
-    },
-    {
-        "slug":  "claves-eset-gratis-actualizadas",
-        "title":  "Claves ESET Gratis Actualizadas â€“ Licencias NOD32 Vigentes",
-        "date":  "2026-08-10",
-        "excerpt":  "Claves de licencia ESET NOD32 gratis, actualizadas diariamente.",
-        "category":  "home",
-        "imagen":  "/posts/claves-eset-gratis-actualizadas/thumb.jpg",
-        "featured":  true,
-        "thumbnail":  "/posts/claves-eset-gratis-actualizadas/thumb.jpg",
-        "author":  "PORTAL NOTICIAS",
-        "htmlPath":  "/posts/claves-eset-gratis-actualizadas/index.html"
-    },
-    {
-        "slug":  "harvey-colchado-cargo-disposicion-comision-etica",
-        "title":  "Harvey Colchado pone cargo a disposiciÃ³n en ComisiÃ³n de Ã‰tica",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-10",
-        "excerpt":  "En la instalaciÃ³n de la ComisiÃ³n de Ã‰tica de la CÃ¡mara de Diputados, el congresista Harvey Colchado (Ahora NaciÃ³n) puso su cargo a disposiciÃ³n del pleno luego de que la FiscalÃ­a solicitara 9 aÃ±os y 4 meses de prisiÃ³n efectiva por los presuntos delitos de negociaciÃ³n incompatible y falsedad ideolÃ³gica. Colchado condicionÃ³ su permanencia a la ratificaciÃ³n de confianza, mientras que el legislador Javier Cipriani lo acusÃ³ de obstaculizar el trabajo de la comisiÃ³n.",
-        "thumbnail":  "/posts/harvey-colchado-cargo-disposicion-comision-etica/imagen1.jpg",
-        "htmlPath":  "/posts/harvey-colchado-cargo-disposicion-comision-etica/index.html"
-    },
-    {
-        "slug":  "igp-cinturon-de-fuego-terremotos-2026-peru",
-        "title":  "CinturÃ³n de Fuego: ocho paÃ­ses con terremotos en 2026 y advertencia del IGP",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-10",
-        "excerpt":  "Tras el sismo de magnitud 7,4 en Colombia, el presidente del Instituto GeofÃ­sico del PerÃº, Fernando Tavera, analizÃ³ la actividad sÃ­smica global. SeÃ±alÃ³ que, aunque no existe una cadena predecible, la alta concentraciÃ³n de terremotos en el CinturÃ³n de Fuego del PacÃ­fico hace inevitable que un gran sismo afecte al PerÃº, por lo que llamÃ³ a la prevenciÃ³n y a los simulacros.",
-        "thumbnail":  "/posts/igp-cinturon-de-fuego-terremotos-2026-peru/imagen1.jpg",
-        "htmlPath":  "/posts/igp-cinturon-de-fuego-terremotos-2026-peru/index.html"
-    },
-    {
-        "slug":  "terremoto-colombia-111-muertos-87-heridos-espriella",
-        "title":  "Terremoto en Colombia: 111 muertos y 87 heridos - Portal Noticias",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-10",
-        "excerpt":  "Un fuerte sismo de magnitud 7,4 con epicentro en San JosÃ© del Palmar (ChocÃ³) sacudiÃ³ este lunes gran parte de Colombia. El presidente Abelardo de la Espriella reportÃ³ un balance parcial de 111 fallecidos, 87 heridos, mÃ¡s de 1.500 viviendas afectadas y daÃ±os en centros de salud y escuelas de al menos cinco departamentos.",
-        "thumbnail":  "/posts/terremoto-colombia-111-muertos-87-heridos-espriella/imagen1.jpg",
-        "htmlPath":  "/posts/terremoto-colombia-111-muertos-87-heridos-espriella/index.html"
-    },
-    {
-        "slug":  "peruanos-muertos-combatiendo-rusia-114-desaparecidos",
-        "title":  "Peruanos muertos y desaparecidos en la guerra de Rusia contra Ucrania",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-10",
-        "excerpt":  "El Gobierno peruano confirmÃ³ la muerte de once ciudadanos que combatÃ­an en las filas del ejÃ©rcito ruso en la guerra contra Ucrania, mientras otros 114 permanecen en condiciÃ³n de desaparecidos. Familiares de los combatientes protestaron en Lima exigiendo el regreso de sus seres queridos y denunciando engaÃ±os en el reclutamiento.",
-        "thumbnail":  "/posts/peruanos-muertos-combatiendo-rusia-114-desaparecidos/imagen1.jpg",
-        "htmlPath":  "/posts/peruanos-muertos-combatiendo-rusia-114-desaparecidos/index.html"
-    },
-    {
-        "slug":  "keiko-fujimori-modelo-bukele-firmeza-orden",
-        "title":  "Keiko Fujimori anuncia modelo Bukele contra la delincuencia en PerÃº",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-10",
-        "excerpt":  "La mandataria peruana confirmÃ³ este domingo, durante una transmisiÃ³n en vivo, que su Gobierno adoptarÃ¡ una polÃ­tica de mano dura contra la delincuencia inspirada en el presidente salvadoreÃ±o Nayib Bukele. El anuncio incluyÃ³ el respaldo a los policÃ­as que participan en operativos y la mejora de las condiciones en las comisarÃ­as del paÃ­s.",
-        "thumbnail":  "/posts/keiko-fujimori-modelo-bukele-firmeza-orden/imagen1.jpg",
-        "htmlPath":  "/posts/keiko-fujimori-modelo-bukele-firmeza-orden/index.html"
-    },
-    {
-        "slug":  "motorola-global-connect-roaming-gratis-torneo",
-        "title":  "Motorola Global Connect: roaming gratis para el Mundial de FÃºtbol",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-10",
-        "excerpt":  "La compaÃ±Ã­a tecnolÃ³gica presentÃ³ su nuevo servicio de conectividad internacional pensado para los viajeros que asistirÃ¡n al torneo de fÃºtbol mÃ¡s importante del planeta. La propuesta incluye una SIM de viaje con datos en el extranjero sin costo adicional, eliminando las barreras de comunicaciÃ³n para los aficionados.",
-        "thumbnail":  "/posts/motorola-global-connect-roaming-gratis-torneo/imagen1.jpg",
-        "htmlPath":  "/posts/motorola-global-connect-roaming-gratis-torneo/index.html"
-    },
-    {
-        "slug":  "meteorito-marte-1270-millones-anos-historia",
-        "title":  "Meteorito de Marte de 1.270 millones de aÃ±os revela secretos del planeta rojo",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-10",
-        "excerpt":  "El fragmento NWA 13441, hallado en el desierto de Argelia, permite a los cientÃ­ficos cubrir un vacÃ­o de casi 2.000 millones de aÃ±os en el registro geolÃ³gico de Marte. El estudio, liderado por el Boston College, abre una nueva ventana al pasado desconocido del planeta vecino.",
-        "thumbnail":  "/posts/meteorito-marte-1270-millones-anos-historia/imagen1.jpg",
-        "htmlPath":  "/posts/meteorito-marte-1270-millones-anos-historia/index.html"
-    },
-    {
-        "slug":  "temblor-venezuela-10-agosto-funvisis",
-        "title":  "Temblor en Venezuela hoy, 10 de agosto de 2026: Reporte de FUNVISIS",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-10",
-        "excerpt":  "La FundaciÃ³n Venezolana de Investigaciones SismolÃ³gicas confirmÃ³ movimientos telÃºricos en el litoral central, incluyendo un temblor de magnitud 2.6 a solo 5 kilÃ³metros de profundidad. Los eventos, aunque de baja intensidad, recuerdan la vulnerabilidad del Caribe ante la dinÃ¡mica tectÃ³nica de las placas del CinturÃ³n de Fuego del PacÃ­fico.",
-        "thumbnail":  "/posts/temblor-venezuela-10-agosto-funvisis/imagen1.jpg",
-        "htmlPath":  "/posts/temblor-venezuela-10-agosto-funvisis/index.html"
-    },
-    {
-        "slug":  "eclipse-solar-total-agosto-2026-visible-desde-peru",
-        "title":  "Eclipse solar total de agosto 2026: el fenÃ³meno que podrÃ­a juntarse con auroras boreales",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-09",
-        "excerpt":  "El 12 de agosto de 2026, el cielo se oscurecerÃ¡ por completo durante un eclipse solar total que promete ser histÃ³rico. AdemÃ¡s de su trayectoria por el Ãrtico, Groenlandia, Islandia y EspaÃ±a, los cientÃ­ficos no descartan que se pueda ver acompaÃ±ado de auroras boreales, mientras la NASA ya adelantÃ³ cuÃ¡ndo serÃ¡ el prÃ³ximo eclipse visible desde PerÃº.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/solar%20eclipse%20total%20August%202026%20with%20aurora%20borealis%20and%20dark%20sky%20astronomical%20event%20cinematic%20wide",
-        "htmlPath":  "/posts/eclipse-solar-total-agosto-2026-visible-desde-peru/index.html"
-    },
-    {
-        "slug":  "fenomeno-el-nino-furioso-2026-sudamerica",
-        "title":  "El NiÃ±o 2026: La amenaza rÃ©cord que ya se siente en SudamÃ©rica",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-09",
-        "excerpt":  "CientÃ­ficos advierten que el PacÃ­fico podrÃ­a superar los 3Â°C de anomalÃ­a, desatando lluvias extremas, sequÃ­as y un impacto sin precedentes en la pesca y agricultura. PerÃº y sus vecinos se preparan para el peor escenario.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/El_Nino_2026_Pacific_Ocean_heat_anomaly_South_America_weather",
-        "htmlPath":  "/posts/fenomeno-el-nino-furioso-2026-sudamerica/index.html"
-    },
-    {
-        "slug":  "israel-rechaza-plan-gaza-netanyahu-trump",
-        "title":  "Netanyahu desafÃ­a a Trump: Israel rechaza el plan de 15 puntos para Gaza",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-09",
-        "excerpt":  "El primer ministro israelÃ­, Benjamin Netanyahu, ha rechazado frontalmente el plan de 15 puntos para Gaza propuesto por Donald Trump, mientras el gabinete de seguridad israelÃ­ tambiÃ©n ha tumbado una tregua de 14 dÃ­as impulsada por Estados Unidos. Israel insiste en que no se retirarÃ¡ del enclave hasta que HamÃ¡s deponga las armas, una postura que tensa aÃºn mÃ¡s la regiÃ³n y deja en el aire el futuro del conflicto.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/Benjamin_Netanyahu_speaking_at_press_conference_in_Jerusalem_serious_expression_Israeli_flag_background_August_2026",
-        "htmlPath":  "/posts/israel-rechaza-plan-gaza-netanyahu-trump/index.html"
-    },
-    {
-        "slug":  "keiko-fujimori-60-aprobacion-encuesta-datum",
-        "title":  "Keiko Fujimori arranca con 60% de aprobaciÃ³n: el respaldo histÃ³rico que la encuesta Datum revela",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-09",
-        "excerpt":  "La encuesta nacional de Datum de agosto de 2026 confirma que Keiko Fujimori inicia su gobierno con un 60% de aprobaciÃ³n ciudadana, la cifra mÃ¡s alta para un presidente peruano en sus primeros dÃ­as de mandato. El sondeo revela dÃ³nde tiene mayor respaldo, quÃ© factores explican esta popularidad inicial y cuÃ¡les son los principales desafÃ­os que enfrentarÃ¡ el nuevo gobierno para mantener esa confianza ciudadana.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/Keiko%20Fujimori%20presidential%20approval%2060%20percent%20Peru%20Datum%20survey%202026%20news%20article%20thumbnail",
-        "htmlPath":  "/posts/keiko-fujimori-60-aprobacion-encuesta-datum/index.html"
-    },
-    {
-        "slug":  "sismos-junin-replicas-chupaca-ayuda-humanitaria",
-        "title":  "JunÃ­n sigue temblando: sismos de magnitud 4.3 y 4.7 en Chupaca - IGP explica rÃ©plicas",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-09",
-        "excerpt":  "\u003c/strong\u003e La tierra no da tregua en la regiÃ³n central. Dos fuertes sismos sacudieron Chupaca en menos de 12 horas, el primero de magnitud 4.3 y el segundo de 4.7. El IGP advierte que las rÃ©plicas continuarÃ¡n porque la zona sigue liberando energÃ­a acumulada. Mientras el Indeci envÃ­a 111 toneladas de ayuda, los damnificados claman por viviendas y denuncian lentitud. AquÃ­ todo lo que debes saber.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/sismos-junin-replicas-chupaca-ayuda-humanitaria-thumbnail",
-        "htmlPath":  "/posts/sismos-junin-replicas-chupaca-ayuda-humanitaria/index.html"
-    },
-    {
-        "slug":  "soda-sinfonico-peru-concierto-soda-stereo",
-        "title":  "Soda SinfÃ³nico en PerÃº 2026: cuando el rock eterno de Soda Stereo se encuentra con una orquesta",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-08",
-        "excerpt":  "El espectÃ¡culo tributo que ha emocionado a miles en LatinoamÃ©rica llega por primera vez al PerÃº. Soda SinfÃ³nico transforma los himnos de la banda argentina en experiencias orquestales inolvidables, y los fans ya madrugan para conseguir sus entradas.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/Soda%20Sinfonico%20Peru%202026%20orchestra%20rock%20tribute%20concert%20poster%20vibrant",
-        "htmlPath":  "/posts/soda-sinfonico-peru-concierto-soda-stereo/index.html"
-    },
-    {
-        "slug":  "papa-leon-xiv-visita-peru-noviembre-2026",
-        "title":  "Papa LeÃ³n XIV en PerÃº 2026: fe, esperanza y un abrazo que cruzarÃ¡ el continente",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-08",
-        "excerpt":  "El Vaticano confirmÃ³ oficialmente la visita del papa LeÃ³n XIV al PerÃº del 11 al 17 de noviembre de 2026. SerÃ¡ la segunda visita de un pontÃ­fice al paÃ­s en el siglo XXI y la primera del Papa a LatinoamÃ©rica, con un recorrido que incluye Lima, Chiclayo, Cusco y Pucallpa.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/Pope_Leo_XIV_Peru_visit_2026_official_announcement_Vatican_papal_trip_Latin_America_joyful_crowd_Peruvian_flags_waving?width=600\u0026height=400",
-        "htmlPath":  "/posts/papa-leon-xiv-visita-peru-noviembre-2026/index.html"
-    },
-    {
-        "slug":  "eclipse-solar-total-agosto-2026-espana-fecha",
-        "title":  "El Gran Eclipse Solar de Agosto de 2026: EspaÃ±a, epicentro mundial del fenÃ³meno astronÃ³mico del siglo",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-08",
-        "excerpt":  "El prÃ³ximo 12 de agosto de 2026, la Luna se interpondrÃ¡ entre el Sol y la Tierra y ocultarÃ¡ por completo el disco solar durante varios minutos. SerÃ¡ el primer eclipse total visible desde la EspaÃ±a peninsular en mÃ¡s de 120 aÃ±os, y miles de astrÃ³nomos aficionados y turistas de todo el mundo ya han reservado sus alojamientos en la costa norte del paÃ­s para no perderse este evento histÃ³rico.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/Total_solar_eclipse_over_Spain_with_dark_sky_and_bright_corona_August_2026",
-        "htmlPath":  "/posts/eclipse-solar-total-agosto-2026-espana-fecha/index.html"
-    },
-    {
-        "slug":  "corte-agua-sedapal-10-agosto-distritos-horarios",
-        "title":  "Sedapal: Corte de agua programado para el 10 de agosto en Lima - GuÃ­a completa",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-08",
-        "excerpt":  "Sedapal confirmÃ³ un corte programado de agua potable para el prÃ³ximo lunes 10 de agosto en varios distritos de Lima por trabajos de mantenimiento y mejora de la red. Conoce los horarios exactos, zonas afectadas y todos los pasos para preparar tu hogar antes, durante y despuÃ©s de la interrupciÃ³n del servicio.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/water%20cut%20Lima%20Sedapal%20announcement%20august%202026%20thumbnail?width=600\u0026height=315\u0026nologo=true",
-        "htmlPath":  "/posts/corte-agua-sedapal-10-agosto-distritos-horarios/index.html"
-    },
-    {
-        "slug":  "whatsapp-nuevas-funciones-grupos-2026",
-        "title":  "WhatsApp 2026: Las funciones ocultas que convierten tus grupos en una mÃ¡quina de organizaciÃ³n",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-08",
-        "excerpt":  "Encuestas avanzadas, eventos con recordatorios, respuestas rÃ¡pidas y controles de administraciÃ³n profesionales. WhatsApp ha renovado por completo la gestiÃ³n de grupos en 2025-2026, y la mayorÃ­a de usuarios todavÃ­a no sabe que puede silenciar miembros especÃ­ficos, fijar varios mensajes a la vez o proteger el acceso con aprobaciÃ³n. Te contamos paso a paso cÃ³mo usar cada novedad en Android y iPhone.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/WhatsApp%202026%20group%20features%20smartphone%20admin%20controls%20modern%20interface",
-        "htmlPath":  "/posts/whatsapp-nuevas-funciones-grupos-2026/index.html"
-    },
-    {
-        "slug":  "como-recuperar-mensajes-borrados-whatsapp-android-iphone",
-        "title":  "Recuperar mensajes borrados de WhatsApp en 2026: guÃ­a prÃ¡ctica",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-08",
-        "excerpt":  "Â¿Borraste sin querer un chat de WhatsApp y necesitas recuperarlo? Te contamos paso a paso cÃ³mo restaurar mensajes desde Google Drive, iCloud, la papelera de la app y los chats archivados. TambiÃ©n desmontamos los falsos milagros de las apps de terceros y te explicamos quÃ© mensajes jamÃ¡s podrÃ¡s recuperar.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/WhatsApp%20recovery%202026%20guide%20thumbnail%20smartphone%20backup%20restore%20green%20chat",
-        "htmlPath":  "/posts/como-recuperar-mensajes-borrados-whatsapp-android-iphone/index.html"
-    },
-    {
-        "slug":  "cursos-gratis-ia-peru-uni-claude-2026",
-        "title":  "Cursos gratis de IA en PerÃº 2026: UNI, Claude y PCM abren sus puertas digitales",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-08",
-        "excerpt":  "La inteligencia artificial ya no es un lujo ni un misterio. La UNI lanzÃ³ mÃ¡s de 80 cursos virtuales gratuitos, Anthropic ofrece 12 programas con certificado y la PCM se suma a la ola formativa. Te contamos cÃ³mo acceder a estas oportunidades y sacarles el mÃ¡ximo provecho sin perderte en el intento.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/peru_ai_courses_2026_uni_anthropic_pcm_free_certificate_thumbnail?w=800\u0026h=600\u0026c=1",
-        "htmlPath":  "/posts/cursos-gratis-ia-peru-uni-claude-2026/index.html"
-    },
-    {
-        "slug":  "crear-imagenes-con-ia-gratis-2026-paginas",
-        "title":  "Crear imÃ¡genes con IA gratis en 2026: guÃ­a de herramientas y trucos",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-08",
-        "excerpt":  "Millones de personas buscan cada mes generadores de imagen sin pagar. Te contamos cuÃ¡les funcionan de verdad, cÃ³mo escribir prompts que no fallen y dÃ³nde bajar tus creaciones sin marcas de agua.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/ai_image_generation_2026_free_tools_collage_modern_tech_style",
-        "htmlPath":  "/posts/crear-imagenes-con-ia-gratis-2026-paginas/index.html"
-    },
-    {
-        "slug":  "apis-ia-gratis-2026-mejores-api-modelos-sin-pagar",
-        "title":  "Las mejores APIs de IA gratuitas de 2026 para desarrolladores",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-08",
-        "excerpt":  "ArtÃ­culo sobre Las APIs de inteligencia artificial gratuitas son ",
-        "thumbnail":  "https://image.pollinations.ai/prompt/apis-ia-gratis-2026-mejores-api-modelos-sin-pagar-thumbnail",
-        "htmlPath":  "/posts/apis-ia-gratis-2026-mejores-api-modelos-sin-pagar/index.html"
-    },
-    {
-        "slug":  "pc-antigua-modificacion-para-jugar-700-titulos",
-        "title":  "Revive tu vieja PC y juega 700 clÃ¡sicos: la guÃ­a definitiva para darle una segunda vida a tu computadora olvidada",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-08",
-        "excerpt":  "Â¿Tienes una computadora vieja acumulando polvo en un armario? Con una modificaciÃ³n sencilla y menos de 50 dÃ³lares puedes transformarla en una mÃ¡quina de juegos retro capaz de correr casi 700 tÃ­tulos clÃ¡sicos. Te contamos cÃ³mo hacerlo paso a paso, sin necesidad de ser un experto en tecnologÃ­a.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/old_pc_transformed_into_retro_gaming_console_with_colorful_controllers_and_classic_game_characters",
-        "htmlPath":  "/posts/pc-antigua-modificacion-para-jugar-700-titulos/index.html"
-    },
-    {
-        "slug":  "feriados-en-peru-2027-mef-anuncia-que-se-trasladaran-a-los-lunes",
-        "title":  "Feriados en PerÃº 2027: MEF confirma traslado a lunes para impulsar el turismo y el comercio con fines de semana largos",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-08",
-        "excerpt":  "El ministro de EconomÃ­a y Finanzas, Elmer Cuba, anunciÃ³ que la mayorÃ­a de feriados de 2027 se trasladarÃ¡n a los lunes, buscando crear puentes turÃ­sticos que dinamicen el sector interno. La medida, que corrige la propuesta inicial de los viernes, busca proteger la productividad empresarial mientras se garantiza el descanso de los trabajadores y se acompaÃ±a del aumento de la RemuneraciÃ³n MÃ­nima Vital a S/ 1,300.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/Peru_2027_holidays_moved_to_Mondays_calendar_with_tourism_and_economic_growth_concept?width=800\u0026height=400\u0026nologo=true",
-        "htmlPath":  "/posts/feriados-en-peru-2027-mef-anuncia-que-se-trasladaran-a-los-lunes/index.html"
-    },
-    {
-        "slug":  "rodri-da-el-ok-al-barcelona",
-        "title":  "Rodri da el OK al Barcelona: El fichaje que revolucionarÃ¡ el centro del campo culÃ©",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-07",
-        "excerpt":  "El mediocentro del Manchester City y de la selecciÃ³n espaÃ±ola ha dado su visto bueno para recalar en el Camp Nou el prÃ³ximo verano. El Barcelona se asegura asÃ­ el fichaje de uno de los mejores jugadores del mundo en su posiciÃ³n, en una operaciÃ³n que superarÃ¡ los 100 millones de euros.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/Rodri_Barcelona_celebration_Camp_Nou_fans_spanish_midfielder_transfer_exclusive?width=800\u0026height=500\u0026nologo=1",
-        "htmlPath":  "/posts/rodri-da-el-ok-al-barcelona/index.html"
-    },
-    {
-        "slug":  "jorge-nieto-plantea-revisar-presupuesto-del-congreso-y-seala-que-incremento-del",
-        "title":  "Jorge Nieto Propone Revisar el Presupuesto del Congreso y Advierte que el Incremento del Gasto Requiere una Reforma Estructural",
-        "author":  "ROSA EMILY",
-        "date":  "2026-08-03",
-        "excerpt":  "El exministro Jorge Nieto plantea una revisiÃ³n integral del presupuesto del Congreso y seÃ±ala que cualquier incremento del gasto pÃºblico debe ir acompaÃ±ado de una reforma profunda que garantice eficiencia y transparencia en el uso de los recursos del Estado.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/Jorge_Nieto_Peru_Congress_budget_reform_thumbnail_speaking_podium",
-        "htmlPath":  "/posts/jorge-nieto-plantea-revisar-presupuesto-del-congreso-y-seala-que-incremento-del/index.html"
-    },
-    {
-        "slug":  "sismo-huancayo-por-que-peru-esta-en-el-centro-de-fuego-de-un-sismo-fuerte",
-        "title":  "Sismo Huancayo: Â¿Por quÃ© PerÃº estÃ¡ en el centro de fuego de un sismo fuerte?",
-        "author":  "ROSA EMILY",
-        "date":  "2026-07-30",
-        "excerpt":  "PerÃº y especialmente la regiÃ³n de Huancayo se encuentran en una de las zonas mÃ¡s sÃ­smicamente activas del planeta. Descubre las razones geolÃ³gicas, la historia de los grandes terremotos y cÃ³mo prepararse para el prÃ³ximo gran movimiento telÃºrico.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/seismic%20hazard%20map%20Peru%20Huancayo%20high%20risk%20earthquake%20zoning%20colors",
-        "htmlPath":  "/posts/sismo-huancayo-por-que-peru-esta-en-el-centro-de-fuego-de-un-sismo-fuerte/index.html"
-    },
-    {
-        "slug":  "por-qu-envejece-el-cuerpo",
-        "title":  "El reloj biolÃ³gico: Descubre por quÃ© el cuerpo envejece y cÃ³mo ralentizarlo",
-        "author":  "ROSA EMILY",
-        "date":  "2026-07-29",
-        "excerpt":  "El envejecimiento es un proceso biolÃ³gico complejo que afecta a cada cÃ©lula de nuestro organismo. Exploramos las causas cientÃ­ficas detrÃ¡s del deterioro celular, el acortamiento de los telÃ³meros y las estrategias para promover un envejecimiento saludable.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/cellular_aging_telomeres_oxidative_stress_mitochondria_inflammation_conceptual?width=800\u0026height=600\u0026nologo=true",
-        "htmlPath":  "/posts/por-qu-envejece-el-cuerpo/index.html"
-    },
-    {
-        "slug":  "afecciones-urolgicas-prevencin-y-tratamiento-integral-con-medicina-natural-y-tra",
-        "title":  "Afecciones UrolÃ³gicas â€“ PrevenciÃ³n y Tratamiento Integral con Medicina Natural y Tradicional",
-        "author":  "ROSA EMILY",
-        "date":  "2026-07-25",
-        "excerpt":  "Descubre el enfoque integral de la medicina natural y tradicional cubana para prevenir y tratar afecciones urolÃ³gicas. Este artÃ­culo combina acupuntura, fitoterapia, magnetoterapia y mÃ¡s, basado en el Manual para la PrÃ¡ctica de la Medicina Natural y Tradicional de Cuba.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/urology%20natural%20medicine%20cuban%20acupuncture%20herbal%20kidney%20bladder%20integral%20treatment",
-        "htmlPath":  "/posts/afecciones-urolgicas-prevencin-y-tratamiento-integral-con-medicina-natural-y-tra/index.html"
-    },
-    {
-        "slug":  "las-mscaras-de-entrenamiento-de-altitud-que-no-simulan-la-hipoxia-real-y-pueden",
-        "title":  "MÃ¡scaras de Entrenamiento en Altitud: Â¿SimulaciÃ³n Real o Efecto Placebo?",
-        "author":  "ROSA EMILY",
-        "date":  "2026-07-25",
-        "excerpt":  "Descubre por quÃ© las mÃ¡scaras de entrenamiento en altitud no replican la hipoxia real y cÃ³mo pueden afectar tu rendimiento. Un anÃ¡lisis profundo basado en ciencia y fisiologÃ­a.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/thumbnail_altitude_mask_training_myth_vs_reality",
-        "htmlPath":  "/posts/las-mscaras-de-entrenamiento-de-altitud-que-no-simulan-la-hipoxia-real-y-pueden/index.html"
-    },
-    {
-        "slug":  "adis-al-vello-sin-una-gota-de-dolor",
-        "title":  "AdiÃ³s al Vello, Sin una Gota de Dolor: GuÃ­a Definitiva de DepilaciÃ³n Indolora",
-        "author":  "ROSA EMILY",
-        "date":  "2026-07-23",
-        "excerpt":  "La depilaciÃ³n no tiene por quÃ© ser una tortura. Conoce las tÃ©cnicas y tecnologÃ­as mÃ¡s innovadoras que te permiten eliminar el vello de forma suave, eficaz y completamente indolora. Dile adiÃ³s a la cera caliente y a las pinzas, y dale la bienvenida a una piel perfecta sin sufrimiento.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/happy_woman_painless_hair_removal_laser_comfort",
-        "htmlPath":  "/posts/adis-al-vello-sin-una-gota-de-dolor/index.html"
-    },
-    {
-        "slug":  "articulo-sobre-que-causa-las-hemoriedes-y-como-evitarlos-y-se-salen-como-curarlo",
-        "title":  "Hemorroides: Causas, PrevenciÃ³n y Tratamientos Recomendados",
-        "author":  "ROSA EMILY",
-        "date":  "2026-07-23",
-        "excerpt":  "Las hemorroides son una afecciÃ³n comÃºn que afecta a millones de personas en todo el mundo. Descubre en este artÃ­culo completo quÃ© las causa, cÃ³mo prevenirlas con hÃ¡bitos saludables y cuÃ¡les son los tratamientos mÃ¡s efectivos para curarlas y aliviar sus molestos sÃ­ntomas.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/hemorrhoids_medical_illustration_diagram_anatomy",
-        "htmlPath":  "/posts/articulo-sobre-que-causa-las-hemoriedes-y-como-evitarlos-y-se-salen-como-curarlo/index.html"
-    },
-    {
-        "slug":  "mals-acustembres-que-te-hacen-perder-aos-de-vida",
-        "title":  "Malos hÃ¡bitos que te hacen perder aÃ±os de vida: CÃ³mo tus costumbres diarias acortan tu esperanza de vida",
-        "author":  "ROSA EMILY",
-        "date":  "2026-07-21",
-        "excerpt":  "Cada decisiÃ³n que tomas a lo largo del dÃ­a, desde lo que comes hasta cuÃ¡nto te mueves, estÃ¡ escribiendo el guion de tu longevidad. Descubre cuÃ¡les son los hÃ¡bitos mÃ¡s daÃ±inos que silenciosamente roban aÃ±os de tu vida y aprende a revertirlos antes de que sea demasiado tarde.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/silhouette_person_aging_clock_time_passing_healthy_unhealthy_comparison",
-        "htmlPath":  "/posts/mals-acustembres-que-te-hacen-perder-aos-de-vida/index.html"
-    },
-    {
-        "slug":  "por-que-debes-dormir-temprano-y-mas-importante-levanatar-temptano",
-        "title":  "Dormir Temprano y Despertar al Amanecer: La Clave para tu EnergÃ­a",
-        "author":  "ROSA EMILY",
-        "date":  "2026-07-21",
-        "excerpt":  "Descubre por quÃ© despertar temprano y dormir a tiempo es la clave para una productividad imparable y una salud plena. Revoluciona tu energÃ­a con este hÃ¡bito ancestral.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/sunrise%20morning%20routine%20early%20wake%20up%20healthy%20habits%20productivity%20wellness",
-        "htmlPath":  "/posts/por-que-debes-dormir-temprano-y-mas-importante-levanatar-temptano/index.html"
-    },
-    {
-        "slug":  "alguna-vez-intentaste-cambiar-un-mal-hbito-y-volviste-a-l-a-los-pocos-das-te-dij",
-        "title":  "Reprograma tu Sistema Nervioso para Eliminar Malos HÃ¡bitos",
-        "author":  "ROSA EMILY",
-        "date":  "2026-07-20",
-        "excerpt":  "Los malos hÃ¡bitos no son falta de voluntad, son reacciones de tu sistema nervioso. Aprende a reprogramarlo para cambiar hÃ¡bitos de raÃ­z y vivir en calma.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/nervous-system-reprogramming-thumbnail",
-        "htmlPath":  "/posts/alguna-vez-intentaste-cambiar-un-mal-hbito-y-volviste-a-l-a-los-pocos-das-te-dij/index.html"
-    },
-    {
-        "slug":  "personas-mayores-ha-llegado-el-momento-de-replantearse-quin-es-el-rey-de-las-pro",
-        "title":  "ProteÃ­nas para Adultos Mayores: Â¿Es el Huevo el Rey Real?",
-        "author":  "ROSA EMILY",
-        "date":  "2026-07-20",
-        "excerpt":  "El huevo fue el rey, pero la ciencia avanza. Descubre quÃ© proteÃ­nas son realmente mÃ¡s efectivas para la salud y longevidad en adultos mayores hoy en dÃ­a.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/elderly-protein-king-question-thumbnail",
-        "htmlPath":  "/posts/personas-mayores-ha-llegado-el-momento-de-replantearse-quin-es-el-rey-de-las-pro/index.html"
-    },
-    {
-        "slug":  "el-ingrediente-que-usas-todos-los-das-y-est-destruyendo-tu-memoria-sin-que-lo-se",
-        "title":  "El AzÃºcar y la Salud Cognitiva: Lo que Dice la Ciencia",
-        "author":  "ROSA EMILY",
-        "date":  "2026-07-20",
-        "excerpt":  "Â¿El azÃºcar afecta tu memoria? Descubre el impacto del azÃºcar refinado en el cerebro y cÃ³mo mejorar tu salud cognitiva.",
-        "thumbnail":  "https://image.pollinations.ai/prompt/sugar-memory-damage-thumbnail",
-        "htmlPath":  "/posts/el-ingrediente-que-usas-todos-los-das-y-est-destruyendo-tu-memoria-sin-que-lo-se/index.html"
-    },
-    {
-        "slug":  "portugal-vs-espana-final",
-        "title":  "Portugal vs EspaÃ±a: Final en Vivo, Horario y TransmisiÃ³n HD",
-        "author":  "Equipo UltimoLive",
-        "authorTitle":  "Especialistas en FÃºtbol Internacional",
-        "date":  "2025-06-08",
-        "excerpt":  "Disfruta la gran final entre Portugal y EspaÃ±a. Sigue el partido en vivo con nuestra transmisiÃ³n HD, horarios detallados y estadÃ­sticas minuto a minuto.",
-        "thumbnail":  "https://imgmedia.libero.pe/1200x630/libero/original/2025/06/07/68442a1026e1e9aaac042d36.jpg",
-        "htmlPath":  "/posts/portugal-vs-espana/index.html"
-    },
-    {
-        "slug":  "bolivia-vs-venezuela",
-        "title":  "Bolivia vs Venezuela: Rivalidad y AnÃ¡lisis del Duelo Sudamericano",
-        "author":  "Equipo Automatico",
-        "authorTitle":  "Especialistas en FÃºtbol Sudamericano",
-        "date":  "2025-06-06",
-        "excerpt":  "Analizamos la historia, estadÃ­sticas y la pasiÃ³n detrÃ¡s del enfrentamiento entre Bolivia y Venezuela. Un duelo emocionante de fÃºtbol sudamericano.",
-        "thumbnail":  "https://cdn.bolivia.com/sdi/2024/09/05/conoce-donde-ver-el-partido-bolivia-vs-venezuela-1253695.jpg",
-        "htmlPath":  "/posts/boliviavsvenezuela/index.html"
-    },
-    {
-        "slug":  "peru-vs-colombia",
-        "title":  "PerÃº vs Colombia: AnÃ¡lisis y PredicciÃ³n del ClÃ¡sico Sudamericano",
-        "author":  "Equipo Automatico",
-        "authorTitle":  "Especialistas en FÃºtbol Sudamericano",
-        "date":  "2025-06-06",
-        "excerpt":  "AnÃ¡lisis completo del PerÃº vs Colombia. EstadÃ­sticas, historia y los jugadores clave de este emocionante clÃ¡sico sudamericano.",
-        "thumbnail":  "https://origin.cronosmedia.glr.pe/large/2025/06/02/lg_683e0569459cf7ef500ef08b.jpg",
-        "htmlPath":  "/posts/peruvscolombia/index.html"
-    },
-    {
-        "slug":  "psg-vs-inter2025",
-        "title":  "Final Champions 2025: PSG vs Inter - GuÃ­a, Horarios y AnÃ¡lisis",
-        "author":  "Equipo VitalNatur",
-        "date":  "2025-05-31",
-        "excerpt":  "Vive la gran final PSG vs Inter 2025. Horarios, anÃ¡lisis y estadÃ­sticas de la Champions League. Â¡No te pierdas ningÃºn detalle!",
-        "thumbnail":  "https://automatico.pages.dev/posts/final/final.jpg",
-        "htmlPath":  "/posts/final/index.html"
-    },
-    {
-        "slug":  "guia-cientifica-manejo-estres-laboral",
-        "title":  "GuÃ­a CientÃ­fica: Estrategias para el Manejo del EstrÃ©s Laboral",
-        "author":  "ROSA EMILY",
-        "date":  "2025-04-17",
-        "excerpt":  "Aprende estrategias probadas por la ciencia para gestionar la presiÃ³n en el trabajo. Mejora tu rendimiento y bienestar laboral hoy.",
-        "thumbnail":  "/posts/manejo-estres/bing.png",
-        "htmlPath":  "/posts/manejo-estres/index.html"
-    },
-    {
-        "slug":  "descifrando-volte-funcion-gestion-smartphone",
-        "title":  "Â¿QuÃ© es VoLTE? Beneficios y ConfiguraciÃ³n en tu Smartphone",
-        "author":  "rosa emily",
-        "date":  "2025-04-21",
-        "excerpt":  "Mejora la calidad de tus llamadas con VoLTE. Aprende quÃ© es, cÃ³mo beneficia a tu conexiÃ³n y cÃ³mo gestionarlo fÃ¡cilmente en tu mÃ³vil.",
-        "thumbnail":  "/posts/descifrando-volte-funcion-gestion-smartphone/volt.png",
-        "htmlPath":  "/posts/descifrando-volte-funcion-gestion-smartphone/index.html"
-    },
-    {
-        "slug":  "maha-kumbh-2025",
-        "title":  "Maha Kumbh 2025: Por quÃ© atrae la atenciÃ³n espiritual mundial",
-        "author":  "RedacciÃ³n Cultural Global",
-        "date":  "2025-04-16",
-        "excerpt":  "Explora el fenÃ³meno espiritual del Maha Kumbh Mela 2025. Descubre por quÃ© este evento es clave para millones y su impacto global.",
-        "thumbnail":  "https://theazb.com/wp-content/uploads/2025/01/Maha-Kumbh-Mela.jpg",
-        "htmlPath":  "/posts/maha-kumbh-2025/index.html"
-    },
-    {
-        "slug":  "productos-tecnologicos-mas-buscados-peru-2025",
-        "title":  "Tendencias TecnolÃ³gicas: Lo mÃ¡s buscado en PerÃº este 2025",
-        "author":  "RedacciÃ³n Tendencias",
-        "date":  "2025-04-16",
-        "excerpt":  "Descubre los gadgets y productos tecnolÃ³gicos que estÃ¡n marcando el ritmo en PerÃº este 2025. Â¡Lo que todos quieren tener!",
-        "thumbnail":  "/posts/peru2025/peru25.png",
-        "htmlPath":  "/posts/peru2025/index.html"
-    },
-    {
-        "slug":  "sostenibilidad-2025",
-        "title":  "Sostenibilidad 2025: La Nueva Tendencia en Consumo Responsable",
-        "author":  "RedacciÃ³n Estilo Verde",
-        "date":  "2025-04-16",
-        "excerpt":  "En 2025, la sostenibilidad define nuestras decisiones de vida. Descubre cÃ³mo ser un consumidor mÃ¡s responsable y consciente.",
-        "thumbnail":  "/posts/sostenibilidad2025/futi.png",
-        "htmlPath":  "/posts/sostenibilidad2025/index.html"
-    },
-    {
-        "slug":  "bebidas-2025",
-        "title":  "Bebidas 2025: ClÃ¡sicos Renovados con un Toque Saludable",
-        "author":  "RedacciÃ³n Estilo de Vida",
-        "date":  "2025-04-16",
-        "excerpt":  "Los cÃ³cteles clÃ¡sicos vuelven este 2025 con giros saludables y sabores sorprendentes. Aprende sobre las nuevas tendencias en bebidas.",
-        "thumbnail":  "/posts/bebidas-2025/bibida.png",
-        "htmlPath":  "/posts/bebidas-2025/index.html"
-    },
-    {
-        "slug":  "belleza-2025-estetica-bienestar",
-        "title":  "Tendencias Belleza 2025: La EstÃ©tica Sutil y el Bienestar",
-        "author":  "Estilo \u0026 Vida Moderna",
-        "date":  "2025-04-16",
-        "excerpt":  "La belleza en 2025 prioriza lo natural y el bienestar interno. Explora cÃ³mo esta tendencia estÃ¡ cambiando el estÃ¡ndar de estÃ©tica.",
-        "thumbnail":  "/posts/belleza/belleza.jpg",
-        "htmlPath":  "/posts/belleza/index.html"
-    },
-    {
-        "slug":  "reinvencion-personalidad",
-        "title":  "5 Pasos para Reinventar tu Personalidad mediante Neuroplasticidad",
-        "author":  "Dra. MarÃ­a LÃ³pez",
-        "date":  "2024-07-15",
-        "excerpt":  "Tu personalidad no es estÃ¡tica. Aprende cÃ³mo la neuroplasticidad te permite transformarte y ser quien siempre quisiste ser en 5 pasos cientÃ­ficos.",
-        "thumbnail":  "/posts/personalidad/images.jpg",
-        "htmlPath":  "/posts/personalidad/index.html"
-    },
-    {
-        "slug":  "alimentacion-cerebro",
-        "title":  "NutriciÃ³n para el Cerebro: 10 Superalimentos que Potencian tu Mente",
-        "author":  "Dr. Carlos MÃ©ndez",
-        "date":  "2024-07-18",
-        "excerpt":  "Potencia tu capacidad cognitiva. Estos 10 superalimentos estÃ¡n avalados por la ciencia para mejorar tu memoria y enfoque mental.",
-        "thumbnail":  "/posts/mitologia/ima.jpg",
-        "htmlPath":  "/posts/mitologia/index.html"
-    },
-    {
-        "slug":  "entrenamiento-cerbero",
-        "title":  "El Arte de Entrenar tu Mente: Protocolos de Enfoque",
-        "author":  "Dr. Nikolaos Thyrsos",
-        "date":  "2024-07-25",
-        "excerpt":  "Protocolos avanzados para sincronizar tu enfoque y potenciar el rendimiento mental. Aprende a dominar tu mente.",
-        "thumbnail":  "/posts/cerebro/images.jpg",
-        "htmlPath":  "/posts/cerebro/index.html"
-    },
-    {
-        "slug":  "reinvencion-personal",
-        "title":  "ReinvenciÃ³n Personal: CÃ³mo Crear la Vida que Deseas",
-        "author":  "Equipo de Desarrollo Personal",
-        "date":  "2024-07-25",
-        "excerpt":  "La reinvenciÃ³n es un proceso estructurado. Descubre cÃ³mo cambiar tu rumbo, dejar atrÃ¡s el pasado y crear tu vida ideal hoy.",
-        "thumbnail":  "/posts/articulo/reinvencion-thumb.jpg",
-        "htmlPath":  "/posts/articulo/index.html"
-    },
-    {
-        "slug":  "pollo-blanco-o-amarillo",
-        "title":  "Pollo Blanco o Amarillo: La Verdad DetrÃ¡s de la NutriciÃ³n",
-        "author":  "Equipo de NutriciÃ³n Consciente",
-        "date":  "2024-03-15",
-        "excerpt":  "Â¿CuÃ¡l es mÃ¡s nutritivo? Despejamos el mito sobre el color del pollo para que tomes la mejor decisiÃ³n al comprar.",
-        "thumbnail":  "https://blob.luznoticias.mx/images/2024/02/24/pollos-principal-focus-0-0-966-544.jpg",
-        "htmlPath":  "/posts/pollo/index.html"
-    },
-    {
-        "slug":  "remontadas-historicas",
-        "title":  "Momentos Ã‰picos: Las Remontadas Inolvidables del Real Madrid",
-        "author":  "RedacciÃ³n Deportiva Total",
-        "date":  "2025-04-16",
-        "excerpt":  "Revive las remontadas histÃ³ricas del Real Madrid en la Champions League. Momentos de pura magia futbolÃ­stica que marcaron Ã©poca.",
-        "thumbnail":  "https://i.ytimg.com/vi/dbXQWQcET4o/maxresdefault.jpg",
-        "htmlPath":  "/posts/realremontadas/index.html"
-    },
-    {
-        "slug":  "maximalismo-decoracion-primavera-2025",
-        "title":  "Maximalismo: La Tendencia que Domina la DecoraciÃ³n 2025",
-        "author":  "RedacciÃ³n de DecoraciÃ³n y Tendencias",
-        "date":  "2025-04-16",
-        "excerpt":  "El minimalismo quedÃ³ atrÃ¡s. Descubre por quÃ© el maximalismo es la tendencia estrella en la decoraciÃ³n del hogar para esta primavera 2025.",
-        "thumbnail":  "https://i.pinimg.com/originals/ec/fa/92/ecfa92103caf7a1d9199a4d7d33ca5d8.jpg",
-        "htmlPath":  "/posts/maximalismo/index.html"
-    }
+[
+  {
+    "slug": "gobierno-subsidio-cruzado-agua-nacional-sunass",
+    "title": "Gobierno plantea subsidio cruzado al agua a nivel nacional: usuarios de mayores ingresos financiarian recibos y conexiones de vulnerables",
+    "author": "ROSA EMILY",
+    "date": "2026-09-02",
+    "excerpt": "El Ejecutivo plantea un esquema integral de subsidios cruzados focalizados para los servicios de agua potable y saneamiento con alcance nacional. La medida, incluida en el proyecto de ley de delegacion de facultades, busca que los usuarios de mayores ingresos financien los recibos y conexiones de sectores vulnerables.",
+    "thumbnail": "/posts/gobierno-subsidio-cruzado-agua-nacional-sunass/imagen1.jpg",
+    "htmlPath": "/posts/gobierno-subsidio-cruzado-agua-nacional-sunass/index.html"
+  },
+  {
+    "slug": "siderperu-cese-colectivo-13-trabajadores-chimbote",
+    "title": "Siderperu anuncia el despido del 13% de su personal en Chimbote mediante cese colectivo",
+    "author": "ROSA EMILY",
+    "date": "2026-09-02",
+    "excerpt": "La siderúrgica peruana, parte fundamental de la industria en Chimbote, ha comunicado el cierre de su línea de negocio de viales debido a factores de rentabilidad. La medida afectará a 111 trabajadores, quienes dejarán de laborar tras la decisión notificada a la Superintendencia del Mercado de Valores.",
+    "thumbnail": "/posts/siderperu-cese-colectivo-13-trabajadores-chimbote/imagen1.jpg",
+    "htmlPath": "/posts/siderperu-cese-colectivo-13-trabajadores-chimbote/index.html"
+  },
+  {
+    "slug": "julio-velarde-menor-inflacion-region-estabilidad-bcr",
+    "title": "Julio Velarde destaca que Perú registra la menor inflación de la región y elogia la estabilidad monetaria del BCR",
+    "author": "ROSA EMILY",
+    "date": "2026-09-02",
+    "excerpt": "El presidente del Banco Central de Reserva del Perú, Julio Velarde, subrayó que el país mantiene la inflación más baja de América Latina en lo que va del siglo XXI. Su ratificación en agosto de 2026 asegura la continuidad de la política monetaria peruana.",
+    "thumbnail": "/posts/julio-velarde-menor-inflacion-region-estabilidad-bcr/imagen1.jpg",
+    "htmlPath": "/posts/julio-velarde-menor-inflacion-region-estabilidad-bcr/index.html"
+  },
+  {
+    "slug": "alza-sueldo-minimo-2026-rmv-peru-mef-s-1300",
+    "title": "Gobierno de Keiko Fujimori oficializa incremento progresivo del Sueldo Mínimo Vital a S/ 1,300 para el 2026",
+    "author": "ROSA EMILY",
+    "date": "2026-09-02",
+    "excerpt": "Durante el Mensaje a la Nación del 28 de julio, se confirmó que la Remuneración Mínima Vital aumentará de S/ 1,130 hasta los S/ 1,300 en dos etapas. El MEF busca proteger la estabilidad de las MYPE y evitar presiones inflacionarias.",
+    "thumbnail": "/posts/alza-sueldo-minimo-2026-rmv-peru-mef-s-1300/imagen1.jpg",
+    "htmlPath": "/posts/alza-sueldo-minimo-2026-rmv-peru-mef-s-1300/index.html"
+  },
+  {
+    "slug": "cmo-proteger-tus-cuentas-en-internet-con-hbitos-simples",
+    "title": "HÃ¡bitos simples para proteger tus cuentas en internet",
+    "author": "ROSA EMILY",
+    "date": "2026-08-19",
+    "excerpt": "La seguridad digital no requiere ser un experto en tecnologÃ­a. Con pequeÃ±os cambios en tu rutina diaria y hÃ¡bitos conscientes, puedes blindar tus cuentas contra la gran mayorÃ­a de ataques cibernÃ©ticos. Descubre las prÃ¡cticas esenciales que mantendrÃ¡n tus datos a salvo.",
+    "thumbnail": "https://image.pollinations.ai/prompt/online_account_protection_habits_thumbnail",
+    "htmlPath": "/posts/cmo-proteger-tus-cuentas-en-internet-con-hbitos-simples/index.html"
+  },
+  {
+    "slug": "qu-revisar-antes-de-comprar-un-celular-nuevo",
+    "title": "GuÃ­a esencial para comprar un celular inteligente",
+    "author": "ROSA EMILY",
+    "date": "2026-08-19",
+    "excerpt": "Comprar un telÃ©fono nuevo es una inversiÃ³n importante que va mÃ¡s allÃ¡ de la moda o la marca. En esta guÃ­a completa, desglosamos punto por punto todo lo que debes revisar antes de tomar tu decisiÃ³n, desde el rendimiento y la cÃ¡mara hasta la baterÃ­a y el soporte a futuro.",
+    "thumbnail": "https://image.pollinations.ai/prompt/smartphone_buying_guide_checklist_thumbnail",
+    "htmlPath": "/posts/qu-revisar-antes-de-comprar-un-celular-nuevo/index.html"
+  },
+  {
+    "slug": "gobierno-designa-nuevos-viceministros-zea-leon-lezameta-bayona",
+    "title": "Gobierno peruano designa a Elizabeth Zea, Wiliam Leon, Carlos Lezameta y Diana Bayona como nuevos viceministros en medio de reestructuraciÃ³n",
+    "author": "ROSA EMILY",
+    "date": "2026-08-16",
+    "excerpt": "El Gobierno de PerÃº oficializÃ³ la designaciÃ³n de cuatro nuevos viceministros, incluyendo a Elizabeth Zea en Interculturalidad y a Wiliam Leon, Carlos Lezameta y Diana Bayona en el Mincetur, en el marco de una amplia reorganizaciÃ³n del gabinete. Los nombramientos generan expectativas y controversias, especialmente el de Zea, cuyo perfil ha desatado crÃ­ticas en diversos sectores polÃ­ticos y sociales.",
+    "thumbnail": "/posts/gobierno-designa-nuevos-viceministros-zea-leon-lezameta-bayona/viceministros-1.jpg",
+    "htmlPath": "/posts/gobierno-designa-nuevos-viceministros-zea-leon-lezameta-bayona/index.html"
+  },
+  {
+    "slug": "ucayali-paro-transportistas-policias-heridos",
+    "title": "Ucayali: cinco policÃ­as heridos y 11 detenidos tras violento enfrentamiento durante paro de transportistas",
+    "author": "ROSA EMILY",
+    "date": "2026-08-16",
+    "excerpt": "El paro de transportistas en Ucayali dejÃ³ cinco efectivos policiales heridos y 11 detenidos tras bloqueos en la carretera Federico Basadre. El Gobierno regional anunciÃ³ el levantamiento de la medida luego de que el Ejecutivo dispusiera subsidios para mitigar el alza de combustibles.",
+    "thumbnail": "/posts/ucayali-paro-transportistas-policias-heridos/ucayali-paro-1.jpg",
+    "htmlPath": "/posts/ucayali-paro-transportistas-policias-heridos/index.html"
+  },
+  {
+    "slug": "subsidio-diesel-transporte-peru",
+    "title": "Gobierno anuncia subsidio de S/4 por galÃ³n de diÃ©sel para transporte de carga y pasajeros a nivel nacional",
+    "author": "ROSA EMILY",
+    "date": "2026-08-16",
+    "excerpt": "El ministro Elmer Cuba presentÃ³ un subsidio de S/4 por galÃ³n de diÃ©sel para aliviar el impacto del alza de combustibles en el sector transporte. La medida, que cubrirÃ¡ hasta el 20% del precio del combustible, busca evitar nuevos paros y garantizar la continuidad del servicio en todo el PerÃº.",
+    "thumbnail": "/posts/subsidio-diesel-transporte-peru/subsidio-diesel-1.jpg",
+    "htmlPath": "/posts/subsidio-diesel-transporte-peru/index.html"
+  },
+  {
+    "slug": "peruanos-murieron-combatiendo-rusia-114-desaparecidos",
+    "title": "Once peruanos murieron combatiendo por Rusia y otros 114 estÃ¡n desaparecidos, confirman autoridades de PerÃº",
+    "author": "ROSA EMILY",
+    "date": "2026-08-14",
+    "excerpt": "El Ministerio de Relaciones Exteriores de PerÃº confirmÃ³ este viernes que once ciudadanos peruanos han fallecido en el frente de batalla ucraniano mientras servÃ­an en las filas del ejÃ©rcito ruso. La cancillerÃ­a tambiÃ©n reporta 114 compatriotas en calidad de desaparecidos, en medio de las crecientes tensiones internacionales y el reclamo de familias que exigen respuestas del gobierno.",
+    "thumbnail": "Peruvian families protesting in Lima demanding answers about missing relatives in Ukraine conflict, military recruitment crisis, consulate assistance",
+    "htmlPath": "/posts/peruanos-murieron-combatiendo-rusia-114-desaparecidos/index.html"
+  },
+  {
+    "slug": "encuesta-datum-keiko-fujimori-60-aprobacion",
+    "title": "Encuesta Datum: Keiko Fujimori inicia su gestiÃ³n con 60% de aprobaciÃ³n y domina en regiones del sur y centro del paÃ­s",
+    "author": "ROSA EMILY",
+    "date": "2026-08-14",
+    "excerpt": "La primera encuesta nacional de Datum Internacional revela que la presidenta Keiko Fujimori alcanza un 60% de aprobaciÃ³n ciudadana en sus primeros meses de gobierno. El estudio detecta un respaldo mayoritario en las regiones del sur y centro andino, mientras que Lima Metropolitana muestra Ã­ndices mÃ¡s moderados. El 55% de los peruanos respalda sus primeras medidas econÃ³micas.",
+    "thumbnail": "Keiko Fujimori presidential approval poll Peru Datum survey results August 2026",
+    "htmlPath": "/posts/encuesta-datum-keiko-fujimori-60-aprobacion/index.html"
+  },
+  {
+    "slug": "keiko-fujimori-subsidio-transportistas-combustible",
+    "title": "Gobierno de Keiko Fujimori anuncia subsidio de hasta 20% para transportistas ante crisis de combustibles",
+    "author": "ROSA EMILY",
+    "date": "2026-08-14",
+    "excerpt": "El Ejecutivo revela un paquete de ayuda econÃ³mica que beneficiarÃ¡ a mÃ¡s de 300 mil transportistas a nivel nacional, en medio de la escalada sin precedentes del precio del combustible. La medida, que contempla un subsidio directo del 20% en el galÃ³n de diÃ©sel y gasolina, busca contener el impacto inflacionario y evitar un paro nacional del sector.",
+    "thumbnail": "peru government fuel subsidy announcement keiko fujimori transport workers 2026",
+    "htmlPath": "/posts/keiko-fujimori-subsidio-transportistas-combustible/index.html"
+  },
+  {
+    "slug": "simulacro-nacional-multipeligro-indeci-sismo-88",
+    "title": "Simulacro Nacional Multipeligro INDECI: PerÃº ensaya respuesta ante sismo de magnitud 8.8 este viernes 14 de agosto",
+    "author": "ROSA EMILY",
+    "date": "2026-08-14",
+    "excerpt": "MÃ¡s de 12 millones de peruanos participaron hoy en el Simulacro Nacional Multipeligro organizado por INDECI, que puso a prueba la capacidad de respuesta del paÃ­s frente a un terremoto de magnitud 8.8. El ejercicio, que se desarrollÃ³ a las 10:00 a.m. en todo el territorio nacional, permitiÃ³ evaluar los tiempos de evacuaciÃ³n y la coordinaciÃ³n entre las entidades de primera respuesta.",
+    "thumbnail": "peru earthquake simulation disaster preparedness indenci 2026 national drill evacuation",
+    "htmlPath": "/posts/simulacro-nacional-multipeligro-indeci-sismo-88/index.html"
+  },
+  {
+    "slug": "eclipse-solar-total-12-agosto-2026-evento-astronomico-siglo",
+    "title": "Eclipse solar total 12 agosto 2026: el evento astronÃ³mico del siglo que hoy oscurece EspaÃ±a",
+    "author": "ROSA EMILY",
+    "date": "2026-08-12",
+    "excerpt": "Hoy, 12 de agosto de 2026, EspaÃ±a es testigo del eclipse solar total mÃ¡s esperado del siglo. Millones de personas disfrutarÃ¡n de un fenÃ³meno Ãºnico que oscurecerÃ¡ el cielo en pleno dÃ­a, ofreciendo un espectÃ¡culo inolvidable y una oportunidad cientÃ­fica sin precedentes para estudiar la corona solar y los efectos atmosfÃ©ricos.",
+    "thumbnail": "https://image.pollinations.ai/prompt/total_solar_eclipse_corona_2026_Spain_sky_dark",
+    "htmlPath": "/posts/eclipse-solar-total-12-agosto-2026-evento-astronomico-siglo/index.html"
+  },
+  {
+    "slug": "cal-jnj-miembros-renuncian-colegio-abogados-lima",
+    "title": "Crisis CAL-JNJ: miembros de la Junta Nacional de Justicia renuncian al Colegio de Abogados de Lima",
+    "author": "ROSA EMILY",
+    "date": "2026-08-12",
+    "excerpt": "En un movimiento sin precedentes, varios miembros de la Junta Nacional de Justicia (JNJ) han presentado su renuncia irrevocable al Colegio de Abogados de Lima (CAL), denunciando presiÃ³n polÃ­tica, injerencia indebida y falta de autonomÃ­a en el gremio. Esta decisiÃ³n agudiza la crisis institucional que enfrenta el sistema judicial peruano y abre un debate sobre la independencia de los Ã³rganos encargados de la selecciÃ³n y evaluaciÃ³n de jueces y fiscales.",
+    "thumbnail": "https://image.pollinations.ai/prompt/Peruvian_justice_crisis_JNJ_CAL_resignation_Lima_Bar_Association_conflict",
+    "htmlPath": "/posts/cal-jnj-miembros-renuncian-colegio-abogados-lima/index.html"
+  },
+  {
+    "slug": "rafael-rey-tren-lima-chosica-caltrain-compra",
+    "title": "Rafael Rey desmiente a LÃ³pez Aliaga: el tren Lima-Chosica fue una compra a Caltrain, no una donaciÃ³n",
+    "author": "ROSA EMILY",
+    "date": "2026-08-12",
+    "excerpt": "El exministro Rafael Rey saliÃ³ al frente para desmentir categÃ³ricamente al alcalde de Lima, Rafael LÃ³pez Aliaga, asegurando que la adquisiciÃ³n del tren para la ruta Lima-Chosica no fue una donaciÃ³n, sino una compra formal y onerosa a la empresa estadounidense Caltrain. Esta aclaraciÃ³n sacude el debate polÃ­tico y pone en el centro de la escena la transparencia de los proyectos de infraestructura para la capital.",
+    "thumbnail": "https://image.pollinations.ai/prompt/Peruvian_politics_controversy_train_Lima_Chosica_Caltrain_Rafael_Rey_Lopez_Aliaga_debate",
+    "htmlPath": "/posts/rafael-rey-tren-lima-chosica-caltrain-compra/index.html"
+  },
+  {
+    "slug": "fujimorismo-preside-comision-constitucion-senado",
+    "title": "Fujimorismo preside la ComisiÃ³n de ConstituciÃ³n del Senado: Clave en la reforma judicial peruana",
+    "author": "ROSA EMILY",
+    "date": "2026-08-12",
+    "excerpt": "El fujimorismo ha asumido la presidencia de la ComisiÃ³n de ConstituciÃ³n del Senado, un puesto estratÃ©gico que define el rumbo de la reforma judicial en PerÃº. Esta designaciÃ³n genera expectativas y controversias sobre el futuro del sistema de justicia y el equilibrio de poderes.",
+    "thumbnail": "https://image.pollinations.ai/prompt/Peruvian_Senate_Constitution_Commission_Fujimorismo_judicial_reform_Lima_politics_parliament",
+    "htmlPath": "/posts/fujimorismo-preside-comision-constitucion-senado/index.html"
+  },
+  {
+    "slug": "claves-eset-gratis-actualizadas",
+    "title": "Claves ESET Gratis Actualizadas â€“ Licencias NOD32 Vigentes",
+    "date": "2026-08-10",
+    "excerpt": "Claves de licencia ESET NOD32 gratis, actualizadas diariamente.",
+    "category": "home",
+    "imagen": "/posts/claves-eset-gratis-actualizadas/thumb.jpg",
+    "featured": true,
+    "thumbnail": "/posts/claves-eset-gratis-actualizadas/thumb.jpg",
+    "author": "PORTAL NOTICIAS",
+    "htmlPath": "/posts/claves-eset-gratis-actualizadas/index.html"
+  },
+  {
+    "slug": "harvey-colchado-cargo-disposicion-comision-etica",
+    "title": "Harvey Colchado pone cargo a disposiciÃ³n en ComisiÃ³n de Ã‰tica",
+    "author": "ROSA EMILY",
+    "date": "2026-08-10",
+    "excerpt": "En la instalaciÃ³n de la ComisiÃ³n de Ã‰tica de la CÃ¡mara de Diputados, el congresista Harvey Colchado (Ahora NaciÃ³n) puso su cargo a disposiciÃ³n del pleno luego de que la FiscalÃ­a solicitara 9 aÃ±os y 4 meses de prisiÃ³n efectiva por los presuntos delitos de negociaciÃ³n incompatible y falsedad ideolÃ³gica. Colchado condicionÃ³ su permanencia a la ratificaciÃ³n de confianza, mientras que el legislador Javier Cipriani lo acusÃ³ de obstaculizar el trabajo de la comisiÃ³n.",
+    "thumbnail": "/posts/harvey-colchado-cargo-disposicion-comision-etica/imagen1.jpg",
+    "htmlPath": "/posts/harvey-colchado-cargo-disposicion-comision-etica/index.html"
+  },
+  {
+    "slug": "igp-cinturon-de-fuego-terremotos-2026-peru",
+    "title": "CinturÃ³n de Fuego: ocho paÃ­ses con terremotos en 2026 y advertencia del IGP",
+    "author": "ROSA EMILY",
+    "date": "2026-08-10",
+    "excerpt": "Tras el sismo de magnitud 7,4 en Colombia, el presidente del Instituto GeofÃ­sico del PerÃº, Fernando Tavera, analizÃ³ la actividad sÃ­smica global. SeÃ±alÃ³ que, aunque no existe una cadena predecible, la alta concentraciÃ³n de terremotos en el CinturÃ³n de Fuego del PacÃ­fico hace inevitable que un gran sismo afecte al PerÃº, por lo que llamÃ³ a la prevenciÃ³n y a los simulacros.",
+    "thumbnail": "/posts/igp-cinturon-de-fuego-terremotos-2026-peru/imagen1.jpg",
+    "htmlPath": "/posts/igp-cinturon-de-fuego-terremotos-2026-peru/index.html"
+  },
+  {
+    "slug": "terremoto-colombia-111-muertos-87-heridos-espriella",
+    "title": "Terremoto en Colombia: 111 muertos y 87 heridos - Portal Noticias",
+    "author": "ROSA EMILY",
+    "date": "2026-08-10",
+    "excerpt": "Un fuerte sismo de magnitud 7,4 con epicentro en San JosÃ© del Palmar (ChocÃ³) sacudiÃ³ este lunes gran parte de Colombia. El presidente Abelardo de la Espriella reportÃ³ un balance parcial de 111 fallecidos, 87 heridos, mÃ¡s de 1.500 viviendas afectadas y daÃ±os en centros de salud y escuelas de al menos cinco departamentos.",
+    "thumbnail": "/posts/terremoto-colombia-111-muertos-87-heridos-espriella/imagen1.jpg",
+    "htmlPath": "/posts/terremoto-colombia-111-muertos-87-heridos-espriella/index.html"
+  },
+  {
+    "slug": "peruanos-muertos-combatiendo-rusia-114-desaparecidos",
+    "title": "Peruanos muertos y desaparecidos en la guerra de Rusia contra Ucrania",
+    "author": "ROSA EMILY",
+    "date": "2026-08-10",
+    "excerpt": "El Gobierno peruano confirmÃ³ la muerte de once ciudadanos que combatÃ­an en las filas del ejÃ©rcito ruso en la guerra contra Ucrania, mientras otros 114 permanecen en condiciÃ³n de desaparecidos. Familiares de los combatientes protestaron en Lima exigiendo el regreso de sus seres queridos y denunciando engaÃ±os en el reclutamiento.",
+    "thumbnail": "/posts/peruanos-muertos-combatiendo-rusia-114-desaparecidos/imagen1.jpg",
+    "htmlPath": "/posts/peruanos-muertos-combatiendo-rusia-114-desaparecidos/index.html"
+  },
+  {
+    "slug": "keiko-fujimori-modelo-bukele-firmeza-orden",
+    "title": "Keiko Fujimori anuncia modelo Bukele contra la delincuencia en PerÃº",
+    "author": "ROSA EMILY",
+    "date": "2026-08-10",
+    "excerpt": "La mandataria peruana confirmÃ³ este domingo, durante una transmisiÃ³n en vivo, que su Gobierno adoptarÃ¡ una polÃ­tica de mano dura contra la delincuencia inspirada en el presidente salvadoreÃ±o Nayib Bukele. El anuncio incluyÃ³ el respaldo a los policÃ­as que participan en operativos y la mejora de las condiciones en las comisarÃ­as del paÃ­s.",
+    "thumbnail": "/posts/keiko-fujimori-modelo-bukele-firmeza-orden/imagen1.jpg",
+    "htmlPath": "/posts/keiko-fujimori-modelo-bukele-firmeza-orden/index.html"
+  },
+  {
+    "slug": "motorola-global-connect-roaming-gratis-torneo",
+    "title": "Motorola Global Connect: roaming gratis para el Mundial de FÃºtbol",
+    "author": "ROSA EMILY",
+    "date": "2026-08-10",
+    "excerpt": "La compaÃ±Ã­a tecnolÃ³gica presentÃ³ su nuevo servicio de conectividad internacional pensado para los viajeros que asistirÃ¡n al torneo de fÃºtbol mÃ¡s importante del planeta. La propuesta incluye una SIM de viaje con datos en el extranjero sin costo adicional, eliminando las barreras de comunicaciÃ³n para los aficionados.",
+    "thumbnail": "/posts/motorola-global-connect-roaming-gratis-torneo/imagen1.jpg",
+    "htmlPath": "/posts/motorola-global-connect-roaming-gratis-torneo/index.html"
+  },
+  {
+    "slug": "meteorito-marte-1270-millones-anos-historia",
+    "title": "Meteorito de Marte de 1.270 millones de aÃ±os revela secretos del planeta rojo",
+    "author": "ROSA EMILY",
+    "date": "2026-08-10",
+    "excerpt": "El fragmento NWA 13441, hallado en el desierto de Argelia, permite a los cientÃ­ficos cubrir un vacÃ­o de casi 2.000 millones de aÃ±os en el registro geolÃ³gico de Marte. El estudio, liderado por el Boston College, abre una nueva ventana al pasado desconocido del planeta vecino.",
+    "thumbnail": "/posts/meteorito-marte-1270-millones-anos-historia/imagen1.jpg",
+    "htmlPath": "/posts/meteorito-marte-1270-millones-anos-historia/index.html"
+  },
+  {
+    "slug": "temblor-venezuela-10-agosto-funvisis",
+    "title": "Temblor en Venezuela hoy, 10 de agosto de 2026: Reporte de FUNVISIS",
+    "author": "ROSA EMILY",
+    "date": "2026-08-10",
+    "excerpt": "La FundaciÃ³n Venezolana de Investigaciones SismolÃ³gicas confirmÃ³ movimientos telÃºricos en el litoral central, incluyendo un temblor de magnitud 2.6 a solo 5 kilÃ³metros de profundidad. Los eventos, aunque de baja intensidad, recuerdan la vulnerabilidad del Caribe ante la dinÃ¡mica tectÃ³nica de las placas del CinturÃ³n de Fuego del PacÃ­fico.",
+    "thumbnail": "/posts/temblor-venezuela-10-agosto-funvisis/imagen1.jpg",
+    "htmlPath": "/posts/temblor-venezuela-10-agosto-funvisis/index.html"
+  },
+  {
+    "slug": "eclipse-solar-total-agosto-2026-visible-desde-peru",
+    "title": "Eclipse solar total de agosto 2026: el fenÃ³meno que podrÃ­a juntarse con auroras boreales",
+    "author": "ROSA EMILY",
+    "date": "2026-08-09",
+    "excerpt": "El 12 de agosto de 2026, el cielo se oscurecerÃ¡ por completo durante un eclipse solar total que promete ser histÃ³rico. AdemÃ¡s de su trayectoria por el Ãrtico, Groenlandia, Islandia y EspaÃ±a, los cientÃ­ficos no descartan que se pueda ver acompaÃ±ado de auroras boreales, mientras la NASA ya adelantÃ³ cuÃ¡ndo serÃ¡ el prÃ³ximo eclipse visible desde PerÃº.",
+    "thumbnail": "https://image.pollinations.ai/prompt/solar%20eclipse%20total%20August%202026%20with%20aurora%20borealis%20and%20dark%20sky%20astronomical%20event%20cinematic%20wide",
+    "htmlPath": "/posts/eclipse-solar-total-agosto-2026-visible-desde-peru/index.html"
+  },
+  {
+    "slug": "fenomeno-el-nino-furioso-2026-sudamerica",
+    "title": "El NiÃ±o 2026: La amenaza rÃ©cord que ya se siente en SudamÃ©rica",
+    "author": "ROSA EMILY",
+    "date": "2026-08-09",
+    "excerpt": "CientÃ­ficos advierten que el PacÃ­fico podrÃ­a superar los 3Â°C de anomalÃ­a, desatando lluvias extremas, sequÃ­as y un impacto sin precedentes en la pesca y agricultura. PerÃº y sus vecinos se preparan para el peor escenario.",
+    "thumbnail": "https://image.pollinations.ai/prompt/El_Nino_2026_Pacific_Ocean_heat_anomaly_South_America_weather",
+    "htmlPath": "/posts/fenomeno-el-nino-furioso-2026-sudamerica/index.html"
+  },
+  {
+    "slug": "israel-rechaza-plan-gaza-netanyahu-trump",
+    "title": "Netanyahu desafÃ­a a Trump: Israel rechaza el plan de 15 puntos para Gaza",
+    "author": "ROSA EMILY",
+    "date": "2026-08-09",
+    "excerpt": "El primer ministro israelÃ­, Benjamin Netanyahu, ha rechazado frontalmente el plan de 15 puntos para Gaza propuesto por Donald Trump, mientras el gabinete de seguridad israelÃ­ tambiÃ©n ha tumbado una tregua de 14 dÃ­as impulsada por Estados Unidos. Israel insiste en que no se retirarÃ¡ del enclave hasta que HamÃ¡s deponga las armas, una postura que tensa aÃºn mÃ¡s la regiÃ³n y deja en el aire el futuro del conflicto.",
+    "thumbnail": "https://image.pollinations.ai/prompt/Benjamin_Netanyahu_speaking_at_press_conference_in_Jerusalem_serious_expression_Israeli_flag_background_August_2026",
+    "htmlPath": "/posts/israel-rechaza-plan-gaza-netanyahu-trump/index.html"
+  },
+  {
+    "slug": "keiko-fujimori-60-aprobacion-encuesta-datum",
+    "title": "Keiko Fujimori arranca con 60% de aprobaciÃ³n: el respaldo histÃ³rico que la encuesta Datum revela",
+    "author": "ROSA EMILY",
+    "date": "2026-08-09",
+    "excerpt": "La encuesta nacional de Datum de agosto de 2026 confirma que Keiko Fujimori inicia su gobierno con un 60% de aprobaciÃ³n ciudadana, la cifra mÃ¡s alta para un presidente peruano en sus primeros dÃ­as de mandato. El sondeo revela dÃ³nde tiene mayor respaldo, quÃ© factores explican esta popularidad inicial y cuÃ¡les son los principales desafÃ­os que enfrentarÃ¡ el nuevo gobierno para mantener esa confianza ciudadana.",
+    "thumbnail": "https://image.pollinations.ai/prompt/Keiko%20Fujimori%20presidential%20approval%2060%20percent%20Peru%20Datum%20survey%202026%20news%20article%20thumbnail",
+    "htmlPath": "/posts/keiko-fujimori-60-aprobacion-encuesta-datum/index.html"
+  },
+  {
+    "slug": "sismos-junin-replicas-chupaca-ayuda-humanitaria",
+    "title": "JunÃ­n sigue temblando: sismos de magnitud 4.3 y 4.7 en Chupaca - IGP explica rÃ©plicas",
+    "author": "ROSA EMILY",
+    "date": "2026-08-09",
+    "excerpt": "</strong> La tierra no da tregua en la regiÃ³n central. Dos fuertes sismos sacudieron Chupaca en menos de 12 horas, el primero de magnitud 4.3 y el segundo de 4.7. El IGP advierte que las rÃ©plicas continuarÃ¡n porque la zona sigue liberando energÃ­a acumulada. Mientras el Indeci envÃ­a 111 toneladas de ayuda, los damnificados claman por viviendas y denuncian lentitud. AquÃ­ todo lo que debes saber.",
+    "thumbnail": "https://image.pollinations.ai/prompt/sismos-junin-replicas-chupaca-ayuda-humanitaria-thumbnail",
+    "htmlPath": "/posts/sismos-junin-replicas-chupaca-ayuda-humanitaria/index.html"
+  },
+  {
+    "slug": "soda-sinfonico-peru-concierto-soda-stereo",
+    "title": "Soda SinfÃ³nico en PerÃº 2026: cuando el rock eterno de Soda Stereo se encuentra con una orquesta",
+    "author": "ROSA EMILY",
+    "date": "2026-08-08",
+    "excerpt": "El espectÃ¡culo tributo que ha emocionado a miles en LatinoamÃ©rica llega por primera vez al PerÃº. Soda SinfÃ³nico transforma los himnos de la banda argentina en experiencias orquestales inolvidables, y los fans ya madrugan para conseguir sus entradas.",
+    "thumbnail": "https://image.pollinations.ai/prompt/Soda%20Sinfonico%20Peru%202026%20orchestra%20rock%20tribute%20concert%20poster%20vibrant",
+    "htmlPath": "/posts/soda-sinfonico-peru-concierto-soda-stereo/index.html"
+  },
+  {
+    "slug": "papa-leon-xiv-visita-peru-noviembre-2026",
+    "title": "Papa LeÃ³n XIV en PerÃº 2026: fe, esperanza y un abrazo que cruzarÃ¡ el continente",
+    "author": "ROSA EMILY",
+    "date": "2026-08-08",
+    "excerpt": "El Vaticano confirmÃ³ oficialmente la visita del papa LeÃ³n XIV al PerÃº del 11 al 17 de noviembre de 2026. SerÃ¡ la segunda visita de un pontÃ­fice al paÃ­s en el siglo XXI y la primera del Papa a LatinoamÃ©rica, con un recorrido que incluye Lima, Chiclayo, Cusco y Pucallpa.",
+    "thumbnail": "https://image.pollinations.ai/prompt/Pope_Leo_XIV_Peru_visit_2026_official_announcement_Vatican_papal_trip_Latin_America_joyful_crowd_Peruvian_flags_waving?width=600&height=400",
+    "htmlPath": "/posts/papa-leon-xiv-visita-peru-noviembre-2026/index.html"
+  },
+  {
+    "slug": "eclipse-solar-total-agosto-2026-espana-fecha",
+    "title": "El Gran Eclipse Solar de Agosto de 2026: EspaÃ±a, epicentro mundial del fenÃ³meno astronÃ³mico del siglo",
+    "author": "ROSA EMILY",
+    "date": "2026-08-08",
+    "excerpt": "El prÃ³ximo 12 de agosto de 2026, la Luna se interpondrÃ¡ entre el Sol y la Tierra y ocultarÃ¡ por completo el disco solar durante varios minutos. SerÃ¡ el primer eclipse total visible desde la EspaÃ±a peninsular en mÃ¡s de 120 aÃ±os, y miles de astrÃ³nomos aficionados y turistas de todo el mundo ya han reservado sus alojamientos en la costa norte del paÃ­s para no perderse este evento histÃ³rico.",
+    "thumbnail": "https://image.pollinations.ai/prompt/Total_solar_eclipse_over_Spain_with_dark_sky_and_bright_corona_August_2026",
+    "htmlPath": "/posts/eclipse-solar-total-agosto-2026-espana-fecha/index.html"
+  },
+  {
+    "slug": "corte-agua-sedapal-10-agosto-distritos-horarios",
+    "title": "Sedapal: Corte de agua programado para el 10 de agosto en Lima - GuÃ­a completa",
+    "author": "ROSA EMILY",
+    "date": "2026-08-08",
+    "excerpt": "Sedapal confirmÃ³ un corte programado de agua potable para el prÃ³ximo lunes 10 de agosto en varios distritos de Lima por trabajos de mantenimiento y mejora de la red. Conoce los horarios exactos, zonas afectadas y todos los pasos para preparar tu hogar antes, durante y despuÃ©s de la interrupciÃ³n del servicio.",
+    "thumbnail": "https://image.pollinations.ai/prompt/water%20cut%20Lima%20Sedapal%20announcement%20august%202026%20thumbnail?width=600&height=315&nologo=true",
+    "htmlPath": "/posts/corte-agua-sedapal-10-agosto-distritos-horarios/index.html"
+  },
+  {
+    "slug": "whatsapp-nuevas-funciones-grupos-2026",
+    "title": "WhatsApp 2026: Las funciones ocultas que convierten tus grupos en una mÃ¡quina de organizaciÃ³n",
+    "author": "ROSA EMILY",
+    "date": "2026-08-08",
+    "excerpt": "Encuestas avanzadas, eventos con recordatorios, respuestas rÃ¡pidas y controles de administraciÃ³n profesionales. WhatsApp ha renovado por completo la gestiÃ³n de grupos en 2025-2026, y la mayorÃ­a de usuarios todavÃ­a no sabe que puede silenciar miembros especÃ­ficos, fijar varios mensajes a la vez o proteger el acceso con aprobaciÃ³n. Te contamos paso a paso cÃ³mo usar cada novedad en Android y iPhone.",
+    "thumbnail": "https://image.pollinations.ai/prompt/WhatsApp%202026%20group%20features%20smartphone%20admin%20controls%20modern%20interface",
+    "htmlPath": "/posts/whatsapp-nuevas-funciones-grupos-2026/index.html"
+  },
+  {
+    "slug": "como-recuperar-mensajes-borrados-whatsapp-android-iphone",
+    "title": "Recuperar mensajes borrados de WhatsApp en 2026: guÃ­a prÃ¡ctica",
+    "author": "ROSA EMILY",
+    "date": "2026-08-08",
+    "excerpt": "Â¿Borraste sin querer un chat de WhatsApp y necesitas recuperarlo? Te contamos paso a paso cÃ³mo restaurar mensajes desde Google Drive, iCloud, la papelera de la app y los chats archivados. TambiÃ©n desmontamos los falsos milagros de las apps de terceros y te explicamos quÃ© mensajes jamÃ¡s podrÃ¡s recuperar.",
+    "thumbnail": "https://image.pollinations.ai/prompt/WhatsApp%20recovery%202026%20guide%20thumbnail%20smartphone%20backup%20restore%20green%20chat",
+    "htmlPath": "/posts/como-recuperar-mensajes-borrados-whatsapp-android-iphone/index.html"
+  },
+  {
+    "slug": "cursos-gratis-ia-peru-uni-claude-2026",
+    "title": "Cursos gratis de IA en PerÃº 2026: UNI, Claude y PCM abren sus puertas digitales",
+    "author": "ROSA EMILY",
+    "date": "2026-08-08",
+    "excerpt": "La inteligencia artificial ya no es un lujo ni un misterio. La UNI lanzÃ³ mÃ¡s de 80 cursos virtuales gratuitos, Anthropic ofrece 12 programas con certificado y la PCM se suma a la ola formativa. Te contamos cÃ³mo acceder a estas oportunidades y sacarles el mÃ¡ximo provecho sin perderte en el intento.",
+    "thumbnail": "https://image.pollinations.ai/prompt/peru_ai_courses_2026_uni_anthropic_pcm_free_certificate_thumbnail?w=800&h=600&c=1",
+    "htmlPath": "/posts/cursos-gratis-ia-peru-uni-claude-2026/index.html"
+  },
+  {
+    "slug": "crear-imagenes-con-ia-gratis-2026-paginas",
+    "title": "Crear imÃ¡genes con IA gratis en 2026: guÃ­a de herramientas y trucos",
+    "author": "ROSA EMILY",
+    "date": "2026-08-08",
+    "excerpt": "Millones de personas buscan cada mes generadores de imagen sin pagar. Te contamos cuÃ¡les funcionan de verdad, cÃ³mo escribir prompts que no fallen y dÃ³nde bajar tus creaciones sin marcas de agua.",
+    "thumbnail": "https://image.pollinations.ai/prompt/ai_image_generation_2026_free_tools_collage_modern_tech_style",
+    "htmlPath": "/posts/crear-imagenes-con-ia-gratis-2026-paginas/index.html"
+  },
+  {
+    "slug": "apis-ia-gratis-2026-mejores-api-modelos-sin-pagar",
+    "title": "Las mejores APIs de IA gratuitas de 2026 para desarrolladores",
+    "author": "ROSA EMILY",
+    "date": "2026-08-08",
+    "excerpt": "ArtÃ­culo sobre Las APIs de inteligencia artificial gratuitas son ",
+    "thumbnail": "https://image.pollinations.ai/prompt/apis-ia-gratis-2026-mejores-api-modelos-sin-pagar-thumbnail",
+    "htmlPath": "/posts/apis-ia-gratis-2026-mejores-api-modelos-sin-pagar/index.html"
+  },
+  {
+    "slug": "pc-antigua-modificacion-para-jugar-700-titulos",
+    "title": "Revive tu vieja PC y juega 700 clÃ¡sicos: la guÃ­a definitiva para darle una segunda vida a tu computadora olvidada",
+    "author": "ROSA EMILY",
+    "date": "2026-08-08",
+    "excerpt": "Â¿Tienes una computadora vieja acumulando polvo en un armario? Con una modificaciÃ³n sencilla y menos de 50 dÃ³lares puedes transformarla en una mÃ¡quina de juegos retro capaz de correr casi 700 tÃ­tulos clÃ¡sicos. Te contamos cÃ³mo hacerlo paso a paso, sin necesidad de ser un experto en tecnologÃ­a.",
+    "thumbnail": "https://image.pollinations.ai/prompt/old_pc_transformed_into_retro_gaming_console_with_colorful_controllers_and_classic_game_characters",
+    "htmlPath": "/posts/pc-antigua-modificacion-para-jugar-700-titulos/index.html"
+  },
+  {
+    "slug": "feriados-en-peru-2027-mef-anuncia-que-se-trasladaran-a-los-lunes",
+    "title": "Feriados en PerÃº 2027: MEF confirma traslado a lunes para impulsar el turismo y el comercio con fines de semana largos",
+    "author": "ROSA EMILY",
+    "date": "2026-08-08",
+    "excerpt": "El ministro de EconomÃ­a y Finanzas, Elmer Cuba, anunciÃ³ que la mayorÃ­a de feriados de 2027 se trasladarÃ¡n a los lunes, buscando crear puentes turÃ­sticos que dinamicen el sector interno. La medida, que corrige la propuesta inicial de los viernes, busca proteger la productividad empresarial mientras se garantiza el descanso de los trabajadores y se acompaÃ±a del aumento de la RemuneraciÃ³n MÃ­nima Vital a S/ 1,300.",
+    "thumbnail": "https://image.pollinations.ai/prompt/Peru_2027_holidays_moved_to_Mondays_calendar_with_tourism_and_economic_growth_concept?width=800&height=400&nologo=true",
+    "htmlPath": "/posts/feriados-en-peru-2027-mef-anuncia-que-se-trasladaran-a-los-lunes/index.html"
+  },
+  {
+    "slug": "rodri-da-el-ok-al-barcelona",
+    "title": "Rodri da el OK al Barcelona: El fichaje que revolucionarÃ¡ el centro del campo culÃ©",
+    "author": "ROSA EMILY",
+    "date": "2026-08-07",
+    "excerpt": "El mediocentro del Manchester City y de la selecciÃ³n espaÃ±ola ha dado su visto bueno para recalar en el Camp Nou el prÃ³ximo verano. El Barcelona se asegura asÃ­ el fichaje de uno de los mejores jugadores del mundo en su posiciÃ³n, en una operaciÃ³n que superarÃ¡ los 100 millones de euros.",
+    "thumbnail": "https://image.pollinations.ai/prompt/Rodri_Barcelona_celebration_Camp_Nou_fans_spanish_midfielder_transfer_exclusive?width=800&height=500&nologo=1",
+    "htmlPath": "/posts/rodri-da-el-ok-al-barcelona/index.html"
+  },
+  {
+    "slug": "jorge-nieto-plantea-revisar-presupuesto-del-congreso-y-seala-que-incremento-del",
+    "title": "Jorge Nieto Propone Revisar el Presupuesto del Congreso y Advierte que el Incremento del Gasto Requiere una Reforma Estructural",
+    "author": "ROSA EMILY",
+    "date": "2026-08-03",
+    "excerpt": "El exministro Jorge Nieto plantea una revisiÃ³n integral del presupuesto del Congreso y seÃ±ala que cualquier incremento del gasto pÃºblico debe ir acompaÃ±ado de una reforma profunda que garantice eficiencia y transparencia en el uso de los recursos del Estado.",
+    "thumbnail": "https://image.pollinations.ai/prompt/Jorge_Nieto_Peru_Congress_budget_reform_thumbnail_speaking_podium",
+    "htmlPath": "/posts/jorge-nieto-plantea-revisar-presupuesto-del-congreso-y-seala-que-incremento-del/index.html"
+  },
+  {
+    "slug": "sismo-huancayo-por-que-peru-esta-en-el-centro-de-fuego-de-un-sismo-fuerte",
+    "title": "Sismo Huancayo: Â¿Por quÃ© PerÃº estÃ¡ en el centro de fuego de un sismo fuerte?",
+    "author": "ROSA EMILY",
+    "date": "2026-07-30",
+    "excerpt": "PerÃº y especialmente la regiÃ³n de Huancayo se encuentran en una de las zonas mÃ¡s sÃ­smicamente activas del planeta. Descubre las razones geolÃ³gicas, la historia de los grandes terremotos y cÃ³mo prepararse para el prÃ³ximo gran movimiento telÃºrico.",
+    "thumbnail": "https://image.pollinations.ai/prompt/seismic%20hazard%20map%20Peru%20Huancayo%20high%20risk%20earthquake%20zoning%20colors",
+    "htmlPath": "/posts/sismo-huancayo-por-que-peru-esta-en-el-centro-de-fuego-de-un-sismo-fuerte/index.html"
+  },
+  {
+    "slug": "por-qu-envejece-el-cuerpo",
+    "title": "El reloj biolÃ³gico: Descubre por quÃ© el cuerpo envejece y cÃ³mo ralentizarlo",
+    "author": "ROSA EMILY",
+    "date": "2026-07-29",
+    "excerpt": "El envejecimiento es un proceso biolÃ³gico complejo que afecta a cada cÃ©lula de nuestro organismo. Exploramos las causas cientÃ­ficas detrÃ¡s del deterioro celular, el acortamiento de los telÃ³meros y las estrategias para promover un envejecimiento saludable.",
+    "thumbnail": "https://image.pollinations.ai/prompt/cellular_aging_telomeres_oxidative_stress_mitochondria_inflammation_conceptual?width=800&height=600&nologo=true",
+    "htmlPath": "/posts/por-qu-envejece-el-cuerpo/index.html"
+  },
+  {
+    "slug": "afecciones-urolgicas-prevencin-y-tratamiento-integral-con-medicina-natural-y-tra",
+    "title": "Afecciones UrolÃ³gicas â€“ PrevenciÃ³n y Tratamiento Integral con Medicina Natural y Tradicional",
+    "author": "ROSA EMILY",
+    "date": "2026-07-25",
+    "excerpt": "Descubre el enfoque integral de la medicina natural y tradicional cubana para prevenir y tratar afecciones urolÃ³gicas. Este artÃ­culo combina acupuntura, fitoterapia, magnetoterapia y mÃ¡s, basado en el Manual para la PrÃ¡ctica de la Medicina Natural y Tradicional de Cuba.",
+    "thumbnail": "https://image.pollinations.ai/prompt/urology%20natural%20medicine%20cuban%20acupuncture%20herbal%20kidney%20bladder%20integral%20treatment",
+    "htmlPath": "/posts/afecciones-urolgicas-prevencin-y-tratamiento-integral-con-medicina-natural-y-tra/index.html"
+  },
+  {
+    "slug": "las-mscaras-de-entrenamiento-de-altitud-que-no-simulan-la-hipoxia-real-y-pueden",
+    "title": "MÃ¡scaras de Entrenamiento en Altitud: Â¿SimulaciÃ³n Real o Efecto Placebo?",
+    "author": "ROSA EMILY",
+    "date": "2026-07-25",
+    "excerpt": "Descubre por quÃ© las mÃ¡scaras de entrenamiento en altitud no replican la hipoxia real y cÃ³mo pueden afectar tu rendimiento. Un anÃ¡lisis profundo basado en ciencia y fisiologÃ­a.",
+    "thumbnail": "https://image.pollinations.ai/prompt/thumbnail_altitude_mask_training_myth_vs_reality",
+    "htmlPath": "/posts/las-mscaras-de-entrenamiento-de-altitud-que-no-simulan-la-hipoxia-real-y-pueden/index.html"
+  },
+  {
+    "slug": "adis-al-vello-sin-una-gota-de-dolor",
+    "title": "AdiÃ³s al Vello, Sin una Gota de Dolor: GuÃ­a Definitiva de DepilaciÃ³n Indolora",
+    "author": "ROSA EMILY",
+    "date": "2026-07-23",
+    "excerpt": "La depilaciÃ³n no tiene por quÃ© ser una tortura. Conoce las tÃ©cnicas y tecnologÃ­as mÃ¡s innovadoras que te permiten eliminar el vello de forma suave, eficaz y completamente indolora. Dile adiÃ³s a la cera caliente y a las pinzas, y dale la bienvenida a una piel perfecta sin sufrimiento.",
+    "thumbnail": "https://image.pollinations.ai/prompt/happy_woman_painless_hair_removal_laser_comfort",
+    "htmlPath": "/posts/adis-al-vello-sin-una-gota-de-dolor/index.html"
+  },
+  {
+    "slug": "articulo-sobre-que-causa-las-hemoriedes-y-como-evitarlos-y-se-salen-como-curarlo",
+    "title": "Hemorroides: Causas, PrevenciÃ³n y Tratamientos Recomendados",
+    "author": "ROSA EMILY",
+    "date": "2026-07-23",
+    "excerpt": "Las hemorroides son una afecciÃ³n comÃºn que afecta a millones de personas en todo el mundo. Descubre en este artÃ­culo completo quÃ© las causa, cÃ³mo prevenirlas con hÃ¡bitos saludables y cuÃ¡les son los tratamientos mÃ¡s efectivos para curarlas y aliviar sus molestos sÃ­ntomas.",
+    "thumbnail": "https://image.pollinations.ai/prompt/hemorrhoids_medical_illustration_diagram_anatomy",
+    "htmlPath": "/posts/articulo-sobre-que-causa-las-hemoriedes-y-como-evitarlos-y-se-salen-como-curarlo/index.html"
+  },
+  {
+    "slug": "mals-acustembres-que-te-hacen-perder-aos-de-vida",
+    "title": "Malos hÃ¡bitos que te hacen perder aÃ±os de vida: CÃ³mo tus costumbres diarias acortan tu esperanza de vida",
+    "author": "ROSA EMILY",
+    "date": "2026-07-21",
+    "excerpt": "Cada decisiÃ³n que tomas a lo largo del dÃ­a, desde lo que comes hasta cuÃ¡nto te mueves, estÃ¡ escribiendo el guion de tu longevidad. Descubre cuÃ¡les son los hÃ¡bitos mÃ¡s daÃ±inos que silenciosamente roban aÃ±os de tu vida y aprende a revertirlos antes de que sea demasiado tarde.",
+    "thumbnail": "https://image.pollinations.ai/prompt/silhouette_person_aging_clock_time_passing_healthy_unhealthy_comparison",
+    "htmlPath": "/posts/mals-acustembres-que-te-hacen-perder-aos-de-vida/index.html"
+  },
+  {
+    "slug": "por-que-debes-dormir-temprano-y-mas-importante-levanatar-temptano",
+    "title": "Dormir Temprano y Despertar al Amanecer: La Clave para tu EnergÃ­a",
+    "author": "ROSA EMILY",
+    "date": "2026-07-21",
+    "excerpt": "Descubre por quÃ© despertar temprano y dormir a tiempo es la clave para una productividad imparable y una salud plena. Revoluciona tu energÃ­a con este hÃ¡bito ancestral.",
+    "thumbnail": "https://image.pollinations.ai/prompt/sunrise%20morning%20routine%20early%20wake%20up%20healthy%20habits%20productivity%20wellness",
+    "htmlPath": "/posts/por-que-debes-dormir-temprano-y-mas-importante-levanatar-temptano/index.html"
+  },
+  {
+    "slug": "alguna-vez-intentaste-cambiar-un-mal-hbito-y-volviste-a-l-a-los-pocos-das-te-dij",
+    "title": "Reprograma tu Sistema Nervioso para Eliminar Malos HÃ¡bitos",
+    "author": "ROSA EMILY",
+    "date": "2026-07-20",
+    "excerpt": "Los malos hÃ¡bitos no son falta de voluntad, son reacciones de tu sistema nervioso. Aprende a reprogramarlo para cambiar hÃ¡bitos de raÃ­z y vivir en calma.",
+    "thumbnail": "https://image.pollinations.ai/prompt/nervous-system-reprogramming-thumbnail",
+    "htmlPath": "/posts/alguna-vez-intentaste-cambiar-un-mal-hbito-y-volviste-a-l-a-los-pocos-das-te-dij/index.html"
+  },
+  {
+    "slug": "personas-mayores-ha-llegado-el-momento-de-replantearse-quin-es-el-rey-de-las-pro",
+    "title": "ProteÃ­nas para Adultos Mayores: Â¿Es el Huevo el Rey Real?",
+    "author": "ROSA EMILY",
+    "date": "2026-07-20",
+    "excerpt": "El huevo fue el rey, pero la ciencia avanza. Descubre quÃ© proteÃ­nas son realmente mÃ¡s efectivas para la salud y longevidad en adultos mayores hoy en dÃ­a.",
+    "thumbnail": "https://image.pollinations.ai/prompt/elderly-protein-king-question-thumbnail",
+    "htmlPath": "/posts/personas-mayores-ha-llegado-el-momento-de-replantearse-quin-es-el-rey-de-las-pro/index.html"
+  },
+  {
+    "slug": "el-ingrediente-que-usas-todos-los-das-y-est-destruyendo-tu-memoria-sin-que-lo-se",
+    "title": "El AzÃºcar y la Salud Cognitiva: Lo que Dice la Ciencia",
+    "author": "ROSA EMILY",
+    "date": "2026-07-20",
+    "excerpt": "Â¿El azÃºcar afecta tu memoria? Descubre el impacto del azÃºcar refinado en el cerebro y cÃ³mo mejorar tu salud cognitiva.",
+    "thumbnail": "https://image.pollinations.ai/prompt/sugar-memory-damage-thumbnail",
+    "htmlPath": "/posts/el-ingrediente-que-usas-todos-los-das-y-est-destruyendo-tu-memoria-sin-que-lo-se/index.html"
+  },
+  {
+    "slug": "portugal-vs-espana-final",
+    "title": "Portugal vs EspaÃ±a: Final en Vivo, Horario y TransmisiÃ³n HD",
+    "author": "Equipo UltimoLive",
+    "authorTitle": "Especialistas en FÃºtbol Internacional",
+    "date": "2025-06-08",
+    "excerpt": "Disfruta la gran final entre Portugal y EspaÃ±a. Sigue el partido en vivo con nuestra transmisiÃ³n HD, horarios detallados y estadÃ­sticas minuto a minuto.",
+    "thumbnail": "https://imgmedia.libero.pe/1200x630/libero/original/2025/06/07/68442a1026e1e9aaac042d36.jpg",
+    "htmlPath": "/posts/portugal-vs-espana/index.html"
+  },
+  {
+    "slug": "bolivia-vs-venezuela",
+    "title": "Bolivia vs Venezuela: Rivalidad y AnÃ¡lisis del Duelo Sudamericano",
+    "author": "Equipo Automatico",
+    "authorTitle": "Especialistas en FÃºtbol Sudamericano",
+    "date": "2025-06-06",
+    "excerpt": "Analizamos la historia, estadÃ­sticas y la pasiÃ³n detrÃ¡s del enfrentamiento entre Bolivia y Venezuela. Un duelo emocionante de fÃºtbol sudamericano.",
+    "thumbnail": "https://cdn.bolivia.com/sdi/2024/09/05/conoce-donde-ver-el-partido-bolivia-vs-venezuela-1253695.jpg",
+    "htmlPath": "/posts/boliviavsvenezuela/index.html"
+  },
+  {
+    "slug": "peru-vs-colombia",
+    "title": "PerÃº vs Colombia: AnÃ¡lisis y PredicciÃ³n del ClÃ¡sico Sudamericano",
+    "author": "Equipo Automatico",
+    "authorTitle": "Especialistas en FÃºtbol Sudamericano",
+    "date": "2025-06-06",
+    "excerpt": "AnÃ¡lisis completo del PerÃº vs Colombia. EstadÃ­sticas, historia y los jugadores clave de este emocionante clÃ¡sico sudamericano.",
+    "thumbnail": "https://origin.cronosmedia.glr.pe/large/2025/06/02/lg_683e0569459cf7ef500ef08b.jpg",
+    "htmlPath": "/posts/peruvscolombia/index.html"
+  },
+  {
+    "slug": "psg-vs-inter2025",
+    "title": "Final Champions 2025: PSG vs Inter - GuÃ­a, Horarios y AnÃ¡lisis",
+    "author": "Equipo VitalNatur",
+    "date": "2025-05-31",
+    "excerpt": "Vive la gran final PSG vs Inter 2025. Horarios, anÃ¡lisis y estadÃ­sticas de la Champions League. Â¡No te pierdas ningÃºn detalle!",
+    "thumbnail": "https://automatico.pages.dev/posts/final/final.jpg",
+    "htmlPath": "/posts/final/index.html"
+  },
+  {
+    "slug": "guia-cientifica-manejo-estres-laboral",
+    "title": "GuÃ­a CientÃ­fica: Estrategias para el Manejo del EstrÃ©s Laboral",
+    "author": "ROSA EMILY",
+    "date": "2025-04-17",
+    "excerpt": "Aprende estrategias probadas por la ciencia para gestionar la presiÃ³n en el trabajo. Mejora tu rendimiento y bienestar laboral hoy.",
+    "thumbnail": "/posts/manejo-estres/bing.png",
+    "htmlPath": "/posts/manejo-estres/index.html"
+  },
+  {
+    "slug": "descifrando-volte-funcion-gestion-smartphone",
+    "title": "Â¿QuÃ© es VoLTE? Beneficios y ConfiguraciÃ³n en tu Smartphone",
+    "author": "rosa emily",
+    "date": "2025-04-21",
+    "excerpt": "Mejora la calidad de tus llamadas con VoLTE. Aprende quÃ© es, cÃ³mo beneficia a tu conexiÃ³n y cÃ³mo gestionarlo fÃ¡cilmente en tu mÃ³vil.",
+    "thumbnail": "/posts/descifrando-volte-funcion-gestion-smartphone/volt.png",
+    "htmlPath": "/posts/descifrando-volte-funcion-gestion-smartphone/index.html"
+  },
+  {
+    "slug": "maha-kumbh-2025",
+    "title": "Maha Kumbh 2025: Por quÃ© atrae la atenciÃ³n espiritual mundial",
+    "author": "RedacciÃ³n Cultural Global",
+    "date": "2025-04-16",
+    "excerpt": "Explora el fenÃ³meno espiritual del Maha Kumbh Mela 2025. Descubre por quÃ© este evento es clave para millones y su impacto global.",
+    "thumbnail": "https://theazb.com/wp-content/uploads/2025/01/Maha-Kumbh-Mela.jpg",
+    "htmlPath": "/posts/maha-kumbh-2025/index.html"
+  },
+  {
+    "slug": "productos-tecnologicos-mas-buscados-peru-2025",
+    "title": "Tendencias TecnolÃ³gicas: Lo mÃ¡s buscado en PerÃº este 2025",
+    "author": "RedacciÃ³n Tendencias",
+    "date": "2025-04-16",
+    "excerpt": "Descubre los gadgets y productos tecnolÃ³gicos que estÃ¡n marcando el ritmo en PerÃº este 2025. Â¡Lo que todos quieren tener!",
+    "thumbnail": "/posts/peru2025/peru25.png",
+    "htmlPath": "/posts/peru2025/index.html"
+  },
+  {
+    "slug": "sostenibilidad-2025",
+    "title": "Sostenibilidad 2025: La Nueva Tendencia en Consumo Responsable",
+    "author": "RedacciÃ³n Estilo Verde",
+    "date": "2025-04-16",
+    "excerpt": "En 2025, la sostenibilidad define nuestras decisiones de vida. Descubre cÃ³mo ser un consumidor mÃ¡s responsable y consciente.",
+    "thumbnail": "/posts/sostenibilidad2025/futi.png",
+    "htmlPath": "/posts/sostenibilidad2025/index.html"
+  },
+  {
+    "slug": "bebidas-2025",
+    "title": "Bebidas 2025: ClÃ¡sicos Renovados con un Toque Saludable",
+    "author": "RedacciÃ³n Estilo de Vida",
+    "date": "2025-04-16",
+    "excerpt": "Los cÃ³cteles clÃ¡sicos vuelven este 2025 con giros saludables y sabores sorprendentes. Aprende sobre las nuevas tendencias en bebidas.",
+    "thumbnail": "/posts/bebidas-2025/bibida.png",
+    "htmlPath": "/posts/bebidas-2025/index.html"
+  },
+  {
+    "slug": "belleza-2025-estetica-bienestar",
+    "title": "Tendencias Belleza 2025: La EstÃ©tica Sutil y el Bienestar",
+    "author": "Estilo & Vida Moderna",
+    "date": "2025-04-16",
+    "excerpt": "La belleza en 2025 prioriza lo natural y el bienestar interno. Explora cÃ³mo esta tendencia estÃ¡ cambiando el estÃ¡ndar de estÃ©tica.",
+    "thumbnail": "/posts/belleza/belleza.jpg",
+    "htmlPath": "/posts/belleza/index.html"
+  },
+  {
+    "slug": "reinvencion-personalidad",
+    "title": "5 Pasos para Reinventar tu Personalidad mediante Neuroplasticidad",
+    "author": "Dra. MarÃ­a LÃ³pez",
+    "date": "2024-07-15",
+    "excerpt": "Tu personalidad no es estÃ¡tica. Aprende cÃ³mo la neuroplasticidad te permite transformarte y ser quien siempre quisiste ser en 5 pasos cientÃ­ficos.",
+    "thumbnail": "/posts/personalidad/images.jpg",
+    "htmlPath": "/posts/personalidad/index.html"
+  },
+  {
+    "slug": "alimentacion-cerebro",
+    "title": "NutriciÃ³n para el Cerebro: 10 Superalimentos que Potencian tu Mente",
+    "author": "Dr. Carlos MÃ©ndez",
+    "date": "2024-07-18",
+    "excerpt": "Potencia tu capacidad cognitiva. Estos 10 superalimentos estÃ¡n avalados por la ciencia para mejorar tu memoria y enfoque mental.",
+    "thumbnail": "/posts/mitologia/ima.jpg",
+    "htmlPath": "/posts/mitologia/index.html"
+  },
+  {
+    "slug": "entrenamiento-cerbero",
+    "title": "El Arte de Entrenar tu Mente: Protocolos de Enfoque",
+    "author": "Dr. Nikolaos Thyrsos",
+    "date": "2024-07-25",
+    "excerpt": "Protocolos avanzados para sincronizar tu enfoque y potenciar el rendimiento mental. Aprende a dominar tu mente.",
+    "thumbnail": "/posts/cerebro/images.jpg",
+    "htmlPath": "/posts/cerebro/index.html"
+  },
+  {
+    "slug": "reinvencion-personal",
+    "title": "ReinvenciÃ³n Personal: CÃ³mo Crear la Vida que Deseas",
+    "author": "Equipo de Desarrollo Personal",
+    "date": "2024-07-25",
+    "excerpt": "La reinvenciÃ³n es un proceso estructurado. Descubre cÃ³mo cambiar tu rumbo, dejar atrÃ¡s el pasado y crear tu vida ideal hoy.",
+    "thumbnail": "/posts/articulo/reinvencion-thumb.jpg",
+    "htmlPath": "/posts/articulo/index.html"
+  },
+  {
+    "slug": "pollo-blanco-o-amarillo",
+    "title": "Pollo Blanco o Amarillo: La Verdad DetrÃ¡s de la NutriciÃ³n",
+    "author": "Equipo de NutriciÃ³n Consciente",
+    "date": "2024-03-15",
+    "excerpt": "Â¿CuÃ¡l es mÃ¡s nutritivo? Despejamos el mito sobre el color del pollo para que tomes la mejor decisiÃ³n al comprar.",
+    "thumbnail": "https://blob.luznoticias.mx/images/2024/02/24/pollos-principal-focus-0-0-966-544.jpg",
+    "htmlPath": "/posts/pollo/index.html"
+  },
+  {
+    "slug": "remontadas-historicas",
+    "title": "Momentos Ã‰picos: Las Remontadas Inolvidables del Real Madrid",
+    "author": "RedacciÃ³n Deportiva Total",
+    "date": "2025-04-16",
+    "excerpt": "Revive las remontadas histÃ³ricas del Real Madrid en la Champions League. Momentos de pura magia futbolÃ­stica que marcaron Ã©poca.",
+    "thumbnail": "https://i.ytimg.com/vi/dbXQWQcET4o/maxresdefault.jpg",
+    "htmlPath": "/posts/realremontadas/index.html"
+  },
+  {
+    "slug": "maximalismo-decoracion-primavera-2025",
+    "title": "Maximalismo: La Tendencia que Domina la DecoraciÃ³n 2025",
+    "author": "RedacciÃ³n de DecoraciÃ³n y Tendencias",
+    "date": "2025-04-16",
+    "excerpt": "El minimalismo quedÃ³ atrÃ¡s. Descubre por quÃ© el maximalismo es la tendencia estrella en la decoraciÃ³n del hogar para esta primavera 2025.",
+    "thumbnail": "https://i.pinimg.com/originals/ec/fa/92/ecfa92103caf7a1d9199a4d7d33ca5d8.jpg",
+    "htmlPath": "/posts/maximalismo/index.html"
+  }
 ]
