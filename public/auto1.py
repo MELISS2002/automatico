@@ -1,6 +1,7 @@
 import time
 import re
 import os
+import unicodedata
 import sys
 import json
 import pyperclip
@@ -28,6 +29,8 @@ JSON_FILES = {
 }
 GIT_ACTIVO = True
 TIMEOUT_RESPUESTA = 600
+SOLO_NOTICIAS = True
+CATEGORIA_NOTICIAS = "home"
 
 def limpiar_texto(texto):
     return re.sub(r'[^\u0000-\uFFFF]', '', texto)
@@ -149,6 +152,43 @@ def tema_a_slug(tema):
         slug = slug[:80].rstrip('-')
     return slug
 
+def normalizar_tema(texto):
+    """Normaliza títulos para detectar duplicados aunque cambien mayúsculas o tildes."""
+    texto = unicodedata.normalize("NFKD", str(texto or ""))
+    texto = "".join(char for char in texto if not unicodedata.combining(char))
+    texto = re.sub(r"[^a-z0-9]+", " ", texto.lower()).strip()
+    return re.sub(r"\s+", " ", texto)
+
+
+def cargar_temas_existentes():
+    """Carga títulos y slugs de todos los índices y carpetas existentes en public/posts."""
+    existentes = set()
+    for json_path in JSON_FILES.values():
+        try:
+            with open(json_path, "r", encoding="utf-8-sig") as f:
+                for item in json.load(f):
+                    for clave in ("title", "slug", "excerpt"):
+                        valor = item.get(clave)
+                        if valor:
+                            existentes.add(normalizar_tema(valor))
+        except (FileNotFoundError, json.JSONDecodeError, OSError):
+            pass
+    try:
+        for nombre in os.listdir(POSTS_DIR):
+            ruta = os.path.join(POSTS_DIR, nombre)
+            if os.path.isdir(ruta):
+                existentes.add(normalizar_tema(nombre.replace("-", " ")))
+    except OSError:
+        pass
+    return existentes
+
+
+def tema_ya_publicado(tema, existentes=None):
+    existentes = existentes if existentes is not None else cargar_temas_existentes()
+    candidatos = {normalizar_tema(tema), normalizar_tema(tema_a_slug(tema))}
+    return bool(candidatos & existentes)
+
+
 def extract_val(text, key):
     pattern = rf"{re.escape(key)}\s*(.*?)(?:\n|$)"
     match = re.search(pattern, text, re.IGNORECASE)
@@ -181,7 +221,7 @@ def extraer_bloques(texto):
 
 def actualizar_json(json_path, nueva_entrada):
     try:
-        with open(json_path, "r", encoding="utf-8") as f:
+        with open(json_path, "r", encoding="utf-8-sig") as f:
             data = json.load(f)
         slugs = [item.get("slug") for item in data]
         if nueva_entrada["slug"] in slugs:
@@ -197,8 +237,14 @@ def actualizar_json(json_path, nueva_entrada):
 
 def crear_articulo(tema, categoria, driver):
     tema = limpiar_texto(tema)
+    if SOLO_NOTICIAS and categoria != CATEGORIA_NOTICIAS:
+        print(f"⏭️ Se omite '{tema}': solo se permiten noticias nuevas.")
+        return False
+    if tema_ya_publicado(tema):
+        print(f"⏭️ Se omite '{tema}': el tema ya existe en public/posts.")
+        return False
     slug = tema_a_slug(tema)
-    print(f"📝 Creando artículo (slug: {slug})...")
+    print(f"📝 Creando artículo nuevo (slug: {slug})...")
 
     prompt = f"""
 Eres un redactor y diseñador web experto. Crea un artículo completo en HTML sobre "{tema}" (mínimo 1000 palabras). 
@@ -412,8 +458,11 @@ def parsear_argumentos():
         if not titulo:
             continue
         if cat not in JSON_FILES:
-            print(f"⚠️ Categoría '{cat}' no válida para '{titulo}'. Usando 'home'.")
-            cat = "home"
+            print(f"⚠️ Categoría '{cat}' no válida para '{titulo}'. Se omite.")
+            continue
+        if SOLO_NOTICIAS and cat != CATEGORIA_NOTICIAS:
+            print(f"⏭️ Se omite '{titulo}': solo se permiten noticias en la categoría home.")
+            continue
         parsed.append((titulo, cat))
     
     return parsed
@@ -449,8 +498,17 @@ def main():
     
     exitosos = 0
     fallidos = 0
+    omitidos = 0
+    temas_existentes = cargar_temas_existentes()
+    temas_lote = set()
     
     for i, (titulo, cat) in enumerate(articulos, 1):
+        clave_tema = normalizar_tema(titulo)
+        if clave_tema in temas_existentes or clave_tema in temas_lote:
+            omitidos += 1
+            print(f"⏭️ Artículo {i} omitido: el tema ya existe o está repetido en el lote: {titulo}")
+            continue
+        temas_lote.add(clave_tema)
         print(f"\n{'='*60}")
         print(f"📄 Artículo {i}/{len(articulos)}")
         print(f"🏷️  Categoría: {cat}")
@@ -461,6 +519,7 @@ def main():
             exito = crear_articulo(titulo, cat, driver)
             if exito:
                 exitosos += 1
+                temas_existentes.add(clave_tema)
                 print(f"✅ Artículo {i} creado con éxito.")
                 git_commit_and_push(f"Nuevo artículo: {titulo[:50]}")
             else:
@@ -481,6 +540,7 @@ def main():
     print(f"{'='*60}")
     print(f"✅ Exitosos: {exitosos}")
     print(f"❌ Fallidos: {fallidos}")
+    print(f"⏭️ Omitidos por duplicado/categoría: {omitidos}")
     print(f"📈 Total: {len(articulos)}")
     print(f"{'='*60}")
     

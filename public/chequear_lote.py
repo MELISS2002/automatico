@@ -44,7 +44,7 @@ for art in lote:
     print(f"  size: {len(html)} | pollinations: {n_poll} | refs imagen*.jpg: {n_refs} | emojis: {n_emoji}")
     print(f"  imgs en carpeta: {sorted(imgs)}")
     print(f"  srcs en HTML: {srcs}")
-    if n_poll > 0 or n_emoji > 0 or n_refs < 2 or len(imgs) < 1:
+    if n_poll > 0 or n_emoji > 0 or n_refs < 1 or len(imgs) < 1:
         all_ok = False
 
 # JSON de las categorias del lote

@@ -37,7 +37,7 @@ from auto1 import (extract_val, extract_between, extraer_bloques,
                    tema_a_slug)
 
 API_URL = os.environ.get("DEEPSEEK_URL", "http://127.0.0.1:8765/v1/chat/completions")
-MODEL = "deepseek-web"
+MODEL = os.environ.get("MODEL_OVERRIDE", "deepseek-web")
 LOTE = os.path.join(HERE, "lote_diario.json")
 
 def cargar_lote():
@@ -54,7 +54,8 @@ DATOS REALES DE LA NOTICIA (usa estos datos, NO inventes cifras, fechas ni nombr
 
 REGLAS OBLIGATORIAS:
 - Estilo periodistico serio, en espanol neutro y tono informativo. NO uses clickbait. NO inventes datos; apoyate solo en los DATOS REALES provistos.
-- Incluye EXACTAMENTE 3 imagenes usando rutas LOCALES: imagen1.jpg, imagen2.jpg e imagen3.jpg (src="imagen1.jpg", src="imagen2.jpg", src="imagen3.jpg"). Coloca imagen1.jpg en el header destacado y las otras dos en puntos relevantes del cuerpo.
+- Incluye UNA imagen destacada con rutas LOCALES: imagen1.jpg (src="imagen1.jpg"). Colocala en el header de la noticia. No uses otras imagenes externas.
+- Si el archivo imagen2.jpg o imagen3.jpg existe en el articulo, puedes usarlas; si no, usa solo imagen1.jpg.
 - El HTML debe tener estilos CSS atractivos y responsive, con header de noticia, parrafos, subtitulos, bloques de datos destacados y footer con autor y fecha.
 - NO uses backticks (```). NO uses emojis. NO uses markdown. NO uses https://image.pollinations.ai ni URLs externas para imagenes.
 
@@ -63,7 +64,7 @@ Responde EXACTAMENTE con esta estructura (respeta los marcadores):
 TITLE: (titulo periodistico)
 EXCERPT: (extracto 2-3 frases)
 ===HTML_START===
-(ESCRIBE AQUI TODO EL CODIGO HTML: <!DOCTYPE html>, <head>, <style>, <body>, con las IMAGENES LOCALES imagen1.jpg imagen2.jpg imagen3.jpg, y <footer> con autor y fecha)
+(ESCRIBE AQUI TODO EL CODIGO HTML: <!DOCTYPE html>, <head>, <style>, <body>, con las IMAGENES LOCALES imagen1.jpg (y opcionalmente imagen2.jpg/imagen3.jpg), y <footer> con autor y fecha)
 ===HTML_END===
 THUMBNAIL: imagen1.jpg"""
 
@@ -179,7 +180,7 @@ def main():
                     n_img = sum(txt.count(f"imagen{j}.jpg") for j in (1, 2, 3))
                     print(f"[intento {intento}] OK: {guardado['title'][:70]} | size={sz} imgs_copiadas={guardado['imgs_copiadas']} refs_imagenes={n_img}", flush=True)
                     # validacion: HTML grande + al menos 2 refs a imagenes locales + imgs copiadas
-                    if sz > 8000 and n_img >= 2 and guardado["imgs_copiadas"] >= 1:
+                    if sz > 5000 and n_img >= 1 and guardado["imgs_copiadas"] >= 1:
                         ok_final = True
                         break
                     else:

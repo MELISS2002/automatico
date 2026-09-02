@@ -1,9 +1,42 @@
 [
   {
-    "tema": "MiniPP en restaurantes peruanos: fecha clave del cronograma 2026",
+    "tema": "Alza del sueldo minimo 2026 en Peru: el MEF anuncia el nuevo monto de la RMV en escalas hasta S/ 1300",
     "cat": "home",
-    "slug": "minipp-restaurantes-peruanos-cronograma-2026",
-    "nota": "Sunafil recordo el inicio del MiniPP 2026 en restaurantes a nivel nacional. Los empleadores deben registrar a su personal en linea dentro del plazo para evitar multas de hasta varias UIT.",
-    "imgs": []
+    "slug": "alza-sueldo-minimo-2026-rmv-peru-mef-s-1300",
+    "nota": "El Ministerio de Economia y Finanzas (MEF) anuncio un aumento del sueldo minimo (RMV) en Peru para 2026 de forma progresiva en dos etapas. El monto pasara de S/ 1130 a S/ 1300: primero un incremento de S/ 100 y luego otro de S/ 70. El anuncio fue realizado por la presidenta Keiko Fujimori en el Mensaje a la Nacion del 28 de julio. El economista Elmer Cuba, del equipo del MEF, preciso que el aumento es gradual para evitar impacto en la inflacion y en las micro y pequenas empresas (MYPE). Fuente: El Comercio.",
+    "imgs": ["rmv-sueldo-minimo.jpg"],
+    "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
+  },
+  {
+    "tema": "Julio Velarde destaca que Peru registra la menor inflacion de la region y elogia la estabilidad monetaria del BCR",
+    "cat": "home",
+    "slug": "julio-velarde-menor-inflacion-region-estabilidad-bcr",
+    "nota": "El presidente del Banco Central de Reserva del Peru (BCRP), Julio Velarde, destaco que el Peru mantiene la menor inflacion de la region. Resalto la estabilidad monetaria del pais y que, en lo que va del siglo XXI, el Peru ha tenido la inflacion mas baja de America Latina. Velarde, al frente del BCR por mas de 20 anos, fue ratificado por el gobierno de Keiko Fujimori por cinco anos mas en agosto de 2026. Fuente: Diario Correo / RPP / El Comercio.",
+    "imgs": ["velarde-inflacion.jpg"],
+    "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
+  },
+  {
+    "tema": "Siderperu despedira a un 13% de sus trabajadores a traves de un proceso de cese colectivo en Chimbote",
+    "cat": "home",
+    "slug": "siderperu-cese-colectivo-13-trabajadores-chimbote",
+    "nota": "Siderperu, la empresa mas antigua de acero del Peru, anuncio que reducira su plantilla en un 13%, lo que implica la desvinculacion de 111 trabajadores mediante un proceso de cese colectivo. La compania, con sede en Chimbote, informo a la Superintendencia del Mercado de Valores (SMV) que cierra la linea de negocio de viales, cuya continuidad se ha vuelto inviable por la variacion de la demanda y sus resultados de rentabilidad. Contaba con 896 empleados en julio. El sindicato rechazo la medida. Incluye programas de retiro voluntario. Fuente: RPP / Agencia EFE.",
+    "imgs": ["siderperu-cese.jpg"],
+    "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
+  },
+  {
+    "tema": "MEF descarta que las cuentas de ahorro paguen Impuesto a la Renta tras el vencimiento de la exoneracion en 2026",
+    "cat": "gana",
+    "slug": "mef-descarta-impuesto-cuentas-ahorro-exoneracion-2026",
+    "nota": "El Ministerio de Economia y Finanzas (MEF) descarto que las cuentas de ahorro paguen Impuesto a la Renta tras el vencimiento de la exoneracion en 2026. La medida se enmarca en el pedido de delegacion de facultades al Ejecutivo. El MEF aclaro que no existen condiciones economicas o fiscales que justifiquen nuevas medidas tributarias sobre los ahorros de las personas. Se espera que la exoneracion de los intereses de las cuentas de ahorro se mantenga. Fuente: RPP.",
+    "imgs": ["mef-ahorro.jpg"],
+    "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
+  },
+  {
+    "tema": "Gobierno plantea subsidio cruzado al agua a nivel nacional: usuarios de mayores ingresos financiarian recibos y conexiones de vulnerables",
+    "cat": "home",
+    "slug": "gobierno-subsidio-cruzado-agua-nacional-sunass",
+    "nota": "El gobierno de Keiko Fujimori plantea crear un esquema integral de subsidios cruzados focalizados para los servicios de agua potable y saneamiento con alcance nacional, que beneficiaria a hogares en situacion de pobreza, pobreza extrema y vulnerabilidad. La medida esta incluida en el proyecto de ley de delegacion de facultades y plantea modificar el Decreto Legislativo 1280, Ley del Servicio Universal de Agua Potable y Saneamiento. Los usuarios de mayores ingresos financiarian los recibos y conexiones de los vulnerables. La Sunass desarrolla una mesa tecnica para perfeccionar los esquemas. Fuente: RPP.",
+    "imgs": ["subsidio-agua.jpg"],
+    "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
   }
 ]
