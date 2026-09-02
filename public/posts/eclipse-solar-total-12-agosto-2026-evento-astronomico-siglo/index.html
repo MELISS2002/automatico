@@ -1,629 +1,661 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eclipse solar total 12 agosto 2026: el evento astronómico del siglo que hoy oscurece España</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
-    <style>
-        *,
-        *::before,
-        *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background: #0b0e1a;
-            color: #e8eaf0;
-            line-height: 1.8;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            background: #131826;
-            border-radius: 20px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
-            overflow: hidden;
-            padding: 40px 45px;
-            border: 1px solid #2a3145;
-        }
-
-        /* Cabecera */
-        .article-header {
-            border-bottom: 3px solid #f0a500;
-            padding-bottom: 28px;
-            margin-bottom: 32px;
-        }
-
-        .category-tag {
-            display: inline-block;
-            background: #f0a500;
-            color: #0b0e1a;
-            font-size: 0.7rem;
-            font-weight: 700;
-            letter-spacing: 1.2px;
-            text-transform: uppercase;
-            padding: 4px 16px;
-            border-radius: 30px;
-            margin-bottom: 16px;
-        }
-
-        .article-title {
-            font-family: 'Merriweather', serif;
-            font-weight: 900;
-            font-size: 2.8rem;
-            line-height: 1.2;
-            color: #f5f7fc;
-            margin-bottom: 12px;
-        }
-
-        .article-title span {
-            color: #f0a500;
-        }
-
-        .article-meta {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 18px 28px;
-            font-size: 0.9rem;
-            color: #9aa1b5;
-            margin-top: 6px;
-        }
-
-        .article-meta .author {
-            font-weight: 600;
-            color: #e8eaf0;
-        }
-
-        .article-meta .date {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .article-meta .date::before {
-            content: "•";
-            color: #f0a500;
-            font-weight: 700;
-            margin-right: 4px;
-        }
-
-        .excerpt-box {
-            background: #1e253a;
-            border-left: 5px solid #f0a500;
-            padding: 18px 26px;
-            margin: 18px 0 28px 0;
-            border-radius: 0 10px 10px 0;
-            font-size: 1.1rem;
-            font-weight: 400;
-            color: #d0d5e0;
-            font-style: italic;
-        }
-
-        /* Imagen destacada */
-        .featured-image {
-            width: 100%;
-            border-radius: 14px;
-            margin: 10px 0 30px 0;
-            overflow: hidden;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-        }
-
-        .featured-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.4s ease;
-        }
-
-        .featured-image img:hover {
-            transform: scale(1.01);
-        }
-
-        .featured-image .caption {
-            font-size: 0.8rem;
-            color: #9aa1b5;
-            padding: 10px 14px 4px 14px;
-            text-align: center;
-            background: #1a2133;
-            border-top: 1px solid #2a3145;
-        }
-
-        /* Cuerpo */
-        .article-body {
-            font-size: 1.06rem;
-            color: #dde0e9;
-        }
-
-        .article-body p {
-            margin-bottom: 1.5rem;
-        }
-
-        .article-body h2 {
-            font-family: 'Merriweather', serif;
-            font-weight: 700;
-            font-size: 1.8rem;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            color: #f5f7fc;
-            border-bottom: 2px solid #2a3145;
-            padding-bottom: 10px;
-        }
-
-        .article-body h3 {
-            font-family: 'Merriweather', serif;
-            font-weight: 700;
-            font-size: 1.3rem;
-            margin-top: 1.8rem;
-            margin-bottom: 0.8rem;
-            color: #f0f2f8;
-        }
-
-        .article-body blockquote {
-            background: #1e253a;
-            border-left: 5px solid #f0a500;
-            padding: 18px 26px;
-            margin: 1.8rem 0;
-            border-radius: 0 10px 10px 0;
-            font-style: italic;
-            font-size: 1.05rem;
-            color: #d0d5e0;
-        }
-
-        .article-body blockquote cite {
-            display: block;
-            margin-top: 10px;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 0.9rem;
-            color: #9aa1b5;
-        }
-
-        .article-body ul,
-        .article-body ol {
-            margin: 0 0 1.5rem 2rem;
-        }
-
-        .article-body li {
-            margin-bottom: 0.5rem;
-        }
-
-        .article-body strong {
-            color: #f5f7fc;
-            font-weight: 700;
-        }
-
-        /* Imagen inline */
-        .inline-image {
-            margin: 2.2rem 0;
-            border-radius: 14px;
-            overflow: hidden;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-        }
-
-        .inline-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .inline-image .caption {
-            font-size: 0.8rem;
-            color: #9aa1b5;
-            padding: 10px 14px 6px 14px;
-            text-align: center;
-            background: #1a2133;
-            border-top: 1px solid #2a3145;
-        }
-
-        .image-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin: 2.2rem 0;
-        }
-
-        .image-grid .grid-item {
-            border-radius: 14px;
-            overflow: hidden;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
-            background: #1a2133;
-        }
-
-        .image-grid .grid-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .image-grid .grid-item .caption {
-            font-size: 0.75rem;
-            color: #9aa1b5;
-            padding: 8px 12px 6px 12px;
-            text-align: center;
-        }
-
-        /* Citas destacadas */
-        .pull-quote {
-            font-family: 'Merriweather', serif;
-            font-weight: 700;
-            font-size: 1.5rem;
-            line-height: 1.4;
-            color: #f5f7fc;
-            padding: 24px 30px;
-            margin: 2rem 0;
-            background: #1e253a;
-            border-radius: 14px;
-            border-top: 4px solid #f0a500;
-            border-bottom: 4px solid #f0a500;
-            text-align: center;
-        }
-
-        .pull-quote .source {
-            display: block;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            font-size: 0.9rem;
-            color: #9aa1b5;
-            margin-top: 10px;
-            font-style: normal;
-        }
-
-        /* Pie de artículo */
-        .article-footer {
-            margin-top: 3.5rem;
-            padding-top: 28px;
-            border-top: 2px solid #2a3145;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            gap: 16px;
-        }
-
-        .article-footer .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .article-footer .tags span {
-            background: #1e253a;
-            color: #d0d5e0;
-            font-size: 0.75rem;
-            font-weight: 600;
-            padding: 4px 16px;
-            border-radius: 30px;
-            letter-spacing: 0.3px;
-            border: 1px solid #2a3145;
-        }
-
-        .article-footer .share {
-            font-size: 0.85rem;
-            color: #9aa1b5;
-        }
-
-        .article-footer .share a {
-            color: #e8eaf0;
-            text-decoration: none;
-            font-weight: 600;
-            margin-left: 8px;
-            transition: color 0.2s;
-        }
-
-        .article-footer .share a:hover {
-            color: #f0a500;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .container {
-                padding: 22px 18px;
-            }
-
-            .article-title {
-                font-size: 2rem;
-            }
-
-            .article-body {
-                font-size: 0.98rem;
-            }
-
-            .article-body h2 {
-                font-size: 1.5rem;
-            }
-
-            .image-grid {
-                grid-template-columns: 1fr;
-                gap: 16px;
-            }
-
-            .pull-quote {
-                font-size: 1.2rem;
-                padding: 18px 18px;
-            }
-
-            .article-meta {
-                gap: 10px;
-                font-size: 0.8rem;
-            }
-
-            .excerpt-box {
-                font-size: 1rem;
-                padding: 14px 18px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            body {
-                padding: 10px;
-            }
-
-            .container {
-                padding: 16px 12px;
-                border-radius: 12px;
-            }
-
-            .article-title {
-                font-size: 1.6rem;
-            }
-
-            .article-body {
-                font-size: 0.92rem;
-            }
-
-            .article-body h2 {
-                font-size: 1.3rem;
-            }
-
-            .article-body h3 {
-                font-size: 1.1rem;
-            }
-
-            .featured-image .caption,
-            .inline-image .caption,
-            .image-grid .grid-item .caption {
-                font-size: 0.7rem;
-            }
-
-            .pull-quote {
-                font-size: 1rem;
-                padding: 14px 12px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-
-        <!-- HEADER -->
-        <header class="article-header">
-            <div class="category-tag">Ciencia · Astronomía · Eventos</div>
-            <h1 class="article-title">
-                Eclipse solar total 12 agosto 2026: <span>el evento astronómico del siglo que hoy oscurece España</span>
-            </h1>
-            <div class="article-meta">
-                <span class="author">Redacción Ciencia</span>
-                <span class="date">12 de agosto de 2026</span>
-                <span>Tiempo de lectura: 8 min</span>
-            </div>
-            <div class="excerpt-box">
-                Hoy, 12 de agosto de 2026, España es testigo del eclipse solar total más esperado del siglo. Millones de personas disfrutarán de un fenómeno único que oscurecerá el cielo en pleno día, ofreciendo un espectáculo inolvidable y una oportunidad científica sin precedentes para estudiar la corona solar y los efectos atmosféricos.
-            </div>
-        </header>
-
-        <!-- FEATURED IMAGE -->
-        <figure class="featured-image">
-            <img
-            src="https://image.pollinations.ai/prompt/total_solar_eclipse_dark_sky_corona_sun_moon_alignment_2026"
-            alt="Eclipse solar total con corona brillante en cielo oscuro"
-            loading="lazy"
-            />
-            <figcaption class="caption">Imagen de un eclipse solar total donde la corona solar se muestra en todo su esplendor, un fenómeno que hoy se podrá apreciar en gran parte de la península ibérica.</figcaption>
-        </figure>
-
-        <!-- BODY -->
-        <div class="article-body">
-
-            <p>
-                <strong>El cielo de España se ha teñido de un manto de misterio y asombro.</strong> Hoy, 12 de agosto de 2026, se produce el eclipse solar total más esperado de las últimas décadas, un evento astronómico que ha capturado la atención de científicos, aficionados y curiosos de todo el mundo. La Luna se interpondrá perfectamente entre la Tierra y el Sol, proyectando su sombra sobre una franja que atravesará la península ibérica, sumiendo en una oscuridad temporal a ciudades y pueblos que vivirán minutos de una emoción indescriptible.
-            </p>
-
-            <p>
-                Este eclipse, que ha sido denominado por muchos como <strong>“el evento astronómico del siglo”</strong>, no solo es un espectáculo visual impresionante, sino también una oportunidad científica única para estudiar la corona solar, los efectos de la radiación ultravioleta y los cambios en la atmósfera terrestre. España se convierte hoy en el epicentro mundial de la astronomía, y miles de personas han viajado hasta sus costas y mesetas para no perderse ni un segundo de este fenómeno.
-            </p>
-
-            <div class="pull-quote">
-                “La naturaleza nos regala un momento de pausa, una invitación a mirar hacia arriba y recordar lo pequeños que somos en el universo. Hoy, el Sol y la Luna bailan para nosotros.”
-                <span class="source">— Astrónomo del Instituto de Astrofísica de Canarias</span>
-            </div>
-
-            <h2>¿Qué es un eclipse solar total y por qué este es tan especial?</h2>
-
-            <p>
-                Un eclipse solar total ocurre cuando la Luna, en su órbita alrededor de la Tierra, se alinea perfectamente con el Sol y nuestro planeta, cubriendo por completo el disco solar y proyectando una sombra que se desplaza a gran velocidad sobre la superficie terrestre. Durante los breves minutos de totalidad, el día se convierte en noche, las estrellas y los planetas más brillantes se hacen visibles, y la atmósfera se enfría perceptiblemente.
-            </p>
-
-            <p>
-                Lo que hace extraordinario al eclipse del 12 de agosto de 2026 es su <strong>trayectoria y duración</strong>. La franja de totalidad cruzará España de oeste a este, pasando por puntos clave como la costa atlántica, el centro peninsular y el Mediterráneo, con una duración máxima de totalidad de más de 4 minutos en algunas localizaciones privilegiadas. Esto lo convierte en uno de los eclipses totales con mayor tiempo de oscurecimiento que se hayan visto en Europa en los últimos 100 años.
-            </p>
-
-            <p>
-                Además, la fecha coincide con el <strong>máximo de actividad del ciclo solar</strong>, lo que significa que la corona solar —la atmósfera exterior del Sol— estará particularmente activa y con una morfología más compleja, lo que brindará a los científicos una oportunidad inmejorable para estudiar su estructura y dinámica.
-            </p>
-
-            <!-- IMAGEN 2 -->
-            <figure class="inline-image">
-                <img
-                src="https://image.pollinations.ai/prompt/solar_eclipse_path_2026_Iberian_Peninsula_Spain_map_totality"
-                alt="Mapa de la trayectoria del eclipse solar total sobre España"
-                loading="lazy"
-                />
-                <figcaption class="caption">Recorrido de la umbra del eclipse a través de la península ibérica, indicando las ciudades donde la totalidad será visible y la duración estimada en cada punto.</figcaption>
-            </figure>
-
-            <h2>La ruta de la totalidad: ciudades y horarios clave</h2>
-
-            <p>
-                La sombra de la Luna comenzará su recorrido sobre el océano Atlántico, tocando tierra en la costa de Portugal y entrando en España por la provincia de Huelva. A partir de ahí, la umbra se desplazará hacia el noreste, pasando por provincias como Sevilla, Córdoba, Ciudad Real, Toledo, Madrid, Guadalajara, Zaragoza, Lérida, Gerona y finalmente saldrá al mar Mediterráneo por la costa catalana.
-            </p>
-
-            <p>
-                Los horarios varían según la ubicación, pero en líneas generales, el inicio del eclipse parcial se dará entre las 19:30 y 20:00 (hora peninsular), con el momento de totalidad produciéndose entre las 20:45 y 21:00. En Madrid, por ejemplo, se espera que la totalidad comience a las 20:52 y dure aproximadamente 3 minutos y 48 segundos, mientras que en localidades más al este, la duración se acerca a los 4 minutos y 10 segundos.
-            </p>
-
-            <p>
-                Es importante recordar que, durante la totalidad, el cielo se oscurece lo suficiente como para que se puedan observar estrellas y planetas brillantes. Júpiter y Venus serán visibles a simple vista, y algunos observadores con telescopios podrán incluso intentar captar la tenue luz de la corona y las protuberancias solares.
-            </p>
-
-            <h2>Recomendaciones para observar el eclipse de forma segura</h2>
-
-            <p>
-                Aunque la tentación de mirar directamente al Sol es grande, los expertos insisten en que <strong>nunca se debe observar el eclipse sin la protección adecuada</strong>. La radiación solar puede causar daños irreversibles en la retina, incluso durante la fase parcial. Es imprescindible utilizar gafas certificadas con filtro solar homologado (norma ISO 12312-2) o proyectar la imagen del sol sobre una superficie mediante un proyector estenopeico o un telescopio con filtro adecuado.
-            </p>
-
-            <p>
-                Durante los breves instantes de totalidad, cuando la Luna cubre por completo el disco solar, es seguro mirar sin protección, pero se debe estar atento al momento en que el brillo del Sol reaparece (el llamado “efecto anillo de diamante”) para volver a protegerse los ojos. Muchas organizaciones astronómicas han distribuido gafas especiales en los puntos de observación y han habilitado canales en directo para quienes no puedan salir o no dispongan de los medios adecuados.
-            </p>
-
-            <p>
-                Además de la seguridad ocular, se recomienda llevar ropa cómoda, agua y protección solar para la piel, ya que la radiación ultravioleta sigue presente incluso durante las fases parciales. También es aconsejable planificar la llegada a los lugares de observación con antelación, ya que se esperan grandes aglomeraciones y atascos en las zonas privilegiadas.
-            </p>
-
-            <div class="image-grid">
-                <div class="grid-item">
-                    <img
-                    src="https://image.pollinations.ai/prompt/solar_eclipse_glasses_protection_eye_safety_observation"
-                    alt="Gafas de protección para eclipse solar"
-                    loading="lazy"
-                    />
-                    <div class="caption">Gafas con filtro solar certificado, el elemento imprescindible para observar el eclipse de forma segura durante las fases parciales.</div>
-                </div>
-                <div class="grid-item">
-                    <img
-                    src="https://image.pollinations.ai/prompt/people_observing_solar_eclipse_Spain_2026_outdoors_telescopes"
-                    alt="Personas observando el eclipse en España con telescopios y prismáticos"
-                    loading="lazy"
-                    />
-                    <div class="caption">Aficionados y científicos se han congregado en puntos estratégicos para disfrutar del eclipse con instrumentos adecuados y protegidos.</div>
-                </div>
-            </div>
-
-            <h2>La ciencia detrás del eclipse: qué estudiarán los investigadores</h2>
-
-            <p>
-                Para la comunidad científica, un eclipse solar total es un verdadero laboratorio natural. Durante los minutos de totalidad, la corona solar —que normalmente es invisible debido al brillo de la fotosfera— se muestra en todo su esplendor, permitiendo a los astrónomos medir su temperatura, densidad y campo magnético. Además, se pueden estudiar las eyecciones de masa coronal y su influencia en la meteorología espacial.
-            </p>
-
-            <p>
-                En esta ocasión, equipos de la <strong>Universidad Complutense de Madrid</strong>, el <strong>Instituto de Astrofísica de Andalucía</strong> y la <strong>Agencia Espacial Europea</strong> han desplegado una red de telescopios y sensores a lo largo de la franja de totalidad para captar imágenes en alta resolución y registrar datos espectroscópicos. También se aprovechará para medir los cambios en la ionosfera y la atmósfera terrestre, que experimentan variaciones significativas cuando la radiación solar se bloquea de forma abrupta.
-            </p>
-
-            <p>
-                Otro de los objetivos es estudiar los <strong>efectos biológicos y etológicos</strong> del eclipse. Durante estos eventos, las aves dejan de cantar, los animales domésticos muestran comportamientos extraños y las flores cierran sus pétalos, como si la noche hubiera llegado. Este fenómeno sigue siendo objeto de estudio y permite comprender mejor los ritmos circadianos y las respuestas adaptativas de los seres vivos.
-            </p>
-
-            <blockquote>
-                “Un eclipse total es una oportunidad única para acercar la ciencia al público. Es el momento en que las personas se preguntan sobre el universo y su lugar en él. Y para nosotros, los científicos, es una mina de datos que nos ayudará a entender mejor nuestra estrella.”
-                <cite>— Investigadora del CSIC, equipo de observación en Toledo</cite>
-            </blockquote>
-
-            <h2>El eclipse en la cultura y la historia de España</h2>
-
-            <p>
-                España tiene una larga tradición en la observación de eclipses. Ya en la Edad Media, los astrónomos andalusíes registraron minuciosamente estos fenómenos, y en el siglo XVIII, expediciones científicas europeas recorrieron la península para estudiar los tránsitos de Venus. Pero ningún eclipse anterior había tenido la cobertura mediática y la expectación que el de hoy.
-            </p>
-
-            <p>
-                El eclipse del 12 de agosto de 2026 ha sido bautizado como <strong>“el eclipse del Camino de Santiago”</strong> porque la franja de totalidad cruza varias de las rutas jacobeas, atrayendo a peregrinos y turistas que han hecho coincidir su viaje con este evento astronómico. En ciudades como León, Burgos y Santiago de Compostela se han organizado actividades especiales, conciertos y proyecciones en vivo, convirtiendo la jornada en una fiesta de la ciencia y la cultura.
-            </p>
-
-            <p>
-                Además, el eclipse ha servido como inspiración para artistas, escritores y músicos que han creado obras efímeras para conmemorar la fecha. La combinación de tradición, modernidad y asombro cósmico hace de este 12 de agosto un día inolvidable para la memoria colectiva de España.
-            </p>
-
-            <h2>¿Dónde y cómo verlo en directo si no se puede salir?</h2>
-
-            <p>
-                Para aquellos que por diversas circunstancias no puedan desplazarse o que se encuentren en zonas donde la nubosidad impida la observación, existen múltiples alternativas. La <strong>Real Academia de Ciencias Exactas, Físicas y Naturales</strong> y el <strong>Observatorio Astronómico Nacional</strong> ofrecen retransmisiones en directo a través de sus canales de YouTube y redes sociales, con explicaciones de expertos en tiempo real.
-            </p>
-
-            <p>
-                También hay aplicaciones móviles que permiten seguir la evolución del eclipse paso a paso, e incluso simular el fenómeno con realidad aumentada. Muchos medios de comunicación han desplegado equipos especiales en las zonas más favorecidas para ofrecer imágenes de alta definición y entrevistas a los asistentes, garantizando que nadie se pierda este espectáculo celestial.
-            </p>
-
-            <h2>Consejos prácticos para disfrutar al máximo del evento</h2>
-
-            <p>
-                Si tienes la suerte de estar en la franja de totalidad, aquí tienes algunas recomendaciones para que la experiencia sea inolvidable:
-            </p>
-
-            <ul>
-                <li><strong>Llega con tiempo:</strong> la afluencia de público será masiva, por lo que es mejor buscar un buen punto de observación al menos una hora antes del inicio del eclipse parcial.</li>
-                <li><strong>Prepara tu equipo:</strong> si usas telescopio o cámara, asegúrate de tener los filtros solares adecuados y de practicar el enfoque antes del evento.</li>
-                <li><strong>Observa el entorno:</strong> durante la totalidad, no mires solo al Sol. Fíjate en el horizonte, donde se apreciarán colores anaranjados y rojizos similares a un atardecer de 360 grados.</li>
-                <li><strong>Comparte la emoción:</strong> los eclipses se disfrutan más en compañía. Comenta lo que ves con amigos, familiares o con otros aficionados que estarán a tu alrededor.</li>
-                <li><strong>Protege tus ojos:</strong> repite: nunca mires al Sol sin protección durante las fases parciales. La salud visual es lo primero.</li>
-            </ul>
-
-            <h2>La próxima cita y el legado de este eclipse</h2>
-
-            <p>
-                Después del eclipse de hoy, el próximo gran eclipse solar total visible en España no se producirá hasta el año 2105, lo que hace que este evento sea realmente único para las generaciones actuales. Por ello, muchas familias han organizado viajes especiales para que sus hijos y nietos puedan ser testigos de este fenómeno y guardarlo en la memoria como un hito de sus vidas.
-            </p>
-
-            <p>
-                Además, los datos recogidos hoy servirán para avanzar en el conocimiento de la física solar y para mejorar los modelos de predicción del clima espacial, que tienen aplicaciones directas en la protección de satélites y redes eléctricas. Este eclipse no es solo un espectáculo, sino también un paso adelante en la ciencia.
-            </p>
-
-            <h2>Reflexión final: mirar al cielo para encontrar nuestro lugar</h2>
-
-            <p>
-                En un mundo cada vez más acelerado y urbano, eventos como el eclipse solar total nos recuerdan que vivimos en un planeta que gira alrededor de una estrella, y que hay fuerzas cósmicas mucho más grandes que nuestras preocupaciones cotidianas. La oscuridad repentina, el frescor en el aire y el silencio de la naturaleza nos invitan a la introspección y a la maravilla.
-            </p>
-
-            <p>
-                Hoy, 12 de agosto de 2026, España se convierte en el escenario de un acontecimiento que trasciende fronteras y generaciones. Es una oportunidad para despertar la curiosidad científica en los más jóvenes, para fortalecer los lazos comunitarios y para rendir homenaje a la belleza del universo. Cuando la luz del Sol regrese y el día se restaure, llevaremos en nuestros ojos y en nuestro corazón el recuerdo imborrable de un instante en que la Luna abrazó al Sol y nos regaló un pedazo de eternidad.
-            </p>
-
-            <p>
-                <strong>Que el eclipse de 2026 nos inspire a seguir mirando arriba, a preguntarnos y a soñar.</strong> Porque, al final, somos polvo de estrellas contemplando su propio origen.
-            </p>
-
-        </div>
-
-        <!-- FOOTER -->
-        <footer class="article-footer">
-            <div class="tags">
-                <span>#EclipseSolar2026</span>
-                <span>#EclipseTotal</span>
-                <span>#Astronomía</span>
-                <span>#España</span>
-                <span>#Ciencia</span>
-                <span>#12Agosto2026</span>
-            </div>
-            <div class="share">
-                Compartir en
-                <a href="#">X</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Facebook</a>
-            </div>
-        </footer>
-
-    </div>
-
-
-<footer>
-    <p>Autor: ROSA EMILY | Fecha: 2026-08-12</p>
-</footer>
-</body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eclipse solar total 12 agosto 2026: el evento astronómico del siglo que hoy oscurece España</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: #0b0e1a;
+            color: #e8eaf0;
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #131826;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+            overflow: hidden;
+            padding: 40px 45px;
+            border: 1px solid #2a3145;
+        }
+
+        /* Cabecera */
+        .article-header {
+            border-bottom: 3px solid #f0a500;
+            padding-bottom: 28px;
+            margin-bottom: 32px;
+        }
+
+        .category-tag {
+            display: inline-block;
+            background: #f0a500;
+            color: #0b0e1a;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            padding: 4px 16px;
+            border-radius: 30px;
+            margin-bottom: 16px;
+        }
+
+        .article-title {
+            font-family: 'Merriweather', serif;
+            font-weight: 900;
+            font-size: 2.8rem;
+            line-height: 1.2;
+            color: #f5f7fc;
+            margin-bottom: 12px;
+        }
+
+        .article-title span {
+            color: #f0a500;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 18px 28px;
+            font-size: 0.9rem;
+            color: #9aa1b5;
+            margin-top: 6px;
+        }
+
+        .article-meta .author {
+            font-weight: 600;
+            color: #e8eaf0;
+        }
+
+        .article-meta .date {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .article-meta .date::before {
+            content: "•";
+            color: #f0a500;
+            font-weight: 700;
+            margin-right: 4px;
+        }
+
+        .excerpt-box {
+            background: #1e253a;
+            border-left: 5px solid #f0a500;
+            padding: 18px 26px;
+            margin: 18px 0 28px 0;
+            border-radius: 0 10px 10px 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #d0d5e0;
+            font-style: italic;
+        }
+
+        /* Imagen destacada */
+        .featured-image {
+            width: 100%;
+            border-radius: 14px;
+            margin: 10px 0 30px 0;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .featured-image img:hover {
+            transform: scale(1.01);
+        }
+
+        .featured-image .caption {
+            font-size: 0.8rem;
+            color: #9aa1b5;
+            padding: 10px 14px 4px 14px;
+            text-align: center;
+            background: #1a2133;
+            border-top: 1px solid #2a3145;
+        }
+
+        /* Cuerpo */
+        .article-body {
+            font-size: 1.06rem;
+            color: #dde0e9;
+        }
+
+        .article-body p {
+            margin-bottom: 1.5rem;
+        }
+
+        .article-body h2 {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #f5f7fc;
+            border-bottom: 2px solid #2a3145;
+            padding-bottom: 10px;
+        }
+
+        .article-body h3 {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+            color: #f0f2f8;
+        }
+
+        .article-body blockquote {
+            background: #1e253a;
+            border-left: 5px solid #f0a500;
+            padding: 18px 26px;
+            margin: 1.8rem 0;
+            border-radius: 0 10px 10px 0;
+            font-style: italic;
+            font-size: 1.05rem;
+            color: #d0d5e0;
+        }
+
+        .article-body blockquote cite {
+            display: block;
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #9aa1b5;
+        }
+
+        .article-body ul,
+        .article-body ol {
+            margin: 0 0 1.5rem 2rem;
+        }
+
+        .article-body li {
+            margin-bottom: 0.5rem;
+        }
+
+        .article-body strong {
+            color: #f5f7fc;
+            font-weight: 700;
+        }
+
+        /* Imagen inline */
+        .inline-image {
+            margin: 2.2rem 0;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        .inline-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .inline-image .caption {
+            font-size: 0.8rem;
+            color: #9aa1b5;
+            padding: 10px 14px 6px 14px;
+            text-align: center;
+            background: #1a2133;
+            border-top: 1px solid #2a3145;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 2.2rem 0;
+        }
+
+        .image-grid .grid-item {
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+            background: #1a2133;
+        }
+
+        .image-grid .grid-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-grid .grid-item .caption {
+            font-size: 0.75rem;
+            color: #9aa1b5;
+            padding: 8px 12px 6px 12px;
+            text-align: center;
+        }
+
+        /* Citas destacadas */
+        .pull-quote {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 1.4;
+            color: #f5f7fc;
+            padding: 24px 30px;
+            margin: 2rem 0;
+            background: #1e253a;
+            border-radius: 14px;
+            border-top: 4px solid #f0a500;
+            border-bottom: 4px solid #f0a500;
+            text-align: center;
+        }
+
+        .pull-quote .source {
+            display: block;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-size: 0.9rem;
+            color: #9aa1b5;
+            margin-top: 10px;
+            font-style: normal;
+        }
+
+        /* Pie de artículo */
+        .article-footer {
+            margin-top: 3.5rem;
+            padding-top: 28px;
+            border-top: 2px solid #2a3145;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .article-footer .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .article-footer .tags span {
+            background: #1e253a;
+            color: #d0d5e0;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 16px;
+            border-radius: 30px;
+            letter-spacing: 0.3px;
+            border: 1px solid #2a3145;
+        }
+
+        .article-footer .share {
+            font-size: 0.85rem;
+            color: #9aa1b5;
+        }
+
+        .article-footer .share a {
+            color: #e8eaf0;
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 8px;
+            transition: color 0.2s;
+        }
+
+        .article-footer .share a:hover {
+            color: #f0a500;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 22px 18px;
+            }
+
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .article-body {
+                font-size: 0.98rem;
+            }
+
+            .article-body h2 {
+                font-size: 1.5rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .pull-quote {
+                font-size: 1.2rem;
+                padding: 18px 18px;
+            }
+
+            .article-meta {
+                gap: 10px;
+                font-size: 0.8rem;
+            }
+
+            .excerpt-box {
+                font-size: 1rem;
+                padding: 14px 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 16px 12px;
+                border-radius: 12px;
+            }
+
+            .article-title {
+                font-size: 1.6rem;
+            }
+
+            .article-body {
+                font-size: 0.92rem;
+            }
+
+            .article-body h2 {
+                font-size: 1.3rem;
+            }
+
+            .article-body h3 {
+                font-size: 1.1rem;
+            }
+
+            .featured-image .caption,
+            .inline-image .caption,
+            .image-grid .grid-item .caption {
+                font-size: 0.7rem;
+            }
+
+            .pull-quote {
+                font-size: 1rem;
+                padding: 14px 12px;
+            }
+        }
+    </style>
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="UltimoLive">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="Eclipse solar total 12 agosto 2026: el evento astronómico del siglo que hoy oscurece España">
+    <meta property="og:description" content="Hoy, 12 de agosto de 2026, España es testigo del eclipse solar total más esperado del siglo. Millones de personas disfrutarán de un fenómeno único que oscurecerá el cielo en pleno día, ofreciendo un e">
+    <meta property="og:url" content="https://automatico.pages.dev/posts/eclipse-solar-total-12-agosto-2026-evento-astronomico-siglo/">
+    <meta property="og:image" content="https://automatico.pages.dev/posts/eclipse-solar-total-12-agosto-2026-evento-astronomico-siglo/og-image.jpg">
+    <meta property="article:published_time" content="2026-08-12T12:00:00Z">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Eclipse solar total 12 agosto 2026: el evento astronómico del siglo que hoy oscurece España">
+    <meta name="twitter:description" content="Hoy, 12 de agosto de 2026, España es testigo del eclipse solar total más esperado del siglo. Millones de personas disfrutarán de un fenómeno único que oscurecerá el cielo en pleno día, ofreciendo un e">
+    <meta name="twitter:image" content="https://automatico.pages.dev/posts/eclipse-solar-total-12-agosto-2026-evento-astronomico-siglo/og-image.jpg">
+    <link rel="canonical" href="https://automatico.pages.dev/posts/eclipse-solar-total-12-agosto-2026-evento-astronomico-siglo/">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="article-header">
+            <div class="category-tag">Ciencia · Astronomía · Eventos</div>
+            <h1 class="article-title">
+                Eclipse solar total 12 agosto 2026: <span>el evento astronómico del siglo que hoy oscurece España</span>
+            </h1>
+            <div class="article-meta">
+                <span class="author">Redacción Ciencia</span>
+                <span class="date">12 de agosto de 2026</span>
+                <span>Tiempo de lectura: 8 min</span>
+            </div>
+            <div class="excerpt-box">
+                Hoy, 12 de agosto de 2026, España es testigo del eclipse solar total más esperado del siglo. Millones de personas disfrutarán de un fenómeno único que oscurecerá el cielo en pleno día, ofreciendo un espectáculo inolvidable y una oportunidad científica sin precedentes para estudiar la corona solar y los efectos atmosféricos.
+            </div>
+        </header>
+
+        <!-- FEATURED IMAGE -->
+        <figure class="featured-image">
+            <img
+            src="https://image.pollinations.ai/prompt/total_solar_eclipse_dark_sky_corona_sun_moon_alignment_2026"
+            alt="Eclipse solar total con corona brillante en cielo oscuro"
+            loading="lazy"
+            />
+            <figcaption class="caption">Imagen de un eclipse solar total donde la corona solar se muestra en todo su esplendor, un fenómeno que hoy se podrá apreciar en gran parte de la península ibérica.</figcaption>
+        </figure>
+
+        <!-- BODY -->
+        <div class="article-body">
+
+            <p>
+                <strong>El cielo de España se ha teñido de un manto de misterio y asombro.</strong> Hoy, 12 de agosto de 2026, se produce el eclipse solar total más esperado de las últimas décadas, un evento astronómico que ha capturado la atención de científicos, aficionados y curiosos de todo el mundo. La Luna se interpondrá perfectamente entre la Tierra y el Sol, proyectando su sombra sobre una franja que atravesará la península ibérica, sumiendo en una oscuridad temporal a ciudades y pueblos que vivirán minutos de una emoción indescriptible.
+            </p>
+
+            <p>
+                Este eclipse, que ha sido denominado por muchos como <strong>“el evento astronómico del siglo”</strong>, no solo es un espectáculo visual impresionante, sino también una oportunidad científica única para estudiar la corona solar, los efectos de la radiación ultravioleta y los cambios en la atmósfera terrestre. España se convierte hoy en el epicentro mundial de la astronomía, y miles de personas han viajado hasta sus costas y mesetas para no perderse ni un segundo de este fenómeno.
+            </p>
+
+            <div class="pull-quote">
+                “La naturaleza nos regala un momento de pausa, una invitación a mirar hacia arriba y recordar lo pequeños que somos en el universo. Hoy, el Sol y la Luna bailan para nosotros.”
+                <span class="source">— Astrónomo del Instituto de Astrofísica de Canarias</span>
+            </div>
+
+            <h2>¿Qué es un eclipse solar total y por qué este es tan especial?</h2>
+
+            <p>
+                Un eclipse solar total ocurre cuando la Luna, en su órbita alrededor de la Tierra, se alinea perfectamente con el Sol y nuestro planeta, cubriendo por completo el disco solar y proyectando una sombra que se desplaza a gran velocidad sobre la superficie terrestre. Durante los breves minutos de totalidad, el día se convierte en noche, las estrellas y los planetas más brillantes se hacen visibles, y la atmósfera se enfría perceptiblemente.
+            </p>
+
+            <p>
+                Lo que hace extraordinario al eclipse del 12 de agosto de 2026 es su <strong>trayectoria y duración</strong>. La franja de totalidad cruzará España de oeste a este, pasando por puntos clave como la costa atlántica, el centro peninsular y el Mediterráneo, con una duración máxima de totalidad de más de 4 minutos en algunas localizaciones privilegiadas. Esto lo convierte en uno de los eclipses totales con mayor tiempo de oscurecimiento que se hayan visto en Europa en los últimos 100 años.
+            </p>
+
+            <p>
+                Además, la fecha coincide con el <strong>máximo de actividad del ciclo solar</strong>, lo que significa que la corona solar —la atmósfera exterior del Sol— estará particularmente activa y con una morfología más compleja, lo que brindará a los científicos una oportunidad inmejorable para estudiar su estructura y dinámica.
+            </p>
+
+            <!-- IMAGEN 2 -->
+            <figure class="inline-image">
+                <img
+                src="https://image.pollinations.ai/prompt/solar_eclipse_path_2026_Iberian_Peninsula_Spain_map_totality"
+                alt="Mapa de la trayectoria del eclipse solar total sobre España"
+                loading="lazy"
+                />
+                <figcaption class="caption">Recorrido de la umbra del eclipse a través de la península ibérica, indicando las ciudades donde la totalidad será visible y la duración estimada en cada punto.</figcaption>
+            </figure>
+
+            <h2>La ruta de la totalidad: ciudades y horarios clave</h2>
+
+            <p>
+                La sombra de la Luna comenzará su recorrido sobre el océano Atlántico, tocando tierra en la costa de Portugal y entrando en España por la provincia de Huelva. A partir de ahí, la umbra se desplazará hacia el noreste, pasando por provincias como Sevilla, Córdoba, Ciudad Real, Toledo, Madrid, Guadalajara, Zaragoza, Lérida, Gerona y finalmente saldrá al mar Mediterráneo por la costa catalana.
+            </p>
+
+            <p>
+                Los horarios varían según la ubicación, pero en líneas generales, el inicio del eclipse parcial se dará entre las 19:30 y 20:00 (hora peninsular), con el momento de totalidad produciéndose entre las 20:45 y 21:00. En Madrid, por ejemplo, se espera que la totalidad comience a las 20:52 y dure aproximadamente 3 minutos y 48 segundos, mientras que en localidades más al este, la duración se acerca a los 4 minutos y 10 segundos.
+            </p>
+
+            <p>
+                Es importante recordar que, durante la totalidad, el cielo se oscurece lo suficiente como para que se puedan observar estrellas y planetas brillantes. Júpiter y Venus serán visibles a simple vista, y algunos observadores con telescopios podrán incluso intentar captar la tenue luz de la corona y las protuberancias solares.
+            </p>
+
+            <h2>Recomendaciones para observar el eclipse de forma segura</h2>
+
+            <p>
+                Aunque la tentación de mirar directamente al Sol es grande, los expertos insisten en que <strong>nunca se debe observar el eclipse sin la protección adecuada</strong>. La radiación solar puede causar daños irreversibles en la retina, incluso durante la fase parcial. Es imprescindible utilizar gafas certificadas con filtro solar homologado (norma ISO 12312-2) o proyectar la imagen del sol sobre una superficie mediante un proyector estenopeico o un telescopio con filtro adecuado.
+            </p>
+
+            <p>
+                Durante los breves instantes de totalidad, cuando la Luna cubre por completo el disco solar, es seguro mirar sin protección, pero se debe estar atento al momento en que el brillo del Sol reaparece (el llamado “efecto anillo de diamante”) para volver a protegerse los ojos. Muchas organizaciones astronómicas han distribuido gafas especiales en los puntos de observación y han habilitado canales en directo para quienes no puedan salir o no dispongan de los medios adecuados.
+            </p>
+
+            <p>
+                Además de la seguridad ocular, se recomienda llevar ropa cómoda, agua y protección solar para la piel, ya que la radiación ultravioleta sigue presente incluso durante las fases parciales. También es aconsejable planificar la llegada a los lugares de observación con antelación, ya que se esperan grandes aglomeraciones y atascos en las zonas privilegiadas.
+            </p>
+
+            <div class="image-grid">
+                <div class="grid-item">
+                    <img
+                    src="https://image.pollinations.ai/prompt/solar_eclipse_glasses_protection_eye_safety_observation"
+                    alt="Gafas de protección para eclipse solar"
+                    loading="lazy"
+                    />
+                    <div class="caption">Gafas con filtro solar certificado, el elemento imprescindible para observar el eclipse de forma segura durante las fases parciales.</div>
+                </div>
+                <div class="grid-item">
+                    <img
+                    src="https://image.pollinations.ai/prompt/people_observing_solar_eclipse_Spain_2026_outdoors_telescopes"
+                    alt="Personas observando el eclipse en España con telescopios y prismáticos"
+                    loading="lazy"
+                    />
+                    <div class="caption">Aficionados y científicos se han congregado en puntos estratégicos para disfrutar del eclipse con instrumentos adecuados y protegidos.</div>
+                </div>
+            </div>
+
+            <h2>La ciencia detrás del eclipse: qué estudiarán los investigadores</h2>
+
+            <p>
+                Para la comunidad científica, un eclipse solar total es un verdadero laboratorio natural. Durante los minutos de totalidad, la corona solar —que normalmente es invisible debido al brillo de la fotosfera— se muestra en todo su esplendor, permitiendo a los astrónomos medir su temperatura, densidad y campo magnético. Además, se pueden estudiar las eyecciones de masa coronal y su influencia en la meteorología espacial.
+            </p>
+
+            <p>
+                En esta ocasión, equipos de la <strong>Universidad Complutense de Madrid</strong>, el <strong>Instituto de Astrofísica de Andalucía</strong> y la <strong>Agencia Espacial Europea</strong> han desplegado una red de telescopios y sensores a lo largo de la franja de totalidad para captar imágenes en alta resolución y registrar datos espectroscópicos. También se aprovechará para medir los cambios en la ionosfera y la atmósfera terrestre, que experimentan variaciones significativas cuando la radiación solar se bloquea de forma abrupta.
+            </p>
+
+            <p>
+                Otro de los objetivos es estudiar los <strong>efectos biológicos y etológicos</strong> del eclipse. Durante estos eventos, las aves dejan de cantar, los animales domésticos muestran comportamientos extraños y las flores cierran sus pétalos, como si la noche hubiera llegado. Este fenómeno sigue siendo objeto de estudio y permite comprender mejor los ritmos circadianos y las respuestas adaptativas de los seres vivos.
+            </p>
+
+            <blockquote>
+                “Un eclipse total es una oportunidad única para acercar la ciencia al público. Es el momento en que las personas se preguntan sobre el universo y su lugar en él. Y para nosotros, los científicos, es una mina de datos que nos ayudará a entender mejor nuestra estrella.”
+                <cite>— Investigadora del CSIC, equipo de observación en Toledo</cite>
+            </blockquote>
+
+            <h2>El eclipse en la cultura y la historia de España</h2>
+
+            <p>
+                España tiene una larga tradición en la observación de eclipses. Ya en la Edad Media, los astrónomos andalusíes registraron minuciosamente estos fenómenos, y en el siglo XVIII, expediciones científicas europeas recorrieron la península para estudiar los tránsitos de Venus. Pero ningún eclipse anterior había tenido la cobertura mediática y la expectación que el de hoy.
+            </p>
+
+            <p>
+                El eclipse del 12 de agosto de 2026 ha sido bautizado como <strong>“el eclipse del Camino de Santiago”</strong> porque la franja de totalidad cruza varias de las rutas jacobeas, atrayendo a peregrinos y turistas que han hecho coincidir su viaje con este evento astronómico. En ciudades como León, Burgos y Santiago de Compostela se han organizado actividades especiales, conciertos y proyecciones en vivo, convirtiendo la jornada en una fiesta de la ciencia y la cultura.
+            </p>
+
+            <p>
+                Además, el eclipse ha servido como inspiración para artistas, escritores y músicos que han creado obras efímeras para conmemorar la fecha. La combinación de tradición, modernidad y asombro cósmico hace de este 12 de agosto un día inolvidable para la memoria colectiva de España.
+            </p>
+
+            <h2>¿Dónde y cómo verlo en directo si no se puede salir?</h2>
+
+            <p>
+                Para aquellos que por diversas circunstancias no puedan desplazarse o que se encuentren en zonas donde la nubosidad impida la observación, existen múltiples alternativas. La <strong>Real Academia de Ciencias Exactas, Físicas y Naturales</strong> y el <strong>Observatorio Astronómico Nacional</strong> ofrecen retransmisiones en directo a través de sus canales de YouTube y redes sociales, con explicaciones de expertos en tiempo real.
+            </p>
+
+            <p>
+                También hay aplicaciones móviles que permiten seguir la evolución del eclipse paso a paso, e incluso simular el fenómeno con realidad aumentada. Muchos medios de comunicación han desplegado equipos especiales en las zonas más favorecidas para ofrecer imágenes de alta definición y entrevistas a los asistentes, garantizando que nadie se pierda este espectáculo celestial.
+            </p>
+
+            <h2>Consejos prácticos para disfrutar al máximo del evento</h2>
+
+            <p>
+                Si tienes la suerte de estar en la franja de totalidad, aquí tienes algunas recomendaciones para que la experiencia sea inolvidable:
+            </p>
+
+            <ul>
+                <li><strong>Llega con tiempo:</strong> la afluencia de público será masiva, por lo que es mejor buscar un buen punto de observación al menos una hora antes del inicio del eclipse parcial.</li>
+                <li><strong>Prepara tu equipo:</strong> si usas telescopio o cámara, asegúrate de tener los filtros solares adecuados y de practicar el enfoque antes del evento.</li>
+                <li><strong>Observa el entorno:</strong> durante la totalidad, no mires solo al Sol. Fíjate en el horizonte, donde se apreciarán colores anaranjados y rojizos similares a un atardecer de 360 grados.</li>
+                <li><strong>Comparte la emoción:</strong> los eclipses se disfrutan más en compañía. Comenta lo que ves con amigos, familiares o con otros aficionados que estarán a tu alrededor.</li>
+                <li><strong>Protege tus ojos:</strong> repite: nunca mires al Sol sin protección durante las fases parciales. La salud visual es lo primero.</li>
+            </ul>
+
+            <h2>La próxima cita y el legado de este eclipse</h2>
+
+            <p>
+                Después del eclipse de hoy, el próximo gran eclipse solar total visible en España no se producirá hasta el año 2105, lo que hace que este evento sea realmente único para las generaciones actuales. Por ello, muchas familias han organizado viajes especiales para que sus hijos y nietos puedan ser testigos de este fenómeno y guardarlo en la memoria como un hito de sus vidas.
+            </p>
+
+            <p>
+                Además, los datos recogidos hoy servirán para avanzar en el conocimiento de la física solar y para mejorar los modelos de predicción del clima espacial, que tienen aplicaciones directas en la protección de satélites y redes eléctricas. Este eclipse no es solo un espectáculo, sino también un paso adelante en la ciencia.
+            </p>
+
+            <h2>Reflexión final: mirar al cielo para encontrar nuestro lugar</h2>
+
+            <p>
+                En un mundo cada vez más acelerado y urbano, eventos como el eclipse solar total nos recuerdan que vivimos en un planeta que gira alrededor de una estrella, y que hay fuerzas cósmicas mucho más grandes que nuestras preocupaciones cotidianas. La oscuridad repentina, el frescor en el aire y el silencio de la naturaleza nos invitan a la introspección y a la maravilla.
+            </p>
+
+            <p>
+                Hoy, 12 de agosto de 2026, España se convierte en el escenario de un acontecimiento que trasciende fronteras y generaciones. Es una oportunidad para despertar la curiosidad científica en los más jóvenes, para fortalecer los lazos comunitarios y para rendir homenaje a la belleza del universo. Cuando la luz del Sol regrese y el día se restaure, llevaremos en nuestros ojos y en nuestro corazón el recuerdo imborrable de un instante en que la Luna abrazó al Sol y nos regaló un pedazo de eternidad.
+            </p>
+
+            <p>
+                <strong>Que el eclipse de 2026 nos inspire a seguir mirando arriba, a preguntarnos y a soñar.</strong> Porque, al final, somos polvo de estrellas contemplando su propio origen.
+            </p>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="article-footer">
+            <div class="tags">
+                <span>#EclipseSolar2026</span>
+                <span>#EclipseTotal</span>
+                <span>#Astronomía</span>
+                <span>#España</span>
+                <span>#Ciencia</span>
+                <span>#12Agosto2026</span>
+            </div>
+            <div class="share">
+                Compartir en
+                <a href="#">X</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+            </div>
+        </footer>
+
+    </div>
+
+
+<footer>
+    <p>Autor: ROSA EMILY | Fecha: 2026-08-12</p>
+</footer>
+<div class="ultimolive-share">
+<style>
+.ultimolive-share{max-width:960px;margin:24px auto;padding:0 20px;font-family:Arial,Helvetica,sans-serif}
+.ultimolive-share .share-label{margin:0 0 10px;font-size:13px;font-weight:700;color:#333;text-transform:uppercase;letter-spacing:.5px}
+.share-row{display:flex;flex-wrap:wrap;gap:8px}
+.share-row a{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:24px;color:#fff;text-decoration:none;font-size:14px;font-weight:600;transition:opacity .15s}
+.share-row a:hover{opacity:.85}
+.share-wa{background:#25D366}.share-fb{background:#1877F2}.share-tw{background:#111}.share-tg{background:#0088cc}
+.back-portal{display:inline-block;margin-top:14px;font-size:13px;color:#00843d;text-decoration:none;font-weight:600}
+</style>
+<p class="share-label">Comparte este articulo</p>
+<div class="share-row">
+<a class="share-wa" href="https://wa.me/?text=Eclipse%20solar%20total%2012%20agosto%202026%3A%20el%20evento%20astron%C3%B3mico%20del%20siglo%20que%20hoy%20oscurece%20Espa%C3%B1a%20https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Feclipse-solar-total-12-agosto-2026-evento-astronomico-siglo%2F" target="_blank" rel="noopener">WhatsApp</a>
+<a class="share-fb" href="https://www.facebook.com/dialog/share?app_id=2290800501460325&display=popup&href=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Feclipse-solar-total-12-agosto-2026-evento-astronomico-siglo%2F&redirect_uri=https%3A%2F%2Fwww.facebook.com%2F" target="_blank" rel="noopener">Facebook</a>
+<a class="share-tw" href="https://twitter.com/intent/tweet?text=Eclipse%20solar%20total%2012%20agosto%202026%3A%20el%20evento%20astron%C3%B3mico%20del%20siglo%20que%20hoy%20oscurece%20Espa%C3%B1a&url=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Feclipse-solar-total-12-agosto-2026-evento-astronomico-siglo%2F" target="_blank" rel="noopener">X</a>
+<a class="share-tg" href="https://t.me/share/url?url=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Feclipse-solar-total-12-agosto-2026-evento-astronomico-siglo%2F&text=Eclipse%20solar%20total%2012%20agosto%202026%3A%20el%20evento%20astron%C3%B3mico%20del%20siglo%20que%20hoy%20oscurece%20Espa%C3%B1a" target="_blank" rel="noopener">Telegram</a>
+</div>
+<a class="back-portal" href="https://automatico.pages.dev/">Volver al portal</a>
+</div>
+</body>
 </html>

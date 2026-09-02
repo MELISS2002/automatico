@@ -25,3 +25,7 @@ dist-ssr
 __pycache__/
 *.pyc
 .env
+
+# Pipeline creacion diaria - cache temporal
+public/_lote_body.json
+public/imgs_lote/
