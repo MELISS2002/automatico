@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import DOMPurify from 'dompurify';
 import NewsGrid from './components/NewsGrid';
 import ShareButtons from './components/ShareButtons';
+import AdSlot from './components/AdSlot';
 import './App.css';
 
 const SITE_TITLE = 'UltimoLive - Noticias deportivas, resultados y transmisiones en vivo';
@@ -194,6 +195,7 @@ function App() {
               className="html-content"
               dangerouslySetInnerHTML={{ __html: articleContent }}
             />
+            <AdSlot slot="5101762757" className="article-ad" />
             <ShareButtons
               slug={selectedArticle.slug}
               title={selectedArticle.title}

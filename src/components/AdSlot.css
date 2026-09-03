@@ -1,0 +1,12 @@
+/* src/components/AdSlot.css */
+.ad-slot {
+  width: 100%;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  text-align: center;
+  min-height: 0;
+}
+
+.ad-slot .adsbygoogle {
+  min-height: 0;
+}
