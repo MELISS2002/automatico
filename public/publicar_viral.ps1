@@ -7,18 +7,21 @@
 #   powershell -ExecutionPolicy Bypass -File public\publicar_viral.ps1           (lote estandar peruano)
 #   powershell -ExecutionPolicy Bypass -File public\publicar_viral.ps1 -Top 20    (mas items)
 #   powershell -ExecutionPolicy Bypass -File public\publicar_viral.ps1 -NoGit     (solo scrape+build)
-$ErrorActionPreference = "Stop"
-$env:PYTHONIOENCODING = "utf-8"
-
-$base   = "C:\Users\dza\Desktop\automatico-main"
-$tools  = "C:\Users\dza\Desktop\neo\tools"
-$node   = "node"
-
 param(
     [int]$Top = 14,
     [switch]$NoGit,
     [switch]$Pe
 )
+
+# Importante: NO usar "Stop". git escribe su progreso normal (fetch, LF/CRLF) a stderr,
+# y con $ErrorActionPreference=Stop eso lanzaria NativeCommandError abortando en 'From https://...'.
+# Se verifican fallos con $LASTEXITCODE.
+$ErrorActionPreference = "Continue"
+$env:PYTHONIOENCODING = "utf-8"
+
+$base   = "C:\Users\dza\Desktop\automatico-main"
+$tools  = "C:\Users\dza\Desktop\neo\tools"
+$node   = "node"
 
 function Write-Step([string]$msg, [string]$color = "Cyan") {
     Write-Host "`n==> $msg" -ForegroundColor $color
@@ -66,14 +69,30 @@ try {
         Write-Ok "Commit hecho"
 
         Write-Step "5) Push (con rebase + resolucion sitemap)..."
+        $stashed = $false
+        git status --porcelain | Where-Object { $_ -match '^ M' -or $_ -match '^\?\?' } | ForEach-Object { $stashed = $true }
+        if ($stashed) {
+            git stash push -m "viral-pre-push" 2>&1 | Out-Null
+            Write-Ok "Cambios sueltos guardados en stash (se devuelven al final)"
+        }
         git pull --rebase origin main 2>&1 | Out-Null
+        if ($LASTEXITCODE -ne 0) {
+            Write-Warn "Error en pull --rebase (ponte al dia en la rama). Se reintenta con rebase autostash..."
+            git pull --rebase --autostash origin main 2>&1 | Out-Null
+        }
         git checkout --theirs public/sitemap.xml 2>&1 | Out-Null
-        git add public/sitemap.xml 2>&1 | Out-Null
-        git commit -m "Auto: sitemap (theirs)" 2>&1 | Out-Null
+        if ($LASTEXITCODE -eq 0 -and (git diff --name-only --diff-filter=U | Select-String -Quiet 'sitemap')) {
+            git add public/sitemap.xml 2>&1 | Out-Null
+            git -c user.email="auto@ultimolive.dev" -c user.name="auto" commit -m "Auto: sitemap (theirs)" 2>&1 | Out-Null
+        }
         git push origin main
         if ($LASTEXITCODE -ne 0) {
             Write-Warn "Push fallo; reintentando..."
-            git push origin main
+            git push origin main 2>&1 | Out-Null
+        }
+        if ($stashed) {
+            git stash pop 2>&1 | Out-Null
+            Write-Ok "Cambios sueltos devueltos del stash"
         }
         Write-Ok "Push OK -> automatico.pages.dev"
     }
