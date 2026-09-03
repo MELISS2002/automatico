@@ -1,42 +1,90 @@
 [
   {
-    "tema": "Alza del sueldo minimo 2026 en Peru: el MEF anuncia el nuevo monto de la RMV en escalas hasta S/ 1300",
+    "tema": "Perú rompe relaciones diplomáticas con la República Islámica de Irán y aleja a su embajador por el contexto en Medio Oriente",
     "cat": "home",
-    "slug": "alza-sueldo-minimo-2026-rmv-peru-mef-s-1300",
-    "nota": "El Ministerio de Economia y Finanzas (MEF) anuncio un aumento del sueldo minimo (RMV) en Peru para 2026 de forma progresiva en dos etapas. El monto pasara de S/ 1130 a S/ 1300: primero un incremento de S/ 100 y luego otro de S/ 70. El anuncio fue realizado por la presidenta Keiko Fujimori en el Mensaje a la Nacion del 28 de julio. El economista Elmer Cuba, del equipo del MEF, preciso que el aumento es gradual para evitar impacto en la inflacion y en las micro y pequenas empresas (MYPE). Fuente: El Comercio.",
-    "imgs": ["rmv-sueldo-minimo.jpg"],
+    "slug": "peru-rompe-relaciones-diplomaticas-iran-medio-oriente",
+    "nota": "El Gobierno del Perú anunció la ruptura de relaciones diplomáticas con la República Islámica de Irán. La decisión fue comunicada oficialmente y se enmarca en la tensión que vive Medio Oriente. Perú retira a su embajador y se aleja del régimen iraní. La cancillería peruana difundió un comunicado precisando los alcances de la medida y el llamado a su embajador en Teherán. Fuente: El Comercio.",
+    "imgs": ["iran-relaciones.jpg"],
     "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
   },
   {
-    "tema": "Julio Velarde destaca que Peru registra la menor inflacion de la region y elogia la estabilidad monetaria del BCR",
+    "tema": "Gobierno declara en emergencia distritos de 22 regiones por peligro de lluvias intensas ante el Fenómeno El Niño",
     "cat": "home",
-    "slug": "julio-velarde-menor-inflacion-region-estabilidad-bcr",
-    "nota": "El presidente del Banco Central de Reserva del Peru (BCRP), Julio Velarde, destaco que el Peru mantiene la menor inflacion de la region. Resalto la estabilidad monetaria del pais y que, en lo que va del siglo XXI, el Peru ha tenido la inflacion mas baja de America Latina. Velarde, al frente del BCR por mas de 20 anos, fue ratificado por el gobierno de Keiko Fujimori por cinco anos mas en agosto de 2026. Fuente: Diario Correo / RPP / El Comercio.",
-    "imgs": ["velarde-inflacion.jpg"],
+    "slug": "gobierno-emergencia-distritos-22-regiones-el-nino",
+    "nota": "El Gobierno declaró en emergencia a un total de 893 distritos ubicados en 22 regiones del país ante el peligro inminente de lluvias intensas ligadas al Fenómeno El Niño. La medida habilitará la atención de la población vulnerable y la preparación ante posibles desbordes, huaicos e inundaciones. Se priorizan las zonas del norte y sierra del Perú con mayor riesgo hidrometeorológico. La entidad técnica responsable es el INDECI junto a los gobiernos regionales y locales. Fuente: La República.",
+    "imgs": ["emergencia-nino.jpg"],
     "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
   },
   {
-    "tema": "Siderperu despedira a un 13% de sus trabajadores a traves de un proceso de cese colectivo en Chimbote",
+    "tema": "El pollo baja, pero la luz y los combustibles suben: inflación de Lima acumula 4,16% hasta agosto",
     "cat": "home",
-    "slug": "siderperu-cese-colectivo-13-trabajadores-chimbote",
-    "nota": "Siderperu, la empresa mas antigua de acero del Peru, anuncio que reducira su plantilla en un 13%, lo que implica la desvinculacion de 111 trabajadores mediante un proceso de cese colectivo. La compania, con sede en Chimbote, informo a la Superintendencia del Mercado de Valores (SMV) que cierra la linea de negocio de viales, cuya continuidad se ha vuelto inviable por la variacion de la demanda y sus resultados de rentabilidad. Contaba con 896 empleados en julio. El sindicato rechazo la medida. Incluye programas de retiro voluntario. Fuente: RPP / Agencia EFE.",
-    "imgs": ["siderperu-cese.jpg"],
+    "slug": "inflacion-lima-416-agosto-pollo-precios",
+    "nota": "La inflación en Lima Metropolitana acumuló una variación de 4,16% en el presente año hasta agosto. En el último mes la canasta mostró comportamientos mixtos: bajó el precio del pollo, aliviando los costos de las familias, pero subieron la tarifa eléctrica y los combustibles. Estos incrementos presionan sobre la canasta básica. El dato corresponde al INEI y sirve de referencia para evaluar el costo de vida y las expectativas de política monetaria del BCRP. Fuente: La República.",
+    "imgs": ["inflacion-lima.jpg"],
     "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
   },
   {
-    "tema": "MEF descarta que las cuentas de ahorro paguen Impuesto a la Renta tras el vencimiento de la exoneracion en 2026",
+    "tema": "¿Conviene pagar ahora una deuda en dólares ante la caída del tipo de cambio? Esto dicen los expertos",
+    "cat": "home",
+    "slug": "conviene-pagar-deuda-dolares-caida-tipo-cambio",
+    "nota": "Ante la sostenida caída del tipo de cambio en el Perú, muchos usuarios se preguntan si es el momento de cancelar una deuda en dólares. Los analistas financieros señalan que, con un sol más fuerte, comprar dólares para pagar cuotas resulta más barato, pero conviene evaluar el costo financiero total, las comisiones y el momento de mayor liquidez. La recomendación general es amortizar deudas de alto costo antes que las de bajo interés. Se sugiere comparar el tipo de cambio del mercado y evitar asumir un endeudamiento excesivo. Fuente: Andina / Agencia Andina.",
+    "imgs": ["deuda-dolares.jpg"],
+    "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
+  },
+  {
+    "tema": "Congreso pausa debate del crédito suplementario de más de S/9.000 millones: obras, gratificación a CAS y recursos para El Niño quedan en evaluación del MEF",
+    "cat": "home",
+    "slug": "congreso-pausa-credito-suplementario-s9000-millones",
+    "nota": "La Comisión Permanente del Congreso suspendió hasta la noche el debate del crédito suplementario de más de S/9.000 millones. Los pedidos de los congresistas para incluir obras paralizadas, la gratificación de trabajadores CAS, Beca Generación Bicentenario y recursos para atender el Fenómeno El Niño fueron remitidos al MEF para ser evaluados por sus técnicos. El presidente de la Comisión de Presupuesto, Alejandro Soto, advirtió que no todas las solicitudes podrán ser atendidas al tratarse de un crédito suplementario y no de la Ley de Presupuesto. Fuente: RPP.",
+    "imgs": ["credito-suplementario.jpg"],
+    "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
+  },
+  {
+    "tema": "Reportan caso de lepra en Piura: ¿cuál es el tratamiento y cuánto dura?",
+    "cat": "salud",
+    "slug": "caso-lepra-piura-tratamiento-duracion",
+    "nota": "Se reportó un caso de lepra en la región Piura. La lepra, causada por la bacteria Mycobacterium leprae, es una enfermedad infecciosa crónica que afecta principalmente la piel, los nervios periféricos y las mucosas. Tiene tratamiento gratuito y efectivo mediante la poliquimioterapia (PQT) recomendada por la OMS, que cura la enfermedad. El tratamiento suele durar entre 6 y 12 meses y, al ser diagnosticada y tratada a tiempo, deja de ser transmisible. El Minsa insta a acudir al establecimiento de salud más cercano ante manchas en la piel, pérdida de sensibilidad o nódulos. Fuente: ATV.",
+    "imgs": ["lepra-piura.jpg"],
+    "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
+  },
+  {
+    "tema": "Fiscalía interviene boticas y decomisa 879 medicamentos irregulares en Piura: alerta por falsificados, vencidos y sin registro sanitario",
+    "cat": "salud",
+    "slug": "fiscalia-decomisa-879-medicamentos-irregulares-piura",
+    "nota": "La Segunda Fiscalía de Prevención del Delito de Piura ejecutó un operativo conjunto en boticas y farmacias del distrito de Veintiséis de Octubre, donde decomisó 879 unidades entre medicamentos y productos sanitarios presuntamente falsificados, vencidos, de procedencia extranjera, sin registro sanitario o de origen desconocido. Las autoridades exhortaron a la ciudadanía a evitar la compra de medicinas en puestos ambulatorios, ferias o boticas que no exhiban su autorización sanitaria, y a denunciar. El operativo busca desmantelar redes de informalidad que ponen en riesgo la salud pública. Fuente: Exitosa Noticias.",
+    "imgs": ["medicamentos-piura.jpg"],
+    "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
+  },
+  {
+    "tema": "Salud mental en el Perú: depresión, ansiedad, estrés, adicciones y violencia consumen a los peruanos",
+    "cat": "salud",
+    "slug": "salud-mental-peru-depresion-ansiedad-estres",
+    "nota": "Especialistas advierten que la depresión, la ansiedad, el estrés, las adicciones y la violencia afectan cada vez a más peruanos. La salud mental es un componente esencial del bienestar y su descuido incrementa el riesgo de enfermedades físicas y reduce la calidad de vida. El Minsa recomienda mantener rutinas saludables, dormir adecuadamente, hacer ejercicio, fomentar relaciones de apoyo y acudir a un profesional de la psicología como parte del autocuidado, sin esperar a estar en crisis. El primer paso es reconocer las señales de alerta y buscar ayuda temprana. Fuente: La República.",
+    "imgs": ["salud-mental.jpg"],
+    "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
+  },
+  {
+    "tema": "¿Cobras tu pensión de la ONP? Así puedes cambiar de banco y estos son los requisitos",
     "cat": "gana",
-    "slug": "mef-descarta-impuesto-cuentas-ahorro-exoneracion-2026",
-    "nota": "El Ministerio de Economia y Finanzas (MEF) descarto que las cuentas de ahorro paguen Impuesto a la Renta tras el vencimiento de la exoneracion en 2026. La medida se enmarca en el pedido de delegacion de facultades al Ejecutivo. El MEF aclaro que no existen condiciones economicas o fiscales que justifiquen nuevas medidas tributarias sobre los ahorros de las personas. Se espera que la exoneracion de los intereses de las cuentas de ahorro se mantenga. Fuente: RPP.",
-    "imgs": ["mef-ahorro.jpg"],
+    "slug": "cambio-banco-pension-onp-requisitos",
+    "nota": "La ONP permite a los pensionistas cambiar la entidad bancaria donde reciben su pensión de jubilación cada mes, siempre que cumplan con los requisitos. El trámite se realiza de manera gratuita y virtual a través de la plataforma ONP Virtual (onpvirtual.pe), en la sección 'Cobro pensión', seleccionando la opción de cambio de banco. Las entidades autorizadas son Banco de la Nación, BBVA, Interbank, Banco GNB, BanBif y Scotiabank. Antes de elegir, conviene verificar servicios como pago con carta poder o préstamos. Solo se permite cambiar a las entidades autorizadas. Fuente: Exitosa Noticias / ONP.",
+    "imgs": ["onp-cambio-banco.jpg"],
     "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
   },
   {
-    "tema": "Gobierno plantea subsidio cruzado al agua a nivel nacional: usuarios de mayores ingresos financiarian recibos y conexiones de vulnerables",
-    "cat": "home",
-    "slug": "gobierno-subsidio-cruzado-agua-nacional-sunass",
-    "nota": "El gobierno de Keiko Fujimori plantea crear un esquema integral de subsidios cruzados focalizados para los servicios de agua potable y saneamiento con alcance nacional, que beneficiaria a hogares en situacion de pobreza, pobreza extrema y vulnerabilidad. La medida esta incluida en el proyecto de ley de delegacion de facultades y plantea modificar el Decreto Legislativo 1280, Ley del Servicio Universal de Agua Potable y Saneamiento. Los usuarios de mayores ingresos financiarian los recibos y conexiones de los vulnerables. La Sunass desarrolla una mesa tecnica para perfeccionar los esquemas. Fuente: RPP.",
-    "imgs": ["subsidio-agua.jpg"],
+    "tema": "Consumo fantasma: los electrodomésticos que gastan luz estando apagados y cómo reducir tu recibo, según Osinergmin",
+    "cat": "gana",
+    "slug": "consumo-fantasma-electrodomesticos-ahorrar-luz",
+    "nota": "Osinergmin advierte que muchos equipos eléctricos continúan consumiendo energía aun estando apagados si permanecen conectados, fenómeno conocido como 'consumo fantasma', que representa un gasto permanente en el recibo de luz. Para ahorrar, la entidad recomienda desconectar los equipos que no estén en uso, como cargadores, microondas, termas y computadoras; usar planchas a vapor con la carga completa, verificar los sellos del refrigerador y evitar introducir alimentos calientes. Desenchufar los equipos antes de salir de casa reduce el gasto innecesario de electricidad. Fuente: Infobae / Osinergmin.",
+    "imgs": ["ahorro-luz.jpg"],
+    "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
+  },
+  {
+    "tema": "Trabajos remotos en Perú 2026: perfiles digitales con sueldos de hasta S/8.000 y dónde postular",
+    "cat": "gana",
+    "slug": "trabajos-remotos-peru-2026-perfiles-s8000",
+    "nota": "El trabajo remoto sigue creciendo en Perú y para 2026 se consolida como una de las principales formas de empleo digital, con sueldos que pueden llegar hasta los S/8.000 o más según la experiencia. Los perfiles más buscados son analista de datos (S/4.500 a S/8.000, con Excel avanzado, SQL, Power BI o Python), especialista en marketing digital (S/3.500 a S/7.500, con Meta Ads, Google Ads, SEO y analítica), atención al cliente y programación. Se puede postular a través de plataformas como LinkedIn, Indeed, Workana y Upwork. Aprender idiomas suma para conseguir empleo más rápido. Fuente: ATV.",
+    "imgs": ["trabajos-remotos.jpg"],
     "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
   }
 ]
