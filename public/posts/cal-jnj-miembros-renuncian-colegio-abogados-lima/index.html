@@ -1,642 +1,1237 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crisis CAL-JNJ: miembros de la Junta Nacional de Justicia renuncian al Colegio de Abogados de Lima</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
-    <style>
-        *,
-        *::before,
-        *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background: #f2f4f6;
-            color: #1c1e24;
-            line-height: 1.8;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            background: #ffffff;
-            border-radius: 20px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
-            overflow: hidden;
-            padding: 40px 45px;
-        }
-
-        /* Cabecera */
-        .article-header {
-            border-bottom: 3px solid #b8860b;
-            padding-bottom: 28px;
-            margin-bottom: 32px;
-        }
-
-        .category-tag {
-            display: inline-block;
-            background: #1a2a3a;
-            color: #fff;
-            font-size: 0.7rem;
-            font-weight: 700;
-            letter-spacing: 1.2px;
-            text-transform: uppercase;
-            padding: 4px 16px;
-            border-radius: 30px;
-            margin-bottom: 16px;
-        }
-
-        .article-title {
-            font-family: 'Merriweather', serif;
-            font-weight: 900;
-            font-size: 2.8rem;
-            line-height: 1.2;
-            color: #0b1a2a;
-            margin-bottom: 12px;
-        }
-
-        .article-title span {
-            color: #b8860b;
-        }
-
-        .article-meta {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 18px 28px;
-            font-size: 0.9rem;
-            color: #4a5a6e;
-            margin-top: 6px;
-        }
-
-        .article-meta .author {
-            font-weight: 600;
-            color: #1c1e24;
-        }
-
-        .article-meta .date {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .article-meta .date::before {
-            content: "•";
-            color: #b8860b;
-            font-weight: 700;
-            margin-right: 4px;
-        }
-
-        .excerpt-box {
-            background: #f0f2f5;
-            border-left: 5px solid #b8860b;
-            padding: 18px 26px;
-            margin: 18px 0 28px 0;
-            border-radius: 0 10px 10px 0;
-            font-size: 1.1rem;
-            font-weight: 400;
-            color: #1e2b3c;
-            font-style: italic;
-        }
-
-        /* Imagen destacada */
-        .featured-image {
-            width: 100%;
-            border-radius: 14px;
-            margin: 10px 0 30px 0;
-            overflow: hidden;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-        }
-
-        .featured-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.4s ease;
-        }
-
-        .featured-image img:hover {
-            transform: scale(1.01);
-        }
-
-        .featured-image .caption {
-            font-size: 0.8rem;
-            color: #5a6a7e;
-            padding: 10px 14px 4px 14px;
-            text-align: center;
-            background: #f8f9fb;
-            border-top: 1px solid #e2e6ec;
-        }
-
-        /* Cuerpo */
-        .article-body {
-            font-size: 1.06rem;
-            color: #1c2838;
-        }
-
-        .article-body p {
-            margin-bottom: 1.5rem;
-        }
-
-        .article-body h2 {
-            font-family: 'Merriweather', serif;
-            font-weight: 700;
-            font-size: 1.8rem;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            color: #0b1a2a;
-            border-bottom: 2px solid #e2e6ec;
-            padding-bottom: 10px;
-        }
-
-        .article-body h3 {
-            font-family: 'Merriweather', serif;
-            font-weight: 700;
-            font-size: 1.3rem;
-            margin-top: 1.8rem;
-            margin-bottom: 0.8rem;
-            color: #1a2b3f;
-        }
-
-        .article-body blockquote {
-            background: #f0f2f5;
-            border-left: 5px solid #b8860b;
-            padding: 18px 26px;
-            margin: 1.8rem 0;
-            border-radius: 0 10px 10px 0;
-            font-style: italic;
-            font-size: 1.05rem;
-            color: #1e2b3c;
-        }
-
-        .article-body blockquote cite {
-            display: block;
-            margin-top: 10px;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 0.9rem;
-            color: #4a5a6e;
-        }
-
-        .article-body ul,
-        .article-body ol {
-            margin: 0 0 1.5rem 2rem;
-        }
-
-        .article-body li {
-            margin-bottom: 0.5rem;
-        }
-
-        .article-body strong {
-            color: #0b1a2a;
-            font-weight: 700;
-        }
-
-        /* Imagen inline */
-        .inline-image {
-            margin: 2.2rem 0;
-            border-radius: 14px;
-            overflow: hidden;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-        }
-
-        .inline-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .inline-image .caption {
-            font-size: 0.8rem;
-            color: #5a6a7e;
-            padding: 10px 14px 6px 14px;
-            text-align: center;
-            background: #f8f9fb;
-            border-top: 1px solid #e2e6ec;
-        }
-
-        .image-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin: 2.2rem 0;
-        }
-
-        .image-grid .grid-item {
-            border-radius: 14px;
-            overflow: hidden;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
-            background: #f8f9fb;
-        }
-
-        .image-grid .grid-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .image-grid .grid-item .caption {
-            font-size: 0.75rem;
-            color: #5a6a7e;
-            padding: 8px 12px 6px 12px;
-            text-align: center;
-        }
-
-        /* Citas destacadas */
-        .pull-quote {
-            font-family: 'Merriweather', serif;
-            font-weight: 700;
-            font-size: 1.5rem;
-            line-height: 1.4;
-            color: #0b1a2a;
-            padding: 24px 30px;
-            margin: 2rem 0;
-            background: #f0f2f5;
-            border-radius: 14px;
-            border-top: 4px solid #b8860b;
-            border-bottom: 4px solid #b8860b;
-            text-align: center;
-        }
-
-        .pull-quote .source {
-            display: block;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            font-size: 0.9rem;
-            color: #4a5a6e;
-            margin-top: 10px;
-            font-style: normal;
-        }
-
-        /* Pie de artículo */
-        .article-footer {
-            margin-top: 3.5rem;
-            padding-top: 28px;
-            border-top: 2px solid #e2e6ec;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            gap: 16px;
-        }
-
-        .article-footer .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .article-footer .tags span {
-            background: #e8ecf1;
-            color: #1a2b3f;
-            font-size: 0.75rem;
-            font-weight: 600;
-            padding: 4px 16px;
-            border-radius: 30px;
-            letter-spacing: 0.3px;
-        }
-
-        .article-footer .share {
-            font-size: 0.85rem;
-            color: #4a5a6e;
-        }
-
-        .article-footer .share a {
-            color: #0b1a2a;
-            text-decoration: none;
-            font-weight: 600;
-            margin-left: 8px;
-            transition: color 0.2s;
-        }
-
-        .article-footer .share a:hover {
-            color: #b8860b;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .container {
-                padding: 22px 18px;
-            }
-
-            .article-title {
-                font-size: 2rem;
-            }
-
-            .article-body {
-                font-size: 0.98rem;
-            }
-
-            .article-body h2 {
-                font-size: 1.5rem;
-            }
-
-            .image-grid {
-                grid-template-columns: 1fr;
-                gap: 16px;
-            }
-
-            .pull-quote {
-                font-size: 1.2rem;
-                padding: 18px 18px;
-            }
-
-            .article-meta {
-                gap: 10px;
-                font-size: 0.8rem;
-            }
-
-            .excerpt-box {
-                font-size: 1rem;
-                padding: 14px 18px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            body {
-                padding: 10px;
-            }
-
-            .container {
-                padding: 16px 12px;
-                border-radius: 12px;
-            }
-
-            .article-title {
-                font-size: 1.6rem;
-            }
-
-            .article-body {
-                font-size: 0.92rem;
-            }
-
-            .article-body h2 {
-                font-size: 1.3rem;
-            }
-
-            .article-body h3 {
-                font-size: 1.1rem;
-            }
-
-            .featured-image .caption,
-            .inline-image .caption,
-            .image-grid .grid-item .caption {
-                font-size: 0.7rem;
-            }
-
-            .pull-quote {
-                font-size: 1rem;
-                padding: 14px 12px;
-            }
-        }
-    </style>
-    <meta property="og:type" content="article">
-    <meta property="og:site_name" content="UltimoLive">
-    <meta property="og:locale" content="es_ES">
-    <meta property="og:title" content="Crisis CAL-JNJ: miembros de la Junta Nacional de Justicia renuncian al Colegio de Abogados de Lima">
-    <meta property="og:description" content="En un movimiento sin precedentes, varios miembros de la Junta Nacional de Justicia (JNJ) han presentado su renuncia irrevocable al Colegio de Abogados de Lima (CAL), denunciando presión política, inje">
-    <meta property="og:url" content="https://automatico.pages.dev/posts/cal-jnj-miembros-renuncian-colegio-abogados-lima/">
-    <meta property="og:image" content="https://automatico.pages.dev/posts/cal-jnj-miembros-renuncian-colegio-abogados-lima/og-image.jpg">
-    <meta property="article:published_time" content="2026-08-12T12:00:00Z">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Crisis CAL-JNJ: miembros de la Junta Nacional de Justicia renuncian al Colegio de Abogados de Lima">
-    <meta name="twitter:description" content="En un movimiento sin precedentes, varios miembros de la Junta Nacional de Justicia (JNJ) han presentado su renuncia irrevocable al Colegio de Abogados de Lima (CAL), denunciando presión política, inje">
-    <meta name="twitter:image" content="https://automatico.pages.dev/posts/cal-jnj-miembros-renuncian-colegio-abogados-lima/og-image.jpg">
-    <link rel="canonical" href="https://automatico.pages.dev/posts/cal-jnj-miembros-renuncian-colegio-abogados-lima/">
-</head>
-<body>
-
-    <div class="container">
-
-        <!-- HEADER -->
-        <header class="article-header">
-            <div class="category-tag">Política · Justicia · Crisis Institucional</div>
-            <h1 class="article-title">
-                Crisis CAL-JNJ: <span>miembros de la Junta Nacional de Justicia renuncian al Colegio de Abogados de Lima</span>
-            </h1>
-            <div class="article-meta">
-                <span class="author">Redacción Judicial</span>
-                <span class="date">12 de agosto de 2026</span>
-                <span>Tiempo de lectura: 8 min</span>
-            </div>
-            <div class="excerpt-box">
-                En un hecho histórico, varios integrantes de la Junta Nacional de Justicia (JNJ) han presentado su renuncia al Colegio de Abogados de Lima (CAL), argumentando que el gremio ha sido cooptado por intereses políticos y corporativos que atentan contra la independencia judicial. Esta decisión profundiza la crisis entre el organismo encargado de la magistratura y el principal gremio legal del país, y pone en jaque la credibilidad del sistema de justicia peruano.
-            </div>
-        </header>
-
-        <!-- FEATURED IMAGE -->
-        <figure class="featured-image">
-            <img
-            src="https://image.pollinations.ai/prompt/peruvian_justice_crisis_JNJ_CAL_judicial_council_conflict_protest_Lima"
-            alt="Crisis entre la Junta Nacional de Justicia y el Colegio de Abogados de Lima"
-            loading="lazy"
-            />
-            <figcaption class="caption">Vista de la sede del Colegio de Abogados de Lima en el centro histórico, epicentro de la controversia que ha llevado a la renuncia de los miembros de la JNJ.</figcaption>
-        </figure>
-
-        <!-- BODY -->
-        <div class="article-body">
-
-            <p>
-                <strong>La tensión entre la Junta Nacional de Justicia (JNJ) y el Colegio de Abogados de Lima (CAL) ha llegado a un punto de no retorno.</strong> En una decisión inédita que sacude los cimientos de la institucionalidad peruana, varios de los miembros titulares de la JNJ han presentado su renuncia irrevocable a su condición de colegiados en el CAL, el gremio más grande y antiguo del país. La medida, anunciada a través de un comunicado conjunto, es el resultado de un largo desgaste en las relaciones entre ambas entidades, marcado por acusaciones de injerencia, falta de transparencia y una creciente polarización política.
-            </p>
-
-            <p>
-                La renuncia, que aún debe ser formalmente aceptada por el directorio del Colegio de Abogados de Lima, no solo implica un gesto simbólico de descontento, sino que <strong>podría tener consecuencias prácticas</strong> en la habilitación profesional de los miembros de la JNJ, quienes, para ejercer la abogacía en el ámbito de Lima, requieren estar colegiados. Sin embargo, los renunciantes han dejado claro que su prioridad es preservar la autonomía de su función constitucional frente a lo que consideran una “captura corporativa” del gremio.
-            </p>
-
-            <div class="pull-quote">
-                “No podemos permanecer en un gremio que ha perdido su norte ético y se ha convertido en un brazo político de intereses oscuros. La justicia no se negocia, se sirve.”
-                <span class="source">— Fragmento del comunicado de los miembros de la JNJ</span>
-            </div>
-
-            <h2>Antecedentes: una relación envenenada</h2>
-
-            <p>
-                La relación entre la Junta Nacional de Justicia y el Colegio de Abogados de Lima no siempre fue conflictiva. De hecho, el CAL, como gremio con más de 150 años de historia, ha sido tradicionalmente un espacio de discusión y formación para la abogacía peruana. Sin embargo, en los últimos años, el escenario político y judicial ha generado un ambiente de confrontación. La JNJ, creada en el marco de la reforma constitucional de 2018 para reemplazar al cuestionado Consejo Nacional de la Magistratura (CNM), asumió el rol de seleccionar, ratificar y sancionar a jueces y fiscales de todo el país. Este poder, crucial para la independencia judicial, la ha puesto en el centro de las disputas políticas.
-            </p>
-
-            <p>
-                El detonante inmediato de la renuncia masiva se remonta a las últimas elecciones del directorio del CAL, en las que un grupo cercano a ciertas facciones políticas y con vínculos con el Congreso de la República logró hacerse con el control del gremio. Desde entonces, los miembros de la JNJ denunciaron <strong>constantes presiones y campañas de desprestigio</strong> orquestadas desde el CAL, orientadas a cuestionar sus resoluciones y a promover reformas legales que limitarían sus facultades.
-            </p>
-
-            <p>
-                Además, se ha señalado que el CAL habría intentado de manera sistemática desacreditar los procesos de ratificación de jueces y fiscales que la JNJ ha impulsado, generando un clima de hostilidad que, según los renunciantes, ha hecho insostenible su permanencia en el gremio. “El Colegio de Abogados ha dejado de ser un espacio plural para convertirse en un altavoz de intereses particulares”, afirmó uno de los consejeros de la JNJ en una entrevista previa a la decisión.
-            </p>
-
-            <!-- IMAGEN 2 -->
-            <figure class="inline-image">
-                <img
-                src="https://image.pollinations.ai/prompt/Junta_Nacional_de_Justicia_members_resigning_letter_Lima_Bar_Association"
-                alt="Miembros de la JNJ presentando su renuncia al Colegio de Abogados de Lima"
-                loading="lazy"
-                />
-                <figcaption class="caption">Momento en que los miembros de la Junta Nacional de Justicia hicieron pública su carta de renuncia al Colegio de Abogados de Lima, en una conferencia de prensa cargada de simbolismo.</figcaption>
-            </figure>
-
-            <h2>El comunicado de renuncia: argumentos y denuncias</h2>
-
-            <p>
-                El documento de renuncia, de varias páginas, circuló ampliamente en redes sociales y fue leído en su totalidad por los propios afectados. En él, los miembros de la JNJ esgrimen cuatro razones principales:
-            </p>
-
-            <ul>
-                <li><strong>Pérdida de autonomía e independencia del CAL:</strong> denuncian que el actual directorio ha sometido al gremio a los designios del poder político, utilizando la colegiación como un mecanismo de control y presión sobre los operadores de justicia que no se alinean con sus intereses.</li>
-                <li><strong>Hostigamiento sistemático contra la JNJ:</strong> señalan que, desde el CAL, se ha orquestado una campaña mediática y jurídica para deslegitimar las decisiones de la JNJ, incluso presentando demandas sin sustento ante el Tribunal Constitucional y el Congreso.</li>
-                <li><strong>Falta de ética y transparencia en la gestión del gremio:</strong> cuestionan la opacidad en el manejo de los fondos del CAL y la ausencia de mecanismos reales de rendición de cuentas, así como la exclusión de voces críticas en los órganos de gobierno del Colegio.</li>
-                <li><strong>Injerencia en procesos disciplinarios:</strong> afirman que el CAL ha intentado influir en los procedimientos de evaluación y sanción de magistrados, interfiriendo en las funciones constitucionales exclusivas de la JNJ, lo que vulnera la separación de poderes.</li>
-            </ul>
-
-            <p>
-                Los renunciantes enfatizan que su decisión no es un acto de deslealtad a la abogacía, sino un <strong>acto de defensa de la institucionalidad democrática</strong>. “No nos vamos del gremio, nos expulsan moralmente quienes han secuestrado su espíritu. Seguiremos ejerciendo nuestra función con la misma firmeza, pero no avalaremos con nuestra presencia un espacio que se ha vuelto tóxico para la justicia”, declararon.
-            </p>
-
-            <blockquote>
-                “El país no puede permitir que el gremio de los abogados se convierta en un botín político. La renuncia de los miembros de la JNJ es una señal de alarma que no debemos ignorar.”
-                <cite>— Analista constitucional, en comentario para este medio</cite>
-            </blockquote>
-
-            <div class="image-grid">
-                <div class="grid-item">
-                    <img
-                    src="https://image.pollinations.ai/prompt/Colegio_de_Abogados_de_Lima_headquarters_building_conflict"
-                    alt="Sede del Colegio de Abogados de Lima"
-                    loading="lazy"
-                    />
-                    <div class="caption">La fachada de la sede del Colegio de Abogados de Lima, donde hoy se libra una batalla por la legitimidad y la representación.</div>
-                </div>
-                <div class="grid-item">
-                    <img
-                    src="https://image.pollinations.ai/prompt/peruvian_judges_protest_justice_autonomy_crisis"
-                    alt="Jueces y fiscales manifestándose por la autonomía judicial"
-                    loading="lazy"
-                    />
-                    <div class="caption">Magistrados y ciudadanos se han pronunciado en respaldo a la JNJ, exigiendo respeto a su autonomía constitucional.</div>
-                </div>
-            </div>
-
-            <h2>Reacciones políticas y gremiales</h2>
-
-            <p>
-                La noticia no ha tardado en generar un terremoto en el ámbito político y legal. Desde el Congreso de la República, las reacciones han estado divididas. Los voceros de las bancadas de oposición han expresado su respaldo a los miembros de la JNJ, calificando su renuncia como un “acto valiente” y exigiendo la intervención de la Comisión de Justicia para investigar las denuncias contra el CAL. En contraste, sectores cercanos al oficialismo han minimizado el hecho, tildando la renuncia de “berrinche” y señalando que el Colegio de Abogados tiene todo el derecho de ejercer su libertad de expresión.
-            </p>
-
-            <p>
-                Por su parte, el actual decano del Colegio de Abogados de Lima, en una conferencia de prensa urgente, rechazó las acusaciones y calificó la renuncia como “un acto de irresponsabilidad” que afecta la unidad del gremio. “El CAL ha sido siempre una casa abierta al diálogo y al pluralismo. Lamentamos la decisión de los colegas de la JNJ, pero respetamos su derecho a retirarse. Sin embargo, no compartimos sus afirmaciones, que consideramos infundadas y malintencionadas”, manifestó.
-            </p>
-
-            <p>
-                La Asociación de Magistrados del Perú (AMP) y otras organizaciones de la sociedad civil han manifestado su preocupación por la escalada del conflicto. En un comunicado conjunto, instaron a ambas partes a deponer actitudes confrontacionales y a buscar un diálogo constructivo que preserve la estabilidad del sistema de justicia. “Esta crisis no beneficia a nadie. La ciudadanía necesita instituciones fuertes y confiables, no disputas internas que erosionen la fe en el Estado de derecho”, señalaron.
-            </p>
-
-            <h2>Implicancias para la JNJ y el sistema judicial</h2>
-
-            <p>
-                La renuncia de los miembros de la JNJ al CAL plantea varios interrogantes prácticos. En primer lugar, ¿cómo afecta a su estatus legal? La Ley de la JNJ establece que sus miembros deben estar colegiados en un Colegio de Abogados del país para poder ejercer plenamente sus funciones. Si bien la renuncia se ha presentado ante el CAL, los miembros de la JNJ podrían colegiarse en otro Colegio de Abogados del país —por ejemplo, en el Callao o en el Colegio de Abogados de Lima Este— para cumplir con el requisito. Sin embargo, este movimiento podría ser interpretado como una suerte de “exilio” forzado y sería objeto de cuestionamientos legales.
-            </p>
-
-            <p>
-                En segundo lugar, este conflicto podría debilitar la legitimidad de la JNJ ante la opinión pública, al quedar expuesta como un organismo en disputa abierta con uno de los gremios más representativos. No obstante, las encuestas preliminares realizadas por algunos medios digitales muestran que la ciudadanía tiende a respaldar a la JNJ en este conflicto, ya que la percibe como un contrapeso necesario frente a los poderes fácticos y políticos.
-            </p>
-
-            <p>
-                En tercer lugar, la crisis evidencia la <strong>fragmentación del mundo jurídico</strong> peruano, que se encuentra dividido entre quienes abogan por una reforma radical del sistema de justicia y quienes defienden el statu quo. Este quiebre podría extenderse a otros ámbitos, como la Academia y el Ministerio Público, profundizando una polarización que ya se manifiesta en el debate público.
-            </p>
-
-            <h2>El papel del Congreso y la sombra de la reforma constitucional</h2>
-
-            <p>
-                El Congreso de la República, que en los últimos meses ha presentado varios proyectos de ley para modificar la estructura y funciones de la JNJ, podría verse tentado a aprovechar esta crisis para impulsar una reforma constitucional que recorte las atribuciones del organismo. De hecho, algunas bancadas han anunciado que en los próximos días presentarán un proyecto de ley para que los miembros de la JNJ sean elegidos directamente por el Congreso y no mediante un proceso meritocrático con participación ciudadana.
-            </p>
-
-            <p>
-                Este escenario ha sido calificado como “peligroso” por organizaciones de derechos humanos, que advierten que una reforma de ese tipo representaría un <strong>retroceso autoritario</strong> y rompería el equilibrio de poderes. “La JNJ fue creada para despolitizar la justicia. Si el Congreso se apodera de su designación, estaremos ante un nuevo CNM, pero con más apariencia de legalidad. Eso no es aceptable”, sostuvo un representante de la Coordinadora Nacional de Derechos Humanos.
-            </p>
-
-            <p>
-                En este contexto, la renuncia de los miembros de la JNJ al CAL puede ser vista como una jugada defensiva para exponer la presión que vienen sufriendo y para movilizar a la sociedad civil en su defensa. Al dimitir de un gremio que consideran hostil, buscan visibilizar el nivel de confrontación y, tal vez, forzar una mediación que descomprima la situación.
-            </p>
-
-            <h2>¿Qué viene ahora? Escenarios posibles</h2>
-
-            <p>
-                El futuro inmediato es incierto. El primer escenario posible es que el CAL acepte las renuncias y se abra un proceso de diálogo entre ambas entidades, posiblemente con la mediación del Poder Judicial o del Ministerio de Justicia. Sin embargo, el tono beligerante de los últimos comunicados hace que este escenario sea poco probable en el corto plazo.
-            </p>
-
-            <p>
-                Un segundo escenario es que el Congreso intervenga de manera directa, aprobando una ley que modifique los requisitos de colegiación para los miembros de la JNJ o que directamente los exima de esta obligación, buscando zanjar el problema de forma legal. Esta opción, sin embargo, sería vista como una intromisión política que aumentaría la tensión.
-            </p>
-
-            <p>
-                Un tercer escenario, más extremo, es que la renuncia masiva desencadene una <strong>crisis de legitimidad</strong> que lleve a la renuncia colectiva de la JNJ o a la declaración de su nulidad por parte del Tribunal Constitucional, lo que abriría un vacío de poder en la selección y control de magistrados, con graves consecuencias para la lucha contra la corrupción.
-            </p>
-
-            <h2>Reflexión final: la justicia peruana en la encrucijada</h2>
-
-            <p>
-                La renuncia de los miembros de la Junta Nacional de Justicia al Colegio de Abogados de Lima no es un hecho aislado. Es un síntoma de una enfermedad profunda que afecta al sistema de justicia peruano: la <strong>falta de acuerdos básicos</strong> sobre el rol de las instituciones y la creciente politización de los espacios técnicos. Mientras los gremios y los poderes del Estado se enfrentan, la ciudadanía observa con desconfianza y escepticismo, preguntándose si alguna vez la justicia será realmente imparcial.
-            </p>
-
-            <p>
-                Lo que está en juego es más que la pertenencia a un gremio. Está en juego la <strong>credibilidad de la reforma judicial</strong> y la posibilidad de construir un Perú donde las decisiones de los jueces y fiscales se tomen con independencia, sin presiones externas. La sociedad civil, las universidades y los medios de comunicación tienen un rol crucial en este momento: exigir transparencia, fiscalizar a los actores y recordar que la justicia no es un privilegio de unos pocos, sino un derecho de todos.
-            </p>
-
-            <p>
-                Los próximos días serán decisivos. El país espera que la razón y el diálogo prevalezcan sobre la confrontación estéril. Pero, más allá de las palabras, se necesitan acciones concretas que demuestren el compromiso real con un sistema de justicia fuerte, autónomo y al servicio de la población. La crisis CAL-JNJ es, en el fondo, una oportunidad para repensar el pacto social y renovar la confianza en las instituciones que nos rigen.
-            </p>
-
-        </div>
-
-        <!-- FOOTER -->
-        <footer class="article-footer">
-            <div class="tags">
-                <span>#JNJ</span>
-                <span>#CAL</span>
-                <span>#CrisisJudicial</span>
-                <span>#ReformaJudicial</span>
-                <span>#Perú</span>
-                <span>#Justicia</span>
-            </div>
-            <div class="share">
-                Compartir en
-                <a href="#">X</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Facebook</a>
-            </div>
-        </footer>
-
-    </div>
-
-
-<footer>
-    <p>Autor: ROSA EMILY | Fecha: 2026-08-12</p>
-</footer>
-<div class="ultimolive-share">
-<style>
-.ultimolive-share{max-width:960px;margin:24px auto;padding:0 20px;font-family:Arial,Helvetica,sans-serif}
-.ultimolive-share .share-label{margin:0 0 10px;font-size:13px;font-weight:700;color:#333;text-transform:uppercase;letter-spacing:.5px}
-.share-row{display:flex;flex-wrap:wrap;gap:8px}
-.share-row a{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:24px;color:#fff;text-decoration:none;font-size:14px;font-weight:600;transition:opacity .15s}
-.share-row a:hover{opacity:.85}
-.share-wa{background:#25D366}.share-fb{background:#1877F2}.share-tw{background:#111}.share-tg{background:#0088cc}
-.back-portal{display:inline-block;margin-top:14px;font-size:13px;color:#00843d;text-decoration:none;font-weight:600}
-</style>
-<p class="share-label">Comparte este articulo</p>
-<div class="share-row">
-<a class="share-wa" href="https://wa.me/?text=Crisis%20CAL-JNJ%3A%20miembros%20de%20la%20Junta%20Nacional%20de%20Justicia%20renuncian%20al%20Colegio%20de%20Abogados%20de%20Lima%20https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Fcal-jnj-miembros-renuncian-colegio-abogados-lima%2F" target="_blank" rel="noopener">WhatsApp</a>
-<a class="share-fb" href="https://www.facebook.com/dialog/share?app_id=2290800501460325&display=popup&href=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Fcal-jnj-miembros-renuncian-colegio-abogados-lima%2F&redirect_uri=https%3A%2F%2Fwww.facebook.com%2F" target="_blank" rel="noopener">Facebook</a>
-<a class="share-tw" href="https://twitter.com/intent/tweet?text=Crisis%20CAL-JNJ%3A%20miembros%20de%20la%20Junta%20Nacional%20de%20Justicia%20renuncian%20al%20Colegio%20de%20Abogados%20de%20Lima&url=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Fcal-jnj-miembros-renuncian-colegio-abogados-lima%2F" target="_blank" rel="noopener">X</a>
-<a class="share-tg" href="https://t.me/share/url?url=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Fcal-jnj-miembros-renuncian-colegio-abogados-lima%2F&text=Crisis%20CAL-JNJ%3A%20miembros%20de%20la%20Junta%20Nacional%20de%20Justicia%20renuncian%20al%20Colegio%20de%20Abogados%20de%20Lima" target="_blank" rel="noopener">Telegram</a>
-</div>
-<a class="back-portal" href="https://automatico.pages.dev/">Volver al portal</a>
-</div>
-</body>
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Crisis CAL-JNJ: miembros de la Junta Nacional de Justicia renuncian al Colegio de Abogados de Lima</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+
+        *,
+
+        *::before,
+
+        *::after {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+
+
+        body {
+
+            font-family: 'Open Sans', sans-serif;
+
+            background: #f2f4f6;
+
+            color: #1c1e24;
+
+            line-height: 1.8;
+
+            padding: 20px;
+
+        }
+
+
+
+        .container {
+
+            max-width: 1100px;
+
+            margin: 0 auto;
+
+            background: #ffffff;
+
+            border-radius: 20px;
+
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+
+            overflow: hidden;
+
+            padding: 40px 45px;
+
+        }
+
+
+
+        /* Cabecera */
+
+        .article-header {
+
+            border-bottom: 3px solid #b8860b;
+
+            padding-bottom: 28px;
+
+            margin-bottom: 32px;
+
+        }
+
+
+
+        .category-tag {
+
+            display: inline-block;
+
+            background: #1a2a3a;
+
+            color: #fff;
+
+            font-size: 0.7rem;
+
+            font-weight: 700;
+
+            letter-spacing: 1.2px;
+
+            text-transform: uppercase;
+
+            padding: 4px 16px;
+
+            border-radius: 30px;
+
+            margin-bottom: 16px;
+
+        }
+
+
+
+        .article-title {
+
+            font-family: 'Merriweather', serif;
+
+            font-weight: 900;
+
+            font-size: 2.8rem;
+
+            line-height: 1.2;
+
+            color: #0b1a2a;
+
+            margin-bottom: 12px;
+
+        }
+
+
+
+        .article-title span {
+
+            color: #b8860b;
+
+        }
+
+
+
+        .article-meta {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            align-items: center;
+
+            gap: 18px 28px;
+
+            font-size: 0.9rem;
+
+            color: #4a5a6e;
+
+            margin-top: 6px;
+
+        }
+
+
+
+        .article-meta .author {
+
+            font-weight: 600;
+
+            color: #1c1e24;
+
+        }
+
+
+
+        .article-meta .date {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 6px;
+
+        }
+
+
+
+        .article-meta .date::before {
+
+            content: "•";
+
+            color: #b8860b;
+
+            font-weight: 700;
+
+            margin-right: 4px;
+
+        }
+
+
+
+        .excerpt-box {
+
+            background: #f0f2f5;
+
+            border-left: 5px solid #b8860b;
+
+            padding: 18px 26px;
+
+            margin: 18px 0 28px 0;
+
+            border-radius: 0 10px 10px 0;
+
+            font-size: 1.1rem;
+
+            font-weight: 400;
+
+            color: #1e2b3c;
+
+            font-style: italic;
+
+        }
+
+
+
+        /* Imagen destacada */
+
+        .featured-image {
+
+            width: 100%;
+
+            border-radius: 14px;
+
+            margin: 10px 0 30px 0;
+
+            overflow: hidden;
+
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+
+        }
+
+
+
+        .featured-image img {
+
+            width: 100%;
+
+            height: auto;
+
+            display: block;
+
+            transition: transform 0.4s ease;
+
+        }
+
+
+
+        .featured-image img:hover {
+
+            transform: scale(1.01);
+
+        }
+
+
+
+        .featured-image .caption {
+
+            font-size: 0.8rem;
+
+            color: #5a6a7e;
+
+            padding: 10px 14px 4px 14px;
+
+            text-align: center;
+
+            background: #f8f9fb;
+
+            border-top: 1px solid #e2e6ec;
+
+        }
+
+
+
+        /* Cuerpo */
+
+        .article-body {
+
+            font-size: 1.06rem;
+
+            color: #1c2838;
+
+        }
+
+
+
+        .article-body p {
+
+            margin-bottom: 1.5rem;
+
+        }
+
+
+
+        .article-body h2 {
+
+            font-family: 'Merriweather', serif;
+
+            font-weight: 700;
+
+            font-size: 1.8rem;
+
+            margin-top: 2.5rem;
+
+            margin-bottom: 1rem;
+
+            color: #0b1a2a;
+
+            border-bottom: 2px solid #e2e6ec;
+
+            padding-bottom: 10px;
+
+        }
+
+
+
+        .article-body h3 {
+
+            font-family: 'Merriweather', serif;
+
+            font-weight: 700;
+
+            font-size: 1.3rem;
+
+            margin-top: 1.8rem;
+
+            margin-bottom: 0.8rem;
+
+            color: #1a2b3f;
+
+        }
+
+
+
+        .article-body blockquote {
+
+            background: #f0f2f5;
+
+            border-left: 5px solid #b8860b;
+
+            padding: 18px 26px;
+
+            margin: 1.8rem 0;
+
+            border-radius: 0 10px 10px 0;
+
+            font-style: italic;
+
+            font-size: 1.05rem;
+
+            color: #1e2b3c;
+
+        }
+
+
+
+        .article-body blockquote cite {
+
+            display: block;
+
+            margin-top: 10px;
+
+            font-style: normal;
+
+            font-weight: 600;
+
+            font-size: 0.9rem;
+
+            color: #4a5a6e;
+
+        }
+
+
+
+        .article-body ul,
+
+        .article-body ol {
+
+            margin: 0 0 1.5rem 2rem;
+
+        }
+
+
+
+        .article-body li {
+
+            margin-bottom: 0.5rem;
+
+        }
+
+
+
+        .article-body strong {
+
+            color: #0b1a2a;
+
+            font-weight: 700;
+
+        }
+
+
+
+        /* Imagen inline */
+
+        .inline-image {
+
+            margin: 2.2rem 0;
+
+            border-radius: 14px;
+
+            overflow: hidden;
+
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+
+        }
+
+
+
+        .inline-image img {
+
+            width: 100%;
+
+            height: auto;
+
+            display: block;
+
+        }
+
+
+
+        .inline-image .caption {
+
+            font-size: 0.8rem;
+
+            color: #5a6a7e;
+
+            padding: 10px 14px 6px 14px;
+
+            text-align: center;
+
+            background: #f8f9fb;
+
+            border-top: 1px solid #e2e6ec;
+
+        }
+
+
+
+        .image-grid {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 20px;
+
+            margin: 2.2rem 0;
+
+        }
+
+
+
+        .image-grid .grid-item {
+
+            border-radius: 14px;
+
+            overflow: hidden;
+
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+
+            background: #f8f9fb;
+
+        }
+
+
+
+        .image-grid .grid-item img {
+
+            width: 100%;
+
+            height: auto;
+
+            display: block;
+
+        }
+
+
+
+        .image-grid .grid-item .caption {
+
+            font-size: 0.75rem;
+
+            color: #5a6a7e;
+
+            padding: 8px 12px 6px 12px;
+
+            text-align: center;
+
+        }
+
+
+
+        /* Citas destacadas */
+
+        .pull-quote {
+
+            font-family: 'Merriweather', serif;
+
+            font-weight: 700;
+
+            font-size: 1.5rem;
+
+            line-height: 1.4;
+
+            color: #0b1a2a;
+
+            padding: 24px 30px;
+
+            margin: 2rem 0;
+
+            background: #f0f2f5;
+
+            border-radius: 14px;
+
+            border-top: 4px solid #b8860b;
+
+            border-bottom: 4px solid #b8860b;
+
+            text-align: center;
+
+        }
+
+
+
+        .pull-quote .source {
+
+            display: block;
+
+            font-family: 'Open Sans', sans-serif;
+
+            font-weight: 400;
+
+            font-size: 0.9rem;
+
+            color: #4a5a6e;
+
+            margin-top: 10px;
+
+            font-style: normal;
+
+        }
+
+
+
+        /* Pie de artículo */
+
+        .article-footer {
+
+            margin-top: 3.5rem;
+
+            padding-top: 28px;
+
+            border-top: 2px solid #e2e6ec;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 16px;
+
+        }
+
+
+
+        .article-footer .tags {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+        }
+
+
+
+        .article-footer .tags span {
+
+            background: #e8ecf1;
+
+            color: #1a2b3f;
+
+            font-size: 0.75rem;
+
+            font-weight: 600;
+
+            padding: 4px 16px;
+
+            border-radius: 30px;
+
+            letter-spacing: 0.3px;
+
+        }
+
+
+
+        .article-footer .share {
+
+            font-size: 0.85rem;
+
+            color: #4a5a6e;
+
+        }
+
+
+
+        .article-footer .share a {
+
+            color: #0b1a2a;
+
+            text-decoration: none;
+
+            font-weight: 600;
+
+            margin-left: 8px;
+
+            transition: color 0.2s;
+
+        }
+
+
+
+        .article-footer .share a:hover {
+
+            color: #b8860b;
+
+        }
+
+
+
+        /* Responsive */
+
+        @media (max-width: 768px) {
+
+            .container {
+
+                padding: 22px 18px;
+
+            }
+
+
+
+            .article-title {
+
+                font-size: 2rem;
+
+            }
+
+
+
+            .article-body {
+
+                font-size: 0.98rem;
+
+            }
+
+
+
+            .article-body h2 {
+
+                font-size: 1.5rem;
+
+            }
+
+
+
+            .image-grid {
+
+                grid-template-columns: 1fr;
+
+                gap: 16px;
+
+            }
+
+
+
+            .pull-quote {
+
+                font-size: 1.2rem;
+
+                padding: 18px 18px;
+
+            }
+
+
+
+            .article-meta {
+
+                gap: 10px;
+
+                font-size: 0.8rem;
+
+            }
+
+
+
+            .excerpt-box {
+
+                font-size: 1rem;
+
+                padding: 14px 18px;
+
+            }
+
+        }
+
+
+
+        @media (max-width: 480px) {
+
+            body {
+
+                padding: 10px;
+
+            }
+
+
+
+            .container {
+
+                padding: 16px 12px;
+
+                border-radius: 12px;
+
+            }
+
+
+
+            .article-title {
+
+                font-size: 1.6rem;
+
+            }
+
+
+
+            .article-body {
+
+                font-size: 0.92rem;
+
+            }
+
+
+
+            .article-body h2 {
+
+                font-size: 1.3rem;
+
+            }
+
+
+
+            .article-body h3 {
+
+                font-size: 1.1rem;
+
+            }
+
+
+
+            .featured-image .caption,
+
+            .inline-image .caption,
+
+            .image-grid .grid-item .caption {
+
+                font-size: 0.7rem;
+
+            }
+
+
+
+            .pull-quote {
+
+                font-size: 1rem;
+
+                padding: 14px 12px;
+
+            }
+
+        }
+
+    </style>
+
+    <meta property="og:type" content="article">
+
+    <meta property="og:site_name" content="UltimoLive">
+
+    <meta property="og:locale" content="es_ES">
+
+    <meta property="og:title" content="Crisis CAL-JNJ: miembros de la Junta Nacional de Justicia renuncian al Colegio de Abogados de Lima">
+
+    <meta property="og:description" content="En un movimiento sin precedentes, varios miembros de la Junta Nacional de Justicia (JNJ) han presentado su renuncia irrevocable al Colegio de Abogados de Lima (CAL), denunciando presión política, inje">
+
+    <meta property="og:url" content="https://automatico.pages.dev/posts/cal-jnj-miembros-renuncian-colegio-abogados-lima/">
+
+    <meta property="og:image" content="https://automatico.pages.dev/posts/cal-jnj-miembros-renuncian-colegio-abogados-lima/og-image.jpg">
+
+    <meta property="article:published_time" content="2026-08-12T12:00:00Z">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Crisis CAL-JNJ: miembros de la Junta Nacional de Justicia renuncian al Colegio de Abogados de Lima">
+
+    <meta name="twitter:description" content="En un movimiento sin precedentes, varios miembros de la Junta Nacional de Justicia (JNJ) han presentado su renuncia irrevocable al Colegio de Abogados de Lima (CAL), denunciando presión política, inje">
+
+    <meta name="twitter:image" content="https://automatico.pages.dev/posts/cal-jnj-miembros-renuncian-colegio-abogados-lima/og-image.jpg">
+
+    <link rel="canonical" href="https://automatico.pages.dev/posts/cal-jnj-miembros-renuncian-colegio-abogados-lima/">
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+
+
+        <!-- HEADER -->
+
+        <header class="article-header">
+
+            <div class="category-tag">Política · Justicia · Crisis Institucional</div>
+
+            <h1 class="article-title">
+
+                Crisis CAL-JNJ: <span>miembros de la Junta Nacional de Justicia renuncian al Colegio de Abogados de Lima</span>
+
+            </h1>
+
+            <div class="article-meta">
+
+                <span class="author">Redacción Judicial</span>
+
+                <span class="date">12 de agosto de 2026</span>
+
+                <span>Tiempo de lectura: 8 min</span>
+
+            </div>
+
+            <div class="excerpt-box">
+
+                En un hecho histórico, varios integrantes de la Junta Nacional de Justicia (JNJ) han presentado su renuncia al Colegio de Abogados de Lima (CAL), argumentando que el gremio ha sido cooptado por intereses políticos y corporativos que atentan contra la independencia judicial. Esta decisión profundiza la crisis entre el organismo encargado de la magistratura y el principal gremio legal del país, y pone en jaque la credibilidad del sistema de justicia peruano.
+
+            </div>
+
+        </header>
+
+
+
+        <!-- FEATURED IMAGE -->
+
+        <figure class="featured-image">
+
+            <img
+
+            src="https://image.pollinations.ai/prompt/peruvian_justice_crisis_JNJ_CAL_judicial_council_conflict_protest_Lima"
+
+            alt="Crisis entre la Junta Nacional de Justicia y el Colegio de Abogados de Lima"
+
+            loading="lazy"
+
+            />
+
+            <figcaption class="caption">Vista de la sede del Colegio de Abogados de Lima en el centro histórico, epicentro de la controversia que ha llevado a la renuncia de los miembros de la JNJ.</figcaption>
+
+        </figure>
+
+
+
+        <!-- BODY -->
+
+        <div class="article-body">
+
+
+
+            <p>
+
+                <strong>La tensión entre la Junta Nacional de Justicia (JNJ) y el Colegio de Abogados de Lima (CAL) ha llegado a un punto de no retorno.</strong> En una decisión inédita que sacude los cimientos de la institucionalidad peruana, varios de los miembros titulares de la JNJ han presentado su renuncia irrevocable a su condición de colegiados en el CAL, el gremio más grande y antiguo del país. La medida, anunciada a través de un comunicado conjunto, es el resultado de un largo desgaste en las relaciones entre ambas entidades, marcado por acusaciones de injerencia, falta de transparencia y una creciente polarización política.
+
+            </p>
+
+
+
+            <p>
+
+                La renuncia, que aún debe ser formalmente aceptada por el directorio del Colegio de Abogados de Lima, no solo implica un gesto simbólico de descontento, sino que <strong>podría tener consecuencias prácticas</strong> en la habilitación profesional de los miembros de la JNJ, quienes, para ejercer la abogacía en el ámbito de Lima, requieren estar colegiados. Sin embargo, los renunciantes han dejado claro que su prioridad es preservar la autonomía de su función constitucional frente a lo que consideran una “captura corporativa” del gremio.
+
+            </p>
+
+
+
+            <div class="pull-quote">
+
+                “No podemos permanecer en un gremio que ha perdido su norte ético y se ha convertido en un brazo político de intereses oscuros. La justicia no se negocia, se sirve.”
+
+                <span class="source">— Fragmento del comunicado de los miembros de la JNJ</span>
+
+            </div>
+
+
+
+            <h2>Antecedentes: una relación envenenada</h2>
+
+
+
+            <p>
+
+                La relación entre la Junta Nacional de Justicia y el Colegio de Abogados de Lima no siempre fue conflictiva. De hecho, el CAL, como gremio con más de 150 años de historia, ha sido tradicionalmente un espacio de discusión y formación para la abogacía peruana. Sin embargo, en los últimos años, el escenario político y judicial ha generado un ambiente de confrontación. La JNJ, creada en el marco de la reforma constitucional de 2018 para reemplazar al cuestionado Consejo Nacional de la Magistratura (CNM), asumió el rol de seleccionar, ratificar y sancionar a jueces y fiscales de todo el país. Este poder, crucial para la independencia judicial, la ha puesto en el centro de las disputas políticas.
+
+            </p>
+
+
+
+            <p>
+
+                El detonante inmediato de la renuncia masiva se remonta a las últimas elecciones del directorio del CAL, en las que un grupo cercano a ciertas facciones políticas y con vínculos con el Congreso de la República logró hacerse con el control del gremio. Desde entonces, los miembros de la JNJ denunciaron <strong>constantes presiones y campañas de desprestigio</strong> orquestadas desde el CAL, orientadas a cuestionar sus resoluciones y a promover reformas legales que limitarían sus facultades.
+
+            </p>
+
+
+
+            <p>
+
+                Además, se ha señalado que el CAL habría intentado de manera sistemática desacreditar los procesos de ratificación de jueces y fiscales que la JNJ ha impulsado, generando un clima de hostilidad que, según los renunciantes, ha hecho insostenible su permanencia en el gremio. “El Colegio de Abogados ha dejado de ser un espacio plural para convertirse en un altavoz de intereses particulares”, afirmó uno de los consejeros de la JNJ en una entrevista previa a la decisión.
+
+            </p>
+
+
+
+            <!-- IMAGEN 2 -->
+
+            <figure class="inline-image">
+
+                <img
+
+                src="https://image.pollinations.ai/prompt/Junta_Nacional_de_Justicia_members_resigning_letter_Lima_Bar_Association"
+
+                alt="Miembros de la JNJ presentando su renuncia al Colegio de Abogados de Lima"
+
+                loading="lazy"
+
+                />
+
+                <figcaption class="caption">Momento en que los miembros de la Junta Nacional de Justicia hicieron pública su carta de renuncia al Colegio de Abogados de Lima, en una conferencia de prensa cargada de simbolismo.</figcaption>
+
+            </figure>
+
+
+
+            <h2>El comunicado de renuncia: argumentos y denuncias</h2>
+
+
+
+            <p>
+
+                El documento de renuncia, de varias páginas, circuló ampliamente en redes sociales y fue leído en su totalidad por los propios afectados. En él, los miembros de la JNJ esgrimen cuatro razones principales:
+
+            </p>
+
+
+
+            <ul>
+
+                <li><strong>Pérdida de autonomía e independencia del CAL:</strong> denuncian que el actual directorio ha sometido al gremio a los designios del poder político, utilizando la colegiación como un mecanismo de control y presión sobre los operadores de justicia que no se alinean con sus intereses.</li>
+
+                <li><strong>Hostigamiento sistemático contra la JNJ:</strong> señalan que, desde el CAL, se ha orquestado una campaña mediática y jurídica para deslegitimar las decisiones de la JNJ, incluso presentando demandas sin sustento ante el Tribunal Constitucional y el Congreso.</li>
+
+                <li><strong>Falta de ética y transparencia en la gestión del gremio:</strong> cuestionan la opacidad en el manejo de los fondos del CAL y la ausencia de mecanismos reales de rendición de cuentas, así como la exclusión de voces críticas en los órganos de gobierno del Colegio.</li>
+
+                <li><strong>Injerencia en procesos disciplinarios:</strong> afirman que el CAL ha intentado influir en los procedimientos de evaluación y sanción de magistrados, interfiriendo en las funciones constitucionales exclusivas de la JNJ, lo que vulnera la separación de poderes.</li>
+
+            </ul>
+
+
+
+            <p>
+
+                Los renunciantes enfatizan que su decisión no es un acto de deslealtad a la abogacía, sino un <strong>acto de defensa de la institucionalidad democrática</strong>. “No nos vamos del gremio, nos expulsan moralmente quienes han secuestrado su espíritu. Seguiremos ejerciendo nuestra función con la misma firmeza, pero no avalaremos con nuestra presencia un espacio que se ha vuelto tóxico para la justicia”, declararon.
+
+            </p>
+
+
+
+            <blockquote>
+
+                “El país no puede permitir que el gremio de los abogados se convierta en un botín político. La renuncia de los miembros de la JNJ es una señal de alarma que no debemos ignorar.”
+
+                <cite>— Analista constitucional, en comentario para este medio</cite>
+
+            </blockquote>
+
+
+
+            <div class="image-grid">
+
+                <div class="grid-item">
+
+                    <img
+
+                    src="https://image.pollinations.ai/prompt/Colegio_de_Abogados_de_Lima_headquarters_building_conflict"
+
+                    alt="Sede del Colegio de Abogados de Lima"
+
+                    loading="lazy"
+
+                    />
+
+                    <div class="caption">La fachada de la sede del Colegio de Abogados de Lima, donde hoy se libra una batalla por la legitimidad y la representación.</div>
+
+                </div>
+
+                <div class="grid-item">
+
+                    <img
+
+                    src="https://image.pollinations.ai/prompt/peruvian_judges_protest_justice_autonomy_crisis"
+
+                    alt="Jueces y fiscales manifestándose por la autonomía judicial"
+
+                    loading="lazy"
+
+                    />
+
+                    <div class="caption">Magistrados y ciudadanos se han pronunciado en respaldo a la JNJ, exigiendo respeto a su autonomía constitucional.</div>
+
+                </div>
+
+            </div>
+
+
+
+            <h2>Reacciones políticas y gremiales</h2>
+
+
+
+            <p>
+
+                La noticia no ha tardado en generar un terremoto en el ámbito político y legal. Desde el Congreso de la República, las reacciones han estado divididas. Los voceros de las bancadas de oposición han expresado su respaldo a los miembros de la JNJ, calificando su renuncia como un “acto valiente” y exigiendo la intervención de la Comisión de Justicia para investigar las denuncias contra el CAL. En contraste, sectores cercanos al oficialismo han minimizado el hecho, tildando la renuncia de “berrinche” y señalando que el Colegio de Abogados tiene todo el derecho de ejercer su libertad de expresión.
+
+            </p>
+
+
+
+            <p>
+
+                Por su parte, el actual decano del Colegio de Abogados de Lima, en una conferencia de prensa urgente, rechazó las acusaciones y calificó la renuncia como “un acto de irresponsabilidad” que afecta la unidad del gremio. “El CAL ha sido siempre una casa abierta al diálogo y al pluralismo. Lamentamos la decisión de los colegas de la JNJ, pero respetamos su derecho a retirarse. Sin embargo, no compartimos sus afirmaciones, que consideramos infundadas y malintencionadas”, manifestó.
+
+            </p>
+
+
+
+            <p>
+
+                La Asociación de Magistrados del Perú (AMP) y otras organizaciones de la sociedad civil han manifestado su preocupación por la escalada del conflicto. En un comunicado conjunto, instaron a ambas partes a deponer actitudes confrontacionales y a buscar un diálogo constructivo que preserve la estabilidad del sistema de justicia. “Esta crisis no beneficia a nadie. La ciudadanía necesita instituciones fuertes y confiables, no disputas internas que erosionen la fe en el Estado de derecho”, señalaron.
+
+            </p>
+
+
+
+            <h2>Implicancias para la JNJ y el sistema judicial</h2>
+
+
+
+            <p>
+
+                La renuncia de los miembros de la JNJ al CAL plantea varios interrogantes prácticos. En primer lugar, ¿cómo afecta a su estatus legal? La Ley de la JNJ establece que sus miembros deben estar colegiados en un Colegio de Abogados del país para poder ejercer plenamente sus funciones. Si bien la renuncia se ha presentado ante el CAL, los miembros de la JNJ podrían colegiarse en otro Colegio de Abogados del país —por ejemplo, en el Callao o en el Colegio de Abogados de Lima Este— para cumplir con el requisito. Sin embargo, este movimiento podría ser interpretado como una suerte de “exilio” forzado y sería objeto de cuestionamientos legales.
+
+            </p>
+
+
+
+            <p>
+
+                En segundo lugar, este conflicto podría debilitar la legitimidad de la JNJ ante la opinión pública, al quedar expuesta como un organismo en disputa abierta con uno de los gremios más representativos. No obstante, las encuestas preliminares realizadas por algunos medios digitales muestran que la ciudadanía tiende a respaldar a la JNJ en este conflicto, ya que la percibe como un contrapeso necesario frente a los poderes fácticos y políticos.
+
+            </p>
+
+
+
+            <p>
+
+                En tercer lugar, la crisis evidencia la <strong>fragmentación del mundo jurídico</strong> peruano, que se encuentra dividido entre quienes abogan por una reforma radical del sistema de justicia y quienes defienden el statu quo. Este quiebre podría extenderse a otros ámbitos, como la Academia y el Ministerio Público, profundizando una polarización que ya se manifiesta en el debate público.
+
+            </p>
+
+
+
+            <h2>El papel del Congreso y la sombra de la reforma constitucional</h2>
+
+
+
+            <p>
+
+                El Congreso de la República, que en los últimos meses ha presentado varios proyectos de ley para modificar la estructura y funciones de la JNJ, podría verse tentado a aprovechar esta crisis para impulsar una reforma constitucional que recorte las atribuciones del organismo. De hecho, algunas bancadas han anunciado que en los próximos días presentarán un proyecto de ley para que los miembros de la JNJ sean elegidos directamente por el Congreso y no mediante un proceso meritocrático con participación ciudadana.
+
+            </p>
+
+
+
+            <p>
+
+                Este escenario ha sido calificado como “peligroso” por organizaciones de derechos humanos, que advierten que una reforma de ese tipo representaría un <strong>retroceso autoritario</strong> y rompería el equilibrio de poderes. “La JNJ fue creada para despolitizar la justicia. Si el Congreso se apodera de su designación, estaremos ante un nuevo CNM, pero con más apariencia de legalidad. Eso no es aceptable”, sostuvo un representante de la Coordinadora Nacional de Derechos Humanos.
+
+            </p>
+
+
+
+            <p>
+
+                En este contexto, la renuncia de los miembros de la JNJ al CAL puede ser vista como una jugada defensiva para exponer la presión que vienen sufriendo y para movilizar a la sociedad civil en su defensa. Al dimitir de un gremio que consideran hostil, buscan visibilizar el nivel de confrontación y, tal vez, forzar una mediación que descomprima la situación.
+
+            </p>
+
+
+
+            <h2>¿Qué viene ahora? Escenarios posibles</h2>
+
+
+
+            <p>
+
+                El futuro inmediato es incierto. El primer escenario posible es que el CAL acepte las renuncias y se abra un proceso de diálogo entre ambas entidades, posiblemente con la mediación del Poder Judicial o del Ministerio de Justicia. Sin embargo, el tono beligerante de los últimos comunicados hace que este escenario sea poco probable en el corto plazo.
+
+            </p>
+
+
+
+            <p>
+
+                Un segundo escenario es que el Congreso intervenga de manera directa, aprobando una ley que modifique los requisitos de colegiación para los miembros de la JNJ o que directamente los exima de esta obligación, buscando zanjar el problema de forma legal. Esta opción, sin embargo, sería vista como una intromisión política que aumentaría la tensión.
+
+            </p>
+
+
+
+            <p>
+
+                Un tercer escenario, más extremo, es que la renuncia masiva desencadene una <strong>crisis de legitimidad</strong> que lleve a la renuncia colectiva de la JNJ o a la declaración de su nulidad por parte del Tribunal Constitucional, lo que abriría un vacío de poder en la selección y control de magistrados, con graves consecuencias para la lucha contra la corrupción.
+
+            </p>
+
+
+
+            <h2>Reflexión final: la justicia peruana en la encrucijada</h2>
+
+
+
+            <p>
+
+                La renuncia de los miembros de la Junta Nacional de Justicia al Colegio de Abogados de Lima no es un hecho aislado. Es un síntoma de una enfermedad profunda que afecta al sistema de justicia peruano: la <strong>falta de acuerdos básicos</strong> sobre el rol de las instituciones y la creciente politización de los espacios técnicos. Mientras los gremios y los poderes del Estado se enfrentan, la ciudadanía observa con desconfianza y escepticismo, preguntándose si alguna vez la justicia será realmente imparcial.
+
+            </p>
+
+
+
+            <p>
+
+                Lo que está en juego es más que la pertenencia a un gremio. Está en juego la <strong>credibilidad de la reforma judicial</strong> y la posibilidad de construir un Perú donde las decisiones de los jueces y fiscales se tomen con independencia, sin presiones externas. La sociedad civil, las universidades y los medios de comunicación tienen un rol crucial en este momento: exigir transparencia, fiscalizar a los actores y recordar que la justicia no es un privilegio de unos pocos, sino un derecho de todos.
+
+            </p>
+
+
+
+            <p>
+
+                Los próximos días serán decisivos. El país espera que la razón y el diálogo prevalezcan sobre la confrontación estéril. Pero, más allá de las palabras, se necesitan acciones concretas que demuestren el compromiso real con un sistema de justicia fuerte, autónomo y al servicio de la población. La crisis CAL-JNJ es, en el fondo, una oportunidad para repensar el pacto social y renovar la confianza en las instituciones que nos rigen.
+
+            </p>
+
+
+
+        </div>
+
+
+
+        <!-- FOOTER -->
+
+        <footer class="article-footer">
+
+            <div class="tags">
+
+                <span>#JNJ</span>
+
+                <span>#CAL</span>
+
+                <span>#CrisisJudicial</span>
+
+                <span>#ReformaJudicial</span>
+
+                <span>#Perú</span>
+
+                <span>#Justicia</span>
+
+            </div>
+
+            
+
+        </footer>
+
+
+
+    </div>
+
+
+
+
+
+<footer>
+
+    <p>Autor: ROSA EMILY | Fecha: 2026-08-12</p>
+
+</footer>
+
+
+
+</body>
+
 </html>

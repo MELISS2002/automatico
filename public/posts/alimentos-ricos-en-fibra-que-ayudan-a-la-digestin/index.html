@@ -1,263 +1,489 @@
-<!DOCTYPE html><html lang="es"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Alimentos ricos en fibra para una digestión saludable</title> <style> * { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
-background: #f2f7f0;
-color: #1e2b2a;
-line-height: 1.7;
-padding: 2rem 1rem;
-}
-.container {
-max-width: 880px;
-margin: 0 auto;
-background: #ffffff;
-border-radius: 32px;
-box-shadow: 0 20px 60px rgba(30, 60, 40, 0.08);
-padding: 2.5rem 2rem;
-transition: all 0.2s;
-}
-h1 {
-font-size: 2.4rem;
-font-weight: 700;
-letter-spacing: -0.02em;
-line-height: 1.2;
-color: #1a3a2e;
-margin-bottom: 0.5rem;
-}
-.excerpt {
-font-size: 1.15rem;
-color: #2d5a47;
-border-left: 5px solid #5fad7a;
-padding-left: 1.5rem;
-margin: 1.2rem 0 2rem 0;
-background: #eef9ed;
-border-radius: 0 12px 12px 0;
-padding: 1.2rem 1.5rem;
-}
-.meta {
-display: flex;
-gap: 1.5rem;
-font-size: 0.9rem;
-color: #4d6b5a;
-border-bottom: 2px solid #dce8da;
-padding-bottom: 1rem;
-margin-bottom: 2rem;
-flex-wrap: wrap;
-}
-.meta span {
-display: flex;
-align-items: center;
-gap: 0.4rem;
-}
-h2 {
-font-size: 1.8rem;
-font-weight: 600;
-margin-top: 2.8rem;
-margin-bottom: 1rem;
-color: #1a402f;
-border-bottom: 3px solid #d4e8d0;
-padding-bottom: 0.5rem;
-}
-h3 {
-font-size: 1.3rem;
-font-weight: 600;
-margin-top: 2rem;
-margin-bottom: 0.6rem;
-color: #26533c;
-}
-p {
-margin-bottom: 1.3rem;
-font-size: 1.05rem;
-}
-ul, ol {
-margin: 1rem 0 1.8rem 2rem;
-}
-li {
-margin-bottom: 0.6rem;
-font-size: 1.02rem;
-}
-.image-wrap {
-margin: 2.2rem 0;
-border-radius: 20px;
-overflow: hidden;
-box-shadow: 0 8px 30px rgba(0, 30, 10, 0.06);
-background: #f6fbf5;
-text-align: center;
-}
-.image-wrap img {
-width: 100%;
-height: auto;
-display: block;
-transition: transform 0.3s ease;
-}
-.image-wrap img:hover {
-transform: scale(1.01);
-}
-.image-caption {
-padding: 0.8rem 1rem 1rem;
-font-size: 0.95rem;
-color: #3d5f4a;
-background: #f8fcf7;
-border-top: 1px solid #e2efe0;
-font-style: italic;
-}
-.highlight-box {
-background: #ecf7ea;
-padding: 1.5rem 2rem;
-border-radius: 20px;
-margin: 2rem 0;
-border-left: 6px solid #3f9e5a;
-}
-.highlight-box strong {
-color: #1c6a33;
-}
-.food-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-gap: 1.5rem;
-margin: 2rem 0;
-}
-.food-item {
-background: #f7fcf6;
-padding: 1.5rem 1rem;
-border-radius: 18px;
-border: 1px solid #d4e8d0;
-text-align: center;
-transition: 0.2s;
-}
-.food-item:hover {
-background: #eff9ec;
-border-color: #9bc7a7;
-transform: translateY(-2px);
-}
-.food-item .emoji-big {
-font-size: 2.6rem;
-display: block;
-margin-bottom: 0.3rem;
-}
-.food-item h4 {
-font-size: 1.1rem;
-margin-bottom: 0.3rem;
-color: #1a402f;
-}
-.food-item .fibra-cantidad {
-font-size: 0.9rem;
-color: #3b6b4a;
-background: #dcefda;
-display: inline-block;
-padding: 0.2rem 1rem;
-border-radius: 30px;
-margin-top: 0.3rem;
-}
-.btn {
-display: inline-block;
-background: #2b6b41;
-color: white;
-padding: 0.7rem 2rem;
-border-radius: 40px;
-text-decoration: none;
-font-weight: 600;
-margin-top: 0.5rem;
-transition: background 0.2s;
-}
-.btn:hover {
-background: #1b4f2f;
-}
-footer {
-margin-top: 3.5rem;
-padding-top: 2rem;
-border-top: 2px solid #dce8da;
-font-size: 0.95rem;
-color: #4d6b5a;
-text-align: center;
-}
-table {
-width: 100%;
-border-collapse: collapse;
-margin: 1.5rem 0 2rem;
-background: #f8fcf7;
-border-radius: 16px;
-overflow: hidden;
-font-size: 0.98rem;
-}
-th {
-background: #1e4d32;
-color: white;
-padding: 12px 16px;
-text-align: left;
-}
-td {
-padding: 12px 16px;
-border-bottom: 1px solid #ddecdb;
-}
-tr:last-child td {
-border-bottom: none;
-}
-@media (max-width: 640px) {
-body {
-padding: 1rem 0.8rem;
-}
-.container {
-padding: 1.8rem 1.2rem;
-}
-h1 {
-font-size: 1.9rem;
-}
-.excerpt {
-font-size: 1rem;
-padding: 1rem;
-}
-h2 {
-font-size: 1.5rem;
-}
-.food-grid {
-grid-template-columns: 1fr 1fr;
-}
-.meta {
-flex-direction: column;
-gap: 0.4rem;
-}
-}
-@media (max-width: 480px) {
-.food-grid {
-grid-template-columns: 1fr;
-}
-}
-@media (min-width: 1200px) {
-.container {
-padding: 3.5rem 3.5rem;
-}
-}
-</style>
-    <meta property="og:type" content="article">
-    <meta property="og:site_name" content="UltimoLive">
-    <meta property="og:locale" content="es_ES">
-    <meta property="og:title" content="Alimentos ricos en fibra que ayudan a la digestión: guía completa para un tránsito intestinal saludable">
-    <meta property="og:description" content="La fibra es la aliada silenciosa de tu sistema digestivo. Descubre los alimentos más ricos en fibra, cómo incorporarlos a tu dieta diaria y los beneficios que aportan a tu salud intestinal sin necesid">
-    <meta property="og:url" content="https://automatico.pages.dev/posts/alimentos-ricos-en-fibra-que-ayudan-a-la-digestin/">
-    <meta property="og:image" content="https://automatico.pages.dev/posts/alimentos-ricos-en-fibra-que-ayudan-a-la-digestin/og-image.jpg">
-    <meta property="article:published_time" content="2026-08-19T12:00:00Z">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Alimentos ricos en fibra que ayudan a la digestión: guía completa para un tránsito intestinal saludable">
-    <meta name="twitter:description" content="La fibra es la aliada silenciosa de tu sistema digestivo. Descubre los alimentos más ricos en fibra, cómo incorporarlos a tu dieta diaria y los beneficios que aportan a tu salud intestinal sin necesid">
-    <meta name="twitter:image" content="https://automatico.pages.dev/posts/alimentos-ricos-en-fibra-que-ayudan-a-la-digestin/og-image.jpg">
-    <link rel="canonical" href="https://automatico.pages.dev/posts/alimentos-ricos-en-fibra-que-ayudan-a-la-digestin/">
-</head> <body> <div class="container"> <h1>Alimentos ricos en fibra que ayudan a la digestión</h1> <div class="excerpt"> La fibra es la aliada silenciosa de tu sistema digestivo. Descubre los alimentos más ricos en fibra, cómo incorporarlos a tu dieta diaria y los beneficios que aportan a tu salud intestinal sin necesidad de cambios drásticos. </div> <div class="meta"> <span> Nutrición y bienestar</span> <span> 19 de agosto de 2026</span> <span>⏱ Lectura: 8 min</span> </div> <!-- Imagen 1: concepto general de fibra --> <div class="image-wrap"> <img src="https://image.pollinations.ai/prompt/variety%20of%20high%20fiber%20foods%20vegetables%20legumes%20whole%20grains%20colorful%20arrangement?width=1200&height=630&nologo=true" alt="Variedad de alimentos ricos en fibra" loading="lazy" /> <div class="image-caption">Frutas, verduras, legumbres y cereales integrales: la despensa de la fibra saludable.</div> </div> <p>La fibra dietética es un componente fundamental de una alimentación equilibrada, pero a menudo se subestima su papel en la salud digestiva. No solo ayuda a regular el tránsito intestinal, sino que también influye en la microbiota, el control del peso y la prevención de enfermedades crónicas. Sin embargo, <strong>la mayoría de las personas no consumen la cantidad diaria recomendada</strong> (unos 25-30 gramos al día). La buena noticia es que incorporar alimentos ricos en fibra no requiere una transformación radical; basta con conocer cuáles son y cómo integrarlos de manera sencilla en tus comidas.</p> <h2>¿Qué es la fibra y por qué es tan importante?</h2> <p>La fibra es un tipo de carbohidrato que el cuerpo no puede digerir. A diferencia de otros nutrientes, no se descompone ni se absorbe, sino que viaja a través del sistema digestivo, arrastrando consigo residuos y favoreciendo la formación de heces. Se clasifica en dos grandes grupos:</p> <ul> <li><strong>Fibra soluble:</strong> se disuelve en agua y forma un gel que ralentiza la digestión. Ayuda a controlar el azúcar en sangre y reduce el colesterol. Se encuentra en avena, legumbres, frutas como manzanas y cítricos, y en algunas verduras.</li> <li><strong>Fibra insoluble:</strong> no se disuelve en agua y añade volumen a las heces, favoreciendo el tránsito intestinal. Está presente en cereales integrales, frutos secos, y en la piel de frutas y verduras.</li> </ul> <div class="highlight-box"> <strong> Dato clave:</strong> La fibra insoluble es la "escoba" intestinal, mientras que la soluble actúa como una esponja que regula la absorción de nutrientes. Ambas son necesarias para un intestino sano. </div> <h2>Los 10 alimentos más ricos en fibra que deberías incluir en tu dieta</h2> <div class="food-grid"> <div class="food-item"> <span class="emoji-big"></span> <h4>Lentejas</h4> <span class="fibra-cantidad">15,6 g/100g</span> <p style="font-size:0.9rem; margin-top:0.3rem;">Excelente fuente de fibra soluble e insoluble.</p> </div> <div class="food-item"> <span class="emoji-big"></span> <h4>Salvado de trigo</h4> <span class="fibra-cantidad">42,8 g/100g</span> <p style="font-size:0.9rem; margin-top:0.3rem;">Uno de los campeones en fibra insoluble.</p> </div> <div class="food-item"> <span class="emoji-big"></span> <h4>Pera (con piel)</h4> <span class="fibra-cantidad">3,1 g/100g</span> <p style="font-size:0.9rem; margin-top:0.3rem;">Rica en fibra soluble y antioxidantes.</p> </div> <div class="food-item"> <span class="emoji-big"></span> <h4>Aguacate</h4> <span class="fibra-cantidad">6,7 g/100g</span> <p style="font-size:0.9rem; margin-top:0.3rem;">Grasas saludables + alta fibra.</p> </div> <div class="food-item"> <span class="emoji-big"></span> <h4>Frambuesas</h4> <span class="fibra-cantidad">6,5 g/100g</span> <p style="font-size:0.9rem; margin-top:0.3rem;">Pequeñas pero muy ricas en fibra.</p> </div> <div class="food-item"> <span class="emoji-big"></span> <h4>Coles de Bruselas</h4> <span class="fibra-cantidad">3,8 g/100g</span> <p style="font-size:0.9rem; margin-top:0.3rem;">Verdura crucífera con gran aporte.</p> </div> </div> <!-- Imagen 2: legumbres y cereales --> <div class="image-wrap"> <img src="https://image.pollinations.ai/prompt/assorted%20legumes%20beans%20lentils%20chickpeas%20and%20whole%20grains%20bowls?width=1200&height=630&nologo=true" alt="Legumbres y cereales integrales" loading="lazy" /> <div class="image-caption">Legumbres y cereales integrales son la base de una dieta rica en fibra.</div> </div> <h3>Más alimentos destacados</h3> <ul> <li><strong>Garbanzos:</strong> 7,6 g/100g. Versátiles y deliciosos en ensaladas, hummus o guisos.</li> <li><strong>Quinoa:</strong> 2,8 g/100g, pero su fibra es de alta calidad y contiene todos los aminoácidos esenciales.</li> <li><strong>Almendras:</strong> 12,5 g/100g. Un puñado al día aporta fibra y grasas insaturadas.</li> <li><strong>Brócoli:</strong> 2,6 g/100g, rico en fibra insoluble y compuestos azufrados beneficiosos.</li> <li><strong>Manzana con piel:</strong> 2,4 g/100g. La pectina que contiene es una fibra soluble excelente.</li> </ul> <h2>Beneficios de la fibra para la digestión (y más allá)</h2> <p>Incluir fibra en la dieta no solo mejora el estreñimiento. Sus beneficios son sistémicos:</p> <ul> <li><strong>Regulación del tránsito intestinal:</strong> La fibra insoluble aumenta el volumen de las heces y acelera el paso por el colon, mientras que la soluble la suaviza.</li> <li><strong>Alimenta la microbiota:</strong> La fibra fermentable (prebiótica) nutre a las bacterias buenas del intestino, fortaleciendo el sistema inmune y reduciendo la inflamación.</li> <li><strong>Control de peso:</strong> Aporta saciedad sin calorías, lo que ayuda a controlar el apetito y evitar picoteos.</li> <li><strong>Salud cardiovascular:</strong> Ayuda a reducir el colesterol LDL y mejora la sensibilidad a la insulina.</li> <li><strong>Prevención de enfermedades:</strong> Una dieta alta en fibra se asocia con menor riesgo de diabetes tipo 2, cáncer colorrectal y enfermedades del corazón.</li> </ul> <div class="highlight-box"> <strong> Consejo:</strong> Aumenta la ingesta de fibra de forma gradual y bebe suficiente agua (al menos 1,5-2 litros al día) para evitar molestias como hinchazón o gases. El agua ayuda a que la fibra cumpla su función sin causar obstrucciones. </div> <!-- Tabla comparativa de alimentos --> <h3>Comparativa rápida de contenido en fibra (por 100 g)</h3> <table> <thead> <tr> <th>Alimento</th> <th>Fibra total (g)</th> <th>Tipo predominante</th> </tr> </thead> <tbody> <tr><td>Salvado de trigo</td><td>42,8</td><td>Insoluble</td></tr> <tr><td>Lentejas (cocidas)</td><td>7,9</td><td>Mixta</td></tr> <tr><td>Garbanzos (cocidos)</td><td>7,6</td><td>Mixta</td></tr> <tr><td>Aguacate</td><td>6,7</td><td>Soluble</td></tr> <tr><td>Frambuesas</td><td>6,5</td><td>Soluble</td></tr> <tr><td>Almendras</td><td>12,5</td><td>Insoluble</td></tr> <tr><td>Quinoa (cocida)</td><td>2,8</td><td>Mixta</td></tr> <tr><td>Manzana (con piel)</td><td>2,4</td><td>Soluble (pectina)</td></tr> </tbody> </table> <p class="image-caption" style="margin-top:-0.5rem; text-align:center;">Fuente: Base de datos de composición de alimentos (valores orientativos).</p> <!-- Imagen 3: ensalada o plato colorido con vegetales y legumbres --> <div class="image-wrap"> <img src="https://image.pollinations.ai/prompt/colorful%20salad%20bowl%20with%20beans%20corn%20avocado%20and%20greens%20healthy%20meal?width=1200&height=630&nologo=true" alt="Ensalada colorida con legumbres y vegetales" loading="lazy" /> <div class="image-caption">Un plato lleno de colores es sinónimo de variedad y fibra.</div> </div> <h2>Cómo incorporar más fibra sin volverte loco</h2> <p>Muchas personas se sienten abrumadas ante la idea de cambiar su alimentación. La clave está en los <strong>pequeños reemplazos diarios</strong>:</p> <ul> <li><strong>Desayuno:</strong> Cambia los cereales refinados por avena integral o muesli sin azúcar. Añade fruta fresca y frutos secos.</li> <li><strong>Comida y cena:</strong> Sustituye la pasta blanca por pasta integral o de legumbres. Añade una porción de verduras al plato principal.</li> <li><strong>Snacks:</strong> Elige fruta fresca, zanahorias baby, hummus con palitos de verduras o un puñado de almendras.</li> <li><strong>Legumbres:</strong> Incorpora lentejas o garbanzos en ensaladas, guisos o hamburguesas vegetales al menos 2-3 veces por semana.</li> <li><strong>Hidratación:</strong> Acompáñalo con agua, infusiones o caldos ligeros para facilitar el tránsito.</li> </ul> <p>Un truco eficaz es <strong>aprovechar la piel de frutas y verduras</strong> siempre que sea posible, ya que concentra gran parte de la fibra insoluble. También puedes añadir semillas de chía o linaza a batidos, yogures o ensaladas; apenas se notan y aumentan considerablemente el aporte.</p> <h2>¿Puede haber exceso de fibra?</h2> <p>Aunque la fibra es beneficiosa, un consumo excesivo y repentino puede provocar molestias digestivas como gases, hinchazón o calambres. Por eso, es importante <strong>aumentar las dosis de forma progresiva</strong> y beber suficiente agua. Además, algunas personas con síndrome de intestino irritable pueden ser sensibles a ciertos tipos de fibra fermentable (FODMAP), por lo que se recomienda personalizar la elección.</p> <p>En general, la fibra es segura y muy recomendable. La OMS y las guías dietéticas internacionales sugieren un consumo de al menos 25-30 g al día para adultos, una meta que resulta alcanzable con los cambios que hemos mencionado.</p> <h2>Conclusión: la fibra, tu mejor aliada digestiva</h2> <p>La fibra no es un nutriente más; es un pilar de la salud digestiva y general. Sus beneficios van desde el alivio del estreñimiento hasta la protección contra enfermedades crónicas, y lo mejor es que se encuentra en alimentos deliciosos y accesibles. <strong>No necesitas una dieta radical</strong>: basta con añadir una fruta más al día, elegir pan integral y tomar legumbres con regularidad para notar la diferencia.</p> <p>Recuerda que cada pequeño cambio cuenta. Tu intestino te lo agradecerá con más energía, menos inflamación y una sensación de ligereza que se reflejará en todo tu organismo. <strong>Empieza hoy mismo incorporando uno de estos alimentos a tu próxima comida</strong> y descubre cómo la fibra puede transformar tu digestión y tu bienestar.</p> <footer> <p>© 2026 · Artículo divulgativo sobre nutrición y salud digestiva · No sustituye el asesoramiento médico profesional.</p> </footer> </div> <div class="ultimolive-share">
-<style>
-.ultimolive-share{max-width:960px;margin:24px auto;padding:0 20px;font-family:Arial,Helvetica,sans-serif}
-.ultimolive-share .share-label{margin:0 0 10px;font-size:13px;font-weight:700;color:#333;text-transform:uppercase;letter-spacing:.5px}
-.share-row{display:flex;flex-wrap:wrap;gap:8px}
-.share-row a{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:24px;color:#fff;text-decoration:none;font-size:14px;font-weight:600;transition:opacity .15s}
-.share-row a:hover{opacity:.85}
-.share-wa{background:#25D366}.share-fb{background:#1877F2}.share-tw{background:#111}.share-tg{background:#0088cc}
-.back-portal{display:inline-block;margin-top:14px;font-size:13px;color:#00843d;text-decoration:none;font-weight:600}
-</style>
-<p class="share-label">Comparte este articulo</p>
-<div class="share-row">
-<a class="share-wa" href="https://wa.me/?text=Alimentos%20ricos%20en%20fibra%20que%20ayudan%20a%20la%20digesti%C3%B3n%3A%20gu%C3%ADa%20completa%20para%20un%20tr%C3%A1nsito%20intestinal%20saludable%20https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Falimentos-ricos-en-fibra-que-ayudan-a-la-digestin%2F" target="_blank" rel="noopener">WhatsApp</a>
-<a class="share-fb" href="https://www.facebook.com/dialog/share?app_id=2290800501460325&display=popup&href=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Falimentos-ricos-en-fibra-que-ayudan-a-la-digestin%2F&redirect_uri=https%3A%2F%2Fwww.facebook.com%2F" target="_blank" rel="noopener">Facebook</a>
-<a class="share-tw" href="https://twitter.com/intent/tweet?text=Alimentos%20ricos%20en%20fibra%20que%20ayudan%20a%20la%20digesti%C3%B3n%3A%20gu%C3%ADa%20completa%20para%20un%20tr%C3%A1nsito%20intestinal%20saludable&url=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Falimentos-ricos-en-fibra-que-ayudan-a-la-digestin%2F" target="_blank" rel="noopener">X</a>
-<a class="share-tg" href="https://t.me/share/url?url=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Falimentos-ricos-en-fibra-que-ayudan-a-la-digestin%2F&text=Alimentos%20ricos%20en%20fibra%20que%20ayudan%20a%20la%20digesti%C3%B3n%3A%20gu%C3%ADa%20completa%20para%20un%20tr%C3%A1nsito%20intestinal%20saludable" target="_blank" rel="noopener">Telegram</a>
-</div>
-<a class="back-portal" href="https://automatico.pages.dev/">Volver al portal</a>
-</div>
+<!DOCTYPE html><html lang="es"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Alimentos ricos en fibra para una digestión saludable</title> <style> * { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+
+font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+
+background: #f2f7f0;
+
+color: #1e2b2a;
+
+line-height: 1.7;
+
+padding: 2rem 1rem;
+
+}
+
+.container {
+
+max-width: 880px;
+
+margin: 0 auto;
+
+background: #ffffff;
+
+border-radius: 32px;
+
+box-shadow: 0 20px 60px rgba(30, 60, 40, 0.08);
+
+padding: 2.5rem 2rem;
+
+transition: all 0.2s;
+
+}
+
+h1 {
+
+font-size: 2.4rem;
+
+font-weight: 700;
+
+letter-spacing: -0.02em;
+
+line-height: 1.2;
+
+color: #1a3a2e;
+
+margin-bottom: 0.5rem;
+
+}
+
+.excerpt {
+
+font-size: 1.15rem;
+
+color: #2d5a47;
+
+border-left: 5px solid #5fad7a;
+
+padding-left: 1.5rem;
+
+margin: 1.2rem 0 2rem 0;
+
+background: #eef9ed;
+
+border-radius: 0 12px 12px 0;
+
+padding: 1.2rem 1.5rem;
+
+}
+
+.meta {
+
+display: flex;
+
+gap: 1.5rem;
+
+font-size: 0.9rem;
+
+color: #4d6b5a;
+
+border-bottom: 2px solid #dce8da;
+
+padding-bottom: 1rem;
+
+margin-bottom: 2rem;
+
+flex-wrap: wrap;
+
+}
+
+.meta span {
+
+display: flex;
+
+align-items: center;
+
+gap: 0.4rem;
+
+}
+
+h2 {
+
+font-size: 1.8rem;
+
+font-weight: 600;
+
+margin-top: 2.8rem;
+
+margin-bottom: 1rem;
+
+color: #1a402f;
+
+border-bottom: 3px solid #d4e8d0;
+
+padding-bottom: 0.5rem;
+
+}
+
+h3 {
+
+font-size: 1.3rem;
+
+font-weight: 600;
+
+margin-top: 2rem;
+
+margin-bottom: 0.6rem;
+
+color: #26533c;
+
+}
+
+p {
+
+margin-bottom: 1.3rem;
+
+font-size: 1.05rem;
+
+}
+
+ul, ol {
+
+margin: 1rem 0 1.8rem 2rem;
+
+}
+
+li {
+
+margin-bottom: 0.6rem;
+
+font-size: 1.02rem;
+
+}
+
+.image-wrap {
+
+margin: 2.2rem 0;
+
+border-radius: 20px;
+
+overflow: hidden;
+
+box-shadow: 0 8px 30px rgba(0, 30, 10, 0.06);
+
+background: #f6fbf5;
+
+text-align: center;
+
+}
+
+.image-wrap img {
+
+width: 100%;
+
+height: auto;
+
+display: block;
+
+transition: transform 0.3s ease;
+
+}
+
+.image-wrap img:hover {
+
+transform: scale(1.01);
+
+}
+
+.image-caption {
+
+padding: 0.8rem 1rem 1rem;
+
+font-size: 0.95rem;
+
+color: #3d5f4a;
+
+background: #f8fcf7;
+
+border-top: 1px solid #e2efe0;
+
+font-style: italic;
+
+}
+
+.highlight-box {
+
+background: #ecf7ea;
+
+padding: 1.5rem 2rem;
+
+border-radius: 20px;
+
+margin: 2rem 0;
+
+border-left: 6px solid #3f9e5a;
+
+}
+
+.highlight-box strong {
+
+color: #1c6a33;
+
+}
+
+.food-grid {
+
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+gap: 1.5rem;
+
+margin: 2rem 0;
+
+}
+
+.food-item {
+
+background: #f7fcf6;
+
+padding: 1.5rem 1rem;
+
+border-radius: 18px;
+
+border: 1px solid #d4e8d0;
+
+text-align: center;
+
+transition: 0.2s;
+
+}
+
+.food-item:hover {
+
+background: #eff9ec;
+
+border-color: #9bc7a7;
+
+transform: translateY(-2px);
+
+}
+
+.food-item .emoji-big {
+
+font-size: 2.6rem;
+
+display: block;
+
+margin-bottom: 0.3rem;
+
+}
+
+.food-item h4 {
+
+font-size: 1.1rem;
+
+margin-bottom: 0.3rem;
+
+color: #1a402f;
+
+}
+
+.food-item .fibra-cantidad {
+
+font-size: 0.9rem;
+
+color: #3b6b4a;
+
+background: #dcefda;
+
+display: inline-block;
+
+padding: 0.2rem 1rem;
+
+border-radius: 30px;
+
+margin-top: 0.3rem;
+
+}
+
+.btn {
+
+display: inline-block;
+
+background: #2b6b41;
+
+color: white;
+
+padding: 0.7rem 2rem;
+
+border-radius: 40px;
+
+text-decoration: none;
+
+font-weight: 600;
+
+margin-top: 0.5rem;
+
+transition: background 0.2s;
+
+}
+
+.btn:hover {
+
+background: #1b4f2f;
+
+}
+
+footer {
+
+margin-top: 3.5rem;
+
+padding-top: 2rem;
+
+border-top: 2px solid #dce8da;
+
+font-size: 0.95rem;
+
+color: #4d6b5a;
+
+text-align: center;
+
+}
+
+table {
+
+width: 100%;
+
+border-collapse: collapse;
+
+margin: 1.5rem 0 2rem;
+
+background: #f8fcf7;
+
+border-radius: 16px;
+
+overflow: hidden;
+
+font-size: 0.98rem;
+
+}
+
+th {
+
+background: #1e4d32;
+
+color: white;
+
+padding: 12px 16px;
+
+text-align: left;
+
+}
+
+td {
+
+padding: 12px 16px;
+
+border-bottom: 1px solid #ddecdb;
+
+}
+
+tr:last-child td {
+
+border-bottom: none;
+
+}
+
+@media (max-width: 640px) {
+
+body {
+
+padding: 1rem 0.8rem;
+
+}
+
+.container {
+
+padding: 1.8rem 1.2rem;
+
+}
+
+h1 {
+
+font-size: 1.9rem;
+
+}
+
+.excerpt {
+
+font-size: 1rem;
+
+padding: 1rem;
+
+}
+
+h2 {
+
+font-size: 1.5rem;
+
+}
+
+.food-grid {
+
+grid-template-columns: 1fr 1fr;
+
+}
+
+.meta {
+
+flex-direction: column;
+
+gap: 0.4rem;
+
+}
+
+}
+
+@media (max-width: 480px) {
+
+.food-grid {
+
+grid-template-columns: 1fr;
+
+}
+
+}
+
+@media (min-width: 1200px) {
+
+.container {
+
+padding: 3.5rem 3.5rem;
+
+}
+
+}
+
+</style>
+
+    <meta property="og:type" content="article">
+
+    <meta property="og:site_name" content="UltimoLive">
+
+    <meta property="og:locale" content="es_ES">
+
+    <meta property="og:title" content="Alimentos ricos en fibra que ayudan a la digestión: guía completa para un tránsito intestinal saludable">
+
+    <meta property="og:description" content="La fibra es la aliada silenciosa de tu sistema digestivo. Descubre los alimentos más ricos en fibra, cómo incorporarlos a tu dieta diaria y los beneficios que aportan a tu salud intestinal sin necesid">
+
+    <meta property="og:url" content="https://automatico.pages.dev/posts/alimentos-ricos-en-fibra-que-ayudan-a-la-digestin/">
+
+    <meta property="og:image" content="https://automatico.pages.dev/posts/alimentos-ricos-en-fibra-que-ayudan-a-la-digestin/og-image.jpg">
+
+    <meta property="article:published_time" content="2026-08-19T12:00:00Z">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Alimentos ricos en fibra que ayudan a la digestión: guía completa para un tránsito intestinal saludable">
+
+    <meta name="twitter:description" content="La fibra es la aliada silenciosa de tu sistema digestivo. Descubre los alimentos más ricos en fibra, cómo incorporarlos a tu dieta diaria y los beneficios que aportan a tu salud intestinal sin necesid">
+
+    <meta name="twitter:image" content="https://automatico.pages.dev/posts/alimentos-ricos-en-fibra-que-ayudan-a-la-digestin/og-image.jpg">
+
+    <link rel="canonical" href="https://automatico.pages.dev/posts/alimentos-ricos-en-fibra-que-ayudan-a-la-digestin/">
+
+</head> <body> <div class="container"> <h1>Alimentos ricos en fibra que ayudan a la digestión</h1> <div class="excerpt"> La fibra es la aliada silenciosa de tu sistema digestivo. Descubre los alimentos más ricos en fibra, cómo incorporarlos a tu dieta diaria y los beneficios que aportan a tu salud intestinal sin necesidad de cambios drásticos. </div> <div class="meta"> <span> Nutrición y bienestar</span> <span> 19 de agosto de 2026</span> <span>⏱ Lectura: 8 min</span> </div> <!-- Imagen 1: concepto general de fibra --> <div class="image-wrap"> <img src="https://image.pollinations.ai/prompt/variety%20of%20high%20fiber%20foods%20vegetables%20legumes%20whole%20grains%20colorful%20arrangement?width=1200&height=630&nologo=true" alt="Variedad de alimentos ricos en fibra" loading="lazy" /> <div class="image-caption">Frutas, verduras, legumbres y cereales integrales: la despensa de la fibra saludable.</div> </div> <p>La fibra dietética es un componente fundamental de una alimentación equilibrada, pero a menudo se subestima su papel en la salud digestiva. No solo ayuda a regular el tránsito intestinal, sino que también influye en la microbiota, el control del peso y la prevención de enfermedades crónicas. Sin embargo, <strong>la mayoría de las personas no consumen la cantidad diaria recomendada</strong> (unos 25-30 gramos al día). La buena noticia es que incorporar alimentos ricos en fibra no requiere una transformación radical; basta con conocer cuáles son y cómo integrarlos de manera sencilla en tus comidas.</p> <h2>¿Qué es la fibra y por qué es tan importante?</h2> <p>La fibra es un tipo de carbohidrato que el cuerpo no puede digerir. A diferencia de otros nutrientes, no se descompone ni se absorbe, sino que viaja a través del sistema digestivo, arrastrando consigo residuos y favoreciendo la formación de heces. Se clasifica en dos grandes grupos:</p> <ul> <li><strong>Fibra soluble:</strong> se disuelve en agua y forma un gel que ralentiza la digestión. Ayuda a controlar el azúcar en sangre y reduce el colesterol. Se encuentra en avena, legumbres, frutas como manzanas y cítricos, y en algunas verduras.</li> <li><strong>Fibra insoluble:</strong> no se disuelve en agua y añade volumen a las heces, favoreciendo el tránsito intestinal. Está presente en cereales integrales, frutos secos, y en la piel de frutas y verduras.</li> </ul> <div class="highlight-box"> <strong> Dato clave:</strong> La fibra insoluble es la "escoba" intestinal, mientras que la soluble actúa como una esponja que regula la absorción de nutrientes. Ambas son necesarias para un intestino sano. </div> <h2>Los 10 alimentos más ricos en fibra que deberías incluir en tu dieta</h2> <div class="food-grid"> <div class="food-item"> <span class="emoji-big"></span> <h4>Lentejas</h4> <span class="fibra-cantidad">15,6 g/100g</span> <p style="font-size:0.9rem; margin-top:0.3rem;">Excelente fuente de fibra soluble e insoluble.</p> </div> <div class="food-item"> <span class="emoji-big"></span> <h4>Salvado de trigo</h4> <span class="fibra-cantidad">42,8 g/100g</span> <p style="font-size:0.9rem; margin-top:0.3rem;">Uno de los campeones en fibra insoluble.</p> </div> <div class="food-item"> <span class="emoji-big"></span> <h4>Pera (con piel)</h4> <span class="fibra-cantidad">3,1 g/100g</span> <p style="font-size:0.9rem; margin-top:0.3rem;">Rica en fibra soluble y antioxidantes.</p> </div> <div class="food-item"> <span class="emoji-big"></span> <h4>Aguacate</h4> <span class="fibra-cantidad">6,7 g/100g</span> <p style="font-size:0.9rem; margin-top:0.3rem;">Grasas saludables + alta fibra.</p> </div> <div class="food-item"> <span class="emoji-big"></span> <h4>Frambuesas</h4> <span class="fibra-cantidad">6,5 g/100g</span> <p style="font-size:0.9rem; margin-top:0.3rem;">Pequeñas pero muy ricas en fibra.</p> </div> <div class="food-item"> <span class="emoji-big"></span> <h4>Coles de Bruselas</h4> <span class="fibra-cantidad">3,8 g/100g</span> <p style="font-size:0.9rem; margin-top:0.3rem;">Verdura crucífera con gran aporte.</p> </div> </div> <!-- Imagen 2: legumbres y cereales --> <div class="image-wrap"> <img src="https://image.pollinations.ai/prompt/assorted%20legumes%20beans%20lentils%20chickpeas%20and%20whole%20grains%20bowls?width=1200&height=630&nologo=true" alt="Legumbres y cereales integrales" loading="lazy" /> <div class="image-caption">Legumbres y cereales integrales son la base de una dieta rica en fibra.</div> </div> <h3>Más alimentos destacados</h3> <ul> <li><strong>Garbanzos:</strong> 7,6 g/100g. Versátiles y deliciosos en ensaladas, hummus o guisos.</li> <li><strong>Quinoa:</strong> 2,8 g/100g, pero su fibra es de alta calidad y contiene todos los aminoácidos esenciales.</li> <li><strong>Almendras:</strong> 12,5 g/100g. Un puñado al día aporta fibra y grasas insaturadas.</li> <li><strong>Brócoli:</strong> 2,6 g/100g, rico en fibra insoluble y compuestos azufrados beneficiosos.</li> <li><strong>Manzana con piel:</strong> 2,4 g/100g. La pectina que contiene es una fibra soluble excelente.</li> </ul> <h2>Beneficios de la fibra para la digestión (y más allá)</h2> <p>Incluir fibra en la dieta no solo mejora el estreñimiento. Sus beneficios son sistémicos:</p> <ul> <li><strong>Regulación del tránsito intestinal:</strong> La fibra insoluble aumenta el volumen de las heces y acelera el paso por el colon, mientras que la soluble la suaviza.</li> <li><strong>Alimenta la microbiota:</strong> La fibra fermentable (prebiótica) nutre a las bacterias buenas del intestino, fortaleciendo el sistema inmune y reduciendo la inflamación.</li> <li><strong>Control de peso:</strong> Aporta saciedad sin calorías, lo que ayuda a controlar el apetito y evitar picoteos.</li> <li><strong>Salud cardiovascular:</strong> Ayuda a reducir el colesterol LDL y mejora la sensibilidad a la insulina.</li> <li><strong>Prevención de enfermedades:</strong> Una dieta alta en fibra se asocia con menor riesgo de diabetes tipo 2, cáncer colorrectal y enfermedades del corazón.</li> </ul> <div class="highlight-box"> <strong> Consejo:</strong> Aumenta la ingesta de fibra de forma gradual y bebe suficiente agua (al menos 1,5-2 litros al día) para evitar molestias como hinchazón o gases. El agua ayuda a que la fibra cumpla su función sin causar obstrucciones. </div> <!-- Tabla comparativa de alimentos --> <h3>Comparativa rápida de contenido en fibra (por 100 g)</h3> <table> <thead> <tr> <th>Alimento</th> <th>Fibra total (g)</th> <th>Tipo predominante</th> </tr> </thead> <tbody> <tr><td>Salvado de trigo</td><td>42,8</td><td>Insoluble</td></tr> <tr><td>Lentejas (cocidas)</td><td>7,9</td><td>Mixta</td></tr> <tr><td>Garbanzos (cocidos)</td><td>7,6</td><td>Mixta</td></tr> <tr><td>Aguacate</td><td>6,7</td><td>Soluble</td></tr> <tr><td>Frambuesas</td><td>6,5</td><td>Soluble</td></tr> <tr><td>Almendras</td><td>12,5</td><td>Insoluble</td></tr> <tr><td>Quinoa (cocida)</td><td>2,8</td><td>Mixta</td></tr> <tr><td>Manzana (con piel)</td><td>2,4</td><td>Soluble (pectina)</td></tr> </tbody> </table> <p class="image-caption" style="margin-top:-0.5rem; text-align:center;">Fuente: Base de datos de composición de alimentos (valores orientativos).</p> <!-- Imagen 3: ensalada o plato colorido con vegetales y legumbres --> <div class="image-wrap"> <img src="https://image.pollinations.ai/prompt/colorful%20salad%20bowl%20with%20beans%20corn%20avocado%20and%20greens%20healthy%20meal?width=1200&height=630&nologo=true" alt="Ensalada colorida con legumbres y vegetales" loading="lazy" /> <div class="image-caption">Un plato lleno de colores es sinónimo de variedad y fibra.</div> </div> <h2>Cómo incorporar más fibra sin volverte loco</h2> <p>Muchas personas se sienten abrumadas ante la idea de cambiar su alimentación. La clave está en los <strong>pequeños reemplazos diarios</strong>:</p> <ul> <li><strong>Desayuno:</strong> Cambia los cereales refinados por avena integral o muesli sin azúcar. Añade fruta fresca y frutos secos.</li> <li><strong>Comida y cena:</strong> Sustituye la pasta blanca por pasta integral o de legumbres. Añade una porción de verduras al plato principal.</li> <li><strong>Snacks:</strong> Elige fruta fresca, zanahorias baby, hummus con palitos de verduras o un puñado de almendras.</li> <li><strong>Legumbres:</strong> Incorpora lentejas o garbanzos en ensaladas, guisos o hamburguesas vegetales al menos 2-3 veces por semana.</li> <li><strong>Hidratación:</strong> Acompáñalo con agua, infusiones o caldos ligeros para facilitar el tránsito.</li> </ul> <p>Un truco eficaz es <strong>aprovechar la piel de frutas y verduras</strong> siempre que sea posible, ya que concentra gran parte de la fibra insoluble. También puedes añadir semillas de chía o linaza a batidos, yogures o ensaladas; apenas se notan y aumentan considerablemente el aporte.</p> <h2>¿Puede haber exceso de fibra?</h2> <p>Aunque la fibra es beneficiosa, un consumo excesivo y repentino puede provocar molestias digestivas como gases, hinchazón o calambres. Por eso, es importante <strong>aumentar las dosis de forma progresiva</strong> y beber suficiente agua. Además, algunas personas con síndrome de intestino irritable pueden ser sensibles a ciertos tipos de fibra fermentable (FODMAP), por lo que se recomienda personalizar la elección.</p> <p>En general, la fibra es segura y muy recomendable. La OMS y las guías dietéticas internacionales sugieren un consumo de al menos 25-30 g al día para adultos, una meta que resulta alcanzable con los cambios que hemos mencionado.</p> <h2>Conclusión: la fibra, tu mejor aliada digestiva</h2> <p>La fibra no es un nutriente más; es un pilar de la salud digestiva y general. Sus beneficios van desde el alivio del estreñimiento hasta la protección contra enfermedades crónicas, y lo mejor es que se encuentra en alimentos deliciosos y accesibles. <strong>No necesitas una dieta radical</strong>: basta con añadir una fruta más al día, elegir pan integral y tomar legumbres con regularidad para notar la diferencia.</p> <p>Recuerda que cada pequeño cambio cuenta. Tu intestino te lo agradecerá con más energía, menos inflamación y una sensación de ligereza que se reflejará en todo tu organismo. <strong>Empieza hoy mismo incorporando uno de estos alimentos a tu próxima comida</strong> y descubre cómo la fibra puede transformar tu digestión y tu bienestar.</p> <footer> <p>© 2026 · Artículo divulgativo sobre nutrición y salud digestiva · No sustituye el asesoramiento médico profesional.</p> </footer> </div> 
+
 </body> </html>
