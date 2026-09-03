@@ -448,6 +448,87 @@ img { max-width: 100%; display: block; }
 .html-content ul, .html-content ol { padding-left: 1.4rem; margin: 1rem 0; }
 .html-content li { margin: 0.35rem 0; }
 
+/* Clases de articulos antiguos (gana/salud) tras quitar su <style> propio:
+   adptadas al design system del sitio para que el modo oscuro funcione */
+.html-content .categoria, .html-content .kicker {
+  font-family: 'Archivo', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+  padding-left: 0.9rem;
+  border-left: 4px solid var(--accent);
+}
+.html-content .subhead {
+  font-size: 1.08em;
+  color: var(--ink-2);
+  font-style: italic;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+.html-content .meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.9rem;
+  font-family: 'Archivo', sans-serif;
+  font-size: 0.82rem;
+  color: var(--ink-2);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--line);
+}
+.html-content .meta .autor, .html-content .meta .fuente {
+  font-weight: 700;
+  color: var(--ink);
+}
+.html-content .meta .fecha {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  color: var(--ink-2);
+}
+.html-content .destacado, .html-content .info-box, .html-content .key-takeaway {
+  background: linear-gradient(135deg, var(--accent-soft), transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--line));
+  border-left: 4px solid var(--accent);
+  border-radius: 0 12px 12px 0;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+.html-content .destacado p { margin: 0.5rem 0; }
+.html-content .destacado ul { list-style: none; padding: 0; margin: 0.5rem 0 0; }
+.html-content .destacado ul li { padding-left: 1.3rem; margin: 0.4rem 0; }
+.html-content .cita {
+  font-style: italic;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1rem 1.4rem;
+  margin: 1.5rem 0;
+  color: var(--ink-2);
+}
+.html-content .cuerpo p { text-align: justify; }
+.html-content .header-img {
+  margin: 0 0 1.5rem;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.html-content .header-img img { width: 100%; margin: 0; }
+.html-content footer {
+  margin-top: 2.25rem;
+  padding-top: 1.25rem;
+  border-top: 2px solid var(--line);
+  font-family: 'Archivo', sans-serif;
+  font-size: 0.82rem;
+  color: var(--ink-2);
+}
+.html-content footer .copy { color: var(--ink-3); }
+
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
   .main-content { padding: 1.5rem 1rem 2.5rem; }

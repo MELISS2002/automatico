@@ -1,6 +1,21 @@
 import React, { useState, useEffect } from 'react';
+import DOMPurify from 'dompurify';
 import ShareButtons from '../components/ShareButtons';
 import './NewsGridsalud.css';
+
+// Limpia el HTML de los posts: quita head/style/script/footer y el bloque hero
+// para que el articulo use el design system del sitio (claro/oscuro) en lugar
+// del CSS propio del post, que fuerza colores claros.
+const cleanArticleHTML = (raw) => {
+  try {
+    return DOMPurify.sanitize(raw, {
+      ALLOWED_TAGS: ['p', 'br', 'strong', 'em', 'u', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'li', 'a', 'img', 'blockquote', 'pre', 'code', 'hr', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'div', 'span', 'section', 'article', 'header', 'footer', 'nav', 'main', 'aside', 'figure', 'figcaption', 'mark', 'small', 'sub', 'sup', 'time'],
+      ALLOWED_ATTR: ['href', 'src', 'alt', 'title', 'class', 'id', 'style', 'target', 'rel', 'width', 'height', 'loading', 'role', 'aria-label']
+    });
+  } catch (e) {
+    return raw;
+  }
+};
 
 const SITE_TITLE = 'UltimoLive - Noticias deportivas, resultados y transmisiones en vivo';
 
@@ -29,7 +44,7 @@ const NewsGrid = () => {
     try {
       const response = await fetch(path);
       if (!response.ok) throw new Error('HTTP error ' + response.status);
-      return await response.text();
+      return cleanArticleHTML(await response.text());
     } catch (error) {
       console.error('Error cargando contenido:', error);
       return '<p>Error al cargar el artículo</p>';
