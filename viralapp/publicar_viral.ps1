@@ -1,12 +1,12 @@
-# publicar_viral.ps1 - Orquestador 1-click de la app viral (UltimoLive, automatico.pages.dev)
+# publicar_viral.ps1 - Motor del feed viral (UltimoLive, automatico.pages.dev)  [vive en viralapp/]
 # FLUJO (todo automatico, un solo click):
 #   1) Scrapea portales reales + descarga imagenes REALES -> public/viral.json + public/viral/<id>.html
 #   2) npm run build (actualiza dist con el feed + la pagina /viral)
 #   3) Commit QUIRURGICO (solo viral + funciones + src) + push con rebase (auto-deploy Pages)
 # USO:
-#   powershell -ExecutionPolicy Bypass -File public\publicar_viral.ps1           (lote estandar peruano)
-#   powershell -ExecutionPolicy Bypass -File public\publicar_viral.ps1 -Top 20    (mas items)
-#   powershell -ExecutionPolicy Bypass -File public\publicar_viral.ps1 -NoGit     (solo scrape+build)
+#   powershell -ExecutionPolicy Bypass -File viralapp\publicar_viral.ps1           (lote estandar peruano)
+#   powershell -ExecutionPolicy Bypass -File viralapp\publicar_viral.ps1 -Top 20    (mas items)
+#   powershell -ExecutionPolicy Bypass -File viralapp\publicar_viral.ps1 -NoGit     (solo scrape+build)
 param(
     [int]$Top = 14,
     [switch]$NoGit,
@@ -20,7 +20,7 @@ $ErrorActionPreference = "Continue"
 $env:PYTHONIOENCODING = "utf-8"
 
 $base   = "C:\Users\dza\Desktop\automatico-main"
-$tools  = "C:\Users\dza\Desktop\neo\tools"
+$viralApp = Join-Path $base "viralapp"
 $node   = "node"
 
 function Write-Step([string]$msg, [string]$color = "Cyan") {
@@ -36,7 +36,7 @@ try {
     # 1) SCRAPE + generacion del feed
     Write-Step "1) Scrapeando portales + descargando imagenes REALES..."
     $peFlag = if ($Pe) { "--pe" } else { "" }
-    & $node (Join-Path $tools "build-viral.cjs") --top $Top $peFlag
+    & $node (Join-Path $viralApp "build-viral.cjs") --top $Top $peFlag
     if ($LASTEXITCODE -ne 0) { throw "build-viral.cjs fallo (exit=$LASTEXITCODE)" }
     Write-Ok "Feed viral listo en public/viral.json"
 
