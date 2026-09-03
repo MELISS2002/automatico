@@ -13,6 +13,7 @@ const Gana = lazy(() => import('./pages/gana'));
 const Salud = lazy(() => import('./pages/salud'));
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 const Channels = lazy(() => import('./pages/Channels'));
+const Viral = lazy(() => import('./pages/Viral'));
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -21,6 +22,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<App />} />
+            <Route path="viral" element={
+              <Suspense fallback={<div className="text-center p-10">Cargando...</div>}>
+                <Viral />
+              </Suspense>
+            } />
             <Route path="gana" element={
               <Suspense fallback={<div className="text-center p-10">Cargando...</div>}>
                 <Gana />

@@ -39,6 +39,7 @@ function Header() {
 
   const navItems = [
     { to: '/', label: 'Inicio', end: true },
+    { to: '/viral', label: 'Viral' },
     { to: '/gana', label: 'Gana' },
     { to: '/salud', label: 'Salud' },
     { to: '/canales', label: 'Canales' }
