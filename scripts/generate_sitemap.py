@@ -11,7 +11,6 @@ MAIN_ROUTES = [
     ("/", 1.0),
     ("/gana", 0.8),
     ("/salud", 0.8),
-    ("/canales", 0.7),
     ("/about", 0.4),
     ("/contact", 0.4),
     ("/terms", 0.3),

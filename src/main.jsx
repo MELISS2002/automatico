@@ -12,7 +12,6 @@ const Terms = lazy(() => import('./pages/Terms'));
 const Gana = lazy(() => import('./pages/gana'));
 const Salud = lazy(() => import('./pages/salud'));
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
-const Channels = lazy(() => import('./pages/Channels'));
 const Viral = lazy(() => import('./pages/Viral'));
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -55,11 +54,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="privacy-policy" element={
               <Suspense fallback={<div className="text-center p-10">Cargando...</div>}>
                 <PrivacyPolicy />
-              </Suspense>
-            } />
-            <Route path="canales" element={
-              <Suspense fallback={<div className="text-center p-10">Cargando...</div>}>
-                <Channels />
               </Suspense>
             } />
           </Route>
