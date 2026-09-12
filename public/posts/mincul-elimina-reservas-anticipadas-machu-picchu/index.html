@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ministerio de Cultura elimina reservas anticipadas para Machu Picchu</title>
+<style>
+    :root {
+        --color-primario: #1a3c5e;
+        --color-secundario: #b8860b;
+        --color-fondo: #f4f6f9;
+        --color-texto: #222222;
+        --color-blanco: #ffffff;
+        --sombra: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        background-color: var(--color-fondo);
+        color: var(--color-texto);
+        line-height: 1.7;
+    }
+    .container {
+        width: 92%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .news-header {
+        background: linear-gradient(135deg, #0f2a40 0%, #1a3c5e 100%);
+        color: var(--color-blanco);
+        padding: 2.5rem 0 2rem;
+        border-bottom: 5px solid var(--color-secundario);
+    }
+    .news-header .kicker {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #f0c75e;
+        margin-bottom: 0.75rem;
+    }
+    .news-header h1 {
+        font-size: 2.4rem;
+        line-height: 1.2;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+    .news-header .subtitle {
+        font-size: 1.15rem;
+        color: #d9e2ec;
+        margin-bottom: 1.5rem;
+        max-width: 750px;
+    }
+    .news-header figure {
+        margin: 1.5rem 0 0;
+    }
+    .news-header img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .news-header figcaption {
+        font-size: 0.85rem;
+        color: #b0c4d9;
+        margin-top: 0.6rem;
+        font-style: italic;
+    }
+    main {
+        padding: 2.5rem 0;
+    }
+    article {
+        background: var(--color-blanco);
+        padding: 2.5rem 2rem;
+        border-radius: 12px;
+        box-shadow: var(--sombra);
+    }
+    article p {
+        margin-bottom: 1.25rem;
+        font-size: 1.08rem;
+        text-align: justify;
+    }
+    article h2 {
+        font-size: 1.7rem;
+        color: var(--color-primario);
+        margin: 2rem 0 1rem;
+        padding-bottom: 0.4rem;
+        border-bottom: 3px solid var(--color-secundario);
+    }
+    article h3 {
+        font-size: 1.3rem;
+        color: var(--color-primario);
+        margin: 1.5rem 0 0.8rem;
+    }
+    .lead {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #2c3e50;
+        border-left: 5px solid var(--color-secundario);
+        padding-left: 1rem;
+        margin-bottom: 1.8rem;
+    }
+    .data-box {
+        background: #eef4fa;
+        border-left: 6px solid var(--color-secundario);
+        padding: 1.5rem 1.5rem 1rem;
+        border-radius: 0 10px 10px 0;
+        margin: 1.8rem 0;
+    }
+    .data-box h3 {
+        margin-top: 0;
+        color: var(--color-primario);
+    }
+    .data-box ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    .data-box li {
+        margin-bottom: 0.7rem;
+        padding-left: 1.6rem;
+        position: relative;
+        font-size: 1.05rem;
+    }
+    .data-box li::before {
+        content: "•";
+        color: var(--color-secundario);
+        font-weight: bold;
+        font-size: 1.4rem;
+        position: absolute;
+        left: 0;
+        top: -0.2rem;
+    }
+    .highlight {
+        background: #fff8e7;
+        border: 1px solid #f0d9a0;
+        padding: 1.2rem 1.5rem;
+        border-radius: 8px;
+        margin: 1.8rem 0;
+        font-weight: 500;
+    }
+    .highlight strong {
+        color: #8a6508;
+    }
+    footer {
+        background: var(--color-primario);
+        color: #cfdce8;
+        text-align: center;
+        padding: 1.8rem 0;
+        margin-top: 2rem;
+        font-size: 0.95rem;
+    }
+    footer .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .author {
+        font-weight: 700;
+        color: var(--color-blanco);
+    }
+    footer .source {
+        font-size: 0.9rem;
+        color: #a8bdd1;
+    }
+    @media (max-width: 768px) {
+        .news-header h1 {
+            font-size: 1.8rem;
+        }
+        .news-header .subtitle {
+            font-size: 1rem;
+        }
+        article {
+            padding: 1.5rem 1.2rem;
+        }
+        article h2 {
+            font-size: 1.4rem;
+        }
+        .lead {
+            font-size: 1.05rem;
+        }
+        .data-box {
+            padding: 1.2rem 1rem 0.8rem;
+        }
+    }
+    @media (max-width: 480px) {
+        .news-header h1 {
+            font-size: 1.5rem;
+        }
+        .news-header {
+            padding: 1.8rem 0 1.5rem;
+        }
+        article p {
+            font-size: 1rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header class="news-header">
+    <div class="container">
+        <p class="kicker">Cusco | Turismo | Machu Picchu</p>
+        <h1>Ministerio de Cultura elimina reservas anticipadas de tres horas para visitar Machu Picchu</h1>
+        <p class="subtitle">El Gobierno modifica el reglamento de venta de entradas a la ciudadela inca para evitar el acaparamiento y la aparición de mafias dedicadas a la reventa. Los visitantes deberán confirmar el pago en un plazo máximo de 15 minutos en la plataforma Tu Boleto.</p>
+        <figure>
+            <img src="imagen1.jpg" alt="Vista de la ciudadela inca de Machu Picchu en Cusco">
+            <figcaption>Machu Picchu, en la región Cusco, es uno de los destinos turísticos más importantes del país. La nueva medida busca ordenar la venta de boletos.</figcaption>
+        </figure>
+    </div>
+</header>
+
+<main class="container">
+    <article>
+        <p class="lead">El ministro de Cultura, Alberto Beingolea, informó que el Gobierno dispuso cambios en el reglamento de venta de entradas para la ciudadela inca de Machu Picchu, en la región Cusco, con el objetivo de evitar el acaparamiento de boletos y la aparición de mafias. La medida elimina la posibilidad de realizar una reserva previa de tres horas e implementa un mecanismo de venta directa con pago confirmado en un plazo máximo de 15 minutos.</p>
+
+        <p>De acuerdo con la información difundida por RPP, la decisión forma parte de una iniciativa intersectorial entre el Ministerio de Cultura y el Ministerio de Comercio Exterior y Turismo. El nuevo sistema impediría que se mantengan localidades reservadas después de culminado el período establecido, situación que habría favorecido a una supuesta mafia dedicada a la reventa de boletos. Con este cambio, se busca que los visitantes accedan a las entradas de manera más transparente y directa.</p>
+
+        <div class="data-box">
+            <h3>Claves de la nueva medida</h3>
+            <ul>
+                <li>Se elimina la reserva previa de tres horas para la compra de entradas a Machu Picchu.</li>
+                <li>Se implementa un mecanismo de venta directa con pago confirmado en un plazo máximo de 15 minutos.</li>
+                <li>Los visitantes ingresarán sus datos en la plataforma Tu Boleto, seleccionarán fecha y horario disponibles, y efectuarán el pago.</li>
+                <li>El Ejecutivo aprobó dos resoluciones que modifican el reglamento de venta de entradas.</li>
+                <li>Habrá un plazo de diez días para las modificaciones en la plataforma y luego una marcha blanca de 30 días para evaluar y ajustar el sistema.</li>
+                <li>La medida no afecta la venta de 1.000 entradas que se realiza en Machupicchu pueblo.</li>
+            </ul>
+        </div>
+
+        <h2>Un cambio para frenar el acaparamiento y la reventa</h2>
+        <p>Según explicó el ministro Beingolea, la anterior posibilidad de reservar boletos por tres horas sin pago inmediato habría permitido que ciertos grupos mantuvieran localidades retenidas y luego las ofrecieran a precios elevados. Esa práctica, señalada como parte de una supuesta mafia dedicada a la reventa, habría afectado tanto a turistas nacionales como extranjeros. Con la eliminación de la reserva anticipada, el Gobierno espera cerrar ese espacio de especulación.</p>
+
+        <p>El nuevo procedimiento establece que el visitante complete sus datos en la plataforma Tu Boleto, elija la fecha y el horario disponibles y realice el pago dentro de un máximo de 15 minutos. Si no se confirma la transacción en ese lapso, la localidad quedaría liberada para otro usuario. De esta manera, se evita que las entradas permanezcan bloqueadas sin una compra efectiva y se agiliza la rotación de cupos.</p>
+
+        <div class="highlight">
+            <strong>Importante:</strong> La venta de 1.000 entradas que se realiza en Machupicchu pueblo no se verá afectada por estos cambios. El ajuste se concentra en el mecanismo de reservas anticipadas y en la plataforma digital Tu Boleto.
+        </div>
+
+        <h2>Plazos para la implementación del nuevo sistema</h2>
+        <p>El Ejecutivo aprobó dos resoluciones que modifican el reglamento vigente. A partir de ello, se estableció un plazo de diez días para que se realicen las modificaciones necesarias en la plataforma Tu Boleto. Luego de ese periodo, se iniciará una marcha blanca de 30 días, durante la cual se evaluará y ajustará el sistema antes de su entrada en vigencia definitiva. Este proceso permitirá detectar posibles fallas y corregir el funcionamiento del mecanismo de venta directa.</p>
+
+        <p>La marcha blanca también servirá para medir la respuesta de los usuarios y la capacidad operativa de la plataforma. Durante ese mes, las autoridades podrán recoger información sobre tiempos de pago, disponibilidad de horarios y posibles incidencias técnicas. El objetivo es que el sistema final sea eficiente y no perjudique a los visitantes que compran sus boletos con anticipación.</p>
+
+        <h2>Un trabajo conjunto entre Cultura y Comercio Exterior y Turismo</h2>
+        <p>La iniciativa es intersectorial. El Ministerio de Cultura, encargado de la gestión de la ciudadela inca, trabaja junto con el Ministerio de Comercio Exterior y Turismo para ordenar la venta de entradas. Ambos sectores buscan proteger el acceso al monumento y garantizar que los boletos lleguen a los turistas sin intermediarios abusivos. La medida responde a una preocupación recurrente por la reventa y el acaparamiento en uno de los destinos más visitados del Perú.</p>
+
+        <p>Machu Picchu, ubicado en la región Cusco, recibe cada año a miles de visitantes nacionales y extranjeros. La demanda de entradas suele ser alta, especialmente en temporadas vacacionales. Por ello, cualquier cambio en el sistema de venta tiene un impacto directo en la experiencia de los viajeros y en la economía local. La nueva normativa busca equilibrar el acceso con la lucha contra las prácticas ilegales que distorsionan el mercado.</p>
+
+        <h2>¿Cómo comprarán las entradas los visitantes?</h2>
+        <p>Con el nuevo reglamento, el proceso de compra será directo. El visitante deberá ingresar a la plataforma Tu Boleto, registrar sus datos personales, seleccionar la fecha y el horario disponible para su visita, y efectuar el pago correspondiente. El plazo máximo para confirmar la transacción será de 15 minutos. Si el pago no se completa en ese tiempo, la reserva se perderá automáticamente y el cupo volverá a estar disponible para otros usuarios.</p>
+
+        <p>Este mecanismo reemplaza la reserva previa de tres horas que existía antes. Aquella modalidad permitía separar una entrada sin pagarla de inmediato, lo que, según las autoridades, habría sido aprovechado por redes de revendedores. Ahora, la confirmación del pago es indispensable para asegurar el boleto. La medida apunta a que cada entrada tenga un titular claro y una transacción verificada.</p>
+
+        <h2>Expectativas y evaluación del sistema</h2>
+        <p>Las autoridades han señalado que la marcha blanca de 30 días permitirá evaluar el comportamiento del sistema. Durante ese periodo, se podrán hacer ajustes en la plataforma y en los procedimientos internos. La idea es que, al finalizar la prueba, el mecanismo opere con normalidad y sin contratiempos para los visitantes. También se espera que la eliminación de las reservas anticipadas reduzca de manera significativa la reventa de boletos.</p>
+
+        <p>El Gobierno ha insistido en que la medida no busca afectar el turismo, sino ordenarlo. La venta de 1.000 entradas en Machupicchu pueblo se mantiene como una alternativa para quienes llegan a la zona y desean adquirir su boleto de manera presencial. Esa modalidad no será modificada por las dos resoluciones aprobadas. Así, los visitantes tendrán opciones tanto digitales como locales para acceder a la ciudadela inca.</p>
+
+        <h2>Un destino que exige una gestión ordenada</h2>
+        <p>Machu Picchu es uno de los principales atractivos turísticos del Perú y recibe una gran presión de visitantes. La gestión de sus entradas ha sido un tema sensible durante años. La aparición de mafias dedicadas a la reventa ha sido denunciada en diversas oportunidades. Con este cambio normativo, el Ministerio de Cultura y el Ministerio de Comercio Exterior y Turismo buscan dar una respuesta concreta a ese problema, priorizando la transparencia en la venta y el pago confirmado.</p>
+
+        <p>La eliminación de la reserva previa de tres horas es el eje central de la modificación. A partir de ahora, el tiempo será un factor clave: quien desee visitar la ciudadela deberá completar la transacción en un máximo de 15 minutos. Esto reduce la posibilidad de que intermediarios retengan cupos sin intención de compra. La medida se complementa con la plataforma Tu Boleto, que será el canal principal para la venta digital.</p>
+
+        <p>El proceso de implementación ya tiene plazos definidos: diez días para las modificaciones en la plataforma y luego 30 días de marcha blanca. Durante ese tiempo, se evaluará y ajustará el sistema. La expectativa oficial es que el nuevo mecanismo impida que se mantengan localidades reservadas después de culminado el período, situación que habría favorecido a la supuesta mafia de revendedores. Con ello, se espera que más turistas puedan acceder a sus entradas de forma directa y segura.</p>
+
+        <p>La medida no afecta la venta de 1.000 entradas que se realiza en Machupicchu pueblo, lo que permite mantener una opción presencial para los visitantes que llegan a la zona. En conjunto, los cambios buscan mejorar la experiencia del turista y combatir las prácticas ilegales que durante mucho tiempo habrían distorsionado el acceso a la ciudadela inca. La información fue dada a conocer por RPP.</p>
+    </article>
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <p class="author">Autor: Redacción</p>
+        <p>Fecha: Actualidad</p>
+        <p class="source">Fuente: RPP</p>
+    </div>
+</footer>
+
+</body>
+</html>

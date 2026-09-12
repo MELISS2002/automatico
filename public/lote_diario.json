@@ -1,90 +1,42 @@
 [
   {
-    "tema": "Perú rompe relaciones diplomáticas con la República Islámica de Irán y aleja a su embajador por el contexto en Medio Oriente",
+    "tema": "Ministerio de Cultura anuncia eliminación de reservas anticipadas para ir a Machu Picchu",
     "cat": "home",
-    "slug": "peru-rompe-relaciones-diplomaticas-iran-medio-oriente",
-    "nota": "El Gobierno del Perú anunció la ruptura de relaciones diplomáticas con la República Islámica de Irán. La decisión fue comunicada oficialmente y se enmarca en la tensión que vive Medio Oriente. Perú retira a su embajador y se aleja del régimen iraní. La cancillería peruana difundió un comunicado precisando los alcances de la medida y el llamado a su embajador en Teherán. Fuente: El Comercio.",
-    "imgs": ["iran-relaciones.jpg"],
+    "slug": "mincul-elimina-reservas-anticipadas-machu-picchu",
+    "nota": "El ministro de Cultura, Alberto Beingolea, informó que el Gobierno dispuso cambios en el reglamento de venta de entradas para la ciudadela inca de Machu Picchu, en la región Cusco, para evitar el acaparamiento de boletos y la aparición de mafias. Se elimina la posibilidad de realizar reserva previa de tres horas para implementar un mecanismo de venta directa con pago confirmado en un plazo máximo de 15 minutos. El nuevo sistema impediría que se mantengan localidades reservadas después de culminado el período, situación que habría favorecido a una supuesta mafia dedicada a la reventa de boletos. Bajo esta iniciativa intersectorial con el Ministerio de Comercio Exterior y Turismo, los visitantes ingresarán sus datos en la plataforma Tu Boleto, seleccionarán fecha y horario disponibles y efectuarán el pago. El Ejecutivo aprobó dos resoluciones que modifican el reglamento, con un plazo de diez días para las modificaciones en la plataforma y luego una marcha blanca de 30 días para evaluar y ajustar el sistema. La medida no afecta la venta de 1.000 entradas que se realiza en Machupicchu pueblo. Fuente: RPP.",
+    "imgs": ["machu-picchu.jpg", "machu-picchu-1.jpg", "machu-picchu-2.jpg"],
     "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
   },
   {
-    "tema": "Gobierno declara en emergencia distritos de 22 regiones por peligro de lluvias intensas ante el Fenómeno El Niño",
-    "cat": "home",
-    "slug": "gobierno-emergencia-distritos-22-regiones-el-nino",
-    "nota": "El Gobierno declaró en emergencia a un total de 893 distritos ubicados en 22 regiones del país ante el peligro inminente de lluvias intensas ligadas al Fenómeno El Niño. La medida habilitará la atención de la población vulnerable y la preparación ante posibles desbordes, huaicos e inundaciones. Se priorizan las zonas del norte y sierra del Perú con mayor riesgo hidrometeorológico. La entidad técnica responsable es el INDECI junto a los gobiernos regionales y locales. Fuente: La República.",
-    "imgs": ["emergencia-nino.jpg"],
-    "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
-  },
-  {
-    "tema": "El pollo baja, pero la luz y los combustibles suben: inflación de Lima acumula 4,16% hasta agosto",
-    "cat": "home",
-    "slug": "inflacion-lima-416-agosto-pollo-precios",
-    "nota": "La inflación en Lima Metropolitana acumuló una variación de 4,16% en el presente año hasta agosto. En el último mes la canasta mostró comportamientos mixtos: bajó el precio del pollo, aliviando los costos de las familias, pero subieron la tarifa eléctrica y los combustibles. Estos incrementos presionan sobre la canasta básica. El dato corresponde al INEI y sirve de referencia para evaluar el costo de vida y las expectativas de política monetaria del BCRP. Fuente: La República.",
-    "imgs": ["inflacion-lima.jpg"],
-    "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
-  },
-  {
-    "tema": "¿Conviene pagar ahora una deuda en dólares ante la caída del tipo de cambio? Esto dicen los expertos",
-    "cat": "home",
-    "slug": "conviene-pagar-deuda-dolares-caida-tipo-cambio",
-    "nota": "Ante la sostenida caída del tipo de cambio en el Perú, muchos usuarios se preguntan si es el momento de cancelar una deuda en dólares. Los analistas financieros señalan que, con un sol más fuerte, comprar dólares para pagar cuotas resulta más barato, pero conviene evaluar el costo financiero total, las comisiones y el momento de mayor liquidez. La recomendación general es amortizar deudas de alto costo antes que las de bajo interés. Se sugiere comparar el tipo de cambio del mercado y evitar asumir un endeudamiento excesivo. Fuente: Andina / Agencia Andina.",
-    "imgs": ["deuda-dolares.jpg"],
-    "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
-  },
-  {
-    "tema": "Congreso pausa debate del crédito suplementario de más de S/9.000 millones: obras, gratificación a CAS y recursos para El Niño quedan en evaluación del MEF",
-    "cat": "home",
-    "slug": "congreso-pausa-credito-suplementario-s9000-millones",
-    "nota": "La Comisión Permanente del Congreso suspendió hasta la noche el debate del crédito suplementario de más de S/9.000 millones. Los pedidos de los congresistas para incluir obras paralizadas, la gratificación de trabajadores CAS, Beca Generación Bicentenario y recursos para atender el Fenómeno El Niño fueron remitidos al MEF para ser evaluados por sus técnicos. El presidente de la Comisión de Presupuesto, Alejandro Soto, advirtió que no todas las solicitudes podrán ser atendidas al tratarse de un crédito suplementario y no de la Ley de Presupuesto. Fuente: RPP.",
-    "imgs": ["credito-suplementario.jpg"],
-    "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
-  },
-  {
-    "tema": "Reportan caso de lepra en Piura: ¿cuál es el tratamiento y cuánto dura?",
+    "tema": "Keiko Fujimori anuncia a Zulema Tomás como nueva presidenta de EsSalud",
     "cat": "salud",
-    "slug": "caso-lepra-piura-tratamiento-duracion",
-    "nota": "Se reportó un caso de lepra en la región Piura. La lepra, causada por la bacteria Mycobacterium leprae, es una enfermedad infecciosa crónica que afecta principalmente la piel, los nervios periféricos y las mucosas. Tiene tratamiento gratuito y efectivo mediante la poliquimioterapia (PQT) recomendada por la OMS, que cura la enfermedad. El tratamiento suele durar entre 6 y 12 meses y, al ser diagnosticada y tratada a tiempo, deja de ser transmisible. El Minsa insta a acudir al establecimiento de salud más cercano ante manchas en la piel, pérdida de sensibilidad o nódulos. Fuente: ATV.",
-    "imgs": ["lepra-piura.jpg"],
+    "slug": "zulema-tomas-nueva-presidenta-essalud",
+    "nota": "La presidenta Keiko Fujimori señaló que Zulema Tomás será la nueva presidenta de EsSalud, quien tiene el respaldo del ministro de Trabajo, Juan Sheput. Tomás ocupará el cargo del que fue removido Jaime Moreno por la pérdida de la confianza. A la fecha, la encargada de la presidencia es Hilda Sandoval. Zulema Tomás fue ministra de Salud durante el gobierno de Martín Vizcarra, de enero a noviembre del 2019, y renunció al puesto tras cuestionamientos mediáticos y denuncias por presunto nepotismo. El ministro Juan Sheput había cuestionado en ese entonces los vínculos de Tomás y alertó sobre 'un trueque escandaloso' y 'corrupción en el gobierno', pero ahora goza de su respaldo. Fujimori garantizó que el MTPE cumple con el proceso de transición y reiteró que no hay cambios en el gabinete ministerial comandado por Luis Galarreta. Fuente: Gestión.",
+    "imgs": ["essalud-tomas.jpg", "essalud-tomas-1.jpg", "essalud-tomas-2.jpg"],
     "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
   },
   {
-    "tema": "Fiscalía interviene boticas y decomisa 879 medicamentos irregulares en Piura: alerta por falsificados, vencidos y sin registro sanitario",
-    "cat": "salud",
-    "slug": "fiscalia-decomisa-879-medicamentos-irregulares-piura",
-    "nota": "La Segunda Fiscalía de Prevención del Delito de Piura ejecutó un operativo conjunto en boticas y farmacias del distrito de Veintiséis de Octubre, donde decomisó 879 unidades entre medicamentos y productos sanitarios presuntamente falsificados, vencidos, de procedencia extranjera, sin registro sanitario o de origen desconocido. Las autoridades exhortaron a la ciudadanía a evitar la compra de medicinas en puestos ambulatorios, ferias o boticas que no exhiban su autorización sanitaria, y a denunciar. El operativo busca desmantelar redes de informalidad que ponen en riesgo la salud pública. Fuente: Exitosa Noticias.",
-    "imgs": ["medicamentos-piura.jpg"],
+    "tema": "Golpe a red de extorsión que cobraba cupos a empresas de transporte en San Juan de Lurigancho",
+    "cat": "home",
+    "slug": "golpe-red-extorsion-cupos-transportistas",
+    "nota": "La Tercera Fiscalía Supraprovincial Corporativa Especializada contra la Criminalidad Organizada (Segundo Equipo) consiguió la detención preliminar judicial de varios investigados por su presunta participación en una red dedicada a extorsionar a empresas de transporte en San Juan de Lurigancho. La intervención se realizó la noche del jueves 10 de septiembre e incluyó allanamientos y detenciones preliminares autorizadas judicialmente. Los transportistas denunciaron que el grupo criminal enviaba mensajes extorsivos exigiendo pagos a cambio de no atentar contra trabajadores, conductores o unidades de transporte, y usaban aplicativos de pago como Yape y Plin además de cuentas bancarias. Se allanaron 13 inmuebles ubicados en Lima, Cusco y Ucayali. Las intervenciones se realizaron en San Juan de Lurigancho, San Antonio de Huarochirí, Pachacámac, San Juan de Miraflores y Santa Anita, además del Callao, y alcanzaron Cusco y Pucallpa. Se incautaron 14 equipos celulares, ocho tarjetas bancarias, dos tablets, un vehículo, un USB y marihuana. Fuente: Perú21.",
+    "imgs": ["extorsion.jpg", "extorsion-1.jpg", "extorsion-2.jpg"],
     "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
   },
   {
-    "tema": "Salud mental en el Perú: depresión, ansiedad, estrés, adicciones y violencia consumen a los peruanos",
-    "cat": "salud",
-    "slug": "salud-mental-peru-depresion-ansiedad-estres",
-    "nota": "Especialistas advierten que la depresión, la ansiedad, el estrés, las adicciones y la violencia afectan cada vez a más peruanos. La salud mental es un componente esencial del bienestar y su descuido incrementa el riesgo de enfermedades físicas y reduce la calidad de vida. El Minsa recomienda mantener rutinas saludables, dormir adecuadamente, hacer ejercicio, fomentar relaciones de apoyo y acudir a un profesional de la psicología como parte del autocuidado, sin esperar a estar en crisis. El primer paso es reconocer las señales de alerta y buscar ayuda temprana. Fuente: La República.",
-    "imgs": ["salud-mental.jpg"],
+    "tema": "Keiko Fujimori anuncia a Álvaro Vargas Llosa como próximo embajador de Perú en Estados Unidos",
+    "cat": "home",
+    "slug": "alvaro-vargas-llosa-embajador-peru-estados-unidos",
+    "nota": "La presidenta Keiko Fujimori anunció que Álvaro Vargas Llosa será el próximo embajador del Perú en Estados Unidos. El escritor y periodista peruano, hijo del Nobel Mario Vargas Llosa, agradeció la propuesta y señaló que pondrá su experiencia al servicio del país. Fujimori indicó que Álvaro Vargas Llosa 'va a ser un gran embajador del Perú en Estados Unidos'. La designación aún requiere el trámite correspondiente ante el Congreso. Vargas Llosa es economista, analista político y colaborador en medios internacionales, con amplia trayectoria como ensayista sobre política y libertades. Fuente: El País / RPP.",
+    "imgs": ["vargas-llosa.jpg", "vargas-llosa-1.jpg", "vargas-llosa-2.jpg"],
     "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
   },
   {
-    "tema": "¿Cobras tu pensión de la ONP? Así puedes cambiar de banco y estos son los requisitos",
+    "tema": "Dólar en Perú: por qué el miércoles se sabrá si cerrará el año al alza o a la baja",
     "cat": "gana",
-    "slug": "cambio-banco-pension-onp-requisitos",
-    "nota": "La ONP permite a los pensionistas cambiar la entidad bancaria donde reciben su pensión de jubilación cada mes, siempre que cumplan con los requisitos. El trámite se realiza de manera gratuita y virtual a través de la plataforma ONP Virtual (onpvirtual.pe), en la sección 'Cobro pensión', seleccionando la opción de cambio de banco. Las entidades autorizadas son Banco de la Nación, BBVA, Interbank, Banco GNB, BanBif y Scotiabank. Antes de elegir, conviene verificar servicios como pago con carta poder o préstamos. Solo se permite cambiar a las entidades autorizadas. Fuente: Exitosa Noticias / ONP.",
-    "imgs": ["onp-cambio-banco.jpg"],
-    "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
-  },
-  {
-    "tema": "Consumo fantasma: los electrodomésticos que gastan luz estando apagados y cómo reducir tu recibo, según Osinergmin",
-    "cat": "gana",
-    "slug": "consumo-fantasma-electrodomesticos-ahorrar-luz",
-    "nota": "Osinergmin advierte que muchos equipos eléctricos continúan consumiendo energía aun estando apagados si permanecen conectados, fenómeno conocido como 'consumo fantasma', que representa un gasto permanente en el recibo de luz. Para ahorrar, la entidad recomienda desconectar los equipos que no estén en uso, como cargadores, microondas, termas y computadoras; usar planchas a vapor con la carga completa, verificar los sellos del refrigerador y evitar introducir alimentos calientes. Desenchufar los equipos antes de salir de casa reduce el gasto innecesario de electricidad. Fuente: Infobae / Osinergmin.",
-    "imgs": ["ahorro-luz.jpg"],
-    "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
-  },
-  {
-    "tema": "Trabajos remotos en Perú 2026: perfiles digitales con sueldos de hasta S/8.000 y dónde postular",
-    "cat": "gana",
-    "slug": "trabajos-remotos-peru-2026-perfiles-s8000",
-    "nota": "El trabajo remoto sigue creciendo en Perú y para 2026 se consolida como una de las principales formas de empleo digital, con sueldos que pueden llegar hasta los S/8.000 o más según la experiencia. Los perfiles más buscados son analista de datos (S/4.500 a S/8.000, con Excel avanzado, SQL, Power BI o Python), especialista en marketing digital (S/3.500 a S/7.500, con Meta Ads, Google Ads, SEO y analítica), atención al cliente y programación. Se puede postular a través de plataformas como LinkedIn, Indeed, Workana y Upwork. Aprender idiomas suma para conseguir empleo más rápido. Fuente: ATV.",
-    "imgs": ["trabajos-remotos.jpg"],
+    "slug": "dolar-peru-miercoles-sabremos-cierre-2026",
+    "nota": "El dólar subió ayer 0,5% en Perú, de S/ 3.357 a S/ 3.374, presionado por el alza del petróleo a US$ 107 por barril tras los conflictos geopolíticos. El miércoles 16 la Reserva Federal de EE.UU. decidirá si sube su tasa de interés o la mantiene en 3,75%; el mercado descuenta 70% de probabilidad de un ajuste. La tasa del Tesoro de EE.UU. a largo plazo saltó a 4,96%, su máxima cota en 19 años. Los metales clave del Perú sufrieron: cobre y plata cayeron más de 5% y el oro cedió 2%; la BVL bajó 2,2%. Carlos Prieto, gerente de estudios económicos del BCP, indicó que si la Fed mantiene su tasa, el dólar cerraría el año en S/ 3.25, por debajo de su precio actual; pero si el organismo eleva su tasa a 4%, el dólar culminará 2026 en niveles de S/ 3.30 a S/ 3.35. El BCRP interviene en el mercado cambiario para morigerar el descenso del dólar. Fuente: Gestión.",
+    "imgs": ["dolar-cierre.jpg", "dolar-cierre-1.jpg", "dolar-cierre-2.jpg"],
     "img_dir": "C:\\Users\\dza\\Desktop\\neo\\tools\\news-imgs-final"
   }
 ]

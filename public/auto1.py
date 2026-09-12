@@ -32,7 +32,65 @@ TIMEOUT_RESPUESTA = 600
 SOLO_NOTICIAS = True
 CATEGORIA_NOTICIAS = "home"
 
+# --- Reparación de mojibake (texto UTF-8 que fue leído como cp1252/latin-1) ---
+_CP1252_HIGH = set(
+    "€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ"
+    "¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿"
+    "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ"
+    "".join(chr(c) for c in range(0x80, 0xA0))
+)
+_MOJI_INDICADOR = re.compile(r"[ÃÂâÅÐð][\u0080-\u00ff€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ¡-¿]")
+
+def _reparar_segmento(seg):
+    tiene_c1 = any(0x80 <= ord(c) <= 0x9F for c in seg)
+    orden = ("latin-1", "cp1252") if tiene_c1 else ("cp1252", "latin-1")
+    for enc in orden:
+        try:
+            return seg.encode(enc).decode("utf-8")
+        except (UnicodeEncodeError, UnicodeDecodeError):
+            continue
+    return seg
+
+def reparar_mojibake(texto, max_iter=4):
+    """Corrige dobles codificaciones (p. ej. 'HÃ¡bitos' -> 'Hábitos').
+    Solo toca runs con indicador claro de mojibake; el texto limpio no cambia."""
+    if not isinstance(texto, str):
+        return texto
+    for _ in range(max_iter):
+        if not _MOJI_INDICADOR.search(texto):
+            break
+        out, i, n = [], 0, len(texto)
+        cambiado = False
+        while i < n:
+            c = texto[i]
+            if c in _CP1252_HIGH:
+                j = i
+                while j < n and texto[j] in _CP1252_HIGH:
+                    j += 1
+                seg = texto[i:j]
+                if _MOJI_INDICADOR.search(seg):
+                    rep = _reparar_segmento(seg)
+                    if rep != seg:
+                        out.append(rep); cambiado = True
+                    else:
+                        out.append(seg)
+                else:
+                    out.append(seg)
+                i = j
+            else:
+                out.append(c); i += 1
+        nuevo = "".join(out)
+        if not cambiado or nuevo == texto:
+            texto = nuevo; break
+        texto = nuevo
+    texto = re.sub(r"[\u0080-\u009f\ufeff\ufe0f]", "", texto)
+    texto = texto.replace("ï¸", "")
+    if "Â" in texto:
+        texto = re.sub(r"\s*Â\s+", " ", texto)
+    return texto
+
 def limpiar_texto(texto):
+    texto = reparar_mojibake(texto)
     return re.sub(r'[^\u0000-\uFFFF]', '', texto)
 
 # ============================================
@@ -119,18 +177,47 @@ def preguntar_deepseek(prompt, driver):
         EC.presence_of_element_located((By.XPATH, "//textarea"))
     )
     prompt_limpio = limpiar_texto(prompt)
-
-    # Capturamos el último texto antes de enviar para no confundirlo con la respuesta nueva.
     texto_anterior = obtener_ultimo_mensaje_asistente(driver)
-    pyperclip.copy(prompt_limpio)
-    input_box.click()
-    time.sleep(0.2)
-    actions = ActionChains(driver)
-    actions.key_down(Keys.CONTROL).send_keys('v').key_up(Keys.CONTROL).perform()
+
+    # Enfocar de forma segura (click + JS focus) para que el paste/typing entre en el textarea.
+    try:
+        driver.execute_script("arguments[0].focus(); arguments[0].click();", input_box)
+    except Exception:
+        input_box.click()
+    time.sleep(0.3)
+
+    # Estrategia 1: rellenar vía JS native value setter (compatible con React) + evento input.
+    filled = False
+    try:
+        driver.execute_script(
+            "var el=arguments[0];"
+            "var setter=Object.getOwnPropertyDescriptor(window.HTMLTextAreaElement.prototype,'value').set;"
+            "setter.call(el, arguments[1]);"
+            "el.dispatchEvent(new Event('input',{bubbles:true}));"
+            "el.dispatchEvent(new Event('change',{bubbles:true}));",
+            input_box, prompt_limpio)
+        filled = bool(input_box.get_attribute("value") or input_box.text)
+        print(f"📋 JS fill={'OK' if filled else 'VACIO'}")
+    except Exception:
+        filled = False
+
+    # Estrategia 2/a si el fill por JS no llenó o DeepSeek no lo captó: pegar con Ctrl+V.
+    if not filled:
+        pyperclip.copy(prompt_limpio)
+        try:
+            actions = ActionChains(driver)
+            actions.key_down(Keys.CONTROL).send_keys('v').key_up(Keys.CONTROL).perform()
+            time.sleep(0.8)
+        except Exception:
+            pass
     time.sleep(0.5)
     if len(prompt_limpio) > 4000:
-        time.sleep(1)
+        time.sleep(1.2)
 
+    contenido = (input_box.get_attribute("value") or input_box.text or "")
+    print(f"📤 Prompt en textarea: {len(contenido)} caracteres enviado view")
+
+    # Enviar con Enter (y verificación de que algo se mandó).
     input_box.send_keys(Keys.RETURN)
     print(f"📤 Prompt enviado ({len(prompt_limpio)} caracteres).")
 

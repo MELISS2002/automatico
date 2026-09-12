@@ -28,24 +28,44 @@ import sys, os, io, json, time, re, subprocess, shutil
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
-sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
+_orig_stdout = sys.stdout
+_orig_stderr = sys.stderr
+sys.stdout = io.TextIOWrapper(_orig_stdout.buffer, encoding="utf-8", errors="replace")
+sys.stderr = io.TextIOWrapper(_orig_stderr.buffer, encoding="utf-8", errors="replace")
 os.environ.setdefault("PYTHONIOENCODING", "utf-8")
 
 from auto1 import (extract_val, extract_between, extraer_bloques,
                    actualizar_json, JSON_FILES, POSTS_DIR, limpiar_texto,
-                   tema_a_slug)
+                   tema_a_slug, conectar_chrome, preguntar_deepseek)
 
 API_URL = os.environ.get("DEEPSEEK_URL", "http://127.0.0.1:8765/v1/chat/completions")
 MODEL = os.environ.get("MODEL_OVERRIDE", "deepseek-web")
 LOTE = os.path.join(HERE, "lote_diario.json")
+
+# Backend de generacion: "selenium" (directo a chat.deepseek.com via Chrome 9222)
+# o "api" (curl al proxy local). Selenium es el metodo que el usuario valido
+# como funcional para prompts grandes.
+BACKEND = os.environ.get("DEEPSEEK_BACKEND", "selenium")
+_DRIVER = None
+
+def get_driver():
+    global _DRIVER
+    if _DRIVER is None:
+        _DRIVER = conectar_chrome()
+        if "deepseek" not in _DRIVER.current_url:
+            from auto1 import DEEPSEEK_URL
+            _DRIVER.get(DEEPSEEK_URL)
+            time.sleep(5)
+    return _DRIVER
 
 def cargar_lote():
     with open(LOTE, encoding="utf-8") as f:
         return json.load(f)
 
 def build_prompt(tema, nota):
-    return f"""Eres un redactor y disenador web experto de un portal de noticias peruano. Crea un articulo periodistico completo en HTML sobre esta noticia real de actualidad (minimo 1000 palabras):
+    return f"""IMPORTANTISIMO: NO escribas NINGUN analisis, resumen, plan, titulo propuesto, extracto, intro, ni texto de razonamiento ANTES de la respuesta. Prohibido escribir frases tipo "The user is asking", "Title:", "Excerpt:", "Body:", "Intro:", "TEMA:", listados de lo que vas a hacer, o labores de pensar en voz alta. Prohibido todo. SALTA directo a la respuesta final: escribe ÚNICAMENTE el marcador TITLE: ... luego EXCERPT: ... y luego el bloque ===HTML_START=== con el HTML completo ===HTML_END===. Tu PRIMERA linea debe ser exactamente "TITLE:".
+
+Eres un redactor y disenador web experto de un portal de noticias peruano. Crea un articulo periodistico completo en HTML sobre esta noticia real de actualidad (minimo 1000 palabras):
 
 TEMA: {tema}
 
@@ -68,7 +88,7 @@ EXCERPT: (extracto 2-3 frases)
 ===HTML_END===
 THUMBNAIL: imagen1.jpg"""
 
-def call_api(prompt):
+def call_api_curl(prompt):
     body = json.dumps({"model": MODEL,
                        "messages": [{"role": "user", "content": prompt}],
                        "temperature": 0.7})
@@ -87,6 +107,13 @@ def call_api(prompt):
     return (data.get("content")
             or data.get("choices", [{}])[0].get("message", {}).get("content")
             or "")
+
+def call_api(prompt):
+    if BACKEND == "selenium":
+        # Metodo directo a chat.deepseek.com via Chrome 9222 (el que el usuario valido).
+        driver = get_driver()
+        return preguntar_deepseek(prompt, driver)
+    return call_api_curl(prompt)
 
 def guardar(respuesta, art):
     slug = art["slug"]
@@ -198,6 +225,13 @@ def main():
     print("\n=== RESUMEN ===", flush=True)
     for s, ok in resultados:
         print(("OK  " if ok else "FAIL ") + s, flush=True)
+    global _DRIVER
+    if _DRIVER is not None:
+        try:
+            _DRIVER.quit()
+        except Exception:
+            pass
+        _DRIVER = None
     print("FIN_BATCH", flush=True)
 
 if __name__ == "__main__":
