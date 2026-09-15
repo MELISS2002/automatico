@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PNP desbarata banda criminal que extorsionaba a mototaxistas en Lima Norte y cobraba mora por retrasos</title>
+    <title>PNP desbarata a 'Los Pepes del Cono Norte', banda que extorsionaba a mototaxistas y cobraba mora por retrasos</title>
     <style>
         :root {
             --primary-color: #0b2545;
             --secondary-color: #134074;
-            --accent-color: #8da9c4;
-            --background-color: #eeefn0;
-            --text-color: #1d2d44;
-            --light-bg: #f8f9fa;
-            --border-color: #dee2e6;
+            --accent-color: #c59b27;
+            --text-color: #222222;
+            --bg-color: #f8f9fa;
+            --border-color: #e0e0e0;
         }
 
         body {
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.6;
             color: var(--text-color);
-            background-color: #f4f6f9;
+            background-color: var(--bg-color);
             margin: 0;
             padding: 0;
         }
 
-        header {
+        header.news-header {
             background-color: var(--primary-color);
             color: #ffffff;
             padding: 2rem 1rem;
@@ -33,94 +32,102 @@
 
         .container {
             max-width: 800px;
-            margin: 2rem auto;
-            background: #ffffff;
+            margin: 0 auto;
+            background-color: #ffffff;
             padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .category {
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        h1.news-title {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+            color: var(--primary-color);
         }
 
         .news-meta {
             font-size: 0.9rem;
-            color: #6c757d;
+            color: #666666;
             margin-bottom: 1.5rem;
             border-bottom: 1px solid var(--border-color);
-            padding-bottom: 0.5rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            color: var(--primary-color);
-            margin-top: 0;
-            line-height: 1.3;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            color: var(--secondary-color);
-            margin-top: 1.5rem;
-            border-left: 4px solid var(--secondary-color);
-            padding-left: 10px;
-        }
-
-        p {
-            margin-bottom: 1.2rem;
-            text-align: justify;
+            padding-bottom: 1rem;
         }
 
         .featured-image-container {
-            margin: 1.5rem 0;
+            margin-bottom: 1.5rem;
             text-align: center;
         }
 
         .featured-image {
-            max-width: 100%;
+            width: 100%;
             height: auto;
-            border-radius: 6px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 4px;
         }
 
         .image-caption {
             font-size: 0.85rem;
-            color: #6c757d;
+            color: #666;
             margin-top: 0.5rem;
             font-style: italic;
         }
 
-        .highlight-box {
-            background-color: var(--light-bg);
-            border-left: 4px solid var(--primary-color);
-            padding: 1rem 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 0 6px 6px 0;
+        .lead-paragraph {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
         }
 
-        .highlight-box p {
-            margin: 0;
-            font-weight: bold;
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        h2 {
+            font-size: 1.5rem;
             color: var(--primary-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+        }
+
+        .highlight-box {
+            background-color: #f0f4f8;
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
         }
 
         footer {
-            text-align: center;
             margin-top: 3rem;
-            padding: 1.5rem;
-            background-color: var(--primary-color);
-            color: #ffffff;
-            font-size: 0.9rem;
+            padding-top: 1.5rem;
             border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.85rem;
+            color: #666666;
         }
 
         @media (max-width: 768px) {
             .container {
-                margin: 0;
                 padding: 1rem;
-                border-radius: 0;
             }
-            h1 {
+            h1.news-title {
                 font-size: 1.8rem;
             }
         }
@@ -128,55 +135,52 @@
 </head>
 <body>
 
-    <header>
+    <header class="news-header">
         <div style="max-width: 800px; margin: 0 auto;">
-            <span style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; background: #134074; padding: 4px 8px; border-radius: 4px;">Actualidad Policial</span>
-            <h2 style="color: #ffffff; border: none; padding: 0; margin: 10px 0 0 0;">Portal de Noticias Perú</h2>
+            <span style="font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; color: #c59b27;">Actualidad Policial</span>
         </div>
     </header>
 
     <div class="container">
+        <span class="category">Seguridad Ciudadana</span>
+        <h1 class="news-title">PNP desbarata a 'Los Pepes del Cono Norte', banda que extorsionaba a mototaxistas y cobraba mora por retrasos</h1>
+        
         <div class="news-meta">
-            <span>Redacción Central</span>
-            <span>Actualizado el 15 de Set, 2026 12:21 pm</span>
+            Actualizado el 15 de Setiembre, 2026 - 12:21 p.m. | Redacción Central
         </div>
-
-        <h1>PNP desbarata banda criminal que extorsionaba a mototaxistas en Lima Norte y cobraba mora por retrasos</h1>
 
         <div class="featured-image-container">
             <img src="imagen1.jpg" alt="Operativo policial en Lima Norte" class="featured-image">
-            <div class="image-caption">Las fuerzas del orden ejecutaron el operativo en el distrito de Comas, logrando la captura de cinco presuntos extorsionadores.</div>
+            <div class="image-caption">Las fuerzas del orden llevaron a cabo un contundente operativo en Lima Norte para desarticular a la organización criminal.</div>
         </div>
 
-        <p>Las fuerzas del orden lograron un importante golpe contra la delincuencia común y organizada al capturar a cinco presuntos integrantes de una peligrosa banda de extorsionadores que operaba principalmente en el distrito de Comas, afectando severamente a los trabajadores del transporte menor.</p>
+        <p class="lead-paragraph">Las fuerzas del orden capturaron a cinco presuntos integrantes de 'Los Pepes del Cono Norte', una peligrosa banda de extorsionadores que operaba principalmente en el distrito de Comas, sembrando el terror entre los trabajadores del transporte menor.</p>
 
-        <p>De acuerdo con los reportes oficiales dados a conocer este 15 de septiembre de 2026, la organización criminal autodenominada 'Los Pepes del Cono Norte' mantenía en zozobra a decenas de mototaxistas que laboran en diversos paraderos de Lima Norte. Los sujetos exigían pagos diarios y semanales bajo amenazas de muerte y agresiones físicas contra las unidades y los propios conductores.</p>
+        <p>La intervención policial marca un golpe significativo contra las redes criminales que se dedican al cobro de cupos en Lima Norte. La organización desarticulada no solo exigía pagos extorsivos diarios a los conductores de vehículos menores, sino que operaba bajo un esquema formalizado de intimidación que incluía el cobro de moras a quienes se demoraban en efectuar los pagos requeridos por la agrupación delictiva.</p>
 
-        <h2>Modus operandi: Cobros sistemáticos y moras abusivas</h2>
+        <h2>El modus operandi de la extorsión</h2>
 
-        <p>Las investigaciones preliminares de la Policía Nacional del Perú (PNP) revelaron detalles alarmantes sobre el funcionamiento financiero de esta red delictiva. La banda no solo se conformaba con exigir cupos fijos para permitirles trabajar en la zona, sino que había implementado un sistema de cobro de moras punitivas.</p>
+        <p>De acuerdo con las primeras indagaciones policiales, 'Los Pepes del Cono Norte' habían convertido la zona de Comas en su principal centro de operaciones. Los transportistas informales y formales de mototaxis eran obligados a pagar montos fijos bajo la amenaza constante de atentar contra sus vidas, las de sus familiares o quemar sus unidades de trabajo.</p>
+
+        <p>Sin embargo, un detalle que llamó la atención de las autoridades fue la modalidad empleada cuando los conductores sufrían retrasos económicos o dificultades para reunir el dinero exigido. Los extorsionadores aplicaban penalidades económicas adicionales, denominadas "moras", incrementando la deuda inicial y asfixiando aún más la economía de los trabajadores del volante.</p>
 
         <div class="highlight-box">
-            <p>Los agraviados que se demoraban en cancelar el monto de los cupos extorsivos debían pagar una penalidad o mora adicional, incrementando aún más la presión económica sobre los transportistas informales y formales que luchan por salir adelante.</p>
+            "Las fuerzas del orden capturaron a cinco presuntos integrantes de 'Los Pepes del Cono Norte', peligrosa banda de extorsionadores que operaba principalmente en el distrito de Comas."
         </div>
 
-        <p>Los delincuentes utilizaban la intimidación constante y marcaban a sus víctimas mediante llamadas telefónicas y mensajes amenazantes. Aquellos conductores que intentaban retrasar el pago o se negaban a cumplir con las exigencias de 'Los Pepes del Cono Norte' sufrían daños materiales en sus vehículos, como la quema de mototaxis o agresiones directas a sus familiares.</p>
+        <h2>Operativo y captura de los implicados</h2>
 
-        <h2>Acciones de inteligencia y captura</h2>
+        <p>Tras labores de inteligencia y seguimiento, personal especializado de las fuerzas del orden logró ubicar a los sospechosos en puntos estratégicos del distrito norteño. El despliegue policial permitió la captura en flagrancia de cinco sujetos presuntamente vinculados de manera directa a la red criminal.</p>
 
-        <p>Tras reiteradas denuncias interpuestas por los transportistas afectados, unidades especializadas de la Policía Nacional iniciaron un paciente trabajo de seguimiento e inteligencia operativa. Estas labores permitieron identificar a los cabecillas y principales operadores de la facción criminal en el distrito de Comas.</p>
+        <p>Durante la intervención, se recopilaron elementos materiales probatorios que vincularían a los detenidos con los delitos de extorsión agravada, marcaje y reglaje a los transportistas. Las autoridades continúan con las diligencias de ley correspondientes para determinar si existen más agraviados y si la banda contaría con ramificaciones en distritos colindantes de Lima Norte.</p>
 
-        <p>Durante la intervención táctica, los agentes del orden lograron reducir y detener a cinco presuntos integrantes de la organización. En el operativo se incautaron elementos probatorios vinculados al delito de extorsión, tales como equipos celulares utilizados para realizar las llamadas intimidatorias, cuadernos con anotaciones de los cupos cobrados y dinero en efectivo producto de las extorsiones del día.</p>
+        <p>El caso ya se encuentra en manos del Ministerio Público, entidad que formalizará la investigación preparatoria y solicitará el requerimiento de prisión preventiva contra los cinco intervenidos, mientras la ciudadanía en Comas exige mayores garantías para el desarrollo de sus actividades cotidianas frente al asedio de la delincuencia organizada.</p>
 
-        <p>Los detenidos fueron trasladados bajo estrictas medidas de seguridad a la dependencia policial correspondiente para continuar con las diligencias de ley, en coordinación con el Ministerio Público. Mientras tanto, las autoridades policiales indicaron que las investigaciones continuarán abiertas para determinar si existen más personas implicadas o si la red operaba en otros distritos colindantes de Lima Norte.</p>
-
-        <p>Este duro golpe busca devolver la tranquilidad a los gremios de transportistas menores de la capital, quienes persistentemente han exigido mayor presencia policial y patrullaje integrado ante el avance de las mafias dedicadas al cobro de cupos en los conos de Lima.</p>
+        <footer>
+            <p>Redacción periodística basada en hechos reales de actualidad.</p>
+            <p>&copy; 2026 Portal de Noticias del Perú. Todos los derechos reservados.</p>
+        </footer>
     </div>
-
-    <footer>
-        <p>&copy; 2026 Portal de Noticias Perú. Todos los derechos reservados.</p>
-        <p>Redacción periodística basada en hechos reales - Lima, Perú.</p>
-    </footer>
 
 </body>
 </html>
