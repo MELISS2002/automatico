@@ -60,7 +60,8 @@ def get_driver():
 
 def cargar_lote():
     with open(LOTE, encoding="utf-8") as f:
-        return json.load(f)
+        d = json.load(f)
+    return d.get("items", []) if isinstance(d, dict) else d
 
 def build_prompt(tema, nota):
     return f"""IMPORTANTISIMO: NO escribas NINGUN analisis, resumen, plan, titulo propuesto, extracto, intro, ni texto de razonamiento ANTES de la respuesta. Prohibido escribir frases tipo "The user is asking", "Title:", "Excerpt:", "Body:", "Intro:", "TEMA:", listados de lo que vas a hacer, o labores de pensar en voz alta. Prohibido todo. SALTA directo a la respuesta final: escribe ÚNICAMENTE el marcador TITLE: ... luego EXCERPT: ... y luego el bloque ===HTML_START=== con el HTML completo ===HTML_END===. Tu PRIMERA linea debe ser exactamente "TITLE:".

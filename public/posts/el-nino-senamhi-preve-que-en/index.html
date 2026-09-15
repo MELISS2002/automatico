@@ -5,134 +5,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Niño: Senamhi prevé que en los próximos días se inicien las lluvias en costa norte</title>
     <style>
-        * {
-            box-sizing: border-box;
+        :root {
+            --primary-color: #0b2545;
+            --secondary-color: #134074;
+            --accent-color: #ee6c4d;
+            --text-color: #333333;
+            --bg-color: #f4f7f6;
+            --white: #ffffff;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
             margin: 0;
             padding: 0;
         }
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            color: #333333;
-            background-color: #f4f6f9;
-        }
+
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
         }
-        header {
-            margin-bottom: 20px;
-            border-bottom: 2px solid #003366;
-            padding-bottom: 15px;
+
+        .news-header {
+            padding: 40px 40px 20px 40px;
+            background-color: var(--white);
+            border-bottom: 1px solid var(--border-color);
         }
+
         .category {
-            font-size: 0.9rem;
-            color: #cc0000;
-            text-transform: uppercase;
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-        h1 {
-            font-size: 2.2rem;
-            color: #003366;
-            margin-bottom: 15px;
-            line-height: 1.2;
-        }
-        .meta {
             font-size: 0.85rem;
-            color: #666666;
-            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--accent-color);
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: inline-block;
         }
+
+        h1 {
+            font-size: 2.4rem;
+            color: var(--primary-color);
+            margin-top: 0;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .meta-info {
+            font-size: 0.95rem;
+            color: #666666;
+            border-left: 3px solid var(--accent-color);
+            padding-left: 12px;
+            margin-bottom: 25px;
+        }
+
+        .featured-image-container {
+            width: 100%;
+            background-color: #eaeaea;
+            margin: 0;
+        }
+
         .featured-image {
             width: 100%;
             height: auto;
-            max-height: 450px;
+            display: block;
+            max-height: 500px;
             object-fit: cover;
-            margin-bottom: 20px;
-            border-radius: 4px;
         }
-        .lead {
-            font-size: 1.15rem;
-            font-weight: bold;
-            color: #222222;
-            margin-bottom: 20px;
-            line-height: 1.5;
+
+        .image-caption {
+            font-size: 0.85rem;
+            color: #666;
+            text-align: center;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid var(--border-color);
         }
-        h2 {
-            font-size: 1.5rem;
-            color: #003366;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            border-left: 4px solid #cc0000;
-            padding-left: 10px;
+
+        .news-content {
+            padding: 40px;
         }
+
         p {
-            margin-bottom: 15px;
+            font-size: 1.1rem;
+            margin-bottom: 24px;
             text-align: justify;
         }
-        .highlight-box {
-            background-color: #eef2f7;
-            border-left: 4px solid #003366;
-            padding: 15px;
-            margin: 20px 0;
-            font-style: italic;
-        }
-        footer {
+
+        h2 {
+            font-size: 1.6rem;
+            color: var(--secondary-color);
             margin-top: 40px;
-            border-top: 1px solid #dddddd;
-            padding-top: 15px;
-            font-size: 0.8rem;
-            color: #666666;
-            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
         }
-        @media (max-width: 600px) {
+
+        .highlight-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--primary-color);
+            padding: 20px 25px;
+            margin: 30px 0;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            font-size: 1.05rem;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        footer {
+            background-color: #f1f3f5;
+            padding: 25px 40px;
+            font-size: 0.9rem;
+            color: #555555;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            .news-header, .news-content {
+                padding: 20px;
+            }
+
             h1 {
                 font-size: 1.8rem;
             }
-            .container {
-                padding: 10px;
+
+            footer {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
             }
         }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <header>
-            <div class="category">Actualidad Nacional / Meteorología</div>
+        <header class="news-header">
+            <span class="category">Actualidad Nacional / Meteorología</span>
             <h1>El Niño: Senamhi prevé que en los próximos días se inicien las lluvias en costa norte</h1>
-            <div class="meta">Redacción Central | Actualizado el periodo actual</div>
+            <div class="meta-info">
+                Por Redacción de Noticias | Actualizado con información oficial del Senamhi y la Agencia de Noticias Andina
+            </div>
         </header>
 
-        <img src="imagen1.jpg" alt="Zona costera norte del Peru bajo vigilancia por el fenomeno de El Nino" class="featured-image">
-
-        <p class="lead">Al registrarse actualmente en las aguas del mar adyacente a la costa norte una temperatura con valores por encima de los 26 grados Celsius por efecto del fenómeno de El Niño, el Servicio Nacional de Meteorología e Hidrología del Perú (Senamhi) ha previsto que en los próximos días se inicien las precipitaciones en esta parte del país.</p>
-
-        <p>La advertencia emitida por el organismo técnico especializado del Estado enciende las alertas en diversas regiones del litoral norteño, las cuales ya experimentan las primeras señales tangibles del calentamiento anómalo de las aguas marinas. Este comportamiento térmico oceánico es el principal detonante atmosférico para la formación de nubes de gran desarrollo vertical y las consiguientes lluvias de variada intensidad.</p>
-
-        <h2>Impacto de la temperatura superficial del mar</h2>
-
-        <p>Los reportes técnicos del Senamhi detallan que la temperatura del mar en la franja costera norte ha superado de manera sostenida el umbral de los 26 °C. Este factor termodinámico resulta crítico, ya que actúa como un motor energético que favorece la evaporación y la posterior condensación, generando condiciones propicias para la inestabilidad atmosférica.</p>
-
-        <p>Las instituciones científicas y de gestión de riesgos mantienen un monitoreo permanente sobre la evolución de estas anomalías térmicas. La presencia de aguas cálidas frente al litoral peruano altera los patrones climáticos habituales, anticipando un escenario donde las precipitaciones pluviales comenzarán a manifestarse de manera paulatina pero constante en las zonas llanas y valles de la costa norte.</p>
-
-        <div class="highlight-box">
-            "Al registrarse actualmente en las aguas del mar adyacente a la costa norte una temperatura con valores por encima de los 26 °C por efecto del fenómeno de El Niño, el Senamhi prevé el inicio de lluvias."
+        <div class="featured-image-container">
+            <img src="imagen1.jpg" alt="Monitoreo del clima y condiciones del mar ante la llegada de El Niño en la costa norte" class="featured-image">
+            <div class="image-caption">Las condiciones térmicas en el litoral peruano experimentan anomalías positivas que impactan directamente en el régimen de precipitaciones.</div>
         </div>
 
-        <h2>Medidas de prevención y seguimiento oficial</h2>
+        <div class="news-content">
+            <p>El Servicio Nacional de Meteorología e Hidrología del Perú (Senamhi) ha emitido nuevos avisos técnicos en el marco del seguimiento continuo al fenómeno de El Niño. De acuerdo con las instituciones científicas y los reportes oficiales, las aguas del mar adyacente a la costa norte registran actualmente temperaturas con valores que se encuentran por encima de los 26 grados Celsius. Esta anomalía térmica marina constituye el principal factor dinamizador que impulsará el cambio en las condiciones atmosféricas de la región.</p>
+            
+            <p>Ante este escenario caracterizado por el calentamiento superficial del mar, el organismo técnico adscrito al Ministerio del Ambiente ha previsto que, en los próximos días, se inicien de manera paulatina las precipitaciones pluviales en diversos sectores de la costa norte peruana. El incremento térmico frente al litoral actúa como un combustible constante para la formación de nubosidad, lo que propiciará la ocurrencia de lluvias de diversa intensidad en las zonas llanas y valles de los departamentos norteños.</p>
 
-        <p>Ante este panorama anunciado por el Senamhi, las autoridades competentes y los gobiernos regionales y locales de la costa norte intensifican los trabajos de preparación. La activación de las lluvias no solo representa un cambio en las condiciones meteorológicas, sino también un llamado a la revisión de los planes de contingencia frente a posibles inundaciones, activación de quebradas o desbordes de ríos en las zonas vulnerables.</p>
+            <h2>Condiciones oceanográficas determinantes</h2>
 
-        <p>El Senamhi continuará emitiendo avisos meteorológicos de corto y mediano plazo para mantener informada a la ciudadanía y a los sectores productivos sobre el desarrollo exacto de estas precipitaciones. Se recomienda a la población mantenerse atenta a los comunicados oficiales y seguir las pautas dictadas por los comités de defensa civil en cada jurisdicción.</p>
+            <p>El comportamiento del mar frente al litoral peruano es monitoreado de manera permanente por los especialistas del Senamhi y otras entidades científicas asociadas al Estudio Nacional del Fenómeno El Niño (Enfen). Registrar temperaturas superiores a los 26 °C en el mar adyacente a la costa norte altera significativamente los patrones climáticos habituales de la estación, generando una mayor evaporación y, en consecuencia, una atmósfera más húmeda e inestable.</p>
+
+            <p>Los expertos señalan que estas condiciones cálidas facilitan el transporte de humedad desde el océano hacia el continente, interactuando con la cordillera de los Andes y desencadenando la formación de nubes de gran desarrollo vertical. Este proceso físico es el detonante clásico para el inicio de la temporada de lluvias en la franja norte del territorio nacional, la cual requiere especial atención debido a la vulnerabilidad de la infraestructura urbana y agrícola local.</p>
+
+            <div class="highlight-box">
+                <p>El Senamhi mantiene una vigilancia rigurosa sobre la evolución de las temperaturas superficiales del mar y la atmósfera, con el objetivo de emitir avisos meteorológicos oportunos para salvaguardar a la población de la costa norte ante la activación de las precipitaciones.</p>
+            </div>
+
+            <h2>Perspectivas y llamado a la prevención</h2>
+
+            <p>Con el pronóstico de que las lluvias comiencen a manifestarse en los próximos días, las autoridades competentes y los gobiernos regionales de la costa norte intensifican la revisión de sus planes de contingencia. La presencia de este calentamiento oceánico asociado a El Niño exige una respuesta articulada entre los diversos niveles del Estado para mitigar los posibles riesgos derivados de la crecida de caudales en quebradas y ríos locales.</p>
+
+            <p>El Senamhi continuará informando de manera oficial y detallada sobre la evolución espacial y temporal de estas precipitaciones, instando a la ciudadanía a mantenerse informada a través de los canales institucionales autorizados y a seguir las recomendaciones emitidas por el Sistema Nacional de Gestión del Riesgo de Desastres (Sinagerd) para afrontar este periodo de inestabilidad climática.</p>
+        </div>
 
         <footer>
-            <p>Articulo periodistico redactado bajo estrictos criterios de informacion oficial. Fuente: Senamhi / Agencia Andina.</p>
-            <p>Derechos reservados de reproduccion periodistica.</p>
+            <div>© 2024 Portal de Noticias Nacionales. Todos los derechos reservados.</div>
+            <div>Fecha de publicación: 20 de mayo de 2024</div>
         </footer>
     </div>
+
 </body>
 </html>
 ===HTML_END===
