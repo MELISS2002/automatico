@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Senador republicano culpa a las políticas de la administración Trump por las muertes por sarampión en Pensilvania</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Georgia, 'Times New Roman', serif;
+        background-color: #f4f5f7;
+        color: #1a1a1a;
+        line-height: 1.7;
+        font-size: 17px;
+    }
+    .contenedor {
+        max-width: 820px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        box-shadow: 0 2px 18px rgba(0,0,0,0.08);
+    }
+    header.encabezado-noticia {
+        padding: 0;
+        border-bottom: 4px solid #b3121b;
+    }
+    .barra-categoria {
+        background-color: #0f1c2e;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 10px 28px;
+        font-weight: bold;
+    }
+    .barra-categoria span {
+        color: #e8b93b;
+    }
+    .imagen-destacada {
+        width: 100%;
+        display: block;
+    }
+    .imagen-destacada img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .pie-imagen {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #666;
+        padding: 8px 28px 0 28px;
+        line-height: 1.4;
+    }
+    .cuerpo-noticia {
+        padding: 26px 28px 10px 28px;
+    }
+    h1.titular {
+        font-size: 34px;
+        line-height: 1.22;
+        color: #0f1c2e;
+        margin-bottom: 16px;
+        font-weight: 700;
+    }
+    .sumario {
+        font-size: 19px;
+        color: #3a3a3a;
+        border-left: 5px solid #b3121b;
+        padding-left: 16px;
+        margin-bottom: 22px;
+        font-style: italic;
+    }
+    .datos-firma {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        color: #777;
+        border-top: 1px solid #e2e2e2;
+        border-bottom: 1px solid #e2e2e2;
+        padding: 10px 0;
+        margin-bottom: 26px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+    .datos-firma strong {
+        color: #0f1c2e;
+    }
+    h2.subtitulo {
+        font-size: 24px;
+        color: #0f1c2e;
+        margin: 32px 0 14px 0;
+        line-height: 1.3;
+        border-bottom: 2px solid #ececec;
+        padding-bottom: 8px;
+    }
+    p {
+        margin-bottom: 18px;
+        text-align: justify;
+    }
+    .bloque-datos {
+        background-color: #f7f3e8;
+        border-left: 6px solid #e8b93b;
+        padding: 20px 22px;
+        margin: 28px 0;
+        border-radius: 3px;
+    }
+    .bloque-datos h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        color: #7a5c00;
+        margin-bottom: 12px;
+    }
+    .bloque-datos ul {
+        list-style: none;
+    }
+    .bloque-datos li {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: #2b2b2b;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+        line-height: 1.5;
+    }
+    .bloque-datos li::before {
+        content: "\25B8";
+        position: absolute;
+        left: 0;
+        color: #b3121b;
+        font-weight: bold;
+    }
+    blockquote.cita {
+        border-left: 5px solid #0f1c2e;
+        background-color: #f0f4f9;
+        padding: 18px 22px;
+        margin: 26px 0;
+        font-size: 20px;
+        font-style: italic;
+        color: #16283f;
+        line-height: 1.5;
+    }
+    .imagen-secundaria {
+        margin: 30px 0;
+    }
+    .imagen-secundaria img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 3px;
+    }
+    .imagen-secundaria figcaption {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #666;
+        padding-top: 8px;
+        line-height: 1.4;
+    }
+    footer.pie-articulo {
+        background-color: #0f1c2e;
+        color: #cfd6de;
+        padding: 26px 28px;
+        margin-top: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+    footer.pie-articulo .autor {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+    footer.pie-articulo .fecha {
+        color: #9fb0c2;
+        margin-bottom: 12px;
+    }
+    footer.pie-articulo .nota-legal {
+        border-top: 1px solid #2a3a50;
+        padding-top: 12px;
+        color: #8798ab;
+        font-size: 12px;
+    }
+    @media (max-width: 640px) {
+        body { font-size: 16px; }
+        h1.titular { font-size: 26px; }
+        h2.subtitulo { font-size: 20px; }
+        .cuerpo-noticia { padding: 20px 18px 8px 18px; }
+        .barra-categoria, .pie-imagen { padding-left: 18px; padding-right: 18px; }
+        .sumario { font-size: 17px; }
+        blockquote.cita { font-size: 18px; }
+        footer.pie-articulo { padding: 22px 18px; }
+    }
+</style>
+</head>
+<body>
+<div class="contenedor">
+
+    <header class="encabezado-noticia">
+        <div class="barra-categoria">Política <span>| Estados Unidos</span></div>
+        <div class="imagen-destacada">
+            <img src="/posts/republican-senator-blames-trump-administration-policies/imagen1.jpg" alt="El senador republicano Bill Cassidy durante una sesión en el Senado de Estados Unidos">
+        </div>
+        <div class="pie-imagen">Bill Cassidy, presidente del comité de salud del Senado, responsabilizó a las políticas sanitarias de la administración Trump por las muertes por sarampión en Pensilvania. Fotografía: Tom Williams/CQ-Roll Call a través de Getty Images</div>
+
+        <div class="cuerpo-noticia">
+            <h1 class="titular">Senador republicano culpa a las políticas de la administración Trump por las muertes por sarampión en Pensilvania</h1>
+
+            <p class="sumario">El presidente del comité de salud, Bill Cassidy, afirmó que el brote mortal de la enfermedad es un "legado terrible" para la administración Trump y reclamó líderes sanitarios que decidan con base en la ciencia y no en la ideología.</p>
+
+            <div class="datos-firma">
+                <span><strong>Sección:</strong> Política / Salud pública</span>
+                <span><strong>País:</strong> Estados Unidos</span>
+                <span><strong>Fuente:</strong> The Guardian</span>
+            </div>
+
+            <p>El senador Bill Cassidy, presidente republicano del comité de salud del Senado de Estados Unidos, culpó al enfoque escéptico hacia las vacunas de la administración Trump por las recientes muertes por sarampión registradas en Pensilvania y exigió este miércoles al candidato de Donald Trump para director general de sanidad (surgeon general) que declare abiertamente que las vacunas no causan autismo.</p>
+
+            <p>Cassidy, un médico de Luisiana que preside el panel legislativo, indicó que tres personas habían muerto de sarampión en Pensilvania y que una cuarta muerte estaba bajo revisión, situaciones que atribuyó a la desinformación y a políticas equivocadas. Sus declaraciones se producen mientras Estados Unidos lidia con su peor brote de sarampión en más de tres décadas.</p>
+
+            <blockquote class="cita">"Sufrir cualquier enfermedad es terrible, pero sufrir una que es evitable es aún peor", manifestó Cassidy, y añadió que el país necesita líderes de salud "que tomen decisiones basadas en la ciencia, no en la política o la ideología".</blockquote>
+
+            <h2 class="subtitulo">Un "legado terrible" para la administración</h2>
+
+            <p>El pronunciamiento del senador republicano representa un cuestionamiento directo desde el propio partido del presidente hacia la gestión sanitaria de la actual administración. Al calificar el brote mortal como un "legado terrible" para el gobierno de Trump, Cassidy situó la responsabilidad política en el corazón del debate sobre cómo se ha comunicado y gestionado la política de inmunización en el país.</p>
+
+            <p>La intervención de Cassidy no se limita a una crítica retrospectiva. El legislador aprovechó su posición al frente del comité de salud del Senado para plantear una exigencia concreta al candidato propuesto por Trump para ocupar el cargo de director general de sanidad, una figura clave en la orientación de la política de salud pública estadounidense. Según el senador, ese nombramiento debe ir acompañado de una declaración inequívoca: las vacunas no causan autismo.</p>
+
+            <p>La afirmación de que las vacunas provocan autismo ha sido repetidamente desmentida por la comunidad científica internacional, pero ha persistido en determinados circuitos y ha alimentado la desconfianza de una parte de la población hacia los programas de inmunización. Para Cassidy, esa desinformación tiene consecuencias tangibles y, en el caso de Pensilvania, potencialmente mortales.</p>
+
+            <div class="bloque-datos">
+                <h3>Los puntos clave del pronunciamiento</h3>
+                <ul>
+                    <li>Bill Cassidy preside el comité de salud del Senado de Estados Unidos y es médico de profesión, originario de Luisiana.</li>
+                    <li>El senador atribuyó las muertes por sarampión en Pensilvania a la desinformación y a políticas equivocadas.</li>
+                    <li>Señaló que tres personas murieron a causa de la enfermedad y que una cuarta muerte se encuentra bajo revisión.</li>
+                    <li>Exigió al candidato de Trump para director general de sanidad que declare que las vacunas no causan autismo.</li>
+                    <li>Sus declaraciones se producen en medio del peor brote de sarampión en Estados Unidos en más de tres décadas.</li>
+                </ul>
+            </div>
+
+            <h2 class="subtitulo">Ciencia frente a ideología</h2>
+
+            <p>El eje central del mensaje de Cassidy fue la defensa de la evidencia científica como base de las decisiones de salud pública. "El país necesita líderes de salud que tomen decisiones basadas en la ciencia, no en la política o la ideología", sostuvo el senador, en una formulación que contrasta con el escepticismo hacia las vacunas que, según su diagnóstico, ha caracterizado el enfoque de la administración Trump.</p>
+
+            <p>La frase encierra una crítica de fondo: cuando las decisiones sanitarias responden a cálculos políticos o a posiciones ideológicas antes que a la evidencia disponible, el resultado puede traducirse en enfermedades que podrían haberse evitado. El sarampión, una enfermedad altamente contagiosa y prevenible mediante vacunación, constituye el ejemplo más visible de esa dinámica.</p>
+
+            <p>La mención del autismo no es casual. Durante años, la supuesta relación entre las vacunas y el trastorno del espectro autista ha funcionado como uno de los argumentos más eficaces de los movimientos contrarios a la inmunización, pese a haber sido refutada por la investigación científica. Que el presidente de un comité de salud del Senado exija a un candidato a director general de sanidad pronunciarse de forma explícita sobre ese punto revela la preocupación de que la desinformación haya permeado instancias de decisión pública.</p>
+
+            <figure class="imagen-secundaria">
+                <img src="/posts/republican-senator-blames-trump-administration-policies/imagen2.jpg" alt="Sesión del comité de salud del Senado de Estados Unidos">
+                <figcaption>El comité de salud del Senado, presidido por Bill Cassidy, ha sido escenario de las advertencias sobre el avance del brote de sarampión en el país.</figcaption>
+            </figure>
+
+            <h2 class="subtitulo">Un brote sin precedentes recientes</h2>
+
+            <p>Las declaraciones del senador republicano adquieren mayor peso por el contexto epidemiológico. Estados Unidos enfrenta su peor brote de sarampión en más de tres décadas, una situación que ha reabierto el debate sobre la cobertura de vacunación y sobre la capacidad del sistema de salud pública para contener enfermedades que se consideraban controladas.</p>
+
+            <p>En ese marco, las muertes confirmadas en Pensilvania y la cuarta muerte que permanece bajo revisión se han convertido en el símbolo más dramático de las consecuencias de la desinformación. Para Cassidy, la ecuación es directa: allí donde la ciencia es sustituida por la ideología, aumentan los riesgos para la población, especialmente para los grupos más vulnerables.</p>
+
+            <p>El sarampión, además, no afecta únicamente a quienes no están vacunados. La disminución de las tasas de inmunización en una comunidad reduce la llamada protección colectiva, lo que expone también a personas que no pueden recibir la vacuna por razones médicas. Esa dimensión colectiva es la que otorga a las palabras del senador un alcance que trasciende el caso de Pensilvania.</p>
+
+            <div class="bloque-datos">
+                <h3>Contexto de la declaración</h3>
+                <ul>
+                    <li>Estados Unidos atraviesa su peor brote de sarampión en más de tres décadas.</li>
+                    <li>Las muertes reportadas en Pensilvania han sido vinculadas por Cassidy a la desinformación sobre las vacunas.</li>
+                    <li>El senador pidió al candidato a director general de sanidad rechazar públicamente la idea de que las vacunas causan autismo.</li>
+                    <li>La crítica proviene de un legislador del mismo partido del presidente, lo que subraya la división interna sobre la política sanitaria.</li>
+                </ul>
+            </div>
+
+            <h2 class="subtitulo">Una crítica desde dentro del propio partido</h2>
+
+            <p>El hecho de que la censura provenga de un senador republicano y no de la oposición demócrata otorga al episodio una relevancia particular. Cassidy no solo preside el comité de salud del Senado: es un médico que ha hecho de la política sanitaria uno de los ejes de su trayectoria legislativa. Su decisión de señalar públicamente el costo humano de las políticas de la administración en materia de vacunas supone una ruptura con la línea oficial y abre un frente interno difícil de ignorar.</p>
+
+            <p>La exigencia dirigida al candidato a director general de sanidad añade presión sobre el proceso de confirmación. Si ese nombramiento se produce sin una declaración clara sobre la seguridad de las vacunas, la advertencia de Cassidy quedará como un registro anticipado de las responsabilidades que, a su juicio, deberán asumirse.</p>
+
+            <p>Mientras el brote continúa y las autoridades locales de Pensilvania trabajan en la investigación de la cuarta muerte, el debate nacional se desplaza hacia una pregunta central: hasta qué punto las decisiones políticas pueden debilitar la confianza pública en herramientas sanitarias cuya eficacia está fuera de discusión. La respuesta, según el senador, pasa por recuperar la ciencia como brújula y por dejar atrás lo que describió como un "legado terrible" para la administración Trump.</p>
+
+            <p>El pronunciamiento de Cassidy no resuelve el brote, pero instala un precedente político relevante: la crítica a la gestión sanitaria ya no proviene únicamente de los sectores opositores, sino también de una de las voces con mayor autoridad legislativa en materia de salud dentro del propio partido gobernante.</p>
+
+        </div>
+    </header>
+
+    <footer class="pie-articulo">
+        <div class="autor">Por la Redacción de Política y Salud Pública</div>
+        <div class="fecha">Publicado el miércoles, edición de actualidad internacional</div>
+        <div class="nota-legal">Información elaborada a partir de la cobertura periodística de The Guardian sobre las declaraciones del senador Bill Cassidy. Fotografía: Tom Williams/CQ-Roll Call a través de Getty Images.</div>
+    </footer>
+
+</div>
+</body>
+</html>
