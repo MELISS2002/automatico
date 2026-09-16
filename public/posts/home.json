@@ -315,15 +315,6 @@
     "htmlPath": "/posts/gobierno-promueve-medidas-para-simplificar-acelerar/index.html"
   },
   {
-    "slug": "test-freedeepseek-rapido",
-    "title": "Prueba de conectividad con freedeepseek: qué implica verificar la disponibilidad de una herramienta de inteligencia artificial",
-    "author": "ROSA EMILY",
-    "date": "2026-09-13",
-    "excerpt": "Una prueba de conectividad con freedeepseek consiste en enviar una solicitud breve y comprobar que el servicio responde de manera correcta. Este tipo de verificación se ha vuelto una rutina habitual entre desarrolladores y usuarios que dependen de plataformas de inteligencia artificial para sus tareas diarias.",
-    "thumbnail": "/posts/test-freedeepseek-rapido/imagen1.jpg",
-    "htmlPath": "/posts/test-freedeepseek-rapido/index.html"
-  },
-  {
     "slug": "fiscalia-inicia-talleres-para-diagnostico-del",
     "title": "Fiscalía inicia talleres para diagnóstico del rediseño del subsistema de lavado de activos",
     "author": "ROSA EMILY",
@@ -482,7 +473,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-19",
     "excerpt": "La seguridad digital no requiere ser un experto en tecnología. Con pequeños cambios en tu rutina diaria y hábitos conscientes, puedes blindar tus cuentas contra la gran mayoría de ataques cibernéticos. Descubre las prácticas esenciales que mantendrán tus datos a salvo.",
-    "thumbnail": "https://image.pollinations.ai/prompt/online_account_protection_habits_thumbnail",
+    "thumbnail": "/posts/cmo-proteger-tus-cuentas-en-internet-con-hbitos-simples/og-image.jpg",
     "htmlPath": "/posts/cmo-proteger-tus-cuentas-en-internet-con-hbitos-simples/index.html"
   },
   {
@@ -491,7 +482,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-19",
     "excerpt": "Comprar un teléfono nuevo es una inversión importante que va más allá de la moda o la marca. En esta guía completa, desglosamos punto por punto todo lo que debes revisar antes de tomar tu decisión, desde el rendimiento y la cámara hasta la batería y el soporte a futuro.",
-    "thumbnail": "https://image.pollinations.ai/prompt/smartphone_buying_guide_checklist_thumbnail",
+    "thumbnail": "/posts/qu-revisar-antes-de-comprar-un-celular-nuevo/og-image.jpg",
     "htmlPath": "/posts/qu-revisar-antes-de-comprar-un-celular-nuevo/index.html"
   },
   {
@@ -527,7 +518,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-14",
     "excerpt": "El Ministerio de Relaciones Exteriores de Perú confirmó este viernes que once ciudadanos peruanos han fallecido en el frente de batalla ucraniano mientras servían en las filas del ejército ruso. La cancillería también reporta 114 compatriotas en calidad de desaparecidos, en medio de las crecientes tensiones internacionales y el reclamo de familias que exigen respuestas del gobierno.",
-    "thumbnail": "Peruvian families protesting in Lima demanding answers about missing relatives in Ukraine conflict, military recruitment crisis, consulate assistance",
+    "thumbnail": "/posts/peruanos-murieron-combatiendo-rusia-114-desaparecidos/imagen1.jpg",
     "htmlPath": "/posts/peruanos-murieron-combatiendo-rusia-114-desaparecidos/index.html"
   },
   {
@@ -536,7 +527,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-14",
     "excerpt": "La primera encuesta nacional de Datum Internacional revela que la presidenta Keiko Fujimori alcanza un 60% de aprobación ciudadana en sus primeros meses de gobierno. El estudio detecta un respaldo mayoritario en las regiones del sur y centro andino, mientras que Lima Metropolitana muestra índices más moderados. El 55% de los peruanos respalda sus primeras medidas económicas.",
-    "thumbnail": "Keiko Fujimori presidential approval poll Peru Datum survey results August 2026",
+    "thumbnail": "/posts/encuesta-datum-keiko-fujimori-60-aprobacion/imagen1.jpg",
     "htmlPath": "/posts/encuesta-datum-keiko-fujimori-60-aprobacion/index.html"
   },
   {
@@ -545,7 +536,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-14",
     "excerpt": "El Ejecutivo revela un paquete de ayuda económica que beneficiará a más de 300 mil transportistas a nivel nacional, en medio de la escalada sin precedentes del precio del combustible. La medida, que contempla un subsidio directo del 20% en el galón de diésel y gasolina, busca contener el impacto inflacionario y evitar un paro nacional del sector.",
-    "thumbnail": "peru government fuel subsidy announcement keiko fujimori transport workers 2026",
+    "thumbnail": "/posts/keiko-fujimori-subsidio-transportistas-combustible/imagen1.jpg",
     "htmlPath": "/posts/keiko-fujimori-subsidio-transportistas-combustible/index.html"
   },
   {
@@ -554,7 +545,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-14",
     "excerpt": "Más de 12 millones de peruanos participaron hoy en el Simulacro Nacional Multipeligro organizado por INDECI, que puso a prueba la capacidad de respuesta del país frente a un terremoto de magnitud 8.8. El ejercicio, que se desarrolló a las 10:00 a.m. en todo el territorio nacional, permitió evaluar los tiempos de evacuación y la coordinación entre las entidades de primera respuesta.",
-    "thumbnail": "peru earthquake simulation disaster preparedness indenci 2026 national drill evacuation",
+    "thumbnail": "/posts/simulacro-nacional-multipeligro-indeci-sismo-88/imagen1.jpg",
     "htmlPath": "/posts/simulacro-nacional-multipeligro-indeci-sismo-88/index.html"
   },
   {
@@ -563,7 +554,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-12",
     "excerpt": "Hoy, 12 de agosto de 2026, España es testigo del eclipse solar total más esperado del siglo. Millones de personas disfrutarán de un fenómeno único que oscurecerá el cielo en pleno día, ofreciendo un espectáculo inolvidable y una oportunidad científica sin precedentes para estudiar la corona solar y los efectos atmosféricos.",
-    "thumbnail": "https://image.pollinations.ai/prompt/total_solar_eclipse_corona_2026_Spain_sky_dark",
+    "thumbnail": "/posts/eclipse-solar-total-12-agosto-2026-evento-astronomico-siglo/og-image.jpg",
     "htmlPath": "/posts/eclipse-solar-total-12-agosto-2026-evento-astronomico-siglo/index.html"
   },
   {
@@ -572,7 +563,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-12",
     "excerpt": "En un movimiento sin precedentes, varios miembros de la Junta Nacional de Justicia (JNJ) han presentado su renuncia irrevocable al Colegio de Abogados de Lima (CAL), denunciando presión política, injerencia indebida y falta de autonomía en el gremio. Esta decisión agudiza la crisis institucional que enfrenta el sistema judicial peruano y abre un debate sobre la independencia de los órganos encargados de la selección y evaluación de jueces y fiscales.",
-    "thumbnail": "https://image.pollinations.ai/prompt/Peruvian_justice_crisis_JNJ_CAL_resignation_Lima_Bar_Association_conflict",
+    "thumbnail": "/posts/cal-jnj-miembros-renuncian-colegio-abogados-lima/og-image.jpg",
     "htmlPath": "/posts/cal-jnj-miembros-renuncian-colegio-abogados-lima/index.html"
   },
   {
@@ -581,7 +572,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-12",
     "excerpt": "El exministro Rafael Rey salió al frente para desmentir categóricamente al alcalde de Lima, Rafael López Aliaga, asegurando que la adquisición del tren para la ruta Lima-Chosica no fue una donación, sino una compra formal y onerosa a la empresa estadounidense Caltrain. Esta aclaración sacude el debate político y pone en el centro de la escena la transparencia de los proyectos de infraestructura para la capital.",
-    "thumbnail": "https://image.pollinations.ai/prompt/Peruvian_politics_controversy_train_Lima_Chosica_Caltrain_Rafael_Rey_Lopez_Aliaga_debate",
+    "thumbnail": "/posts/rafael-rey-tren-lima-chosica-caltrain-compra/og-image.jpg",
     "htmlPath": "/posts/rafael-rey-tren-lima-chosica-caltrain-compra/index.html"
   },
   {
@@ -590,7 +581,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-12",
     "excerpt": "El fujimorismo ha asumido la presidencia de la Comisión de Constitución del Senado, un puesto estratégico que define el rumbo de la reforma judicial en Perú. Esta designación genera expectativas y controversias sobre el futuro del sistema de justicia y el equilibrio de poderes.",
-    "thumbnail": "https://image.pollinations.ai/prompt/Peruvian_Senate_Constitution_Commission_Fujimorismo_judicial_reform_Lima_politics_parliament",
+    "thumbnail": "/posts/fujimorismo-preside-comision-constitucion-senado/og-image.jpg",
     "htmlPath": "/posts/fujimorismo-preside-comision-constitucion-senado/index.html"
   },
   {
@@ -683,7 +674,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-09",
     "excerpt": "El 12 de agosto de 2026, el cielo se oscurecerá por completo durante un eclipse solar total que promete ser histórico. Además de su trayectoria por el Ártico, Groenlandia, Islandia y España, los científicos no descartan que se pueda ver acompañado de auroras boreales, mientras la NASA ya adelantó cuándo será el próximo eclipse visible desde Perú.",
-    "thumbnail": "https://image.pollinations.ai/prompt/solar%20eclipse%20total%20August%202026%20with%20aurora%20borealis%20and%20dark%20sky%20astronomical%20event%20cinematic%20wide",
+    "thumbnail": "/posts/eclipse-solar-total-agosto-2026-visible-desde-peru/og-image.jpg",
     "htmlPath": "/posts/eclipse-solar-total-agosto-2026-visible-desde-peru/index.html"
   },
   {
@@ -692,7 +683,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-09",
     "excerpt": "Científicos advierten que el Pacífico podría superar los 3°C de anomalía, desatando lluvias extremas, sequías y un impacto sin precedentes en la pesca y agricultura. Perú y sus vecinos se preparan para el peor escenario.",
-    "thumbnail": "https://image.pollinations.ai/prompt/El_Nino_2026_Pacific_Ocean_heat_anomaly_South_America_weather",
+    "thumbnail": "/posts/fenomeno-el-nino-furioso-2026-sudamerica/og-image.jpg",
     "htmlPath": "/posts/fenomeno-el-nino-furioso-2026-sudamerica/index.html"
   },
   {
@@ -701,7 +692,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-09",
     "excerpt": "El primer ministro israelí, Benjamin Netanyahu, ha rechazado frontalmente el plan de 15 puntos para Gaza propuesto por Donald Trump, mientras el gabinete de seguridad israelí también ha tumbado una tregua de 14 días impulsada por Estados Unidos. Israel insiste en que no se retirará del enclave hasta que Hamás deponga las armas, una postura que tensa aún más la región y deja en el aire el futuro del conflicto.",
-    "thumbnail": "https://image.pollinations.ai/prompt/Benjamin_Netanyahu_speaking_at_press_conference_in_Jerusalem_serious_expression_Israeli_flag_background_August_2026",
+    "thumbnail": "/posts/israel-rechaza-plan-gaza-netanyahu-trump/og-image.jpg",
     "htmlPath": "/posts/israel-rechaza-plan-gaza-netanyahu-trump/index.html"
   },
   {
@@ -710,7 +701,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-09",
     "excerpt": "La encuesta nacional de Datum de agosto de 2026 confirma que Keiko Fujimori inicia su gobierno con un 60% de aprobación ciudadana, la cifra más alta para un presidente peruano en sus primeros días de mandato. El sondeo revela dónde tiene mayor respaldo, qué factores explican esta popularidad inicial y cuáles son los principales desafíos que enfrentará el nuevo gobierno para mantener esa confianza ciudadana.",
-    "thumbnail": "https://image.pollinations.ai/prompt/Keiko%20Fujimori%20presidential%20approval%2060%20percent%20Peru%20Datum%20survey%202026%20news%20article%20thumbnail",
+    "thumbnail": "/posts/keiko-fujimori-60-aprobacion-encuesta-datum/og-image.jpg",
     "htmlPath": "/posts/keiko-fujimori-60-aprobacion-encuesta-datum/index.html"
   },
   {
@@ -719,7 +710,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-09",
     "excerpt": "</strong> La tierra no da tregua en la región central. Dos fuertes sismos sacudieron Chupaca en menos de 12 horas, el primero de magnitud 4.3 y el segundo de 4.7. El IGP advierte que las réplicas continuarán porque la zona sigue liberando energía acumulada. Mientras el Indeci envía 111 toneladas de ayuda, los damnificados claman por viviendas y denuncian lentitud. Aquí todo lo que debes saber.",
-    "thumbnail": "https://image.pollinations.ai/prompt/sismos-junin-replicas-chupaca-ayuda-humanitaria-thumbnail",
+    "thumbnail": "/posts/sismos-junin-replicas-chupaca-ayuda-humanitaria/og-image.jpg",
     "htmlPath": "/posts/sismos-junin-replicas-chupaca-ayuda-humanitaria/index.html"
   },
   {
@@ -728,7 +719,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "El espectáculo tributo que ha emocionado a miles en Latinoamérica llega por primera vez al Perú. Soda Sinfónico transforma los himnos de la banda argentina en experiencias orquestales inolvidables, y los fans ya madrugan para conseguir sus entradas.",
-    "thumbnail": "https://image.pollinations.ai/prompt/Soda%20Sinfonico%20Peru%202026%20orchestra%20rock%20tribute%20concert%20poster%20vibrant",
+    "thumbnail": "/posts/soda-sinfonico-peru-concierto-soda-stereo/og-image.jpg",
     "htmlPath": "/posts/soda-sinfonico-peru-concierto-soda-stereo/index.html"
   },
   {
@@ -737,7 +728,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "El Vaticano confirmó oficialmente la visita del papa León XIV al Perú del 11 al 17 de noviembre de 2026. Será la segunda visita de un pontífice al país en el siglo XXI y la primera del Papa a Latinoamérica, con un recorrido que incluye Lima, Chiclayo, Cusco y Pucallpa.",
-    "thumbnail": "https://image.pollinations.ai/prompt/Pope_Leo_XIV_Peru_visit_2026_official_announcement_Vatican_papal_trip_Latin_America_joyful_crowd_Peruvian_flags_waving?width=600&height=400",
+    "thumbnail": "/posts/papa-leon-xiv-visita-peru-noviembre-2026/og-image.jpg",
     "htmlPath": "/posts/papa-leon-xiv-visita-peru-noviembre-2026/index.html"
   },
   {
@@ -746,7 +737,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "El próximo 12 de agosto de 2026, la Luna se interpondrá entre el Sol y la Tierra y ocultará por completo el disco solar durante varios minutos. Será el primer eclipse total visible desde la España peninsular en más de 120 años, y miles de astrónomos aficionados y turistas de todo el mundo ya han reservado sus alojamientos en la costa norte del país para no perderse este evento histórico.",
-    "thumbnail": "https://image.pollinations.ai/prompt/Total_solar_eclipse_over_Spain_with_dark_sky_and_bright_corona_August_2026",
+    "thumbnail": "/posts/eclipse-solar-total-agosto-2026-espana-fecha/og-image.jpg",
     "htmlPath": "/posts/eclipse-solar-total-agosto-2026-espana-fecha/index.html"
   },
   {
@@ -755,7 +746,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "Sedapal confirmó un corte programado de agua potable para el próximo lunes 10 de agosto en varios distritos de Lima por trabajos de mantenimiento y mejora de la red. Conoce los horarios exactos, zonas afectadas y todos los pasos para preparar tu hogar antes, durante y después de la interrupción del servicio.",
-    "thumbnail": "https://image.pollinations.ai/prompt/water%20cut%20Lima%20Sedapal%20announcement%20august%202026%20thumbnail?width=600&height=315&nologo=true",
+    "thumbnail": "/posts/corte-agua-sedapal-10-agosto-distritos-horarios/og-image.jpg",
     "htmlPath": "/posts/corte-agua-sedapal-10-agosto-distritos-horarios/index.html"
   },
   {
@@ -764,7 +755,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "Encuestas avanzadas, eventos con recordatorios, respuestas rápidas y controles de administración profesionales. WhatsApp ha renovado por completo la gestión de grupos en 2025-2026, y la mayoría de usuarios todavía no sabe que puede silenciar miembros específicos, fijar varios mensajes a la vez o proteger el acceso con aprobación. Te contamos paso a paso cómo usar cada novedad en Android y iPhone.",
-    "thumbnail": "https://image.pollinations.ai/prompt/WhatsApp%202026%20group%20features%20smartphone%20admin%20controls%20modern%20interface",
+    "thumbnail": "/posts/whatsapp-nuevas-funciones-grupos-2026/og-image.jpg",
     "htmlPath": "/posts/whatsapp-nuevas-funciones-grupos-2026/index.html"
   },
   {
@@ -773,7 +764,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "¿Borraste sin querer un chat de WhatsApp y necesitas recuperarlo? Te contamos paso a paso cómo restaurar mensajes desde Google Drive, iCloud, la papelera de la app y los chats archivados. También desmontamos los falsos milagros de las apps de terceros y te explicamos qué mensajes jamás podrás recuperar.",
-    "thumbnail": "https://image.pollinations.ai/prompt/WhatsApp%20recovery%202026%20guide%20thumbnail%20smartphone%20backup%20restore%20green%20chat",
+    "thumbnail": "/posts/como-recuperar-mensajes-borrados-whatsapp-android-iphone/og-image.jpg",
     "htmlPath": "/posts/como-recuperar-mensajes-borrados-whatsapp-android-iphone/index.html"
   },
   {
@@ -782,7 +773,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "La inteligencia artificial ya no es un lujo ni un misterio. La UNI lanzó más de 80 cursos virtuales gratuitos, Anthropic ofrece 12 programas con certificado y la PCM se suma a la ola formativa. Te contamos cómo acceder a estas oportunidades y sacarles el máximo provecho sin perderte en el intento.",
-    "thumbnail": "https://image.pollinations.ai/prompt/peru_ai_courses_2026_uni_anthropic_pcm_free_certificate_thumbnail?w=800&h=600&c=1",
+    "thumbnail": "/posts/cursos-gratis-ia-peru-uni-claude-2026/og-image.jpg",
     "htmlPath": "/posts/cursos-gratis-ia-peru-uni-claude-2026/index.html"
   },
   {
@@ -791,7 +782,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "Millones de personas buscan cada mes generadores de imagen sin pagar. Te contamos cuáles funcionan de verdad, cómo escribir prompts que no fallen y dónde bajar tus creaciones sin marcas de agua.",
-    "thumbnail": "https://image.pollinations.ai/prompt/ai_image_generation_2026_free_tools_collage_modern_tech_style",
+    "thumbnail": "/posts/crear-imagenes-con-ia-gratis-2026-paginas/og-image.jpg",
     "htmlPath": "/posts/crear-imagenes-con-ia-gratis-2026-paginas/index.html"
   },
   {
@@ -800,7 +791,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "Si eres desarrollador, estudiante o emprendedor, seguro has sentido esa frustración: quieres probar un modelo de IA, pero las claves cuestan, los tokens se agotan y tu presupuesto no da para más.",
-    "thumbnail": "https://image.pollinations.ai/prompt/apis-ia-gratis-2026-mejores-api-modelos-sin-pagar-thumbnail",
+    "thumbnail": "/posts/apis-ia-gratis-2026-mejores-api-modelos-sin-pagar/og-image.jpg",
     "htmlPath": "/posts/apis-ia-gratis-2026-mejores-api-modelos-sin-pagar/index.html"
   },
   {
@@ -809,7 +800,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "¿Tienes una computadora vieja acumulando polvo en un armario? Con una modificación sencilla y menos de 50 dólares puedes transformarla en una máquina de juegos retro capaz de correr casi 700 títulos clásicos. Te contamos cómo hacerlo paso a paso, sin necesidad de ser un experto en tecnología.",
-    "thumbnail": "https://image.pollinations.ai/prompt/old_pc_transformed_into_retro_gaming_console_with_colorful_controllers_and_classic_game_characters",
+    "thumbnail": "/posts/pc-antigua-modificacion-para-jugar-700-titulos/og-image.jpg",
     "htmlPath": "/posts/pc-antigua-modificacion-para-jugar-700-titulos/index.html"
   },
   {
@@ -818,7 +809,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "El ministro de Economía y Finanzas, Elmer Cuba, anunció que la mayoría de feriados de 2027 se trasladarán a los lunes, buscando crear puentes turísticos que dinamicen el sector interno. La medida, que corrige la propuesta inicial de los viernes, busca proteger la productividad empresarial mientras se garantiza el descanso de los trabajadores y se acompaña del aumento de la Remuneración Mínima Vital a S/ 1,300.",
-    "thumbnail": "https://image.pollinations.ai/prompt/Peru_2027_holidays_moved_to_Mondays_calendar_with_tourism_and_economic_growth_concept?width=800&height=400&nologo=true",
+    "thumbnail": "/posts/feriados-en-peru-2027-mef-anuncia-que-se-trasladaran-a-los-lunes/og-image.jpg",
     "htmlPath": "/posts/feriados-en-peru-2027-mef-anuncia-que-se-trasladaran-a-los-lunes/index.html"
   },
   {
@@ -827,7 +818,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-07",
     "excerpt": "El mediocentro del Manchester City y de la selección española ha dado su visto bueno para recalar en el Camp Nou el próximo verano. El Barcelona se asegura así el fichaje de uno de los mejores jugadores del mundo en su posición, en una operación que superará los 100 millones de euros.",
-    "thumbnail": "https://image.pollinations.ai/prompt/Rodri_Barcelona_celebration_Camp_Nou_fans_spanish_midfielder_transfer_exclusive?width=800&height=500&nologo=1",
+    "thumbnail": "/posts/rodri-da-el-ok-al-barcelona/og-image.jpg",
     "htmlPath": "/posts/rodri-da-el-ok-al-barcelona/index.html"
   },
   {
@@ -836,7 +827,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-03",
     "excerpt": "El exministro Jorge Nieto plantea una revisión integral del presupuesto del Congreso y señala que cualquier incremento del gasto público debe ir acompañado de una reforma profunda que garantice eficiencia y transparencia en el uso de los recursos del Estado.",
-    "thumbnail": "https://image.pollinations.ai/prompt/Jorge_Nieto_Peru_Congress_budget_reform_thumbnail_speaking_podium",
+    "thumbnail": "/posts/jorge-nieto-plantea-revisar-presupuesto-del-congreso-y-seala-que-incremento-del/og-image.jpg",
     "htmlPath": "/posts/jorge-nieto-plantea-revisar-presupuesto-del-congreso-y-seala-que-incremento-del/index.html"
   },
   {
@@ -845,7 +836,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-30",
     "excerpt": "Perú y especialmente la región de Huancayo se encuentran en una de las zonas más sísmicamente activas del planeta. Descubre las razones geológicas, la historia de los grandes terremotos y cómo prepararse para el próximo gran movimiento telúrico.",
-    "thumbnail": "https://image.pollinations.ai/prompt/seismic%20hazard%20map%20Peru%20Huancayo%20high%20risk%20earthquake%20zoning%20colors",
+    "thumbnail": "/posts/sismo-huancayo-por-que-peru-esta-en-el-centro-de-fuego-de-un-sismo-fuerte/og-image.jpg",
     "htmlPath": "/posts/sismo-huancayo-por-que-peru-esta-en-el-centro-de-fuego-de-un-sismo-fuerte/index.html"
   },
   {
@@ -854,7 +845,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-29",
     "excerpt": "El envejecimiento es un proceso biológico complejo que afecta a cada célula de nuestro organismo. Exploramos las causas científicas detrás del deterioro celular, el acortamiento de los telómeros y las estrategias para promover un envejecimiento saludable.",
-    "thumbnail": "https://image.pollinations.ai/prompt/cellular_aging_telomeres_oxidative_stress_mitochondria_inflammation_conceptual?width=800&height=600&nologo=true",
+    "thumbnail": "/posts/por-qu-envejece-el-cuerpo/og-image.jpg",
     "htmlPath": "/posts/por-qu-envejece-el-cuerpo/index.html"
   },
   {
@@ -863,7 +854,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-25",
     "excerpt": "Descubre el enfoque integral de la medicina natural y tradicional cubana para prevenir y tratar afecciones urológicas. Este artículo combina acupuntura, fitoterapia, magnetoterapia y más, basado en el Manual para la Práctica de la Medicina Natural y Tradicional de Cuba.",
-    "thumbnail": "https://image.pollinations.ai/prompt/urology%20natural%20medicine%20cuban%20acupuncture%20herbal%20kidney%20bladder%20integral%20treatment",
+    "thumbnail": "/posts/afecciones-urolgicas-prevencin-y-tratamiento-integral-con-medicina-natural-y-tra/og-image.jpg",
     "htmlPath": "/posts/afecciones-urolgicas-prevencin-y-tratamiento-integral-con-medicina-natural-y-tra/index.html"
   },
   {
@@ -872,7 +863,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-25",
     "excerpt": "Descubre por qué las máscaras de entrenamiento en altitud no replican la hipoxia real y cómo pueden afectar tu rendimiento. Un análisis profundo basado en ciencia y fisiología.",
-    "thumbnail": "https://image.pollinations.ai/prompt/thumbnail_altitude_mask_training_myth_vs_reality",
+    "thumbnail": "/posts/las-mscaras-de-entrenamiento-de-altitud-que-no-simulan-la-hipoxia-real-y-pueden/og-image.jpg",
     "htmlPath": "/posts/las-mscaras-de-entrenamiento-de-altitud-que-no-simulan-la-hipoxia-real-y-pueden/index.html"
   },
   {
@@ -881,7 +872,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-23",
     "excerpt": "La depilación no tiene por qué ser una tortura. Conoce las técnicas y tecnologías más innovadoras que te permiten eliminar el vello de forma suave, eficaz y completamente indolora. Dile adiós a la cera caliente y a las pinzas, y dale la bienvenida a una piel perfecta sin sufrimiento.",
-    "thumbnail": "https://image.pollinations.ai/prompt/happy_woman_painless_hair_removal_laser_comfort",
+    "thumbnail": "/posts/adis-al-vello-sin-una-gota-de-dolor/og-image.jpg",
     "htmlPath": "/posts/adis-al-vello-sin-una-gota-de-dolor/index.html"
   },
   {
@@ -890,7 +881,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-23",
     "excerpt": "Las hemorroides son una afección común que afecta a millones de personas en todo el mundo. Descubre en este artículo completo qué las causa, cómo prevenirlas con hábitos saludables y cuáles son los tratamientos más efectivos para curarlas y aliviar sus molestos síntomas.",
-    "thumbnail": "https://image.pollinations.ai/prompt/hemorrhoids_medical_illustration_diagram_anatomy",
+    "thumbnail": "/posts/articulo-sobre-que-causa-las-hemoriedes-y-como-evitarlos-y-se-salen-como-curarlo/og-image.jpg",
     "htmlPath": "/posts/articulo-sobre-que-causa-las-hemoriedes-y-como-evitarlos-y-se-salen-como-curarlo/index.html"
   },
   {
@@ -899,7 +890,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-21",
     "excerpt": "Cada decisión que tomas a lo largo del día, desde lo que comes hasta cuánto te mueves, está escribiendo el guion de tu longevidad. Descubre cuáles son los hábitos más dañinos que silenciosamente roban años de tu vida y aprende a revertirlos antes de que sea demasiado tarde.",
-    "thumbnail": "https://image.pollinations.ai/prompt/silhouette_person_aging_clock_time_passing_healthy_unhealthy_comparison",
+    "thumbnail": "/posts/mals-acustembres-que-te-hacen-perder-aos-de-vida/og-image.jpg",
     "htmlPath": "/posts/mals-acustembres-que-te-hacen-perder-aos-de-vida/index.html"
   },
   {
@@ -908,7 +899,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-21",
     "excerpt": "Descubre por qué despertar temprano y dormir a tiempo es la clave para una productividad imparable y una salud plena. Revoluciona tu energía con este hábito ancestral.",
-    "thumbnail": "https://image.pollinations.ai/prompt/sunrise%20morning%20routine%20early%20wake%20up%20healthy%20habits%20productivity%20wellness",
+    "thumbnail": "/posts/por-que-debes-dormir-temprano-y-mas-importante-levanatar-temptano/og-image.jpg",
     "htmlPath": "/posts/por-que-debes-dormir-temprano-y-mas-importante-levanatar-temptano/index.html"
   },
   {
@@ -917,7 +908,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-20",
     "excerpt": "Los malos hábitos no son falta de voluntad, son reacciones de tu sistema nervioso. Aprende a reprogramarlo para cambiar hábitos de raíz y vivir en calma.",
-    "thumbnail": "https://image.pollinations.ai/prompt/nervous-system-reprogramming-thumbnail",
+    "thumbnail": "/posts/alguna-vez-intentaste-cambiar-un-mal-hbito-y-volviste-a-l-a-los-pocos-das-te-dij/og-image.jpg",
     "htmlPath": "/posts/alguna-vez-intentaste-cambiar-un-mal-hbito-y-volviste-a-l-a-los-pocos-das-te-dij/index.html"
   },
   {
@@ -926,7 +917,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-20",
     "excerpt": "El huevo fue el rey, pero la ciencia avanza. Descubre qué proteínas son realmente más efectivas para la salud y longevidad en adultos mayores hoy en día.",
-    "thumbnail": "https://image.pollinations.ai/prompt/elderly-protein-king-question-thumbnail",
+    "thumbnail": "/posts/personas-mayores-ha-llegado-el-momento-de-replantearse-quin-es-el-rey-de-las-pro/og-image.jpg",
     "htmlPath": "/posts/personas-mayores-ha-llegado-el-momento-de-replantearse-quin-es-el-rey-de-las-pro/index.html"
   },
   {
@@ -935,7 +926,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-20",
     "excerpt": "¿El azúcar afecta tu memoria? Descubre el impacto del azúcar refinado en el cerebro y cómo mejorar tu salud cognitiva.",
-    "thumbnail": "https://image.pollinations.ai/prompt/sugar-memory-damage-thumbnail",
+    "thumbnail": "/posts/el-ingrediente-que-usas-todos-los-das-y-est-destruyendo-tu-memoria-sin-que-lo-se/og-image.jpg",
     "htmlPath": "/posts/el-ingrediente-que-usas-todos-los-das-y-est-destruyendo-tu-memoria-sin-que-lo-se/index.html"
   },
   {
@@ -1001,7 +992,7 @@
     "author": "Redacción Cultural Global",
     "date": "2025-04-16",
     "excerpt": "Explora el fenómeno espiritual del Maha Kumbh Mela 2025. Descubre por qué este evento es clave para millones y su impacto global.",
-    "thumbnail": "https://theazb.com/wp-content/uploads/2025/01/Maha-Kumbh-Mela.jpg",
+    "thumbnail": "/posts/maha-kumbh-2025/og-image.jpg",
     "htmlPath": "/posts/maha-kumbh-2025/index.html"
   },
   {
