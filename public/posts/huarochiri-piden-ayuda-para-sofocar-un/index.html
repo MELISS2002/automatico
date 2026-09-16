@@ -3,165 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huarochiri: piden ayuda para sofocar un incendio forestal que afecta a la comunidad de Suni</title>
+    <title>Huarochirí: Piden ayuda urgente para sofocar un incendio forestal que afecta a la comunidad de Suni</title>
     <style>
         :root {
-            --primary-color: #b30000;
-            --secondary-color: #222222;
-            --light-bg: #f4f4f4;
-            --border-color: #dddddd;
-            --text-color: #333333;
+            --primary-color: #0b2545;
+            --secondary-color: #134074;
+            --accent-color: #c5221f;
+            --text-color: #2b2d42;
+            --bg-light: #f8f9fa;
+            --border-color: #e2e8f0;
         }
-        body {
-            font-family: Arial, Helvetica, sans-serif, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--light-bg);
+
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            line-height: 1.7;
+        }
+
         .container {
             max-width: 800px;
-            margin: 20px auto;
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
+
         header {
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 20px;
-            margin-bottom: 20px;
+            padding: 2.5rem 2rem 1.5rem 2rem;
+            border-bottom: 1px solid var(--border-color);
         }
+
         .category {
-            color: var(--primary-color);
-            font-weight: bold;
-            text-transform: uppercase;
             font-size: 0.85rem;
-            letter-spacing: 1px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--accent-color);
+            font-weight: 700;
+            margin-bottom: 0.75rem;
         }
+
         h1 {
-            font-size: 2.2rem;
-            color: var(--secondary-color);
-            margin: 10px 0 15px 0;
-            line-height: 1.2;
+            font-size: 2.25rem;
+            color: var(--primary-color);
+            line-height: 1.3;
+            margin-bottom: 1rem;
         }
-        .metadata {
+
+        .meta-info {
             font-size: 0.9rem;
-            color: #666666;
-            margin-bottom: 20px;
+            color: #64748b;
+            border-left: 3px solid var(--secondary-color);
+            padding-left: 0.75rem;
+            margin-top: 1rem;
         }
+
         .featured-image-container {
-            margin-bottom: 25px;
-            text-align: center;
+            width: 100%;
+            margin-top: 1.5rem;
         }
-        .featured-image {
+
+        .featured-image-container img {
             width: 100%;
             height: auto;
-            max-height: 450px;
-            object-fit: cover;
-            border-radius: 6px;
+            display: block;
         }
+
         .image-caption {
             font-size: 0.85rem;
-            color: #666666;
-            margin-top: 8px;
+            color: #64748b;
+            padding: 0.5rem 2rem 0 2rem;
             font-style: italic;
         }
+
+        .content {
+            padding: 2.5rem 2rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
         h2 {
             font-size: 1.5rem;
-            color: var(--secondary-color);
-            margin-top: 30px;
-            border-left: 4px solid var(--primary-color);
-            padding-left: 12px;
+            color: var(--primary-color);
+            margin: 2rem 0 1rem 0;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
         }
-        p {
-            margin-bottom: 15px;
-            font-size: 1.05rem;
-            text-align: justify;
+
+        .quote-box {
+            background-color: #f1f5f9;
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: #1e293b;
         }
-        .highlight-box {
-            background-color: #fff8f8;
-            border-left: 4px solid var(--primary-color);
-            padding: 20px;
-            margin: 25px 0;
-            border-radius: 0 6px 6px 0;
+
+        .quote-box p {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
         }
-        .highlight-box h3 {
-            margin-top: 0;
+
+        .quote-author {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 0.95rem;
             color: var(--primary-color);
         }
-        footer {
-            margin-top: 40px;
-            border-top: 1px solid var(--border-color);
-            padding-top: 20px;
-            font-size: 0.9rem;
-            color: #666666;
+
+        .data-highlight {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .data-card {
+            background-color: var(--bg-light);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 6px;
             text-align: center;
         }
+
+        .data-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .data-label {
+            font-size: 0.9rem;
+            color: #475569;
+            font-weight: 600;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
         @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-                margin: 0;
-                border-radius: 0;
-            }
             h1 {
-                font-size: 1.8rem;
+                font-size: 1.75rem;
+            }
+            .content {
+                padding: 1.5rem 1rem;
+            }
+            header {
+                padding: 1.5rem 1rem;
             }
         }
     </style>
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="UltimoLive">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="Huarochiri: piden ayuda para sofocar un incendio forestal que afecta a la comunidad de Suni">
+    <meta property="og:description" content="Un voraz incendio forestal azota la comunidad campesina de Suni, en la provincia de Huarochirí, consumiendo hectáreas de cobertura natural. Ante la magnitud del siniestro, los pobladores y autoridades">
+    <meta property="og:url" content="https://automatico.pages.dev/posts/huarochiri-piden-ayuda-para-sofocar-un/">
+    <meta property="og:image" content="https://automatico.pages.dev/posts/huarochiri-piden-ayuda-para-sofocar-un/imagen1.jpg">
+    <meta property="article:published_time" content="2026-09-16T12:00:00Z">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Huarochiri: piden ayuda para sofocar un incendio forestal que afecta a la comunidad de Suni">
+    <meta name="twitter:description" content="Un voraz incendio forestal azota la comunidad campesina de Suni, en la provincia de Huarochirí, consumiendo hectáreas de cobertura natural. Ante la magnitud del siniestro, los pobladores y autoridades">
+    <meta name="twitter:image" content="https://automatico.pages.dev/posts/huarochiri-piden-ayuda-para-sofocar-un/imagen1.jpg">
+    <link rel="canonical" href="https://automatico.pages.dev/posts/huarochiri-piden-ayuda-para-sofocar-un/">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <div class="category">Rotafono de RPP / Emergencias</div>
+            <h1>Huarochirí: Piden ayuda urgente para sofocar un incendio forestal que afecta a la comunidad de Suni</h1>
+            <div class="meta-info">
+                Por Redacción Periodística | Actualizado el 20 de noviembre de 2024
+            </div>
+        </header>
 
-<div class="container">
-    <header>
-        <div class="category">Actualidad Nacional / Emergencias</div>
-        <h1>Huarochiri: piden ayuda para sofocar un incendio forestal que afecta a la comunidad de Suni</h1>
-        <div class="metadata">
-            <span>Redacción Central</span> | 
-            <span>Actualizado el 2024</span>
+        <div class="featured-image-container">
+            <img src="imagen1.jpg" alt="Incendio forestal en la comunidad de Suni, Huarochirí">
         </div>
-    </header>
+        <div class="image-caption">
+            El fuego continúa avanzando de manera descontrolada en los campos de cultivo de la región Lima. Fotografía referencial de emergencia.
+        </div>
 
-    <div class="featured-image-container">
-        <img src="imagen1.jpg" alt="Incendio forestal en la comunidad de Suni, Huarochirí" class="featured-image">
-        <div class="image-caption">Los comuneros de Suni combaten el fuego con herramientas artesanales ante la urgencia de recibir apoyo especializado. Imagen referencial.</div>
+        <div class="content">
+            <p>Una situación de extrema gravedad se registra en la región Lima. Un voraz incendio forestal de gran proporción azota desde el último lunes a la comunidad de Suni, ubicada en el distrito de Huarochirí. El siniestro ha dejado un saldo preliminar alarmante de aproximadamente 50 hectáreas de terrenos agrícolas destruidos, además de la pérdida de ganado y graves afectaciones al ecosistema local.</p>
+
+            <p>La emergencia, reportada a través del Rotafono de RPP, mantiene en zozobra a los habitantes de la zona, quienes se encuentran combatiendo las llamas por sus propios medios ante la falta de recursos hídricos y equipamiento especializado para desastres de esta magnitud.</p>
+
+            <div class="data-highlight">
+                <div class="data-card">
+                    <div class="data-number">50</div>
+                    <div class="data-label">Hectáreas agrícolas destruidas</div>
+                </div>
+                <div class="data-card">
+                    <div class="data-number">Desde el Lunes</div>
+                    <div class="data-label">Tiempo de actividad del fuego</div>
+                </div>
+            </div>
+
+            <h2>Amenaza directa a la infraestructura pública</h2>
+
+            <p>La alcaldesa del distrito de Huarochirí, Teresa Aguirre, alzó su voz de protesta y lanzó un pedido urgente de auxilio a las autoridades regionales y nacionales. La autoridad edil advirtió que el siniestro no solo está arrasando con la flora y fauna de la localidad, sino que ahora representa un peligro inminente para la población estudiantil y el suministro de servicios básicos.</p>
+
+            <div class="quote-box">
+                <p>&ldquo;Este incendio no se puede apagar, la población está todo el día trabajando y no tenemos agua. Tenemos miedo de que el fuego avance a la institución educativa.&rdquo;</p>
+                <div class="quote-author">- Teresa Aguirre, alcaldesa de Huarochirí</div>
+            </div>
+
+            <p>De acuerdo con la información brindada por la autoridad local, las llamas han consumido extensas áreas de pinos y han afectado directamente a animales vacunos que pastaban en la zona. La preocupación principal radica en la velocidad con la que el fuego se desplaza debido a las condiciones climáticas y la sequedad del terreno.</p>
+
+            <h2>Riesgo en el tendido eléctrico</h2>
+
+            <p>Además del peligro latente que representa para el colegio de la comunidad, la alcaldesa Teresa Aguirre alertó sobre los daños potenciales en el tendido eléctrico de la localidad. Una interrupción en el suministro de energía complicaría aún más las labores de comunicación y respuesta en este sector de la región Lima.</p>
+
+            <p>Los pobladores de Suni continúan trabajando de sol a sol en condiciones sumamente precarias, utilizando herramientas rústicas para intentar contener el avance del fuego. Sin embargo, la magnitud del evento rebasa la capacidad de respuesta de la comunidad, por lo que se requiere el despliegue inmediato de brigadas especializadas de bomberos, apoyo aéreo y cisternas con agua para lograr sofocar el incendio forestal antes de que se registren mayores daños personales o materiales.</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Portal de Noticias del Perú. Todos los derechos reservados.</p>
+            <p>Información basada en reportes oficiales del Rotafono de RPP.</p>
+        </footer>
     </div>
-
-    <article>
-        <p>Una situación de extrema emergencia se vive en la provincia de Huarochirí, donde un violento incendio forestal ha comenzado a arrasar con la vegetación y los recursos naturales de la comunidad campesina de Suni. Las llamas, avivadas por las condiciones geográficas y climáticas de la zona altoandina, continúan avanzando sin control, generando alarma y desesperación entre los habitantes locales, quienes ven amenazados sus medios de subsistencia, sus tierras y la fauna silvestre del sector.</p>
-
-        <p>Ante la rápida propagación del fuego, las autoridades locales y los propios comuneros han lanzado un llamado urgente de auxilio a las entidades competentes del Gobierno Central y regional. Piden el envío inmediato de brigadas especializadas en el combate de incendios forestales, así como el despliegue de apoyo aéreo, herramienta fundamental para poder alcanzar las zonas más agrestes y escarpadas donde el fuego se expande con mayor intensidad.</p>
-
-        <h2>El difícil acceso complica las labores de control</h2>
-
-        <p>La geografía accidentada de la provincia de Huarochirí representa el principal obstáculo para las labores de mitigación. Los sectores afectados por el incendio en Suni se caracterizan por pendientes pronunciadas y quebradas profundas, lo que vuelve casi imposible el ingreso de vehículos de emergencia o camiones cisterna. Hasta el momento, los pobladores han tenido que organizarse por su cuenta, intentando apagar las llamas provistos únicamente de ramas, lampas y picos.</p>
-
-        <p>Sin embargo, los esfuerzos comunales resultan insuficientes frente a la magnitud del siniestro. El humo denso y la extensión del área afectada superan la capacidad de respuesta local. Los comuneros han advertido que el fuego no solo está destruyendo past naturales y arbustos propios de la puna, sino que también pone en riesgo la vida de los animales de pastoreo y la integridad física de las familias que habitan en las zonas circundantes.</p>
-
-        <div class="highlight-box">
-            <h3>Puntos clave de la emergencia</h3>
-            <ul>
-                <li><strong>Ubicación:</strong> Comunidad campesina de Suni, provincia de Huarochirí.</li>
-                <li><strong>Afectación:</strong> Incendio forestal de gran magnitud que consume cobertura vegetal.</li>
-                <li><strong>Demanda principal:</strong> Envío urgente de brigadas especializadas y apoyo aéreo.</li>
-                <li><strong>Limitación:</strong> El terreno agreste impide el acceso de maquinaria y complica el trabajo manual de los pobladores.</li>
-            </ul>
-        </div>
-
-        <h2>Impacto ambiental y social en la zona altoandina</h2>
-
-        <p>Los incendios forestales en la sierra peruana suelen dejar secuelas devastadoras que trascienden el momento de la emergencia. La destrucción de la cobertura vegetal en Suni impacta de manera directa en el ecosistema local, alterando el equilibrio ambiental, degradando los suelos y afectando las fuentes de agua que abastecen a la comunidad. Asimismo, la pérdida de pastos naturales golpea severamente la economía de los pobladores dedicados a la ganadería de subsistencia.</p>
-
-        <p>Los dirigentes de la comunidad reiteraron que la ayuda humanitaria y logística debe llegar a la brevedad posible para evitar que el desastre ecológico sea irreversible. Las horas transcurren de manera crítica y cada minuto que pasa sin una intervención formal y mecanizada permite que las llamas sigan ganando terreno, consumiendo a su paso todo lo que encuentran en la zona altoandina de Huarochirí.</p>
-
-        <p>Se espera que en las próximas horas las entidades del Sistema Nacional de Gestión del Riesgo de Desastres (Sinagerd) y los gobiernos locales intensifiquen las coordinaciones operativas para desplazar los recursos necesarios hacia la comunidad de Suni y poner fin a esta emergencia que mantiene en zozobra a toda la región.</p>
-    </article>
-
-    <footer>
-        <p>Autor: Redacción Periodística | Todos los derechos reservados &copy; 2024</p>
-    </footer>
+<div class="ultimolive-share">
+<style>
+.ultimolive-share{max-width:960px;margin:24px auto;padding:0 20px;font-family:Arial,Helvetica,sans-serif}
+.ultimolive-share .share-label{margin:0 0 10px;font-size:13px;font-weight:700;color:#333;text-transform:uppercase;letter-spacing:.5px}
+.share-row{display:flex;flex-wrap:wrap;gap:8px}
+.share-row a{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:24px;color:#fff;text-decoration:none;font-size:14px;font-weight:600;transition:opacity .15s}
+.share-row a:hover{opacity:.85}
+.share-wa{background:#25D366}.share-fb{background:#1877F2}.share-tw{background:#111}.share-tg{background:#0088cc}
+.back-portal{display:inline-block;margin-top:14px;font-size:13px;color:#00843d;text-decoration:none;font-weight:600}
+</style>
+<p class="share-label">Comparte este articulo</p>
+<div class="share-row">
+<a class="share-wa" href="https://wa.me/?text=Huarochiri%3A%20piden%20ayuda%20para%20sofocar%20un%20incendio%20forestal%20que%20afecta%20a%20la%20comunidad%20de%20Suni%20https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Fhuarochiri-piden-ayuda-para-sofocar-un%2F" target="_blank" rel="noopener">WhatsApp</a>
+<a class="share-fb" href="https://www.facebook.com/dialog/share?app_id=2290800501460325&display=popup&href=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Fhuarochiri-piden-ayuda-para-sofocar-un%2F&redirect_uri=https%3A%2F%2Fwww.facebook.com%2F" target="_blank" rel="noopener">Facebook</a>
+<a class="share-tw" href="https://twitter.com/intent/tweet?text=Huarochiri%3A%20piden%20ayuda%20para%20sofocar%20un%20incendio%20forestal%20que%20afecta%20a%20la%20comunidad%20de%20Suni&url=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Fhuarochiri-piden-ayuda-para-sofocar-un%2F" target="_blank" rel="noopener">X</a>
+<a class="share-tg" href="https://t.me/share/url?url=https%3A%2F%2Fautomatico.pages.dev%2Fposts%2Fhuarochiri-piden-ayuda-para-sofocar-un%2F&text=Huarochiri%3A%20piden%20ayuda%20para%20sofocar%20un%20incendio%20forestal%20que%20afecta%20a%20la%20comunidad%20de%20Suni" target="_blank" rel="noopener">Telegram</a>
 </div>
-
+<a class="back-portal" href="https://automatico.pages.dev/">Volver al portal</a>
+</div>
 </body>
 </html>
