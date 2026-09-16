@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presidenta Fujimori: nuestra visión es construir una economía más productiva e inclusiva</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #f4f5f7;
+    color: #1c1c1c;
+    line-height: 1.75;
+    font-size: 18px;
+  }
+  .wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 18px rgba(0,0,0,0.08);
+  }
+  header.news-header {
+    padding: 0 0 28px 0;
+    border-bottom: 4px solid #0b3d91;
+  }
+  .brand-bar {
+    background-color: #0b3d91;
+    color: #ffffff;
+    padding: 12px 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .header-text {
+    padding: 30px 28px 18px 28px;
+  }
+  .kicker {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #0b3d91;
+    font-weight: bold;
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-size: 2.35rem;
+    line-height: 1.22;
+    color: #111111;
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+  .excerpt {
+    font-size: 1.15rem;
+    color: #444444;
+    border-left: 4px solid #c8a24a;
+    padding-left: 16px;
+    font-style: italic;
+  }
+  figure.featured {
+    margin: 0;
+  }
+  figure.featured img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.82rem;
+    color: #666666;
+    padding: 10px 28px 0 28px;
+    line-height: 1.5;
+  }
+  .article-body {
+    padding: 34px 28px 10px 28px;
+  }
+  .dateline {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #777777;
+    margin-bottom: 22px;
+  }
+  .article-body p {
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  .article-body p.lead {
+    font-size: 1.22rem;
+    color: #222222;
+  }
+  h2 {
+    font-size: 1.5rem;
+    color: #0b3d91;
+    margin: 34px 0 16px 0;
+    line-height: 1.3;
+    border-bottom: 1px solid #e2e4e8;
+    padding-bottom: 8px;
+  }
+  .quote-block {
+    background-color: #f7f8fa;
+    border-left: 5px solid #0b3d91;
+    padding: 22px 24px;
+    margin: 28px 0;
+    font-size: 1.18rem;
+    font-style: italic;
+    color: #1a1a1a;
+  }
+  .quote-block span {
+    display: block;
+    margin-top: 12px;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #0b3d91;
+    font-weight: bold;
+  }
+  .data-box {
+    background-color: #eef2f9;
+    border: 1px solid #d3dced;
+    border-radius: 6px;
+    padding: 22px 24px;
+    margin: 30px 0;
+  }
+  .data-box h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #0b3d91;
+    margin-bottom: 14px;
+  }
+  .data-box ul {
+    list-style: none;
+  }
+  .data-box li {
+    padding: 9px 0 9px 22px;
+    position: relative;
+    border-bottom: 1px dashed #c3cfe4;
+    font-size: 1rem;
+  }
+  .data-box li:last-child {
+    border-bottom: none;
+  }
+  .data-box li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 8px;
+    height: 8px;
+    background-color: #c8a24a;
+    border-radius: 50%;
+  }
+  .highlight-note {
+    background-color: #fff9ec;
+    border-left: 5px solid #c8a24a;
+    padding: 18px 22px;
+    margin: 26px 0;
+    font-size: 1.02rem;
+    color: #4a3a10;
+  }
+  footer.news-footer {
+    background-color: #111827;
+    color: #d7dbe2;
+    padding: 30px 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-top: 30px;
+  }
+  footer.news-footer strong {
+    color: #ffffff;
+  }
+  footer.news-footer .fecha {
+    margin-top: 8px;
+    color: #9aa3b2;
+  }
+  footer.news-footer .fuente {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid #2c3444;
+    color: #9aa3b2;
+    font-size: 0.82rem;
+    word-break: break-word;
+  }
+  @media (max-width: 700px) {
+    body { font-size: 17px; }
+    h1 { font-size: 1.75rem; }
+    .article-body { padding: 26px 18px 10px 18px; }
+    .header-text { padding: 24px 18px 16px 18px; }
+    figcaption { padding: 10px 18px 0 18px; }
+    .brand-bar { padding: 10px 18px; }
+    footer.news-footer { padding: 24px 18px; }
+    .excerpt { font-size: 1.05rem; }
+  }
+  @media (max-width: 420px) {
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.28rem; }
+    .article-body p.lead { font-size: 1.1rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header class="news-header">
+    <div class="brand-bar">Portal de Noticias del Perú</div>
+    <div class="header-text">
+      <div class="kicker">Economía y Gobierno</div>
+      <h1>Presidenta Fujimori: nuestra visión es construir una economía más productiva e inclusiva</h1>
+      <p class="excerpt">La presidenta de la república, Keiko Fujimori Higuchi, afirmó que la visión del Gobierno es construir una economía más productiva, competitiva e inclusiva. El planteamiento coloca la generación de valor y la reducción de brechas como ejes de la agenda económica del Ejecutivo.</p>
+    </div>
+    <figure class="featured">
+      <img src="imagen1.jpg" alt="Presidenta de la república, Keiko Fujimori Higuchi, durante su mensaje sobre la visión económica del Gobierno">
+      <figcaption>La presidenta Keiko Fujimori Higuchi se pronunció sobre la visión económica del Gobierno. Imagen referencial.</figcaption>
+    </figure>
+  </header>
+
+  <main class="article-body">
+    <p class="dateline">Lima, Perú — Sección Economía</p>
+
+    <p class="lead">La presidenta de la república, Keiko Fujimori Higuchi, afirmó que la visión del Gobierno es construir una economía más productiva, competitiva e inclusiva. Con esa declaración, la mandataria situó los tres conceptos como el eje que orienta la política económica del Ejecutivo y como el marco desde el cual se busca responder a las demandas de crecimiento y de reducción de desigualdades en el país.</p>
+
+    <p>La afirmación de la jefa del Estado resume una agenda que vincula tres dimensiones que habitualmente se analizan por separado: la capacidad de las unidades económicas para generar más valor con los mismos recursos, la posición del país frente a la competencia en los mercados y la posibilidad real de que los beneficios del crecimiento alcancen a amplios sectores de la población. Al presentarlas como una sola visión, el planteamiento del Gobierno sugiere que ninguna de las tres puede sostenerse sin las otras dos.</p>
+
+    <div class="quote-block">
+      "Nuestra visión es construir una economía más productiva, competitiva e inclusiva".
+      <span>Keiko Fujimori Higuchi, presidenta de la república</span>
+    </div>
+
+    <h2>Una economía más productiva</h2>
+
+    <p>El primer componente de la visión expuesta por la presidenta apunta a la productividad, es decir, a la relación entre lo que se produce y los recursos que se emplean para producirlo. En términos generales, una economía más productiva es aquella en la que las empresas, los trabajadores y el propio Estado obtienen mejores resultados con el mismo capital, el mismo tiempo de trabajo y los mismos insumos. Ese objetivo atraviesa tanto a las grandes industrias como a los pequeños emprendimientos que sostienen buena parte del empleo en el país.</p>
+
+    <p>Elevar la productividad implica, en la práctica, una combinación de factores que van desde la incorporación de tecnología y la mejora de los procesos internos de las empresas hasta la capacitación de la fuerza laboral y el acceso a financiamiento en condiciones adecuadas. También supone un entorno institucional predecible, en el que las reglas sean claras y estables, de modo que las decisiones de inversión puedan tomarse con horizontes largos y no solo de corto plazo. La mención presidencial a una economía más productiva se inscribe en ese conjunto de condiciones.</p>
+
+    <p>El concepto adquiere especial relevancia cuando se lo contrasta con los diagnósticos que suelen señalar una brecha persistente entre el esfuerzo laboral de la población y los resultados económicos que ese esfuerzo genera. Cerrar esa brecha es, precisamente, lo que muchos especialistas entienden por desarrollo productivo: no solo crecer, sino crecer mejor, con mayor valor agregado y con una base económica más diversificada.</p>
+
+    <h2>El desafío de la competitividad</h2>
+
+    <p>El segundo eje mencionado por la mandataria es la competitividad. Se trata de la capacidad de las empresas y del país en su conjunto para participar con éxito en los mercados, tanto internos como externos, ofreciendo bienes y servicios que puedan competir en precio, calidad y oportunidad. La competitividad no depende únicamente de las firmas: también está determinada por factores de entorno como la infraestructura, los costos logísticos, la simplificación de trámites, la calidad de los servicios públicos y la seguridad jurídica.</p>
+
+    <p>Cuando la presidenta se refiere a una economía más competitiva, alude por tanto a un esfuerzo que excede el ámbito estrictamente empresarial. Un país competitivo es aquel donde trasladar mercancías, abrir un negocio, cumplir con obligaciones tributarias o acceder a un servicio básico no se convierte en una carga desproporcionada. Cada uno de esos elementos incide directamente en la capacidad de las unidades productivas para competir y, en última instancia, en el costo que asumen los consumidores.</p>
+
+    <div class="data-box">
+      <h3>Los tres ejes de la visión económica expuesta por la presidenta</h3>
+      <ul>
+        <li>Productiva: generar más valor con los recursos disponibles, incorporando tecnología, capacitación y mejores procesos.</li>
+        <li>Competitiva: mejorar las condiciones del entorno para que las empresas puedan competir en los mercados internos y externos.</li>
+        <li>Inclusiva: asegurar que los resultados del crecimiento alcancen a los distintos sectores y territorios del país.</li>
+      </ul>
+    </div>
+
+    <h2>La dimensión inclusiva</h2>
+
+    <p>El tercer componente de la visión enunciada por la jefa del Estado es la inclusión. Una economía inclusiva es aquella en la que el crecimiento se traduce en oportunidades concretas para la población: empleo formal, acceso a servicios financieros, educación de calidad, protección social y participación en los mercados en condiciones equitativas. Sin ese componente, los otros dos difícilmente se sostengan en el tiempo, porque la exclusión termina limitando el tamaño del mercado interno y frenando la propia productividad.</p>
+
+    <p>La inclusión económica tiene una dimensión territorial evidente. Las brechas entre las zonas urbanas y las rurales, así como entre las distintas regiones del país, condicionan el punto de partida de millones de personas. Reducir esas diferencias exige políticas diferenciadas, infraestructura de conectividad, servicios básicos y mecanismos que permitan a los pequeños productores integrarse a cadenas de valor más amplias.</p>
+
+    <p>También tiene una dimensión de género y de generaciones. La incorporación plena de las mujeres al mercado laboral formal y la apertura de oportunidades para los jóvenes son condiciones que inciden directamente en la capacidad de una economía para crecer de manera sostenida. En ese sentido, el término inclusiva no alude a un complemento social de la política económica, sino a una condición de su sostenibilidad.</p>
+
+    <div class="highlight-note">
+      La visión expresada por la presidenta Keiko Fujimori Higuchi articula tres objetivos que se refuerzan entre sí: sin productividad no hay recursos para incluir, y sin inclusión no hay base suficiente para sostener la competitividad en el largo plazo.
+    </div>
+
+    <h2>Un planteamiento de largo alcance</h2>
+
+    <p>Las declaraciones de la mandataria se producen en un contexto en el que la discusión económica nacional gira, con frecuencia, en torno a indicadores de corto plazo. El enfoque que propone la presidenta desplaza parcialmente esa mirada hacia las condiciones estructurales que determinan el desempeño de la economía en horizontes más extensos: la calidad del capital humano, la modernización del aparato productivo, la eficiencia del Estado y la equidad en la distribución de oportunidades.</p>
+
+    <p>Ese tipo de planteamiento suele enfrentar, sin embargo, la dificultad de traducirse en resultados verificables en plazos breves. Los cambios en productividad y competitividad requieren continuidad en las políticas, capacidad de ejecución y mecanismos de seguimiento que permitan medir avances. La inclusión, por su parte, exige una articulación entre los distintos niveles de gobierno y una asignación de recursos coherente con los objetivos declarados.</p>
+
+    <p>La afirmación de la presidenta de la república constituye, en ese marco, la definición de un horizonte antes que el anuncio de una medida específica. Se trata de un enunciado de dirección: el tipo de economía que el Gobierno dice querer construir y los criterios con los que, previsiblemente, se evaluarán sus decisiones en materia económica.</p>
+
+    <h2>Expectativas y seguimiento</h2>
+
+    <p>A partir de esta declaración, la atención de los distintos sectores se orientará a los instrumentos concretos con los que el Ejecutivo busque materializar esa visión. En la agenda económica suelen considerarse relevantes las medidas vinculadas a la formalización, la simplificación administrativa, el cierre de brechas de infraestructura, el fortalecimiento del capital humano y el acceso al financiamiento para las unidades productivas de menor tamaño.</p>
+
+    <p>El seguimiento de esos aspectos permitirá contrastar el enunciado presidencial con resultados observables. La visión de una economía más productiva, competitiva e inclusiva funciona, en ese sentido, como un parámetro de referencia: un punto de partida para evaluar la coherencia entre lo que se declara y lo que se ejecuta.</p>
+
+    <p>La presidenta Keiko Fujimori Higuchi ha fijado así los términos de su propuesta económica en tres palabras que resumen un objetivo de largo plazo. La discusión pública que siga a este pronunciamiento definirá en qué medida ese horizonte se traduce en políticas concretas y en mejoras verificables para la población.</p>
+  </main>
+
+  <footer class="news-footer">
+    <p><strong>Por:</strong> Redacción Política y Economía</p>
+    <p class="fecha"><strong>Fecha de publicación:</strong> Edición de actualidad</p>
+    <p class="fuente">Fuente: Andina — Agencia Peruana de Noticias. Declaraciones de la presidenta de la república, Keiko Fujimori Higuchi, sobre la visión económica del Gobierno.</p>
+  </footer>
+
+</div>
+</body>
+</html>
