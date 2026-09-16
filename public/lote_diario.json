@@ -1,24 +1,34 @@
 {
   "items": [
     {
-      "tema": "Ola de calor historica en Lima rompe record de 1997",
-      "cat": "salud",
-      "slug": "ola-de-calor-historica-lima-record-1997"
+      "tema": "Costa sur del Perú registraría lluvias ligeras a moderadas en los próximos días",
+      "slug": "costa-sur-del-peru-registraria-lluvias-ligeras",
+      "cat": "home",
+      "nota": "Lluvias de ligera a moderada intensidad en la costa sur del Perú entre el 17 y 18 de setiembre, en Arequipa, Moquegua y Tacna, según el Senamhi."
     },
     {
-      "tema": "Paciente oncologica de EsSalud sin citas para tomografias en hospital Sabogal",
-      "cat": "salud",
-      "slug": "paciente-oncologica-essalud-sin-citas-tomografias"
+      "tema": "Escolares ganan medallas de oro, plata y bronce en Olimpiada Iberoamericana de Matemática",
+      "slug": "escolares-ganan-medallas-de-oro-plata-y",
+      "cat": "home",
+      "nota": "Escolares peruanos ganaron medallas de oro, plata y bronce en la Olimpiada Iberoamericana de Matemática."
     },
     {
-      "tema": "Peru reune expertos internacionales para analizar avances contra el cancer",
-      "cat": "salud",
-      "slug": "peru-reune-expertos-internacionales-cancer"
+      "tema": "MEF: La economía peruana en julio 2026 acumula 28 meses de expansión continua",
+      "slug": "mef-la-economia-peruana-en-julio",
+      "cat": "gana",
+      "nota": "El MEF informó que la economía peruana acumuló 28 meses de expansión continua en julio de 2026."
     },
     {
-      "tema": "Serfor rescato 69 monos mantenidos como mascotas en Lima",
+      "tema": "Costa y sierra seguirán registrando incremento de la temperatura diurna: Senamhi detalla las regiones en alerta",
+      "slug": "costa-y-sierra-seguiran-registrando-incremento",
       "cat": "salud",
-      "slug": "serfor-rescato-69-monos-mascotas-lima"
+      "nota": "El Senamhi detalló las regiones de la costa y sierra que seguirán registrando incremento de la temperatura diurna."
+    },
+    {
+      "tema": "Arequipa: más de 190,000 turistas visitaron el valle del Colca en lo que va del año",
+      "slug": "arequipa-mas-de-190000-turistas-visitaron",
+      "cat": "home",
+      "nota": "Más de 190,000 turistas visitaron el valle del Colca en Arequipa en lo que va del año."
     }
   ],
   "publicados": []
