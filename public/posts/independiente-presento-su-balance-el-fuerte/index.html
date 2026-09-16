@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Independiente presentó su balance: el fuerte impacto de la crisis económica en el fútbol</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f4f4f2;
+    color: #1c1c1c;
+    line-height: 1.7;
+    font-size: 17px;
+  }
+  .wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 0 24px rgba(0,0,0,0.08);
+  }
+  header.news-header {
+    position: relative;
+    background: #8f0f1f;
+    color: #ffffff;
+  }
+  header.news-header img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 460px;
+    object-fit: cover;
+  }
+  .header-text {
+    padding: 26px 30px 30px 30px;
+  }
+  .kicker {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #ffffff;
+    color: #8f0f1f;
+    padding: 5px 12px;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-size: 2.05em;
+    line-height: 1.22;
+    font-weight: bold;
+    margin-bottom: 14px;
+  }
+  .subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.02em;
+    line-height: 1.55;
+    color: #f6dede;
+    font-weight: normal;
+  }
+  .byline {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #f0c9c9;
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255,255,255,0.28);
+  }
+  main {
+    padding: 34px 30px 10px 30px;
+  }
+  p {
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  .lead {
+    font-size: 1.12em;
+    color: #2b2b2b;
+    border-left: 5px solid #8f0f1f;
+    padding-left: 18px;
+    font-style: italic;
+  }
+  h2 {
+    font-size: 1.38em;
+    color: #8f0f1f;
+    margin: 38px 0 16px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ececec;
+    line-height: 1.3;
+  }
+  h3 {
+    font-size: 1.12em;
+    color: #333333;
+    margin: 26px 0 12px 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .databox {
+    background: #fbf3f4;
+    border: 1px solid #e6cdd1;
+    border-left: 6px solid #8f0f1f;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin: 30px 0;
+  }
+  .databox h3 {
+    margin-top: 0;
+    color: #8f0f1f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+  }
+  .databox ul {
+    list-style: none;
+    margin: 0;
+  }
+  .databox li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 9px 0 9px 18px;
+    position: relative;
+    border-bottom: 1px dashed #e2c9cd;
+  }
+  .databox li:last-child {
+    border-bottom: none;
+  }
+  .databox li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 17px;
+    width: 8px;
+    height: 8px;
+    background: #8f0f1f;
+    border-radius: 50%;
+  }
+  .databox strong {
+    color: #8f0f1f;
+  }
+  .figure-inline {
+    margin: 30px 0;
+  }
+  .figure-inline img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+  .figure-inline figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #6a6a6a;
+    padding-top: 9px;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 12px;
+  }
+  blockquote {
+    margin: 28px 0;
+    padding: 18px 24px;
+    background: #f7f7f7;
+    border-left: 5px solid #b8b8b8;
+    font-style: italic;
+    color: #3a3a3a;
+    font-size: 1.05em;
+  }
+  .closing-note {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #555555;
+    background: #f6f6f6;
+    padding: 18px 20px;
+    border-radius: 4px;
+    margin: 34px 0 20px 0;
+  }
+  footer.news-footer {
+    background: #1c1c1c;
+    color: #cfcfcf;
+    padding: 26px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13.5px;
+    line-height: 1.7;
+  }
+  footer.news-footer strong {
+    color: #ffffff;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+  footer.news-footer .meta {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #3a3a3a;
+    color: #9a9a9a;
+    font-size: 12.5px;
+  }
+  @media (max-width: 620px) {
+    body { font-size: 16px; }
+    .header-text { padding: 20px 18px 22px 18px; }
+    h1 { font-size: 1.5em; }
+    .subtitle { font-size: 0.95em; }
+    main { padding: 24px 18px 6px 18px; }
+    h2 { font-size: 1.2em; }
+    .databox { padding: 18px 16px; }
+    footer.news-footer { padding: 22px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="news-header">
+    <img src="/posts/independiente-presento-su-balance-el-fuerte/imagen1.jpg" alt="Sede de Independiente en Avenida Mitre 470, Avellaneda">
+    <div class="header-text">
+      <span class="kicker">Economía del deporte</span>
+      <h1>Independiente presentó su balance: un pasivo de 34.742.454 dólares y el fuerte impacto de la crisis económica en el fútbol</h1>
+      <p class="subtitle">El Rojo oficializó los números del período comprendido entre el 1 de julio de 2025 y el 30 de junio de 2026. La deuda creció 989.610 dólares y volvió a instalarse como el factor que condiciona el armado de los planteles y explica una prolongada sequía de títulos.</p>
+      <p class="byline">Redacción Deportes | Sección Economía del fútbol</p>
+    </div>
+  </header>
+
+  <main>
+
+    <p class="lead">La crisis futbolística que golpeó a Independiente en los últimos años no puede comprenderse ni escindirse de la profunda inestabilidad económica que afecta al club. El impacto de los problemas financieros repercutió de forma directa en lo que sucede en el campo de juego.</p>
+
+    <p>El balance general del período entre el 1 de julio de 2025 y el 30 de junio del corriente 2026, presentado de forma oficial esta semana, arrojó un pasivo de 34.742.454 dólares, contemplando un tipo de cambio de 1.500 pesos por dólar. Los números confirmaron un aumento de 989.610 dólares en la totalidad de la deuda que arrastra la institución.</p>
+
+    <p>Se trata de una cifra que, leída de manera aislada, puede parecer un dato contable más. Sin embargo, cuando se la observa en perspectiva histórica y se la cruza con el rendimiento deportivo de las últimas dos décadas, el número adquiere otra dimensión: la deuda dejó de ser un problema administrativo para convertirse en un factor estructural que atravesó cada decisión deportiva del club.</p>
+
+    <div class="databox">
+      <h3>Los números del balance</h3>
+      <ul>
+        <li>Pasivo total informado: <strong>34.742.454 dólares</strong></li>
+        <li>Tipo de cambio utilizado para la conversión: <strong>1.500 pesos por dólar</strong></li>
+        <li>Período contable: <strong>1 de julio de 2025 al 30 de junio de 2026</strong></li>
+        <li>Aumento de la deuda respecto del ejercicio anterior: <strong>989.610 dólares</strong></li>
+      </ul>
+    </div>
+
+    <h2>Una serie histórica que explica el presente</h2>
+
+    <p>Para dimensionar el peso de la deuda actual conviene repasar la serie histórica que el propio club puso sobre la mesa. En 2008, durante la gestión de Comparada, el pasivo era de más de 29.000.000 de dólares. Cinco años más tarde, en 2013, durante la gestión de Javier Cantero, la deuda llegó a su punto máximo y escaló hasta los 73.000.000 de dólares, un registro que marcó un antes y un después en la vida institucional del Rojo.</p>
+
+    <p>El año en el que Independiente consiguió mayor estabilidad fue en 2019, durante la gestión de Moyano, cuando la deuda bajó a 26.600.000 dólares luego de vender a algunas de las figuras que tuvo el Rojo cuando ganó la Sudamericana de 2017, entre ellas Barco. Aquel proceso de ventas funcionó como un alivio financiero de corto plazo, pero también como una advertencia: la única vía rápida de reducción del pasivo era la transferencia de jugadores formados o consolidados en el club.</p>
+
+    <p>Ese mecanismo, sostenido en el tiempo, tiene un costo deportivo evidente. Cada venta resuelve una urgencia contable y, al mismo tiempo, debilita la estructura del plantel. El círculo se repite: se vende para pagar, se debilita el equipo, se pierden competencias, se reducen los ingresos por premios y taquilla, y la deuda vuelve a crecer. La historia reciente de Independiente es, en gran medida, la historia de ese círculo.</p>
+
+    <h2>Deuda y sequía de títulos: una relación difícil de separar</h2>
+
+    <p>En las últimas dos décadas, la deuda condicionó el armado de los planteles y generó una prolongada sequía de títulos. La afirmación no es una interpretación periodística: surge de la propia secuencia de los hechos. Un club que debe destinar buena parte de sus ingresos corrientes a cubrir pasivos tiene menos margen para retener jugadores, para reforzar posiciones clave o para sostener cuerpos técnicos en el tiempo.</p>
+
+    <p>El fútbol de alto rendimiento exige continuidad. Los proyectos deportivos que consiguen resultados suelen apoyarse en planteles que permanecen juntos varias temporadas, en decisiones técnicas que no se modifican cada seis meses y en una dirigencia que puede planificar con horizonte largo. Cuando la economía impone urgencias mensuales, esa continuidad se vuelve casi imposible.</p>
+
+    <blockquote>El impacto de los problemas financieros repercutió de forma directa en lo que sucede en el campo de juego. La crisis futbolística y la inestabilidad económica del club son dos caras del mismo fenómeno.</blockquote>
+
+    <p>A esto se suma un factor adicional: la presión sobre los ingresos. Los clubes con pasivos elevados suelen depender de manera creciente de la venta de jugadores, de los derechos de televisión y de los resultados deportivos inmediatos. Cualquier temporada por debajo de las expectativas golpea de inmediato las arcas y obliga a recalcular el presupuesto del año siguiente.</p>
+
+    <h2>El tipo de cambio y la lectura del número</h2>
+
+    <p>Un aspecto técnico del balance presentado merece atención: la conversión se realizó a un tipo de cambio de 1.500 pesos por dólar. En economías con alta inflación y volatilidad cambiaria, la elección del tipo de cambio utilizado para expresar una deuda en moneda dura incide directamente en la magnitud del número final y en la comparación con ejercicios anteriores.</p>
+
+    <p>Por eso, más allá del dato puntual, lo relevante es la tendencia: el pasivo aumentó 989.610 dólares en un año. Se trata de un incremento que, en términos relativos, puede parecer moderado frente a los saltos registrados en otras etapas de la serie histórica, pero que confirma que el problema no está resuelto y que la deuda continúa creciendo, aunque sea a un ritmo más lento que en los peores momentos de la década pasada.</p>
+
+    <div class="databox">
+      <h3>La serie histórica del pasivo</h3>
+      <ul>
+        <li>2008, gestión de Comparada: <strong>más de 29.000.000 de dólares</strong></li>
+        <li>2013, gestión de Javier Cantero: <strong>73.000.000 de dólares</strong>, punto máximo registrado</li>
+        <li>2019, gestión de Moyano: <strong>26.600.000 dólares</strong>, el año de mayor estabilidad</li>
+        <li>Período 2025-2026: <strong>34.742.454 dólares</strong></li>
+      </ul>
+    </div>
+
+    <figure class="figure-inline">
+      <img src="/posts/independiente-presento-su-balance-el-fuerte/imagen1.jpg" alt="Sede de Independiente en Avenida Mitre 470, Avellaneda">
+      <figcaption>La sede de Independiente en Avenida Mitre 470, Avellaneda. Foto: Emmanuel Fernández.</figcaption>
+    </figure>
+
+    <h2>Qué significa para el armado del plantel</h2>
+
+    <p>La relación entre el balance y el mercado de pases es directa. Un pasivo de esta magnitud limita la capacidad de negociación del club en varios frentes: obliga a priorizar ventas sobre compras, reduce el margen para competir por jugadores pretendidos por otros clubes y empuja a buscar refuerzos en segmentos de menor costo, con el riesgo que eso implica en términos de rendimiento inmediato.</p>
+
+    <p>También afecta la planificación de las divisiones inferiores. Paradójicamente, la formación de jugadores propios se vuelve la herramienta más valiosa y, al mismo tiempo, la más vulnerable: cada juvenil que se consolida en primera se convierte en una posible fuente de ingresos extraordinarios, lo que acelera su salida y debilita el proyecto deportivo antes de que madure.</p>
+
+    <h3>Un problema que excede a un solo club</h3>
+
+    <p>La situación de Independiente no es un caso aislado en el fútbol sudamericano. Los clubes de la región enfrentan de manera recurrente tensiones entre la necesidad de competir en torneos internacionales, la volatilidad de sus monedas y la dependencia de ingresos que no siempre están denominados en moneda dura. La deuda, en ese contexto, funciona como un factor que amplifica cualquier crisis deportiva y que retrasa la recuperación.</p>
+
+    <p>La diferencia, en el caso del Rojo, es la magnitud y la persistencia histórica del fenómeno. Dos décadas de pasivos elevados no se resuelven con una sola gestión ni con una única venta extraordinaria. Requieren una estrategia sostenida en el tiempo que combine austeridad, transparencia contable y una política deportiva realista respecto de los recursos disponibles.</p>
+
+    <h2>El desafío de mirar el balance sin perder de vista la cancha</h2>
+
+    <p>El balance presentado esta semana ofrece, ante todo, un diagnóstico. Muestra que el pasivo sigue siendo elevado y que creció en el último ejercicio, aunque también permite ubicar ese número dentro de una serie histórica en la que hubo momentos considerablemente peores. La comparación con los 73.000.000 de dólares de 2013 y con los 26.600.000 de 2019 permite afirmar que el club ha atravesado etapas de mayor gravedad y también etapas de recuperación parcial.</p>
+
+    <p>El punto central, sin embargo, no es el número en sí, sino su traducción en la vida cotidiana de la institución. Mientras la deuda condicione el armado de los planteles, la sequía de títulos seguirá siendo un riesgo latente y no una simple racha desafortunada. La estabilidad económica es, en el fútbol contemporáneo, una condición necesaria para competir con regularidad, aunque no sea suficiente por sí sola.</p>
+
+    <p>Para Independiente, el desafío consiste en sostener la reducción del pasivo sin desmantelar el equipo, en recuperar capacidad de inversión sin volver a endeudarse y en construir un proyecto deportivo que sobreviva a los cambios de gestión. Es un equilibrio difícil, y los números presentados esta semana demuestran que todavía no se ha alcanzado.</p>
+
+    <div class="closing-note">
+      El balance general correspondiente al período entre el 1 de julio de 2025 y el 30 de junio de 2026 fue presentado de forma oficial esta semana. La cifra de pasivo informada asciende a 34.742.454 dólares, con un incremento de 989.610 dólares respecto del ejercicio anterior, calculada a un tipo de cambio de 1.500 pesos por dólar.
+    </div>
+
+  </main>
+
+  <footer class="news-footer">
+    <strong>Redacción Deportes</strong>
+    Sección Economía del fútbol | Cobertura de la actualidad institucional y financiera de los clubes sudamericanos.
+    <div class="meta">
+      Autor: Redacción Deportes | Fecha de publicación: ejercicio 2026 | Fuente de los datos: balance general oficial de Independiente, período 1 de julio de 2025 al 30 de junio de 2026.
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
