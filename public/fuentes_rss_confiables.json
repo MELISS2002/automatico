@@ -1,22 +1,36 @@
 {
   "_meta": {
     "descripcion": "LISTA CONFIABLE de fuentes RSS (verificadas 2026-08-08). Usar con trends-rss.cjs",
-    "total": 67,
+    "total": 88,
     "por_pais": {
+      "US": 31,
+      "PE": 18,
+      "ES": 12,
+      "INT": 8,
+      "GB": 5,
       "AR": 4,
+      "FR": 2,
+      "MX": 2,
       "CL": 1,
       "CR": 1,
       "EC": 1,
-      "ES": 6,
-      "FR": 1,
-      "GB": 3,
-      "INT": 8,
-      "MX": 1,
-      "PE": 18,
       "QA": 1,
       "RU": 1,
-      "US": 20,
       "VE": 1
+    },
+    "por_cat": {
+      "general": 27,
+      "gana": 14,
+      "tech": 10,
+      "salud": 9,
+      "deportes": 5,
+      "entretenimiento": 5,
+      "economia": 5,
+      "ciencia": 4,
+      "agregador": 3,
+      "regional": 3,
+      "investigacion": 2,
+      "opinion": 1
     }
   },
   "fuentes": [
@@ -200,6 +214,7 @@
       "name": "Google News Salud",
       "country": "INT",
       "cat": "salud",
+      "lang": "en",
       "url": "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en&topic=h",
       "items": 38,
       "fuente": "verificada"
@@ -216,8 +231,72 @@
       "name": "WHO News (EN)",
       "country": "INT",
       "cat": "salud",
+      "lang": "en",
       "url": "https://www.who.int/rss-feeds/news-english.xml",
       "items": 25,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Mayo Clinic News",
+      "country": "US",
+      "cat": "salud",
+      "lang": "en",
+      "url": "https://newsnetwork.mayoclinic.org/feed/",
+      "items": 10,
+      "fuente": "verificada"
+    },
+    {
+      "name": "ScienceDaily Health",
+      "country": "US",
+      "cat": "salud",
+      "lang": "en",
+      "url": "https://www.sciencedaily.com/rss/health_medicine.xml",
+      "items": 60,
+      "fuente": "verificada"
+    },
+    {
+      "name": "BBC Health (EN)",
+      "country": "GB",
+      "cat": "salud",
+      "lang": "en",
+      "url": "https://feeds.bbci.co.uk/news/health/rss.xml",
+      "items": 52,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Euronews Health (EN)",
+      "country": "FR",
+      "cat": "salud",
+      "lang": "en",
+      "url": "https://www.euronews.com/rss?level=theme&theme=health",
+      "items": 50,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Medical Xpress Health",
+      "country": "US",
+      "cat": "salud",
+      "lang": "en",
+      "url": "https://medicalxpress.com/rss-feed/",
+      "items": 30,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Guardian Health (Sociedad)",
+      "country": "GB",
+      "cat": "salud",
+      "lang": "en",
+      "url": "https://www.theguardian.com/society/health/rss",
+      "items": 20,
+      "fuente": "verificada"
+    },
+    {
+      "name": "20Minutos Salud (ES)",
+      "country": "ES",
+      "cat": "salud",
+      "lang": "es",
+      "url": "https://www.20minutos.es/rss/salud/",
+      "items": 33,
       "fuente": "verificada"
     },
     {
@@ -554,6 +633,132 @@
       "cat": "general",
       "url": "https://www.elnacional.com/rss/",
       "items": 100,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Money Crashers (EN)",
+      "country": "US",
+      "cat": "gana",
+      "lang": "en",
+      "url": "https://www.moneycrashers.com/feed/",
+      "items": 50,
+      "fuente": "verificada"
+    },
+    {
+      "name": "NerdWallet Blog (EN)",
+      "country": "US",
+      "cat": "gana",
+      "lang": "en",
+      "url": "https://www.nerdwallet.com/blog/feed/",
+      "items": 10,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Business Insider Money (EN)",
+      "country": "US",
+      "cat": "gana",
+      "lang": "en",
+      "url": "https://www.businessinsider.com/rss",
+      "items": 16,
+      "fuente": "verificada"
+    },
+    {
+      "name": "GOBankingRates (EN)",
+      "country": "US",
+      "cat": "gana",
+      "lang": "en",
+      "url": "https://www.gobankingrates.com/feed/",
+      "items": 10,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Money Under 30 (EN)",
+      "country": "US",
+      "cat": "gana",
+      "lang": "en",
+      "url": "https://www.moneyunder30.com/feed",
+      "items": 10,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Clark Howard (EN)",
+      "country": "US",
+      "cat": "gana",
+      "lang": "en",
+      "url": "https://clark.com/feed/",
+      "items": 10,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Yahoo Finance (EN)",
+      "country": "US",
+      "cat": "gana",
+      "lang": "en",
+      "url": "https://finance.yahoo.com/news/rssindex",
+      "items": 49,
+      "fuente": "verificada"
+    },
+    {
+      "name": "CNBC Top News (EN)",
+      "country": "US",
+      "cat": "gana",
+      "lang": "en",
+      "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+      "items": 30,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Forbes Espana",
+      "country": "ES",
+      "cat": "gana",
+      "lang": "es",
+      "url": "https://forbes.es/feed/",
+      "items": 22,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Business Insider Espana",
+      "country": "ES",
+      "cat": "gana",
+      "lang": "es",
+      "url": "https://www.businessinsider.es/rss",
+      "items": 34,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Expansion (ES)",
+      "country": "ES",
+      "cat": "gana",
+      "lang": "es",
+      "url": "https://e00-expansion.uecdn.es/rss/economia.xml",
+      "items": 50,
+      "fuente": "verificada"
+    },
+    {
+      "name": "El Financiero Dinero (MX)",
+      "country": "MX",
+      "cat": "gana",
+      "lang": "es",
+      "url": "https://www.elfinanciero.com.mx/rss",
+      "items": 24,
+      "fuente": "verificada"
+    },
+    {
+      "name": "El Pais Dinero (ES)",
+      "country": "ES",
+      "cat": "gana",
+      "lang": "es",
+      "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/economia/portada",
+      "items": 40,
+      "fuente": "verificada"
+    },
+    {
+      "name": "Emprendedores (ES)",
+      "country": "ES",
+      "cat": "gana",
+      "lang": "es",
+      "url": "https://www.emprendedores.es/feed/",
+      "items": 18,
       "fuente": "verificada"
     }
   ]
