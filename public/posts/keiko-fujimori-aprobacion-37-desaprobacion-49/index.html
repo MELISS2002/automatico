@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keiko Fujimori: primera medición de su gestión presidencial da 37% de aprobación y 49% de desaprobación</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #f5f2ed;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+.magazine-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 40px rgba(0,0,0,0.12);
+}
+
+/* HEADER */
+.magazine-header {
+  background-color: #1a1a2e;
+  padding: 30px 40px 20px;
+  position: relative;
+}
+
+.magazine-header::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #c0392b;
+  margin-top: 15px;
+}
+
+.category-tag {
+  display: inline-block;
+  background-color: #c0392b;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  margin-bottom: 18px;
+}
+
+.magazine-header h1 {
+  font-size: 2.6rem;
+  color: #ffffff;
+  line-height: 1.2;
+  font-weight: 700;
+  max-width: 850px;
+}
+
+.magazine-header .subtitle {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1rem;
+  color: #b0b0c0;
+  margin-top: 14px;
+  font-style: italic;
+}
+
+/* META BAR */
+.meta-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 40px;
+  background-color: #f9f7f4;
+  border-bottom: 1px solid #e0dcd5;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.82rem;
+  color: #666;
+}
+
+.meta-bar .author {
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.meta-bar .separator {
+  color: #ccc;
+}
+
+/* HERO IMAGE */
+.hero-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.hero-image:hover img {
+  transform: scale(1.02);
+}
+
+.hero-caption {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.78rem;
+  color: #777;
+  padding: 10px 40px 20px;
+  background-color: #f9f7f4;
+  border-bottom: 1px solid #e0dcd5;
+}
+
+/* ARTICLE BODY */
+.article-body {
+  padding: 40px;
+}
+
+.article-body p {
+  font-size: 1.08rem;
+  margin-bottom: 22px;
+  text-align: justify;
+  color: #2a2a2a;
+}
+
+.article-body p:first-of-type::first-letter {
+  font-size: 3.8rem;
+  float: left;
+  line-height: 0.85;
+  margin-right: 10px;
+  margin-top: 4px;
+  color: #c0392b;
+  font-weight: 700;
+  font-family: Georgia, serif;
+}
+
+/* DROP CAP section headings */
+.section-heading {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 40px 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #c0392b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* PULL QUOTE */
+.pull-quote {
+  border-left: 5px solid #c0392b;
+  padding: 20px 28px;
+  margin: 30px 0;
+  background-color: #f9f7f4;
+}
+
+.pull-quote p {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #1a1a2e;
+  margin-bottom: 0 !important;
+  text-align: left !important;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.pull-quote cite {
+  display: block;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.82rem;
+  font-style: normal;
+  color: #777;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+/* DATA BOX */
+.data-box {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  padding: 30px 34px;
+  margin: 30px 0;
+  border-radius: 0;
+}
+
+.data-box h3 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #c0392b;
+}
+
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.data-item {
+  flex: 1;
+  min-width: 140px;
+  text-align: center;
+}
+
+.data-item .number {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.data-item .label {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.78rem;
+  color: #b0b0c0;
+  margin-top: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* INLINE IMAGE */
+.inline-image {
+  margin: 30px 0;
+  overflow: hidden;
+}
+
+.inline-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.inline-caption {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.78rem;
+  color: #777;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0dcd5;
+}
+
+/* COMPARISON TABLE */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.9rem;
+}
+
+.comparison-table thead th {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  padding: 14px 12px;
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.78rem;
+}
+
+.comparison-table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #e0dcd5;
+  color: #2a2a2a;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background-color: #f9f7f4;
+}
+
+.comparison-table tbody tr:hover {
+  background-color: #f0ece6;
+}
+
+/* KEY POINTS */
+.key-points {
+  background-color: #f9f7f4;
+  border: 1px solid #e0dcd5;
+  padding: 28px 32px;
+  margin: 30px 0;
+}
+
+.key-points h4 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #c0392b;
+  margin-bottom: 16px;
+}
+
+.key-points ul {
+  list-style: none;
+  padding: 0;
+}
+
+.key-points ul li {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #2a2a2a;
+  padding: 8px 0 8px 26px;
+  position: relative;
+  border-bottom: 1px solid #e8e4de;
+  line-height: 1.5;
+}
+
+.key-points ul li:last-child {
+  border-bottom: none;
+}
+
+.key-points ul li::before {
+  content: '\\25B6';
+  position: absolute;
+  left: 0;
+  color: #c0392b;
+  font-size: 0.7rem;
+  top: 12px;
+}
+
+/* FOOTER */
+.magazine-footer {
+  background-color: #1a1a2e;
+  color: #b0b0c0;
+  padding: 30px 40px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.82rem;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.magazine-footer strong {
+  color: #ffffff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .magazine-header {
+    padding: 22px 20px 16px;
+  }
+
+  .magazine-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .magazine-header .subtitle {
+    font-size: 0.88rem;
+  }
+
+  .meta-bar {
+    padding: 14px 20px;
+    gap: 10px;
+    font-size: 0.75rem;
+  }
+
+  .hero-caption {
+    padding: 8px 20px 16px;
+  }
+
+  .article-body {
+    padding: 24px 20px;
+  }
+
+  .article-body p {
+    font-size: 1rem;
+  }
+
+  .article-body p:first-of-type::first-letter {
+    font-size: 3rem;
+  }
+
+  .section-heading {
+    font-size: 1.2rem;
+  }
+
+  .pull-quote {
+    padding: 16px 20px;
+  }
+
+  .pull-quote p {
+    font-size: 1.05rem;
+  }
+
+  .data-box {
+    padding: 22px 20px;
+  }
+
+  .data-item .number {
+    font-size: 1.8rem;
+  }
+
+  .comparison-table {
+    font-size: 0.78rem;
+  }
+
+  .comparison-table thead th,
+  .comparison-table tbody td {
+    padding: 9px 8px;
+  }
+
+  .key-points {
+    padding: 20px 20px;
+  }
+
+  .magazine-footer {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .magazine-header h1 {
+    font-size: 1.35rem;
+  }
+
+  .data-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .data-item {
+    min-width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="magazine-wrapper">
+
+  <!-- HEADER -->
+  <header class="magazine-header">
+    <span class="category-tag">Política &middot; Perú</span>
+    <h1>Keiko Fujimori inicia su gestión con 37% de aprobación y 49% de desaprobación, según encuesta del IEP</h1>
+    <p class="subtitle">La primera medición presidencial revela escepticismo ciudadano: el 52% percibe "más de lo mismo" y la inseguridad se consolida como la principal preocupación del país.</p>
+  </header>
+
+  <!-- META BAR -->
+  <div class="meta-bar">
+    <span class="author">Redacción Política</span>
+    <span class="separator">|</span>
+    <span>18 de septiembre de 2026</span>
+    <span class="separator">|</span>
+    <span>Lima, Perú</span>
+    <span class="separator">|</span>
+    <span>8 min de lectura</span>
+  </div>
+
+  <!-- HERO IMAGE -->
+  <div class="hero-image">
+    <img src="imagen1.jpg" alt="La presidenta de Perú, Keiko Fujimori, durante una ceremonia oficial en Palacio de Gobierno">
+  </div>
+  <p class="hero-caption">La presidenta Keiko Fujimori asumió el cargo el 28 de julio de 2026 tras ganar las elecciones por un estrecho margen. Foto: Archivo.</p>
+
+  <!-- ARTICLE BODY -->
+  <article class="article-body">
+
+    <p>La primera medición de la gestión presidencial de Keiko Fujimori ha dado a conocer sus resultados y el panorama no es alentador para la mandataria. El Instituto de Estudios Peruanos (IEP), en un estudio presentado en exclusiva por RPP, ubicó la aprobación de la presidenta en 37%, mientras que la desaprobación alcanzó el 49%, una diferencia de 12 puntos porcentuales que evidencia un creciente malestar ciudadano a casi dos meses del inicio de su gobierno. El 14% de los encuestados no sabe o no precisa una postura sobre la gestión de la mandataria.</p>
+
+    <p>El estudio fue realizado entre el 4 y el 10 de septiembre de 2026, con una muestra de 1.202 entrevistados de 18 años a más, distribuidos en 24 departamentos, 153 provincias y 430 distritos del país, mediante muestreo telefónico aleatorio a celulares. El margen de error nacional es de ±2,8 puntos porcentuales, con un nivel de confianza del 95%. Estos datos confirman que la luna de miel política de Fujimori con la ciudadanía ha sido extraordinariamente breve.</p>
+
+    <!-- DATA BOX -->
+    <div class="data-box">
+      <h3>Primera medición presidencial &mdash; IEP (Septiembre 2026)</h3>
+      <div class="data-row">
+        <div class="data-item">
+          <div class="number">37%</div>
+          <div class="label">Aprobación</div>
+        </div>
+        <div class="data-item">
+          <div class="number">49%</div>
+          <div class="label">Desaprobación</div>
+        </div>
+        <div class="data-item">
+          <div class="number">14%</div>
+          <div class="label">No precisa</div>
+        </div>
+        <div class="data-item">
+          <div class="number">52%</div>
+          <div class="label">"Más de lo mismo"</div>
+        </div>
+        <div class="data-item">
+          <div class="number">47%</div>
+          <div class="label">Poco/nada preparada</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-heading">Comparación con predecesores: un inicio en la media</h2>
+
+    <p>Al comparar esta medición con el arranque de sus predecesores inmediatos, el respaldo inicial de Fujimori se ubica en un nivel similar al de José Jerí en noviembre de 2025, quien inició con 39% de aprobación y 46% de desaprobación, y al de Pedro Castillo en agosto de 2021, quien alcanzó un 38% de apoyo y 46% de rechazo. En contraste, la cifra inicial de Fujimori supera marcadamente los registros de partida de Dina Boluarte en enero de 2023, que empezó con un 19% de aprobación y un 71% de desaprobación, así como el desempeño inicial de José Balcázar en marzo de 2026, quien obtuvo apenas un 13% de respaldo frente a un 63% de rechazo ciudadano.</p>
+
+    <p>Sin embargo, el dato más preocupante para el oficialismo no es la comparación histórica sino la velocidad del desgaste. La encuesta de Datum Internacional para América Televisión, difundida el mismo jueves 18 de septiembre, reveló que la aprobación de Fujimori cayó 18 puntos porcentuales en apenas un mes, al pasar del 60% en agosto al 42% en septiembre. En el mismo período, la desaprobación se disparó del 24% al 44%. Aunque ambas encuestadoras utilizan metodologías distintas, la tendencia es inequívoca: el respaldo ciudadano se desmorona a un ritmo alarmante.</p>
+
+    <!-- INLINE IMAGE 2 -->
+    <div class="inline-image">
+      <img src="imagen2.jpg" alt="Ciudadanos peruanos consultados sobre la gestión presidencial en las calles de Lima">
+    </div>
+    <p class="inline-caption">La inseguridad ciudadana es la principal preocupación de los peruanos, con un 59% de menciones. Foto: Andina.</p>
+
+    <h2 class="section-heading">El peso de la inseguridad y el caso Jenss Lara</h2>
+
+    <p>Patricia Zárate, jefa del área de Estudios de Opinión del IEP, vinculó directamente la caída de la aprobación presidencial con el secuestro del empresario minero Jenss Lara en Trujillo, ocurrido el pasado 30 de agosto y que acabó con el asesinato de cuatro de sus acompañantes. El caso, perpetrado presuntamente por la organización criminal "Los Pulpos", tuvo un impacto profundo en la percepción ciudadana, sobre todo porque Fujimori había prometido durante su campaña combatir el crimen organizado desde el inicio de su gestión.</p>
+
+    <div class="pull-quote">
+      <p>"Hemos encontrado que sí hay una disminución de la aprobación, o sea, de esa sensación que había como de optimismo, tranquilidad que observamos en julio no aparece."</p>
+      <cite>— Patricia Zárate, jefa del área de Estudios de Opinión del IEP</cite>
+    </div>
+
+    <p>La especialista recordó que en la medición realizada en julio, antes de que Fujimori asumiera la Presidencia, se registraba un escenario distinto. En ese momento, un 33% de los encuestados manifestó tener esperanza en la gestión de la entonces presidenta electa. "En julio, que hicimos la última medición antes de que asumiera el poder, había un buen clima, esperanza y un 33% decía que tenía esperanza en Keiko Fujimori, entonces había un clima estable", explicó Zárate. Ese optimismo se ha desvanecido en apenas ocho semanas.</p>
+
+    <p>Las cifras respaldan esta percepción. Entre las prioridades que identifica la población para el Ejecutivo, la inseguridad ocupa el primer lugar con 59% de menciones. Le siguen el combate contra la corrupción, con 30%, y el manejo de la economía nacional, con 28%. La mejora educativa y la atención sanitaria alcanzan 27% cada una, mientras que la generación de empleo reúne 18%. Estos son los asuntos que la ciudadanía señala como urgentes y que, según los datos, el Gobierno aún no logra abordar con eficacia.</p>
+
+    <p>La evaluación más adversa para el Ejecutivo corresponde precisamente a la gestión de la inseguridad ciudadana. Solo el 8,6% de los entrevistados cree que el Gobierno está muy preparado para atender ese problema y el 23,6% considera que está algo preparado. Del otro lado, el 23% respondió que está poco preparado y el 37,9% indicó que no está nada preparado. En total, el 60,9% percibe una preparación baja o inexistente para combatir la inseguridad, una cifra devastadora para un gobierno que hizo de la seguridad su bandera principal.</p>
+
+    <h2 class="section-heading">¿Cambio o continuidad? La percepción ciudadana</h2>
+
+    <p>La percepción de la ciudadanía respecto al rumbo del Ejecutivo refleja un profundo escepticismo sobre la renovación de la gestión pública. Al ser consultados sobre si la nueva administración representa un cambio respecto a los gobiernos de los últimos cinco años con lo visto hasta ahora, un 52% de los entrevistados opinó que el gobierno de Keiko Fujimori es "más de lo mismo". Por otro lado, un 33% de los encuestados considera que la presente gestión sí representa un cambio en la conducción del Estado, mientras que un 16% no precisó su opinión.</p>
+
+    <!-- COMPARISON TABLE -->
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Presidente/a</th>
+          <th>Inicio</th>
+          <th>Aprobación</th>
+          <th>Desaprobación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Keiko Fujimori</td>
+          <td>Sept. 2026</td>
+          <td>37%</td>
+          <td>49%</td>
+        </tr>
+        <tr>
+          <td>José Jerí</td>
+          <td>Nov. 2025</td>
+          <td>39%</td>
+          <td>46%</td>
+        </tr>
+        <tr>
+          <td>Pedro Castillo</td>
+          <td>Ago. 2021</td>
+          <td>38%</td>
+          <td>46%</td>
+        </tr>
+        <tr>
+          <td>Dina Boluarte</td>
+          <td>Ene. 2023</td>
+          <td>19%</td>
+          <td>71%</td>
+        </tr>
+        <tr>
+          <td>José Balcázar</td>
+          <td>Mar. 2026</td>
+          <td>13%</td>
+          <td>63%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Respecto a qué tan preparada se percibe a Keiko Fujimori para gobernar, un 18% de los encuestados dijo que "mucho" y un 31% opinó que "algo". Mientras que un 24% considera que la mandataria está poco preparada y un 23% afirma que "nada". En total, el 47% la percibe como poco o nada preparada para conducir los destinos del país, una cifra que se eleva al 61% en la macrozona Sur, donde solo el 36% la considera preparada.</p>
+
+    <p>El desglose por macrozonas revela una brecha territorial significativa. Lima Metropolitana encabeza la percepción positiva con un 59% de ciudadanos que la considera mucho o algo preparada, frente a un 38% que la califica como poco o nada preparada. En el Norte del país, un 50% la percibe preparada frente a un 44% que no lo cree así; en el Centro, un 47% considera que está preparada frente a un 50% que opina lo contrario; en el Oriente, la evaluación positiva se sitúa en 38% ante un 50% de calificación negativa. La zona Sur registra el nivel más alto de desconfianza en sus capacidades de gobierno.</p>
+
+    <!-- INLINE IMAGE 3 -->
+    <div class="inline-image">
+      <img src="imagen3.jpg" alt="Sesión del Congreso de la República del Perú donde se debate el pedido de facultades legislativas">
+    </div>
+    <p class="inline-caption">El pedido de facultades legislativas de Fujimori enfrenta resistencia en el Congreso. Foto: Congreso de la República.</p>
+
+    <h2 class="section-heading">Un gobierno en minoría y con desafíos acumulados</h2>
+
+    <p>El contexto político tampoco favorece a la mandataria. Keiko Fujimori llegó a la Presidencia en su cuarto intento, tras haber perdido en segunda vuelta en las tres elecciones presidenciales anteriores, con una trayectoria política que la llevó a prisión preventiva imputada por supuesto lavado de dinero en la financiación irregular de sus campañas electorales. En las últimas elecciones logró ganar por un exiguo margen al izquierdista Roberto Sánchez con la promesa de "devolver el orden" a Perú, especialmente en seguridad frente al auge de la actividad del crimen organizado.</p>
+
+    <p>Sin embargo, su primer mes de gestión ha estado enfocado en trabajos de prevención frente al fenómeno climatológico de El Niño que se avecina con grandes lluvias para los siguientes meses, y en una solicitud de facultades legislativas al Parlamento que no termina de convencer a la mayoría opositora en el Congreso. Hasta el momento, el pedido de facultades de Fujimori solo logró rescatar dos opiniones favorables, provenientes de las comisiones de Defensa y Medio Ambiente, mientras que la oposición se impone en seis comisiones de la Cámara de Diputados.</p>
+
+    <p>El diputado de Fuerza Popular, Arturo Alegría, calificó la caída en las cifras de aprobación como "un llamado de atención" y destacó la necesidad de que exista una cercanía entre el Gobierno y la ciudadanía. "Evidentemente es un llamado de atención, porque lo que creemos que es importante es mantener una cercanía comunicacional con la ciudadanía", declaró a Canal N. Alegría se refirió también a que los ciudadanos han rechazado los problemas entre el Ejecutivo y Legislativo por el pedido de facultades, y abogó por "tender puentes" y "acercarnos más a aquellos que no piensan igual que nosotros".</p>
+
+    <p>El estudio del IEP también midió la aprobación del Congreso de la República, que registró 20% de aprobación, 65% de desaprobación y 15% sin posición definida. Estas cifras confirman que la crisis de representación política en Perú es sistémica y no se limita al Poder Ejecutivo. En un país que ha tenido nueve presidentes en una década, la rápida caída de la aprobación de Fujimori plantea serias dudas sobre la viabilidad de su gobierno y la estabilidad democrática de la nación andina.</p>
+
+    <!-- KEY POINTS -->
+    <div class="key-points">
+      <h4>Claves de la primera medición presidencial</h4>
+      <ul>
+        <li>El IEP ubica la aprobación de Keiko Fujimori en 37% y la desaprobación en 49%, una diferencia de 12 puntos porcentuales.</li>
+        <li>El 52% de los peruanos considera que su gobierno es "más de lo mismo", frente a un 33% que percibe un cambio.</li>
+        <li>El 47% cree que la mandataria está poco o nada preparada para gobernar; en la macrozona Sur, la cifra asciende al 61%.</li>
+        <li>La inseguridad ciudadana es la principal preocupación nacional (59%), y el 60,9% percibe una preparación baja o inexistente del Gobierno para enfrentarla.</li>
+        <li>La encuesta de Datum reveló una caída de 18 puntos en un mes, del 60% al 42% de aprobación, mientras la desaprobación subió del 24% al 44%.</li>
+        <li>El secuestro del empresario minero Jenss Lara en Trujillo, ocurrido el 30 de agosto, marcó el deterioro de la percepción ciudadana.</li>
+        <li>El Congreso registra apenas 20% de aprobación y 65% de desaprobación, reflejando una crisis de representación sistémica.</li>
+      </ul>
+    </div>
+
+    <p>Los resultados de esta primera medición presidencial plantean un desafío mayúsculo para Keiko Fujimori: revertir una tendencia negativa que, según los analistas, se ha instalado con una velocidad inusual. La combinación de inseguridad ciudadana desbordada, un Congreso fragmentado y una percepción generalizada de continuidad respecto a los gobiernos anteriores configura un escenario complejo para los próximos meses. El tiempo dirá si la mandataria logra reconectar con una ciudadanía que, por ahora, le ha dado la espalda.</p>
+
+  </article>
+
+  <!-- FOOTER -->
+  <footer class="magazine-footer">
+    <p><strong>Redacción Política</strong> &mdash; Lima, Perú</p>
+    <p>Fuentes: Instituto de Estudios Peruanos (IEP), RPP Noticias, Datum Internacional, Infobae, El Comercio, La Gaceta, Gaceta Perú TV.</p>
+    <p>&copy; 2026 &mdash; Todos los derechos reservados.</p>
+  </footer>
+
+</div>
+
+
+    <footer>
+        <p>Autor: ROSA EMILY | Fecha: 2026-09-19</p>
+    </footer>
+</body>
+</html>

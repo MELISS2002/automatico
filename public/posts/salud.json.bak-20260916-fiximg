@@ -1,50 +1,5 @@
 [
   {
-    "slug": "dengue-nuevo-chimbote-cuarto-caso-via-central",
-    "title": "Dengue en Nuevo Chimbote: reportan el cuarto caso confirmado en Vía Central y encienden las alarmas por baja cobertura larvario",
-    "author": "ROSA EMILY",
-    "date": "2026-09-19",
-    "excerpt": "La Red de Salud Pacífico Sur confirmó un cuarto caso de dengue en el asentamiento humano Vía Central, tras identificar dos nuevos pacientes. Las brigadas solo lograron inspeccionar el 50 % de las viviendas programadas y detectaron larvas del zancudo en 14 inmuebles. El control larvario en la zona apenas alcanza el 14 %, lo que mantiene en alerta a las autoridades sanitarias de Nuevo Chimbote.",
-    "thumbnail": "/posts/dengue-nuevo-chimbote-cuarto-caso-via-central/imagen1.jpg",
-    "htmlPath": "/posts/dengue-nuevo-chimbote-cuarto-caso-via-central/index.html"
-  },
-  {
-    "slug": "trucos-caseros-bajar-colesterol-natural-alto",
-    "title": "Colesterol alto en Perú: la avena reduce el LDL hasta 10% y el 25.9% de adultos la padece",
-    "author": "ROSA EMILY",
-    "date": "2026-09-19",
-    "excerpt": "Un estudio realizado en Chaclacayo (Perú) confirmó que el consumo diario de avena reduce el colesterol total y el LDL en un 10%. Con una prevalencia nacional de hipercolesterolemia del 25.93% y el MINSA alertando sobre el control preventivo desde los 30 años, expertos detallan qué alimentos, ejercicios y hábitos realmente funcionan.",
-    "thumbnail": "https://image.pollinations.ai/prompt/trucos-caseros-bajar-colesterol-natural-alto-thumbnail",
-    "htmlPath": "/posts/trucos-caseros-bajar-colesterol-natural-alto/index.html"
-  },
-  {
-    "slug": "fenomeno-el-nino-senamhi-temperaturas-40-grados",
-    "title": "El Niño Costero golpea al norte: Senamhi advierte que Piura soportará hasta 40 °C y una sensación térmica de 42 °C",
-    "author": "ROSA EMILY",
-    "date": "2026-09-19",
-    "excerpt": "El Servicio Nacional de Meteorología e Hidrología (Senamhi) confirmó que la costa norte del Perú atraviesa una fase extraordinaria de El Niño Costero. La región Piura es la más afectada, con temperaturas que ya rozan los 38 °C y una proyección de hasta 40 °C para los próximos meses. Las autoridades advierten sobre golpes de calor y recomiendan extremar cuidados con niños y adultos mayores.",
-    "thumbnail": "https://image.pollinations.ai/prompt/fenomeno-el-nino-senamhi-temperaturas-40-grados-thumbnail",
-    "htmlPath": "/posts/fenomeno-el-nino-senamhi-temperaturas-40-grados/index.html"
-  },
-  {
-    "slug": "new-hope-for-breast-cancer-patients",
-    "title": "Enhertu llega al NHS de Inglaterra: nueva esperanza para pacientes con cáncer de mama",
-    "author": "ROSA EMILY",
-    "date": "2026-09-17",
-    "excerpt": "Las pacientes de Inglaterra con un tipo específico de cáncer de mama incurable ya pueden acceder a Enhertu a través del NHS, dos años después de que un organismo sanitario lo considerara demasiado caro. El medicamento puede ofrecer casi siete meses adicionales de vida en promedio y, en algunos casos, hasta tres años más.",
-    "thumbnail": "/posts/new-hope-for-breast-cancer-patients/imagen1.jpg",
-    "htmlPath": "/posts/new-hope-for-breast-cancer-patients/index.html"
-  },
-  {
-    "slug": "genetic-risk-for-ptsd-may-vary",
-    "title": "El riesgo genético de TEPT varía según el tipo de trauma, según un estudio",
-    "author": "ROSA EMILY",
-    "date": "2026-09-16",
-    "excerpt": "Una investigación publicada en el European Journal of Psychotraumatology indica que la vulnerabilidad genética a desarrollar trastorno de estrés postraumático no actúa igual frente a todas las experiencias adversas. La negligencia durante la infancia aparece como el tipo de trauma con una asociación más marcada con ese componente hereditario, según los hallazgos revisados por pares.",
-    "thumbnail": "/posts/genetic-risk-for-ptsd-may-vary/imagen1.jpg",
-    "htmlPath": "/posts/genetic-risk-for-ptsd-may-vary/index.html"
-  },
-  {
     "slug": "costa-y-sierra-seguiran-registrando-incremento",
     "title": "Costa y sierra seguirán registrando incremento de la temperatura diurna: Senamhi detalla las regiones en alerta",
     "author": "ROSA EMILY",
@@ -131,7 +86,7 @@
     "author": "ROSA EMILY",
     "date": "2026-09-11",
     "excerpt": "La salud mental no es solo la ausencia de enfermedad, sino un estado integral de bienestar que determina cómo pensamos, sentimos y actuamos cada día. Descubre sus tres dimensiones, las señales de alerta, los factores que la protegen y las estrategias prácticas para cuidarla.",
-    "thumbnail": "/posts/la-salud-mental-abarca-el-bienestar-emocional-psicolgico-y-social-de-una-persona/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/calm-mind-concept-calm-woman-silhouette-with-flowers-and-light-representing-mental-health-and-wellbeing",
     "htmlPath": "/posts/la-salud-mental-abarca-el-bienestar-emocional-psicolgico-y-social-de-una-persona/index.html"
   },
   {
@@ -167,7 +122,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-19",
     "excerpt": "Una alimentación equilibrada no es una dieta restrictiva ni un lujo, sino una forma de vivir que nutre el cuerpo y la mente. Descubre cómo combinar alimentos, entender tus necesidades y construir hábitos duraderos sin obsesiones ni culpas.",
-    "thumbnail": "/posts/qu-significa-una-alimentacin-equilibrada-en-la-vida-diaria/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/balanced_daily_nutrition_healthy_plate_thumbnail",
     "htmlPath": "/posts/qu-significa-una-alimentacin-equilibrada-en-la-vida-diaria/index.html"
   },
   {
@@ -176,7 +131,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-19",
     "excerpt": "La fibra es la aliada silenciosa de tu sistema digestivo. Descubre los alimentos más ricos en fibra, cómo incorporarlos a tu dieta diaria y los beneficios que aportan a tu salud intestinal sin necesidad de cambios drásticos.",
-    "thumbnail": "/posts/alimentos-ricos-en-fibra-que-ayudan-a-la-digestin/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/high%20fiber%20foods%20digestive%20health%20infographic%20vegetables%20legumes%20whole%20grains?width=1200&height=630&nologo=true",
     "htmlPath": "/posts/alimentos-ricos-en-fibra-que-ayudan-a-la-digestin/index.html"
   },
   {
@@ -185,7 +140,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-19",
     "excerpt": "Dormir es una de las funciones biológicas más esenciales, y sin embargo, en la sociedad moderna tendemos a restarle importancia.",
-    "thumbnail": "/posts/qu-seales-indican-que-necesitas-descansar-mejor/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/qu-seales-indican-que-necesitas-descansar-mejor-thumbnail",
     "htmlPath": "/posts/qu-seales-indican-que-necesitas-descansar-mejor/index.html"
   },
   {
@@ -194,7 +149,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-12",
     "excerpt": "El ayuno intermitente se ha consolidado como una de las tendencias de salud más populares. Pero, ¿qué dice realmente la ciencia en 2026? Este artículo desmonta mitos y confirma los beneficios respaldados por estudios recientes sobre el ayuno intermitente, desde la pérdida de peso hasta la longevidad celular.",
-    "thumbnail": "/posts/beneficios-ayuno-intermitente-ciencia-2026/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/intermittent_fasting_benefits_science_2026",
     "htmlPath": "/posts/beneficios-ayuno-intermitente-ciencia-2026/index.html"
   },
   {
@@ -203,7 +158,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-11",
     "excerpt": "Cada vez más personas consumen vitaminas, minerales y otros suplementos sin supervisión médica, exponiéndose a riesgos que van desde interacciones peligrosas hasta daño hepático o renal. Especialistas advierten que la automedicación con suplementos no es inocua y exigen regulación más estricta y educación sanitaria para evitar que la población juegue a la ruleta con su salud.",
-    "thumbnail": "/posts/suplementos-a-ciegas-riesgos/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/dice%20supplements%20health%20warning%20medical%20alert%20vitamins%20danger",
     "htmlPath": "/posts/suplementos-a-ciegas-riesgos/index.html"
   },
   {
@@ -212,7 +167,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-11",
     "excerpt": "La conexión entre el intestino y la piel es más profunda de lo que imaginas. El estado de tu microbiota intestinal se refleja directamente en tu rostro y cuerpo a través de acné, eczema, rosácea y otros trastornos dermatológicos. Descubre qué hábitos fortalecen esta relación y cuáles son las señales de alerta que indican que tu intestino necesita atención urgente.",
-    "thumbnail": "/posts/piel-reflejo-salud-intestinal/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/gut%20skin%20axis%20microbiome%20connection%20healthy%20glowing%20skin%20intestine%20health%20illustration",
     "htmlPath": "/posts/piel-reflejo-salud-intestinal/index.html"
   },
   {
@@ -221,7 +176,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-11",
     "excerpt": "Ante el aumento de casos de sarampión en la región, el Ministerio de Salud ha desplegado una campaña de vacunación masiva con 100.000 dosis disponibles, enfocada en niños y adolescentes de colegios públicos y privados de Arequipa. Las brigadas de inmunización recorrerán más de 500 instituciones educativas para proteger a la población escolar y contener el brote que ya suma más de 80 contagios confirmados.",
-    "thumbnail": "/posts/sarampion-arequipa-100-mil-vacunas/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/measles%20vaccine%20Arequipa%20Peru%20school%20children%20campaign%20health%20workers%20immunization",
     "htmlPath": "/posts/sarampion-arequipa-100-mil-vacunas/index.html"
   },
   {
@@ -230,7 +185,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-11",
     "excerpt": "En medio de la alerta por el inminente Fenómeno El Niño, el Ministerio de Salud ha entregado 26.000 dosis de la vacuna contra el dengue al departamento de Tumbes, la región más vulnerable del norte peruano. La campaña de vacunación se enfoca en niños y adolescentes de zonas endémicas, mientras se refuerzan las acciones de control vectorial y preparación de los centros de salud para enfrentar el aumento de casos.",
-    "thumbnail": "/posts/dengue-tumbes-26-mil-dosis-vacuna/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/dengue%20vaccine%20Tumbes%20Peru%20children%20health%20campaign%20prevention%20El%20Niño",
     "htmlPath": "/posts/dengue-tumbes-26-mil-dosis-vacuna/index.html"
   },
   {
@@ -239,7 +194,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-11",
     "excerpt": "Tras el escándalo por la resonancia magnética que permanece inoperativa pese a pagar millones en alquiler, el Ministerio de Salud anuncia la creación de un sistema centralizado de monitoreo en tiempo real para todos los equipos médicos del país. La \"torre de control\" permitirá supervisar el funcionamiento, mantenimiento y uso de cada dispositivo, mientras se ordena una auditoría integral de todos los contratos de arrendamiento vigentes.",
-    "thumbnail": "/posts/minsa-torre-control-equipos-medicos/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/control%20tower%20medical%20equipment%20Peru%20hospital%20monitoring%20technology%20command%20center",
     "htmlPath": "/posts/minsa-torre-control-equipos-medicos/index.html"
   },
   {
@@ -248,7 +203,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-11",
     "excerpt": "El ministro de Salud, Luis Dyer, denunció la crítica situación financiera que encontró en el Minsa y anunció un paquete de medidas urgentes para rescatar el sector: compra de medicamentos, agilización de citas y operaciones, y control de los equipos médicos en los hospitales del país.",
-    "thumbnail": "/posts/minsa-luis-dyer-no-hay-dinero/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/Luis%20Dyer%20Peruvian%20Health%20Minister%20official%20portrait%20serious%20face%20Peru%20flag",
     "htmlPath": "/posts/minsa-luis-dyer-no-hay-dinero/index.html"
   },
   {
@@ -284,7 +239,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "El SENAMHI anunció que la ola de calor se prolongará hasta el lunes 10 de agosto en Lima Metropolitana y otras 16 regiones del país, con temperaturas que superan los 30°C en la capital. Miles de peruanos buscan cómo protegerse del intenso calor mientras los especialistas advierten sobre los riesgos para la salud y brindan recomendaciones prácticas para enfrentar esta emergencia climática.",
-    "thumbnail": "/posts/ola-de-calor-lima-senamhi-10-agosto-regiones/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/heatwave_Lima_Peru_city_scorching_sun_August_2026_news_thumbnail?w=800&h=600&crop=center",
     "htmlPath": "/posts/ola-de-calor-lima-senamhi-10-agosto-regiones/index.html"
   },
   {
@@ -293,7 +248,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "Simone Biles llegó a Lima y no habló solo de medallas. La gimnasta más condecorada de la historia compartió un mensaje sobre salud mental y bienestar que emocionó a miles de peruanos, recordándonos que el mayor triunfo es cuidarse a uno mismo.",
-    "thumbnail": "/posts/simone-biles-lima-mensaje-salud-mental/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/Simone_Biles_Lima_Peru_health_mental_message_inspiring_athletes?width=800&height=600&nologo=true",
     "htmlPath": "/posts/simone-biles-lima-mensaje-salud-mental/index.html"
   },
   {
@@ -302,7 +257,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "El dengue se ha convertido en una de las principales amenazas para la salud pública en el Perú. Frente a esta realidad, el Ministerio de Salud (Minsa) dio un paso histórico al distribuir cerca de 200.000 dosis de la vacuna contra el dengue en las regiones más afectadas del país.",
-    "thumbnail": "/posts/vacuna-dengue-minsa-200-mil-dosis-prevencion/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/vacuna-dengue-minsa-200-mil-dosis-prevencion-thumbnail",
     "htmlPath": "/posts/vacuna-dengue-minsa-200-mil-dosis-prevencion/index.html"
   },
   {
@@ -311,7 +266,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-22",
     "excerpt": "Descubre cómo la tradición culinaria china, basada en el equilibrio del yin y yang y el uso de ingredientes frescos, puede transformar tu salud y prolongar tu vida. Este artículo explora los platos, principios y remedios naturales que convierten a la cocina china en una farmacia viviente.",
-    "thumbnail": "/posts/la-comida-china-que-te-da-una-salud-y-vida/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/chinese%20cuisine%20healthy%20food%20longevity%20nutrition",
     "htmlPath": "/posts/la-comida-china-que-te-da-una-salud-y-vida/index.html"
   },
   {
@@ -320,7 +275,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-20",
     "excerpt": "La miel no es solo un dulce, es un poderoso prebiótico natural. Aprende cómo ayuda a mejorar la salud de tu colon, reducir inflamaciones y fortalecer tu sistema digestivo.",
-    "thumbnail": "/posts/por-que-debes-comer-mucha-cantidad-de-miel-para-mejorar-y-salcar-tu-colon/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/honey-colon-health-thumbnail",
     "htmlPath": "/posts/por-que-debes-comer-mucha-cantidad-de-miel-para-mejorar-y-salcar-tu-colon/index.html"
   },
   {
@@ -329,7 +284,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-20",
     "excerpt": "Haz este test interactivo rápido y descubre qué señales te envía tu cuerpo sobre tu salud general. Obtén pautas prácticas para mejorar tu bienestar en solo 2 minutos.",
-    "thumbnail": "/posts/qu-dice-tu-cuerpo-sobre-tu-salud-haz-este-test-interactivo-de-2-minutos-y-descbrelo/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/health-body-test-thumbnail",
     "htmlPath": "/posts/qu-dice-tu-cuerpo-sobre-tu-salud-haz-este-test-interactivo-de-2-minutos-y-descbrelo/index.html"
   },
   {
@@ -338,7 +293,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-20",
     "excerpt": "El colágeno es clave para evitar el envejecimiento acelerado. Aprende por qué debes consumirlo, dónde encontrarlo y cómo elegir un suplemento eficaz para tu piel y articulaciones.",
-    "thumbnail": "/posts/por-que-debemos-comer-colageno-y-en-que-serve/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/collagen-supplements-healthy-skin-thumbnail",
     "htmlPath": "/posts/por-que-debemos-comer-colageno-y-en-que-serve/index.html"
   },
   {
@@ -348,7 +303,7 @@
     "authorTitle": "Especialistas en Salud Natural",
     "date": "2025-06-09",
     "excerpt": "Descubre cómo el ajo puede mejorar tu circulación, reducir el colesterol y proteger tu corazón naturalmente activando la alicina.",
-    "thumbnail": "/posts/ajo-beneficios/og-image.webp",
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/5npmC3fkNt2nN-efkVIWy.webp",
     "htmlPath": "/posts/ajo-beneficios/index.html"
   },
   {
@@ -358,7 +313,7 @@
     "authorTitle": "Especialistas en Salud y Bienestar",
     "date": "2025-06-09",
     "excerpt": "¿Problemas de circulación en piernas y pies? Descubre las 4 vitaminas clave y remedios naturales para fortalecer tus venas y arterias rápidamente.",
-    "thumbnail": "/posts/vitaminas-circulacion/og-image.webp",
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/0kKZ5R53CUGowy7FbcwM3.webp",
     "htmlPath": "/posts/vitaminas-circulacion/index.html"
   },
   {
@@ -368,7 +323,7 @@
     "authorTitle": "Especialista en Metabolismo Y medecina natural",
     "date": "2025-06-05",
     "excerpt": "Los batidos verdes son mejores sin frutas. Aprende a prepararlos correctamente para cuidar tu glucosa y tu salud metabólica con evidencia científica.",
-    "thumbnail": "/posts/batidos-verdes-sin-frutas/og-image.webp",
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/Nw_0QW1e7DCkOjg9lSf-F.webp",
     "htmlPath": "/posts/batidos-verdes-sin-frutas/index.html"
   },
   {
@@ -388,7 +343,7 @@
     "authorTitle": "Especialista en Metabolismo",
     "date": "2025-06-03",
     "excerpt": "Descubre los mejores métodos naturales de Frank Suárez para calmar el sistema nervioso, mejorar la calidad de tu sueño y optimizar tu metabolismo.",
-    "thumbnail": "/posts/trucos-tranquilizar-sistema-nervioso/og-image.webp",
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/e6HIH4ACM4LkSbjyW9T7G.webp",
     "htmlPath": "/posts/trucos-tranquilizar-sistema-nervioso/index.html"
   },
   {
@@ -417,7 +372,7 @@
     "authorTitle": "Especialista en Obesidad y Metabolismo",
     "date": "2025-05-30",
     "excerpt": "Comprende la diferencia entre la Levotiroxina (sintética) y la hormona natural disecada. Encuentra información valiosa para decidir lo mejor para tu tiroides.",
-    "thumbnail": "/posts/tiroides/og-image.webp",
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/NmuOtUOvvvenOg5DWgx0J.webp",
     "htmlPath": "/posts/tiroides/index.html"
   },
   {
@@ -427,7 +382,7 @@
     "authorTitle": "Especialista en Obesidad y Metabolismo",
     "date": "2025-11-20",
     "excerpt": "Descubre los 3 métodos científicos para regenerar tus mitocondrias y multiplicar tu energía celular. Mejora tu vitalidad desde el nivel molecular.",
-    "thumbnail": "/posts/regeneracion-mitocondrial/og-image.jpg",
+    "thumbnail": "https://imgmedia.larepublica.pe/1200x630/larepublica/original/2025/04/01/67ec1aa268d04705c80521c6.jpg",
     "htmlPath": "/posts/regeneracion-mitocondrial/index.html"
   },
   {
@@ -437,7 +392,7 @@
     "authorTitle": "Especialista en Obesidad y Metabolismo",
     "date": "2025-08-15",
     "excerpt": "¿Quieres quemar grasa o ganar músculo? Descubre la verdad científica sobre el momento ideal para comer antes o después de entrenar.",
-    "thumbnail": "/posts/comer-antes-despues-ejercicio/og-image.webp",
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/noauth/14Z5Xz4vCVOlR1L6tFHF0.webp",
     "htmlPath": "/posts/comer-antes-despues-ejercicio/index.html"
   },
   {

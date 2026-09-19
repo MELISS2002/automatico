@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Banco Pichincha adquiere el 100% de Diners Club Perú por S/ 23,4 millones tras autorización de la SBS. Detalles de la operación, implicancias y antecedentes.">
+<title>Banco Pichincha comprará Diners Club Perú por S/ 23,4 millones tras autorización de la SBS</title>
+<style>
+  :root {
+    --azul-profundo: #0a2540;
+    --azul-medio: #1a4a7a;
+    --dorado: #c9a227;
+    --gris-claro: #f4f6f8;
+    --gris-medio: #e2e8f0;
+    --texto: #1e293b;
+    --texto-suave: #475569;
+    --blanco: #ffffff;
+    --sombra: 0 4px 20px rgba(10, 37, 64, 0.08);
+    --radio: 12px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--gris-claro);
+    color: var(--texto);
+    line-height: 1.7;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .contenedor {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* CABECERA TIPO REVISTA */
+  .cabecera-revista {
+    background: linear-gradient(160deg, var(--azul-profundo) 0%, var(--azul-medio) 100%);
+    color: var(--blanco);
+    padding: 60px 0 50px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cabecera-revista::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(201, 162, 39, 0.08);
+  }
+
+  .cabecera-revista::after {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .etiqueta {
+    display: inline-block;
+    background-color: var(--dorado);
+    color: var(--azul-profundo);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .cabecera-revista h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(1.8rem, 4.5vw, 3.2rem);
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .bajada {
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    color: #cbd5e1;
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
+    font-weight: 300;
+  }
+
+  .meta-nota {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 28px;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    position: relative;
+    z-index: 1;
+  }
+
+  .meta-nota span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* CUERPO PRINCIPAL */
+  .cuerpo-articulo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 50px 0;
+  }
+
+  @media (min-width: 900px) {
+    .cuerpo-articulo {
+      grid-template-columns: 1fr 320px;
+    }
+  }
+
+  .articulo-principal {
+    background: var(--blanco);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    overflow: hidden;
+  }
+
+  .imagen-hero {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .contenido-articulo {
+    padding: 35px 30px 45px;
+  }
+
+  @media (min-width: 600px) {
+    .contenido-articulo {
+      padding: 45px 50px 55px;
+    }
+  }
+
+  .contenido-articulo p {
+    margin-bottom: 1.4em;
+    color: var(--texto);
+    font-size: 1.05rem;
+  }
+
+  .contenido-articulo h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.6rem;
+    color: var(--azul-profundo);
+    margin: 2em 0 0.8em;
+    padding-bottom: 0.4em;
+    border-bottom: 3px solid var(--dorado);
+    display: inline-block;
+  }
+
+  .contenido-articulo h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.25rem;
+    color: var(--azul-medio);
+    margin: 1.8em 0 0.6em;
+  }
+
+  .destacado {
+    background: linear-gradient(135deg, #f0f4f8, #e8eef5);
+    border-left: 5px solid var(--dorado);
+    padding: 24px 28px;
+    border-radius: 0 var(--radio) var(--radio) 0;
+    margin: 2em 0;
+    font-style: italic;
+    color: var(--azul-profundo);
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  .destacado strong {
+    font-style: normal;
+  }
+
+  .imagen-cuerpo {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radio);
+    margin: 1.8em 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+
+  .pie-foto {
+    font-size: 0.8rem;
+    color: var(--texto-suave);
+    text-align: center;
+    margin-top: -1.2em;
+    margin-bottom: 2em;
+    font-style: italic;
+  }
+
+  /* BARRA LATERAL */
+  .barra-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .tarjeta-lateral {
+    background: var(--blanco);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 28px 24px;
+    border-top: 4px solid var(--dorado);
+  }
+
+  .tarjeta-lateral h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.15rem;
+    color: var(--azul-profundo);
+    margin-bottom: 14px;
+  }
+
+  .tarjeta-lateral ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .tarjeta-lateral ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gris-medio);
+    font-size: 0.92rem;
+    color: var(--texto-suave);
+    display: flex;
+    gap: 10px;
+  }
+
+  .tarjeta-lateral ul li:last-child {
+    border-bottom: none;
+  }
+
+  .tarjeta-lateral ul li strong {
+    color: var(--azul-profundo);
+    min-width: 90px;
+    font-weight: 600;
+  }
+
+  .cita-lateral {
+    background: var(--azul-profundo);
+    color: var(--blanco);
+    border-radius: var(--radio);
+    padding: 28px 24px;
+    position: relative;
+  }
+
+  .cita-lateral::before {
+    content: '\201C';
+    font-family: Georgia, serif;
+    font-size: 4rem;
+    color: var(--dorado);
+    line-height: 1;
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    opacity: 0.5;
+  }
+
+  .cita-lateral p {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 0.98rem;
+    line-height: 1.6;
+    font-style: italic;
+    padding-top: 18px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cita-lateral .autor {
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-top: 14px;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+
+  /* PIE DE PÁGINA */
+  .pie-pagina {
+    background-color: var(--azul-profundo);
+    color: #94a3b8;
+    text-align: center;
+    padding: 36px 20px;
+    font-size: 0.85rem;
+    margin-top: 20px;
+  }
+
+  .pie-pagina strong {
+    color: var(--dorado);
+    font-weight: 700;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 899px) {
+    .barra-lateral {
+      order: 2;
+    }
+    .articulo-principal {
+      order: 1;
+    }
+    .cuerpo-articulo {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .cabecera-revista {
+      padding: 40px 0 35px;
+    }
+    .contenido-articulo {
+      padding: 25px 20px 35px;
+    }
+    .destacado {
+      padding: 18px 20px;
+      font-size: 0.98rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- CABECERA -->
+<header class="cabecera-revista">
+  <div class="contenedor">
+    <span class="etiqueta">Negocios &amp; Finanzas</span>
+    <h1>Banco Pichincha comprará Diners Club Perú por S/ 23,4 millones tras autorización de la SBS</h1>
+    <p class="bajada">La Superintendencia de Banca, Seguros y AFP dio luz verde a la operación que convierte a la emblemática firma de tarjetas de crédito en subsidiaria del banco. La transacción, que involucra el 100% de las acciones, redefine el mapa competitivo del sistema financiero peruano.</p>
+    <div class="meta-nota">
+      <span>&#128197; 18 de septiembre de 2026</span>
+      <span>&#128188; Economía</span>
+      <span>&#9201; Lectura: 6 min</span>
+    </div>
+  </div>
+</header>
+
+<!-- CUERPO -->
+<main class="contenedor">
+  <div class="cuerpo-articulo">
+
+    <!-- ARTÍCULO PRINCIPAL -->
+    <article class="articulo-principal">
+
+      <img src="imagen1.jpg" alt="Banco Pichincha adquiere Diners Club Perú" class="imagen-hero">
+
+      <div class="contenido-articulo">
+
+        <p><strong>Lima.</strong> El Banco Pichincha Perú obtuvo la autorización de la Superintendencia de Banca, Seguros y AFP (SBS) para adquirir el 100% de las acciones representativas del capital social de Diners Club Perú S.A., en una operación valorizada en S/ 23 millones 474 mil 937. La aprobación, contenida en la Resolución SBS N.° 02290-2026, fue comunicada por la entidad financiera a la Superintendencia del Mercado de Valores (SMV) mediante un Hecho de Importancia difundido el jueves 17 de septiembre de 2026.</p>
+
+        <p>Con este visto bueno regulatorio, la compañía de tarjetas de crédito —con más de cinco décadas de presencia en el mercado peruano— pasará a constituirse como empresa subsidiaria del banco, integrando su estructura corporativa y ampliando las capacidades del grupo financiero en el segmento de medios de pago.</p>
+
+        <h2>Una operación cocinada desde enero</h2>
+
+        <p>El proceso de adquisición no fue improvisado. Según detalla la resolución de la SBS, el Directorio de Banco Pichincha aprobó inicialmente la operación en su sesión del 20 de enero de 2026, cuando se acordó adquirir al menos el 94,77% de las acciones de Diners Club Perú. Posteriormente, el 26 de mayo de 2026, el órgano directivo ratificó la decisión y amplió el alcance hasta alcanzar la totalidad del accionariado, fijando el monto definitivo de la transacción.</p>
+
+        <p>La legislación peruana, específicamente la Ley General del Sistema Financiero y del Sistema de Seguros y Orgánica de la SBS (Ley N.° 26702), faculta a las empresas bancarias a adquirir, conservar y vender acciones de sociedades que brinden servicios complementarios o auxiliares, así como a constituir subsidiarias para realizar operaciones vinculadas con cobros, pagos, transferencias de fondos y, precisamente, la expedición y administración de tarjetas de crédito y débito.</p>
+
+        <div class="destacado">
+          <strong>El dato clave:</strong> La operación asciende a S/ 23.474.937 y fue aprobada mediante la Resolución SBS N.° 02290-2026, emitida el 16 de septiembre de 2026. La autorización permite a Banco Pichincha ejercer, a través de Diners Club, actividades complementarias y auxiliares a sus operaciones financieras.
+        </div>
+
+        <img src="imagen2.jpg" alt="Sede del Banco Pichincha en Lima" class="imagen-cuerpo">
+        <p class="pie-foto">Banco Pichincha Perú consolida su estrategia de crecimiento inorgánico con la compra de Diners Club.</p>
+
+        <h2>Diners Club: pionera de las tarjetas en el Perú</h2>
+
+        <p>Diners Club tiene una historia que se remonta a 1950, cuando Frank McNamara revolucionó la industria de los pagos al crear la primera tarjeta de crédito de uso generalizado. En el Perú, su llegada se produjo en 1967, cuando el empresario José Antonio Schiaffino recibió la primera tarjeta Diners Club emitida en el país. Desde entonces, la firma se consolidó como un símbolo de prestigio y exclusividad, con una base de clientes concentrada en los segmentos profesional, industrial y comercial.</p>
+
+        <p>A lo largo de las décadas, Diners Club Perú diversificó sus servicios y se mantuvo como una marca reconocida en el mercado local. En 2009, la compañía fue la primera en el mundo en certificar la interoperabilidad entre las redes de Diners Club International y Discover Financial Services, un hito tecnológico que amplió la aceptación de sus tarjetas a nivel global.</p>
+
+        <p>La resolución de la SBS precisa que la operación no establece, por ahora, modificaciones respecto a la marca Diners Club, los productos que ofrece a sus clientes ni las condiciones asociadas a sus tarjetas. Es decir, los usuarios continuarán operando con normalidad mientras se completa la integración societaria.</p>
+
+        <h2>El comprador: un banco con raíces profundas</h2>
+
+        <p>Banco Pichincha Perú no es un recién llegado. Su historia se inicia en julio de 1964 bajo la denominación de Financiera y Promotora de la Construcción S.A. (FINANPRO). En noviembre de 1986, la compañía se convirtió en empresa bancaria y cambió su nombre a Banco Financiero del Perú. No fue hasta agosto de 2018 cuando adoptó la marca Banco Pichincha, tras la renovación de su imagen institucional y su integración al grupo financiero ecuatoriano del mismo nombre.</p>
+
+        <p>En la actualidad, Banco Pichincha se posiciona como un banco múltiple con una oferta que abarca banca personal, empresarial y corporativa. La adquisición de Diners Club le permite verticalizar su negocio de medios de pago, capturando directamente la emisión y administración de tarjetas de crédito, en lugar de depender exclusivamente de alianzas con terceros.</p>
+
+        <h2>Implicancias para el mercado y los usuarios</h2>
+
+        <p>La incorporación de Diners Club Perú como subsidiaria de Banco Pichincha representa un movimiento estratégico en un mercado cada vez más competitivo. El sistema financiero peruano ha visto en los últimos años una intensa competencia en el segmento de tarjetas de crédito, con actores como Interbank, BCP, BBVA y Scotiabank disputándose una base de usuarios que supera los 8 millones de tarjetahabientes.</p>
+
+        <p>Desde la perspectiva del regulador, la operación se ajusta al marco normativo vigente. La SBS verificó que Banco Pichincha presentó la documentación requerida y que la solicitud cumplía con el procedimiento establecido para la constitución de subsidiarias de entidades del sistema financiero.</p>
+
+        <p>Para los clientes de Diners Club, el escenario inmediato es de continuidad. La resolución no contempla cambios en las condiciones contractuales, programas de beneficios ni esquemas de lealtad. Sin embargo, en el mediano plazo, la integración podría traducirse en sinergias operativas, nuevos productos combinados y una mayor capilaridad de la red de aceptación, aprovechando la infraestructura de Banco Pichincha.</p>
+
+        <div class="destacado">
+          <strong>Lo que viene:</strong> Con la autorización de la SBS en mano, Banco Pichincha deberá cumplir las condiciones y procedimientos correspondientes para concretar la incorporación de Diners Club Perú a su estructura corporativa. Se espera que la integración operativa y tecnológica se complete en los próximos meses.
+        </div>
+
+        <img src="imagen3.jpg" alt="Tarjetas de crédito Diners Club" class="imagen-cuerpo">
+        <p class="pie-foto">Diners Club, la primera tarjeta de crédito en llegar al Perú en 1967, ahora formará parte del grupo Banco Pichincha.</p>
+
+        <h2>Un mercado en transformación</h2>
+
+        <p>La adquisición de Diners Club por parte de Banco Pichincha se suma a una serie de movimientos corporativos que están reconfigurando el sector financiero peruano. La digitalización de los servicios, la irrupción de las fintech y la creciente preferencia de los usuarios por soluciones de pago ágiles están obligando a los bancos tradicionales a repensar sus modelos de negocio.</p>
+
+        <p>En ese contexto, controlar una franquicia de tarjetas con el reconocimiento de marca de Diners Club otorga a Banco Pichincha una ventaja diferencial. La emblemática tarjeta verde y blanca, asociada durante décadas a un segmento premium, aporta un activo intangible difícil de replicar: prestigio, confianza y una base de clientes fidelizada.</p>
+
+        <p>El desenlace de esta operación será seguido de cerca por analistas, competidores y reguladores. Si la integración se ejecuta con éxito, Banco Pichincha podría emerger como un jugador más robusto en el competitivo mercado de medios de pago peruano. Para Diners Club, la alianza con un banco de la envergadura de Pichincha representa una oportunidad para escalar su propuesta de valor en un entorno donde la innovación y la experiencia del cliente son cada vez más determinantes.</p>
+
+        <p>Con la Resolución SBS N.° 02290-2026, el camino está allanado. La pelota ahora está en la cancha de Banco Pichincha, que deberá demostrar que la adquisición no solo tiene sentido financiero, sino que se traduce en beneficios tangibles para los usuarios y en un fortalecimiento genuino del ecosistema financiero peruano.</p>
+
+      </div>
+    </article>
+
+    <!-- BARRA LATERAL -->
+    <aside class="barra-lateral">
+
+      <div class="tarjeta-lateral">
+        <h3>Ficha de la operación</h3>
+        <ul>
+          <li><strong>Comprador:</strong> Banco Pichincha Perú</li>
+          <li><strong>Vendedor:</strong> Accionistas de Diners Club Perú S.A.</li>
+          <li><strong>Monto:</strong> S/ 23.474.937</li>
+          <li><strong>Porcentaje:</strong> 100% de las acciones</li>
+          <li><strong>Resolución:</strong> SBS N.° 02290-2026</li>
+          <li><strong>Fecha:</strong> 16 de septiembre de 2026</li>
+          <li><strong>Resultado:</strong> Diners Club será subsidiaria</li>
+        </ul>
+      </div>
+
+      <div class="cita-lateral">
+        <p>La integración permitirá al banco ejercer, a través de esta compañía, actividades vinculadas con servicios complementarios o auxiliares a las operaciones financieras.</p>
+        <span class="autor">— Resolución SBS N.° 02290-2026</span>
+      </div>
+
+      <div class="tarjeta-lateral">
+        <h3>Cronología</h3>
+        <ul>
+          <li><strong>Ene 2026:</strong> Directorio aprueba adquirir al menos 94,77%</li>
+          <li><strong>May 2026:</strong> Ratifica y amplía al 100%</li>
+          <li><strong>Sep 2026:</strong> SBS autoriza la operación</li>
+          <li><strong>Próximo:</strong> Integración societaria y operativa</li>
+        </ul>
+      </div>
+
+      <div class="tarjeta-lateral">
+        <h3>Diners Club en cifras</h3>
+        <ul>
+          <li><strong>Fundación:</strong> 1950 (global) / 1967 (Perú)</li>
+          <li><strong>Primera tarjeta:</strong> Emitida en 1967</li>
+          <li><strong>Hito:</strong> Primera certificación de interoperabilidad Diners-Discover (2009)</li>
+          <li><strong>Segmento:</strong> Profesional, industrial y comercial</li>
+        </ul>
+      </div>
+
+    </aside>
+
+  </div>
+</main>
+
+<!-- PIE DE PÁGINA -->
+<footer class="pie-pagina">
+  <div class="contenedor">
+    <p><strong>Artículo informativo</strong> — Basado en la Resolución SBS N.° 02290-2026 y en los hechos de importancia difundidos por Banco Pichincha y Diners Club Perú ante la SMV.</p>
+    <p style="margin-top:10px;">&copy; 2026 — Redacción Economía. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+    <footer>
+        <p>Autor: ROSA EMILY | Fecha: 2026-09-19</p>
+    </footer>
+</body>
+</html>

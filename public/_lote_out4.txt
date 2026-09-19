@@ -1,0 +1,10 @@
+=== [1/3] fenomeno-el-nino-senamhi-temperaturas-40-grados ===
+respuesta: 18470 chars
+FAIL Error al actualizar JSON (slug duplicado?)
+=== [2/3] trucos-caseros-bajar-colesterol-natural-alto ===
+respuesta: 14411 chars
+FAIL Error al actualizar JSON (slug duplicado?)
+=== [3/3] debate-alcaldia-lima-cruces-orden-candidatos ===
+respuesta: 24421 chars
+FAIL Error al actualizar JSON (slug duplicado?)
+RESUMEN: 0/3 OK

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dengue en Nuevo Chimbote: cuarto caso confirmado en Vía Central</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Georgia', 'Times New Roman', serif;
+        background-color: #f4f1ec;
+        color: #2c2c2c;
+        line-height: 1.7;
+    }
+    .magazine-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        box-shadow: 0 0 40px rgba(0,0,0,0.1);
+    }
+    .masthead {
+        background: linear-gradient(135deg, #0d3b66 0%, #1a5a8a 100%);
+        color: #ffffff;
+        padding: 30px 40px 20px;
+        text-align: center;
+        border-bottom: 5px solid #f4a261;
+    }
+    .masthead .kicker {
+        font-family: 'Arial', sans-serif;
+        font-size: 0.85rem;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #f4a261;
+        margin-bottom: 8px;
+    }
+    .masthead h1 {
+        font-size: 2.8rem;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+    .masthead .date {
+        font-family: 'Arial', sans-serif;
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+    .hero-section {
+        padding: 40px;
+        background-color: #faf8f5;
+    }
+    .hero-section .excerpt {
+        font-size: 1.3rem;
+        color: #555;
+        border-left: 5px solid #f4a261;
+        padding-left: 25px;
+        margin-bottom: 30px;
+        font-style: italic;
+    }
+    .hero-image {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    .image-caption {
+        font-family: 'Arial', sans-serif;
+        font-size: 0.85rem;
+        color: #777;
+        margin-bottom: 30px;
+        padding-left: 5px;
+        border-left: 3px solid #f4a261;
+        padding-left: 12px;
+    }
+    .content-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+        padding: 0 40px 40px;
+    }
+    .main-article h2 {
+        font-size: 1.8rem;
+        color: #0d3b66;
+        margin: 35px 0 15px;
+        border-bottom: 3px solid #f4a261;
+        padding-bottom: 8px;
+    }
+    .main-article h3 {
+        font-size: 1.3rem;
+        color: #1a5a8a;
+        margin: 25px 0 10px;
+    }
+    .main-article p {
+        margin-bottom: 18px;
+        font-size: 1.05rem;
+        text-align: justify;
+    }
+    .main-article ul {
+        margin: 15px 0 20px 25px;
+    }
+    .main-article li {
+        margin-bottom: 8px;
+        font-size: 1.05rem;
+    }
+    .highlight-box {
+        background: linear-gradient(135deg, #e8f4f8 0%, #d1ecf1 100%);
+        border-left: 5px solid #0d3b66;
+        padding: 20px 25px;
+        margin: 25px 0;
+        border-radius: 0 8px 8px 0;
+    }
+    .highlight-box p {
+        margin-bottom: 0;
+        font-size: 1rem;
+        color: #0d3b66;
+    }
+    .sidebar {
+        font-family: 'Arial', sans-serif;
+    }
+    .sidebar-card {
+        background-color: #faf8f5;
+        border: 1px solid #e0dcd5;
+        border-radius: 8px;
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+    .sidebar-card h4 {
+        font-size: 1.1rem;
+        color: #0d3b66;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 2px solid #f4a261;
+        padding-bottom: 6px;
+    }
+    .sidebar-card p {
+        font-size: 0.95rem;
+        color: #444;
+        line-height: 1.6;
+    }
+    .sidebar-card ul {
+        margin-left: 18px;
+        font-size: 0.95rem;
+        color: #444;
+    }
+    .sidebar-card li {
+        margin-bottom: 6px;
+    }
+    .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+    .data-table th, .data-table td {
+        border: 1px solid #ddd;
+        padding: 8px 10px;
+        text-align: left;
+    }
+    .data-table th {
+        background-color: #0d3b66;
+        color: #fff;
+        font-weight: 600;
+    }
+    .data-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    .full-width-image {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin: 30px 0 10px;
+        display: block;
+    }
+    .footer {
+        background-color: #0d3b66;
+        color: #ccc;
+        text-align: center;
+        padding: 25px 40px;
+        font-family: 'Arial', sans-serif;
+        font-size: 0.85rem;
+    }
+    .footer strong {
+        color: #f4a261;
+    }
+    @media (max-width: 768px) {
+        .masthead h1 {
+            font-size: 1.9rem;
+        }
+        .content-grid {
+            grid-template-columns: 1fr;
+            padding: 0 20px 30px;
+        }
+        .hero-section {
+            padding: 25px 20px;
+        }
+        .hero-section .excerpt {
+            font-size: 1.1rem;
+        }
+        .main-article h2 {
+            font-size: 1.4rem;
+        }
+        .masthead {
+            padding: 25px 20px 15px;
+        }
+    }
+    @media (max-width: 480px) {
+        .masthead h1 {
+            font-size: 1.5rem;
+        }
+        .main-article p {
+            font-size: 0.98rem;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="magazine-wrapper">
+    <header class="masthead">
+        <div class="kicker">Salud Pública · Áncash</div>
+        <h1>Dengue en Nuevo Chimbote: reportan el cuarto caso confirmado en Vía Central</h1>
+        <div class="date">Viernes, 18 de septiembre de 2026 · Red de Salud Pacífico Sur</div>
+    </header>
+
+    <section class="hero-section">
+        <p class="excerpt">
+            La Red de Salud Pacífico Sur confirmó un cuarto caso de dengue en el asentamiento humano Vía Central, tras la identificación de dos nuevos pacientes. Las brigadas sanitarias intervinieron 150 viviendas con una cobertura del 50 % y detectaron larvas del zancudo transmisor en 14 inmuebles. El control larvario en la zona apenas alcanza el 14 %, una cifra que mantiene en alerta a las autoridades y exige la colaboración urgente de la población.
+        </p>
+        <img src="imagen1.jpg" alt="Brigadas sanitarias realizan control larvario en Vía Central, Nuevo Chimbote" class="hero-image">
+        <p class="image-caption">Brigadas de la Red de Salud Pacífico Sur inspeccionan viviendas en el sector Vía Central tras confirmarse el cuarto caso de dengue. Foto: RSD Noticias.</p>
+    </section>
+
+    <div class="content-grid">
+        <main class="main-article">
+            <h2>Un brote que no da tregua</h2>
+            <p>
+                El asentamiento humano Vía Central, ubicado en la jurisdicción del puesto de salud Nicolás Garatea, en el distrito de Nuevo Chimbote, se ha convertido en el epicentro de un nuevo foco de dengue en la región Áncash. La Red de Salud Pacífico Sur informó que el sector registra ya cuatro casos confirmados de la enfermedad, luego de que se identificaran dos nuevos pacientes en las últimas horas.
+            </p>
+            <p>
+                La confirmación de estos casos encendió las alarmas sanitarias, no solo por el incremento en el número de contagios, sino por las serias dificultades que enfrentan las brigadas para realizar el control vectorial. Durante la jornada de cerco entomológico desplegada en el ámbito del puesto de salud Nicolás Garatea, los inspectores lograron intervenir 150 viviendas, lo que representa apenas el 50 % de las casas programadas.
+            </p>
+            <p>
+                La labor de los inspectores permitió detectar 14 inmuebles con presencia de larvas del zancudo <em>Aedes aegypti</em>, el principal transmisor del dengue. Este hallazgo evidencia que el vector sigue reproduciéndose activamente en la zona, lo que incrementa el riesgo de nuevos contagios si no se toman medidas inmediatas.
+            </p>
+
+            <div class="highlight-box">
+                <p><strong>Dato clave:</strong> De las 150 viviendas inspeccionadas, 14 presentaron larvas del zancudo transmisor. Además, 103 casas estaban deshabitadas, 44 permanecían cerradas y en tres hogares se negó el ingreso al personal de salud.</p>
+            </div>
+
+            <h2>Las barreras que frenan el control del dengue</h2>
+            <p>
+                El informe oficial revela un panorama complejo para las autoridades sanitarias. Durante la intervención en Vía Central, no fue posible inspeccionar 103 viviendas porque se encontraban deshabitadas, 44 permanecían cerradas y en tres hogares los propietarios se negaron a permitir el ingreso del personal de salud.
+            </p>
+            <p>
+                Esta resistencia no es un fenómeno aislado. Días antes, cuando se reportó el segundo caso confirmado en el mismo sector, la cobertura del control larvario alcanzó apenas el 14 %. En aquella oportunidad, las brigadas solo pudieron intervenir 39 viviendas en un radio de 150 metros alrededor de la casa del paciente confirmado. La situación se repitió: 178 viviendas deshabitadas, 53 cerradas y tres con negativa de acceso.
+            </p>
+            <p>
+                La baja cobertura de las inspecciones domiciliarias se ha convertido en el principal obstáculo para contener la propagación del dengue en Nuevo Chimbote. Sin acceso a las viviendas, los inspectores no pueden identificar ni eliminar los criaderos del zancudo, lo que permite que el vector continúe reproduciéndose y poniendo en riesgo a toda la comunidad.
+            </p>
+
+            <img src="imagen2.jpg" alt="Inspectores sanitarios revisan recipientes de agua en viviendas de Nuevo Chimbote" class="full-width-image">
+            <p class="image-caption">Los inspectores buscan larvas del <em>Aedes aegypti</em> en recipientes donde las familias almacenan agua. La colaboración vecinal es fundamental para eliminar los criaderos. Foto: RSD Noticias.</p>
+
+            <h2>Acciones de prevención y educación comunitaria</h2>
+            <p>
+                A pesar de las dificultades, la Red de Salud Pacífico Sur ha intensificado las acciones de prevención en Vía Central. Como parte de la estrategia, la responsable de Promoción de la Salud de la entidad, Helen Abanto Crespo, brindó una sesión educativa a los vecinos sobre las medidas de prevención de la enfermedad.
+            </p>
+            <p>
+                Además, se conformó un comité de vigilancia con integrantes de la junta directiva de Vía Central. Este comité tiene como objetivo facilitar el ingreso de los inspectores sanitarios a las viviendas, actuando como un puente entre las brigadas de salud y los residentes. La participación comunitaria se vuelve esencial en un contexto donde la desconfianza o la ausencia de los propietarios impiden el trabajo preventivo.
+            </p>
+            <p>
+                La Red de Salud Pacífico Sur exhortó a las familias a colaborar con las brigadas y permitir la inspección de los recipientes donde almacenan agua. Esta práctica es clave para identificar y eliminar posibles criaderos del zancudo transmisor. El llamado es urgente: sin la participación activa de la población, las acciones sanitarias difícilmente podrán contener el avance del dengue.
+            </p>
+
+            <h2>El dengue en el contexto regional</h2>
+            <p>
+                La situación en Nuevo Chimbote no es un hecho aislado. La región Áncash ha registrado un incremento sostenido de casos de dengue durante el 2026. Según reportes de la Red de Salud Pacífico Sur, hasta agosto se habían confirmado 145 casos en seis distritos costeros: Casma, Nuevo Chimbote, Huarmey, Yaután, Moro y Quillo. Casma concentra la mayor cantidad de contagios con 102 casos, seguido de Nuevo Chimbote con 25 y Huarmey con siete.
+            </p>
+            <p>
+                Un dato que preocupa a las autoridades es la identificación del serotipo 3 del dengue en Casma. Este serotipo puede aumentar el riesgo de desarrollar formas graves de la enfermedad, especialmente en personas que ya tuvieron dengue anteriormente. Aunque hasta el momento no se han registrado fallecidos en la región, el 34 % de los casos ha requerido hospitalización por manifestaciones como vómitos persistentes, dolor abdominal y sangrado.
+            </p>
+            <p>
+                El director de la Red de Salud Pacífico Sur, Miguel Namihas Gonzáles, ha señalado que el control del mosquito <em>Aedes aegypti</em> enfrenta serias dificultades debido a la limitada cobertura de las inspecciones domiciliarias. De las 376 766 viviendas visitadas para acciones de vigilancia y control vectorial, solo 184 325 fueron inspeccionadas, mientras que 85 732 permanecieron cerradas, 34 702 fueron reportadas como renuentes y 72 000 como deshabitadas.
+            </p>
+
+            <div class="highlight-box">
+                <p><strong>Contexto nacional:</strong> A nivel nacional, el Ministerio de Salud ha reportado más de 34 000 casos de dengue en lo que va del 2026, con 44 fallecidos. La enfermedad transmitida por el <em>Aedes aegypti</em> sigue siendo un desafío sanitario prioritario en las regiones costeras del Perú.</p>
+            </div>
+
+            <h2>Síntomas y signos de alarma</h2>
+            <p>
+                El dengue es una enfermedad viral transmitida por la picadura del mosquito <em>Aedes aegypti</em>. Los síntomas más frecuentes incluyen fiebre alta, dolor de cabeza, dolor muscular y articular, así como dolor detrás de los ojos. También pueden presentarse erupciones en la piel y malestar general.
+            </p>
+            <p>
+                Los signos de alarma que requieren atención médica inmediata son dolor abdominal intenso y persistente, vómitos continuos, sangrado, somnolencia, irritabilidad y decaimiento general. Ante la presencia de cualquiera de estos síntomas, se debe acudir de inmediato al centro de salud más cercano y evitar la automedicación.
+            </p>
+
+            <img src="imagen3.jpg" alt="Personal de salud brinda recomendaciones a vecinos para prevenir el dengue" class="full-width-image">
+            <p class="image-caption">Sesiones educativas y la conformación de comités de vigilancia buscan mejorar la colaboración vecinal en las labores de prevención. Foto: RSD Noticias.</p>
+
+            <h2>¿Cómo prevenir el dengue en casa?</h2>
+            <p>
+                La medida más efectiva para prevenir el dengue es eliminar los criaderos del mosquito <em>Aedes aegypti</em>. Esto implica evitar el agua estancada en recipientes como baldes, tanques, floreros, llantas y cualquier objeto que pueda acumular agua. La limpieza y la "descacharrización" (eliminación de objetos inservibles) son fundamentales.
+            </p>
+            <p>
+                Se recomienda lavar, escobillar y tapar los recipientes donde se almacena agua. Además, es importante usar repelente, vestir ropa ligera de manga larga y colocar mosquiteros en puertas y ventanas. Estas medidas, combinadas con la colaboración con las brigadas sanitarias, pueden marcar la diferencia en la lucha contra el dengue.
+            </p>
+            <p>
+                La experiencia en Nuevo Chimbote demuestra que el dengue no se combate solo con acciones institucionales. La participación activa de la comunidad, la confianza en el personal de salud y la adopción de prácticas preventivas en el hogar son pilares indispensables para proteger la salud de todos.
+            </p>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <h4>Datos rápidos</h4>
+                <table class="data-table">
+                    <tr><th>Indicador</th><th>Valor</th></tr>
+                    <tr><td>Casos confirmados en Vía Central</td><td>4</td></tr>
+                    <tr><td>Viviendas inspeccionadas</td><td>150</td></tr>
+                    <tr><td>Cobertura de la intervención</td><td>50 %</td></tr>
+                    <tr><td>Viviendas con larvas</td><td>14</td></tr>
+                    <tr><td>Control larvario previo</td><td>14 %</td></tr>
+                    <tr><td>Casos en Nuevo Chimbote (2026)</td><td>25</td></tr>
+                    <tr><td>Casos en Áncash (2026)</td><td>145</td></tr>
+                </table>
+            </div>
+
+            <div class="sidebar-card">
+                <h4>Signos de alarma</h4>
+                <ul>
+                    <li>Dolor abdominal intenso y persistente</li>
+                    <li>Vómitos continuos</li>
+                    <li>Sangrado (encías, nariz, heces)</li>
+                    <li>Somnolencia o irritabilidad</li>
+                    <li>Decaimiento general</li>
+                </ul>
+                <p style="margin-top: 12px; font-size: 0.85rem; color: #b00;">Ante estos síntomas, acuda de inmediato al centro de salud. No se automedique.</p>
+            </div>
+
+            <div class="sidebar-card">
+                <h4>Prevención en casa</h4>
+                <ul>
+                    <li>Lave y tape los recipientes de agua</li>
+                    <li>Elimine objetos que acumulen agua</li>
+                    <li>Use repelente y mosquiteros</li>
+                    <li>Permita el ingreso de los inspectores</li>
+                    <li>Participe en las jornadas de limpieza</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h4>Fuente</h4>
+                <p>Red de Salud Pacífico Sur · Radio Santo Domingo (RSD Noticias) · Andina · Ministerio de Salud del Perú.</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 · <strong>Salud Pública Áncash</strong> · Información verificada con fuentes oficiales de la Red de Salud Pacífico Sur y el Ministerio de Salud del Perú.</p>
+    </footer>
+</div>
+
+    <footer>
+        <p>Autor: ROSA EMILY | Fecha: 2026-09-19</p>
+    </footer>
+</body>
+</html>

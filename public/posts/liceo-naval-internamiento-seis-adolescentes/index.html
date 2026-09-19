@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caso Liceo Naval: cuatro meses de internamiento para seis adolescentes</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Georgia', 'Times New Roman', serif;
+        background-color: #f4f1ec;
+        color: #2c2c2c;
+        line-height: 1.7;
+        padding: 20px;
+    }
+    .container {
+        max-width: 860px;
+        margin: 0 auto;
+        background: #ffffff;
+        box-shadow: 0 4px 30px rgba(0,0,0,0.12);
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    .header {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        color: #ffffff;
+        padding: 50px 40px 40px;
+        position: relative;
+    }
+    .header::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: linear-gradient(90deg, #e94560, #f5a623, #e94560);
+    }
+    .header .kicker {
+        display: inline-block;
+        background: #e94560;
+        color: #fff;
+        font-family: 'Arial', sans-serif;
+        font-size: 0.75rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 5px 14px;
+        border-radius: 3px;
+        margin-bottom: 18px;
+    }
+    .header h1 {
+        font-size: 2.1rem;
+        line-height: 1.3;
+        margin-bottom: 18px;
+        font-weight: 700;
+    }
+    .header .subtitle {
+        font-size: 1.05rem;
+        color: #c9d6e8;
+        font-style: italic;
+        line-height: 1.5;
+    }
+    .meta-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        padding: 16px 40px;
+        background: #f8f6f2;
+        border-bottom: 1px solid #e0dbd4;
+        font-family: 'Arial', sans-serif;
+        font-size: 0.82rem;
+        color: #6b6b6b;
+    }
+    .meta-bar span {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .meta-bar .dot {
+        width: 6px;
+        height: 6px;
+        background: #e94560;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .hero-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .content {
+        padding: 40px;
+    }
+    .lead {
+        font-size: 1.15rem;
+        color: #3a3a3a;
+        border-left: 4px solid #e94560;
+        padding-left: 20px;
+        margin-bottom: 30px;
+        font-style: italic;
+        line-height: 1.7;
+    }
+    h2 {
+        font-size: 1.45rem;
+        color: #16213e;
+        margin: 35px 0 15px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #e94560;
+        display: inline-block;
+    }
+    p {
+        margin-bottom: 18px;
+        text-align: justify;
+        font-size: 1.02rem;
+    }
+    .image-block {
+        margin: 30px 0;
+        text-align: center;
+    }
+    .image-block img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+        box-shadow: 0 3px 15px rgba(0,0,0,0.12);
+    }
+    .image-block .caption {
+        font-family: 'Arial', sans-serif;
+        font-size: 0.8rem;
+        color: #888;
+        margin-top: 10px;
+        font-style: italic;
+    }
+    .pull-quote {
+        background: linear-gradient(135deg, #fdf2f4, #fef9f0);
+        border-left: 5px solid #e94560;
+        padding: 25px 30px;
+        margin: 30px 0;
+        font-size: 1.12rem;
+        color: #1a1a2e;
+        font-style: italic;
+        border-radius: 0 4px 4px 0;
+    }
+    .pull-quote strong {
+        color: #e94560;
+        font-style: normal;
+    }
+    .info-box {
+        background: #f0f4fa;
+        border: 1px solid #d0d9e8;
+        border-radius: 6px;
+        padding: 25px 30px;
+        margin: 30px 0;
+    }
+    .info-box h3 {
+        font-size: 1.1rem;
+        color: #0f3460;
+        margin-bottom: 12px;
+        font-family: 'Arial', sans-serif;
+    }
+    .info-box ul {
+        padding-left: 20px;
+    }
+    .info-box li {
+        margin-bottom: 8px;
+        font-size: 0.98rem;
+    }
+    .divider {
+        text-align: center;
+        margin: 35px 0;
+        color: #c0c0c0;
+        font-size: 1.5rem;
+        letter-spacing: 12px;
+    }
+    .footer {
+        background: #1a1a2e;
+        color: #a0a8b8;
+        padding: 30px 40px;
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        font-size: 0.82rem;
+        line-height: 1.6;
+    }
+    .footer strong {
+        color: #e94560;
+    }
+    @media (max-width: 600px) {
+        body { padding: 0; }
+        .header { padding: 30px 22px 28px; }
+        .header h1 { font-size: 1.5rem; }
+        .header .subtitle { font-size: 0.95rem; }
+        .meta-bar { padding: 14px 22px; font-size: 0.75rem; }
+        .content { padding: 25px 22px; }
+        .lead { font-size: 1.05rem; padding-left: 15px; }
+        h2 { font-size: 1.25rem; }
+        p { font-size: 0.98rem; }
+        .pull-quote { padding: 20px 22px; font-size: 1.02rem; }
+        .info-box { padding: 20px 22px; }
+        .footer { padding: 25px 22px; }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+
+    <header class="header">
+        <span class="kicker">Judicial</span>
+        <h1>Caso Liceo Naval: jueza ordena cuatro meses de internamiento preventivo para seis adolescentes por presunta violación sexual</h1>
+        <p class="subtitle">La jueza Roxana Isabel Palacios Yactayo dispuso el traslado de los escolares al Centro Juvenil de Diagnóstico y Rehabilitación de Lima, conocido como Maranguita. Los otros cuatro adolescentes retenidos continuarán el proceso en libertad.</p>
+    </header>
+
+    <div class="meta-bar">
+        <span><span class="dot"></span> Lima, 19 de septiembre de 2026</span>
+        <span><span class="dot"></span> Redacción Judicial</span>
+        <span><span class="dot"></span> Actualizado 08:30 a.m.</span>
+    </div>
+
+    <img src="imagen1.jpg" alt="Fachada del Liceo Naval Almirante Guise en San Borja" class="hero-image">
+
+    <div class="content">
+
+        <p class="lead">El Tercer Juzgado de Familia de Lima, a cargo de la jueza Roxana Isabel Palacios Yactayo, dictó la noche del viernes 18 de septiembre cuatro meses de internamiento preventivo para seis de los diez adolescentes investigados por la presunta violación sexual de un compañero de 16 años al interior de un bus escolar del Liceo Naval Almirante Guise. La medida fue solicitada por la Séptima Fiscalía de Familia de Lima Centro y se cumple en el Centro Juvenil de Diagnóstico y Rehabilitación de Lima, conocido históricamente como Maranguita, ubicado en el distrito de San Miguel.</p>
+
+        <p>La decisión judicial se produjo tras una sesión reservada en la que se escuchó la versión de los seis menores investigados, todos estudiantes del quinto año de secundaria del referido centro educativo. Previamente, el fiscal provincial Mariano de la Torre Hernández había requerido la medida con el fin de asegurar la presencia de los adolescentes durante las diligencias que restan en la investigación. Entre los principales elementos recabados figuran las declaraciones de los involucrados, los testimonios de efectivos policiales, el reconocimiento médico legal y el testimonio de la víctima recogido mediante Cámara Gesell.</p>
+
+        <div class="image-block">
+            <img src="imagen2.jpg" alt="Traslado de los seis adolescentes desde la Comisaría de Familia hacia la sede judicial del Cercado de Lima">
+            <p class="caption">Los seis adolescentes fueron trasladados bajo custodia policial desde la Comisaría de Familia hasta el Tercer Juzgado de Familia del Cercado de Lima. Foto: ANDINA/Braian Reyna</p>
+        </div>
+
+        <h2>Los hechos que originaron la denuncia</h2>
+
+        <p>La denuncia policial surgió tras el presunto ataque que sufrió el estudiante de cuarto año el pasado 15 de setiembre al interior de una unidad de transporte escolar. El hecho violento ocurrió durante el retorno del equipo escolar de futsal hacia la sede del colegio, ubicada en el distrito de San Borja. Según la información preliminar recogida por el Ministerio Público, la agresión habría ocurrido en el trayecto de regreso al plantel, cuando los estudiantes se desplazaban en el bus institucional. La víctima, un adolescente de 16 años, habría sido objeto de violencia sexual por parte de varios compañeros de quinto año.</p>
+
+        <p>Tras conocerse la denuncia, la Policía Nacional del Perú retuvo inicialmente a diez estudiantes como parte de las diligencias preliminares. De acuerdo con el Código de Responsabilidad Penal de Adolescentes, la detención de menores de edad, incluso en flagrancia, no debe superar las 24 horas, plazo que puede extenderse hasta 48 horas cuando se realizan las primeras diligencias fiscales. Durante ese periodo, los diez adolescentes fueron sometidos a evaluaciones individuales destinadas a determinar el nivel de participación de cada uno en los hechos denunciados.</p>
+
+        <div class="pull-quote">
+            «La medida no constituye una condena. Los adolescentes continuarán bajo el sistema de justicia juvenil mientras la Fiscalía avanza en las pericias y actuaciones pendientes para establecer la conducta atribuida a cada uno», precisó el Poder Judicial.
+        </div>
+
+        <h2>La decisión de la jueza Palacios Yactayo</h2>
+
+        <p>La jueza Roxana Isabel Palacios Yactayo, del Tercer Juzgado de Familia de la Corte Superior de Justicia de Lima, dispuso expresamente que los seis adolescentes sean conducidos de inmediato al Centro Juvenil de Diagnóstico y Rehabilitación de Lima, donde permanecerán durante los cuatro meses fijados por el juzgado. El traslado al centro juvenil se realizó pasadas las once de la noche del viernes, luego de que los menores salieran de la Comisaría de Familia en el Cercado de Lima en un bus policial custodiado.</p>
+
+        <p>El internamiento preventivo, según precisó el Poder Judicial, corresponde al plazo máximo previsto por ley para esta medida cautelar. Durante este periodo, la Fiscalía deberá avanzar en las pericias y actuaciones destinadas a precisar la participación que habría tenido cada adolescente en los hechos denunciados. Es importante subrayar que esta medida no constituye una sentencia condenatoria, sino una disposición cautelar dentro del proceso de responsabilidad penal juvenil que se sigue contra los investigados.</p>
+
+        <p>La resolución judicial se conoció después de que venciera el plazo de 48 horas de retención y luego de que el fiscal Mariano de la Torre Hernández culminara las principales diligencias preliminares, incluidas las entrevistas en Cámara Gesell. Fuentes judiciales indicaron que la decisión se sustentó en los indicios recogidos que vincularían a los seis adolescentes con la infracción a la ley penal, mientras que para los otros cuatro estudiantes la Fiscalía determinó que continuarán afrontando las investigaciones en libertad.</p>
+
+        <div class="image-block">
+            <img src="imagen3.jpg" alt="Centro Juvenil de Diagnóstico y Rehabilitación de Lima, conocido como Maranguita">
+            <p class="caption">El Centro Juvenil de Diagnóstico y Rehabilitación de Lima, conocido como Maranguita, se ubica en el distrito de San Miguel. Foto: ANDINA</p>
+        </div>
+
+        <h2>Medidas de protección a favor de la víctima</h2>
+
+        <p>En paralelo, el Décimo Segundo Juzgado de Familia de Lima dictó diversas medidas de protección preventivas a favor del adolescente de 16 años agraviado. Entre las disposiciones figuran prohibir que los presuntos agresores utilicen espacios privados o redes sociales como WhatsApp y Facebook para comunicarse con la víctima o referirse a ella. Asimismo, se ordenó que los menores investigados reciban terapias psicológicas obligatorias como parte de las medidas dispuestas por el juzgado.</p>
+
+        <p>El órgano jurisdiccional también dispuso patrullajes preventivos semanales a cargo de la Comisaría de Familia de Lima en los alrededores del domicilio del estudiante agraviado. Estas medidas buscan resguardar la integridad física y emocional de la víctima mientras se desarrolla el proceso judicial. Según informó el Poder Judicial, la resolución también contempla la reserva de identidad del adolescente y el acompañamiento psicológico durante las diligencias que deba afrontar en el marco de la investigación.</p>
+
+        <div class="info-box">
+            <h3>¿Qué establece la ley para adolescentes investigados por agresión sexual?</h3>
+            <ul>
+                <li><strong>Marco legal:</strong> Código de Responsabilidad Penal de Adolescentes (Decreto Legislativo N.° 1348) y Libro IV del Código de los Niños y Adolescentes.</li>
+                <li><strong>Edad:</strong> Los investigados tienen 16 y 17 años, estudiantes de quinto año de secundaria.</li>
+                <li><strong>Internamiento preventivo:</strong> Plazo máximo de 150 días según el Código de Responsabilidad Penal de Adolescentes.</li>
+                <li><strong>Sanctión aplicable:</strong> Tras la Sentencia del Tribunal Constitucional 2/2026, corresponde el artículo 163.1 del D. Leg. N.° 1348, que contempla internación de uno a seis años para adolescentes de 16 y 17 años.</li>
+                <li><strong>Diferencia con adultos:</strong> Para adultos, el artículo 170 del Código Penal establece penas de 14 a 20 años por violación sexual, que se elevan de 20 a 26 años cuando intervienen dos o más sujetos.</li>
+            </ul>
+        </div>
+
+        <h2>Los otros cuatro adolescentes</h2>
+
+        <p>De los diez adolescentes inicialmente retenidos, solo seis recibieron la medida de internamiento preventivo. Los otros cuatro fueron liberados tras vencerse el plazo legal de 48 horas de retención y continuarán afrontando las investigaciones en libertad, bajo las condiciones que establezca la Fiscalía. Según Jorge Petrozzi, abogado de la familia de la víctima, estos cuatro escolares no estarían comprendidos como participantes directos ni indirectos en la agresión denunciada, aunque sí serían parte de la investigación en calidad de testigos o por su presencia en el lugar de los hechos.</p>
+
+        <p>La Fiscalía deberá individualizar la responsabilidad de cada adolescente y determinar las medidas que correspondan de acuerdo con los elementos recogidos durante las diligencias. En el caso de los cuatro liberados, el proceso continuará bajo otras condiciones distintas al internamiento, lo que podría incluir medidas socioeducativas, presentación periódica ante la autoridad judicial o restricciones específicas, dependiendo de la evaluación individual de cada caso.</p>
+
+        <h2>Reorganización del Liceo Naval</h2>
+
+        <p>En medio del proceso judicial, el Gobierno oficializó la reorganización del Liceo Naval Almirante Guise mediante el Decreto Supremo N.° 016-2026-MINEDU. La norma dispone que el Ministerio de Educación asuma la conducción del centro educativo hasta el 31 de diciembre de 2027, con énfasis en reforzar la seguridad, la convivencia escolar y la prevención de situaciones de violencia. Esta medida responde a la necesidad de garantizar un entorno seguro para los estudiantes y de implementar protocolos efectivos de prevención y atención ante casos de violencia sexual.</p>
+
+        <p>La comunidad educativa del Liceo Naval ha expresado su preocupación por los hechos ocurridos y ha exigido que se esclarezcan los hechos con celeridad. El Ministerio de la Mujer y Poblaciones Vulnerables también se pronunció sobre el caso, señalando que tanto los menores involucrados como la institución educativa tendrán que asumir su responsabilidad conforme a ley. La titular del sector, Patricia Juárez, exigió celeridad en las investigaciones y recordó que el Estado dispone de servicios de atención gratuita para víctimas de violencia sexual a través de la Línea 100 y los Centros Emergencia Mujer.</p>
+
+        <div class="divider">• • •</div>
+
+        <p>El caso del Liceo Naval Almirante Guise ha generado un intenso debate público sobre la responsabilidad penal de adolescentes, la protección de las víctimas de violencia sexual y el rol de las instituciones educativas en la prevención de estos hechos. Mientras la jueza Palacios Yactayo dispuso el internamiento preventivo de seis adolescentes en Maranguita, los otros cuatro continuarán el proceso en libertad. La Fiscalía tendrá los próximos cuatro meses para concluir las pericias y actuaciones pendientes que permitan determinar la responsabilidad de cada investigado. La víctima, por su parte, cuenta con medidas de protección judicial que incluyen terapia psicológica, patrullaje policial en su domicilio y la prohibición de todo contacto con los presuntos agresores, tanto en espacios físicos como en redes sociales.</p>
+
+        <p>El desenlace de este caso marcará un precedente importante en el sistema de justicia juvenil peruano y en la forma en que las instituciones educativas, especialmente aquellas vinculadas a las Fuerzas Armadas, abordan la violencia sexual entre estudiantes. Las autoridades han reiterado su compromiso de esclarecer los hechos y de garantizar que tanto la víctima como los investigados cuenten con las garantías procesales que establece la ley.</p>
+
+    </div>
+
+    <footer class="footer">
+        <p><strong>Redacción Judicial</strong> — Lima, Perú</p>
+        <p>Este artículo fue elaborado con información verificada de fuentes judiciales, policiales y periodísticas de circulación nacional.</p>
+        <p>Si eres víctima o conoces un caso de violencia sexual, llama gratis a la <strong>Línea 100</strong> o acude al Centro Emergencia Mujer más cercano.</p>
+    </footer>
+
+</div>
+
+    <footer>
+        <p>Autor: ROSA EMILY | Fecha: 2026-09-19</p>
+    </footer>
+</body>
+</html>

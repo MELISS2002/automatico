@@ -3,466 +3,460 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Debate para la alcaldía de Lima: así serán los cruces y orden de participación de los candidatos</title>
+<title>Debate para la alcaldía de Lima 2026: cruces, duplas y orden de participación</title>
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: Georgia, 'Times New Roman', serif;
-    background-color: #f4f1ec;
-    color: #1a1a1a;
-    line-height: 1.7;
-    font-size: 17px;
-  }
-
-  .container {
-    max-width: 820px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
-    border-left: 1px solid #e0dbd2;
-    border-right: 1px solid #e0dbd2;
-  }
-
-  .masthead {
-    border-bottom: 3px solid #1a1a1a;
-    padding-bottom: 12px;
-    margin-bottom: 28px;
-  }
-
-  .masthead .brand {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 13px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: #8b0000;
-    font-weight: 700;
-  }
-
-  h1 {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 2.4em;
-    line-height: 1.15;
-    font-weight: 800;
-    color: #111;
-    margin-bottom: 14px;
-    letter-spacing: -0.5px;
-  }
-
-  .subhead {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 1.1em;
-    color: #555;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    font-weight: 400;
-  }
-
-  .byline {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 0.85em;
-    color: #777;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-    margin-bottom: 24px;
-  }
-
-  .byline strong {
-    color: #333;
-  }
-
-  .hero-img {
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-    display: block;
-    margin-bottom: 10px;
-    border-radius: 2px;
-  }
-
-  .caption {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 0.8em;
-    color: #888;
-    margin-bottom: 28px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #eee;
-  }
-
-  p {
-    margin-bottom: 18px;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .lead {
-    font-size: 1.15em;
-    color: #222;
-    border-left: 4px solid #8b0000;
-    padding-left: 18px;
-    margin-bottom: 24px;
-    font-style: italic;
-  }
-
-  h2 {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 1.5em;
-    font-weight: 700;
-    color: #111;
-    margin-top: 36px;
-    margin-bottom: 16px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #8b0000;
-  }
-
-  h3 {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 1.15em;
-    font-weight: 700;
-    color: #8b0000;
-    margin-top: 28px;
-    margin-bottom: 12px;
-  }
-
-  .inline-img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    display: block;
-    margin: 24px 0 10px 0;
-    border-radius: 2px;
-  }
-
-  .info-box {
-    background-color: #faf8f5;
-    border: 1px solid #e0dbd2;
-    border-left: 5px solid #8b0000;
-    padding: 20px 24px;
-    margin: 28px 0;
-    border-radius: 2px;
-  }
-
-  .info-box h4 {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 0.95em;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: #8b0000;
-    margin-bottom: 12px;
-  }
-
-  .info-box ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .info-box ul li {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 0.92em;
-    padding: 6px 0;
-    border-bottom: 1px dotted #ddd;
-    color: #333;
-  }
-
-  .info-box ul li:last-child {
-    border-bottom: none;
-  }
-
-  .info-box ul li strong {
-    color: #111;
-    display: inline-block;
-    min-width: 180px;
-  }
-
-  .dupla-list {
-    list-style: none;
-    padding: 0;
-    margin: 16px 0;
-  }
-
-  .dupla-list li {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 0.95em;
-    padding: 10px 14px;
-    margin-bottom: 6px;
-    background: #faf8f5;
-    border-left: 3px solid #8b0000;
-    color: #333;
-  }
-
-  .dupla-list li.vs {
-    background: #f0ece4;
-    border-left-color: #555;
-  }
-
-  .highlight {
-    background-color: #fff3cd;
-    padding: 2px 5px;
-    border-radius: 2px;
-    font-weight: 600;
-  }
-
-  .quote {
-    font-family: Georgia, serif;
-    font-size: 1.2em;
-    font-style: italic;
-    color: #333;
-    border-left: 4px solid #8b0000;
-    padding: 8px 0 8px 20px;
-    margin: 24px 0;
-    line-height: 1.6;
-  }
-
-  .quote .author {
-    display: block;
-    font-size: 0.75em;
-    font-style: normal;
-    color: #888;
-    margin-top: 8px;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-
-  .divider {
-    text-align: center;
-    margin: 32px 0;
-    color: #ccc;
-    font-size: 1.5em;
-    letter-spacing: 12px;
-  }
-
-  .footer-note {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 0.8em;
-    color: #999;
-    border-top: 1px solid #ddd;
-    padding-top: 16px;
-    margin-top: 36px;
-    line-height: 1.5;
-  }
-
-  @media (max-width: 640px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     body {
-      font-size: 15px;
+        font-family: 'Segoe UI', 'Georgia', serif;
+        background-color: #f4f1ea;
+        color: #1a1a1a;
+        line-height: 1.7;
+        padding: 0;
     }
-
-    .container {
-      padding: 14px;
-      border-left: none;
-      border-right: none;
+    .magazine-wrapper {
+        max-width: 1100px;
+        margin: 0 auto;
+        background: #ffffff;
+        box-shadow: 0 0 40px rgba(0,0,0,0.12);
     }
-
-    h1 {
-      font-size: 1.7em;
+    .hero-header {
+        background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 50%, #415a77 100%);
+        color: #ffffff;
+        padding: 60px 40px 50px;
+        text-align: center;
+        position: relative;
     }
-
-    .hero-img,
-    .inline-img {
-      height: 200px;
+    .hero-header::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: linear-gradient(90deg, #e63946, #f4a261, #2a9d8f);
     }
-
-    .info-box ul li strong {
-      min-width: 120px;
-      font-size: 0.85em;
+    .hero-header .category {
+        display: inline-block;
+        background: #e63946;
+        color: #ffffff;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        padding: 8px 22px;
+        border-radius: 20px;
+        margin-bottom: 25px;
     }
-
+    .hero-header h1 {
+        font-size: 2.6rem;
+        font-weight: 800;
+        line-height: 1.2;
+        max-width: 850px;
+        margin: 0 auto 20px;
+        letter-spacing: -0.5px;
+    }
+    .hero-header .subtitle {
+        font-size: 1.1rem;
+        color: #c9d6df;
+        max-width: 700px;
+        margin: 0 auto;
+        font-weight: 300;
+    }
+    .meta-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 18px 40px;
+        background: #f8f9fa;
+        border-bottom: 1px solid #e0e0e0;
+        font-size: 0.85rem;
+        color: #555;
+    }
+    .meta-bar span {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .meta-bar .dot {
+        width: 8px;
+        height: 8px;
+        background: #e63946;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .featured-image {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        display: block;
+        background: #ddd;
+    }
+    .image-caption {
+        text-align: center;
+        font-size: 0.8rem;
+        color: #777;
+        padding: 10px 40px 0;
+        font-style: italic;
+    }
+    .content-grid {
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .lead-paragraph {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #2b2d42;
+        border-left: 4px solid #e63946;
+        padding-left: 22px;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
     h2 {
-      font-size: 1.25em;
+        font-size: 1.7rem;
+        color: #0d1b2a;
+        margin: 40px 0 18px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #e63946;
+        display: inline-block;
     }
-  }
+    h3 {
+        font-size: 1.25rem;
+        color: #1b263b;
+        margin: 28px 0 12px;
+    }
+    p {
+        margin-bottom: 16px;
+        text-align: justify;
+        color: #333;
+    }
+    .inline-image {
+        width: 100%;
+        max-height: 380px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin: 20px 0;
+        display: block;
+    }
+    .debate-card {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 28px;
+        margin: 25px 0;
+        border-left: 5px solid #2a9d8f;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .debate-card h3 {
+        margin-top: 0;
+        color: #2a9d8f;
+        font-size: 1.3rem;
+    }
+    .dupla-list {
+        list-style: none;
+        padding: 0;
+    }
+    .dupla-list li {
+        padding: 10px 0;
+        border-bottom: 1px dashed #ddd;
+        font-size: 0.95rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .dupla-list li:last-child {
+        border-bottom: none;
+    }
+    .dupla-list .vs-badge {
+        background: #e63946;
+        color: #fff;
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding: 2px 10px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        flex-shrink: 0;
+    }
+    .highlight-box {
+        background: linear-gradient(135deg, #0d1b2a, #1b263b);
+        color: #e0e0e0;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 35px 0;
+    }
+    .highlight-box h3 {
+        color: #f4a261;
+        margin-top: 0;
+    }
+    .highlight-box p {
+        color: #c9d6df;
+        margin-bottom: 10px;
+    }
+    .highlight-box strong {
+        color: #ffffff;
+    }
+    .candidate-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 0.9rem;
+        overflow-x: auto;
+        display: block;
+    }
+    .candidate-table table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .candidate-table th {
+        background: #0d1b2a;
+        color: #ffffff;
+        padding: 12px 15px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .candidate-table td {
+        padding: 10px 15px;
+        border-bottom: 1px solid #e8e8e8;
+    }
+    .candidate-table tr:nth-child(even) {
+        background: #f8f9fa;
+    }
+    .candidate-table tr:hover {
+        background: #eef2f7;
+    }
+    .pull-quote {
+        font-size: 1.4rem;
+        font-style: italic;
+        color: #1b263b;
+        text-align: center;
+        padding: 30px 40px;
+        margin: 30px 0;
+        border-top: 2px solid #e63946;
+        border-bottom: 2px solid #e63946;
+        line-height: 1.5;
+    }
+    .footer-note {
+        background: #0d1b2a;
+        color: #8899a6;
+        text-align: center;
+        padding: 30px 40px;
+        font-size: 0.8rem;
+    }
+    @media (max-width: 768px) {
+        .hero-header {
+            padding: 40px 20px 35px;
+        }
+        .hero-header h1 {
+            font-size: 1.7rem;
+        }
+        .hero-header .subtitle {
+            font-size: 0.95rem;
+        }
+        .content-grid {
+            padding: 20px;
+        }
+        .featured-image {
+            height: 240px;
+        }
+        .lead-paragraph {
+            font-size: 1.05rem;
+            padding-left: 15px;
+        }
+        h2 {
+            font-size: 1.35rem;
+        }
+        .meta-bar {
+            gap: 15px;
+            padding: 14px 20px;
+            font-size: 0.78rem;
+        }
+        .pull-quote {
+            font-size: 1.1rem;
+            padding: 20px 15px;
+        }
+        .debate-card {
+            padding: 18px;
+        }
+        .highlight-box {
+            padding: 20px;
+        }
+    }
+    @media (max-width: 480px) {
+        .hero-header h1 {
+            font-size: 1.4rem;
+        }
+        .inline-image {
+            max-height: 220px;
+        }
+    }
 </style>
 </head>
 <body>
-<div class="container">
+<div class="magazine-wrapper">
 
-  <div class="masthead">
-    <span class="brand">Elecciones Regionales y Municipales 2026</span>
-  </div>
+    <header class="hero-header">
+        <span class="category">Elecciones Regionales y Municipales 2026</span>
+        <h1>Debate para la alcaldía de Lima: así serán los cruces, duplas y el orden de participación de los candidatos</h1>
+        <p class="subtitle">El JNE definió por sorteo la estructura de los encuentros que se realizarán el 21 y 22 de septiembre. Conoce los bloques, los enfrentamientos y todos los detalles del evento que marcará la recta final hacia las urnas.</p>
+    </header>
 
-  <h1>Debate para la alcaldía de Lima: así serán los cruces y orden de participación de los candidatos</h1>
+    <div class="meta-bar">
+        <span><span class="dot"></span> Redacción Política</span>
+        <span>19 de septiembre de 2026</span>
+        <span>Actualizado: 09:30 a.m.</span>
+        <span>Lectura: 6 minutos</span>
+    </div>
 
-  <p class="subhead">El Jurado Nacional de Elecciones sorteó la distribución de los 26 partidos en dos jornadas y definió las duplas y ternas que protagonizarán los bloques de interacción, preguntas ciudadanas y mensajes finales.</p>
+    <img src="imagen1.jpg" alt="Candidatos a la alcaldía de Lima durante la presentación del debate electoral" class="featured-image">
+    <p class="image-caption">Los representantes de las organizaciones políticas participaron en el sorteo realizado por el JNE para definir el orden de intervención. Foto: JNE</p>
 
-  <div class="byline">
-    <strong>Redacción Política</strong> &nbsp;|&nbsp; 19 de septiembre de 2026 &nbsp;|&nbsp; Actualizado 10:30 a.m.
-  </div>
+    <div class="content-grid">
 
-  <img src="imagen1.jpg" alt="Auditorio Mario Vargas Llosa de la Biblioteca Nacional del Perú, sede del debate" class="hero-img">
-  <p class="caption">El debate se realizará en el auditorio Mario Vargas Llosa de la Biblioteca Nacional del Perú, en San Borja. Foto: JNE.</p>
+        <p class="lead-paragraph">A menos de dos semanas de las Elecciones Regionales y Municipales 2026, el Jurado Nacional de Elecciones (JNE) culminó la organización del debate de candidatos a la alcaldía de Lima Metropolitana, uno de los eventos más esperados del calendario electoral. Mediante un sorteo público realizado ante representantes de las organizaciones políticas, el organismo electoral definió el orden de intervención, las duplas y las ternas que protagonizarán los cruces de propuestas los días lunes 21 y martes 22 de septiembre.</p>
 
-  <p class="lead">El Jurado Nacional de Elecciones (JNE) definió mediante sorteo el orden de intervención de los 26 candidatos que disputarán la Municipalidad Metropolitana de Lima en las Elecciones Regionales y Municipales del próximo 4 de octubre. Los debates se llevarán a cabo el lunes 21 y martes 22 de septiembre en el auditorio Mario Vargas Llosa de la Biblioteca Nacional del Perú, en San Borja, a partir de las 8:00 p.m. </p>
+        <p>El evento se llevará a cabo en el auditorio Mario Vargas Llosa de la Biblioteca Nacional del Perú, en el distrito de San Borja, y comenzará a las 8:00 p.m. en ambas jornadas. En total, 26 candidatos están habilitados para participar en la contienda por el sillón municipal, aunque la organización ha dividido el debate en dos fechas con 13 postulantes cada una para garantizar un desarrollo ordenado y equitativo.</p>
 
-  <p>La organización electoral dividió a los partidos en dos grupos de 13 agrupaciones por jornada. Cada día se desarrollará en cuatro bloques que suman más de diez minutos de exposición por candidato, según informó Carlos Vilela, director nacional de Educación del JNE . El formato combina presentaciones individuales, cruces directos entre postulantes, preguntas formuladas por ciudadanos y un mensaje final de cierre.</p>
+        <h2>¿Cómo estará estructurado el debate?</h2>
 
-  <p>Los representantes de las organizaciones políticas asistieron al sorteo realizado en la sede del JNE, ante notario público y transmitido en directo por el canal JNE Media. En el acto se establecieron no solo los días de participación, sino también las duplas y ternas específicas que se enfrentarán en cada bloque de interacción .</p>
+        <p>Ambas jornadas seguirán una estructura idéntica de cuatro bloques, diseñada para permitir que los candidatos expongan sus propuestas, confronten ideas y respondan a las inquietudes de la ciudadanía. El primer bloque está destinado a la presentación y visión de la ciudad, donde cada candidato dispondrá de un minuto y medio para exponer sus principales lineamientos de gobierno para la capital.</p>
 
-  <div class="divider">• • •</div>
+        <p>El segundo bloque, el más esperado por los electores, es el de interacción entre candidatos. En esta etapa, los postulantes polemizarán organizados en cinco duplas y una terna, con un tiempo de tres minutos por grupo para preguntas, réplicas y contraste de propuestas. Este formato busca generar un debate directo y dinámico entre los aspirantes al sillón municipal.</p>
 
-  <h2>Primera jornada: lunes 21 de septiembre</h2>
+        <img src="imagen2.jpg" alt="Auditorio Mario Vargas Llosa de la Biblioteca Nacional del Perú, sede del debate electoral" class="inline-image">
+        <p class="image-caption">El auditorio Mario Vargas Llosa de la Biblioteca Nacional del Perú será el escenario de los dos días de debate. Foto: Andina</p>
 
-  <p>La jornada de apertura contará con la participación de 13 agrupaciones políticas. Según el sorteo, el orden de intervención en el bloque de presentación y mensaje final será el siguiente:</p>
+        <p>El tercer bloque concentrará las preguntas de la ciudadanía. El JNE recibió un total de 4,921 preguntas a través de la campaña "Pregúntale a tu candidat@", de las cuales se seleccionarán dos para que los candidatos respondan. Este segmento se subdivide en 3A (Pregunta ciudadana) y 3B (denominado "Sin rodeos"), donde los postulantes deberán responder de manera directa y concisa. Finalmente, el cuarto bloque corresponde al mensaje final, con un minuto y medio para que cada candidato ofrezca sus palabras de cierre e invocación democrática al voto.</p>
 
-  <div class="info-box">
-    <h4>Partidos y candidatos del lunes 21</h4>
-    <ul>
-      <li><strong>Partido Cívico Obras</strong> Ricardo Belmont Cassinelli</li>
-      <li><strong>Coalición Tierra Verde</strong> Yehude Simon Munaro</li>
-      <li><strong>Frepap</strong> Segundo Valdez Zavala</li>
-      <li><strong>Partido Morado</strong> Victoria Betzabé La Cruz Garcés</li>
-      <li><strong>Somos Perú</strong> Carlos Bruce Montes de Oca</li>
-      <li><strong>Juntos por el Perú</strong> Oswaldo Hernán Vargas Cuéllar</li>
-      <li><strong>Pueblo Consciente</strong> Luis Alberto Huette Tolentino</li>
-      <li><strong>Batalla Perú</strong> Samir Frank Quispe Caballero</li>
-      <li><strong>Alianza para el Progreso</strong> Elio Fernando Riera Garro</li>
-      <li><strong>Partido Patriótico del Perú</strong> Sandro Caller Gutiérrez</li>
-      <li><strong>Ahora Nación</strong> Susel Ana María Paredes Piqué</li>
-      <li><strong>Partido Demócrata Verde</strong> Flor de María Hurtado Valdez</li>
-      <li><strong>Podemos Perú</strong> Daniel Belizario Urresti Elera</li>
-    </ul>
-  </div>
+        <h2>Debate del lunes 21 de septiembre: duplas y ternas</h2>
 
-  <p>En el bloque 2, denominado "Interacción entre candidatos", los postulantes se agruparán en cinco duplas y una terna para contrastar propuestas con preguntas y réplicas, con tres minutos de intervención por participante . Los cruces quedaron definidos de la siguiente manera:</p>
+        <p>La primera jornada contará con la participación de 13 organizaciones políticas. El sorteo estableció los siguientes cruces para el bloque de interacción entre candidatos:</p>
 
-  <ul class="dupla-list">
-    <li>Partido Patriótico del Perú vs. Podemos Perú</li>
-    <li>Alianza para el Progreso vs. Pueblo Consciente</li>
-    <li>Tierra Verde vs. Somos Perú</li>
-    <li>Partido Morado vs. Obras</li>
-    <li>Frepap vs. Ahora Nación</li>
-    <li class="vs">Juntos por el Perú vs. Partido Demócrata Verde vs. Batalla Perú</li>
-  </ul>
+        <div class="debate-card">
+            <h3>Bloque 2: Interacción entre candidatos</h3>
+            <ul class="dupla-list">
+                <li><span class="vs-badge">Duelo</span> Partido Patriótico del Perú vs. Podemos Perú</li>
+                <li><span class="vs-badge">Duelo</span> Alianza para el Progreso vs. Partido Político Pueblo Consciente</li>
+                <li><span class="vs-badge">Duelo</span> Tierra Verde vs. Somos Perú</li>
+                <li><span class="vs-badge">Duelo</span> Partido Morado vs. Partido Cívico Obras</li>
+                <li><span class="vs-badge">Duelo</span> Frepap vs. Ahora Nación</li>
+                <li><span class="vs-badge">Terna</span> Juntos por el Perú vs. Partido Demócrata Verde vs. Batalla Perú</li>
+            </ul>
+        </div>
 
-  <img src="imagen2.jpg" alt="Sorteo de duplas y ternas en la sede del JNE" class="inline-img">
-  <p class="caption">Representantes de los partidos políticos participaron del sorteo ante notario público en la sede del JNE. Foto: JNE.</p>
+        <p>Para el bloque 3A (Pregunta ciudadana), los cruces quedaron definidos de la siguiente manera: Frepap vs. Podemos Perú; Alianza para el Progreso vs. Partido Patriótico del Perú; Somos Perú vs. Ahora Nación; Obras vs. Juntos por el Perú; Pueblo Consciente vs. Tierra Verde; y la terna Partido Demócrata Verde vs. Batalla Perú vs. Partido Morado.</p>
 
-  <p>El bloque 3A, destinado a la pregunta ciudadana, tendrá una composición distinta. De las 4,921 preguntas recibidas mediante la campaña "Pregúntale a tu candidat@", el JNE seleccionó dos interrogantes que serán respondidas en este segmento . Las duplas y terna para este bloque son:</p>
+        <p>En el bloque 3B ("Sin rodeos"), los enfrentamientos serán: Alianza para el Progreso vs. Partido Morado; Frepap vs. Ahora Nación; Obras vs. Somos Perú; Partido Demócrata Verde vs. Podemos Perú; Partido Patriótico del Perú vs. Tierra Verde; y la terna Pueblo Consciente vs. Batalla Perú vs. Juntos por el Perú.</p>
 
-  <ul class="dupla-list">
-    <li>Frepap vs. Podemos Perú</li>
-    <li>Alianza para el Progreso vs. Partido Patriótico del Perú</li>
-    <li>Somos Perú vs. Ahora Nación</li>
-    <li>Obras vs. Juntos por el Perú</li>
-    <li>Pueblo Consciente vs. Tierra Verde</li>
-    <li class="vs">Partido Demócrata Verde vs. Batalla Perú vs. Partido Morado</li>
-  </ul>
+        <div class="highlight-box">
+            <h3>Los candidatos del lunes 21</h3>
+            <p>En esta jornada participarán: <strong>Ricardo Belmont Cassinelli</strong> (Partido Cívico Obras), <strong>Yehude Simon Munaro</strong> (Tierra Verde), <strong>Victoria La Cruz Garcés</strong> (Partido Morado), <strong>Segundo Valdez Zavala</strong> (Frepap), <strong>Carlos Bruce Montes de Oca</strong> (Somos Perú), <strong>Oswaldo Vargas Cuéllar</strong> (Juntos por el Perú), <strong>Luis Huette Tolentino</strong> (Pueblo Consciente), <strong>Samir Quispe Caballero</strong> (Batalla Perú), <strong>Elio Riera Garro</strong> (APP), <strong>Sandro Caller Gutiérrez</strong> (Partido Patriótico del Perú), <strong>Susel Paredes Piqué</strong> (Ahora Nación), <strong>Flor de María Hurtado Valdez</strong> (Partido Demócrata Verde) y <strong>Daniel Urresti Elera</strong> (Podemos Perú).</p>
+        </div>
 
-  <p>El bloque 3B, denominado "Sin rodeos", presenta una tercera configuración de cruces. En este espacio los candidatos confrontan posiciones de manera más directa. Los emparejamientos son los siguientes:</p>
+        <h2>Debate del martes 22 de septiembre: los cruces de la segunda jornada</h2>
 
-  <ul class="dupla-list">
-    <li>Alianza para el Progreso vs. Partido Morado</li>
-    <li>Frepap vs. Ahora Nación</li>
-    <li>Obras vs. Somos Perú</li>
-    <li>Partido Demócrata Verde vs. Podemos Perú</li>
-    <li>Partido Patriótico del Perú vs. Tierra Verde</li>
-    <li class="vs">Pueblo Consciente vs. Batalla Perú vs. Juntos por el Perú</li>
-  </ul>
+        <p>La segunda fecha del debate reunirá a los 13 candidatos restantes. El sorteo también definió los enfrentamientos para el bloque de interacción, que incluyen algunos de los nombres con mayor intención de voto según las encuestas recientes.</p>
 
-  <p>El mensaje final del lunes 21 seguirá este orden: Partido Patriótico del Perú, Podemos Perú, Frepap, Obras, Alianza para el Progreso, Batalla Perú, Partido Morado, Partido Demócrata Verde, Juntos por el Perú, Tierra Verde, Ahora Nación, Somos Perú y Pueblo Consciente .</p>
+        <div class="debate-card">
+            <h3>Bloque 2: Interacción entre candidatos</h3>
+            <ul class="dupla-list">
+                <li><span class="vs-badge">Duelo</span> Frente de la Esperanza vs. Partido del Buen Gobierno</li>
+                <li><span class="vs-badge">Duelo</span> APRA vs. Visión Perú</li>
+                <li><span class="vs-badge">Duelo</span> Perú Libre vs. Acción Popular</li>
+                <li><span class="vs-badge">Duelo</span> Renovación Popular vs. Avanza País</li>
+                <li><span class="vs-badge">Duelo</span> Venceremos vs. Progresemos</li>
+                <li><span class="vs-badge">Terna</span> Fuerza Ciudadana vs. Partido Popular Cristiano vs. Fuerza Popular</li>
+            </ul>
+        </div>
 
-  <div class="divider">• • •</div>
+        <p>El bloque 3A para el martes 22 incluirá los siguientes cruces: Frente de la Esperanza vs. Progresemos; APRA vs. Partido del Buen Gobierno; Perú Libre vs. Visión Perú; Renovación Popular vs. Acción Popular; Venceremos vs. Avanza País; y la terna Fuerza Ciudadana vs. PPC vs. Fuerza Popular. En el bloque 3B ("Sin rodeos"), los enfrentamientos serán: Frente de la Esperanza vs. Fuerza Popular; APRA vs. Partido Popular Cristiano; Perú Libre vs. Avanza País; Renovación Popular vs. Acción Popular; Venceremos vs. Visión Perú; y la terna Fuerza Ciudadana vs. Progresemos vs. Partido del Buen Gobierno.</p>
 
-  <h2>Segunda jornada: martes 22 de septiembre</h2>
+        <h2>La controversia sobre la participación de Rafael López Aliaga</h2>
 
-  <p>La segunda fecha reunirá a las 13 agrupaciones restantes. El bloque de presentación y el mensaje final seguirán un orden específico establecido por sorteo. Los partidos que participarán son:</p>
+        <p>A pesar de que el JNE ya definió todos los detalles logísticos del debate, persiste una controversia significativa en torno a la participación de Rafael López Aliaga, actual alcalde de Lima y candidato a primer regidor de la lista de Renovación Popular. La situación se originó tras la renuncia de Luis Rubio como candidato a la alcaldía por dicho partido, lo que dejó a López Aliaga como el principal referente de la agrupación para el proceso electoral.</p>
 
-  <div class="info-box">
-    <h4>Partidos y candidatos del martes 22</h4>
-    <ul>
-      <li><strong>Frente de la Esperanza</strong> Representante designado</li>
-      <li><strong>APRA</strong> Representante designado</li>
-      <li><strong>Perú Libre</strong> Representante designado</li>
-      <li><strong>Renovación Popular</strong> Representante designado</li>
-      <li><strong>Venceremos</strong> Juan Carlos Alvarado Mestanza</li>
-      <li><strong>Fuerza Ciudadana</strong> Rubén Daniel Representante</li>
-      <li><strong>Progresemos</strong> Representante designado</li>
-      <li><strong>Partido Popular Cristiano</strong> Edgardo Renán De Pomar Vizcarra</li>
-      <li><strong>Avanza País</strong> Francis Allison Oyague</li>
-      <li><strong>Acción Popular</strong> Representante designado</li>
-      <li><strong>Visión Perú</strong> Representante designado</li>
-      <li><strong>Fuerza Popular</strong> Samuel Marcos Daza Taype</li>
-      <li><strong>Partido del Buen Gobierno</strong> Carlos Gallardo Neyra</li>
-    </ul>
-  </div>
+        <p>López Aliaga ha manifestado públicamente su intención de participar en el debate. "Yo mandé una carta pidiendo ir, parece que me han hecho caso. Claro, me encanta el debate", declaró a la prensa. El exalcalde sostiene que, en caso de ganar, la Ley Orgánica de Municipalidades establece que asume el teniente alcalde, por lo que su participación como primer regidor tendría plena validez.</p>
 
-  <p>En el bloque 2 de interacción, los cruces del martes 22 quedaron configurados de la siguiente forma:</p>
+        <p>Sin embargo, el JNE no ha fijado una postura clara al respecto. El organismo electoral ha señalado que las agrupaciones políticas están de acuerdo con que se invite a los candidatos a alcalde o, en su defecto, a los candidatos a regidores que sean habilitados para asumir dicho cargo. Esta ambigüedad ha generado críticas de otros candidatos, como Carlos Bruce (Somos Perú), quien calificó la situación como "una burla" y cuestionó que el JNE deje a criterio de cada partido político decidir a quién enviar al debate.</p>
 
-  <ul class="dupla-list">
-    <li>APRA vs. Avanza País</li>
-    <li>Progresemos vs. Acción Popular</li>
-    <li>Renovación Popular vs. Fuerza Popular</li>
-    <li>Partido Popular Cristiano vs. Venceremos</li>
-    <li>Partido del Buen Gobierno vs. Visión Perú</li>
-    <li class="vs">Fuerza Ciudadana vs. Frente de la Esperanza vs. Perú Libre</li>
-  </ul>
+        <div class="pull-quote">"La gente quiere ver debatiendo a quien está postulando y al que está pidiendo el voto. No puede mandar a un sustituto" — Carlos Bruce, candidato de Somos Perú</div>
 
-  <p>Para el bloque 3A de pregunta ciudadana, las duplas y terna son:</p>
+        <p>Bruce también subrayó que la Constitución establece que no hay reelección de alcaldes, y que "es clarísima y no deja espacio a duda de quiénes no pueden recibir las credenciales". La controversia añade un elemento de incertidumbre a un debate que ya de por sí concentra la atención mediática por la cantidad de candidatos y la relevancia del cargo en disputa.</p>
 
-  <ul class="dupla-list">
-    <li>Frente de la Esperanza vs. Fuerza Ciudadana</li>
-    <li>APRA vs. Progresemos</li>
-    <li>Fuerza Popular vs. Venceremos</li>
-    <li>Perú Libre vs. Acción Popular</li>
-    <li>Partido Popular Cristiano vs. Renovación Popular</li>
-    <li class="vs">Visión Perú vs. Partido del Buen Gobierno vs. Avanza País</li>
-  </ul>
+        <h2>Los 26 candidatos en carrera</h2>
 
-  <p>El bloque 3B "Sin rodeos" del martes 22 presenta los siguientes enfrentamientos:</p>
+        <p>Las Elecciones Regionales y Municipales 2026 se realizarán el domingo 4 de octubre, y más de 26 millones de electores están llamados a las urnas para elegir a un total de 13,148 autoridades en los ámbitos regional y municipal. En el caso de Lima Metropolitana, 26 organizaciones políticas participan en la contienda, aunque solo 24 mantienen formalmente un candidato al cargo de alcalde, debido a las renuncias de Luis Rubio (Renovación Popular) y Rubén Ramírez (Perú Libre).</p>
 
-  <ul class="dupla-list">
-    <li>Renovación Popular vs. Partido Popular Cristiano</li>
-    <li>Visión Perú vs. Perú Libre</li>
-    <li>Fuerza Ciudadana vs. Progresemos</li>
-    <li>Acción Popular vs. APRA</li>
-    <li>Partido del Buen Gobierno vs. Fuerza Popular</li>
-    <li class="vs">Venceremos vs. Frente de la Esperanza vs. Avanza País</li>
-  </ul>
+        <div class="candidate-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Organización Política</th>
+                        <th>Candidato a Alcalde</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Acción Popular</td><td>Carlos Alberto Tejada Noriega</td></tr>
+                    <tr><td>Ahora Nación</td><td>Susel Ana María Paredes Piqué</td></tr>
+                    <tr><td>Alianza Electoral Venceremos</td><td>Juan Carlos Alvarado Mestanza</td></tr>
+                    <tr><td>Alianza para el Progreso</td><td>Elio Fernando Riera Garro</td></tr>
+                    <tr><td>Avanza País</td><td>Francis James Allison Oyague</td></tr>
+                    <tr><td>Batalla Perú</td><td>Samir Frank Quispe Caballero</td></tr>
+                    <tr><td>Coalición Tierra Verde</td><td>Yehude Simon Munaro</td></tr>
+                    <tr><td>Frepap</td><td>Segundo Valdez Zavala</td></tr>
+                    <tr><td>Fuerza Ciudadana</td><td>Rubén Daniel Bonilla Espinoza</td></tr>
+                    <tr><td>Fuerza Popular</td><td>Samuel Marcos Daza Taype</td></tr>
+                    <tr><td>Juntos por el Perú</td><td>Oswaldo Hernán Vargas Cuéllar</td></tr>
+                    <tr><td>Partido Aprista Peruano</td><td>Mónica Yadira Yaya Luyo</td></tr>
+                    <tr><td>Partido Cívico Obras</td><td>Ricardo Pablo Belmont Cassinelli</td></tr>
+                    <tr><td>Partido del Buen Gobierno</td><td>Carlos Francisco Gallardo Neyra</td></tr>
+                    <tr><td>Partido Demócrata Verde</td><td>Flor de María Hurtado Valdez</td></tr>
+                    <tr><td>Somos Perú</td><td>Carlos Ricardo Bruce Montes de Oca</td></tr>
+                    <tr><td>Frente de la Esperanza 2021</td><td>Elizabeth León Chinchay</td></tr>
+                    <tr><td>Partido Morado</td><td>Victoria Betzabé La Cruz Garcés</td></tr>
+                    <tr><td>Partido Patriótico del Perú</td><td>Sandro Caller Gutiérrez</td></tr>
+                    <tr><td>Perú Libre</td><td>Yuri César Castro Romero (primer regidor)</td></tr>
+                    <tr><td>Pueblo Consciente</td><td>Luis Alberto Huette Tolentino</td></tr>
+                    <tr><td>Partido Popular Cristiano</td><td>Edgardo Renán De Pomar Vizcarra</td></tr>
+                    <tr><td>Podemos Perú</td><td>Daniel Belizario Urresti Elera</td></tr>
+                    <tr><td>Progresemos</td><td>Luis Miguel Llanos Carrillo</td></tr>
+                    <tr><td>Renovación Popular</td><td>Rafael López Aliaga (primer regidor)</td></tr>
+                    <tr><td>Visión Perú</td><td>Santiago Rosendo Abarca León</td></tr>
+                </tbody>
+            </table>
+        </div>
 
-  <p>El mensaje final del martes 22 seguirá este orden: Avanza País, Venceremos, Fuerza Popular, Progresemos, Partido del Buen Gobierno, Partido Popular Cristiano, Acción Popular, Frente de la Esperanza, Perú Libre, APRA, Fuerza Ciudadana, Visión Perú y Renovación Popular .</p>
+        <h2>Los moderadores y las reglas del debate</h2>
 
-  <img src="imagen3.jpg" alt="Candidatos y representantes durante la campaña electoral" class="inline-img">
-  <p class="caption">Los 26 candidatos a la alcaldía de Lima participarán en dos jornadas de debate organizadas por el JNE. Foto: Difusión.</p>
+        <p>El JNE ha designado a periodistas de reconocida trayectoria para moderar ambas jornadas del debate. La conducción estará a cargo de profesionales que garantizarán el cumplimiento de los tiempos y las reglas establecidas, asegurando un desarrollo ordenado y equitativo para todos los participantes. La organización del evento está a cargo de la Dirección Nacional de Educación, Participación y Formación Cívica Electoral (DNE) del JNE.</p>
 
-  <div class="divider">• • •</div>
+        <p>Las reglas del debate establecen que los candidatos deberán ceñirse estrictamente a los tiempos asignados en cada bloque. El incumplimiento de estas normas podría derivar en llamados de atención por parte de los moderadores. Además, se ha dispuesto que las preguntas de la ciudadanía sean formuladas de manera directa y que los candidatos respondan de forma concreta, especialmente en el bloque "Sin rodeos", donde deberán responder sí o no antes de fundamentar su posición.</p>
 
-  <h2>Los cuatro bloques del debate</h2>
+        <img src="imagen3.jpg" alt="Sorteo de duplas y orden de participación en el JNE para el debate de la alcaldía de Lima" class="inline-image">
+        <p class="image-caption">El sorteo se realizó ante representantes de las organizaciones políticas en la sede del JNE. Foto: JNE</p>
 
-  <p>El formato aprobado por el JNE establece una estructura uniforme para ambas jornadas. El bloque 1 está dedicado a la presentación de los candidatos y la exposición de su visión para Lima, con un minuto y medio por participante. El bloque 2 es el de interacción entre candidatos, donde se contrastan propuestas mediante preguntas y réplicas, con tres minutos de intervención .</p>
+        <h2>Un debate clave para la recta final</h2>
 
-  <p>El bloque 3 se subdivide en dos segmentos. El 3A corresponde a la pregunta ciudadana, alimentada por las casi 5,000 interrogantes que el JNE recogió a nivel nacional a través de su campaña de participación. El 3B, llamado "Sin rodeos", permite un intercambio más directo entre los postulantes. Finalmente, el bloque 4 otorga un minuto y medio a cada candidato para su mensaje de cierre .</p>
+        <p>El debate de candidatos a la alcaldía de Lima Metropolitana representa uno de los momentos más importantes de la campaña electoral. Con 26 organizaciones políticas en contienda, el evento ofrece a los electores una oportunidad única para conocer de cerca las propuestas, el temperamento y la capacidad de confrontación de los postulantes. La estructura de duplas y ternas, diseñada por el JNE, busca generar un intercambio más dinámico y sustantivo que el formato tradicional de presentaciones individuales.</p>
 
-  <div class="info-box">
-    <h4>Ficha técnica del debate</h4>
-    <ul>
-      <li><strong>Fechas</strong> Lunes 21 y martes 22 de septiembre</li>
-      <li><strong>Hora</strong> 8:00 p.m.</li>
-      <li><strong>Lugar</strong> Auditorio Mario Vargas Llosa, Biblioteca Nacional del Perú, San Borja</li>
-      <li><strong>Moderadores</strong> Alicia Retto y Omar Mariluz Laguna</li>
-      <li><strong>Transmisión</strong> Televisión abierta, streaming por Voto Informado y redes del JNE</li>
-      <li><strong>Participantes</strong> 26 candidatos divididos en dos grupos de 13</li>
-    </ul>
-  </div>
+        <p>Para los candidatos, el debate constituye una plataforma privilegiada para posicionar sus principales propuestas en temas clave como seguridad ciudadana, transporte público, limpieza y gestión ambiental, ejes que concentran las principales preocupaciones de los limeños. En una contienda tan fragmentada, donde ningún candidato parece tener asegurada la victoria, los cruces de ideas y la capacidad de respuesta ante las preguntas de la ciudadanía podrían inclinar la balanza en la decisión final de los electores.</p>
 
-  <p>Las organizaciones políticas también acordaron que los moderadores de ambas jornadas sean los periodistas Alicia Retto y Omar Mariluz Laguna, según lo consignado en el acta del sorteo . La transmisión será en vivo por televisión abierta en cada región, así como por streaming mediante la plataforma Voto Informado y las redes sociales del JNE .</p>
+        <p>Con la controversia sobre la participación de Rafael López Aliaga aún sin resolverse, el debate del 21 y 22 de septiembre se perfila como un evento decisivo que marcará el tono de la campaña en su etapa final. Los limeños esperan respuestas claras y propuestas concretas de quienes aspiran a dirigir el destino de la capital durante los próximos cuatro años.</p>
 
-  <h2>Un debate con contexto plebiscitario</h2>
+    </div>
 
-  <p>El analista político Juan de la Puente advirtió que esta elección municipal trasciende la simple elección de un gestor local. "Es más bien una especie de plebiscito de aprobación o rechazo hacia un modelo de gestión de la ciudad, un modelo ideológico, conservador y, además, sui géneris, en el sentido de que prescinde de las formas, hiperpersonalista, centrado en la figura y en los caprichos personales del alcalde de Lima", señaló en entrevista con La República .</p>
-
-  <p>De la Puente sostiene que Lima concentra un tercio del electorado nacional, lo que convierte la contienda municipal en un termómetro político de alcance nacional. La pregunta central, según su análisis, es si el modelo de gestión personalista y conservador debe continuar o no . En ese sentido, el debate del 21 y 22 de septiembre se convierte en la principal vitrina para que los 26 candidatos confronten sus propuestas ante un electorado que, según las proyecciones, aún no define su voto.</p>
-
-  <p>El proceso electoral culminará el 4 de octubre, cuando los peruanos acudan a las urnas para elegir a sus autoridades regionales y municipales. El debate de Lima Metropolitana será el cierre del ciclo de debates electorales que el JNE inició el 8 de septiembre en Junín y que recorrió las distintas regiones del país .</p>
-
-  <div class="footer-note">
-    <p><strong>Fuentes:</strong> Jurado Nacional de Elecciones (JNE), La República, Andina, TV Perú, Latina Noticias y RPP. Datos verificados al 19 de septiembre de 2026.</p>
-    <p>Este artículo fue elaborado con información oficial del JNE y reportes periodísticos de medios peruanos de circulación nacional.</p>
-  </div>
+    <footer class="footer-note">
+        <p>© 2026 Redacción Política. Todos los derechos reservados.</p>
+        <p>Fuentes: Jurado Nacional de Elecciones (JNE), Andina, El Peruano, TV Perú, RPP, El Comercio.</p>
+    </footer>
 
 </div>
 

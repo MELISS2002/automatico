@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Destituyen al juez que envió a prisión a Keiko Fujimori, Toledo y Humala</title>
+<style>
+  :root {
+    --tinta: #1a1a1a;
+    --papel: #fdfcf9;
+    --rojo: #c0392b;
+    --rojo-oscuro: #8e2a1f;
+    --gris: #6b6b6b;
+    --gris-claro: #e8e5df;
+    --azul: #1c3d5a;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: var(--papel);
+    color: var(--tinta);
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.7;
+  }
+  .cabecera {
+    border-bottom: 4px double var(--tinta);
+    padding: 18px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background: var(--papel);
+    z-index: 100;
+  }
+  .cabecera h1 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .cabecera h1 span {
+    color: var(--rojo);
+  }
+  .contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .titular {
+    margin: 40px auto 10px;
+    max-width: 900px;
+    padding: 0 20px;
+  }
+  .etiqueta {
+    display: inline-block;
+    background: var(--rojo);
+    color: #fff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    margin-bottom: 18px;
+  }
+  .titular h2 {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .titular h2 em {
+    font-style: normal;
+    color: var(--rojo-oscuro);
+  }
+  .extracto {
+    font-size: 1.2rem;
+    color: var(--gris);
+    line-height: 1.6;
+    max-width: 780px;
+    margin: 0 auto 20px;
+    padding: 0 20px;
+    font-style: italic;
+  }
+  .firma {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 25px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.8rem;
+    color: var(--gris);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--gris-claro);
+  }
+  figure {
+    margin: 30px auto;
+    max-width: 1000px;
+    padding: 0 20px;
+  }
+  figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+    filter: grayscale(15%);
+  }
+  figcaption {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.78rem;
+    color: var(--gris);
+    padding: 10px 0 0;
+    line-height: 1.5;
+    border-bottom: 1px solid var(--gris-claro);
+    padding-bottom: 10px;
+  }
+  .cuerpo {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+    font-size: 1.08rem;
+  }
+  .cuerpo p {
+    margin-bottom: 22px;
+    text-align: justify;
+    hyphens: auto;
+  }
+  .cuerpo p:first-of-type::first-letter {
+    font-size: 4.2rem;
+    float: left;
+    line-height: 0.85;
+    padding: 6px 12px 0 0;
+    color: var(--rojo);
+    font-weight: 700;
+  }
+  .cuerpo h3 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.35rem;
+    margin: 45px 0 18px;
+    padding-left: 14px;
+    border-left: 5px solid var(--rojo);
+    line-height: 1.3;
+  }
+  .cita {
+    margin: 35px 0;
+    padding: 25px 30px;
+    background: var(--gris-claro);
+    border-left: 6px solid var(--rojo);
+    font-size: 1.15rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: #2c2c2c;
+  }
+  .cita::before {
+    content: "\201C";
+    font-size: 3.5rem;
+    color: var(--rojo);
+    line-height: 0;
+    vertical-align: -0.4em;
+    margin-right: 6px;
+  }
+  .datos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+    margin: 35px 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  .dato {
+    background: var(--azul);
+    color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+  }
+  .dato .numero {
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .dato .texto {
+    font-size: 0.78rem;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    opacity: 0.9;
+  }
+  .destacado {
+    background: #fff3f0;
+    border: 1px solid #e0b4ad;
+    padding: 22px 26px;
+    margin: 35px 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .destacado strong {
+    color: var(--rojo-oscuro);
+  }
+  footer {
+    border-top: 4px double var(--tinta);
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.75rem;
+    color: var(--gris);
+    letter-spacing: 1px;
+  }
+  @media (max-width: 600px) {
+    .cuerpo p:first-of-type::first-letter {
+      font-size: 3rem;
+    }
+    .cita {
+      padding: 18px 20px;
+      font-size: 1rem;
+    }
+    .datos {
+      grid-template-columns: 1fr;
+    }
+    .titular h2 {
+      font-size: 1.6rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="cabecera">
+  <h1>El <span>Perú</span> Judicial</h1>
+</header>
+
+<div class="titular">
+  <span class="etiqueta">Justicia</span>
+  <h2>Destituyen al juez <em>Richard Concepción Carhuancho</em>, el magistrado que envió a prisión a Keiko Fujimori, Toledo y Humala</h2>
+</div>
+
+<p class="extracto">La Junta Nacional de Justicia cesó al juez que dictó prisión preventiva contra la presidenta Keiko Fujimori y los expresidentes Alejandro Toledo y Ollanta Humala. El magistrado calificó la decisión de "ilegal" y anunció que la impugnará.</p>
+
+<div class="firma">Redacción judicial · Lima, 19 de septiembre de 2026</div>
+
+<figure>
+  <img src="imagen1.jpg" alt="El juez Richard Concepción Carhuancho durante una audiencia judicial en Lima">
+  <figcaption>Richard Concepción Carhuancho, exjuez del Primer Juzgado de Investigación Preparatoria de la Corte Superior Nacional de Justicia Penal Especializada.</figcaption>
+</figure>
+
+<div class="cuerpo">
+
+<p>La Junta Nacional de Justicia (JNJ) de Perú destituyó este viernes al juez Richard Concepción Carhuancho, el magistrado que estuvo a cargo de tutelar las investigaciones del caso Odebrecht y que ordenó la prisión preventiva de la presidenta Keiko Fujimori y de los expresidentes Alejandro Toledo (2001-2006) y Ollanta Humala (2011-2016), entre otras figuras políticas de primer orden. La decisión se adoptó por mayoría en el marco del Procedimiento Disciplinario N.° 027-2026-JNJ, con cuatro votos a favor y uno en contra del consejero Jaime Pedro de la Puente Parodi.</p>
+
+<p>El máximo órgano de la judicatura peruana fundamentó la destitución en una omisión funcional acreditada: el retraso injustificado en la notificación de una resolución de prisión preventiva y en la concesión y elevación del recurso de apelación correspondiente, en perjuicio del abogado Mateo Castañeda Segovia, exabogado de la presidenta Dina Boluarte, en el marco del caso denominado Los Waykis en la Sombra.</p>
+
+<p>Según el informe de instrucción y la ponencia presentada por la presidenta de la JNJ, María Teresa Cabrera Vega, luego de emitirse la decisión de prisión preventiva el 22 de noviembre de 2024, la transcripción del acta fue notificada recién el 4 de diciembre de 2024, es decir, doce días después. Este retraso contravino el numeral 1 del artículo 127 del Código Procesal Penal, que establece que las resoluciones deben notificarse dentro de las veinticuatro horas de haber sido dictadas, lo que configura un "retraso judicial injustificado".</p>
+
+<div class="datos">
+  <div class="dato">
+    <span class="numero">12</span>
+    <span class="texto">Días de retraso en la notificación de la prisión preventiva</span>
+  </div>
+  <div class="dato">
+    <span class="numero">4-1</span>
+    <span class="texto">Votos a favor de la destitución en el Pleno de la JNJ</span>
+  </div>
+  <div class="dato">
+    <span class="numero">24h</span>
+    <span class="texto">Plazo legal incumplido para elevar la apelación al órgano superior</span>
+  </div>
+</div>
+
+<p>Un segundo retraso se relaciona con los recursos de apelación, que fueron concedidos y elevados al órgano superior recién el 16 de diciembre de 2024, también doce días después, a pesar de que el artículo 278 del Código Procesal Penal establece que, al tratarse de prisión preventiva, el juez de investigación preparatoria debe elevar los actuados dentro de las veinticuatro horas bajo responsabilidad.</p>
+
+<h3>La sentencia del Tribunal Constitucional que originó el proceso</h3>
+
+<p>La actuación disciplinaria se inició de oficio luego de que el Tribunal Constitucional remitiera a la JNJ la Sentencia 21/2026, que declaró fundada una demanda de habeas corpus por vulneración de los derechos a la pluralidad de instancia y de defensa de Mateo Castañeda Segovia. El alto tribunal concluyó que la demora afectó los derechos fundamentales del justiciable, y posteriormente la Quinta Sala Penal de Apelaciones Nacional revocó la prisión preventiva y dispuso su libertad.</p>
+
+<figure>
+  <img src="imagen2.jpg" alt="Vista exterior de la sede de la Junta Nacional de Justicia en Lima">
+  <figcaption>El Pleno de la Junta Nacional de Justicia adoptó la decisión por mayoría, con la ponencia de su presidenta, María Teresa Cabrera Vega.</figcaption>
+</figure>
+
+<p>La ponencia rechazó los argumentos de la defensa del magistrado sobre la alta carga procesal en los juzgados de investigación preparatoria. "Como juez tenía un deber propio de diligencia y vigilancia que no podía delegar", sostuvo la presidenta de la JNJ durante la sesión del Pleno. El colegiado también desestimó las explicaciones vinculadas con la complejidad del proceso y la intervención del especialista de audiencia en la elaboración de la transcripción, al considerar que no justificaban suficientemente el tiempo transcurrido.</p>
+
+<p>El Pleno determinó que la conducta acreditada constituye la falta muy grave prevista en el numeral 12 del artículo 48 de la Ley N.° 29277, Ley de la Carrera Judicial, referida a actos u omisiones que, sin constituir delito, comprometen gravemente los deberes del cargo al vulnerarse los deberes funcionales establecidos en los numerales 1, 6 y 18 del artículo 34 de la misma norma.</p>
+
+<h3>Una trayectoria marcada por las prisiones preventivas de alto perfil</h3>
+
+<p>Concepción Carhuancho, uno de los magistrados más conocidos del país, estuvo a cargo desde 2015 del Primer Juzgado de Investigación Preparatoria y en los últimos años recibió fuertes críticas de los procesados que pasaron por sus manos. A petición de la Fiscalía, ordenó en 2017 el envío a prisión preventiva de los expresidentes Toledo y Humala. Toledo, extraditado desde Estados Unidos en 2022, fue posteriormente condenado por recibir sobornos de la constructora brasileña Odebrecht. Humala pasó diez meses en prisión preventiva, al igual que su esposa Nadine Heredia, mientras su partido era incluido en la investigación y sus cuentas bancarias congeladas.</p>
+
+<p>El caso contra Humala por supuesto lavado de dinero en la financiación irregular de sus campañas electorales derivó en una condena de 15 años de cárcel que recientemente fue anulada por el Tribunal Constitucional, al determinar que la acusación de la Fiscalía carecía de sustento porque, en el momento de los hechos, no era delito ocultar donaciones en las cuentas del partido político.</p>
+
+<p>Algo similar ocurrió con Keiko Fujimori, a quien Concepción Carhuancho ordenó en 2018 detener y luego enviar por un periodo de tres años a prisión preventiva por un caso de similar índole al de Humala. La actual mandataria estuvo en prisión preventiva en dos periodos distintos que sumaron cerca de año y medio antes de salir libre y verse beneficiada por el Tribunal Constitucional.</p>
+
+<div class="destacado">
+  <strong>Antecedentes de suspensión.</strong> Antes de su destitución, Concepción Carhuancho ya cumplía una suspensión de seis meses impuesta por la JNJ por tres faltas: opinión anticipada (por mostrar una imagen de Nicanor Boluarte en una conferencia académica), actividad docente no permitida (dictar clases en institutos privados) y afectación a la imagen institucional (por cantar rock en un evento cultural). El magistrado calificó entonces esa suspensión como un "castigo político".
+</div>
+
+<figure>
+  <img src="imagen3.jpg" alt="Audiencia judicial en la Corte Superior Nacional de Justicia Penal Especializada">
+  <figcaption>Concepción Carhuancho aseguró que la decisión de la JNJ vulnera el principio de ne bis in idem, pues ya había sido investigado por el mismo hecho en la Autoridad Nacional de Control del Poder Judicial.</figcaption>
+</figure>
+
+<h3>La defensa del magistrado: "Voy a luchar hasta el último recurso"</h3>
+
+<p>Tras conocer la decisión, Concepción Carhuancho criticó duramente a la JNJ en declaraciones a RPP. "Yo considero que esa resolución de destitución que se me ha impuesto es ilegal porque se ha afectado el debido proceso, concretamente el ne bis in idem. Por ese mismo hecho, yo ya he sido investigado por la Autoridad Nacional de Control del Poder Judicial. Incluso en dos instancias rechazó preliminarmente la queja propuesta por el abogado de Castañeda Segovia en mi contra, pero a pesar de haber adquirido la calidad de cosa decidida, la Junta Nacional de Justicia ha reabierto ese caso y me ha impuesto la sanción de destitución", indicó el magistrado destituido.</p>
+
+<div class="cita">
+  Voy a luchar en defensa de mis derechos hasta el último recurso, por cuanto la considero ilegal.
+</div>
+
+<p>El magistrado explicó que el ne bis in idem es una regla legal que significa "no dos veces por la misma cosa" y prohíbe que una persona sea juzgada, investigada o castigada dos veces por un mismo hecho. Según su versión, la JNJ estaría incurriendo en esa vulneración al reabrir un caso que ya había sido resuelto en su favor en dos instancias administrativas. Concepción Carhuancho anunció que evalúa acudir al Poder Judicial para impugnar la sentencia de destitución.</p>
+
+<p>El caso ha generado reacciones encontradas en el ámbito político y judicial peruano. Mientras algunos sectores celebraron la decisión como un acto de justicia y un mensaje contra la impunidad procesal, otros la interpretaron como una represalia vinculada al contexto político, en un momento en que Keiko Fujimori ocupa la jefatura del Estado tras tres intentos fallidos. La excongresista Indira Huilca cuestionó la suspensión previa del magistrado y atribuyó la medida a una "pura venganza" de la lideresa de Fuerza Popular, afirmando que "la mafia aprovecha el proceso electoral para seguir operando".</p>
+
+<h3>Una decisión con efectos sobre el sistema de justicia</h3>
+
+<p>La destitución de Concepción Carhuancho marca un hito en la historia judicial reciente del Perú. Se trata del primer juez que envió a prisión preventiva a una candidata presidencial que luego llegó al poder, y su salida del sistema anticorrupción ocurre en un momento de alta tensión institucional. La JNJ, organismo constitucional autónomo encargado de la selección, ratificación y sanción de jueces y fiscales, ha quedado en el centro del debate sobre la independencia judicial en el país.</p>
+
+<p>El abogado Mateo Castañeda, cuyo caso de prisión preventiva fue el detonante del proceso disciplinario, fue liberado después de que la Quinta Sala Penal de Apelaciones Nacional revocara la medida. La demora en la notificación y en la tramitación de su apelación, según el Tribunal Constitucional, vulneró sus derechos a la pluralidad de instancia y de defensa, un fallo que la JNJ utilizó como base para iniciar de oficio la investigación contra el magistrado.</p>
+
+<p>Concepción Carhuancho también enfrenta una demanda civil del diputado Pier Figari, quien le exige 2 millones de soles por indemnización tras el archivo de su proceso, lo que suma más presión sobre su situación legal y patrimonial.</p>
+
+<p>La destitución implica la separación definitiva del magistrado del Poder Judicial, aunque su defensa ha anunciado que agotará todas las instancias legales para revertirla. El caso pone de relieve la tensión entre la celeridad procesal exigida por la ley y las condiciones reales de los juzgados de investigación preparatoria, que manejan volúmenes de expedientes que, según los propios magistrados, desbordan su capacidad operativa. Para la JNJ, sin embargo, el exceso de carga no justifica la falta de celeridad en procesos con reos en cárcel, un criterio que el Tribunal Constitucional respaldó al calificar la demora como "retraso judicial injustificado".</p>
+
+<p>La salida de Concepción Carhuancho deja un vacío en el sistema de justicia penal especializado y abre un nuevo capítulo de incertidumbre sobre el futuro de las investigaciones de alto perfil que estuvieron bajo su tutela. Su legado, marcado por las prisiones preventivas de Keiko Fujimori, Alejandro Toledo y Ollanta Humala, queda ahora bajo el escrutinio de la historia judicial peruana, mientras el magistrado promete dar la batalla legal "hasta el último recurso".</p>
+
+</div>
+
+<footer>
+  El Perú Judicial · Análisis y cobertura del sistema de justicia peruano<br>
+  Lima, setiembre de 2026
+</footer>
+
+</body>
+</html>

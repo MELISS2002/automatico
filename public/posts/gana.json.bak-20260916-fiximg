@@ -1,41 +1,5 @@
 [
   {
-    "slug": "banco-pichincha-compra-diners-club-peru",
-    "title": "Banco Pichincha comprará Diners Club Perú por S/ 23,4 millones tras autorización de la SBS",
-    "author": "ROSA EMILY",
-    "date": "2026-09-19",
-    "excerpt": "La Superintendencia de Banca, Seguros y AFP autorizó al Banco Pichincha la adquisición del 100% de las acciones de Diners Club Perú por un monto de S/ 23 millones 474 mil 937. La operación, contenida en la Resolución SBS N.° 02290-2026, convierte a la emblemática firma de tarjetas de crédito en subsidiaria del banco y marca un hito en la consolidación del sistema financiero peruano.",
-    "thumbnail": "/posts/banco-pichincha-compra-diners-club-peru/imagen1.jpg",
-    "htmlPath": "/posts/banco-pichincha-compra-diners-club-peru/index.html"
-  },
-  {
-    "slug": "mercado-inmobiliario-credito-hipotecario-crece-julio",
-    "title": "Crédito hipotecario en Perú crece 7.6% a julio y el mercado inmobiliario apunta a un año récord",
-    "author": "ROSA EMILY",
-    "date": "2026-09-19",
-    "excerpt": "El saldo de los créditos hipotecarios alcanzó los S/ 77,397 millones en julio de 2026, impulsado por un avance del 8.1% en los préstamos en soles. Con una tasa promedio de 7.5% y un dólar más bajo, las condiciones para comprar vivienda se vuelven las más favorables en años.",
-    "thumbnail": "https://image.pollinations.ai/prompt/mercado-inmobiliario-credito-hipotecario-crece-julio-thumbnail",
-    "htmlPath": "/posts/mercado-inmobiliario-credito-hipotecario-crece-julio/index.html"
-  },
-  {
-    "slug": "mef-plataforma-beneficio-4-soles-mototaxistas",
-    "title": "MEF habilita plataforma web para que mototaxistas accedan al beneficio de S/ 4 por galón de combustible",
-    "author": "ROSA EMILY",
-    "date": "2026-09-19",
-    "excerpt": "El Ministerio de Economía y Finanzas (MEF) puso en marcha la plataforma digital que permitirá a los conductores de mototaxis de Loreto, Ucayali y Madre de Dios registrar sus compras de gasolina o gasohol y recibir un subsidio de S/ 4 por galón, con un tope de S/ 100 mensuales. La medida, dispuesta mediante el Decreto de Urgencia N.° 011-2026, tendrá una vigencia de tres meses y busca mitigar el impacto del alza de los combustibles en el transporte público menor.",
-    "thumbnail": "https://image.pollinations.ai/prompt/mef-plataforma-beneficio-4-soles-mototaxistas-thumbnail",
-    "htmlPath": "/posts/mef-plataforma-beneficio-4-soles-mototaxistas/index.html"
-  },
-  {
-    "slug": "congreso-designar-directores-bcrp-candidatos",
-    "title": "Congreso debe designar a 3 directores del BCRP: estos son los 12 candidatos en carrera",
-    "author": "ROSA EMILY",
-    "date": "2026-09-19",
-    "excerpt": "El Senado de la República avanza en el proceso para elegir a los tres directores del Banco Central de Reserva del Perú (BCRP) que acompañarán a Julio Velarde en el periodo 2026-2031. Un total de 12 candidatos, propuestos por las distintas bancadas parlamentarias, compiten por las tres vacantes en el directorio del ente emisor. La Comisión de Procedimientos Especiales ya definió la lista y el cronograma que culminará con las entrevistas personales los días 23 y 24 de setiembre.",
-    "thumbnail": "https://image.pollinations.ai/prompt/congreso-designar-directores-bcrp-candidatos-thumbnail",
-    "htmlPath": "/posts/congreso-designar-directores-bcrp-candidatos/index.html"
-  },
-  {
     "slug": "mef-la-economia-peruana-en-julio",
     "title": "Economía peruana mantiene solidez y acumula 28 meses de expansión continua hasta julio de 2026, según el MEF",
     "author": "ROSA EMILY",
@@ -86,7 +50,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-19",
     "excerpt": "Tres meses es el plazo perfecto para transformar un deseo en un logro tangible. Aprende a estructurar tus objetivos, dividirlos en acciones concretas y mantener la motivación con un sistema sencillo y efectivo que te guiará paso a paso.",
-    "thumbnail": "/posts/cmo-planificar-objetivos-personales-para-los-prximos-90-das/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/personal_goal_planning_90_days_thumbnail",
     "htmlPath": "/posts/cmo-planificar-objetivos-personales-para-los-prximos-90-das/index.html"
   },
   {
@@ -95,7 +59,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-19",
     "excerpt": "Vivimos en la era de las oportunidades digitales. Si tienes conocimientos o talentos que otros valoran, puedes convertirlos en fuentes de ingreso estables y escalables. Descubre las mejores estrategias para monetizar tus habilidades reales en el mundo online.",
-    "thumbnail": "/posts/ideas-para-generar-ingresos-digitales-con-habilidades-reales/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/digital_income_ideas_skills_illustration_modern_flat?width=800&height=400&nologo=true",
     "htmlPath": "/posts/ideas-para-generar-ingresos-digitales-con-habilidades-reales/index.html"
   },
   {
@@ -104,7 +68,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-19",
     "excerpt": "Ahorrar dinero parece sencillo, pero caemos en trampas que frenan nuestro progreso financiero. Descubre los errores más frecuentes al ahorrar, aprende a identificarlos y aplica estrategias probadas para construir un futuro económico sólido y libre de estrés.",
-    "thumbnail": "/posts/errores-comunes-al-ahorrar-dinero-y-cmo-evitarlos/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/financial_planning_saving_money_common_mistakes_infographic_modern_illustration?width=800&height=400&nologo=true",
     "htmlPath": "/posts/errores-comunes-al-ahorrar-dinero-y-cmo-evitarlos/index.html"
   },
   {
@@ -149,7 +113,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "Miles de pensionistas de la ONP en el Perú tienen derecho a un bono adicional al cumplir 80 años, pero la mayoría no lo sabe. Te explicamos de qué se trata, cuánto es el monto, cómo cobrarlo y qué hacer si ya pasaste los 80 y nunca lo recibiste.",
-    "thumbnail": "/posts/pension-onp-bono-edad-avanzada-80-anos/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/peruvian_elderly_couple_holding_pension_check_smiling_at_home_warm_light?width=800&height=600&nologo=true",
     "htmlPath": "/posts/pension-onp-bono-edad-avanzada-80-anos/index.html"
   },
   {
@@ -158,7 +122,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "El Ministerio de Economía confirmó el incremento de la Remuneración Mínima Vital en dos etapas. Conoce los plazos, los beneficiados y cómo verificar que tu empleador cumpla con el nuevo pago.",
-    "thumbnail": "/posts/sueldo-minimo-2026-aumento-s1300-dos-etapas/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/Peruvian%20workers%20celebrating%20minimum%20wage%20increase%20outside%20government%20palace%20Lima%20Peru%20happy%20crowd%20with%20flags",
     "htmlPath": "/posts/sueldo-minimo-2026-aumento-s1300-dos-etapas/index.html"
   },
   {
@@ -167,7 +131,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "Ejecutar inteligencia artificial en tu propia computadora ya no es cosa de grandes empresas ni de servidores en la nube. Proyectos de código abierto como Ollama, AirLLM y el nuevo motor ds4 de antirez están democratizando el acceso a la IA, y en agosto de 2026 hay novedades que no te puedes perder.",
-    "thumbnail": "/posts/proyectos-github-ia-gratis-correr-en-tu-pc/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/Artificial_intelligence_running_on_a_personal_computer_open_source_AI_models_glowing_technology_blue_neural_network_abstract_background",
     "htmlPath": "/posts/proyectos-github-ia-gratis-correr-en-tu-pc/index.html"
   },
   {
@@ -176,7 +140,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "Descubre cómo miles de creadores están automatizando canales de YouTube y TikTok con inteligencia artificial sin gastar un euro. Herramientas gratuitas, flujo de trabajo paso a paso y estrategias de monetización para empezar desde cero.",
-    "thumbnail": "/posts/automatizar-videos-con-ia-gratis-y-ganar-dinero/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/faceless_ai_video_automation_channel_2026_thumbnail",
     "htmlPath": "/posts/automatizar-videos-con-ia-gratis-y-ganar-dinero/index.html"
   },
   {
@@ -185,7 +149,7 @@
     "author": "Rosa Emily",
     "date": "2026-08-08",
     "excerpt": "Los débiles datos de empleo en Estados Unidos han disparado el precio del oro a su nivel más alto en siete semanas. Te explicamos por qué el metal precioso se fortalece en tiempos de incertidumbre y cómo los peruanos pueden invertir en oro de forma segura y práctica.",
-    "thumbnail": "/posts/oro-maximo-siete-semanas-por-que-sube-como-invertir/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/gold_bars_and_graphs_price_increase_US_dollar_financial_markets",
     "htmlPath": "/posts/oro-maximo-siete-semanas-por-que-sube-como-invertir/index.html"
   },
   {
@@ -194,7 +158,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-20",
     "excerpt": "¿Es mejor la disciplina o la estrategia? Descubre por qué los millonarios combinan ambas para acelerar su éxito financiero y cómo tú puedes aplicar esta sinergia hoy.",
-    "thumbnail": "/posts/que-methodo-es-mejor-descplina-o-estrategia-para-ser-rico-o-ambos/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/discipline-strategy-wealth-thumbnail",
     "htmlPath": "/posts/que-methodo-es-mejor-descplina-o-estrategia-para-ser-rico-o-ambos/index.html"
   },
   {
@@ -203,7 +167,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-20",
     "excerpt": "La jornada laboral de 8 horas te mantiene en la trampa del sueldo. Descubre cómo cambiar tu mentalidad para generar riqueza de forma exponencial fuera del modelo tradicional.",
-    "thumbnail": "/posts/por-qu-trabajar-8-horas-es-la-forma-ms-lenta-de-hacerte-rico/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/8-hours-work-slow-wealth-thumbnail",
     "htmlPath": "/posts/por-qu-trabajar-8-horas-es-la-forma-ms-lenta-de-hacerte-rico/index.html"
   },
   {
@@ -212,7 +176,7 @@
     "author": "Rosa Emily",
     "date": "2026-07-20",
     "excerpt": "Un error en Google Maps se transformó en un negocio rentable. Aprende a detectar oportunidades digitales inesperadas y conviértelas en ingresos mensuales estables.",
-    "thumbnail": "/posts/el-error-en-google-maps-que-se-convirti-en-un-sueldo-mensual/og-image.jpg",
+    "thumbnail": "https://image.pollinations.ai/prompt/google-maps-error-monthly-income-thumbnail",
     "htmlPath": "/posts/el-error-en-google-maps-que-se-convirti-en-un-sueldo-mensual/index.html"
   },
   {
