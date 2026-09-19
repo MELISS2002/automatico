@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rafael Rey renuncia al MTC | Gobierno de Keiko Fujimori</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: #f4f1ec;
+    color: #1a1a1a;
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .magazine {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .header {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 40px 50px 30px;
+    position: relative;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    right: 50px;
+    height: 3px;
+    background: #c0392b;
+  }
+  .kicker {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.75rem;
+    color: #c0392b;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .headline {
+    font-size: 2.8rem;
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+  }
+  .subhead {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.05rem;
+    color: #bbb;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  .byline {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .hero-caption {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.78rem;
+    color: #777;
+    padding: 10px 50px 30px;
+    border-bottom: 1px solid #eee;
+  }
+  .content {
+    padding: 40px 50px 60px;
+  }
+  .content p {
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    text-align: justify;
+    hyphens: auto;
+  }
+  .content p:first-of-type::first-letter {
+    font-size: 3.8rem;
+    float: left;
+    line-height: 0.85;
+    padding-right: 10px;
+    padding-top: 4px;
+    color: #c0392b;
+    font-weight: 700;
+  }
+  .pull-quote {
+    border-left: 5px solid #c0392b;
+    padding: 15px 25px;
+    margin: 30px 0;
+    background: #faf8f5;
+    font-size: 1.35rem;
+    font-style: italic;
+    color: #333;
+    line-height: 1.5;
+  }
+  .inline-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px 0 10px;
+    border-radius: 3px;
+  }
+  .inline-caption {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.75rem;
+    color: #888;
+    margin-bottom: 30px;
+    line-height: 1.4;
+  }
+  .section-title {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 40px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    letter-spacing: -0.3px;
+  }
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 30px 0;
+  }
+  .two-col p {
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+  .fact-box {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 30px;
+    border-radius: 3px;
+    margin: 40px 0;
+  }
+  .fact-box h3 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #c0392b;
+    margin-bottom: 15px;
+  }
+  .fact-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  .fact-box li {
+    font-size: 0.95rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+    line-height: 1.5;
+  }
+  .fact-box li:last-child {
+    border-bottom: none;
+  }
+  .fact-box li strong {
+    color: #ddd;
+  }
+  .footer {
+    background: #1a1a1a;
+    color: #888;
+    padding: 30px 50px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.75rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+  @media (max-width: 768px) {
+    body { padding: 10px; }
+    .header { padding: 30px 25px 20px; }
+    .header::after { left: 25px; right: 25px; }
+    .headline { font-size: 1.9rem; }
+    .subhead { font-size: 0.95rem; }
+    .content { padding: 25px 25px 40px; }
+    .content p { font-size: 1rem; }
+    .content p:first-of-type::first-letter { font-size: 3rem; }
+    .pull-quote { font-size: 1.1rem; padding: 12px 18px; }
+    .two-col { grid-template-columns: 1fr; gap: 20px; }
+    .hero-caption { padding: 8px 25px 20px; }
+    .fact-box { padding: 20px; }
+  }
+  @media (max-width: 480px) {
+    .headline { font-size: 1.5rem; }
+    .kicker { font-size: 0.65rem; letter-spacing: 3px; }
+    .content p { font-size: 0.95rem; }
+  }
+</style>
+</head>
+<body>
+<div class="magazine">
+  <header class="header">
+    <div class="kicker">Política · Gobierno · 18 de septiembre de 2026</div>
+    <h1 class="headline">Rafael Rey renuncia al Ministerio de Transportes y Comunicaciones por motivos de salud</h1>
+    <p class="subhead">La presidenta Keiko Fujimori agradeció su labor y tomó juramento a José Angello Tangherlini Casal como nuevo titular del MTC. La renuncia se produce a menos de dos meses de iniciado el gobierno y en medio de la incertidumbre por la Nueva Carretera Central.</p>
+    <div class="byline">Redacción El Peruano · Lima</div>
+  </header>
+
+  <img class="hero-image" src="imagen1.jpg" alt="Palacio de Gobierno del Perú">
+  <div class="hero-caption">Palacio de Gobierno, sede de la juramentación del nuevo ministro de Transportes y Comunicaciones. Foto: Andina.</div>
+
+  <div class="content">
+
+    <p>El ministro de Transportes y Comunicaciones, Rafael Rey, presentó este viernes 18 de septiembre su renuncia irrevocable al cargo, según confirmó la Presidencia del Consejo de Ministros (PCM) a través de sus canales oficiales. En una carta dirigida a la presidenta de la república, Keiko Fujimori, y al presidente del Consejo de Ministros, Luis Galarreta, Rey explicó que su decisión responde a "razones de salud que me impiden continuar ejerciendo las responsabilidades propias del cargo con la dedicación que este exige".</p>
+
+    <p>La noticia fue recibida con sorpresa en el ámbito político nacional, pues se trata del primer cambio en el gabinete ministerial conformado por la presidenta Fujimori, quien asumió el poder el pasado 28 de julio para el periodo 2026-2031. Rafael Rey había jurado como ministro de Transportes y Comunicaciones ese mismo día, por lo que su gestión duró menos de dos meses.</p>
+
+    <p>En su misiva, el ahora exministro expresó su "profundo agradecimiento a la presidenta de la república, Keiko Fujimori, y al premier Luis Galarreta, por la confianza depositada en su persona y por la oportunidad de servir al país desde esta alta responsabilidad". Asimismo, destacó el trabajo realizado junto con los servidores públicos, autoridades y equipos técnicos del ministerio. "Para mí ha sido un honor trabajar junto con ustedes", señaló.</p>
+
+    <div class="pull-quote">
+      "Por razones de salud que me impiden continuar ejerciendo las responsabilidades propias del cargo con la dedicación que este exige." — Rafael Rey, carta de renuncia.
+    </div>
+
+    <p>La PCM, por su parte, emitió un comunicado en el que lamentó la decisión y agradeció la labor desempeñada por Rey durante su breve gestión. "Reconocemos y agradecemos el trabajo realizado por el ministro al servicio del país y estamos seguros de que su valioso aporte al Perú lo podrá realizar desde otros espacios", señaló la institución. El exministro también manifestó su disposición para facilitar una "transferencia ordenada y transparente de la gestión", poniendo a disposición la información necesaria para asegurar la continuidad de las políticas, proyectos y servicios a cargo del Ministerio.</p>
+
+    <img class="inline-image" src="imagen2.jpg" alt="Sesión del Consejo de Ministros en Palacio de Gobierno">
+    <div class="inline-caption">La presidenta Keiko Fujimori lideró la sesión del Consejo de Ministros donde agradeció la labor de Rafael Rey. Foto: Andina.</div>
+
+    <h2 class="section-title">La reacción de la presidenta Fujimori</h2>
+
+    <p>Durante la sesión ordinaria del Consejo de Ministros, realizada en Palacio de Gobierno, la presidenta Keiko Fujimori expresó su agradecimiento a Rafael Rey por su labor al frente del MTC. Según informó la agencia Andina, la mandataria resaltó que durante su gestión "se destrabaron diversos proyectos y se lograron importantes avances en su sector". La reunión contó con la presencia del primer ministro Luis Galarreta y de los demás integrantes del Gabinete Ministerial.</p>
+
+    <p>Horas más tarde, en una ceremonia realizada también en Palacio de Gobierno, la presidenta tomó juramento a José Angello Tangherlini Casal como nuevo ministro de Transportes y Comunicaciones. Tangherlini es economista de la Universidad Nacional Mayor de San Marcos, con más de 20 años de experiencia en puestos de alta dirección, administración y gestión de instituciones públicas. Se ha desempeñado como viceministro de Desarrollo de Agricultura Familiar e Infraestructura Agraria y Riego, y ha laborado en el Organismo Supervisor de la Inversión en Infraestructura de Transporte de Uso Público (OSITRAN), en el Organismo Supervisor de Inversión Privada en Telecomunicaciones (OSIPTEL) y en el Programa de Compensaciones para la Competitividad (AGROIDEAS), entre otras entidades.</p>
+
+    <div class="fact-box">
+      <h3>Claves de la renuncia</h3>
+      <ul>
+        <li><strong>Fecha:</strong> Viernes 18 de septiembre de 2026.</li>
+        <li><strong>Motivo:</strong> Razones de salud que impiden ejercer el cargo con la dedicación requerida.</li>
+        <li><strong>Sucesor:</strong> José Angello Tangherlini Casal, economista con amplia experiencia en gestión pública.</li>
+        <li><strong>Contexto:</strong> Primer cambio en el gabinete de Keiko Fujimori, a menos de dos meses de asumir el poder.</li>
+        <li><strong>Pendiente:</strong> La Nueva Carretera Central, megaobra que conectará Lima y Junín, sigue sin presupuesto para iniciar construcción en 2027.</li>
+      </ul>
+    </div>
+
+    <h2 class="section-title">Un sector con proyectos pendientes</h2>
+
+    <p>La renuncia de Rafael Rey se produce en un momento crítico para el Ministerio de Transportes y Comunicaciones, que enfrenta varios desafíos de infraestructura. Uno de los más emblemáticos es la Nueva Carretera Central, una megaobra que promete conectar Lima y Junín en menos de tres horas, pero que a la fecha no cuenta con el financiamiento necesario para iniciar su construcción. Según informó RPP, el Gobierno solo ha presupuestado 100 millones de soles para estudios del proyecto en 2027, cuando se requieren alrededor de 600 millones para arrancar las obras del túnel Pariachi, considerado el primer componente físico de la iniciativa.</p>
+
+    <p>Durante su gestión, Rey sostuvo ante el Congreso que su cartera no contaba con la capacidad presupuestal para ejecutar la megaobra. La presidenta Fujimori se había comprometido a culminar la Nueva Carretera Central durante su período, pero la falta de recursos y ahora la renuncia del ministro generan incertidumbre sobre el futuro del proyecto. La designación de Tangherlini, con experiencia en infraestructura y regulación económica, busca dar continuidad a las políticas del sector.</p>
+
+    <img class="inline-image" src="imagen3.jpg" alt="José Tangherlini jura como nuevo ministro de Transportes">
+    <div class="inline-caption">José Angello Tangherlini Casal juró como nuevo ministro de Transportes y Comunicaciones en Palacio de Gobierno. Foto: RPP.</div>
+
+    <div class="two-col">
+      <div>
+        <h3 class="section-title" style="font-size:1.1rem; margin-top:0;">Perfil del nuevo ministro</h3>
+        <p>José Angello Tangherlini Casal es economista de la Universidad Nacional Mayor de San Marcos. Cuenta con más de 20 años de experiencia profesional en puestos de alta dirección, administración y gestión de instituciones. Ha sido viceministro de Desarrollo de Agricultura Familiar e Infraestructura Agraria y Riego.</p>
+        <p>Además, ha laborado en OSITRAN, OSIPTEL y AGROIDEAS, lo que le otorga un conocimiento técnico en materia de infraestructura de transporte y telecomunicaciones. Su designación supone el traslado de un funcionario con experiencia en administración pública y regulación económica.</p>
+      </div>
+      <div>
+        <h3 class="section-title" style="font-size:1.1rem; margin-top:0;">Reacciones políticas</h3>
+        <p>La renuncia de Rafael Rey ha generado diversas reacciones en el ámbito político. Algunos sectores han señalado que la salida del ministro evidencia las tensiones internas en el gabinete de Keiko Fujimori, mientras que otros han destacado la rapidez con la que se designó a su sucesor para garantizar la continuidad del sector.</p>
+        <p>El primer ministro Luis Galarreta no se ha pronunciado públicamente sobre la renuncia, pero se espera que en los próximos días brinde declaraciones sobre los retos que asumirá el nuevo titular del MTC.</p>
+      </div>
+    </div>
+
+    <p>La ceremonia de juramentación se realizó la noche del viernes en Palacio de Gobierno, con la presencia del propio Rafael Rey, quien se despidió del resto de ministros tras menos de dos meses en el cargo. El nuevo ministro Tangherlini asume la responsabilidad de liderar un sector clave para el desarrollo del país, con proyectos pendientes como la Nueva Carretera Central, la ampliación del Aeropuerto Jorge Chávez y la mejora de la red vial nacional.</p>
+
+    <p>La presidenta Keiko Fujimori, quien ha mantenido una agenda activa en sus primeras semanas de gobierno, deberá ahora enfrentar el desafío de mantener la estabilidad de su gabinete y cumplir con las promesas de infraestructura que formaron parte de su campaña electoral. La renuncia de Rafael Rey, aunque justificada por motivos de salud, marca el primer cambio en un equipo ministerial que apenas comienza a consolidarse.</p>
+
+    <p>El Ministerio de Transportes y Comunicaciones informó que la transferencia de gestión se realizará de manera ordenada y transparente, asegurando la continuidad de las políticas, proyectos y servicios a cargo del sector. Se espera que en los próximos días el nuevo ministro anuncie sus primeras medidas y prioridades al frente de la cartera.</p>
+
+  </div>
+
+  <footer class="footer">
+    © 2026 El Peruano · Todos los derechos reservados · Lima, Perú
+  </footer>
+</div>
+
+    <footer>
+        <p>Autor: ROSA EMILY | Fecha: 2026-09-19</p>
+    </footer>
+</body>
+</html>

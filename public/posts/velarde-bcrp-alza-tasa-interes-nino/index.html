@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Julio Velarde anticipa posible alza de la tasa de interés del BCRP según magnitud de El Niño">
+<title>Julio Velarde anticipa posible alza de la tasa de interés del BCRP según magnitud de El Niño</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #f4f1ec;
+    color: #1a1a1a;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+
+  .magazine-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+  }
+
+  /* HEADER */
+  .mag-header {
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b3a5c 100%);
+    color: #ffffff;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .mag-header .brand {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .mag-header .brand span {
+    color: #f0a500;
+  }
+
+  .mag-header .date {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    letter-spacing: 1px;
+  }
+
+  /* HERO */
+  .hero-section {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-section img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.65);
+  }
+
+  .hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 50px 40px 35px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    color: #ffffff;
+  }
+
+  .hero-overlay .category {
+    display: inline-block;
+    background-color: #f0a500;
+    color: #0d1b2a;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    margin-bottom: 16px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+    font-weight: 700;
+    max-width: 850px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+
+  /* ARTICLE LAYOUT */
+  .article-body {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 50px;
+    padding: 50px 40px;
+  }
+
+  .main-content {
+    min-width: 0;
+  }
+
+  .excerpt {
+    font-size: 1.15rem;
+    color: #4a4a4a;
+    border-left: 4px solid #f0a500;
+    padding-left: 20px;
+    margin-bottom: 35px;
+    font-style: italic;
+    line-height: 1.7;
+  }
+
+  .byline {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    letter-spacing: 0.5px;
+  }
+
+  .byline strong {
+    color: #1a1a1a;
+  }
+
+  .main-content p {
+    margin-bottom: 22px;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .main-content p:first-of-type::first-letter {
+    font-size: 4.2rem;
+    float: left;
+    line-height: 0.8;
+    padding-right: 10px;
+    padding-top: 6px;
+    color: #1b3a5c;
+    font-weight: 700;
+  }
+
+  .main-content h2 {
+    font-size: 1.6rem;
+    color: #0d1b2a;
+    margin: 40px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0a500;
+    line-height: 1.3;
+  }
+
+  .main-content h3 {
+    font-size: 1.25rem;
+    color: #1b3a5c;
+    margin: 30px 0 14px;
+    font-style: italic;
+  }
+
+  .article-image {
+    margin: 35px 0;
+  }
+
+  .article-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 3px;
+  }
+
+  .article-image figcaption {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.82rem;
+    color: #777;
+    padding-top: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  .pull-quote {
+    background: linear-gradient(135deg, #f9f6f0, #f0ebe2);
+    border-left: 5px solid #f0a500;
+    padding: 28px 30px;
+    margin: 35px 0;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #1b3a5c;
+    line-height: 1.6;
+    border-radius: 0 6px 6px 0;
+  }
+
+  .pull-quote cite {
+    display: block;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.85rem;
+    font-style: normal;
+    color: #777;
+    margin-top: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  .key-figures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 35px 0;
+  }
+
+  .figure-card {
+    background: #0d1b2a;
+    color: #ffffff;
+    padding: 24px 18px;
+    text-align: center;
+    border-radius: 6px;
+  }
+
+  .figure-card .number {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #f0a500;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .figure-card .label {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.85;
+    line-height: 1.4;
+  }
+
+  /* SIDEBAR */
+  .sidebar {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  .sidebar-box {
+    background: #f9f6f0;
+    border-radius: 6px;
+    padding: 28px 24px;
+    margin-bottom: 30px;
+  }
+
+  .sidebar-box h4 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f0a500;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0d8cc;
+  }
+
+  .sidebar-box ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar-box ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee8df;
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  .sidebar-box ul li:last-child {
+    border-bottom: none;
+  }
+
+  .sidebar-box ul li strong {
+    color: #0d1b2a;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  .sidebar-box p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* FOOTER */
+  .mag-footer {
+    background: #0d1b2a;
+    color: #8899aa;
+    padding: 30px 40px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .mag-footer .footer-brand {
+    color: #f0a500;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .article-body {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding: 30px 22px;
+    }
+
+    .hero-overlay h1 {
+      font-size: 1.8rem;
+    }
+
+    .hero-section img {
+      height: 300px;
+    }
+
+    .hero-overlay {
+      padding: 30px 22px 25px;
+    }
+
+    .key-figures {
+      grid-template-columns: 1fr;
+    }
+
+    .mag-header {
+      padding: 14px 22px;
+    }
+
+    .mag-header .brand {
+      font-size: 1.1rem;
+    }
+
+    .mag-footer {
+      padding: 24px 22px;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .hero-overlay h1 {
+      font-size: 1.4rem;
+    }
+
+    .hero-section img {
+      height: 220px;
+    }
+
+    .main-content p:first-of-type::first-letter {
+      font-size: 3.2rem;
+    }
+
+    .pull-quote {
+      font-size: 1.05rem;
+      padding: 20px 18px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="magazine-wrapper">
+
+  <!-- HEADER -->
+  <header class="mag-header">
+    <div class="brand">Economía <span>|</span> Perú</div>
+    <div class="date">Viernes, 19 de septiembre de 2026</div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <img src="imagen1.jpg" alt="Julio Velarde, presidente del Banco Central de Reserva del Perú">
+    <div class="hero-overlay">
+      <span class="category">Política Monetaria</span>
+      <h1>Julio Velarde anticipa posible alza de la tasa de interés del BCRP según magnitud de El Niño</h1>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <div class="article-body">
+
+    <main class="main-content">
+
+      <p class="excerpt">El presidente del Banco Central de Reserva del Perú (BCRP), Julio Velarde, dejó abierta la posibilidad de elevar la tasa de interés de referencia en los próximos meses. La decisión dependerá de la magnitud del Fenómeno El Niño y su impacto sobre las expectativas de inflación, que ya se ubican ligeramente por encima del rango meta. La tasa se mantiene en 4,25% desde septiembre de 2025.</p>
+
+      <p class="byline">Por <strong>Redacción Economía</strong> · Publicado el 19 de septiembre de 2026 · Lectura: 7 minutos</p>
+
+      <p>El escenario macroeconómico peruano se encuentra en un punto de inflexión. Durante la presentación del Reporte de Inflación de septiembre de 2026, el presidente del Banco Central de Reserva del Perú (BCRP), Julio Velarde, advirtió que la entidad no descarta un incremento de la tasa de interés de referencia en los próximos meses, en función de cómo evolucione el Fenómeno El Niño y su impacto sobre los precios de los alimentos y las expectativas de inflación.</p>
+
+      <p>La tasa de referencia se mantiene en 4,25% desde septiembre de 2025, acumulando doce meses consecutivos sin cambios. Se trata de una de las tasas más bajas de la región, según destacó el propio Velarde: "Hemos mantenido la tasa en 4.25% y desde hace años es la más baja de los países de Sudamérica, además de México. Es una tasa que no es particularmente restrictiva". Sin embargo, el comunicado emitido tras la reunión de política monetaria de la semana pasada ya dejaba entrever un sesgo menos expansivo.</p>
+
+      <div class="pull-quote">
+        "Hay que subir la tasa en el momento oportuno y sería, probablemente, si viene el fenómeno El Niño como estamos pensando, pero hay que esperar todavía, no es una cosa mecánica."
+        <cite>— Julio Velarde, presidente del BCRP</cite>
+      </div>
+
+      <h2>Una inflación que no cede y un clima que amenaza</h2>
+
+      <p>La inflación interanual alcanzó 4,4% en agosto de 2026, impulsada principalmente por el alza de los precios de los combustibles y sus efectos sobre los costos de transporte local. Aunque la inflación subyacente —que excluye alimentos y energía— se ubicó en 1,8%, el desvío respecto del rango meta de entre 1% y 3% sigue siendo motivo de preocupación para el directorio del BCRP.</p>
+
+      <p>El propio banco central proyectó que la inflación cerrará el 2026 en 4,2%, por encima del techo del rango objetivo, y recién retornaría a la meta en abril de 2027, cuando se disipe el efecto estadístico del fuerte incremento de precios registrado en marzo de este año. Las expectativas de inflación a doce meses se situaron en 3,05%, ligeramente por encima del límite superior del rango meta, mientras que a veinticuatro meses permanecieron dentro del rango, en 2,5%.</p>
+
+      <figure class="article-image">
+        <img src="imagen2.jpg" alt="Fenómeno El Niño Costero y su impacto en la costa peruana">
+        <figcaption>El Fenómeno El Niño Costero de magnitud extraordinaria podría generar lluvias de hasta 100 milímetros por día en la costa norte del país durante el verano. Foto: Andina.</figcaption>
+      </figure>
+
+      <p>El factor climático se ha convertido en la variable decisiva. Según la Comisión Multisectorial encargada del Estudio Nacional del Fenómeno El Niño (ENFEN), el escenario más probable entre septiembre de 2026 y enero de 2027 corresponde a un evento de magnitud extraordinaria, con temperaturas marinas que podrían alcanzar los 26, 27 e incluso 28 °C frente al litoral norte y centro. Esta condición eleva el potencial de lluvias intensas en Tumbes, Piura y Lambayeque, con precipitaciones que podrían superar los 80 o 100 milímetros por día.</p>
+
+      <p>Velarde explicó que, sin el riesgo asociado a El Niño, el escenario sería distinto: la inflación seguiría descendiendo gradualmente y se acercaría al 2% el próximo año. El problema aparece porque el fenómeno climático podría generar un aumento en los precios de los alimentos, configurando un choque de oferta frente al cual la política monetaria no puede actuar directamente sobre el encarecimiento de productos específicos.</p>
+
+      <h2>Demanda interna fuerte: el factor que amplifica el riesgo</h2>
+
+      <p>Lo que preocupa al BCRP no es solo el choque de oferta en sí, sino su posible traslado a las expectativas de inflación en un contexto de demanda interna robusta. El crédito, el empleo y los ingresos vienen creciendo con fuerza: la masa salarial formal aumentó casi 8% en términos nominales, la importación de bienes de capital creció casi 27% en el segundo trimestre y más de 20% en julio y agosto, el consumo de cemento avanzó 10,2% en julio, y el crédito a empresas aumentó 9%.</p>
+
+      <div class="key-figures">
+        <div class="figure-card">
+          <div class="number">4,25%</div>
+          <div class="label">Tasa de referencia del BCRP</div>
+        </div>
+        <div class="figure-card">
+          <div class="number">4,4%</div>
+          <div class="label">Inflación interanual (agosto 2026)</div>
+        </div>
+        <div class="figure-card">
+          <div class="number">3,2%</div>
+          <div class="label">Proyección de crecimiento 2026</div>
+        </div>
+      </div>
+
+      <p>"Con esta demanda fuerte, este crédito, empleo, ingreso que estamos viviendo alto, es más fácil que la inflación se vuelva persistente", advirtió Velarde. Es precisamente ese canal de transmisión el que podría obligar al BCRP a ajustar la tasa, aun cuando el origen del aumento de precios sea un factor climático y no monetario.</p>
+
+      <p>El presidente del BCRP insistió en que la eventual subida no sería automática y que el banco debía determinar el momento oportuno a partir de la evolución de los indicadores. "El comunicado que hicimos después de la reunión de la semana pasada indicaba que estamos siguiendo todos los datos y, si se leyera, puede interpretarse que no descartamos un aumento en los próximos meses", sostuvo.</p>
+
+      <h2>El Niño también recorta las expectativas de crecimiento</h2>
+
+      <p>El impacto del fenómeno climático ya se refleja en las proyecciones oficiales. El BCRP redujo de 3,4% a 3,2% su estimación de crecimiento de la economía peruana para 2026, y de 3,2% a 3% la correspondiente a 2027. La revisión responde principalmente al deterioro esperado de los sectores primarios: el PBI primario —que incluye agricultura, pesca, minería e hidrocarburos— se contraería 2,3% este año, frente a un crecimiento de 4,7% del PBI no primario.</p>
+
+      <p>La entidad también elevó de 0,7 a 0,9 puntos porcentuales la pérdida estimada del PBI por el evento climático durante este año, y de 0,9 a 1,1 puntos porcentuales para 2027. Los principales efectos recaerían sobre los sectores agropecuario, pesquero y manufacturero primario.</p>
+
+      <figure class="article-image">
+        <img src="imagen3.jpg" alt="Sede del Banco Central de Reserva del Perú en Lima">
+        <figcaption>Oficina principal del Banco Central de Reserva del Perú, ubicada en el Jr. Santa Rosa 441, Cercado de Lima. Foto: BCRP.</figcaption>
+      </figure>
+
+      <p>Pese a la revisión a la baja, Velarde destacó que los indicadores de actividad económica continúan mostrando un desempeño positivo. Las expectativas empresariales se mantienen en terreno optimista desde mediados de 2024, aunque registraron una moderación en la encuesta de fines de agosto, asociada —según explicó— a la preocupación de las empresas por el fenómeno climático.</p>
+
+      <h2>Un escenario distinto al de 2022</h2>
+
+      <p>Consultado sobre el riesgo de una espiral inflacionaria similar a la de 2022, cuando la inflación alcanzó su tasa más alta en 26 años, Velarde fue categórico al señalar que los escenarios no son comparables. "Fue un fenómeno mundial, no fue El Niño. No quisiera compararlo porque son distintos. En el 2023, El Niño afectó producción y algo de inflación, pero no fue el factor fundamental. El factor fue internacional", precisó.</p>
+
+      <p>El choque de 2022 se debió a un evento global desencadenado por las políticas postpandemia y la invasión de Rusia a Ucrania, que elevaron fuertemente los costos internacionales de combustibles y alimentos. En contraste, el actual episodio de El Niño Costero tiene un origen climático local, aunque sus efectos sobre los precios podrían ser significativos en sectores específicos como la agricultura y la pesca.</p>
+
+      <div class="pull-quote">
+        "Lo que nos preocupa es que puede afectarse las expectativas, eso es lo que estamos viendo básicamente. Es un choque de oferta."
+        <cite>— Julio Velarde, presidente del BCRP</cite>
+      </div>
+
+      <p>La decisión del BCRP en los próximos meses dependerá, entonces, de una combinación de factores: la magnitud real del Fenómeno El Niño, su impacto sobre los precios de los alimentos, la evolución de las expectativas de inflación y la fortaleza de la demanda interna. Velarde ha dejado claro que la puerta a un alza está abierta, pero que el momento y la intensidad del ajuste se determinarán con los datos en la mano.</p>
+
+      <p>Mientras tanto, los mercados y los agentes económicos observan con atención cada comunicado del banco central. La tasa de referencia, que lleva doce meses anclada en 4,25%, podría convertirse en la próxima herramienta de respuesta frente a un fenómeno climático cuyos efectos aún están por desplegarse por completo en la economía peruana.</p>
+
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="sidebar-box">
+        <h4>Datos clave</h4>
+        <ul>
+          <li><strong>Tasa de referencia</strong> 4,25% desde septiembre de 2025</li>
+          <li><strong>Inflación interanual</strong> 4,4% en agosto de 2026</li>
+          <li><strong>Meta de inflación</strong> Entre 1% y 3%</li>
+          <li><strong>Proyección de inflación 2026</strong> 4,2%</li>
+          <li><strong>Retorno a la meta</strong> Abril de 2027</li>
+          <li><strong>Crecimiento PBI 2026</strong> 3,2% (revisado a la baja)</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-box">
+        <h4>El Niño en cifras</h4>
+        <ul>
+          <li><strong>Magnitud esperada</strong> Extraordinaria (sep 2026 – ene 2027)</li>
+          <li><strong>Temperatura del mar</strong> Hasta 28 °C frente al litoral norte</li>
+          <li><strong>Lluvias proyectadas</strong> 80 a 100 mm por día</li>
+          <li><strong>Zonas críticas</strong> Tumbes, Piura y Lambayeque</li>
+          <li><strong>Impacto en PBI primario</strong> Contracción de 2,3% en 2026</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-box">
+        <h4>Contexto</h4>
+        <p>Julio Velarde preside el BCRP desde octubre de 2006 y fue ratificado por el Senado para el período 2026-2031 con 40 votos a favor, 12 en contra y 0 abstenciones. Bajo su gestión, el Perú ha mantenido una de las tasas de interés más bajas de la región y una inflación que, pese al desvío actual, sigue siendo menor que la de otras economías emergentes.</p>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="mag-footer">
+    <div class="footer-brand">Economía Perú</div>
+    <div>© 2026 Todos los derechos reservados · Lima, Perú</div>
+  </footer>
+
+</div>
+
+    <footer>
+        <p>Autor: ROSA EMILY | Fecha: 2026-09-19</p>
+    </footer>
+</body>
+</html>
