@@ -1,5 +1,14 @@
 [
   {
+    "slug": "eeuu-armas-control-espacial-orbita",
+    "title": "Estados Unidos reconoce por primera vez que tiene armas de control espacial en órbita",
+    "author": "ROSA EMILY",
+    "date": "2026-09-19",
+    "excerpt": "El secretario de la Fuerza Aérea de Estados Unidos, Troy Meink, confirmó durante la conferencia Air, Space & Cyber que el país dispone de \"armas de control espacial en órbita\" capaces de defender a la fuerza conjunta frente a acciones hostiles. La declaración, primera de su tipo, generó reacciones inmediatas de China y Rusia, que advirtieron sobre el riesgo de una carrera armamentista en el espacio. La noticia reaviva el debate sobre la militarización de la órbita terrestre y el vacío legal que deja el Tratado del Espacio Ultraterrestre de 1967.",
+    "thumbnail": "/posts/eeuu-armas-control-espacial-orbita/imagen1.jpg",
+    "htmlPath": "/posts/eeuu-armas-control-espacial-orbita/index.html"
+  },
+  {
     "slug": "julio-velarde-ratificado-bcr-2031",
     "title": "Julio Velarde ratificado como presidente del BCR hasta 2031",
     "excerpt": "Julio Velarde ratificado como presidente del BCR hasta 2031",
@@ -41,7 +50,7 @@
     "author": "ROSA EMILY",
     "date": "2026-09-19",
     "excerpt": "Juan Pablo Varillas venció 5-7, 7-6 y 6-3 a Daniel Vallejo en el Jockey Club y le dio a Perú el segundo punto de la serie ante Paraguay por el Grupo Mundial I. Con las victorias de Ignacio Buse y Varillas, el equipo peruano quedó 2-0 arriba en una jornada cargada de remontadas y drama en la arcilla limeña.",
-    "thumbnail": "https://image.pollinations.ai/prompt/peru-paraguay-copa-davis-2026-singles-thumbnail",
+    "thumbnail": "/posts/peru-paraguay-copa-davis-2026-singles/imagen1.jpg",
     "htmlPath": "/posts/peru-paraguay-copa-davis-2026-singles/index.html"
   },
   {
@@ -50,7 +59,7 @@
     "author": "ROSA EMILY",
     "date": "2026-09-19",
     "excerpt": "Cuatro de los diez adolescentes denunciados por una presunta agresión sexual contra un compañero del Liceo Naval Almirante Guise fueron liberados este viernes tras cumplirse el plazo de 48 horas de retención. Los otros seis quedaron a disposición del Tercer Juzgado de Familia, que dictó cuatro meses de internamiento preventivo mientras se esclarecen los hechos ocurridos el 15 de septiembre en un bus escolar.",
-    "thumbnail": "https://image.pollinations.ai/prompt/liceo-naval-liberan-cuatro-estudiantes-thumbnail",
+    "thumbnail": "/posts/liceo-naval-liberan-cuatro-estudiantes/imagen1.jpg",
     "htmlPath": "/posts/liceo-naval-liberan-cuatro-estudiantes/index.html"
   },
   {
@@ -59,7 +68,7 @@
     "author": "ROSA EMILY",
     "date": "2026-09-19",
     "excerpt": "El aún ministro Rafael Rey presentó su renuncia irrevocable al cargo de Ministro de Estado en el Despacho de Transportes y Comunicaciones, alegando razones de salud que le impiden continuar con la dedicación que el puesto exige. La presidenta Keiko Fujimori agradeció su labor durante la sesión del Consejo de Ministros y, horas más tarde, tomó juramento a José Angello Tangherlini Casal como nuevo titular del sector.",
-    "thumbnail": "https://image.pollinations.ai/prompt/renuncia-rafael-rey-mtc-keiko-gobierno-thumbnail",
+    "thumbnail": "/posts/renuncia-rafael-rey-mtc-keiko-gobierno/imagen1.jpg",
     "htmlPath": "/posts/renuncia-rafael-rey-mtc-keiko-gobierno/index.html"
   },
   {
@@ -95,7 +104,7 @@
     "author": "ROSA EMILY",
     "date": "2026-09-19",
     "excerpt": "La Municipalidad de Lima y la Provincia Franciscana de los XII Apóstoles retomaron el diálogo y firmaron un acta que permitirá a PROLIMA elaborar el diagnóstico y expediente técnico de la Capilla del Milagro. La restauración integral, que se ejecutará con recursos municipales, contempla la recuperación de la estructura, la fachada, los elementos interiores y un nuevo sistema de iluminación.",
-    "thumbnail": "https://image.pollinations.ai/prompt/municipalidad-lima-restauracion-capilla-milagro-thumbnail",
+    "thumbnail": "/posts/municipalidad-lima-restauracion-capilla-milagro/imagen1.jpg",
     "htmlPath": "/posts/municipalidad-lima-restauracion-capilla-milagro/index.html"
   },
   {
@@ -104,7 +113,7 @@
     "author": "ROSA EMILY",
     "date": "2026-09-19",
     "excerpt": "La Fiscalía de La Libertad presentó un video de más de 12 minutos grabado por un dron de la banda 'Los Pulpos', que registró el seguimiento y secuestro del empresario minero Jenss Lara y el asesinato de sus cuatro acompañantes el 30 de agosto en Trujillo. El material fue hallado en el celular de uno de los detenidos en Bolivia, donde el cabecilla Jhonsson Cruz Torres dirigía la operación en tiempo real.",
-    "thumbnail": "https://image.pollinations.ai/prompt/dron-capto-secuestro-jenss-lara-tiempo-real-thumbnail",
+    "thumbnail": "/posts/dron-capto-secuestro-jenss-lara-tiempo-real/imagen1.jpg",
     "htmlPath": "/posts/dron-capto-secuestro-jenss-lara-tiempo-real/index.html"
   },
   {
@@ -113,7 +122,7 @@
     "author": "ROSA EMILY",
     "date": "2026-09-19",
     "excerpt": "El Jurado Nacional de Elecciones (JNE) sorteó el orden de intervención de los 26 candidatos que buscan la Municipalidad Metropolitana de Lima. Los debates se realizarán el lunes 21 y martes 22 de septiembre en la Biblioteca Nacional del Perú, con cuatro bloques que incluyen interacción entre candidatos, preguntas ciudadanas y mensajes finales.",
-    "thumbnail": "https://image.pollinations.ai/prompt/debate-alcaldia-lima-cruces-orden-candidatos-thumbnail",
+    "thumbnail": "/posts/debate-alcaldia-lima-cruces-orden-candidatos/imagen1.jpg",
     "htmlPath": "/posts/debate-alcaldia-lima-cruces-orden-candidatos/index.html"
   },
   {
