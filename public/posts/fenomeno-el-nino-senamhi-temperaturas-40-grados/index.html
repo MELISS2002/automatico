@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Niño Costero: Senamhi advierte temperaturas de hasta 40 °C en Piura</title>
+<style>
+    :root {
+        --primary: #b71c1c;
+        --secondary: #f57c00;
+        --dark: #1a1a1a;
+        --light: #f5f5f5;
+        --gray: #666;
+        --font-main: 'Georgia', 'Times New Roman', serif;
+        --font-sans: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: var(--font-main);
+        background-color: #eceff1;
+        color: var(--dark);
+        line-height: 1.7;
+        font-size: 17px;
+    }
+
+    .magazine-wrapper {
+        max-width: 1100px;
+        margin: 0 auto;
+        background: #ffffff;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    }
+
+    /* Header */
+    .mag-header {
+        background: linear-gradient(135deg, var(--primary), #7f0000);
+        color: #fff;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border-bottom: 5px solid var(--secondary);
+    }
+
+    .mag-header .logo {
+        font-family: var(--font-sans);
+        font-weight: 900;
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .mag-header .date {
+        font-family: var(--font-sans);
+        font-size: 0.85rem;
+        opacity: 0.9;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /* Hero */
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 420px;
+        overflow: hidden;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+        padding: 40px;
+        color: #fff;
+    }
+
+    .hero-overlay .kicker {
+        font-family: var(--font-sans);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: var(--secondary);
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 2.4rem;
+        line-height: 1.2;
+        font-weight: 900;
+        max-width: 800px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    /* Article body */
+    .article-container {
+        padding: 40px 50px;
+    }
+
+    .article-meta {
+        font-family: var(--font-sans);
+        font-size: 0.85rem;
+        color: var(--gray);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 25px;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 15px;
+    }
+
+    .article-meta strong {
+        color: var(--primary);
+    }
+
+    .lead {
+        font-size: 1.25rem;
+        line-height: 1.6;
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 30px;
+        border-left: 5px solid var(--secondary);
+        padding-left: 20px;
+    }
+
+    p {
+        margin-bottom: 22px;
+        text-align: justify;
+    }
+
+    h2 {
+        font-family: var(--font-sans);
+        font-size: 1.6rem;
+        color: var(--primary);
+        margin: 40px 0 20px 0;
+        padding-bottom: 10px;
+        border-bottom: 3px solid var(--secondary);
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    h3 {
+        font-family: var(--font-sans);
+        font-size: 1.2rem;
+        color: #333;
+        margin: 30px 0 15px 0;
+        font-weight: 700;
+    }
+
+    /* Two column layout */
+    .content-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+        align-items: start;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        background: var(--light);
+        padding: 25px;
+        border-top: 4px solid var(--primary);
+    }
+
+    .sidebar h4 {
+        font-family: var(--font-sans);
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--primary);
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .sidebar ul {
+        list-style: none;
+    }
+
+    .sidebar ul li {
+        padding: 10px 0;
+        border-bottom: 1px dashed #ccc;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .sidebar ul li strong {
+        color: var(--secondary);
+        display: block;
+        font-family: var(--font-sans);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+    }
+
+    /* Inline images */
+    .inline-img {
+        width: 100%;
+        margin: 30px 0;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .inline-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .inline-img figcaption {
+        background: #f9f9f9;
+        padding: 12px 15px;
+        font-family: var(--font-sans);
+        font-size: 0.8rem;
+        color: var(--gray);
+        border-left: 3px solid var(--secondary);
+    }
+
+    /* Pull quote */
+    .pull-quote {
+        background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+        border-left: 6px solid var(--primary);
+        padding: 25px 30px;
+        margin: 35px 0;
+        font-size: 1.15rem;
+        font-style: italic;
+        color: #5d4037;
+        line-height: 1.6;
+        position: relative;
+    }
+
+    .pull-quote::before {
+        content: '"';
+        font-size: 4rem;
+        color: var(--primary);
+        opacity: 0.3;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        line-height: 1;
+    }
+
+    .pull-quote p {
+        margin: 0;
+        text-align: left;
+    }
+
+    /* Data box */
+    .data-box {
+        background: #1a1a1a;
+        color: #fff;
+        padding: 30px;
+        margin: 35px 0;
+        border-radius: 6px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 20px;
+        text-align: center;
+    }
+
+    .data-box .stat .number {
+        font-family: var(--font-sans);
+        font-size: 2.2rem;
+        font-weight: 900;
+        color: var(--secondary);
+        display: block;
+        line-height: 1;
+    }
+
+    .data-box .stat .label {
+        font-family: var(--font-sans);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 8px;
+        color: #aaa;
+    }
+
+    /* Footer */
+    .mag-footer {
+        background: var(--dark);
+        color: #aaa;
+        padding: 30px 50px;
+        font-family: var(--font-sans);
+        font-size: 0.8rem;
+        text-align: center;
+        border-top: 5px solid var(--secondary);
+    }
+
+    .mag-footer a {
+        color: var(--secondary);
+        text-decoration: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+        .content-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .hero {
+            height: 320px;
+        }
+
+        .hero-overlay h1 {
+            font-size: 1.7rem;
+        }
+
+        .article-container {
+            padding: 25px 20px;
+        }
+
+        .mag-header {
+            padding: 15px 20px;
+        }
+
+        .mag-header .logo {
+            font-size: 1.3rem;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .hero {
+            height: 260px;
+        }
+
+        .hero-overlay h1 {
+            font-size: 1.3rem;
+        }
+
+        .hero-overlay {
+            padding: 20px;
+        }
+
+        .data-box {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .pull-quote {
+            padding: 20px;
+            font-size: 1rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="magazine-wrapper">
+
+    <header class="mag-header">
+        <div class="logo">Alerta Climática</div>
+        <div class="date">Sábado, 19 de septiembre de 2026</div>
+    </header>
+
+    <section class="hero">
+        <img src="imagen1.jpg" alt="Cielo despejado y sol intenso sobre la costa norte del Perú">
+        <div class="hero-overlay">
+            <div class="kicker">Fenómeno El Niño Costero</div>
+            <h1>Senamhi advierte que Piura soportará temperaturas de hasta 40 °C y una sensación térmica de 42 °C</h1>
+        </div>
+    </section>
+
+    <div class="article-container">
+
+        <div class="article-meta">
+            Por <strong>Redacción Alerta Climática</strong> | Lima, 19 de septiembre de 2026 | Actualizado a las 10:30 a.m.
+        </div>
+
+        <p class="lead">El Servicio Nacional de Meteorología e Hidrología del Perú (Senamhi) confirmó que la costa norte del país atraviesa una fase extraordinaria de El Niño Costero, un evento climático que está elevando las temperaturas muy por encima de lo normal. La región Piura es la más golpeada: los termómetros ya rozan los 38 °C y las proyecciones oficiales apuntan a que el calor podría alcanzar los 40 °C, con una sensación térmica que llegaría hasta los 42 °C debido a la alta humedad.</p>
+
+        <div class="content-grid">
+
+            <div class="main-content">
+
+                <p>La situación es inédita. Según el Senamhi, las aguas del mar frente a la costa norte presentan anomalías térmicas de más de 8 °C, un calentamiento que alimenta directamente el incremento de las temperaturas atmosféricas. El especialista en Vigilancia Meteorológica del Senamhi, Nelson Quispe Gutiérrez, explicó que este fenómeno está directamente relacionado con el calentamiento de la superficie marina en la costa norte, y que la acumulación de humedad sobre las ciudades costeras incrementa la percepción del calor en la población.</p>
+
+                <p>El impacto ya se siente con fuerza. El pasado 15 de septiembre, la estación meteorológica de Chulucanas, en Piura, registró una temperatura máxima de 38 °C, convirtiéndose en uno de los puntos más calientes del país en lo que va del año.Otras regiones como Tumbes, Lambayeque, La Libertad, Áncash, Lima, Ica, Arequipa y Moquegua también reportaron temperaturas elevadas, aunque en menor medida.</p>
+
+                <figure class="inline-img">
+                    <img src="imagen2.jpg" alt="Termómetro marcando temperaturas extremas en la región Piura">
+                    <figcaption>La estación de Chulucanas, en Piura, registró 38 °C el 15 de septiembre, asociado a El Niño Costero. Foto: Andina.</figcaption>
+                </figure>
+
+                <h2>Una fase extraordinaria que recién comienza</h2>
+
+                <p>El Senamhi declaró el ingreso de El Niño Costero a la categoría de fase extraordinaria, lo que significa que el evento climático ha alcanzado una intensidad que supera los umbrales habituales. Esta declaratoria afecta de manera directa a los departamentos de Tumbes, Piura, Lambayeque y La Libertad, donde las marcas diurnas ya alcanzan los 37 °C.</p>
+
+                <p>Sin embargo, lo más preocupante está por venir. Según el pronóstico oficial, los efectos más severos de El Niño Costero en la costa norte se concentrarán entre febrero y marzo de 2027, una ventana en la que las temperaturas superarían los 40 °C y se combinarían con episodios de lluvias intensas.Para entonces, la sensación térmica podría escalar aún más, rozando los 42 °C en Piura debido a la humedad persistente.</p>
+
+                <div class="pull-quote">
+                    <p>“Va por el lado de no días puntuales de que podamos alcanzar esos valores, sino períodos de más de 5 días cuando superemos los 36 °C. Si tenemos un período de 5 o 6 días con el cual superemos los 36 °C de temperatura máxima, pues ahí estaríamos bastante complicados”.</p>
+                    <p style="font-style: normal; font-size: 0.85rem; margin-top: 10px; color: #8d6e63;">— Héctor Yauri, especialista en meteorología del Senamhi.</p>
+                </div>
+
+                <p>El especialista Héctor Yauri advirtió que el riesgo no radica únicamente en los picos aislados de calor, sino en la persistencia de temperaturas extremas durante varios días consecutivos. Esta condición prolongada es la que puede derivar en golpes de calor, deshidratación severa y otras complicaciones de salud, especialmente en niños y adultos mayores.</p>
+
+                <h2>Más de 20 millones de peruanos en riesgo</h2>
+
+                <p>El Centro Nacional de Estimación, Prevención y Reducción del Riesgo de Desastres (Cenepred) alertó que más de 20 millones de peruanos se encuentran en grave riesgo ante posibles desastres asociados al fenómeno climático, que podrían afectar viviendas e infraestructuras críticas.</p>
+
+                <p>Ante este panorama, el Poder Ejecutivo aprobó mediante el Decreto Supremo n.° 124-2026-PCM el estado de emergencia en 893 distritos del país, una medida que busca facilitar la respuesta inmediata y la asignación de recursos para las zonas más vulnerables.</p>
+
+                <figure class="inline-img">
+                    <img src="imagen3.jpg" alt="Pobladores de Piura protegiéndose del sol intenso en las calles">
+                    <figcaption>Las autoridades recomiendan evitar la exposición al sol entre las 10 a.m. y 4 p.m., especialmente en la costa norte. Foto: difusión.</figcaption>
+                </figure>
+
+                <h2>Recomendaciones para enfrentar la ola de calor</h2>
+
+                <p>El Senamhi instó a las autoridades locales a implementar medidas de resguardo para proteger a los grupos vulnerables durante las horas de mayor radiación. La exposición prolongada al sol en entornos urbanos puede ocasionar cuadros de deshidratación severa y afecciones cutáneas.</p>
+
+                <p>Entre las principales recomendaciones se encuentran: mantenerse hidratado de forma constante, evitar la exposición directa al sol entre las 10 a.m. y 4 p.m., usar ropa ligera de colores claros, aplicarse protector solar y prestar especial atención a niños menores de 5 años y adultos mayores, quienes son los más susceptibles a los efectos del calor extremo.</p>
+
+                <p>Las autoridades también advirtieron sobre los riesgos de los golpes de calor, que pueden manifestarse con síntomas como mareos, náuseas, dolor de cabeza intenso, piel enrojecida y caliente, y confusión. Ante cualquiera de estos signos, se recomienda acudir de inmediato a un centro de salud.</p>
+
+                <div class="data-box">
+                    <div class="stat">
+                        <span class="number">40 °C</span>
+                        <span class="label">Temperatura máxima prevista</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">42 °C</span>
+                        <span class="label">Sensación térmica en Piura</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">+8 °C</span>
+                        <span class="label">Anomalía del mar</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">893</span>
+                        <span class="label">Distritos en emergencia</span>
+                    </div>
+                </div>
+
+                <h2>Un verano que será recordado</h2>
+
+                <p>El escenario climático para los próximos meses es complejo. La combinación de un mar excepcionalmente cálido, una atmósfera cargada de humedad y la proximidad de la primavera y el verano configura un cóctel que mantendrá las temperaturas en niveles históricos. Los expertos coinciden en que El Niño Costero de 2026-2027 podría superar en intensidad a eventos anteriores, y que la costa norte será la región más castigada.</p>
+
+                <p>Mientras tanto, la población de Piura y las demás regiones afectadas observa con preocupación cómo el termómetro sigue subiendo. Las autoridades locales han comenzado a habilitar puntos de hidratación y a difundir campañas de concientización, pero el desafío es mayúsculo. La recomendación es clara: prepararse, informarse y actuar con responsabilidad para mitigar los efectos de un fenómeno que, según todos los pronósticos, aún no ha mostrado su verdadera magnitud.</p>
+
+            </div>
+
+            <aside class="sidebar">
+                <h4>Datos clave</h4>
+                <ul>
+                    <li><strong>Región más afectada</strong> Piura, con temperaturas de hasta 40 °C.</li>
+                    <li><strong>Sensación térmica</strong> Hasta 42 °C por la humedad.</li>
+                    <li><strong>Récord reciente</strong> Chulucanas registró 38 °C el 15 de septiembre.</li>
+                    <li><strong>Fase del evento</strong> El Niño Costero en categoría extraordinaria.</li>
+                    <li><strong>Picos más altos</strong> Febrero y marzo de 2027.</li>
+                    <li><strong>Población en riesgo</strong> Más de 20 millones de peruanos.</li>
+                    <li><strong>Distritos en emergencia</strong> 893 a nivel nacional.</li>
+                </ul>
+                <h4 style="margin-top: 25px;">Recomendaciones</h4>
+                <ul>
+                    <li>Hidratarse constantemente.</li>
+                    <li>Evitar el sol entre 10 a.m. y 4 p.m.</li>
+                    <li>Usar ropa ligera y protector solar.</li>
+                    <li>Proteger a niños y adultos mayores.</li>
+                    <li>Acudir a emergencias ante síntomas de golpe de calor.</li>
+                </ul>
+            </aside>
+
+        </div>
+
+    </div>
+
+    <footer class="mag-footer">
+        <p>© 2026 Alerta Climática. Todos los derechos reservados. | Fuente: Senamhi, Cenepred, El Comercio, La República, Diario Correo.</p>
+        <p style="margin-top: 8px;">Este artículo fue elaborado con información verificable publicada el 18 y 19 de septiembre de 2026.</p>
+    </footer>
+
+</div>
+
+
+    <footer>
+        <p>Autor: ROSA EMILY | Fecha: 2026-09-19</p>
+    </footer>
+</body>
+</html>
