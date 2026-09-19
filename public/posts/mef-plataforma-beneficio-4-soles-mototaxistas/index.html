@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEF habilita plataforma para beneficio de S/ 4 por galón a mototaxistas</title>
+<style>
+  :root {
+    --negro: #111111;
+    --blanco: #ffffff;
+    --rojo: #c62828;
+    --rojo-oscuro: #8e0000;
+    --gris-claro: #f5f5f5;
+    --gris-medio: #e0e0e0;
+    --gris-texto: #424242;
+    --dorado: #f9a825;
+    --sombra: 0 4px 20px rgba(0,0,0,0.08);
+    --radio: 12px;
+    --fuente-titulo: 'Georgia', 'Times New Roman', serif;
+    --fuente-cuerpo: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--fuente-cuerpo);
+    background-color: #fafafa;
+    color: var(--negro);
+    line-height: 1.7;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* CABECERA TIPO REVISTA */
+  .cabecera-revista {
+    background: var(--negro);
+    color: var(--blanco);
+    padding: 60px 0 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cabecera-revista::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, var(--rojo), var(--dorado), var(--rojo));
+  }
+
+  .cabecera-revista .etiqueta {
+    display: inline-block;
+    background: var(--rojo);
+    color: var(--blanco);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .cabecera-revista h1 {
+    font-family: var(--fuente-titulo);
+    font-size: clamp(1.8rem, 5vw, 3.2rem);
+    line-height: 1.2;
+    max-width: 900px;
+    margin: 0 auto 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  .cabecera-revista .bajada {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: #bdbdbd;
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .meta-info {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #9e9e9e;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* IMAGEN PRINCIPAL */
+  .imagen-principal {
+    margin: -30px auto 40px;
+    max-width: 1000px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .imagen-principal img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+  }
+
+  .imagen-principal .pie-foto {
+    font-size: 0.8rem;
+    color: #757575;
+    margin-top: 10px;
+    text-align: right;
+    font-style: italic;
+  }
+
+  /* CUERPO DEL ARTÍCULO */
+  .cuerpo-articulo {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+  }
+
+  .texto-nota p {
+    margin-bottom: 1.4em;
+    color: var(--gris-texto);
+  }
+
+  .texto-nota p:first-of-type::first-letter {
+    font-family: var(--fuente-titulo);
+    font-size: 4.2em;
+    float: left;
+    line-height: 0.8;
+    padding-right: 12px;
+    padding-top: 6px;
+    color: var(--rojo);
+    font-weight: 700;
+  }
+
+  .texto-nota h2 {
+    font-family: var(--fuente-titulo);
+    font-size: 1.7rem;
+    margin: 40px 0 16px;
+    color: var(--negro);
+    border-left: 5px solid var(--rojo);
+    padding-left: 16px;
+    line-height: 1.3;
+  }
+
+  .texto-nota h3 {
+    font-family: var(--fuente-titulo);
+    font-size: 1.3rem;
+    margin: 30px 0 12px;
+    color: var(--rojo-oscuro);
+  }
+
+  .texto-nota strong {
+    color: var(--negro);
+  }
+
+  .texto-nota a {
+    color: var(--rojo);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  /* IMÁGENES DENTRO DEL TEXTO */
+  .imagen-texto {
+    margin: 30px 0;
+    border-radius: var(--radio);
+    overflow: hidden;
+    box-shadow: var(--sombra);
+  }
+
+  .imagen-texto img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .imagen-texto .pie-foto {
+    font-size: 0.8rem;
+    color: #757575;
+    padding: 10px 16px;
+    background: var(--gris-claro);
+    margin: 0;
+    font-style: italic;
+  }
+
+  /* CAJA DE DATOS CLAVE */
+  .caja-datos {
+    background: var(--gris-claro);
+    border-left: 6px solid var(--rojo);
+    border-radius: 0 var(--radio) var(--radio) 0;
+    padding: 24px 28px;
+    margin: 30px 0;
+  }
+
+  .caja-datos h4 {
+    font-family: var(--fuente-titulo);
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+    color: var(--rojo-oscuro);
+  }
+
+  .caja-datos ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .caja-datos ul li {
+    padding: 8px 0 8px 28px;
+    position: relative;
+    color: var(--gris-texto);
+    border-bottom: 1px solid var(--gris-medio);
+  }
+
+  .caja-datos ul li:last-child {
+    border-bottom: none;
+  }
+
+  .caja-datos ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: var(--rojo);
+    font-weight: 700;
+  }
+
+  /* CITA DESTACADA */
+  .cita-destacada {
+    background: var(--negro);
+    color: var(--blanco);
+    padding: 30px 36px;
+    border-radius: var(--radio);
+    margin: 36px 0;
+    position: relative;
+  }
+
+  .cita-destacada::before {
+    content: "“";
+    font-family: var(--fuente-titulo);
+    font-size: 5rem;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    color: var(--rojo);
+    opacity: 0.6;
+    line-height: 1;
+  }
+
+  .cita-destacada p {
+    font-family: var(--fuente-titulo);
+    font-size: 1.15rem;
+    font-style: italic;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+    color: #eeeeee;
+  }
+
+  /* BARRA LATERAL */
+  .barra-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .tarjeta-lateral {
+    background: var(--blanco);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    overflow: hidden;
+  }
+
+  .tarjeta-lateral .titulo-lateral {
+    background: var(--negro);
+    color: var(--blanco);
+    padding: 14px 20px;
+    font-family: var(--fuente-titulo);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .tarjeta-lateral .contenido-lateral {
+    padding: 20px;
+  }
+
+  .tarjeta-lateral .contenido-lateral p {
+    font-size: 0.9rem;
+    color: var(--gris-texto);
+    margin-bottom: 12px;
+  }
+
+  .tarjeta-lateral .contenido-lateral ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .tarjeta-lateral .contenido-lateral ul li {
+    font-size: 0.9rem;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gris-claro);
+    color: var(--gris-texto);
+  }
+
+  .tarjeta-lateral .contenido-lateral ul li:last-child {
+    border-bottom: none;
+  }
+
+  .tarjeta-lateral .contenido-lateral ul li strong {
+    color: var(--negro);
+    display: block;
+    font-size: 0.85rem;
+  }
+
+  .enlace-plataforma {
+    display: inline-block;
+    background: var(--rojo);
+    color: var(--blanco);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+
+  .enlace-plataforma:hover {
+    background: var(--rojo-oscuro);
+  }
+
+  /* PIE DE PÁGINA */
+  .pie-revista {
+    background: var(--negro);
+    color: #9e9e9e;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.85rem;
+    margin-top: 20px;
+  }
+
+  .pie-revista a {
+    color: var(--dorado);
+    text-decoration: none;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .cuerpo-articulo {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .barra-lateral {
+      order: 2;
+    }
+
+    .texto-nota {
+      order: 1;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .cabecera-revista {
+      padding: 40px 0 30px;
+    }
+
+    .cabecera-revista h1 {
+      font-size: 1.6rem;
+    }
+
+    .texto-nota p:first-of-type::first-letter {
+      font-size: 3.2em;
+    }
+
+    .caja-datos {
+      padding: 18px 20px;
+    }
+
+    .cita-destacada {
+      padding: 24px 26px;
+    }
+
+    .cita-destacada p {
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- CABECERA -->
+<header class="cabecera-revista">
+  <div class="contenedor">
+    <span class="etiqueta">Economía · Transporte</span>
+    <h1>MEF habilita plataforma web para que mototaxistas accedan al beneficio de S/ 4 por galón de combustible</h1>
+    <p class="bajada">Los conductores de Loreto, Ucayali y Madre de Dios ya pueden registrar sus compras de gasolina o gasohol en el portal <strong>mototaxi.mef.gob.pe</strong> para recibir hasta S/ 100 mensuales durante tres meses.</p>
+    <div class="meta-info">
+      <span> 18 de septiembre de 2026</span>
+      <span> Lima, Perú</span>
+      <span>⏱ Lectura: 5 min</span>
+    </div>
+  </div>
+</header>
+
+<!-- IMAGEN PRINCIPAL -->
+<div class="imagen-principal">
+  <img src="imagen1.jpg" alt="Mototaxistas en la selva peruana esperando el beneficio del MEF">
+  <p class="pie-foto">Conductores de mototaxis de la selva peruana podrán acceder al subsidio de S/ 4 por galón. Foto: Andina.</p>
+</div>
+
+<!-- CUERPO PRINCIPAL -->
+<main class="cuerpo-articulo">
+
+  <!-- COLUMNA DE TEXTO -->
+  <article class="texto-nota">
+
+    <p>El Ministerio de Economía y Finanzas (MEF) habilitó oficialmente la plataforma web que permitirá a los conductores de mototaxis de las regiones de <strong>Loreto, Ucayali y Madre de Dios</strong> registrar sus compras de gasolina o gasohol y acceder al subsidio temporal de <strong>S/ 4 por galón</strong>, con un tope máximo de <strong>S/ 100 mensuales</strong> por beneficiario. La medida, dispuesta mediante el <strong>Decreto de Urgencia N.° 011-2026</strong>, entró en vigencia el 19 de septiembre de 2026 y tendrá una duración de tres meses.</p>
+
+    <p>El beneficio responde al anuncio realizado por la presidenta de la República, Keiko Fujimori, quien informó que el Gobierno implementaría un subsidio focalizado para los transportistas afectados por el incremento extraordinario de los precios de los combustibles. Por primera vez, este mecanismo incluye de manera directa a los mototaxistas y transportistas fluviales de la Amazonía peruana.</p>
+
+    <h2>¿Cómo funciona la plataforma?</h2>
+
+    <p>El registro es completamente digital y <strong>no requiere usuario ni contraseña</strong>. Los conductores habilitados deben ingresar a la plataforma web <a href="https://mototaxi.mef.gob.pe/" target="_blank" rel="noopener">https://mototaxi.mef.gob.pe/</a> y completar los datos de su licencia de conducir, de su vehículo (Placa Única Nacional de Rodaje) y del comprobante electrónico de pago correspondiente a la compra de combustible.</p>
+
+    <p>Una vez registrada la compra, esta quedará en proceso de validación. La información del comprobante será verificada con la SUNAT, mientras que el MEF realizará las comprobaciones necesarias para determinar qué adquisiciones cumplen con las condiciones establecidas y cuál es el monto del beneficio que corresponde a cada conductor.</p>
+
+    <p>La plataforma también permite al conductor consultar el estado de sus registros y el beneficio acumulado. Luego de la validación, el MEF remitirá la información de los beneficiarios al <strong>Banco de la Nación</strong>, entidad encargada de realizar el pago directamente al beneficiario identificado con su DNI o a su representante debidamente autorizado.</p>
+
+    <div class="imagen-texto">
+      <img src="imagen2.jpg" alt="Conductor de mototaxi registrando su compra de combustible en la plataforma del MEF">
+      <p class="pie-foto">El registro en la plataforma es digital y no exige creación de usuario. Foto: MEF.</p>
+    </div>
+
+    <h2>Requisitos para acceder al subsidio</h2>
+
+    <p>Para ser considerado beneficiario, el conductor debe cumplir con una serie de condiciones establecidas en la norma. Estas buscan garantizar que el subsidio llegue efectivamente a quienes prestan el servicio de transporte público de personas en vehículos menores de categoría L5 (mototaxis).</p>
+
+    <div class="caja-datos">
+      <h4> Requisitos obligatorios</h4>
+      <ul>
+        <li>Contar con <strong>DNI vigente</strong>.</li>
+        <li>Tener <strong>licencia de conducir vigente Clase B, Categoría II-C</strong>.</li>
+        <li>Poseer un <strong>vehículo L5 (mototaxi)</strong> identificado con Placa Única Nacional de Rodaje.</li>
+        <li>Tener <strong>SOAT vigente</strong> o, según corresponda, <strong>CAT vigente</strong> emitido por una AFOCAT.</li>
+        <li>Realizar las compras de combustible en <strong>Loreto, Ucayali o Madre de Dios</strong>, en establecimientos con inscripción vigente en el Registro de Hidrocarburos de Osinergmin.</li>
+        <li>Respaldar cada compra con un <strong>comprobante electrónico de pago</strong>.</li>
+      </ul>
+    </div>
+
+    <p>Es importante señalar que las adquisiciones de combustible deben efectuarse en establecimientos autorizados por Osinergmin y acreditarse mediante comprobantes de pago electrónicos. El MEF utilizará información proporcionada por Reniec, Sunarp, el Ministerio de Transportes y Comunicaciones, la Superintendencia de Banca, Seguros y AFP, Sunat y Osinergmin para determinar a los conductores habilitados y el monto correspondiente.</p>
+
+    <h2>Plazos y financiamiento</h2>
+
+    <p>Los conductores incorporados en la lista de beneficiarios deberán registrar cada adquisición de combustible dentro de los <strong>15 días calendario posteriores</strong> a la culminación de cada período de generación del subsidio. Este beneficio comprende <strong>seis períodos sucesivos de 15 días calendario</strong>, que en total suman los tres meses de vigencia de la medida.</p>
+
+    <p>El financiamiento de la medida asciende hasta <strong>S/ 16 millones 23,000</strong>, con cargo a la Reserva de Contingencia del Ministerio de Economía y Finanzas. La norma también establece que una misma adquisición no puede ser utilizada para beneficiar a más de un conductor y que la percepción indebida del subsidio genera la obligación de devolverlo.</p>
+
+    <div class="cita-destacada">
+      <p>El Gobierno pone en marcha un mecanismo temporal, focalizado y verificable para atender el impacto del incremento del costo de los combustibles en los conductores de mototaxi de Loreto, Ucayali y Madre de Dios, contribuyendo a la continuidad del servicio de transporte público en estas regiones.</p>
+    </div>
+
+    <h2>Un alivio para la Amazonía</h2>
+
+    <p>La medida representa un alivio significativo para miles de familias que dependen del mototaxi como principal medio de transporte y sustento económico en la selva peruana. El alza de los combustibles ha golpeado con fuerza a estos conductores, quienes en muchos casos vieron reducidos sus márgenes de ganancia al no poder trasladar el incremento de costos a los pasajeros.</p>
+
+    <p>El subsidio de S/ 4 por galón busca compensar parcialmente ese impacto y preservar la continuidad del servicio. Con un tope de S/ 100 mensuales, un conductor que consuma 25 galones al mes recibiría el beneficio completo, lo que equivale a un alivio directo en su economía diaria.</p>
+
+    <p>El registro ya está disponible desde el sábado 19 de septiembre. El MEF habilitó un tutorial en línea para orientar a los conductores en el uso de la plataforma. Se espera que en los próximos días miles de mototaxistas de las tres regiones amazónicas completen su registro y comiencen a recibir el beneficio en sus cuentas del Banco de la Nación.</p>
+
+    <div class="imagen-texto">
+      <img src="imagen3.jpg" alt="Capacitación a mototaxistas sobre el registro en la plataforma del MEF">
+      <p class="pie-foto">El MEF habilitó un tutorial para facilitar el registro de los conductores. Foto: Gob.pe.</p>
+    </div>
+
+    <p>Con esta medida, el Gobierno busca no solo mitigar el impacto inmediato del alza de combustibles, sino también sentar un precedente de cómo la tecnología y la focalización pueden combinarse para llegar de manera directa y transparente a los sectores más vulnerables del transporte público en el Perú.</p>
+
+  </article>
+
+  <!-- BARRA LATERAL -->
+  <aside class="barra-lateral">
+
+    <div class="tarjeta-lateral">
+      <div class="titulo-lateral"> Datos clave</div>
+      <div class="contenido-lateral">
+        <ul>
+          <li><strong>Subsidio</strong> S/ 4 por galón de gasolina o gasohol.</li>
+          <li><strong>Tope mensual</strong> S/ 100 por beneficiario.</li>
+          <li><strong>Vigencia</strong> 3 meses (6 períodos de 15 días).</li>
+          <li><strong>Regiones</strong> Loreto, Ucayali y Madre de Dios.</li>
+          <li><strong>Financiamiento</strong> Hasta S/ 16,023,000.</li>
+          <li><strong>Pago</strong> Banco de la Nación, directo al DNI.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tarjeta-lateral">
+      <div class="titulo-lateral"> Plataforma oficial</div>
+      <div class="contenido-lateral">
+        <p>Los conductores habilitados deben ingresar al portal del MEF para registrar cada compra de combustible.</p>
+        <a class="enlace-plataforma" href="https://mototaxi.mef.gob.pe/" target="_blank" rel="noopener">Ir a mototaxi.mef.gob.pe →</a>
+      </div>
+    </div>
+
+    <div class="tarjeta-lateral">
+      <div class="titulo-lateral"> Norma legal</div>
+      <div class="contenido-lateral">
+        <p><strong>Decreto de Urgencia N.° 011-2026</strong>, publicado en el Diario Oficial El Peruano el 18 de septiembre de 2026. Establece el subsidio temporal para conductores de mototaxi de Loreto, Ucayali y Madre de Dios.</p>
+      </div>
+    </div>
+
+  </aside>
+
+</main>
+
+<!-- PIE DE PÁGINA -->
+<footer class="pie-revista">
+  <p>Artículo elaborado con información de <a href="https://www.elperuano.pe" target="_blank" rel="noopener">El Peruano</a>, <a href="https://andina.pe" target="_blank" rel="noopener">Andina</a> y <a href="https://www.gob.pe/mef" target="_blank" rel="noopener">MEF</a>.</p>
+  <p>© 2026 · Reportaje especial sobre el subsidio a mototaxistas en la Amazonía peruana.</p>
+</footer>
+
+
+    <footer>
+        <p>Autor: ROSA EMILY | Fecha: 2026-09-19</p>
+    </footer>
+</body>
+</html>

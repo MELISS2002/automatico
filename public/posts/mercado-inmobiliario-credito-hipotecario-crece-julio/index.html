@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crédito hipotecario en Perú crece 7.6% a julio 2026 | Mercado inmobiliario</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #f4f1eb;
+    color: #1a1a1a;
+    line-height: 1.7;
+  }
+
+  /* CABECERA TIPO REVISTA */
+  .magazine-header {
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b2d45 100%);
+    color: #ffffff;
+    padding: 60px 20px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .magazine-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #c9a84c, #e8d48b, #c9a84c);
+  }
+
+  .magazine-header .category {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #c9a84c;
+    margin-bottom: 20px;
+  }
+
+  .magazine-header h1 {
+    font-size: clamp(1.8rem, 5vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.2;
+    max-width: 850px;
+    margin: 0 auto 20px;
+  }
+
+  .magazine-header .subtitle {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1rem;
+    color: #b0b8c4;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .magazine-header .meta {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #7a8a9e;
+    margin-top: 25px;
+    letter-spacing: 1px;
+  }
+
+  /* CONTENEDOR PRINCIPAL */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* ARTÍCULO */
+  .article-body {
+    background: #ffffff;
+    padding: 50px 45px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    border-radius: 4px;
+  }
+
+  .article-body p {
+    font-size: 1.05rem;
+    margin-bottom: 1.4em;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .article-body p:first-of-type::first-letter {
+    font-size: 3.5em;
+    float: left;
+    line-height: 0.8;
+    margin-right: 10px;
+    margin-top: 5px;
+    color: #0d1b2a;
+    font-weight: 700;
+  }
+
+  .article-body h2 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #0d1b2a;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #c9a84c;
+    line-height: 1.3;
+  }
+
+  .article-body h3 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #1b2d45;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  /* IMÁGENES */
+  .article-figure {
+    margin: 2.5rem 0;
+    text-align: center;
+  }
+
+  .article-figure img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    display: block;
+  }
+
+  .article-figure figcaption {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.82rem;
+    color: #6b7a8d;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 5px;
+    border-left: 3px solid #c9a84c;
+    padding: 5px 0 5px 12px;
+  }
+
+  /* DATOS DESTACADOS */
+  .data-highlight {
+    background: linear-gradient(135deg, #f8f6f1, #eae5d9);
+    border-left: 5px solid #c9a84c;
+    padding: 25px 30px;
+    margin: 2rem 0;
+    border-radius: 0 6px 6px 0;
+  }
+
+  .data-highlight .data-number {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0d1b2a;
+    line-height: 1.1;
+  }
+
+  .data-highlight .data-label {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #4a5a6e;
+    margin-top: 5px;
+  }
+
+  .data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 2rem 0;
+  }
+
+  .data-card {
+    background: #0d1b2a;
+    color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .data-card .number {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #c9a84c;
+    display: block;
+  }
+
+  .data-card .label {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #b0b8c4;
+    margin-top: 8px;
+    display: block;
+    letter-spacing: 0.5px;
+  }
+
+  /* CITA */
+  .pull-quote {
+    border-top: 3px solid #0d1b2a;
+    border-bottom: 3px solid #0d1b2a;
+    padding: 25px 30px;
+    margin: 2.5rem 0;
+    text-align: center;
+  }
+
+  .pull-quote p {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #0d1b2a;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .pull-quote .attribution {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.85rem;
+    color: #6b7a8d;
+    font-style: normal;
+  }
+
+  /* PIE DE PÁGINA */
+  .article-footer {
+    background: #0d1b2a;
+    color: #7a8a9e;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.8rem;
+  }
+
+  .article-footer a {
+    color: #c9a84c;
+    text-decoration: none;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .article-body {
+      padding: 30px 20px;
+    }
+
+    .magazine-header {
+      padding: 40px 15px 30px;
+    }
+
+    .magazine-header h1 {
+      font-size: 1.6rem;
+    }
+
+    .data-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pull-quote p {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .article-body p {
+      font-size: 0.98rem;
+    }
+
+    .magazine-header h1 {
+      font-size: 1.35rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="magazine-header">
+  <div class="category">Economía &amp; Vivienda</div>
+  <h1>Crédito hipotecario en Perú crece 7.6% a julio y el mercado inmobiliario apunta a un año récord</h1>
+  <p class="subtitle">El saldo de los préstamos para vivienda alcanzó los S/ 77,397 millones, impulsado por el dinamismo de los créditos en soles. La tasa promedio se mantiene en 7.5% y el tipo de cambio favorece a los compradores.</p>
+  <div class="meta">Por Redacción Economía &nbsp;|&nbsp; 19 de septiembre de 2026 &nbsp;|&nbsp; Lectura: 6 minutos</div>
+</header>
+
+<main class="container">
+  <article class="article-body">
+
+    <p>El mercado inmobiliario peruano atraviesa uno de sus mejores momentos en los últimos años. Según los datos más recientes del Banco Central de Reserva del Perú (BCRP), el crédito hipotecario registró un crecimiento interanual de 7.6% en julio de 2026, consolidando una tendencia de aceleración que comenzó a mediados de año y que posiciona al sector como uno de los más dinámicos de la economía nacional. Este resultado supera el 7.4% registrado en junio y confirma la recuperación sostenida de la demanda por financiamiento para la adquisición de viviendas.</p>
+
+    <div class="data-grid">
+      <div class="data-card">
+        <span class="number">7.6%</span>
+        <span class="label">Crecimiento interanual del crédito hipotecario a julio 2026</span>
+      </div>
+      <div class="data-card">
+        <span class="number">S/ 77,397 M</span>
+        <span class="label">Saldo total de créditos hipotecarios</span>
+      </div>
+      <div class="data-card">
+        <span class="number">8.1%</span>
+        <span class="label">Avance de los créditos hipotecarios en soles</span>
+      </div>
+      <div class="data-card">
+        <span class="number">7.5%</span>
+        <span class="label">Tasa promedio en soles (enero-agosto 2026)</span>
+      </div>
+    </div>
+
+    <figure class="article-figure">
+      <img src="imagen1.jpg" alt="Vista panorámica de edificios residenciales en Lima Metropolitana">
+      <figcaption>El mercado residencial de Lima Metropolitana concentra la mayor parte del dinamismo hipotecario. Foto: Andina.</figcaption>
+    </figure>
+
+    <p>El informe del ente emisor detalla que el saldo del crédito hipotecario pasó de S/ 72,273 millones en julio de 2025 a S/ 77,397 millones en el mismo mes de 2026. Este incremento estuvo impulsado principalmente por el avance de los préstamos otorgados en moneda nacional, que se expandieron un 8.1% interanual, mientras que los créditos en moneda extranjera registraron una caída del 2.1% en el mismo periodo. En términos mensuales, el saldo hipotecario aumentó 0.4% respecto a junio, confirmando la solidez de la demanda interna por vivienda propia.</p>
+
+    <h2>Preferencia por el financiamiento en soles</h2>
+
+    <p>Uno de los datos más relevantes del informe es la marcada preferencia de las familias peruanas por endeudarse en moneda nacional. En julio de 2026, solo el 5.6% de los préstamos hipotecarios fue otorgado en dólares, mientras que el 94.4% restante correspondió a créditos en soles. Esta tendencia refleja una mayor conciencia financiera por parte de los hogares, que buscan reducir su exposición a eventuales variaciones del tipo de cambio y aprovechar las tasas más competitivas que ofrecen las entidades bancarias en moneda local.</p>
+
+    <p>El saldo de los créditos hipotecarios en soles pasó de S/ 68,066 millones en julio de 2025 a S/ 73,613 millones en julio de 2026, lo que representa un crecimiento del 8.1%. Este comportamiento es consistente con la estrategia de desdolarización del crédito que promueve el BCRP desde hace varios años, y que ha permitido que el sistema financiero peruano sea menos vulnerable a los shocks externos.</p>
+
+    <figure class="article-figure">
+      <img src="imagen2.jpg" alt="Familia peruana revisando documentos para solicitar un crédito hipotecario">
+      <figcaption>Las familias priorizan el financiamiento en soles para reducir riesgos cambiarios. Foto: Andina.</figcaption>
+    </figure>
+
+    <h2>Tasas de interés: estabilidad y oportunidades</h2>
+
+    <p>La tasa de interés hipotecaria constituye una de las principales variables que determina el costo de una compra financiada. Durante 2026, la tasa promedio de los créditos hipotecarios en soles se mantuvo en 7.5% en el sistema bancario entre enero y agosto, según datos del BCRP. Este nivel representa un escenario de relativa estabilidad en el costo del financiamiento, que contrasta con la volatilidad observada en años anteriores.</p>
+
+    <div class="data-highlight">
+      <div class="data-number">7.5%</div>
+      <div class="data-label">Tasa de interés promedio de los créditos hipotecarios en soles en el sistema bancario, entre enero y agosto de 2026, según el BCRP.</div>
+    </div>
+
+    <p>La estabilidad de las tasas ha sido posible gracias a la política monetaria prudente del BCRP y a la moderación de la inflación. En un contexto donde la competencia entre entidades financieras se intensifica, los usuarios tienen la oportunidad de comparar no solo la tasa de interés, sino también el plazo, la cuota inicial y el costo total del financiamiento. Expertos del sector recomiendan evaluar la tasa de costo efectivo anual (TCEA) para tomar decisiones informadas.</p>
+
+    <h2>El tipo de cambio como aliado del comprador</h2>
+
+    <p>El tipo de cambio también juega un papel relevante en el costo de una operación inmobiliaria, especialmente cuando el precio del inmueble está fijado o referenciado en dólares. En agosto de 2026, el tipo de cambio promedio bancario se ubicó alrededor de S/ 3.36 por dólar, frente a los aproximadamente S/ 3.54 registrados en el mismo mes de 2025. Una menor cotización implica que se requieren menos soles para cubrir un mismo precio expresado en dólares, lo que puede generar una diferencia significativa al calcular en soles el valor de una propiedad.</p>
+
+    <p>Sin embargo, los especialistas advierten que esta variación no significa que las viviendas hayan reducido su precio ni que haya disminuido el costo del crédito hipotecario. Se trata de un factor adicional que los compradores deben considerar al momento de evaluar la compra de una propiedad, especialmente en proyectos cuya lista de precios está denominada en moneda estadounidense.</p>
+
+    <h2>MiVivienda amplía las alternativas de financiamiento</h2>
+
+    <p>Las condiciones de compra también dependen del tipo de vivienda y de los mecanismos de financiamiento disponibles. Durante el primer semestre de 2026 se otorgaron 4,680 créditos MiVivienda, un 9% más que en el mismo periodo de 2025. En provincias se desembolsaron 1,750 créditos, cifra que representó un incremento del 21%. De esta manera, la participación de las provincias en el total nacional aumentó de 33.53% a 37.39%, según el Ministerio de Vivienda, Construcción y Saneamiento (MVCS).</p>
+
+    <p>Para quienes cumplen los requisitos, resulta relevante verificar si la vivienda elegida permite acceder al Crédito MiVivienda y a beneficios como el Bono del Buen Pagador (BBP), debido a que estos mecanismos pueden modificar las condiciones económicas de la compra. A ello se suma la Cobertura de Riesgo Crediticio (CRC), instrumento que permite a las entidades financieras ampliar su capacidad de financiamiento utilizando recursos propios, sin que el cliente pierda los beneficios asociados a MiVivienda.</p>
+
+    <figure class="article-figure">
+      <img src="imagen3.jpg" alt="Proyecto de vivienda social del programa MiVivienda en provincias">
+      <figcaption>Los créditos MiVivienda crecieron 9% en el primer semestre de 2026. Foto: MVCS.</figcaption>
+    </figure>
+
+    <h2>Perspectivas: un año histórico para el sector</h2>
+
+    <p>Las proyecciones del sector son optimistas. Analistas del mercado inmobiliario estiman que las colocaciones de nuevos créditos hipotecarios crecerán alrededor del 10% al cierre de 2026, sumando poco más de 45,000 créditos. Esta cifra superaría la marca lograda en 2021, cuando se contabilizaron 43,882 operaciones. El dinamismo estaría impulsado principalmente por el mercado habitacional de Lima Metropolitana, donde se prevé que la comercialización de inmuebles residenciales bordee las 28,000 unidades al término del año, un 15% más que en 2025.</p>
+
+    <div class="pull-quote">
+      <p>"Existe una alta probabilidad de que el mercado hipotecario alcance niveles históricos en 2026. Observamos una combinación de factores como una mayor confianza del consumidor, la recuperación de la actividad inmobiliaria y mejores condiciones de financiamiento."</p>
+      <div class="attribution">— Victoria Pérez, gerente principal de Hub Hipotecario de Banco Pichincha del Perú</div>
+    </div>
+
+    <p>El desempeño del primer semestre ya anticipa un año excepcional. Entre enero y junio de 2026, la colocación de créditos hipotecarios sumó 22,743 operaciones, lo que equivale a un crecimiento del 12% respecto a similar etapa del año previo. Además, la venta de unidades residenciales en Lima alcanzó las 15,477 viviendas en el mismo periodo, registrando un alza del 26% según la Confederación de Desarrolladores Inmobiliarios.</p>
+
+    <p>Otros factores que explican este dinamismo son la reducción gradual de la tasa de interés hipotecaria, la estabilidad en los precios de los materiales de construcción —que aumentaron apenas 1.8% en el primer semestre— y la mejora en el empleo e ingresos formales del sector privado. La combinación de estos elementos ha creado un entorno propicio para que más familias peruanas puedan acceder a una vivienda propia.</p>
+
+    <h2>Recomendaciones para los compradores</h2>
+
+    <p>Ante este escenario favorable, los expertos recomiendan a los potenciales compradores evaluar cuidadosamente su capacidad de pago antes de solicitar un crédito hipotecario. La cuota mensual no debería superar el 40% de los ingresos netos del hogar, y es fundamental contar con un fondo de emergencia que permita afrontar imprevistos sin comprometer el pago de la deuda.</p>
+
+    <p>Asimismo, se sugiere comparar las ofertas de al menos tres entidades financieras, considerando no solo la tasa de interés sino también los costos asociados como seguros, comisiones y gastos notariales. Para quienes califican, el Crédito MiVivienda y el Bono del Buen Pagador representan una oportunidad para reducir el monto del financiamiento y mejorar las condiciones del préstamo.</p>
+
+    <p>El mercado inmobiliario peruano muestra señales claras de madurez y sostenibilidad. Con un crecimiento del crédito hipotecario que supera el 7% anual, tasas de interés estables y un tipo de cambio favorable, las condiciones para adquirir una vivienda son las mejores de los últimos años. El reto para el sector será mantener este ritmo y garantizar que más familias peruanas puedan cumplir el sueño de la casa propia.</p>
+
+  </article>
+</main>
+
+<footer class="article-footer">
+  <p>© 2026 Economía &amp; Vivienda. Todos los derechos reservados.</p>
+  <p>Fuentes: Banco Central de Reserva del Perú (BCRP), Ministerio de Vivienda, Construcción y Saneamiento (MVCS), Asociación de Bancos del Perú (ASBANC).</p>
+</footer>
+
+
+    <footer>
+        <p>Autor: ROSA EMILY | Fecha: 2026-09-19</p>
+    </footer>
+</body>
+</html>
