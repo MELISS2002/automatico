@@ -310,6 +310,11 @@ function App() {
                 <p>Guías de bienestar y remedios naturales respaldados por información clara.</p>
                 <span className="read-more">Explorar la sección</span>
               </a>
+              <a className="banner-card" href="/peliculas">
+                <h3>Películas y Series</h3>
+                <p>Catálogo completo de películas, series y animes en Latino. Miles de títulos.</p>
+                <span className="read-more">Explorar catálogo</span>
+              </a>
             </section>
           </>
         )}

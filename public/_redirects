@@ -1,0 +1,20 @@
+# Pelis (catalogo de peliculas/series) integrado bajo /pelis
+/peliculas /pelis/index.html 200
+/peliculas/* /pelis/index.html 200
+/series /pelis/index.html 200
+/series/* /pelis/index.html 200
+/animes /pelis/index.html 200
+/animes/* /pelis/index.html 200
+/tendencias /pelis/index.html 200
+/tendencias/* /pelis/index.html 200
+/episodios /pelis/index.html 200
+/episodios/* /pelis/index.html 200
+/genero/* /pelis/index.html 200
+/pais/* /pelis/index.html 200
+/imdb /pelis/imdb/index.html 200
+/imdb/* /pelis/imdb/index.html 200
+/legal/* /pelis/legal/:splat 200
+/detalle/* /pelis/detalle/:splat/index.html 200
+
+# React SPA fallback (UltimoLive)
+/* /index.html 200

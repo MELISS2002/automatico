@@ -40,7 +40,8 @@ function Header() {
   const navItems = [
     { to: '/', label: 'Inicio', end: true },
     { to: '/gana', label: 'Gana' },
-    { to: '/salud', label: 'Salud' }
+    { to: '/salud', label: 'Salud' },
+    { to: '/peliculas', label: 'Películas', external: true }
   ];
 
   return (
@@ -53,22 +54,16 @@ function Header() {
 
         <nav className={`desktop-nav`}>
           {navItems.map((item) => (
-            <NavLink
-              key={item.to}
-              to={item.to}
-              end={item.end}
-              onClick={closeMenu}
-              className={({ isActive }) => (isActive ? 'active' : '')}
-            >
-              {item.label}
-            </NavLink>
-          ))}
-        </nav>
-
-        {/* Drawer móvil: debajo del header, solo links (el logo vive en el header del sitio) */}
-        <nav className={`mobile-nav ${isOpen ? 'open' : ''}`}>
-          <div className="mobile-nav-links">
-            {navItems.map((item) => (
+            item.external ? (
+              <a
+                key={item.to}
+                href={item.to}
+                onClick={closeMenu}
+                className=""
+              >
+                {item.label}
+              </a>
+            ) : (
               <NavLink
                 key={item.to}
                 to={item.to}
@@ -78,6 +73,33 @@ function Header() {
               >
                 {item.label}
               </NavLink>
+            )
+          ))}
+        </nav>
+
+        {/* Drawer móvil: debajo del header, solo links (el logo vive en el header del sitio) */}
+        <nav className={`mobile-nav ${isOpen ? 'open' : ''}`}>
+          <div className="mobile-nav-links">
+            {navItems.map((item) => (
+              item.external ? (
+                <a
+                  key={item.to}
+                  href={item.to}
+                  onClick={closeMenu}
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <NavLink
+                  key={item.to}
+                  to={item.to}
+                  end={item.end}
+                  onClick={closeMenu}
+                  className={({ isActive }) => (isActive ? 'active' : '')}
+                >
+                  {item.label}
+                </NavLink>
+              )
             ))}
           </div>
         </nav>
