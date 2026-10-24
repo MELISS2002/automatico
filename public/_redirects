@@ -14,7 +14,7 @@
 /imdb /pelis/imdb/index.html 200
 /imdb/* /pelis/imdb/index.html 200
 /legal/* /pelis/legal/:splat 200
-/detalle/* /pelis/detalle/:splat 301
+/detalle/* /pelis/detalle/:splat 200
 
 # React SPA fallback (UltimoLive)
 /* /index.html 200

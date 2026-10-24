@@ -42,15 +42,20 @@ const header = document.querySelector("header.main");
 function getRouteParts() {
   // Admite temporalmente los enlaces antiguos con hash.
   // Cuando todos los enlaces hayan sido migrados, se puede eliminar el fallback.
+  // En el despliegue integrado el sitio de pelis se sirve bajo /pelis/, por lo
+  // que la ruta puede incluir ese prefijo: se descarta para que el router
+  // resuelva las rutas internas (detalle, peliculas, ...) correctamente.
   const cleanPath = window.location.pathname
     .replace(/^\/+|\/+$/g, "");
 
-  if (cleanPath) return cleanPath.split("/").filter(Boolean);
-
-  return window.location.hash
+  let parts = cleanPath ? cleanPath.split("/").filter(Boolean) : window.location.hash
     .replace(/^#\/?/, "")
     .split("/")
     .filter(Boolean);
+
+  if (parts.length && parts[0] === "pelis") parts = parts.slice(1);
+
+  return parts;
 }
 
 function routeUrl(path) {
