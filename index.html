@@ -2,6 +2,14 @@
 <html lang="es">
   <head>
     <script>
+      (function () {
+        var p = location.pathname;
+        if (p.indexOf('/detalle/') === 0) {
+          location.replace('/pelis' + p + location.search + location.hash);
+        }
+      })();
+    </script>
+    <script>
       /* Tema: localStorage > preferencia del sistema (evita flash) */
       (function () {
         try {

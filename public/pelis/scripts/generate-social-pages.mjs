@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
 const catalog = JSON.parse(readFileSync(join(ROOT, "data/catalog.json"), "utf8"));
 const template = readFileSync(join(ROOT, "index.html"), "utf8");
-const origin = process.env.SITE_ORIGIN || "https://pelis.plisplus.workers.dev";
+const origin = process.env.SITE_ORIGIN || "https://automatico.pages.dev";
 
 const esc = (value) => String(value ?? "")
   .replaceAll("&", "&amp;")
@@ -46,7 +46,7 @@ for (const item of items) {
 <meta name="twitter:image" content="${esc(image)}">`;
 
   const page = template
-    .replace("<head>", `<head>\n<base href="/">${socialHead}`)
+    .replace("<head>", `<head>\n${socialHead}`)
     .replace(
       /<meta name="description" content="[^"]*"\s*\/?>/,
       `<meta name="description" content="${esc(description)}" />`
@@ -86,7 +86,7 @@ for (const sec of SECTIONS) {
 <meta name="twitter:description" content="${esc(sec.desc)}">
 <meta name="twitter:image" content="${esc(sec.image || `${origin}/social-default.jpg`)}">`;
   const page = template
-    .replace("<head>", `<head>\n<base href="/">${socialHead}`)
+    .replace("<head>", `<head>\n${socialHead}`)
     .replace(
       /<meta name="description" content="[^"]*"\s*\/?>/,
       `<meta name="description" content="${esc(sec.desc)}" />`
