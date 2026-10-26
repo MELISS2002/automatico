@@ -1,4 +1,4 @@
-// PelisLatinoHD clone - catalog scraper
+// UltimoLive clone - catalog scraper
 // Pulls a sample catalog from the site's open WordPress REST API into static JSON
 // used by the static web app (site/).
 import { writeFileSync, mkdirSync } from "fs";
@@ -488,7 +488,7 @@ async function main() {
 
   const catalog = {
     meta: {
-      title: "PelisLatinoHD",
+      title: "UltimoLive",
       base: BASE,
       generatedAt: new Date().toISOString(),
       total: {

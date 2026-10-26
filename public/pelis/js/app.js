@@ -1,4 +1,4 @@
-// PelisLatinoHD clone - static SPA (hash router)
+// UltimoLive clone - static SPA (hash router)
 // Replicates the real site: home slider + modules, paginated listings,
 // genre/country/tag pages, series episodes, inline players, responsive menus.
 
@@ -481,20 +481,20 @@ function renderCountry(slug, seg2, seg3) {
 function updateLegalSEO(kind) {
   const seo = {
     privacidad: {
-      title: "Política de Privacidad | PelisLatinoHD",
-      description: "Conoce cómo PelisLatinoHD puede procesar datos técnicos, utilizar servicios de terceros y proteger la privacidad de sus visitantes."
+      title: "Política de Privacidad | UltimoLive",
+      description: "Conoce cómo UltimoLive puede procesar datos técnicos, utilizar servicios de terceros y proteger la privacidad de sus visitantes."
     },
     terminos: {
-      title: "Términos de Uso | PelisLatinoHD",
-      description: "Consulta las condiciones de uso de PelisLatinoHD, el alcance del sitio, los enlaces externos, la publicidad y las responsabilidades del visitante."
+      title: "Términos de Uso | UltimoLive",
+      description: "Consulta las condiciones de uso de UltimoLive, el alcance del sitio, los enlaces externos, la publicidad y las responsabilidades del visitante."
     },
     cookies: {
-      title: "Política de Cookies | PelisLatinoHD",
-      description: "Conoce qué son las cookies, cómo pueden utilizarse en PelisLatinoHD y cómo gestionar tus preferencias desde el navegador."
+      title: "Política de Cookies | UltimoLive",
+      description: "Conoce qué son las cookies, cómo pueden utilizarse en UltimoLive y cómo gestionar tus preferencias desde el navegador."
     },
     contacto: {
-      title: "Contacto | PelisLatinoHD",
-      description: "Encuentra el correo de contacto de PelisLatinoHD para consultas sobre privacidad, derechos de autor, publicidad y funcionamiento del sitio."
+      title: "Contacto | UltimoLive",
+      description: "Encuentra el correo de contacto de UltimoLive para consultas sobre privacidad, derechos de autor, publicidad y funcionamiento del sitio."
     }
   };
   const data = seo[kind] || seo.privacidad;

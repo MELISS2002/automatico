@@ -1,6 +1,6 @@
 name: update-catalog
 
-# PelisLatinoHD clone - incremental catalog worker.
+# UltimoLive clone - incremental catalog worker.
 # Keeps data/catalog.json fresh without a full re-scrape, then commits so
 # GitHub Pages (deploy from branch main) picks up the change automatically.
 

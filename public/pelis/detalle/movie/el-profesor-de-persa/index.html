@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<base href="/pelis/">
+
 <meta property="og:type" content="video.movie">
-<meta property="og:site_name" content="PelisLatinoHD">
+<meta property="og:site_name" content="UltimoLive">
 <meta property="og:title" content="El profesor de persa">
 <meta property="og:description" content="Francia, 1942. Gilles es arrestado por soldados de las SS junto con otros judíos y enviado a un campo de concentración en Alemania. Allí consigue evitar la ejecución al jurar a los guardias que no es judío, sino persa. Gracias a esta artim…">
 <meta property="og:image" content="https://image.tmdb.org/t/p/w780/kgP4YOUWKhJZWL0Z8LJ6G6LBMEM.jpg">
-<meta property="og:url" content="https://pelis.plisplus.workers.dev/detalle/movie/el-profesor-de-persa/">
+<meta property="og:url" content="https://automatico.pages.dev/detalle/movie/el-profesor-de-persa/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="El profesor de persa">
 <meta name="twitter:description" content="Francia, 1942. Gilles es arrestado por soldados de las SS junto con otros judíos y enviado a un campo de concentración en Alemania. Allí consigue evitar la ejecución al jurar a los guardias que no es judío, sino persa. Gracias a esta artim…">
 <meta name="twitter:image" content="https://image.tmdb.org/t/p/w780/kgP4YOUWKhJZWL0Z8LJ6G6LBMEM.jpg">
+<script>
+(function () {
+  var host = location.hostname;
+  // Standalone deploy (pelis.plisplus.workers.dev or any host with "pelis") uses root base.
+  // Integrated deploy under the main site uses /pelis/ base.
+  var base = (host === 'localhost' || host === '127.0.0.1')
+    ? '/pelis/'
+    : (host.indexOf('pelis') !== -1 ? '/' : '/pelis/');
+  document.write('<base href="' + base + '">');
+})();
+</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="Francia, 1942. Gilles es arrestado por soldados de las SS junto con otros judíos y enviado a un campo de concentración en Alemania. Allí consigue evitar la ejecución al jurar a los guardias que no es judío, sino persa. Gracias a esta artim…" />
-<title>El profesor de persa - PelisLatinoHD</title>
+<title>El profesor de persa - UltimoLive</title>
 <link rel="icon" href="https://image.tmdb.org/t/p/w500/aQOWdgUUtm2PpT7WFCak9g1MkSH.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,7 +44,7 @@
     <div class="hbox">
       <div class="mob-bars" id="mob-bars" aria-label="Menú"><span></span><span></span><span></span></div>
       <div class="logo">
-        <a href="/"><h1 class="text">Pelis<span class="hl">Latino</span>HD</h1></a>
+        <a href="/"><h1 class="text">Ultimo<span class="hl">Live</span></h1></a>
       </div>
       <div class="head-main-nav">
         <ul class="main-header">
@@ -74,7 +85,7 @@
 
   <footer class="main">
     <div class="fbox">
-      <p>PelisLatinoHD — Réplica estática de demo. Este proyecto no aloja ni transmite contenido.</p>
+      <p>UltimoLive — Réplica estática de demo. Este proyecto no aloja ni transmite contenido.</p>
     </div>
   </footer>
 </div>

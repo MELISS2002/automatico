@@ -1,4 +1,4 @@
-// PelisLatinoHD clone - incremental catalog updater
+// UltimoLive clone - incremental catalog updater
 // Worker that keeps site/data/catalog.json fresh without a full re-scrape:
 // only fetches movies/series/episodes NEWER than the last generatedAt and
 // merges them into the existing catalog. Safe to run repeatedly.

@@ -22,9 +22,9 @@ const truncate = (value, max = 240) => {
 const items = [...(catalog.movies || []), ...(catalog.series || [])];
 
 for (const item of items) {
-  const title = item.title || "PelisLatinoHD";
+  const title = item.title || "UltimoLive";
   const description = truncate(
-    item.synopsis || `Ver ${title} online en PelisLatinoHD.`
+    item.synopsis || `Ver ${title} online en UltimoLive.`
   );
   const image = item.backdrop || item.poster || `${origin}/social-default.jpg`;
   const type = item.type === "movie" ? "video.movie" : "video.tv_show";
@@ -35,7 +35,7 @@ for (const item of items) {
 
   const socialHead = `
 <meta property="og:type" content="${type}">
-<meta property="og:site_name" content="PelisLatinoHD">
+<meta property="og:site_name" content="UltimoLive">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:image" content="${esc(image)}">
@@ -53,7 +53,7 @@ for (const item of items) {
     )
     .replace(
       /<title>[^<]*<\/title>/,
-      `<title>${esc(title)} - PelisLatinoHD</title>`
+      `<title>${esc(title)} - UltimoLive</title>`
     );
 
   writeFileSync(join(folder, "index.html"), page);
@@ -62,12 +62,12 @@ for (const item of items) {
 // Section landing pages (/peliculas/, /series/, ...) so clean-route URLs are
 // real files too, not just SPA+pushState.
 const SECTIONS = [
-  { path: "tendencias", title: "Tendencias", desc: "Películas y series en tendencia en PelisLatinoHD." },
-  { path: "peliculas", title: "Películas", desc: "Ver películas online gratis en HD en PelisLatinoHD." },
-  { path: "series", title: "Series", desc: "Todas las series con temporadas y episodios en PelisLatinoHD." },
-  { path: "episodios", title: "Episodios", desc: "Últimos episodios de tus series en PelisLatinoHD." },
-  { path: "animes", title: "Animes", desc: "Animes online gratis en Latino en PelisLatinoHD." },
-  { path: "imdb", title: "Ranking IMDb", desc: "Las mejores películas y series según IMDb en PelisLatinoHD." }
+  { path: "tendencias", title: "Tendencias", desc: "Películas y series en tendencia en UltimoLive." },
+  { path: "peliculas", title: "Películas", desc: "Ver películas online gratis en HD en UltimoLive." },
+  { path: "series", title: "Series", desc: "Todas las series con temporadas y episodios en UltimoLive." },
+  { path: "episodios", title: "Episodios", desc: "Últimos episodios de tus series en UltimoLive." },
+  { path: "animes", title: "Animes", desc: "Animes online gratis en Latino en UltimoLive." },
+  { path: "imdb", title: "Ranking IMDb", desc: "Las mejores películas y series según IMDb en UltimoLive." }
 ];
 
 for (const sec of SECTIONS) {
@@ -76,13 +76,13 @@ for (const sec of SECTIONS) {
   mkdirSync(folder, { recursive: true });
   const socialHead = `
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="PelisLatinoHD">
-<meta property="og:title" content="${esc(sec.title)} - PelisLatinoHD">
+<meta property="og:site_name" content="UltimoLive">
+<meta property="og:title" content="${esc(sec.title)} - UltimoLive">
 <meta property="og:description" content="${esc(sec.desc)}">
 <meta property="og:image" content="${esc(sec.image || `${origin}/social-default.jpg`)}">
 <meta property="og:url" content="${esc(url)}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="${esc(sec.title)} - PelisLatinoHD">
+<meta name="twitter:title" content="${esc(sec.title)} - UltimoLive">
 <meta name="twitter:description" content="${esc(sec.desc)}">
 <meta name="twitter:image" content="${esc(sec.image || `${origin}/social-default.jpg`)}">`;
   const page = template
@@ -93,7 +93,7 @@ for (const sec of SECTIONS) {
     )
     .replace(
       /<title>[^<]*<\/title>/,
-      `<title>${esc(sec.title)} - PelisLatinoHD</title>`
+      `<title>${esc(sec.title)} - UltimoLive</title>`
     );
   writeFileSync(join(folder, "index.html"), page);
 }

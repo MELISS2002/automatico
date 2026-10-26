@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<base href="/pelis/">
+
 <meta property="og:type" content="video.movie">
-<meta property="og:site_name" content="PelisLatinoHD">
+<meta property="og:site_name" content="UltimoLive">
 <meta property="og:title" content="Ip Man">
 <meta property="og:description" content="Foshan, años treinta. Ip Man, respetado maestro de Wing Chun, combina el estudio de las artes marciales con los combates ocasionales a los que se ve forzado por parte de sus admiradores. Son tiempos de prosperidad a los que la guerra con J…">
 <meta property="og:image" content="https://image.tmdb.org/t/p/w780/69QJSMkm5Hh0x9fLElZ8hjv5N4P.jpg">
-<meta property="og:url" content="https://pelis.plisplus.workers.dev/detalle/movie/ip-man/">
+<meta property="og:url" content="https://automatico.pages.dev/detalle/movie/ip-man/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ip Man">
 <meta name="twitter:description" content="Foshan, años treinta. Ip Man, respetado maestro de Wing Chun, combina el estudio de las artes marciales con los combates ocasionales a los que se ve forzado por parte de sus admiradores. Son tiempos de prosperidad a los que la guerra con J…">
 <meta name="twitter:image" content="https://image.tmdb.org/t/p/w780/69QJSMkm5Hh0x9fLElZ8hjv5N4P.jpg">
+<script>
+(function () {
+  var host = location.hostname;
+  // Standalone deploy (pelis.plisplus.workers.dev or any host with "pelis") uses root base.
+  // Integrated deploy under the main site uses /pelis/ base.
+  var base = (host === 'localhost' || host === '127.0.0.1')
+    ? '/pelis/'
+    : (host.indexOf('pelis') !== -1 ? '/' : '/pelis/');
+  document.write('<base href="' + base + '">');
+})();
+</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="Foshan, años treinta. Ip Man, respetado maestro de Wing Chun, combina el estudio de las artes marciales con los combates ocasionales a los que se ve forzado por parte de sus admiradores. Son tiempos de prosperidad a los que la guerra con J…" />
-<title>Ip Man - PelisLatinoHD</title>
+<title>Ip Man - UltimoLive</title>
 <link rel="icon" href="https://image.tmdb.org/t/p/w500/aQOWdgUUtm2PpT7WFCak9g1MkSH.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,7 +44,7 @@
     <div class="hbox">
       <div class="mob-bars" id="mob-bars" aria-label="Menú"><span></span><span></span><span></span></div>
       <div class="logo">
-        <a href="/"><h1 class="text">Pelis<span class="hl">Latino</span>HD</h1></a>
+        <a href="/"><h1 class="text">Ultimo<span class="hl">Live</span></h1></a>
       </div>
       <div class="head-main-nav">
         <ul class="main-header">
@@ -74,7 +85,7 @@
 
   <footer class="main">
     <div class="fbox">
-      <p>PelisLatinoHD — Réplica estática de demo. Este proyecto no aloja ni transmite contenido.</p>
+      <p>UltimoLive — Réplica estática de demo. Este proyecto no aloja ni transmite contenido.</p>
     </div>
   </footer>
 </div>

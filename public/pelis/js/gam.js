@@ -1,4 +1,4 @@
-// PelisLatinoHD - Google Ad Manager (GPT)
+// UltimoLive - Google Ad Manager (GPT)
 // Escritorio: líder 728x90 (header_728x90), box 300x250 (sidebar_300x250),
 // 468x60 / 160x300 / 160x600 (zonas Adsterra adsterra_468x60 / 160x300 / 160x600).
 // Móvil: sticky 320x50 (mobile_320x50).

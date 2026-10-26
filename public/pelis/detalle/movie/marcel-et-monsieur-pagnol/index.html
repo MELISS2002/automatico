@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<base href="/pelis/">
+
 <meta property="og:type" content="video.movie">
-<meta property="og:site_name" content="PelisLatinoHD">
+<meta property="og:site_name" content="UltimoLive">
 <meta property="og:title" content="Marcel et Monsieur Pagnol">
 <meta property="og:description" content="A Magnificent Life / A Magnificent Life – La extraordinaria vida de Marcel Pagnol">
 <meta property="og:image" content="https://image.tmdb.org/t/p/w780/xPquMr2qgZcpV31dZl5T2Td1nBN.jpg">
-<meta property="og:url" content="https://pelis.plisplus.workers.dev/detalle/movie/marcel-et-monsieur-pagnol/">
+<meta property="og:url" content="https://automatico.pages.dev/detalle/movie/marcel-et-monsieur-pagnol/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Marcel et Monsieur Pagnol">
 <meta name="twitter:description" content="A Magnificent Life / A Magnificent Life – La extraordinaria vida de Marcel Pagnol">
 <meta name="twitter:image" content="https://image.tmdb.org/t/p/w780/xPquMr2qgZcpV31dZl5T2Td1nBN.jpg">
+<script>
+(function () {
+  var host = location.hostname;
+  // Standalone deploy (pelis.plisplus.workers.dev or any host with "pelis") uses root base.
+  // Integrated deploy under the main site uses /pelis/ base.
+  var base = (host === 'localhost' || host === '127.0.0.1')
+    ? '/pelis/'
+    : (host.indexOf('pelis') !== -1 ? '/' : '/pelis/');
+  document.write('<base href="' + base + '">');
+})();
+</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="A Magnificent Life / A Magnificent Life – La extraordinaria vida de Marcel Pagnol" />
-<title>Marcel et Monsieur Pagnol - PelisLatinoHD</title>
+<title>Marcel et Monsieur Pagnol - UltimoLive</title>
 <link rel="icon" href="https://image.tmdb.org/t/p/w500/aQOWdgUUtm2PpT7WFCak9g1MkSH.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,7 +44,7 @@
     <div class="hbox">
       <div class="mob-bars" id="mob-bars" aria-label="Menú"><span></span><span></span><span></span></div>
       <div class="logo">
-        <a href="/"><h1 class="text">Pelis<span class="hl">Latino</span>HD</h1></a>
+        <a href="/"><h1 class="text">Ultimo<span class="hl">Live</span></h1></a>
       </div>
       <div class="head-main-nav">
         <ul class="main-header">
@@ -74,7 +85,7 @@
 
   <footer class="main">
     <div class="fbox">
-      <p>PelisLatinoHD — Réplica estática de demo. Este proyecto no aloja ni transmite contenido.</p>
+      <p>UltimoLive — Réplica estática de demo. Este proyecto no aloja ni transmite contenido.</p>
     </div>
   </footer>
 </div>
