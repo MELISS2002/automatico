@@ -17,5 +17,8 @@
 /legal/* /pelis/legal/:splat 200
 /detalle/* /pelis/detalle/:splat 200
 
+# AI agent catalog (well-known + root)
+/.well-known/ai-catalog.json /ai-catalog.json 200
+
 # React SPA fallback (UltimoLive)
 /* /index.html 200
