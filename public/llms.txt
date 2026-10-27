@@ -1,0 +1,17 @@
+# UltimoLive
+
+> Catálogo de películas y series en línea (UltimoLive).
+
+## Páginas principales
+- [Inicio](https://automatico.pages.dev/): Portada con tendencias y novedades.
+- [Películas](https://automatico.pages.dev/peliculas): Listado paginado de películas.
+- [Series](https://automatico.pages.dev/series): Listado paginado de series.
+- [Géneros](https://automatico.pages.dev/genero/accion/): Películas y series por género.
+- [Países](https://automatico.pages.dev/pais/argentina/): Contenido por país de origen.
+- [Blog](https://automatico.pages.dev/posts/): Artículos y listas curadas.
+
+## Detalles
+- [Detalle de película](https://automatico.pages.dev/detalle/movie/la-novia-del-ano/): Ficha con sinopsis, reparto y reproductor.
+
+## Feeds
+- [Sitemap](https://automatico.pages.dev/sitemap.xml): Mapa del sitio para crawlers.

@@ -5,7 +5,30 @@ from datetime import datetime, timezone
 
 BASE = "https://automatico.pages.dev"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+import json
+CATALOG_PATH = os.path.join(ROOT, "public", "pelis", "data", "catalog.json")
 POSTS_DIR = os.path.join(ROOT, "public", "posts")
+
+
+def detail_urls():
+    urls = []
+    if os.path.exists(CATALOG_PATH):
+        cat = json.load(open(CATALOG_PATH, encoding="utf-8"))
+        for it in cat.get("movies", []) + cat.get("series", []):
+            urls.append((f"{BASE}/detalle/{it['type']}/{it['slug']}/", 0.7))
+        for g in cat.get("genresList", []):
+            if g.get("count", 0) >= 1:
+                urls.append((f"{BASE}/genero/{g['slug']}/", 0.6))
+        for c in cat.get("countriesList", []):
+            if c.get("count", 0) >= 1:
+                urls.append((f"{BASE}/pais/{c['slug']}/", 0.6))
+        for tag in cat.get("tags", {}):
+            urls.append((f"{BASE}/tag/{tag}/", 0.6))
+
+
+
+    return urls
+
 
 MAIN_ROUTES = [
     ("/", 1.0),
@@ -34,7 +57,10 @@ def build_sitemap():
         urls.append((BASE + path, prio, today))
     for slug in post_slugs():
         urls.append((f"{BASE}/posts/{slug}/index.html", 0.8, today))
+    for loc, prio in detail_urls():
+        urls.append((loc, prio, today))
     return urls
+
 
 
 def write_sitemap(urls):

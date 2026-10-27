@@ -9,8 +9,9 @@
 /tendencias/* /pelis/index.html 200
 /episodios /pelis/index.html 200
 /episodios/* /pelis/index.html 200
-/genero/* /pelis/index.html 200
-/pais/* /pelis/index.html 200
+/genero/* /pelis/genero/:splat 200
+/pais/* /pelis/pais/:splat 200
+/tag/* /pelis/tag/:splat 200
 /imdb /pelis/imdb/index.html 200
 /imdb/* /pelis/imdb/index.html 200
 /legal/* /pelis/legal/:splat 200
