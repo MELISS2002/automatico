@@ -1,14 +1,14 @@
 /* UltimoLive clone - DooPlay-ish dark theme, responsive */
 :root {
-  --primary: #005199;
-  --bg: #242424;
-  --bg-dark: #1b1b1b;
-  --bg-darkest: #141414;
-  --card: #2b2b2b;
-  --text: #fff;
-  --muted: #9ca3af;
-  --border: #3a3a3a;
-  --red: #cd2026;
+  --primary: #F87171;
+  --bg: #0F1117;
+  --bg-dark: #171A21;
+  --bg-darkest: #0F1117;
+  --card: #171A21;
+  --text: #E5E7EB;
+  --muted: #9CA3AF;
+  --border: #262B36;
+  --red: #F87171;
   --radius: 10px;
 }
 
@@ -17,12 +17,17 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: "Rubik", "Segoe UI", sans-serif;
+  font-family: "Source Serif 4", Georgia, serif;
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
   font-size: 15px;
   overflow-x: hidden;
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4, .logo, .logo h1 {
+  font-family: "Archivo", "Segoe UI", sans-serif;
 }
 
 a { text-decoration: none; color: inherit; }
