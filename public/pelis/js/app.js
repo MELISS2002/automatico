@@ -143,7 +143,7 @@ function episodeHomeCard(ep) {
   const poster = serie ? serie.poster : null;
   return `
   <div class="episode-card" data-src="${esc(ep.embedded)}" data-name="${esc(ep.serie)} - ${label}">
-    ${poster ? `<img src="${esc(poster)}" alt="" style="width:100%;aspect-ratio:2/1;object-fit:cover;border-radius:6px;margin-bottom:8px;"/>` : ""}
+    ${poster ? `<img fetchpriority="high" decoding="async" src="${esc(poster)}" alt="" style="width:100%;aspect-ratio:2/1;object-fit:cover;border-radius:6px;margin-bottom:8px;"/>` : ""}
     <div class="ep-title">${esc(ep.serie)}</div>
     <div class="ep-meta">${esc(ep.title)} &middot; <b>${label}</b></div>
   </div>`;
@@ -632,7 +632,7 @@ function renderDetail(type, slug) {
     <section class="module">
       <div class="detail-head">
         <div class="poster-big">
-          <img src="${esc(item.poster)}" alt="${esc(item.title)}" onerror="this.style.display='none'"/>
+          <img loading="lazy" decoding="async" src="${esc(item.poster)}" alt="${esc(item.title)}" onerror="this.style.display='none'"/>
         </div>
         <div class="detail-info">
           <h1>${esc(item.title)}</h1>
@@ -672,7 +672,7 @@ function renderDetail(type, slug) {
 function peopleBlock(title, people, showRoles) {
   const chips = people.map((p) => `
     <div class="person">
-      ${p.photo && !p.photo.endsWith("/null") ? `<img src="${esc(p.photo)}" alt="${esc(p.name)}" loading="lazy" onerror="this.style.display='none'"/>` : `<div class="person-avatar">${esc((p.name || "?").charAt(0))}</div>`}
+      ${p.photo && !p.photo.endsWith("/null") ? `<img src="${esc(p.photo)}" alt="${esc(p.name)}" loading="lazy" decoding="async" onerror="this.style.display='none'"/>` : `<div class="person-avatar">${esc((p.name || "?").charAt(0))}</div>`}
       <div class="person-meta">
         <span class="person-name">${esc(p.name)}</span>
         ${showRoles && p.role ? `<span class="person-role">${esc(p.role)}</span>` : ""}

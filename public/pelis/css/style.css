@@ -881,3 +881,9 @@ footer.main {
 @media (max-width: 820px) {
   .items .item.ad-box { display: none !important; }
 }
+/* CWV: reduce rendering cost */
+.item { content-visibility: auto; contain-intrinsic-size: 0 260px; }
+
+
+.item img { aspect-ratio: 2/3; object-fit: cover; width: 100%; height: auto; }
+
