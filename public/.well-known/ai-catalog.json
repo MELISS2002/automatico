@@ -1,0 +1,38 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "UltimoLive",
+    "documentationUrl": "https://automatico.pages.dev/",
+    "logoUrl": "https://automatico.pages.dev/vite.svg"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:ultimolive:site:catalog",
+      "displayName": "UltimoLive Catalog",
+      "type": "text/html",
+      "url": "https://automatico.pages.dev/",
+      "description": "Catálogo de películas y series con fichas, géneros y países.",
+      "tags": ["movies", "series", "catalog", "streaming"],
+      "capabilities": ["BrowseCatalog", "SearchTitles", "ViewDetails"],
+      "representativeQueries": [
+        "¿Dónde ver películas gratis?",
+        "Mejores series de 2025",
+        "Películas de acción",
+        "Series de drama"
+      ]
+    },
+    {
+      "identifier": "urn:air:ultimolive:site:sitemap",
+      "displayName": "UltimoLive Sitemap",
+      "type": "application/xml",
+      "url": "https://automatico.pages.dev/sitemap.xml",
+      "description": "Mapa del sitio con todas las URLs indexables.",
+      "tags": ["sitemap", "seo"],
+      "capabilities": ["CrawlSite"],
+      "representativeQueries": [
+        "Mapa del sitio UltimoLive",
+        "Todas las páginas del sitio"
+      ]
+    }
+  ]
+}
