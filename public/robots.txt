@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://automatico.pages.dev/sitemap.xml
-Agentmap: https://automatico.pages.dev/.well-known/ai-catalog.json
