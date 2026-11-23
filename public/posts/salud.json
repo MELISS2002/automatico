@@ -1,5 +1,32 @@
 [
   {
+    "slug": "alimentacion-hidratacion-defensas-invierno-minsa",
+    "title": "Alimentación e hidratación: cómo fortalecer tus defensas en temporada de frío, según el Minsa",
+    "excerpt": "El Ministerio de Salud recomienda priorizar frutas, verduras, menestras y líquidos tibios para reforzar el sistema inmunológico y prevenir infecciones respiratorias en épocas de bajas temperaturas.",
+    "author": "ROSA EMILY",
+    "date": "2026-11-23",
+    "htmlPath": "/posts/alimentacion-hidratacion-defensas-invierno-minsa/index.html",
+    "thumbnail": "/posts/alimentacion-hidratacion-defensas-invierno-minsa/imagen1.jpg"
+  },
+  {
+    "slug": "deshidratacion-golpe-calor-prevencion-essalud",
+    "title": "Deshidratación y golpe de calor: cómo proteger tu salud ante las altas temperaturas",
+    "excerpt": "EsSalud advierte que la falta de líquidos puede causar mareos, cansancio y confusión. Conoce las señales de alerta y siete medidas prácticas para hidratarte y prevenir el golpe de calor.",
+    "author": "ROSA EMILY",
+    "date": "2026-11-23",
+    "htmlPath": "/posts/deshidratacion-golpe-calor-prevencion-essalud/index.html",
+    "thumbnail": "/posts/deshidratacion-golpe-calor-prevencion-essalud/imagen1.jpg"
+  },
+  {
+    "slug": "dormir-bien-calor-nocturno-consejos-essalud",
+    "title": "Cómo dormir bien en noches calurosas: 7 consejos de EsSalud para proteger tu descanso",
+    "excerpt": "El calor nocturno puede afectar la memoria, el ánimo y la concentración. EsSalud recomienda hábitos simples para mejorar el sueño y evitar el agotamiento durante el día.",
+    "author": "ROSA EMILY",
+    "date": "2026-11-23",
+    "htmlPath": "/posts/dormir-bien-calor-nocturno-consejos-essalud/index.html",
+    "thumbnail": "/posts/dormir-bien-calor-nocturno-consejos-essalud/imagen1.jpg"
+  },
+  {
     "slug": "peru-guia-atencion-prehospitalaria-ictus",
     "title": "Perú aprueba nueva guía para la atención prehospitalaria del ictus y busca optimizar los tiempos de respuesta",
     "excerpt": "El Minsa aprobó una guía técnica que estandariza la atención prehospitalaria del ictus en el SAMU, con escalas clínicas, coordinación con la CRUE y derivación oportuna a establecimientos con tomografía.",
