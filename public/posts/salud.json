@@ -1,5 +1,32 @@
 [
   {
+    "slug": "prevenir-enfermedades-respiratorias-diarreicas-fenomeno-nino",
+    "title": "Cómo prevenir enfermedades respiratorias y diarreicas ante el fenómeno El Niño: guía práctica",
+    "excerpt": "El Minsa recomienda medidas simples como el lavado de manos, el consumo de alimentos seguros y el uso correcto de mascarilla para proteger a niños y adultos mayores.",
+    "author": "ROSA EMILY",
+    "date": "2026-11-27",
+    "htmlPath": "/posts/prevenir-enfermedades-respiratorias-diarreicas-fenomeno-nino/index.html",
+    "thumbnail": "/posts/prevenir-enfermedades-respiratorias-diarreicas-fenomeno-nino/imagen1.jpg"
+  },
+  {
+    "slug": "prevenir-obesidad-habitos-alimenticios-saludables",
+    "title": "Cómo prevenir la obesidad con hábitos alimenticios saludables: recomendaciones del Minsa",
+    "excerpt": "El Minsa recomienda evitar dietas extremas, priorizar alimentos naturales, reducir ultraprocesados y mantener actividad física para prevenir la obesidad y enfermedades crónicas.",
+    "author": "ROSA EMILY",
+    "date": "2026-11-27",
+    "htmlPath": "/posts/prevenir-obesidad-habitos-alimenticios-saludables/index.html",
+    "thumbnail": "/posts/prevenir-obesidad-habitos-alimenticios-saludables/imagen1.jpg"
+  },
+  {
+    "slug": "prevenir-anemia-infantil-alimentos-ricos-hierro",
+    "title": "Cómo prevenir la anemia infantil con alimentos ricos en hierro: guía para padres",
+    "excerpt": "La anemia infantil se puede prevenir con una alimentación rica en hierro, controles oportunos y buenos hábitos. Conoce qué alimentos incluir y cuándo consultar al establecimiento de salud.",
+    "author": "ROSA EMILY",
+    "date": "2026-11-27",
+    "htmlPath": "/posts/prevenir-anemia-infantil-alimentos-ricos-hierro/index.html",
+    "thumbnail": "/posts/prevenir-anemia-infantil-alimentos-ricos-hierro/imagen1.jpg"
+  },
+  {
     "slug": "alimentacion-hidratacion-defensas-invierno-minsa",
     "title": "Alimentación e hidratación: cómo fortalecer tus defensas en temporada de frío, según el Minsa",
     "excerpt": "El Ministerio de Salud recomienda priorizar frutas, verduras, menestras y líquidos tibios para reforzar el sistema inmunológico y prevenir infecciones respiratorias en épocas de bajas temperaturas.",
